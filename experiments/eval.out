@@ -1,0 +1,22 @@
+Precompiling AgencySubstrate...
+   1617.0 ms  ✓ AgencySubstrate
+  1 dependency successfully precompiled in 2 seconds. 4 already precompiled.
+== A: Claude designs vs pre-frozen predictions ==
+sha256 3ba74ff737df0f7b9c2c26ce16c84ac5c2ee2ae3ad646b2f37aebd6808d2eaaa
+selfloop-pair-agent      pred L2/L3/L3R=(true, true, true) got=(true, true, true)  MATCH  core=["c1", "c2"] tracking=["s1", "s2"] alive=true
+ring4-agent              pred L2/L3/L3R=(false, true, true) got=(false, true, true)  MATCH  core=["c1", "c2", "c3", "c4"] tracking=["s1", "s2"] alive=false
+hub-agent                pred L2/L3/L3R=(true, true, false) got=(true, true, false)  MATCH  core=["c1"] tracking=["s1", "s2"] alive=true
+redundant-sensor-agent   pred L2/L3/L3R=(false, true, false) got=(false, true, false)  MATCH  core=["c1", "c2"] tracking=String[] alive=true
+
+== B: held-out environments (not in the frozen schedules), horizon 200 ==
+                        flip7       flip13      random10    flip7-weak4 both3       
+selfloop-pair-agent     live/S:dead live/S:dead dead/S:dead dead/S:dead dead/S:dead 
+hub-agent               live/S:dead live/S:dead dead/S:dead live/S:dead dead/S:dead 
+redundant-sensor-agent  dead/S:dead dead/S:dead dead/S:dead dead/S:dead dead/S:dead 
+agent                   live/S:dead live/S:dead dead/S:dead dead/S:dead dead/S:dead 
+reflex                  dead        dead        dead        dead        live        
+thermostat              dead        dead        dead        dead        dead        
+alternator              live        live        live        live        live        
+no-loop                 dead        dead        dead        dead        dead        
+repairing-agent         dead/S:dead dead/S:dead dead/S:dead dead/S:dead dead/S:dead 
+(x/S:y = intact x, with patch sensors silenced y)

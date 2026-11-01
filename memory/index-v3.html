@@ -1,0 +1,635 @@
+<title>記憶する回路</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500;700&family=BIZ+UDPGothic:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a living specimen under glass. Vital line on top, world and memory side by side, the long record below. */
+:root {
+  --paper: #edf0f2; --panel: #f9fafb; --ink: #1b2430; --muted: #5b6878; --line: #c9d1d9;
+  --p1: #2f68b0; --p2: #23845a; --act: #b9790c; --bad: #b8382a; --sed: #7a4fa8;
+  --f-display: "Zen Kaku Gothic Antique", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --f-body: "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #10151b; --panel: #182029; --ink: #e1e7ee; --muted: #93a1b1; --line: #2b3643;
+  --p1: #6fa5ea; --p2: #5dc092; --act: #e8b24c; --bad: #ef6e5e; --sed: #b896e6; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #10151b; --panel: #182029; --ink: #e1e7ee; --muted: #93a1b1; --line: #2b3643;
+  --p1: #6fa5ea; --p2: #5dc092; --act: #e8b24c; --bad: #ef6e5e; --sed: #b896e6; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 1140px; margin: 0 auto; padding-block: 20px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 16px; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: 1.8rem; margin: 0; }
+h2 { font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; margin: 0; }
+.lede { color: var(--muted); max-width: 74ch; margin: 4px 0 0; }
+.vitals { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.vitals b { font-size: 1.35rem; font-weight: 500; }
+.vitals span { color: var(--muted); font-size: .8rem; margin-right: 4px; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-size: .86rem; color: var(--muted); }
+button { font: inherit; font-size: .86rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); min-width: 5.5em; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--act); outline-offset: 2px; }
+button:disabled { opacity: .45; cursor: default; }
+.grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); gap: 16px; }
+@media (max-width: 820px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+svg { display: block; width: 100%; height: auto; }
+.chip { font-family: var(--f-mono); font-size: .76rem; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+.chip.ok { color: var(--p2); border-color: var(--p2); } .chip.bad { color: var(--bad); border-color: var(--bad); } .chip.act { color: var(--act); border-color: var(--act); }
+.status { display: flex; flex-wrap: wrap; gap: 6px; }
+table.mem { border-collapse: separate; border-spacing: 4px; font-family: var(--f-mono); font-size: .8rem; }
+table.mem th { color: var(--muted); font-weight: 400; text-align: left; padding-right: 8px; white-space: nowrap; }
+table.mem td { width: 64px; height: 30px; border-radius: 5px; border: 1px solid var(--line); position: relative; }
+.cellq { position: absolute; inset: 0; border-radius: 4px; background: var(--p1); }
+.cells { position: absolute; right: 4px; bottom: 3px; display: flex; gap: 2px; }
+.cells i { width: 6px; height: 6px; border-radius: 50%; background: var(--sed); display: block; }
+.scroll { overflow-x: auto; }
+canvas { width: 100%; height: 150px; display: block; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .8rem; color: var(--muted); }
+.legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; vertical-align: middle; margin-right: 5px; }
+.notes { color: var(--muted); font-size: .88rem; max-width: 78ch; display: grid; gap: 6px; }
+.notes b { color: var(--ink); }
+.confirm { display: inline-flex; gap: 8px; align-items: center; }
+.you { display: grid; gap: 12px; }
+.lamp { display: flex; align-items: center; gap: 12px; min-height: 56px; }
+.lamp .dot { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--line); background: var(--paper); flex: none; transition: background .12s, box-shadow .12s; }
+.lamp .dot.on { background: var(--act); border-color: var(--act); box-shadow: 0 0 0 6px color-mix(in srgb, var(--act) 25%, transparent); }
+.lamp .dot.ans { background: var(--p2); border-color: var(--p2); }
+.lamp .txt { font-size: .9rem; color: var(--muted); }
+.lamp .txt b { color: var(--ink); font-family: var(--f-display); font-size: 1.05rem; display: block; }
+.pend { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.pend i { display: block; height: 100%; background: var(--act); width: 0; }
+.pad { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.pad button { font-size: 1.5rem; line-height: 1; padding: 14px 0; border-radius: 10px; }
+.pad button small { display: block; font-size: .7rem; color: var(--muted); margin-top: 4px; font-family: var(--f-mono); }
+.pad button.flash { background: var(--p1); color: var(--paper); border-color: var(--p1); }
+.modes { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .86rem; color: var(--muted); }
+table.st { border-collapse: collapse; font-family: var(--f-mono); font-size: .8rem; font-variant-numeric: tabular-nums; }
+table.st th, table.st td { padding: 3px 10px 3px 0; text-align: right; } table.st th:first-child, table.st td:first-child { text-align: left; }
+table.st th { color: var(--muted); font-weight: 400; }
+input[type=range] { width: 120px; accent-color: var(--act); }
+</style>
+<div class="wrap">
+  <header>
+    <h1>記憶する回路</h1>
+    <p class="lede">このページを開いている間、回路は世界の中で行為し続ける。記憶は出来事の記録ではなく、繰り返し確かめられた予測が回路の構えに残す「沈殿」で、同じ状況が戻ったときの立ち直りの速さとしてだけ現れる。いまは、あなたもこの世界の一部になっている。回路はあなたに呼びかける運動を持ち、あなたの身ぶりは番号のついた受容器の一つとして届く。あなたが返すのは答えであって、評価ではない。</p>
+  </header>
+
+  <div class="vitals" aria-live="polite">
+    <div><span>年齢</span><b id="vAge">–</b><span>歩</span></div>
+    <div><span>段階</span><b id="vPhase">–</b></div>
+    <div><span>沈殿の総量</span><b id="vSed">–</b></div>
+    <div><span>意味の入れ替え</span><b id="vRev">0</b><span>回</span></div>
+    <div><span>保存</span><b id="vSave" style="font-size:.95rem">–</b></div>
+  </div>
+
+  <div class="bar" role="group" aria-label="操作">
+    <button id="run" class="primary">一時停止</button>
+    <label for="speed">速さ <input id="speed" type="range" min="1" max="200" value="5"> <span id="speedv">5</span> 歩/秒</label>
+    <button id="stasis">世界を60歩止める</button>
+    <button id="reverse">受容器の意味を入れ替える</button>
+    <label for="observer"><input id="observer" type="checkbox"> 観察者の知識を表示</label>
+    <span class="confirm"><button id="reset">生まれ直させる</button><span id="resetAsk" hidden>記憶は消えます。<button id="resetYes">生まれ直させる</button><button id="resetNo">やめる</button></span></span>
+  </div>
+
+  <div class="grid">
+    <section class="panel" aria-label="世界">
+      <h2>世界</h2>
+      <svg id="world" viewBox="0 0 360 230" role="img" aria-label="二つの区画に残る未消化の予測誤差"></svg>
+      <div class="status" id="status"></div>
+    </section>
+    <section class="panel you" aria-label="あなた">
+      <h2>あなた</h2>
+      <div class="lamp"><div class="dot" id="lamp"></div><div class="txt" id="lampTxt"><b>–</b></div></div>
+      <div class="pend" aria-hidden="true"><i id="pendBar"></i></div>
+      <div class="pad" role="group" aria-label="身ぶり">
+        <button data-k="1" aria-label="身ぶり1">○<small>1</small></button><button data-k="2" aria-label="身ぶり2">△<small>2</small></button><button data-k="3" aria-label="身ぶり3">□<small>3</small></button><button data-k="4" aria-label="身ぶり4">◇<small>4</small></button>
+      </div>
+      <div class="legend"><span>呼びかけから10歩以内に身ぶりを返すと、それが答えになる（一つの身ぶりは、いちばん古い呼びかけ一つに答える）。同じ身ぶりを続けると消化できるものが尽き、答えにならない（20歩ごとに1戻る）。キーボードの 1〜4 でも返せる。速さ5歩/秒なら10歩は2秒。</span></div>
+      <div class="legend"><span><b>関わり方のヒント（台本の相手での試験から）：</b> 初めは喃語のような呼びかけにも何度でも答え、慣れてきたら、間を置いた呼びかけにだけ答えるようにすると、回路は答えを待つことを覚えやすい（足場かけ）。いつも同じように答える相手からは、待つことは身につきにくい。</span></div>
+      <div class="modes" role="radiogroup" aria-label="あなたの届き方">
+        <label><input type="radio" name="mode" value="live" checked> 生で届ける</label>
+        <label><input type="radio" name="mode" value="replay"> 流し直し（過去の身ぶりの記録を流す。いまの身ぶりは届かない）</label>
+        <label><input type="radio" name="mode" value="blind"> 盲検（300歩ごとに無作為に切り替え、どちらかは伏せる）</label>
+      </div>
+      <div id="statBox"></div>
+    </section>
+  </div>
+
+  <div class="grid">
+    <section class="panel" aria-label="記憶">
+      <h2>構え（確かさと沈殿）</h2>
+      <div class="scroll"><table class="mem" id="mem"></table></div>
+      <div class="legend"><span><i style="background:var(--p1)"></i>いまの確かさ（濃いほど確か）</span><span><i style="background:var(--sed);border-radius:50%;width:10px"></i>沈殿（記憶、1〜4）</span></div>
+    </section>
+    <section class="panel" aria-label="呼びかけの経過">
+      <h2>呼びかけ（100歩ごと）</h2>
+      <canvas id="cCall"></canvas>
+      <div class="legend"><span><i style="background:var(--act)"></i>呼びかけた歩数</span><span><i style="background:var(--p2)"></i>答えられた呼びかけ</span></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-label="経過">
+    <h2>沈殿の総量（100歩ごと）</h2>
+    <canvas id="cSed"></canvas>
+    <h2>立ち直りに要した確証の回数（少ないほど覚えている）</h2>
+    <canvas id="cSav"></canvas>
+    <div class="legend"><span>しばらく使っていなかった運動が再び答えを得てから、その予測が確かさ4に戻るまでの確証の回数。記憶がないと4回かかり、沈殿があると1回で戻る。</span></div>
+    <h2>答えのなかった行為（1000歩ごと）</h2>
+    <canvas id="cUn"></canvas>
+  </section>
+
+  <section class="notes">
+    <div><b>何が記憶か。</b> 予測が確かさ4まで確かめ直されるたびに、その予測に沈殿が1つ積もる（最大4）。沈殿のある予測は、確かさが散逸しても信号を伝え続け、確かめられると確かさが一気に戻る。失敗が続くと沈殿は削れる。世界の状態や出来事はどこにも書き残していない。</div>
+    <div><b>現象学的還元。</b> 回路にとって受容器は番号でしかない。「観察者の知識を表示」を入れると、設計者が知っている受容器の意味を横に出す。回路の記憶はその知識なしに成り立っている。</div>
+    <div><b>入れ替え。</b> 受容器の意味を入れ替えると、積もった沈殿は誤った構えになる。記憶があるぶん、慣れた構えにしばらく引きずられる様子が見える。</div>
+    <div><b>あなたの入り方。</b> あなたの身ぶりは受容器 r9 を点け、回路は m3 で呼びかける（m3 は第三の核 c3 に駆動される）。呼びかけは区画への行為とは別の通り道で、一歩に一つという区画の行為の選択には加わらない。答えの確かめは遅れて届く：呼びかけの時点で「答えがあれば確かめられる予測」を取っておき、10歩以内に新しい身ぶりが届けば確かめ、届かないまま期限が来れば失敗とする。呼びかけは重ねてもよく、待つかどうかは回路が経験から身につける。</div>
+    <div><b>生まれつき与えたもの（段22〜25）。</b> 定位反応：受容器が新しく点くと、その受容器からのまだ試していない予測を一度試す。慣れ：試して失敗した予測は試さなくなり、その受容器がしばらく消えていると戻る。自分の状態の受容器：r10「答えを待っている」と r11「待っていない」（どちらが答えにつながるかは回路が見つける）。</div>
+    <div><b>事前試験でわかったこと（台本の相手で、人ではない）。</b> 身ぶりは呼びかけの合図として沈殿し（4/5）、相手が去ると静まり、戻ると次の歩で呼び返す。待つこと（答え待ちのときに重ねて呼ばない）は、いつも同じように答える相手では半分ほどしか身につかず（重ねた呼びかけ 0.40〜0.52）、足場かけをする相手では身についた（0.10〜0.15、r11 に沈殿 5/5）。一方、反応して呼ぶようになった回路は、生の相手と記録の流し直しを区別しなかった。</div>
+    <div><b>生と流し直し。</b> 流し直しでは、生の時間に記録したあなたの身ぶりを同じ間隔で流し、いまの身ぶりは届かない。回路の振る舞いが二つで違えば、回路は身ぶりの中身ではなく、自分の行為に応じてくるかどうかに感応している。盲検では、いまどちらかを伏せたまま300歩ごとに切り替わる。集計はこのページを見ている間だけ数える。</div>
+    <div><b>保存。</b> 状態はこの artifact のデータに1分ごとに保存され、別のタブでは見るだけになる。閉じていた時間は、いまの速さで最大5万歩まで追いつき計算する。研究用の記録は ~/bridge-agency-lab/memory にある。</div>
+  </section>
+</div>
+<script id="engine" type="text/plain">
+// Stage 23 (2026-10-30): learning to wait, on top of the orienting response with habituation (stage 22 rev. 2).
+// Copy of orient.js rev. 2 with the changes of wait.js (stage 21): no superseding (every call pending on its own, a
+// fresh gesture answers the oldest), proprioceptive receptors r10 (waiting) and r11 (not waiting). proprio=false
+// keeps the circuit without r10/r11 (but still without superseding). No new constants.
+// Revision 2 (2026-10-30, after diag_scaffold.js): r10/r11 read the pending calls at the START of the step, so a call made
+// at this step was not yet felt: the next step could be driven by "not waiting" although the circuit had just called
+// (r11 drove 10-13 of 37-54 calls made while waiting). Proprioception is an efference copy: r10/r11 now take the state
+// at the END of the step, after this step's call, answer and expiry (they drive the next step as every receptor does).
+//
+// (Header of orient.js rev. 2 follows.)
+// Stage 22 (2026-10-30): the orienting response, given as an innate rule (user: run the experiments in order; first
+// (a), then (b) waiting, then (c) upbringing). Copy of partner.js rev. 3 (adopted; partner.js stays frozen).
+// Stage 21 (wait.js) showed that waiting cannot be learned when a unit that has left the untried state never tests a
+// contingency it has not tried. The given rule: at the step after a receptor switches ON (off two steps ago, on at the
+// previous step), each of its contingencies that is untried (confidence 0 and sediment 0) transmits, as a sample.
+// Sampled input ranks last in the selection (rev. 2), and confirmation and failure apply as usual. No habituation is
+// given: a contingency that failed stays untried and is tried again at the next onset. orient=false gives partner.js.
+// Revision 2 (after results-orient-rev1.json: the clock and noise receptors switch on every few steps, so their untried
+// contingencies into m3 were tried at every onset, the circuit called at about half of all steps whether anyone answered
+// or not, and live and replayed partners became indistinguishable): HABITUATION of the orienting response (Sokolov).
+// Per contingency h (0..smax): a failure of an untried contingency (confidence 0, sediment 0) raises h by 1; an onset
+// orients only contingencies with h = 0; h falls by 1 for every `decay` consecutive steps that its receptor stays off
+// (recovery needs the stimulus to be absent, not just time). No new constants (smax 4, decay 8).
+//
+// (Header of partner.js rev. 3 follows.)
+// The partner as part of the world (2026-10-30, stage 20). Built on memory.js (copied, not imported, so that
+// memory.js stays frozen). The person who has the page open enters the circuit's world in two ways, never as a
+// judge: no reward, no rating, no target (M4 / P-01).
+//   * r9, a receptor that is on at a step where the partner made a gesture (any of 4 kinds). The circuit is not told
+//     what it is; it is one more numbered receptor.
+//   * m3, a third motor driven by a third core unit c3 (joined to c1 and c2 like they are joined to each other).
+//     m3 does not act on a patch: it CALLS. The call is answered when the partner gestures within W steps after it.
+// A call's answer is late, so its confirmation is deferred: at the call step the contingencies that would have been
+// confirmed had the call been answered at once are kept; a fresh answer within W steps confirms them by the usual
+// rule (with sediment); a call that expires, or is superseded by the next call, fails by the usual rule.
+// Digestion of an answer = the freshness of the gesture kind (0..5, +1 every FRESH steps, used up by the answer).
+// A kind repeated before it regrows does not answer: the same reply over and over leaves nothing to digest, just as
+// an emptied patch does not answer.
+// partner=false builds the circuit of memory.js exactly (same units, edges and order).
+// Revision 2 (after results-partner-rev1.json): selection ranks input by confident contingencies first, then by
+// sedimented ones (a habit whose confidence has dissipated), then sampled input. In rev. 1 (and memory.js) habit-only
+// input ranked like sampled input, so an untried m3 sampling many receptors beat m2 whose inputs were sediment-only
+// (seed 2, step 251 of the nursery); m2 then never acted again and m3 called into an absent world for good.
+// Revision 3 (after results-partner-rev2.json: no harm, but not one call in the world in any seed or condition, since
+// a patch motor is a candidate at every step and always outranks an untried m3): the call is a separate channel
+// (voice) from foraging (hands). "One action per step" (stage 12, option A) was introduced for the competition of
+// patch actions for digestion capacity, and a call digests nothing from the patches, so the selection runs among
+// the patch motors only and m3 acts whenever its input reaches threshold, alongside them.
+const P = { smax: 4, decay: 8, window: 5, capacity: 5, cap: 50, W: 10, FRESH: 20, KINDS: 4 };
+function rng(seed) { return () => { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+// Receptor features of the world (the circuit is not told which is which). y = [yield1, yield2, gesture kind or 0].
+const FEATURES = [
+  ["y1>=3", (y) => y[0] >= 3], ["y2>=3", (y) => y[1] >= 3], ["y1==0", (y) => y[0] === 0], ["y2==0", (y) => y[1] === 0],
+  ["noise", (y, t, r) => r() < 0.5], ["clock3", (y, t) => t % 3 === 0], ["y1>y2", (y) => y[0] > y[1]], ["y2>y1", (y) => y[1] > y[0]],
+  ["partner", (y) => (y[2] || 0) > 0],
+  ["waiting", (y) => y[3] > 0], ["not waiting", (y) => y[3] === 0],
+];
+function newborn(partner = true, proprio = partner) {
+  const names = [], kind = [], feat = [], theta = [], patch = [], nr = partner ? (proprio ? 11 : 9) : 8;
+  for (let i = 0; i < nr; i++) { names.push("r" + (i + 1)); kind.push("R"); feat.push(i); theta.push(0); patch.push(0); }
+  (partner ? ["c1", "c2", "c3"] : ["c1", "c2"]).forEach(n => { names.push(n); kind.push("C"); feat.push(-1); theta.push(1); patch.push(0); });
+  (partner ? ["m1", "m2", "m3"] : ["m1", "m2"]).forEach((n, i) => { names.push(n); kind.push("M"); feat.push(-1); theta.push(2); patch.push(i + 1); });
+  const id = n => names.indexOf(n), edges = [], q0 = [];
+  const add = (a, b, q) => { edges.push([id(a), id(b), 1]); q0.push(q); };
+  add("c1", "c1", 4); add("c2", "c2", 4); add("c1", "c2", 4); add("c2", "c1", 4);
+  if (partner) { add("c3", "c3", 4); add("c1", "c3", 4); add("c3", "c1", 4); add("c2", "c3", 4); add("c3", "c2", 4); }
+  const pairs = partner ? [["c1", "m1"], ["c2", "m2"], ["c3", "m3"]] : [["c1", "m1"], ["c2", "m2"]];
+  for (const [c, m] of pairs) { add(c, m, 0); for (let i = 0; i < nr; i++) add("r" + (i + 1), m, 0); }
+  return { names, kind, feat, theta, patch, edges, q0, initial: names.map(n => n[0] === "c") };
+}
+function init(b) { return { active: b.initial.slice(), q: b.q0.slice(), sg: b.q0.map(() => 0), h: b.q0.map(() => 0), off: b.names.map(() => 0), t: 0, pend: [], fresh: new Array(P.KINDS).fill(5) }; }
+const S = P.smax;
+function allocate(offer) { const d = [0, 0]; let left = P.capacity; for (const i of [0, 1].filter(i => offer[i] > 0).sort((i, j) => (offer[j] - offer[i]) || (i - j))) { d[i] = Math.min(offer[i], left); left -= d[i]; } return d; }
+// opts: { explore=true, fail=true, memory=true, sil:Set, noise: rng }
+function step(st, b, y, opts) {
+  const explore = opts.explore !== false, fail = opts.fail !== false, sil = opts.sil || new Set();
+  const n = b.names.length, old = st.active, ins = u => b.edges.map((e, k) => e[1] === u ? k : -1).filter(k => k >= 0);
+  const ys = [y[0], y[1], y[2] || 0, st.pend.length > 0 ? 1 : 0];
+  const mem = opts.memory !== false, now = st.t + 1, orient = opts.orient !== false, prev = st.prev || old;
+  const onset = b.names.map((_, u) => orient && b.kind[u] === "R" && old[u] && !prev[u]);
+  const stale = b.names.map((_, u) => explore && b.kind[u] !== "R" && ins(u).length > 0 && ins(u).every(k => st.q[k] === 0 && (!mem || st.sg[k] === 0)));
+  const total = new Array(n).fill(0), conf = new Array(n).fill(0), habit = new Array(n).fill(0), drove = new Array(b.edges.length).fill(false);
+  b.edges.forEach(([a, c, w], k) => { if ((st.q[k] >= 1 || (mem && st.sg[k] >= 1) || stale[c] || (onset[a] && st.q[k] === 0 && st.sg[k] === 0 && st.h[k] === 0)) && old[a] && !sil.has(a)) { total[c] += w; if (st.q[k] >= 1) conf[c] += w; else if (mem && st.sg[k] >= 1) habit[c] += w; drove[k] = true; } });
+  const nw = new Array(n);
+  for (let u = 0; u < n; u++) {
+    if (b.kind[u] === "R") nw[u] = FEATURES[b.feat[u]][1](ys, now, opts.noise);
+    else nw[u] = total[u] >= b.theta[u];
+  }
+  const motors = b.names.map((_, u) => u).filter(u => b.kind[u] === "M");
+  const cand = motors.filter(m => nw[m] && b.patch[m] <= 2);
+  if (cand.length > 1) {
+    const key = m => conf[m] * 1e6 + habit[m] * 1e3 + total[m];
+    const best = Math.max(...cand.map(key)), tied = cand.filter(m => key(m) === best), prev = tied.filter(m => old[m]);
+    const win = (prev.length ? prev : tied).sort((a, c) => b.patch[a] - b.patch[c])[0];
+    for (const m of cand) if (m !== win) nw[m] = false;
+  }
+  const acting = motors.filter(m => nw[m] && !sil.has(m));
+  const onPatch = acting.filter(m => b.patch[m] <= 2), call = acting.find(m => b.patch[m] === 3);
+  const offer = [0, 0]; for (const m of onPatch) offer[b.patch[m] - 1] = y[b.patch[m] - 1];
+  const d = allocate(offer), answered = new Map(onPatch.map(m => [m, d[b.patch[m] - 1] > 0]));
+  const gate = d[0] + d[1] > 0 && [...answered.values()].every(Boolean);
+  const ok = u => b.kind[u] !== "M" || answered.get(u) === true;
+  const confirmed = b.edges.map(([a, c], k) => drove[k] && nw[c] && gate && ok(a) && ok(c));
+  const grow = k => { if (st.q[k] < P.smax) { st.q[k] = Math.min(P.smax, st.q[k] + 1 + (mem ? st.sg[k] : 0)); if (mem && st.q[k] === P.smax) st.sg[k] = Math.min(S, st.sg[k] + 1); } };
+  const weaken = k => { if (st.q[k] === 0 && st.sg[k] === 0) st.h[k] = Math.min(P.smax, st.h[k] + 1);
+    if (st.q[k] > 0 || !mem) st.q[k] = Math.max(st.q[k] - 1, 0); else st.sg[k] = Math.max(st.sg[k] - 1, 0); };
+  confirmed.forEach((c, k) => { if (c) grow(k); });
+  if (fail) for (const m of onPatch) if (!answered.get(m)) b.edges.forEach(([a, c], k) => { if (c === m && b.kind[a] === "R" && drove[k] && !confirmed[k]) weaken(k); });
+  // The partner's answer: a fresh gesture answers the oldest call still pending (made at an earlier step, within W).
+  let callAnswered = false, callFailed = 0;
+  const g = y[2] || 0;
+  if (g > 0 && st.fresh[g - 1] >= 1) {
+    const i = st.pend.findIndex(p => p.t < now && now - p.t <= P.W);
+    if (i >= 0) { st.fresh[g - 1] = 0; callAnswered = true; for (const k of st.pend[i].E) if (!confirmed[k]) { grow(k); confirmed[k] = true; } st.pend.splice(i, 1); }
+  }
+  const failCall = p => { callFailed++; if (fail) for (const k of p.R) if (!confirmed[k]) weaken(k); };
+  st.pend = st.pend.filter(p => { if (now - p.t >= P.W) { failCall(p); return false; } return true; });
+  if (call !== undefined) {
+    const okc = u => b.kind[u] !== "M" || u === call;
+    st.pend.push({ t: now, E: b.edges.map(([a, c], k) => (drove[k] && nw[c] && okc(a) && okc(c)) ? k : -1).filter(k => k >= 0),
+                   R: b.edges.map(([a, c], k) => (c === call && b.kind[a] === "R" && drove[k]) ? k : -1).filter(k => k >= 0) });
+  }
+  b.names.forEach((_, u) => { if (b.kind[u] === "R" && b.feat[u] >= 9) nw[u] = FEATURES[b.feat[u]][1]([0, 0, 0, st.pend.length > 0 ? 1 : 0], now); });
+  if (now % P.FRESH === 0) st.fresh = st.fresh.map(f => Math.min(5, f + 1));
+  if (now % P.decay === 0) confirmed.forEach((c, k) => { if (!c) st.q[k] = Math.max(st.q[k] - 1, 0); });
+  b.names.forEach((_, u) => { if (b.kind[u] !== "R") return; st.off[u] = nw[u] ? 0 : st.off[u] + 1;
+    if (st.off[u] > 0 && st.off[u] % P.decay === 0) b.edges.forEach(([a], k) => { if (a === u && st.h[k] > 0) st.h[k]--; }); });
+  st.prev = old; st.active = nw; st.t = now;
+  return { acting, d, gate, answered, call: call !== undefined, callWhileWaiting: call !== undefined && ys[3] > 0, callAnswered, callFailed };
+}
+function form(win, b) {
+  const U = new Set(); for (const w of win) w.active.forEach((a, u) => { if (a && b.kind[u] !== "R") U.add(u); });
+  const q = win[win.length - 1].q, adj = new Map([...U].map(u => [u, b.edges.map((e, k) => (e[0] === u && U.has(e[1]) && q[k] >= 1) ? e[1] : -1).filter(v => v >= 0)]));
+  const col = new Map([...U].map(u => [u, 0]));
+  const dfs = u => { col.set(u, 1); for (const v of adj.get(u)) { if (col.get(v) === 1) return true; if (col.get(v) === 0 && dfs(v)) return true; } col.set(u, 2); return false; };
+  for (const u of U) if (col.get(u) === 0 && dfs(u)) return true; return false;
+}
+
+
+// ---- World and life loop, v3 (stages 22-25: orienting with habituation, waiting, proprioception; turn.js rev. 2) ----
+// Concatenated after turn.js (without its module.exports) by build_turn.js. Copy of life_partner.js (v2) with: the
+// state of turn.js (pending calls as a list, habituation h, off-run counters, previous activity), migration from v1 and
+// v2, and the share of calls made while waiting in the statistics.
+const CAP = 50;
+const NURSERY = 400, SCHOOL = 400, BLOCK = 300, MAXGAP = 200;
+const season = t => { const c = ((t - 1) % 1000) + 1; return c <= 300 ? [3, 2] : c <= 600 ? [0, 5] : [5, 0]; };
+const ORIG_FEATURES = FEATURES.slice();
+function applyReversal(rev) {
+  FEATURES.splice(0, FEATURES.length, ...ORIG_FEATURES);
+  if (rev % 2 === 1) for (const [i, j] of [[0, 1], [2, 3], [6, 7]]) { const a = FEATURES[i]; FEATURES[i] = FEATURES[j]; FEATURES[j] = a; }
+}
+const emptyStats = () => ({ live: { steps: 0, calls: 0, answered: 0, gestures: 0, waiting: 0 }, replay: { steps: 0, calls: 0, answered: 0, gestures: 0, waiting: 0 } });
+function freshPartner() { return { mode: "live", rec: [], rp: null, brng: 777, bcond: "live", bnext: 0, stats: emptyStats(), ignored: 0 }; }
+function freshLife() {
+  const b = newborn(true), st = init(b);
+  return { v: 3, age: 0, wt: 0, R: [CAP, CAP], active: st.active, q: st.q, sg: st.sg, h: st.h, off: st.off, prev: st.active.slice(), rng: 20261030, reversals: 0, stasisUntil: 0,
+           hist: { sediment: [], unans: [], savings: [], calls: [] }, unansWindow: 0, callWindow: [0, 0], lastAct: {}, open: null,
+           pend: null, fresh: st.fresh, partner: freshPartner(), born: Date.now() };
+}
+// A being saved by an earlier version keeps everything it has sedimented; units and contingencies it did not have are new
+// (v1: r9-r11, c3, m3; v2: r10, r11). Pending calls are dropped, the partner record and statistics are kept.
+function migrate(old) {
+  const bo = old.v === 2 ? newborn(true, false) : newborn(false), bn = newborn(true), L = freshLife();
+  const name = (b, k) => b.names[b.edges[k][0]] + ">" + b.names[b.edges[k][1]];
+  const oldK = new Map(bo.edges.map((_, k) => [name(bo, k), k]));
+  bn.edges.forEach((_, k) => { const j = oldK.get(name(bn, k)); if (j !== undefined) { L.q[k] = old.q[j]; L.sg[k] = old.sg[j]; } });
+  L.active = bn.names.map((n, u) => { const j = bo.names.indexOf(n); return j >= 0 ? old.active[j] : bn.initial[u]; });
+  const idx = u => bn.names.indexOf(bo.names[u]);
+  L.lastAct = Object.fromEntries(Object.entries(old.lastAct || {}).map(([u, a]) => [idx(+u), a]));
+  L.open = old.open ? { ...old.open, m: idx(old.open.m) } : null;
+  for (const f of ["age", "wt", "R", "rng", "reversals", "stasisUntil", "unansWindow", "born", "speed", "savedAt"]) if (old[f] !== undefined) L[f] = old[f];
+  L.prev = L.active.slice();
+  L.hist = { ...old.hist, calls: old.hist.calls || [] }; L.migratedAt = old.age; L.migratedFrom = old.v || 1;
+  if (old.v === 2) { L.fresh = old.fresh.slice(); L.callWindow = old.callWindow || [0, 0]; L.partner = { ...freshPartner(), ...old.partner, stats: emptyStats() }; L.firstMigratedAt = old.migratedAt; }
+  return L;
+}
+function makeLife(saved) {
+  const L = !saved ? freshLife() : saved.v === 3 ? saved : migrate(saved);
+  const b = newborn(true);
+  const st = { active: L.active.slice(), q: L.q.slice(), sg: L.sg.slice(), h: L.h.slice(), off: L.off.slice(), prev: L.prev.slice(), t: L.age, pend: L.pend || [], fresh: L.fresh.slice() };
+  applyReversal(L.reversals);
+  const noise = () => { L.rng = (L.rng + 0x6D2B79F5) | 0; let t = Math.imul(L.rng ^ (L.rng >>> 15), 1 | L.rng); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  const brand = () => { const p = L.partner; p.brng = (p.brng + 0x6D2B79F5) | 0; let t = Math.imul(p.brng ^ (p.brng >>> 15), 1 | p.brng); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  const win = [], queue = [];
+  const recIn = m => b.edges.map((e, k) => (e[1] === m && b.kind[e[0]] === "R") ? k : -1).filter(k => k >= 0);
+  let last = null, counting = false;
+  function phase() { return L.age < NURSERY ? "nursery" : L.age < NURSERY + SCHOOL ? "school" : "world"; }
+  // Which partner the circuit meets at this step: the person (live) or the record of the person's past gestures (replay).
+  function condition(now) {
+    const p = L.partner;
+    if (p.mode !== "blind") return p.mode;
+    if (now >= p.bnext) { p.bcond = brand() < 0.5 ? "live" : "replay"; p.bnext = now + BLOCK; p.rp = null; }
+    return p.bcond;
+  }
+  function replayGesture() {
+    const p = L.partner, rec = p.rec;
+    if (rec.length < 3) return 0;
+    if (!p.rp) p.rp = { j: 0, wait: 1 };
+    if (--p.rp.wait > 0) return 0;
+    const j = p.rp.j, g = rec[j][1], nj = (j + 1) % rec.length;
+    p.rp = { j: nj, wait: nj === 0 ? 50 : Math.max(1, Math.min(MAXGAP, rec[nj][0] - rec[j][0])) };
+    return g;
+  }
+  function live(n) {
+    for (let i = 0; i < n; i++) {
+      const ph = phase(), now = L.age + 1, p = L.partner; let y, inWorld = ph === "world";
+      if (ph === "nursery") y = [[5, 0], [0, 5]][Math.floor(L.age / 50) % 2].slice();
+      else if (ph === "school") y = [[5, 2], [2, 5]][Math.floor((L.age - NURSERY) / 15) % 2].slice();
+      else { y = L.age < L.stasisUntil ? [0, 0] : [Math.min(L.R[0], 5), Math.min(L.R[1], 5)]; }
+      const cond = condition(now); let g = 0;
+      if (cond === "live") { g = queue.length ? queue.shift() : 0; if (g) { p.rec.push([now, g]); if (p.rec.length > 2000) p.rec.shift(); } }
+      else { if (queue.length) { p.ignored += queue.length; queue.length = 0; } g = replayGesture(); }
+      y.push(g);
+      const before = st.q.slice();
+      const o = step(st, b, y, { noise });
+      L.age = st.t;
+      if (inWorld) {
+        L.wt++;
+        const gr = L.age <= L.stasisUntil ? [0, 0] : season(L.wt);
+        L.R = [0, 1].map(k => Math.min(CAP, L.R[k] - o.d[k] + gr[k]));
+      }
+      win.push({ active: st.active.slice(), q: st.q.slice() }); if (win.length > P.window) win.shift();
+      for (const m of o.acting) {
+        if (b.patch[m] > 2) continue;
+        const ans = o.answered.get(m); if (!ans) L.unansWindow++;
+        const gap = L.lastAct[m] === undefined ? Infinity : L.age - L.lastAct[m];
+        if (ans && gap >= 32 && !L.open) L.open = { m, conf: 0, age: L.age };
+        L.lastAct[m] = L.age;
+      }
+      if (L.open) {
+        const ks = recIn(L.open.m);
+        if (ks.some(k => st.q[k] > before[k])) L.open.conf++;
+        if (ks.some(k => st.q[k] >= P.smax) || L.open.conf > 20) { L.hist.savings.push([L.open.age, L.open.conf]); if (L.hist.savings.length > 300) L.hist.savings.shift(); L.open = null; }
+      }
+      if (o.call) L.callWindow[0]++; if (o.callAnswered) L.callWindow[1]++;
+      if (counting) { const s = p.stats[cond]; s.steps++; if (o.call) s.calls++; if (o.callWhileWaiting) s.waiting++; if (o.callAnswered) s.answered++; if (g) s.gestures++; }
+      if (L.age % 100 === 0) {
+        L.hist.sediment.push([L.age, st.sg.reduce((a, c) => a + c, 0)]); if (L.hist.sediment.length > 600) L.hist.sediment.shift();
+        L.hist.calls.push([L.age, L.callWindow[0], L.callWindow[1]]); L.callWindow = [0, 0]; if (L.hist.calls.length > 600) L.hist.calls.shift();
+      }
+      if (L.age % 1000 === 0) { L.hist.unans.push([L.age, L.unansWindow]); L.unansWindow = 0; if (L.hist.unans.length > 300) L.hist.unans.shift(); }
+      const pa = o.acting.filter(m => b.patch[m] <= 2);
+      last = { y, acting: pa.map(m => b.patch[m]), answered: pa.map(m => o.answered.get(m)), call: o.call, callAnswered: o.callAnswered,
+               callFailed: o.callFailed, callWhileWaiting: o.callWhileWaiting, gesture: g, cond, formed: form(win, b), phase: ph };
+    }
+    L.active = st.active.slice(); L.q = st.q.slice(); L.sg = st.sg.slice(); L.h = st.h.slice(); L.off = st.off.slice(); L.prev = st.prev.slice();
+    L.pend = st.pend; L.fresh = st.fresh.slice();
+    return last;
+  }
+  function snapshot(reveal) {
+    const p = L.partner, hide = p.mode === "blind" && !reveal;
+    return { age: L.age, wt: L.wt, R: L.R.slice(), q: st.q.slice(), sg: st.sg.slice(), active: st.active.slice(), reversals: L.reversals,
+             stasis: L.age < L.stasisUntil, last: last && hide ? { ...last, cond: null } : last, phase: phase(), hist: L.hist,
+             edges: b.edges.map(e => [b.names[e[0]], b.names[e[1]]]), names: b.names, born: L.born, migratedAt: L.migratedAt,
+             pend: st.pend.length ? { left: P.W - (L.age - st.pend[0].t), n: st.pend.length } : null, fresh: st.fresh.slice(), h: st.h.slice(),
+             partner: { mode: p.mode, rec: p.rec.length, ignored: p.ignored, stats: hide ? null : p.stats } };
+  }
+  return { L, b, st, live, snapshot, queue, setCounting(on) { counting = on; },
+           gesture(k) { if (k >= 1 && k <= P.KINDS && queue.length < 4) queue.push(k); },
+           setMode(m) { const p = L.partner; if (p.mode === m) return; p.mode = m; p.rp = null; p.bnext = 0; },
+           clearStats() { L.partner.stats = emptyStats(); L.partner.ignored = 0; },
+           reverse() { L.reversals++; applyReversal(L.reversals); }, stasis(n) { L.stasisUntil = L.age + n; } };
+}
+
+
+</script>
+<script>
+(() => {
+  const $ = id => document.getElementById(id), css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const ENGINE = $("engine").textContent;
+  const local = new Function(ENGINE + "; return { makeLife, freshLife, FEATURES, ORIG_FEATURES };")();
+  let reveal = false;
+  const MEANINGS = local.ORIG_FEATURES.map(f => f[0]);
+  const tabId = Math.random().toString(36).slice(2);
+  let worker = null, snap = null, running = true, db = null, mode = "starting", lastSaved = 0, saveMsg = "準備中";
+
+  const workerSrc = ENGINE + `
+    let life = null, speed = 5, run = true, acc = 0;
+    onmessage = e => { const m = e.data;
+      if (m.cmd === "init") { life = makeLife(m.saved); speed = (m.saved && m.saved.speed) || speed; if (m.catchup > 0) life.live(m.catchup); postMessage({ type: "ready", caught: m.catchup || 0, speed }); }
+      if (m.cmd === "speed") speed = m.v;
+      if (m.cmd === "run") run = m.on;
+      if (m.cmd === "reverse") life.reverse();
+      if (m.cmd === "stasis") life.stasis(60);
+      if (m.cmd === "reset") life = makeLife(null);
+      if (m.cmd === "save") postMessage({ type: "save", L: JSON.parse(JSON.stringify({ ...life.L, speed })) });
+      if (m.cmd === "gesture") life.gesture(m.k);
+      if (m.cmd === "mode") life.setMode(m.v);
+      if (m.cmd === "visible") life.setCounting(m.on);
+      if (m.cmd === "reveal") reveal = m.on;
+      if (m.cmd === "clearStats") life.clearStats();
+    };
+    let reveal = false;
+    setInterval(() => { if (!life || !run) return; acc += speed / 10; const n = Math.floor(acc); if (n > 0) { acc -= n; life.live(n); } }, 100);
+    setInterval(() => { if (life) postMessage({ type: "snap", snap: life.snapshot(reveal) }); }, 120);
+  `;
+
+  function startWorker(saved, catchup) {
+    worker = new Worker(URL.createObjectURL(new Blob([workerSrc], { type: "text/javascript" })));
+    worker.onmessage = e => {
+      const m = e.data;
+      if (m.type === "snap") { snap = m.snap; render(); }
+      if (m.type === "ready") { $("speed").value = m.speed; $("speedv").textContent = m.speed; if (m.caught) saveMsg = `閉じていた間の ${m.caught.toLocaleString()} 歩を追いつき計算しました`; worker.postMessage({ cmd: "visible", on: document.visibilityState === "visible" }); }
+      if (m.type === "save") persist(m.L);
+    };
+    worker.postMessage({ cmd: "init", saved, catchup });
+  }
+
+  async function persist(L) {
+    L.savedAt = Date.now();
+    try { localStorage.setItem("being-state", JSON.stringify(L)); } catch (e) {}
+    if (db && mode === "owner") {
+      try { await db.doc("being/state").set(L); lastSaved = Date.now(); saveMsg = "保存済み"; }
+      catch (e) { saveMsg = e && e.code === "quota_exceeded" ? "保存の容量が一杯です" : "保存できず（このブラウザには保存）"; }
+    } else { lastSaved = Date.now(); saveMsg = db ? "見るだけ" : "このブラウザだけに保存"; }
+  }
+  const requestSave = () => worker && mode !== "observer" && worker.postMessage({ cmd: "save" });
+
+  async function boot() {
+    const timeout = new Promise(r => setTimeout(() => r(null), 4000));
+    try { db = await Promise.race([window.claude?.use ? window.claude.use("db") : Promise.resolve(null), timeout]); } catch (e) { db = null; }
+    let saved = null;
+    if (db) {
+      try {
+        const lease = await db.doc("being/lock").acquire({ holder: tabId, ttlMs: 60000 });
+        if (!lease.acquired) { mode = "observer"; return observe(); }
+        mode = "owner";
+        setInterval(() => db.doc("being/lock").acquire({ holder: tabId, ttlMs: 60000 }).catch(() => {}), 30000);
+        const d = await db.doc("being/state").get(); if (d.exists) saved = JSON.parse(JSON.stringify(d.data()));
+      } catch (e) { mode = "local"; }
+    } else mode = "local";
+    if (!saved) { try { const t = localStorage.getItem("being-state"); if (t) saved = JSON.parse(t); } catch (e) {} }
+    let catchup = 0;
+    if (saved && saved.savedAt) catchup = Math.min(50000, Math.floor(((Date.now() - saved.savedAt) / 1000) * (saved.speed || 5)));
+    startWorker(saved, catchup);
+    setInterval(requestSave, 60000);
+  }
+  function observe() {
+    saveMsg = "別のタブで生きています（見るだけ）";
+    ["run", "stasis", "reverse", "reset", "speed"].forEach(id => $(id).disabled = true);
+    document.querySelectorAll(".pad button, input[name=mode]").forEach(e => e.disabled = true);
+    db.doc("being/state").onSnapshot(d => { if (!d.exists) return; const life = local.makeLife(JSON.parse(JSON.stringify(d.data()))); snap = life.snapshot(); render(); }, () => {});
+  }
+
+  // ---- rendering ----
+  const phaseName = { nursery: "保育期", school: "学校期", world: "世界" };
+  function meaning(i) { if (i === 8) return "あなたの身ぶり"; if (i === 9) return "自分：答えを待っている"; if (i === 10) return "自分：待っていない"; const swap = { 0: 1, 1: 0, 2: 3, 3: 2, 6: 7, 7: 6 }; const j = snap && snap.reversals % 2 === 1 && swap[i] !== undefined ? swap[i] : i; return MEANINGS[j]; }
+  function render() {
+    if (!snap) return;
+    $("vAge").textContent = snap.age.toLocaleString();
+    $("vPhase").textContent = phaseName[snap.phase] + (snap.stasis ? "（停止中）" : "");
+    $("vSed").textContent = snap.sg.reduce((a, c) => a + c, 0);
+    $("vRev").textContent = snap.reversals;
+    $("vSave").textContent = saveMsg + (lastSaved ? `・${Math.round((Date.now() - lastSaved) / 1000)}秒前` : "");
+    drawWorld(); drawMem(); drawStatus(); drawYou();
+    drawCalls($("cCall"), snap.hist.calls || []);
+    drawLine($("cSed"), snap.hist.sediment, css("--sed"), "line");
+    drawLine($("cSav"), snap.hist.savings, css("--p1"), "dots");
+    drawLine($("cUn"), snap.hist.unans, css("--bad"), "bars");
+  }
+  const NS = "http://www.w3.org/2000/svg";
+  function el(t, a, p) { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); p.appendChild(e); return e; }
+  function drawWorld() {
+    const svg = $("world"); svg.innerHTML = "";
+    const act = snap.last && snap.last.acting.length ? snap.last.acting[0] : 0;
+    const y = snap.last ? snap.last.y : [0, 0];
+    [0, 1].forEach(i => {
+      const x = 50 + i * 170, top = 30, h = 150, w = 90, c = css(i ? "--p2" : "--p1");
+      el("rect", { x, y: top, width: w, height: h, rx: 6, fill: css("--panel"), stroke: css("--line"), "stroke-width": 1.5 }, svg);
+      const val = snap.phase === "world" ? snap.R[i] : y[i] * 10, fh = (h * val) / 50;
+      el("rect", { x: x + 4, y: top + h - fh + 2, width: w - 8, height: Math.max(0, fh - 6), rx: 3, fill: c, opacity: .85 }, svg);
+      const t = el("text", { x: x + w / 2, y: top - 10, "text-anchor": "middle", "font-size": 13, fill: css("--ink"), "font-family": css("--f-body"), "font-weight": 700 }, svg); t.textContent = `区画${i + 1}`;
+      const v = el("text", { x: x + w / 2, y: top + h + 20, "text-anchor": "middle", "font-size": 12, fill: css("--muted"), "font-family": css("--f-mono") }, svg); v.textContent = `収量 ${y[i]}`;
+      if (act === i + 1) el("rect", { x: x - 6, y: top - 6, width: w + 12, height: h + 12, rx: 9, fill: "none", stroke: css("--act"), "stroke-width": 3 }, svg);
+    });
+  }
+  function drawStatus() {
+    const box = $("status"); box.innerHTML = "";
+    const chip = (t, c) => { const s = document.createElement("span"); s.className = "chip " + (c || ""); s.textContent = t; box.appendChild(s); };
+    const l = snap.last;
+    if (!l) return;
+    chip(l.formed ? "形あり" : "形を失っている", l.formed ? "ok" : "bad");
+    if (l.acting.length) chip(`区画${l.acting[0]}で行為 ${l.answered[0] ? "答えあり" : "答えなし"}`, l.answered[0] ? "act" : "bad"); else chip("行為なし");
+  }
+  function drawMem() {
+    const t = $("mem"); t.innerHTML = "";
+    const head = t.insertRow(); head.insertCell().outerHTML = "<th></th>"; ["m1 → 区画1", "m2 → 区画2", "m3 → あなた"].forEach(h => { const th = document.createElement("th"); th.textContent = h; head.appendChild(th); });
+    const rows = snap.names.filter(n => n.startsWith("r")).concat(["core"]);
+    const obs = $("observer").checked;
+    rows.forEach(r => {
+      const tr = t.insertRow(); const th = document.createElement("th");
+      th.textContent = r === "core" ? "核 c" : obs ? `${r}  ${meaning(+r.slice(1) - 1)}` : r; tr.appendChild(th);
+      ["m1", "m2", "m3"].forEach(m => {
+        const src = r === "core" ? "c" + m.slice(1) : r;
+        const k = snap.edges.findIndex(([a, b]) => a === src && b === m);
+        const td = tr.insertCell(); const q = snap.q[k], sg = snap.sg[k];
+        const f = document.createElement("div"); f.className = "cellq"; f.style.opacity = q ? 0.15 + q * 0.2 : 0; td.appendChild(f);
+        const dots = document.createElement("div"); dots.className = "cells"; for (let i = 0; i < sg; i++) dots.appendChild(document.createElement("i")); td.appendChild(dots);
+        td.title = `${src}→${m} 確かさ ${q} 沈殿 ${sg}`;
+      });
+    });
+  }
+  let lastCallAge = -99, lastAnsAge = -99;
+  function drawYou() {
+    const l = snap.last; if (!l) return;
+    if (l.call) lastCallAge = snap.age; if (l.callAnswered) lastAnsAge = snap.age;
+    const dot = $("lamp"), recent = snap.age - lastCallAge <= 1, ans = snap.age - lastAnsAge <= 3;
+    dot.className = "dot" + (ans ? " ans" : recent ? " on" : "");
+    const t = ans ? "答えが届いた" : snap.pend ? (snap.pend.n > 1 ? `呼びかけている（${snap.pend.n} 件が答え待ち）` : "呼びかけている") : "静か";
+    const sub = ans ? "あなたの身ぶりで、取っておいた予測が確かめられた" : snap.pend ? `いちばん古い呼びかけの残り ${Math.max(0, snap.pend.left)} 歩` : "いまは呼びかけていない";
+    $("lampTxt").innerHTML = ""; const b = document.createElement("b"); b.textContent = t; $("lampTxt").append(b, sub);
+    $("pendBar").style.width = snap.pend ? `${(100 * Math.max(0, snap.pend.left)) / 10}%` : "0";
+    document.querySelectorAll(".pad button").forEach(btn => { const k = +btn.dataset.k; btn.querySelector("small").textContent = `${k}・新しさ ${snap.fresh[k - 1]}`; });
+    const p = snap.partner, box = $("statBox"); box.innerHTML = "";
+    const info = document.createElement("div"); info.className = "legend";
+    info.textContent = `記録した身ぶり ${p.rec} 件` + (p.ignored ? `・流し直し中に届かなかった身ぶり ${p.ignored} 件` : "") + (p.mode === "blind" && !reveal ? "・盲検中（いまの条件は伏せている）" : l.cond ? `・いまの条件：${l.cond === "live" ? "生" : "流し直し"}` : "");
+    box.appendChild(info);
+    if (p.mode === "replay" && p.rec < 3) { const w = document.createElement("div"); w.className = "legend"; w.textContent = "流し直すには、生の時間に身ぶりを3件以上記録する必要があります。"; box.appendChild(w); }
+    if (p.stats) {
+      const tb = document.createElement("table"); tb.className = "st";
+      tb.innerHTML = "<tr><th>条件</th><th>見ていた歩数</th><th>呼びかけ/100歩</th><th>答えられた割合</th><th>待っている間の呼びかけ</th><th>届いた身ぶり</th></tr>";
+      for (const [c, n] of [["live", "生"], ["replay", "流し直し"]]) { const x = p.stats[c], tr = tb.insertRow();
+        [n, x.steps.toLocaleString(), x.steps ? (100 * x.calls / x.steps).toFixed(1) : "–", x.calls ? (x.answered / x.calls).toFixed(3) : "–", x.calls ? ((x.waiting || 0) / x.calls).toFixed(3) : "–", x.gestures].forEach(v => { tr.insertCell().textContent = v; }); }
+      box.appendChild(tb);
+    }
+    const bar = document.createElement("div"); bar.className = "modes";
+    if (p.mode === "blind") { const rb = document.createElement("button"); rb.textContent = reveal ? "結果を伏せる" : "結果を見る"; rb.onclick = () => { reveal = !reveal; worker && worker.postMessage({ cmd: "reveal", on: reveal }); }; bar.appendChild(rb); }
+    const cb = document.createElement("button"); cb.textContent = "集計を消す"; cb.onclick = () => worker && worker.postMessage({ cmd: "clearStats" }); bar.appendChild(cb);
+    box.appendChild(bar);
+    const radio = document.querySelector(`input[name=mode][value=${p.mode}]`); if (radio && !radio.checked) radio.checked = true;
+  }
+  function drawCalls(cv, pts) {
+    const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr;
+    const c = cv.getContext("2d"); c.scale(dpr, dpr); c.clearRect(0, 0, W, H);
+    c.font = `11px ${css("--f-mono")}`; c.fillStyle = css("--muted");
+    if (!pts.length) { c.fillText("まだ記録がありません", 8, H / 2); return; }
+    const x0 = pts[0][0], x1 = Math.max(pts[pts.length - 1][0], x0 + 1), X = v => 34 + ((W - 44) * (v - x0)) / (x1 - x0), Y = v => H - 18 - ((H - 30) * v) / 100;
+    c.strokeStyle = css("--line"); c.beginPath(); c.moveTo(34, Y(0)); c.lineTo(W - 8, Y(0)); c.stroke();
+    c.fillText("100", 4, Y(100) + 4); c.fillText("0", 4, Y(0) + 4);
+    c.fillText(x0.toLocaleString(), 34, H - 3); const lab = x1.toLocaleString() + " 歩"; c.fillText(lab, W - 8 - c.measureText(lab).width, H - 3);
+    const bw = Math.max(1.5, Math.min(4, (W - 44) / pts.length - 0.5));
+    c.fillStyle = css("--act"); pts.forEach(p => c.fillRect(X(p[0]) - bw / 2, Y(p[1]), bw, Y(0) - Y(p[1])));
+    c.fillStyle = css("--p2"); pts.forEach(p => { const h = Math.max(p[2] ? 3 : 0, Y(0) - Y(p[2])); c.fillRect(X(p[0]) - bw / 2, Y(0) - h, bw, h); });
+  }
+  function drawLine(cv, pts, color, kind) {
+    const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr;
+    const c = cv.getContext("2d"); c.scale(dpr, dpr); c.clearRect(0, 0, W, H);
+    c.font = `11px ${css("--f-mono")}`; c.fillStyle = css("--muted");
+    if (!pts.length) { c.fillText("まだ記録がありません", 8, H / 2); return; }
+    const x0 = pts[0][0], x1 = Math.max(pts[pts.length - 1][0], x0 + 1), ymax = Math.max(4, ...pts.map(p => p[1]));
+    const X = v => 34 + ((W - 44) * (v - x0)) / (x1 - x0), Y = v => H - 18 - ((H - 30) * v) / ymax;
+    c.strokeStyle = css("--line"); c.beginPath(); c.moveTo(34, Y(0)); c.lineTo(W - 8, Y(0)); c.stroke();
+    c.fillText(String(ymax), 4, Y(ymax) + 4); c.fillText("0", 4, Y(0) + 4);
+    c.fillText(x0.toLocaleString(), 34, H - 3); const lab = x1.toLocaleString() + " 歩"; c.fillText(lab, W - 8 - c.measureText(lab).width, H - 3);
+    c.strokeStyle = color; c.fillStyle = color; c.lineWidth = 2;
+    if (kind === "line") { c.beginPath(); pts.forEach((p, i) => i ? c.lineTo(X(p[0]), Y(p[1])) : c.moveTo(X(p[0]), Y(p[1]))); c.stroke(); }
+    if (kind === "dots") pts.forEach(p => { c.beginPath(); c.arc(X(p[0]), Y(Math.min(p[1], ymax)), 3, 0, 7); c.fill(); });
+    if (kind === "bars") pts.forEach(p => c.fillRect(X(p[0]) - 2, Y(p[1]), 4, Y(0) - Y(p[1])));
+  }
+
+  $("run").onclick = () => { running = !running; worker && worker.postMessage({ cmd: "run", on: running }); $("run").textContent = running ? "一時停止" : "再開"; };
+  $("speed").oninput = () => { $("speedv").textContent = $("speed").value; worker && worker.postMessage({ cmd: "speed", v: +$("speed").value }); };
+  $("speed").onchange = requestSave;
+  $("stasis").onclick = () => worker && worker.postMessage({ cmd: "stasis" });
+  $("reverse").onclick = () => { worker && worker.postMessage({ cmd: "reverse" }); setTimeout(requestSave, 400); };
+  $("observer").onchange = render;
+  const flash = k => { const btn = document.querySelector(`.pad button[data-k="${k}"]`); if (!btn) return; btn.classList.add("flash"); setTimeout(() => btn.classList.remove("flash"), 160); };
+  const gesture = k => { if (mode === "observer" || !worker) return; worker.postMessage({ cmd: "gesture", k }); flash(k); };
+  document.querySelectorAll(".pad button").forEach(btn => btn.onclick = () => gesture(+btn.dataset.k));
+  addEventListener("keydown", e => { if (e.target.closest && e.target.closest("input, select, textarea")) return; if (/^[1-4]$/.test(e.key) && !e.repeat) gesture(+e.key); });
+  document.querySelectorAll("input[name=mode]").forEach(r => r.onchange = () => { if (r.checked && worker) { worker.postMessage({ cmd: "mode", v: r.value }); setTimeout(requestSave, 400); } });
+  $("reset").onclick = () => { $("resetAsk").hidden = false; $("reset").hidden = true; };
+  $("resetNo").onclick = () => { $("resetAsk").hidden = true; $("reset").hidden = false; };
+  $("resetYes").onclick = () => { $("resetAsk").hidden = true; $("reset").hidden = false; worker && worker.postMessage({ cmd: "reset" }); setTimeout(requestSave, 400); };
+  addEventListener("pagehide", requestSave);
+  document.addEventListener("visibilitychange", () => { worker && worker.postMessage({ cmd: "visible", on: document.visibilityState === "visible" }); if (document.visibilityState === "hidden") requestSave(); });
+  addEventListener("resize", render);
+  new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  boot();
+})();
+</script>

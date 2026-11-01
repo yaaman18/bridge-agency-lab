@@ -1,0 +1,12 @@
+ATTN_MODE = consolidate
+   DISAGREE omnivore                 label=(false, true, true) got=(false, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m1"])
+X1 templates-digest: 35/36
+X2/X4 world selfloop-pair-agent   form 1000/1000  stale m1 firing: [612]
+X2/X4 world agent                 form 1000/1000  stale m1 firing: [612]
+X2/X4 world triangle-agent        form 1000/1000  stale m1 firing: [612]
+X2/X4 world hub-agent             form 1000/1000  stale m1 firing: [612]
+X2/X4 world omnivore              form 726/1000  stale m1 firing: [329, 330, 331]
+X2/X4 world alternator            form 387/1000  stale m1 firing: [345, 347, 349]
+X2/X4 world reflex                form 726/1000  stale m1 firing: [329, 330, 331]
+X3 random agents with direction: 41
+X5 worst: 0/11

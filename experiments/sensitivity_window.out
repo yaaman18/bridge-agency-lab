@@ -1,0 +1,2 @@
+selfloop-pair-agent   s1|silence m1: +0.23 (deaths 11/27)   s2|silence m1: -0.06 (deaths 11/27)   s1|silence m2: +0.00 (deaths 0/27)   s2|silence m2: +0.43 (deaths 0/27)   
+static-agent          s1|silence m1: +0.23 (deaths 9/27)   s2|silence m1: -0.06 (deaths 9/27)   s1|silence m2: +0.00 (deaths 0/27)   s2|silence m2: +0.43 (deaths 0/27)   

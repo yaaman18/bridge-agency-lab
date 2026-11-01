@@ -1,0 +1,102 @@
+<div class="wrap">
+  <header>
+    <h1>記憶する回路</h1>
+    <p class="lede">このページを開いている間、回路は世界の中で行為し続ける。記憶は出来事の記録ではなく、繰り返し確かめられた予測が回路の構えに残す「沈殿」で、同じ状況が戻ったときの立ち直りの速さとしてだけ現れる。いまは、あなたもこの世界の一部になっている。回路はあなたに呼びかける運動を持ち、あなたの身ぶりは番号のついた受容器の一つとして届く。あなたが返すのは答えであって、評価ではない。</p>
+  </header>
+
+  <div class="vitals" aria-live="polite">
+    <div><span>年齢</span><b id="vAge">–</b><span>歩</span></div>
+    <div><span>段階</span><b id="vPhase">–</b></div>
+    <div><span>沈殿の総量</span><b id="vSed">–</b></div>
+    <div><span>意味の入れ替え</span><b id="vRev">0</b><span>回</span></div>
+    <div><span>保存</span><b id="vSave" style="font-size:.95rem">–</b></div>
+  </div>
+
+  <div class="bar" role="group" aria-label="操作">
+    <button id="run" class="primary">一時停止</button>
+    <label for="speed">速さ <input id="speed" type="range" min="1" max="200" value="5"> <span id="speedv">5</span> 歩/秒</label>
+    <button id="stasis">世界を60歩止める</button>
+    <button id="reverse">受容器の意味を入れ替える</button>
+    <label for="observer"><input id="observer" type="checkbox"> 観察者の知識を表示</label>
+    <span class="confirm"><button id="reset">生まれ直させる</button><span id="resetAsk" hidden>記憶は消えます。<button id="resetYes">生まれ直させる</button><button id="resetNo">やめる</button></span></span>
+  </div>
+
+  <div class="grid">
+    <section class="panel" aria-label="世界">
+      <h2>世界</h2>
+      <canvas id="world" role="img" aria-label="二つの区画に残る未消化の予測誤差"></canvas>
+      <div class="cap" id="worldCap"></div>
+      <div class="status"><span class="chip" id="chip1"></span><span class="chip" id="chip2"></span></div>
+    </section>
+    <section class="panel you" aria-label="あなた">
+      <h2>あなた</h2>
+      <div class="lamp"><div class="dot" id="lamp"></div><div class="txt"><b id="lampHead">–</b><span id="lampSub"></span></div></div>
+      <div class="pend" aria-hidden="true"><i id="pendBar"></i></div>
+      <div class="pad" role="group" aria-label="身ぶり">
+        <button id="pad1" data-k="1" aria-label="身ぶり1">○<small id="gs1">1</small></button><button id="pad2" data-k="2" aria-label="身ぶり2">△<small id="gs2">2</small></button><button id="pad3" data-k="3" aria-label="身ぶり3">□<small id="gs3">3</small></button><button id="pad4" data-k="4" aria-label="身ぶり4">◇<small id="gs4">4</small></button>
+      </div>
+      <div class="legend"><span>呼びかけから10歩以内に身ぶりを返すと、それが答えになる（一つの身ぶりは、いちばん古い呼びかけ一つに答える）。同じ身ぶりを続けると消化できるものが尽き、答えにならない（20歩ごとに1戻る）。キーボードの 1〜4 でも返せる。速さ5歩/秒なら10歩は2秒。</span></div>
+      <div class="legend"><span><b>関わり方のヒント（台本の相手での試験から）：</b> 初めは喃語のような呼びかけにも何度でも答え、慣れてきたら、間を置いた呼びかけにだけ答えるようにすると、回路は答えを待つことを覚えやすい（足場かけ）。いつも同じように答える相手からは、待つことは身につきにくい。</span></div>
+      <div class="modes" role="radiogroup" aria-label="あなたの届き方">
+        <label><input id="mLive" type="radio" name="mode" value="live" checked> 生で届ける</label>
+        <label><input id="mReplay" type="radio" name="mode" value="replay"> 流し直し（過去の身ぶりの記録を流す。いまの身ぶりは届かない）</label>
+        <label><input id="mBlind" type="radio" name="mode" value="blind"> 盲検（300歩ごとに無作為に切り替え、どちらかは伏せる）</label>
+      </div>
+      <div id="statBox">
+        <div class="legend" id="statInfo"></div>
+        <div class="legend" id="replayWarn" hidden>流し直すには、生の時間に身ぶりを3件以上記録する必要があります。</div>
+        <table class="st" id="statTable"><tr><th>条件</th><th>見ていた歩数</th><th>呼びかけ/100歩</th><th>答えられた割合</th><th>待っている間の呼びかけ</th><th>届いた身ぶり</th></tr>
+          <tr><td>生</td><td id="stL1"></td><td id="stL2"></td><td id="stL3"></td><td id="stL4"></td><td id="stL5"></td></tr>
+          <tr><td>流し直し</td><td id="stR1"></td><td id="stR2"></td><td id="stR3"></td><td id="stR4"></td><td id="stR5"></td></tr></table>
+        <div class="modes"><button id="revealBtn" hidden>結果を見る</button><button id="clearStats">集計を消す</button></div>
+      </div>
+      <div class="sess" id="sess">
+        <h2>あなたとの試験（セッション）</h2>
+        <div class="legend"><span>「開始」を一度押すだけでよい。速さが5歩/秒になり、3つの段階（各1500歩、約5分）が自動で進む。いまの指示がここに出るので、灯りに答えるだけでよい。あなたがいる間だけ記録し、段階も進む。「いる」とは、このページに焦点があり（ページ内を一度クリックする）、60秒以内にマウスやキーを動かしたこと。別のタブや窓を見ている間、または60秒何もしない間は一時停止する（回路は生き続ける）。Claude があとで読む。</span></div>
+        <div class="modes"><button id="autoStart" class="primary">開始</button><button id="autoStop">やめる</button></div>
+        <div class="instr" id="segInstr"></div>
+        <div class="pend" aria-hidden="true"><i id="segBar"></i></div>
+        <div class="legend" id="segInfo"></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="grid">
+    <section class="panel" aria-label="記憶">
+      <h2>構え（確かさと沈殿）</h2>
+      <div class="scroll"><canvas id="mem" role="img" aria-label="受容器と核から運動への予測の確かさと沈殿"></canvas></div>
+      <div class="legend"><span>列は運動：m1 は区画1への行為、m2 は区画2への行為、m3 はあなたへの呼びかけ。行は受容器 r1〜r11 と核 c。</span></div>
+      <div class="legend" id="obsNote" hidden><span>観察者の知識：y1・y2 は区画1・2の収量、noise は雑音、clock3 は3歩ごとの時計、partner はあなたの身ぶり、waiting は「自分：答えを待っている」、not waiting は「自分：待っていない」。</span></div>
+      <div class="legend"><span><i style="background:var(--p1)"></i>いまの確かさ（濃いほど確か）</span><span><i style="background:var(--sed);border-radius:50%;width:10px"></i>沈殿（記憶、1〜4）</span></div>
+    </section>
+    <section class="panel" aria-label="呼びかけの経過">
+      <h2>呼びかけ（100歩ごと）</h2>
+      <canvas id="cCall"></canvas><div class="legend" id="cCallEmpty">まだ記録がありません</div>
+      <div class="legend"><span><i style="background:var(--act)"></i>呼びかけた歩数</span><span><i style="background:var(--p2)"></i>答えられた呼びかけ</span></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-label="経過">
+    <h2>沈殿の総量（100歩ごと）</h2>
+    <canvas id="cSed"></canvas><div class="legend" id="cSedEmpty">まだ記録がありません</div>
+    <h2>立ち直りに要した確証の回数（少ないほど覚えている）</h2>
+    <canvas id="cSav"></canvas><div class="legend" id="cSavEmpty">まだ記録がありません</div>
+    <div class="legend"><span>しばらく使っていなかった運動が再び答えを得てから、その予測が確かさ4に戻るまでの確証の回数。記憶がないと4回かかり、沈殿があると1回で戻る。</span></div>
+    <h2>答えのなかった行為（1000歩ごと）</h2>
+    <canvas id="cUn"></canvas><div class="legend" id="cUnEmpty">まだ記録がありません</div><div class="legend"><span>どのグラフも横軸は年齢（歩）。</span></div>
+  </section>
+
+  <section class="notes">
+    <div><b>何が記憶か。</b> 予測が確かさ4まで確かめ直されるたびに、その予測に沈殿が1つ積もる（最大4）。沈殿のある予測は、確かさが散逸しても信号を伝え続け、確かめられると確かさが一気に戻る。失敗が続くと沈殿は削れる。世界の状態や出来事はどこにも書き残していない。</div>
+    <div><b>現象学的還元。</b> 回路にとって受容器は番号でしかない。「観察者の知識を表示」を入れると、設計者が知っている受容器の意味を横に出す。回路の記憶はその知識なしに成り立っている。</div>
+    <div><b>入れ替え。</b> 受容器の意味を入れ替えると、積もった沈殿は誤った構えになる。記憶があるぶん、慣れた構えにしばらく引きずられる様子が見える。</div>
+    <div><b>あなたの入り方。</b> あなたの身ぶりは受容器 r9 を点け、回路は m3 で呼びかける（m3 は第三の核 c3 に駆動される）。呼びかけは区画への行為とは別の通り道で、一歩に一つという区画の行為の選択には加わらない。答えの確かめは遅れて届く：呼びかけの時点で「答えがあれば確かめられる予測」を取っておき、10歩以内に新しい身ぶりが届けば確かめ、届かないまま期限が来れば失敗とする。呼びかけは重ねてもよく、待つかどうかは回路が経験から身につける。</div>
+    <div><b>生まれつき与えたもの（段22〜25）。</b> 定位反応：受容器が新しく点くと、その受容器からのまだ試していない予測を一度試す。慣れ：試して失敗した予測は試さなくなり、その受容器がしばらく消えていると戻る。自分の状態の受容器：r10「答えを待っている」と r11「待っていない」（どちらが答えにつながるかは回路が見つける）。</div>
+    <div><b>予測の確かめ方（v3.5、段48〜55）。</b> 区画への予測は、確かめられるだけでは育たない。その受容器が点いていたときと消えていたときで、行為に答えがあった割合を比べ、点いていたときのほうが十分に高い予測だけが確かさを増し、沈殿する（まだ両方を見ていない予測は試してよい）。比べるのは答えがあったかどうかだけで、どれだけ消化したかは使わない。偶然いっしょに起きただけの予測（雑音や時計）は沈殿しない。100歩動かなかった運動は、古い沈殿があっても「まだ試していない」とみなし、すべての受容器から試す。外からの評価はない。規則を変えたとき、それまでの確かさと沈殿はそのまま引き継いだ（v3.4 では消化の量を比べていた）。</div>
+    <div><b>事前試験でわかったこと（台本の相手で、人ではない）。</b> 身ぶりは呼びかけの合図として沈殿し（4/5）、相手が去ると静まり、戻ると次の歩で呼び返す。待つこと（答え待ちのときに重ねて呼ばない）は、いつも同じように答える相手では半分ほどしか身につかず（重ねた呼びかけ 0.40〜0.52）、足場かけをする相手では身についた（0.10〜0.15、r11 に沈殿 5/5）。一方、反応して呼ぶようになった回路は、生の相手と記録の流し直しを区別しなかった。</div>
+    <div><b>生と流し直し。</b> 流し直しでは、生の時間に記録したあなたの身ぶりを同じ間隔で流し、いまの身ぶりは届かない。回路の振る舞いが二つで違えば、回路は身ぶりの中身ではなく、自分の行為に応じてくるかどうかに感応している。盲検では、いまどちらかを伏せたまま300歩ごとに切り替わる。集計はあなたがいる間（ページに焦点があり、60秒以内に操作した間）だけ数える。</div>
+    <div><b>選び方（v3.7）。</b> 両方の区画で行為できるときは、確かな予測の多い運動が選ばれる。これだけだと、先に勝った運動が確かさを集めて勝ち続け、もう一方は試されないまま結びつきが育たない。そこで、100歩より長く行為していない運動が候補にあれば、それを先に選ぶ（ほかの順位は変えない）。量は比べず、外からの評価もない。規則を変えたとき、それまでの確かさ・沈殿・答えの割合はそのまま引き継いだ。</div>
+    <div><b>動かし方（v3.6〜）。</b> 回路と世界の規則、記録の読み書き、画面の描画は Rust で書かれ、WebAssembly としてこのページの中で動く。JavaScript はブラウザとの橋渡し（起動、時計、保存、ボタン）だけを受け持つ。規則は v3.7 の選び方のほかは v3.5 と同じで、~/bridge-agency-lab/core の Julia 版（規則の正本）とビット単位で一致させてある。同じ Rust のコードは、将来は専用の小型計算機に載せられる。</div>
+    <div><b>保存。</b> 状態はこの artifact のデータに1分ごとに保存され、別のタブでは見るだけになる。閉じていた時間は、いまの速さで最大5万歩まで追いつき計算する。研究用の記録は ~/bridge-agency-lab/memory にある。</div>
+  </section>
+</div>

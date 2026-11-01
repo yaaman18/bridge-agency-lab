@@ -1,0 +1,61 @@
+{
+ "1": {
+  "waitingCalls": 10,
+  "afterGesture": 1,
+  "drivers": {
+   "r4": 10,
+   "r7": 10,
+   "r10": 1,
+   "r9": 1
+  },
+  "afterGestureShare": 0.1
+ },
+ "2": {
+  "waitingCalls": 12,
+  "afterGesture": 2,
+  "drivers": {
+   "r5": 2,
+   "r10": 2,
+   "r9": 2,
+   "r4": 10,
+   "r7": 10
+  },
+  "afterGestureShare": 0.167
+ },
+ "3": {
+  "waitingCalls": 15,
+  "afterGesture": 3,
+  "drivers": {
+   "r3": 2,
+   "r10": 3,
+   "r9": 3,
+   "r5": 2,
+   "r4": 11,
+   "r7": 11
+  },
+  "afterGestureShare": 0.2
+ },
+ "4": {
+  "waitingCalls": 11,
+  "afterGesture": 1,
+  "drivers": {
+   "r4": 11,
+   "r7": 11,
+   "r10": 1,
+   "r9": 1
+  },
+  "afterGestureShare": 0.091
+ },
+ "5": {
+  "waitingCalls": 15,
+  "afterGesture": 3,
+  "drivers": {
+   "r8": 2,
+   "r10": 2,
+   "r9": 3,
+   "r4": 13,
+   "r7": 13
+  },
+  "afterGestureShare": 0.2
+ }
+}

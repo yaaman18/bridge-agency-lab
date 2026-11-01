@@ -1,0 +1,7 @@
+[package]
+name = "being-tools"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+being-core = { path = "../being-core" }

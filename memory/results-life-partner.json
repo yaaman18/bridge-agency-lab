@@ -1,0 +1,29 @@
+{
+ "migration_kept": true,
+ "absent_foraging_identical": "20000/20000",
+ "absent_calls": 20000,
+ "restore_identical": true,
+ "replay": {
+  "recorded": 131,
+  "delivered_in_1000": 44,
+  "ignored": 44,
+  "rec_unchanged": true
+ },
+ "blind_blocks": "replay,live,live,live,replay,live,live,replay,replay,replay",
+ "stats": {
+  "live": {
+   "steps": 4500,
+   "calls": 4113,
+   "answered": 130,
+   "gestures": 131
+  },
+  "replay": {
+   "steps": 2500,
+   "calls": 2175,
+   "answered": 114,
+   "gestures": 114
+  }
+ },
+ "hidden_in_blind": true,
+ "state_bytes": 3750
+}

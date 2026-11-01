@@ -1,0 +1,1109 @@
+{
+ "handwired_test": {
+  "form": 1,
+  "acting": 0.999,
+  "answered": 0.998,
+  "richer": 0.978
+ },
+ "runs": {
+  "curriculum/full/seed1": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     3
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     4
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.535
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 0.6,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/full/seed2": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     4
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.587
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 0.425,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/full/seed3": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     4
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.535
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 0.6,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/full/seed4": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     3
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     4
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.535
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.483
+   },
+   "sensation": {
+    "informative": 0.6,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/full/seed5": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     4
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     0,
+     3
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.995,
+    "richer": 0.618
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.997,
+    "richer": 0.582
+   },
+   "sensation": {
+    "informative": 0.055,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/fail-off/seed1": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     3
+    ],
+    "r2": [
+     0,
+     4
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     4
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.535
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 0.6,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/explore-off/seed1": {
+   "matrix_end_nursery": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     0
+    ]
+   },
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     0
+    ]
+   },
+   "first_step_useful_learned": null,
+   "training": {
+    "form": 0.015,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "test": {
+    "form": 0,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed1": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.998,
+    "richer": 0.295
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 1,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed2": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.998,
+    "richer": 0.325
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 0.74,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed3": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.997,
+    "richer": 0.506
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 1,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed4": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.997,
+    "richer": 0.408
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.483
+   },
+   "sensation": {
+    "informative": 1,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed5": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     4,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.998,
+    "richer": 0.295
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.304
+   },
+   "sensation": {
+    "informative": 1,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/fail-off/seed1": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     4,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 2,
+   "training": {
+    "form": 0.776,
+    "acting": 1,
+    "answered": 0.75,
+    "richer": 0.008
+   },
+   "test": {
+    "form": 0.776,
+    "acting": 1,
+    "answered": 0.75,
+    "richer": 0.016
+   },
+   "sensation": {
+    "informative": 1,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/explore-off/seed1": {
+   "matrix_end_nursery": null,
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     0
+    ]
+   },
+   "first_step_useful_learned": null,
+   "training": {
+    "form": 0.015,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "test": {
+    "form": 0,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  }
+ }
+}

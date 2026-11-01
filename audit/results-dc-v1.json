@@ -1,0 +1,103 @@
+{
+  "newborn_nursery": {
+    "act": 0.962059620596206,
+    "m4b_check": true,
+    "living_without_act": 0,
+    "smc": 0.0,
+    "dc": 0.0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 369
+  },
+  "saved_v518": {
+    "act": 0.9933976637887253,
+    "m4b_check": true,
+    "living_without_act": 0,
+    "smc": 0.0,
+    "dc": 0.0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1969
+  },
+  "newborn_world": {
+    "act": 0.9966666666666667,
+    "m4b_check": true,
+    "living_without_act": 0,
+    "smc": 0.0,
+    "dc": 0.0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1200
+  },
+  "diagnostic_proprio_internal": {
+    "note": "not a decision and not predicted: r10/r11 taken as internal (out of epsilon)",
+    "saved_v518": {
+      "act": 0.9933976637887253,
+      "m4b_check": true,
+      "living_without_act": 0,
+      "smc": 0.001015744032503809,
+      "dc": 0.001015744032503809,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn": {
+      "act": 0.9867953275774505,
+      "m4b_check": true,
+      "living_without_act": 0,
+      "smc": 0.21025901472828848,
+      "dc": 0.21025901472828848,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    }
+  },
+  "verdicts": [
+    {
+      "id": "DP1",
+      "value": "hBound 1.0",
+      "holds": true
+    },
+    {
+      "id": "DP2",
+      "value": "hAct 0.993",
+      "holds": true
+    },
+    {
+      "id": "DP3",
+      "value": "hSMC 0.0",
+      "holds": true
+    },
+    {
+      "id": "DP4",
+      "value": "hSelf 1.0",
+      "holds": false
+    },
+    {
+      "id": "DP5",
+      "value": "DC 0.0",
+      "holds": true
+    },
+    {
+      "id": "DP6",
+      "value": "living without act: 0, 0",
+      "holds": true
+    },
+    {
+      "id": "DP7",
+      "value": "nursery 0.0 world 0.0",
+      "holds": false
+    }
+  ],
+  "newborn": {
+    "act": 0.9898425596749619,
+    "m4b_check": true,
+    "living_without_act": 0,
+    "smc": 0.0,
+    "dc": 0.0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1969
+  },
+  "L": 32
+}

@@ -1,0 +1,18 @@
+1 ORG mean 19.9 fin 22 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 7e-10 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 23 death null acts 10000 ans 0.99 err 4e-9
+2 ORG mean 19.9 fin 21 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 477 acts 477 ans 0.63 err 1e-9 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 23 death null acts 10000 ans 0.99 err 4e-9
+3 ORG mean 19.9 fin 24 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 7e-10 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 24 death null acts 10000 ans 0.99 err 4e-9
+4 ORG mean 19.9 fin 22 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 7e-10 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 21 death null acts 10000 ans 0.99 err 4e-9
+5 ORG mean 19.9 fin 23 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 7e-10 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 24 death null acts 10000 ans 0.99 err 4e-9
+6 ORG mean 20.0 fin 23 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 477 acts 477 ans 0.63 err 1e-9 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 24 death null acts 10000 ans 0.99 err 4e-9
+7 ORG mean 19.9 fin 24 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 1e-9 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 23 death null acts 10000 ans 0.99 err 4e-9
+8 ORG mean 19.9 fin 23 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 1e-9 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 24 death null acts 10000 ans 0.99 err 4e-9
+9 ORG mean 20.0 fin 23 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 7e-10 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 23 death null acts 10000 ans 0.99 err 4e-9
+10 ORG mean 19.9 fin 23 death null acts 10000 ans 0.99 err 4e-9 | REPLAY mean 0.5 fin 0 death 476 acts 476 ans 0.63 err 1e-9 | NONE mean 0.1 fin 0 death 196 acts 0 ans 0.00 err 3e-9 | REV mean 19.8 fin 23 death null acts 10000 ans 0.99 err 4e-9
+I0 HOLDS - conservation
+I1 HOLDS - NONE dies 10/10
+I2 HOLDS - ORG alive at the end 10/10
+I3 HOLDS - ORG body larger than REPLAY 10/10
+I4 HOLDS - ORG answered fraction above REPLAY 10/10
+I5 HOLDS - REPLAY dies 10/10
+I6 HOLDS - ORG-REV alive at the end 10/10
+predictions holding: 7/7

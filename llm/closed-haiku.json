@@ -1,0 +1,13 @@
+{
+ "model": "haiku",
+ "steps": 40,
+ "sensor_agreement": "40/40",
+ "parse_failures": 0,
+ "trajectory_identical_to_rule": true,
+ "first_divergence_step": null,
+ "form_kept_llm": "40/40",
+ "form_kept_rule": "40/40",
+ "actions_llm": "- m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2",
+ "mean_ms": 4504,
+ "disagreements": []
+}

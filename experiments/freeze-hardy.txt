@@ -1,0 +1,3 @@
+2f34da212a6bc7f97edc9ed9bb14f4b8d7e69f20eddd65d9430b4994c251d19c  variant_hardy.jl
+0aa739f3bfd52c7e3043c36dd3b7a866808ff3a4f19ea143dca0e82140d93c98  predictions-hardy.md
+2026年 10月29日 木曜日 21時34分33秒 JST

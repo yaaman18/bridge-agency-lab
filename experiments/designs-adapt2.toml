@@ -1,0 +1,55 @@
+schema_version = 1
+
+[params]
+smax = 4
+decay_period = 8
+grow_cost = 1
+resource0 = 10
+rmax = 30
+horizon = 60
+alive_window = 5
+strength0 = 4
+switch_at = 20
+# Survival schedules: (yield of patch 1, yield of patch 2) before and after switch_at.
+survival_schedules = [
+  { name = "p1-high", first = [5, 0], second = [5, 0] },
+  { name = "p2-high", first = [0, 5], second = [0, 5] },
+  { name = "p1-then-p2", first = [5, 0], second = [0, 5] },
+  { name = "p2-then-p1", first = [0, 5], second = [5, 0] },
+]
+# Choice is measured with abundant resource and both patches positive, so that starvation cannot
+# change which motors are active.
+choice_resource0 = 1000
+choice_rmax = 100000
+choice_window = [5, 15]
+choice_schedules = [
+  { name = "c1-better", first = [5, 4], second = [5, 4] },
+  { name = "c2-better", first = [4, 5], second = [4, 5] },
+]
+
+# ---- Adaptive rehearsal v2 (2026-10-29), after v1 (designs-adapt.toml) failed: v1's sensor + satiety
+# ---- reached the motor threshold without the core (hinge false under the variant), and the extra unit c
+# ---- plus a separate clock taxed it to death under fast switching. v2: the alternator a<->b is the core
+# ---- and the clock at once (cost 1/step); no separate c.
+# ---- PREDICTIONS, written before any run:
+# ---- (R1) variant L2 = true, L3 = true, L3R = false; frozen criteria L2 = false.
+# ---- (R2) Survives flip7, flip13, rand1-5, fast-then-slow, const-p1; dies in all with patch sensors silenced.
+# ---- (R3) Behavioural agency after 200 steps (choice test run from the aged state): still differentiated
+# ----      wherever it survives.
+# ---- (R4) poor-motor share lower in flip7 than in const-p1.
+# Motor m1: sensor 2 + a 2 + b 3 + satiety 1, threshold 4. Forage: sensor + either clock phase (>= 4).
+# Rehearsal: b + satiety (= 4) on b-steps only; a + satiety = 3 does not fire. Without the core: sensor
+# + satiety = 3, does not fire. m2 is the mirror image (a and b swapped).
+[[template]]
+name = "satiety-rehearsal-v2"
+L2 = true
+L3 = true
+L3R = false
+units = ["s1", "s2", "m1", "m2", "a", "b", "f"]
+theta = [1, 1, 4, 4, 1, 1, 1]
+patch_sensors = { s1 = 1, s2 = 2 }
+motors = { m1 = 1, m2 = 2 }
+resource_sensors = { f = [20, "high"] }
+edges = [["a", "b", 1], ["b", "a", 1], ["s1", "m1", 2], ["a", "m1", 2], ["b", "m1", 3], ["f", "m1", 1], ["s2", "m2", 2], ["b", "m2", 2], ["a", "m2", 3], ["f", "m2", 1]]
+initial = ["a"]
+maintain = true

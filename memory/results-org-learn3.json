@@ -1,0 +1,132 @@
+{
+ "1": {
+  "OLD": {
+   "pre": 0.986,
+   "post": 0.983,
+   "rec": 0,
+   "junk": 15,
+   "actsPre": 1,
+   "actsPost": 0.9
+  },
+  "L2": {
+   "pre": 0.995,
+   "post": 0.979,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 0.61
+  },
+  "L3": {
+   "pre": 0.991,
+   "post": 0.991,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 1
+  }
+ },
+ "2": {
+  "OLD": {
+   "pre": 0.987,
+   "post": 0.978,
+   "rec": 0,
+   "junk": 14,
+   "actsPre": 1,
+   "actsPost": 0.9
+  },
+  "L2": {
+   "pre": 0.996,
+   "post": 0.97,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 0.47
+  },
+  "L3": {
+   "pre": 0.991,
+   "post": 0.991,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 1
+  }
+ },
+ "3": {
+  "OLD": {
+   "pre": 0.989,
+   "post": 0.976,
+   "rec": 0,
+   "junk": 16,
+   "actsPre": 1,
+   "actsPost": 0.9
+  },
+  "L2": {
+   "pre": 0.996,
+   "post": 0.965,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 0.49
+  },
+  "L3": {
+   "pre": 0.99,
+   "post": 0.991,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 1
+  }
+ },
+ "4": {
+  "OLD": {
+   "pre": 0.989,
+   "post": 0.978,
+   "rec": 0,
+   "junk": 16,
+   "actsPre": 1,
+   "actsPost": 0.9
+  },
+  "L2": {
+   "pre": 0.995,
+   "post": 0.97,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 0.57
+  },
+  "L3": {
+   "pre": 0.99,
+   "post": 0.991,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 1
+  }
+ },
+ "5": {
+  "OLD": {
+   "pre": 0.99,
+   "post": 0.979,
+   "rec": 0,
+   "junk": 16,
+   "actsPre": 1,
+   "actsPost": 0.91
+  },
+  "L2": {
+   "pre": 0.996,
+   "post": 0.972,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 0.51
+  },
+  "L3": {
+   "pre": 0.991,
+   "post": 0.991,
+   "rec": 0,
+   "junk": 0,
+   "actsPre": 1,
+   "actsPost": 1
+  }
+ }
+}

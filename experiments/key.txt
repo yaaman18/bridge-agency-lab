@@ -1,0 +1,5 @@
+A = no-loop
+B = alternator
+C = selfloop-pair-agent
+D = thermostat
+E = reflex

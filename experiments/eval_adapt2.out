@@ -1,0 +1,17 @@
+designs-adapt2 sha256 0617b134cfaf9b9c155a9cb61a501bb80985ff7bdfef43d2eb36c70537afcd6e
+variant L2/L3/L3R=(true, true, false) core=["a", "b"] hinge=true choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1"] needed=true surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1)
+   flip7          live  poor-motor share=0.22  no-sens=dead  differentiated-after=true
+   flip13         live  poor-motor share=0.32  no-sens=dead  differentiated-after=true
+   rand1          dead  poor-motor share=0.12  no-sens=dead  differentiated-after=-
+   rand2          dead  poor-motor share=0.26  no-sens=dead  differentiated-after=-
+   rand3          dead  poor-motor share=0.25  no-sens=dead  differentiated-after=-
+   rand4          dead  poor-motor share=0.21  no-sens=dead  differentiated-after=-
+   rand5          live  poor-motor share=0.27  no-sens=dead  differentiated-after=false
+   fast-then-slow dead  poor-motor share=0.25  no-sens=dead  differentiated-after=-
+   const-p1       live  poor-motor share=0.47  no-sens=dead  differentiated-after=true
+
+re-check of earlier claims with the behavioural test (variant):
+selfloop-pair-agent: flip7=true flip13=true rand1=- rand2=- rand3=- rand4=- rand5=- fast-then-slow=- const-p1=true
+alternating-rehearsal: flip7=- flip13=- rand1=true rand2=true rand3=- rand4=- rand5=true fast-then-slow=- const-p1=true
+random (variant, 7 held-out envs): Dict(:agency => 126, :robust => 12, :robust_still => 1)
+random k=3123 (frozen-criteria robust agent): flip7=true flip13=true rand1=true rand2=true rand3=true rand4=true rand5=true

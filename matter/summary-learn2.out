@@ -1,0 +1,18 @@
+1 OLD 0.9/0.0 d925 kept16.8 acts1.00 harv0.076 | LEARN 12.2/12.0 dnull kept7.0 acts0.75 harv0.068 | LEARN2 16.3/16.8 dnull kept10.9 acts0.98 harv0.093 | LEARN2R 12.6/9.6 dnull kept9.6 acts0.80 harv0.075 | NR 1.1/0.0 d1065 kept13.1 acts1.00 harv0.072
+2 OLD 0.9/0.0 d919 kept16.8 acts1.00 harv0.075 | LEARN 12.3/12.3 dnull kept7.0 acts0.75 harv0.068 | LEARN2 16.0/16.6 dnull kept10.8 acts0.97 harv0.092 | LEARN2R 13.6/11.7 dnull kept10.4 acts0.87 harv0.081 | NR 13.8/14.2 dnull kept12.7 acts1.00 harv0.087
+3 OLD 11.8/12.1 dnull kept16.7 acts1.00 harv0.087 | LEARN 12.3/12.1 dnull kept7.0 acts0.76 harv0.069 | LEARN2 16.7/17.1 dnull kept10.8 acts0.99 harv0.095 | LEARN2R 14.1/11.9 dnull kept10.5 acts0.89 harv0.084 | NR 13.8/14.1 dnull kept12.7 acts1.00 harv0.087
+4 OLD 11.9/12.1 dnull kept16.6 acts1.00 harv0.087 | LEARN 12.3/12.0 dnull kept7.0 acts0.75 harv0.069 | LEARN2 16.2/16.4 dnull kept11.4 acts0.99 harv0.094 | LEARN2R 10.7/5.4 d7206 kept10.9 acts0.91 harv0.086 | NR 14.0/14.1 dnull kept12.7 acts1.00 harv0.088
+5 OLD 11.9/12.1 dnull kept16.5 acts1.00 harv0.087 | LEARN 12.4/12.1 dnull kept7.0 acts0.76 harv0.069 | LEARN2 16.2/16.1 dnull kept11.5 acts0.99 harv0.094 | LEARN2R 10.6/5.0 d7110 kept10.6 acts0.90 harv0.086 | NR 14.0/14.1 dnull kept12.6 acts1.00 harv0.088
+6 OLD 11.9/12.1 dnull kept16.5 acts1.00 harv0.087 | LEARN 12.3/12.2 dnull kept7.0 acts0.75 harv0.068 | LEARN2 16.1/15.9 dnull kept11.5 acts0.99 harv0.094 | LEARN2R 10.1/4.1 d6707 kept10.9 acts0.92 harv0.088 | NR 14.0/14.2 dnull kept12.6 acts1.00 harv0.088
+7 OLD 11.9/12.1 dnull kept16.4 acts1.00 harv0.087 | LEARN 12.1/11.9 dnull kept7.1 acts0.74 harv0.067 | LEARN2 16.4/16.8 dnull kept10.8 acts0.98 harv0.094 | LEARN2R 10.1/4.3 d6909 kept10.2 acts0.89 harv0.084 | NR 14.0/14.2 dnull kept12.6 acts1.00 harv0.088
+8 OLD 12.0/12.1 dnull kept16.5 acts1.00 harv0.087 | LEARN 12.2/12.1 dnull kept7.0 acts0.74 harv0.068 | LEARN2 15.8/16.3 dnull kept10.8 acts0.97 harv0.092 | LEARN2R 9.2/3.2 d6130 kept10.3 acts0.91 harv0.086 | NR 14.0/14.2 dnull kept12.6 acts1.00 harv0.088
+9 OLD 11.9/12.1 dnull kept16.5 acts1.00 harv0.087 | LEARN 12.2/12.1 dnull kept7.0 acts0.74 harv0.068 | LEARN2 15.7/16.7 dnull kept11.2 acts0.97 harv0.092 | LEARN2R 8.9/3.0 d6211 kept11.0 acts0.91 harv0.084 | NR 14.0/14.1 dnull kept12.6 acts1.00 harv0.088
+10 OLD 11.9/12.1 dnull kept16.5 acts1.00 harv0.087 | LEARN 12.2/12.0 dnull kept7.0 acts0.74 harv0.068 | LEARN2 15.6/15.9 dnull kept11.1 acts0.97 harv0.091 | LEARN2R 9.2/3.1 d6242 kept10.5 acts0.90 harv0.085 | NR 14.0/14.1 dnull kept12.6 acts1.00 harv0.087
+L0 HOLDS - conservation
+L1 HOLDS - LEARN2 alive 10/10
+L2 HOLDS - LEARN2 acts >= 0.9 and harvest >= 0.08 per step 10/10
+L3 HOLDS - LEARN2 body >= NR body - 1 10/10
+L4 FAILS - LEARN2 with receptors crossed at 5800 alive 3/10
+L5 HOLDS - LEARN2 keeps fewer contingencies than OLD 10/10
+L6 HOLDS - LEARN2 body larger than LEARN 10/10
+predictions holding: 6/7

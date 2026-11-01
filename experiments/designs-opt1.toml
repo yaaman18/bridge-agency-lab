@@ -1,0 +1,53 @@
+schema_version = 1
+
+[params]
+smax = 4
+decay_period = 8
+grow_cost = 1
+resource0 = 10
+rmax = 30
+horizon = 60
+alive_window = 5
+strength0 = 4
+switch_at = 20
+# Survival schedules: (yield of patch 1, yield of patch 2) before and after switch_at.
+survival_schedules = [
+  { name = "p1-high", first = [5, 0], second = [5, 0] },
+  { name = "p2-high", first = [0, 5], second = [0, 5] },
+  { name = "p1-then-p2", first = [5, 0], second = [0, 5] },
+  { name = "p2-then-p1", first = [0, 5], second = [5, 0] },
+]
+# Choice is measured with abundant resource and both patches positive, so that starvation cannot
+# change which motors are active.
+choice_resource0 = 1000
+choice_rmax = 100000
+choice_window = [5, 15]
+choice_schedules = [
+  { name = "c1-better", first = [5, 4], second = [5, 4] },
+  { name = "c2-better", first = [4, 5], second = [4, 5] },
+]
+
+# ---- Option 1 trial (2026-10-29). PREDICTIONS, written before any run:
+# ---- (P1) Under the frequency variant, all frozen template labels (L2, L3, L3R) still agree.
+# ---- (P2) alternating-rehearsal: frozen criteria L2 = false (both motors in the window of both schedules);
+# ----      frequency variant L2 = true. L3 = true, L3R = false in both (labels below are for the variant).
+# ---- (P3) alternating-rehearsal survives all held-out envs (flip7, flip13, rand1-5, horizon 200) intact,
+# ----      and dies in at least one of them with the patch sensors silenced.
+# ---- (P4) After 200 steps of each held-out env it is still an agent under the variant when re-evaluated
+# ----      with the connections it then has.
+# ---- (P5) periodic-rehearsal becomes L2 = true under the variant but still dies in held-out envs (upkeep).
+# Steady self-looped core c, an alternator a<->b as the rehearsal clock (one of them active per step).
+# A motor forages with sensor + c; a rehearses m2 and b rehearses m1 every other step, with c.
+[[template]]
+name = "alternating-rehearsal"
+L2 = true
+L3 = true
+L3R = false
+units = ["s1", "s2", "m1", "m2", "c", "a", "b"]
+theta = [1, 1, 2, 2, 1, 1, 1]
+patch_sensors = { s1 = 1, s2 = 2 }
+motors = { m1 = 1, m2 = 2 }
+resource_sensors = {}
+edges = [["c", "c", 1], ["a", "b", 1], ["b", "a", 1], ["c", "m1", 1], ["c", "m2", 1], ["s1", "m1", 1], ["s2", "m2", 1], ["b", "m1", 1], ["a", "m2", 1]]
+initial = ["c", "a"]
+maintain = true

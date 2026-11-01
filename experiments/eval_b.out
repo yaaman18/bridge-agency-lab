@@ -1,0 +1,15 @@
+sha256 0a7dad2239e4609b9eb267b4d202311d36256eaa5e2bc9be22848bd843a6b5f0
+periodic-rehearsal pred=(false, true, false) got=(false, true, false) MATCH
+   core=["m1", "m2", "c", "r1", "r2", "r3", "r4", "r5"] hinge=true differentiated=false choices=Dict("c1-better" => ["m1", "m2"], "c2-better" => ["m1", "m2"]) tracking=String[] needed=false surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1) surv_wo=Dict{String, Bool}()
+   held-out intact:  flip7=dead flip13=dead rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+   held-out no-sens: flip7=dead flip13=dead rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+hunger-rehearsal pred=(false, true, false) got=(false, true, false) MATCH
+   core=["c"] hinge=true differentiated=true choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1", "s2"] needed=false surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1) surv_wo=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1)
+   held-out intact:  flip7=live flip13=live rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+   held-out no-sens: flip7=live flip13=live rand1=live rand2=live rand3=live rand4=live rand5=live
+
+== the one random circuit that was both agent and robust (k=3123): does it stay an agent? ==
+rand1 alive=true final strengths=["s1->m2(1)=4", "s1->x3(1)=4", "s2->m1(-1)=0", "s2->x1(-1)=0", "m1->m2(1)=4", "m1->x1(-1)=0", "m2->m1(1)=4", "m2->x1(-1)=0", "m2->x3(1)=4", "x1->m1(1)=0", "x1->x2(1)=0", "x1->x3(1)=0", "x2->m1(-1)=0", "x2->x3(-1)=0", "x3->m2(1)=4"]
+   re-evaluated with surviving edges: agency=false differentiated=false choices=Dict("c1-better" => ["m1", "m2"], "c2-better" => ["m1", "m2"]) needed=false
+rand2 alive=true final strengths=["s1->m2(1)=4", "s1->x3(1)=4", "s2->m1(-1)=0", "s2->x1(-1)=0", "m1->m2(1)=4", "m1->x1(-1)=0", "m2->m1(1)=4", "m2->x1(-1)=0", "m2->x3(1)=4", "x1->m1(1)=0", "x1->x2(1)=0", "x1->x3(1)=0", "x2->m1(-1)=0", "x2->x3(-1)=0", "x3->m2(1)=4"]
+   re-evaluated with surviving edges: agency=false differentiated=false choices=Dict("c1-better" => ["m1", "m2"], "c2-better" => ["m1", "m2"]) needed=false

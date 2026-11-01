@@ -1,0 +1,230 @@
+{
+ "kind": "script",
+ "seed": 2,
+ "model": null,
+ "analysis": {
+  "marks": [
+   [
+    800,
+    "1"
+   ],
+   [
+    2300,
+    "2"
+   ],
+   [
+    3800,
+    "3"
+   ],
+   [
+    5300,
+    "end"
+   ]
+  ],
+  "events": 1942,
+  "segments": {
+   "1": {
+    "from": 800,
+    "to": 2300,
+    "all": {
+     "steps": 1500,
+     "calls": 388,
+     "callsPer100": 25.9,
+     "waitingShare": 0.768,
+     "answerShare": 0.438,
+     "gestures": 183,
+     "ignored": 0
+    },
+    "first750": {
+     "steps": 750,
+     "calls": 171,
+     "callsPer100": 22.8,
+     "waitingShare": 0.848,
+     "answerShare": 0.368,
+     "gestures": 69,
+     "ignored": 0
+    },
+    "last750": {
+     "steps": 750,
+     "calls": 217,
+     "callsPer100": 28.9,
+     "waitingShare": 0.705,
+     "answerShare": 0.493,
+     "gestures": 114,
+     "ignored": 0
+    },
+    "last300": {
+     "steps": 300,
+     "calls": 71,
+     "callsPer100": 23.7,
+     "waitingShare": 0.577,
+     "answerShare": 0.563,
+     "gestures": 41,
+     "ignored": 0
+    },
+    "formShare": 1,
+    "atEnd": {
+     "sedimentTotal": 114,
+     "r9m3": [
+      4,
+      4
+     ],
+     "r10m3": [
+      0,
+      0
+     ],
+     "r11m3": [
+      4,
+      4
+     ],
+     "c3m3": [
+      4,
+      4
+     ]
+    }
+   },
+   "2": {
+    "from": 2300,
+    "to": 3800,
+    "all": {
+     "steps": 1500,
+     "calls": 215,
+     "callsPer100": 14.3,
+     "waitingShare": 0.093,
+     "answerShare": 0.67,
+     "gestures": 150,
+     "ignored": 0
+    },
+    "first750": {
+     "steps": 750,
+     "calls": 110,
+     "callsPer100": 14.7,
+     "waitingShare": 0.109,
+     "answerShare": 0.673,
+     "gestures": 76,
+     "ignored": 0
+    },
+    "last750": {
+     "steps": 750,
+     "calls": 105,
+     "callsPer100": 14,
+     "waitingShare": 0.076,
+     "answerShare": 0.667,
+     "gestures": 74,
+     "ignored": 0
+    },
+    "last300": {
+     "steps": 300,
+     "calls": 43,
+     "callsPer100": 14.3,
+     "waitingShare": 0.093,
+     "answerShare": 0.651,
+     "gestures": 32,
+     "ignored": 0
+    },
+    "formShare": 1,
+    "atEnd": {
+     "sedimentTotal": 115,
+     "r9m3": [
+      3,
+      4
+     ],
+     "r10m3": [
+      0,
+      0
+     ],
+     "r11m3": [
+      3,
+      4
+     ],
+     "c3m3": [
+      3,
+      4
+     ]
+    }
+   },
+   "3": {
+    "from": 3800,
+    "to": 5300,
+    "all": {
+     "steps": 1500,
+     "calls": 287,
+     "callsPer100": 19.1,
+     "waitingShare": 0.613,
+     "answerShare": 0.53,
+     "gestures": 164,
+     "ignored": 42
+    },
+    "first750": {
+     "steps": 750,
+     "calls": 185,
+     "callsPer100": 24.7,
+     "waitingShare": 0.659,
+     "answerShare": 0.514,
+     "gestures": 101,
+     "ignored": 0
+    },
+    "last750": {
+     "steps": 750,
+     "calls": 102,
+     "callsPer100": 13.6,
+     "waitingShare": 0.529,
+     "answerShare": 0.559,
+     "gestures": 63,
+     "ignored": 42
+    },
+    "last300": {
+     "steps": 300,
+     "calls": 47,
+     "callsPer100": 15.7,
+     "waitingShare": 0.851,
+     "answerShare": 0.404,
+     "gestures": 22,
+     "ignored": 17
+    },
+    "formShare": 1,
+    "atEnd": {
+     "sedimentTotal": 104,
+     "r9m3": [
+      0,
+      4
+     ],
+     "r10m3": [
+      0,
+      0
+     ],
+     "r11m3": [
+      0,
+      0
+     ],
+     "c3m3": [
+      0,
+      4
+     ]
+    },
+    "live": {
+     "steps": 900,
+     "calls": 207,
+     "callsPer100": 23,
+     "waitingShare": 0.604,
+     "answerShare": 0.546,
+     "gestures": 120,
+     "ignored": 42
+    },
+    "replay": {
+     "steps": 600,
+     "calls": 80,
+     "callsPer100": 13.3,
+     "waitingShare": 0.637,
+     "answerShare": 0.487,
+     "gestures": 44,
+     "ignored": 42
+    }
+   }
+  }
+ },
+ "decisions": 0,
+ "parseFailures": 0,
+ "meanMs": null,
+ "decisionLog": []
+}

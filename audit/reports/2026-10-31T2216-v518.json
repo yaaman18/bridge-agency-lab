@@ -1,0 +1,202 @@
+{
+  "phenomenal_claim": "not_certified",
+  "audit": "bridge-agency-lab app being",
+  "db_version": "518",
+  "rule": null,
+  "input": "audit/in/state-v518.json",
+  "date": "2026-10-31T22:16:28.481",
+  "age": 86642,
+  "results": {
+    "S_adapter_selfcheck": {
+      "pass": true,
+      "templates": 6,
+      "what": "AgencySubstrate's evaluation of its frozen templates is identical with and without audit/agency_adapter.jl loaded"
+    },
+    "A_agency001": {
+      "criteria": "~/bridge-protocol/tools/AgencySubstrate (unchanged; typed criteria re-evaluated for the lab's substrate: 3)",
+      "runs": {
+        "strength=qsg, death=none": {
+          "choices": {
+            "c1-better": [
+              "m1"
+            ],
+            "c2-better": [
+              "m1"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": true,
+            "p2-high": true,
+            "p2-then-p1": true,
+            "p1-then-p2": true
+          },
+          "seconds": 0.02,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "strength=q, death=none": {
+          "choices": {
+            "c1-better": [
+              "m1"
+            ],
+            "c2-better": [
+              "m1"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": true,
+            "p2-high": true,
+            "p2-then-p1": true,
+            "p1-then-p2": true
+          },
+          "seconds": 9.78,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "strength=qsg, death=agency001": {
+          "choices": {
+            "c1-better": [
+              "m1"
+            ],
+            "c2-better": [
+              "m1"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": false,
+            "p2-high": false,
+            "p2-then-p1": false,
+            "p1-then-p2": false
+          },
+          "seconds": 0.03,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": false,
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "strength=q, death=agency001": {
+          "choices": {
+            "c1-better": [
+              "m1"
+            ],
+            "c2-better": [
+              "m1"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": false,
+            "p2-high": false,
+            "p2-then-p1": false,
+            "p1-then-p2": false
+          },
+          "seconds": 0.15,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": false,
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "adapter": "audit/agency_adapter.jl: A1 sensors r1-r11, motors m1->1, m2->2; A2 strength; A3 death; A4 start = the saved being, partner absent"
+    },
+    "N_noninterference": {
+      "pass": true,
+      "record_unchanged_by_audit": true,
+      "app_read_path_pure": {
+        "steps": 3000,
+        "identical": true
+      },
+      "what": "the audit's input is bit-identical after every audit (DiversityAuditPure); the being lived with the page's snapshot, texts and panels at every step equals the being lived without them (SigmaPure)"
+    },
+    "pending": {
+      "DC": "not audited: needs D1-D6 (formal/README.md) and the proofs of formal/LabCircuit.lean (Lean first, then the Julia check)",
+      "decisions": {
+        "D2": "open (time)",
+        "D6": "open (agency trials; the A runs show each adapter choice)",
+        "D3": "open (kappa)",
+        "D4": "open (alpha, epsilon)",
+        "D5": "open (seeking diagram)",
+        "D1": "open (individual: which (S, D))"
+      },
+      "M4b": "not audited: needs D5 (the seeking diagram D)"
+    },
+    "M_m4a": {
+      "suspect_fields": [],
+      "unknown_partner_fields": [],
+      "pass": true,
+      "unknown_event_kinds": [],
+      "event_kinds": [
+        "a",
+        "b",
+        "c",
+        "g",
+        "s",
+        "u"
+      ],
+      "lean": "m4a_circuit (formal/LabCircuit.lean): proved; the circuit's trace has no external set-point channel (type Empty)",
+      "unknown_fields": []
+    },
+    "C_copies": {
+      "steps": 5000,
+      "age_after": 91642,
+      "pass": true,
+      "what": "the saved being lived 5000 steps (no gestures) by core/life.jl (Julia, canonical) and rust/being-core (the app)"
+    },
+    "P_phenomenal": {
+      "phenomenal_claim": "not_certified",
+      "pass": true,
+      "what": "§13-5: no audit in this report certifies or upgrades a phenomenal claim"
+    }
+  }
+}

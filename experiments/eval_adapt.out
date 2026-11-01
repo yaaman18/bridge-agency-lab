@@ -1,0 +1,35 @@
+designs-adapt sha256 a8f158f7291acd5dff9a04aea8e0fc77eafca8518f1765aaa822a2298fd5f6b2
+frozen criteria satiety-rehearsal: L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => ["m1", "m2"], "c2-better" => ["m1", "m2"])
+
+satiety-rehearsal  variant L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1"] needed=true
+   flip7          dead  poor-motor share=0.12  no-sens=dead  agent-after=-
+   flip13         live  poor-motor share=0.08  no-sens=dead  agent-after=true
+   rand1          dead  poor-motor share=0.06  no-sens=dead  agent-after=-
+   rand2          dead  poor-motor share=0.11  no-sens=dead  agent-after=-
+   rand3          dead  poor-motor share=0.08  no-sens=dead  agent-after=-
+   rand4          dead  poor-motor share=0.09  no-sens=dead  agent-after=-
+   rand5          dead  poor-motor share=0.06  no-sens=dead  agent-after=-
+   fast-then-slow dead  poor-motor share=0.12  no-sens=dead  agent-after=-
+   const-p1       live  poor-motor share=0.12  no-sens=dead  agent-after=false
+
+alternating-rehearsal  variant L2/L3/L3R=(true, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1"] needed=true
+   flip7          dead  poor-motor share=0.57  no-sens=dead  agent-after=-
+   flip13         dead  poor-motor share=0.54  no-sens=dead  agent-after=-
+   rand1          live  poor-motor share=0.51  no-sens=dead  agent-after=true
+   rand2          live  poor-motor share=0.52  no-sens=dead  agent-after=true
+   rand3          dead  poor-motor share=0.53  no-sens=dead  agent-after=-
+   rand4          dead  poor-motor share=0.52  no-sens=dead  agent-after=-
+   rand5          live  poor-motor share=0.52  no-sens=dead  agent-after=true
+   fast-then-slow dead  poor-motor share=0.57  no-sens=dead  agent-after=-
+   const-p1       live  poor-motor share=0.5  no-sens=dead  agent-after=true
+
+selfloop-pair-agent  variant L2/L3/L3R=(true, true, true) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1", "s2"] needed=true
+   flip7          live  poor-motor share=0.14  no-sens=dead  agent-after=true
+   flip13         live  poor-motor share=0.08  no-sens=dead  agent-after=true
+   rand1          dead  poor-motor share=0.03  no-sens=dead  agent-after=-
+   rand2          dead  poor-motor share=0.01  no-sens=dead  agent-after=-
+   rand3          dead  poor-motor share=0.05  no-sens=dead  agent-after=-
+   rand4          dead  poor-motor share=0.03  no-sens=dead  agent-after=-
+   rand5          dead  poor-motor share=0.03  no-sens=dead  agent-after=-
+   fast-then-slow dead  poor-motor share=0.08  no-sens=dead  agent-after=-
+   const-p1       live  poor-motor share=0.0  no-sens=dead  agent-after=false

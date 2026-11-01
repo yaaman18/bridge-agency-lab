@@ -1,0 +1,137 @@
+{
+ "predact/1": {
+  "period": 551,
+  "maxErr": 1.5711520973127335e-10,
+  "min": 9,
+  "mean": 214.9,
+  "minAfterMoves": 85,
+  "meanMinAfterMoves": 174.3,
+  "final": {
+   "count": 223,
+   "activity": 0.5058726600102574,
+   "precision": 0.5635536638637585,
+   "F": 0.6995515695067265,
+   "bound": 150.484
+  }
+ },
+ "predact/2": {
+  "period": 639,
+  "maxErr": 1.7200818547280505e-10,
+  "min": 9,
+  "mean": 193,
+  "minAfterMoves": 135,
+  "meanMinAfterMoves": 159.3,
+  "final": {
+   "count": 204,
+   "activity": 0.724010014895784,
+   "precision": 0.5630043062360884,
+   "F": 0.6519607843137255,
+   "bound": 132.673
+  }
+ },
+ "predact/3": {
+  "period": 466,
+  "maxErr": 1.8417267710901797e-10,
+  "min": 9,
+  "mean": 197.4,
+  "minAfterMoves": 162,
+  "meanMinAfterMoves": 179.1,
+  "final": {
+   "count": 232,
+   "activity": 0.7181900823123633,
+   "precision": 0.5502538919195984,
+   "F": 0.5905172413793104,
+   "bound": 147.679
+  }
+ },
+ "frozen/1": {
+  "period": 551,
+  "maxErr": 1.794546733435709e-10,
+  "min": 9,
+  "mean": 211.5,
+  "minAfterMoves": 106,
+  "meanMinAfterMoves": 172.7,
+  "final": {
+   "count": 194,
+   "activity": 0.5897395303562186,
+   "precision": 0.0659863385467415,
+   "F": 0,
+   "bound": 133.83
+  }
+ },
+ "frozen/2": {
+  "period": 639,
+  "maxErr": 1.5722889656899497e-10,
+  "min": 9,
+  "mean": 184.5,
+  "minAfterMoves": 114,
+  "meanMinAfterMoves": 146.7,
+  "final": {
+   "count": 200,
+   "activity": 0.6774020109504568,
+   "precision": 0.0757692726268568,
+   "F": 0,
+   "bound": 131.898
+  }
+ },
+ "frozen/3": {
+  "period": 466,
+  "maxErr": 2.0094148567295633e-10,
+  "min": 9,
+  "mean": 192.3,
+  "minAfterMoves": 132,
+  "meanMinAfterMoves": 174.4,
+  "final": {
+   "count": 203,
+   "activity": 0.7347046909949774,
+   "precision": 0.07058127443943492,
+   "F": 0,
+   "bound": 138.611
+  }
+ },
+ "nogate/1": {
+  "period": 551,
+  "maxErr": 1.57513113663299e-10,
+  "min": 9,
+  "mean": 200,
+  "minAfterMoves": 129,
+  "meanMinAfterMoves": 160.4,
+  "final": {
+   "count": 187,
+   "activity": 0.6989436731577224,
+   "precision": 0.5494327052226088,
+   "F": 0.6844919786096256,
+   "bound": 125.466
+  }
+ },
+ "nogate/2": {
+  "period": 639,
+  "maxErr": 1.7831780496635474e-10,
+  "min": 9,
+  "mean": 172,
+  "minAfterMoves": 114,
+  "meanMinAfterMoves": 144,
+  "final": {
+   "count": 179,
+   "activity": 0.7782928459867217,
+   "precision": 0.6229930911351204,
+   "F": 0.8770949720670391,
+   "bound": 119.019
+  }
+ },
+ "nogate/3": {
+  "period": 466,
+  "maxErr": 1.7979573385673575e-10,
+  "min": 9,
+  "mean": 207.1,
+  "minAfterMoves": 157,
+  "meanMinAfterMoves": 189.7,
+  "final": {
+   "count": 242,
+   "activity": 0.7073329531625874,
+   "precision": 0.5216471637756951,
+   "F": 0.5495867768595041,
+   "bound": 148.674
+  }
+ }
+}

@@ -1,0 +1,13 @@
+   agent                   agree    label=(true, true, false) got=(true, true, false) sets=[["s1"], ["s2"]]
+   static-agent            agree    label=(true, false, false) got=(true, false, false) sets=[["s1"], ["s2"]]
+   agent-plus-foragers     agree    label=(false, true, false) got=(false, true, false) sets=[["s1"], ["s2"]]
+   stimulus-response       agree    label=(false, false, false) got=(false, false, false) sets=[["s1"], ["s2"]]
+   decoupled-forager       agree    label=(false, true, false) got=(false, true, false) sets=[["s1"], ["s2"]]
+   oscillating-core-agent  agree    label=(true, true, false) got=(true, true, false) sets=[["s1"], ["s2"]]
+   sensor-in-core          agree    label=(true, true, false) got=(true, true, false) sets=[["s1"], ["s2"]]
+   crossed-wiring          agree    label=(false, true, false) got=(false, true, false) sets=[["s1"], ["s2"]]
+   costly-tracker          agree    label=(false, true, false) got=(false, true, false) sets=[["s1"], ["s2"]]
+   shared-relay-reflex     agree    label=(false, false, false) got=(false, false, false) sets=[["s1"], ["s2"]]
+   core-motor-recruiter    agree    label=(false, true, false) got=(false, true, false) sets=[["s2"]]
+   repairing-agent         agree    label=(true, true, true) got=(true, true, true) sets=[["s1"], ["s2"]]
+S3 frozen templates, adopted dynamics: 63/63

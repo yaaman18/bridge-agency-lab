@@ -1,0 +1,253 @@
+{
+ "marks": [
+  [
+   63703,
+   "1"
+  ],
+  [
+   64285,
+   "2"
+  ],
+  [
+   64555,
+   "3"
+  ],
+  [
+   64957,
+   "end"
+  ],
+  [
+   70543,
+   "1"
+  ],
+  [
+   72043,
+   "2"
+  ],
+  [
+   73770,
+   "3"
+  ],
+  [
+   75270,
+   "end"
+  ],
+  [
+   77021,
+   "1"
+  ],
+  [
+   78873,
+   "2"
+  ],
+  [
+   80373,
+   "3"
+  ],
+  [
+   81873,
+   "end"
+  ]
+ ],
+ "events": 1614,
+ "segments": {
+  "1": {
+   "from": 77021,
+   "to": 78873,
+   "all": {
+    "steps": 1852,
+    "calls": 20,
+    "callsPer100": 1.1,
+    "waitingShare": 0.4,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "first750": {
+    "steps": 750,
+    "calls": 3,
+    "callsPer100": 0.4,
+    "waitingShare": 0.333,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "last750": {
+    "steps": 750,
+    "calls": 9,
+    "callsPer100": 1.2,
+    "waitingShare": 0.444,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "last300": {
+    "steps": 300,
+    "calls": 5,
+    "callsPer100": 1.7,
+    "waitingShare": 0.4,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "formShare": 1,
+   "atEnd": {
+    "sedimentTotal": 108,
+    "r9m3": [
+     0,
+     0
+    ],
+    "r10m3": [
+     0,
+     0
+    ],
+    "r11m3": [
+     0,
+     0
+    ],
+    "c3m3": [
+     0,
+     4
+    ]
+   }
+  },
+  "2": {
+   "from": 78873,
+   "to": 80373,
+   "all": {
+    "steps": 1500,
+    "calls": 20,
+    "callsPer100": 1.3,
+    "waitingShare": 0.45,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "first750": {
+    "steps": 750,
+    "calls": 7,
+    "callsPer100": 0.9,
+    "waitingShare": 0.429,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "last750": {
+    "steps": 750,
+    "calls": 13,
+    "callsPer100": 1.7,
+    "waitingShare": 0.462,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "last300": {
+    "steps": 300,
+    "calls": 8,
+    "callsPer100": 2.7,
+    "waitingShare": 0.5,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "formShare": 1,
+   "atEnd": {
+    "sedimentTotal": 102,
+    "r9m3": [
+     0,
+     0
+    ],
+    "r10m3": [
+     0,
+     0
+    ],
+    "r11m3": [
+     0,
+     0
+    ],
+    "c3m3": [
+     0,
+     4
+    ]
+   }
+  },
+  "3": {
+   "from": 80373,
+   "to": 81873,
+   "all": {
+    "steps": 1500,
+    "calls": 155,
+    "callsPer100": 10.3,
+    "waitingShare": 0.581,
+    "answerShare": 0.368,
+    "gestures": 72,
+    "ignored": 0
+   },
+   "first750": {
+    "steps": 750,
+    "calls": 99,
+    "callsPer100": 13.2,
+    "waitingShare": 0.556,
+    "answerShare": 0.374,
+    "gestures": 47,
+    "ignored": 0
+   },
+   "last750": {
+    "steps": 750,
+    "calls": 56,
+    "callsPer100": 7.5,
+    "waitingShare": 0.625,
+    "answerShare": 0.357,
+    "gestures": 25,
+    "ignored": 0
+   },
+   "last300": {
+    "steps": 300,
+    "calls": 40,
+    "callsPer100": 13.3,
+    "waitingShare": 0.65,
+    "answerShare": 0.35,
+    "gestures": 18,
+    "ignored": 0
+   },
+   "formShare": 1,
+   "atEnd": {
+    "sedimentTotal": 109,
+    "r9m3": [
+     0,
+     0
+    ],
+    "r10m3": [
+     0,
+     0
+    ],
+    "r11m3": [
+     0,
+     0
+    ],
+    "c3m3": [
+     3,
+     4
+    ]
+   },
+   "live": {
+    "steps": 300,
+    "calls": 4,
+    "callsPer100": 1.3,
+    "waitingShare": 0.5,
+    "answerShare": 0,
+    "gestures": 0,
+    "ignored": 0
+   },
+   "replay": {
+    "steps": 1200,
+    "calls": 151,
+    "callsPer100": 12.6,
+    "waitingShare": 0.583,
+    "answerShare": 0.377,
+    "gestures": 72,
+    "ignored": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,16 @@
+W0 frozen templates with relabel: 63/63
+selfloop-pair-agent               DIED at 6  mean store s1/s2/s3=3.3/-/-  switches s1/s2/s3=0/-/-  stale-firing=none
+agent                             DIED at 6  mean store s1/s2/s3=3.3/-/-  switches s1/s2/s3=0/-/-  stale-firing=none
+static-agent                      DIED at 6  mean store s1/s2/s3=3.3/-/-  switches s1/s2/s3=0/-/-  stale-firing=none
+reflex                            DIED at 312  mean store s1/s2/s3=29.7/13.8/-  switches s1/s2/s3=0/0/-  stale-firing=none
+thermostat                        DIED at 116  mean store s1/s2/s3=5.9/-/-  switches s1/s2/s3=0/-/-  stale-firing=none
+alternator                        alive at 1000  mean store s1/s2/s3=29.6/28.6/28.3  switches s1/s2/s3=299/299/399  stale-firing=none
+selfloop-pair-agent [EXPLORE off] DIED at 6  mean store s1/s2/s3=3.3/-/-  switches s1/s2/s3=0/-/-  stale-firing=none
+
+W7 sensitivity (change in sensor firing rate, steps 1-300, when a motor is silenced for the whole run)
+selfloop-pair-agent   s1|m1: +0.00 (alive 6)   s2|m1: +0.00 (alive 6)   s1|m2: +0.00 (alive 6)   s2|m2: +0.00 (alive 6)
+agent                 s1|m1: +0.00 (alive 6)   s2|m1: +0.00 (alive 6)   s1|m2: +0.00 (alive 6)   s2|m2: +0.00 (alive 6)
+static-agent          s1|m1: +0.00 (alive 6)   s2|m1: +0.00 (alive 6)   s1|m2: +0.00 (alive 6)   s2|m2: +0.00 (alive 6)
+reflex                no patch sensors
+thermostat            no patch sensors
+alternator            no patch sensors

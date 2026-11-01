@@ -1,0 +1,20 @@
+   agent                   agree    directed=true L2 w/o direction=true
+   selfloop-pair-agent     agree    directed=true L2 w/o direction=true
+   triangle-agent          agree    directed=true L2 w/o direction=true
+   hub-agent               agree    directed=true L2 w/o direction=true
+   redundant-sensor-agent  agree    directed=true L2 w/o direction=true
+   static-agent            agree    directed=true L2 w/o direction=false
+   solipsist               agree    directed=false L2 w/o direction=false
+   reflex                  agree    directed=false L2 w/o direction=false
+   omnivore                agree    directed=false L2 w/o direction=false
+   alternator              agree    directed=false L2 w/o direction=false
+   stimulus-response       agree    directed=true L2 w/o direction=false
+   no-loop                 agree    directed=false L2 w/o direction=false
+R1 templates-digest: 36/36
+R2 random: agents with direction 15 (of 182 without direction); not following the better patch: none
+R3 directed share among the 182: capped 15, uncapped 15
+R4 world selfloop-pair-agent   form 1000/1000
+R4 world agent                 form 1000/1000
+R4 world omnivore              form 1000/1000
+R4 world alternator            form 387/1000
+R4 world reflex                form 726/1000

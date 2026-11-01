@@ -1,0 +1,532 @@
+{
+  "app_newborn_old": {
+    "smc_fail_both": 493,
+    "n_both": 509,
+    "m2_free_when_y2_gt_y1": 0,
+    "smc": 0.7460639918740477,
+    "dc": 0.35551041137633316,
+    "both": {
+      "y1<y2 -> m1": 455,
+      "y1=y2 -> m2": 9,
+      "y1>y2 -> m1": 2,
+      "y1=y2 -> m1": 43
+    },
+    "conf_receptors_into_m1_end": [
+      "r1",
+      "r10"
+    ],
+    "living": 700,
+    "n_world": 1200,
+    "smc_both": 0.03143418467583497,
+    "dc_world": 0.5833333333333334,
+    "smc_world": 0.5833333333333334,
+    "m4b": true,
+    "forced": 0,
+    "conf_receptors_into_m2_end": [],
+    "max_q_r2_m2": 4,
+    "n": 1969
+  },
+  "raise_2_idle": {
+    "school_acts": {
+      "m2": 395,
+      "m1": 5
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_10_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_3_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_9_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_8_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "app_saved_v528_old": {
+    "smc_fail_both": 585,
+    "n_both": 587,
+    "m2_free_when_y2_gt_y1": 0,
+    "smc": 0.6973082783138649,
+    "dc": 0.6973082783138649,
+    "both": {
+      "y1<y2 -> m1": 556,
+      "y1=y2 -> m2": 18,
+      "y1>y2 -> m1": 4,
+      "y1=y2 -> m1": 40
+    },
+    "conf_receptors_into_m1_end": [
+      "r1"
+    ],
+    "living": 1373,
+    "n_world": 1200,
+    "smc_both": 0.0034071550255536627,
+    "dc_world": 0.6408333333333334,
+    "smc_world": 0.6408333333333334,
+    "m4b": true,
+    "forced": 0,
+    "conf_receptors_into_m2_end": [],
+    "max_q_r2_m2": 4,
+    "n": 1969
+  },
+  "raise_1_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_4_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_9_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_1_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "app_saved_v528_idle": {
+    "smc_fail_both": 269,
+    "n_both": 805,
+    "m2_free_when_y2_gt_y1": 0,
+    "smc": 0.7623158963941087,
+    "dc": 0.7623158963941087,
+    "both": {
+      "y1=y2 -> m1": 76,
+      "y1<y2 -> m2": 1,
+      "y1=y2 -> m2": 357,
+      "y1>y2 -> m1": 162,
+      "y1>y2 -> m2": 240
+    },
+    "conf_receptors_into_m1_end": [
+      "r1",
+      "r7"
+    ],
+    "living": 1501,
+    "n_world": 1200,
+    "smc_both": 0.6658385093167701,
+    "dc_world": 0.9016666666666666,
+    "smc_world": 0.9016666666666666,
+    "m4b": true,
+    "forced": 14,
+    "conf_receptors_into_m2_end": [
+      "r1",
+      "r2"
+    ],
+    "max_q_r2_m2": 4,
+    "n": 1969
+  },
+  "lean": {
+    "branches": {
+      "both idle": 0,
+      "neither": 795,
+      "one idle": 5
+    },
+    "identical": true,
+    "n": 800
+  },
+  "app_newborn_idle": {
+    "smc_fail_both": 245,
+    "n_both": 617,
+    "m2_free_when_y2_gt_y1": 0,
+    "smc": 0.7760284408329101,
+    "dc": 0.3854748603351955,
+    "both": {
+      "y1>y2 -> m2": 166,
+      "y1<y2 -> m2": 1,
+      "y1<y2 -> m1": 69,
+      "y1=y2 -> m2": 205,
+      "y1>y2 -> m1": 96,
+      "y1=y2 -> m1": 80
+    },
+    "conf_receptors_into_m1_end": [
+      "r1",
+      "r10"
+    ],
+    "living": 759,
+    "n_world": 1200,
+    "smc_both": 0.6029173419773096,
+    "dc_world": 0.6325,
+    "smc_world": 0.6325,
+    "m4b": true,
+    "forced": 9,
+    "conf_receptors_into_m2_end": [
+      "r1",
+      "r2",
+      "r10"
+    ],
+    "max_q_r2_m2": 4,
+    "n": 1969
+  },
+  "raise_7_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_5_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_5_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_6_idle": {
+    "school_acts": {
+      "m2": 395,
+      "m1": 5
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "body_org_ORG_old_death": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "raise_2_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_3_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_7_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_6_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_4_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "raise_10_idle": {
+    "school_acts": {
+      "m2": 396,
+      "m1": 4
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 4,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  },
+  "body_org_ORG_idle_death": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "raise_8_old": {
+    "school_acts": {
+      "m2": 400,
+      "m1": 0
+    },
+    "conf_m2": [
+      "r1",
+      "r2",
+      "r5",
+      "r6",
+      "r7",
+      "r8"
+    ],
+    "forced": 0,
+    "last_on": [
+      "m2"
+    ],
+    "conf_m1": []
+  }
+}

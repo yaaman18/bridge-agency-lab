@@ -1,0 +1,836 @@
+{
+ "handwired_test": {
+  "form": 1,
+  "acting": 0.999,
+  "answered": 0.999,
+  "richer": 0.984
+ },
+ "runs": {
+  "curriculum/full/seed1": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     4,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 1117,
+   "training": {
+    "form": 0.828,
+    "acting": 1,
+    "answered": 0.802,
+    "richer": 0.377
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.721
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0.01
+   }
+  },
+  "curriculum/full/seed2": {
+   "matrix_end_training": {
+    "r1": [
+     0,
+     4
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     4
+    ],
+    "r6": [
+     0,
+     3
+    ],
+    "r7": [
+     0,
+     4
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "first_step_useful_learned": 1105,
+   "training": {
+    "form": 0.828,
+    "acting": 1,
+    "answered": 0.803,
+    "richer": 0.377
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.722
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/full/seed3": {
+   "matrix_end_training": {
+    "r1": [
+     0,
+     4
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     3
+    ],
+    "r6": [
+     0,
+     3
+    ],
+    "r7": [
+     0,
+     4
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     4
+    ]
+   },
+   "first_step_useful_learned": 1105,
+   "training": {
+    "form": 0.828,
+    "acting": 1,
+    "answered": 0.803,
+    "richer": 0.377
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.995,
+    "richer": 0.718
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/full/seed4": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     3
+    ],
+    "r2": [
+     4,
+     3
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     3,
+     3
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     3
+    ],
+    "c": [
+     4,
+     3
+    ]
+   },
+   "first_step_useful_learned": 1117,
+   "training": {
+    "form": 0.828,
+    "acting": 1,
+    "answered": 0.802,
+    "richer": 0.457
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.998,
+    "richer": 0.722
+   },
+   "sensation": {
+    "informative": 0.015,
+    "noise": 0.02,
+    "clock": 0.02,
+    "empties": 0.01
+   }
+  },
+  "curriculum/full/seed5": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     4,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 1117,
+   "training": {
+    "form": 0.828,
+    "acting": 1,
+    "answered": 0.802,
+    "richer": 0.38
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.721
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "curriculum/fail-off/seed1": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     4,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 1129,
+   "training": {
+    "form": 0.828,
+    "acting": 1,
+    "answered": 0.796,
+    "richer": 0.371
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.721
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0.05
+   }
+  },
+  "curriculum/explore-off/seed1": {
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     0
+    ]
+   },
+   "first_step_useful_learned": null,
+   "training": {
+    "form": 0.015,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "test": {
+    "form": 0,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed1": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 19,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.997,
+    "richer": 0.719
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.734
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0.045,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed2": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 19,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.843
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.734
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0.045,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed3": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     3,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 19,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.998,
+    "richer": 0.715
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.992,
+    "richer": 0.73
+   },
+   "sensation": {
+    "informative": 0.035,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed4": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     3,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 19,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.721
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.998,
+    "richer": 0.722
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/full/seed5": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 19,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.999,
+    "richer": 0.733
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.996,
+    "richer": 0.734
+   },
+   "sensation": {
+    "informative": 0.05,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0.01
+   }
+  },
+  "no-curriculum/fail-off/seed1": {
+   "matrix_end_training": {
+    "r1": [
+     4,
+     0
+    ],
+    "r2": [
+     4,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     4,
+     0
+    ],
+    "r6": [
+     3,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     4,
+     0
+    ]
+   },
+   "first_step_useful_learned": 19,
+   "training": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.991,
+    "richer": 0.713
+   },
+   "test": {
+    "form": 1,
+    "acting": 1,
+    "answered": 0.984,
+    "richer": 0.722
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0.045,
+    "clock": 0,
+    "empties": 0
+   }
+  },
+  "no-curriculum/explore-off/seed1": {
+   "matrix_end_training": {
+    "r1": [
+     0,
+     0
+    ],
+    "r2": [
+     0,
+     0
+    ],
+    "r3": [
+     0,
+     0
+    ],
+    "r4": [
+     0,
+     0
+    ],
+    "r5": [
+     0,
+     0
+    ],
+    "r6": [
+     0,
+     0
+    ],
+    "r7": [
+     0,
+     0
+    ],
+    "r8": [
+     0,
+     0
+    ],
+    "c": [
+     0,
+     0
+    ]
+   },
+   "first_step_useful_learned": null,
+   "training": {
+    "form": 0.015,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "test": {
+    "form": 0,
+    "acting": 0,
+    "answered": 0,
+    "richer": 0
+   },
+   "sensation": {
+    "informative": 0,
+    "noise": 0,
+    "clock": 0,
+    "empties": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+unperturbed: (true, 1000)
+silence s1 30         8/11 dead
+silence s2 30         8/11 dead
+silence m1 10         6/11 dead
+silence m1 30         8/11 dead
+silence m2 10         3/11 dead
+silence m2 30         8/11 dead
+silence c1 30         8/11 dead
+silence c2 30         8/11 dead
+famine 10             11/11 dead
+famine 30             11/11 dead
+(perturbations not listed killed 0/11)

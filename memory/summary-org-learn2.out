@@ -1,0 +1,26 @@
+RESP-ADULT  1 patchAns old 0.984/0.987/0.981 L2 0.996/0.995/0.994 | waitLate old 0.451 L2 0.451 | calls A old 558 L2 558 | form A old 1 L2 1
+RESP-ADULT  2 patchAns old 0.985/0.984/0.984 L2 0.996/0.994/0.995 | waitLate old 0.478 L2 0.436 | calls A old 664 L2 628 | form A old 1 L2 1
+RESP-ADULT  3 patchAns old 0.983/0.988/0.98 L2 0.995/0.995/0.994 | waitLate old 0.395 L2 0.688 | calls A old 684 L2 790 | form A old 1 L2 1
+RESP-ADULT  4 patchAns old 0.986/0.986/0.978 L2 0.996/0.995/0.995 | waitLate old 0.515 L2 0.58 | calls A old 575 L2 662 | form A old 1 L2 1
+RESP-ADULT  5 patchAns old 0.983/0.984/0.98 L2 0.995/0.995/0.996 | waitLate old 0.483 L2 0.483 | calls A old 632 L2 632 | form A old 1 L2 1
+SCAF-ADULT  1 patchAns old 0.987/0.985/0.981 L2 0.996/0.995/0.994 | waitLate old 0.11 L2 0.153 | calls A old 468 L2 486 | form A old 1 L2 1
+SCAF-ADULT  2 patchAns old 0.986/0.981/0.984 L2 0.995/0.995/0.995 | waitLate old 0.099 L2 0.178 | calls A old 427 L2 472 | form A old 1 L2 1
+SCAF-ADULT  3 patchAns old 0.985/0.985/0.981 L2 0.995/0.995/0.993 | waitLate old 0.146 L2 0.169 | calls A old 436 L2 511 | form A old 1 L2 1
+SCAF-ADULT  4 patchAns old 0.985/0.986/0.981 L2 0.996/0.995/0.995 | waitLate old 0.144 L2 0.144 | calls A old 497 L2 503 | form A old 1 L2 1
+SCAF-ADULT  5 patchAns old 0.984/0.984/0.983 L2 0.995/0.995/0.994 | waitLate old 0.1 L2 0.1 | calls A old 466 L2 466 | form A old 1 L2 1
+SCAF-RAISED 1 patchAns old 0.987/0.985/0.981 L2 0.996/0.995/0.994 | waitLate old 0.156 L2 0.151 | calls A old 445 L2 370 | form A old 1 L2 1
+SCAF-RAISED 2 patchAns old 0.986/0.981/0.984 L2 0.996/0.995/0.996 | waitLate old 0.056 L2 0.242 | calls A old 458 L2 333 | form A old 1 L2 1
+SCAF-RAISED 3 patchAns old 0.984/0.985/0.981 L2 0.995/0.995/0.994 | waitLate old 0.202 L2 0.115 | calls A old 486 L2 443 | form A old 1 L2 1
+SCAF-RAISED 4 patchAns old 0.985/0.986/0.986 L2 0.996/0.995/0.995 | waitLate old 0.17 L2 0.158 | calls A old 455 L2 446 | form A old 1 L2 1
+SCAF-RAISED 5 patchAns old 0.982/0.984/0.983 L2 0.997/0.995/0.994 | waitLate old 0.118 L2 0.13 | calls A old 467 L2 467 | form A old 1 L2 1
+org 1 {"OLD":{"pre":0.986,"post":0.983,"rec":0,"junk":15,"actsPre":1,"actsPost":0.9},"L2":{"pre":0.995,"post":0.979,"rec":0,"junk":0,"actsPre":1,"actsPost":0.61}}
+org 2 {"OLD":{"pre":0.987,"post":0.978,"rec":0,"junk":14,"actsPre":1,"actsPost":0.9},"L2":{"pre":0.996,"post":0.97,"rec":0,"junk":0,"actsPre":1,"actsPost":0.47}}
+org 3 {"OLD":{"pre":0.989,"post":0.976,"rec":0,"junk":16,"actsPre":1,"actsPost":0.9},"L2":{"pre":0.996,"post":0.965,"rec":0,"junk":0,"actsPre":1,"actsPost":0.49}}
+org 4 {"OLD":{"pre":0.989,"post":0.978,"rec":0,"junk":16,"actsPre":1,"actsPost":0.9},"L2":{"pre":0.995,"post":0.97,"rec":0,"junk":0,"actsPre":1,"actsPost":0.57}}
+org 5 {"OLD":{"pre":0.99,"post":0.979,"rec":0,"junk":16,"actsPre":1,"actsPost":0.91},"L2":{"pre":0.996,"post":0.972,"rec":0,"junk":0,"actsPre":1,"actsPost":0.51}}
+O1 HOLDS - patch answered fraction kept (>= old - 0.02) 45/45
+O2 FAILS - waiting kept: SCAF-RAISED 4/5, RESP-ADULT 3/5
+O3 HOLDS - noise/clock sediment lower 5/5 (old 15,14,16,16,16, L2 0,0,0,0,0)
+O4 FAILS - after crossing L2 answered <= old 5/5, recovers later or never 0/5
+O5 HOLDS - form kept SCAF-RAISED 5/5
+predictions holding: 3/5

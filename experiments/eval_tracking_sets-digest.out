@@ -1,0 +1,14 @@
+   agent                   agree    label=(true, true, false) got=(true, true, false) sets=[["s1"], ["s2"]]
+   selfloop-pair-agent     agree    label=(true, true, true) got=(true, true, true) sets=[["s1"], ["s2"]]
+   triangle-agent          agree    label=(true, true, true) got=(true, true, true) sets=[["s1"], ["s2"]]
+   hub-agent               agree    label=(true, true, false) got=(true, true, false) sets=[["s1"], ["s2"]]
+   redundant-sensor-agent  agree    label=(true, true, false) got=(true, true, false) sets=[["s1a", "s1b"], ["s2a", "s2b"]]
+   static-agent            agree    label=(false, false, false) got=(false, false, false) sets=[["s1"], ["s2"]]
+   stimulus-response       agree    label=(false, true, false) got=(false, true, false) sets=[["s1"], ["s2"]]
+S1/S2 templates-digest: (36, 36)
+S4 random agency: single units 174, minimal sets 182
+   newly agent: k=442 sets=[["s1"], ["s2", "x1"]]
+   newly agent: k=5669 sets=[["s2"], ["s1", "x1"]]
+   newly agent: k=6406 sets=[["s1"], ["s2", "x2"]]
+   newly agent: k=10044 sets=[["s1"], ["s2", "x2"]]
+   newly agent: k=10166 sets=[["s2"], ["s1", "x1"]]

@@ -1,0 +1,15 @@
+1 OLD 0.9/0.0 d925 actsLate0.00 | OLDR 0.9/0.0 d925 actsLate0.00 | L2 16.3/16.8 dnull actsLate1.00 | L2R 12.6/9.6 dnull actsLate0.50 | L3 14.9/14.5 dnull actsLate1.00 | L3R 14.6/13.9 dnull actsLate1.00
+2 OLD 0.9/0.0 d919 actsLate0.00 | OLDR 0.9/0.0 d919 actsLate0.00 | L2 16.0/16.6 dnull actsLate1.00 | L2R 13.6/11.7 dnull actsLate0.75 | L3 14.8/14.5 dnull actsLate1.00 | L3R 14.8/14.5 dnull actsLate1.00
+3 OLD 11.8/12.1 dnull actsLate1.00 | OLDR 11.7/11.8 dnull actsLate0.90 | L2 16.7/17.1 dnull actsLate1.00 | L2R 14.1/11.9 dnull actsLate0.76 | L3 14.7/14.5 dnull actsLate1.00 | L3R 14.7/14.5 dnull actsLate1.00
+4 OLD 11.9/12.1 dnull actsLate1.00 | OLDR 11.9/12.1 dnull actsLate0.89 | L2 16.2/16.4 dnull actsLate1.00 | L2R 10.7/5.4 d7206 actsLate0.05 | L3 14.6/14.5 dnull actsLate1.00 | L3R 14.5/14.5 dnull actsLate1.00
+5 OLD 11.9/12.1 dnull actsLate1.00 | OLDR 11.4/11.0 dnull actsLate0.87 | L2 16.2/16.1 dnull actsLate1.00 | L2R 10.6/5.0 d7110 actsLate0.04 | L3 14.7/14.4 dnull actsLate1.00 | L3R 14.5/14.1 dnull actsLate1.00
+6 OLD 11.9/12.1 dnull actsLate1.00 | OLDR 11.4/11.0 dnull actsLate0.87 | L2 16.1/15.9 dnull actsLate1.00 | L2R 10.1/4.1 d6707 actsLate0.00 | L3 14.7/14.5 dnull actsLate1.00 | L3R 14.6/14.4 dnull actsLate1.00
+7 OLD 11.9/12.1 dnull actsLate1.00 | OLDR 11.7/11.6 dnull actsLate0.85 | L2 16.4/16.8 dnull actsLate1.00 | L2R 10.1/4.3 d6909 actsLate0.01 | L3 14.7/14.5 dnull actsLate1.00 | L3R 14.7/14.5 dnull actsLate1.00
+8 OLD 12.0/12.1 dnull actsLate1.00 | OLDR 11.5/11.2 dnull actsLate0.91 | L2 15.8/16.3 dnull actsLate1.00 | L2R 9.2/3.2 d6130 actsLate0.00 | L3 14.7/14.5 dnull actsLate1.00 | L3R 8.8/2.6 d6059 actsLate0.00
+9 OLD 11.9/12.1 dnull actsLate1.00 | OLDR 11.6/11.4 dnull actsLate0.91 | L2 15.7/16.7 dnull actsLate1.00 | L2R 8.9/3.0 d6211 actsLate0.00 | L3 14.5/14.3 dnull actsLate1.00 | L3R 14.4/14.1 dnull actsLate1.00
+10 OLD 11.9/12.1 dnull actsLate1.00 | OLDR 11.5/11.2 dnull actsLate0.91 | L2 15.6/15.9 dnull actsLate1.00 | L2R 9.2/3.1 d6242 actsLate0.00 | L3 14.6/14.4 dnull actsLate1.00 | L3R 14.6/14.4 dnull actsLate1.00
+P0 HOLDS - conservation
+P1 HOLDS - learn3 with receptors crossed alive 9/10 (learn2 3/10, old 8/10)
+P2 FAILS - learn3 alive 10/10, body >= learn2 - 1 in 1/10
+P3 HOLDS - learn3 crossed acts per step 6800-10000 >= 0.9 in 9/10
+body predictions holding: 3/4

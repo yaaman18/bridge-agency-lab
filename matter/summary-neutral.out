@@ -1,0 +1,34 @@
+LEAN/1   n=211 ba=0.162 mk=[-0.161,0.135] med 0.006 act=0.685 Cb=0.663 Cd=-0.492 mkCb=-0.149 mkCd=0.126 lines=10 shadow med 4 2.5% 3
+LEAN/2   n=202 ba=0.279 mk=[-0.105,0.086] med 0.017 act=0.695 Cb=0.875 Cd=-0.599 mkCb=0.037 mkCd=-0.021 lines=7 shadow med 4 2.5% 2
+LEAN/3   n=201 ba=0.141 mk=[-0.133,0.172] med 0.011 act=0.754 Cb=0.485 Cd=-0.333 mkCb=0.072 mkCd=-0.050 lines=13 shadow med 4 2.5% 2
+LEAN/4   n=194 ba=0.170 mk=[-0.200,0.152] med -0.008 act=0.717 Cb=0.561 Cd=-0.374 mkCb=-0.110 mkCd=0.008 lines=11 shadow med 4 2.5% 2
+LEAN/5   n=215 ba=0.137 mk=[-0.150,0.284] med -0.004 act=0.661 Cb=0.866 Cd=-0.731 mkCb=0.088 mkCd=-0.073 lines=14 shadow med 4 2.5% 2
+LEAN/6   n=202 ba=0.269 mk=[-0.163,0.173] med 0.014 act=0.697 Cb=1.297 Cd=-0.999 mkCb=0.023 mkCd=-0.045 lines=13 shadow med 4 2.5% 2
+LEAN/7   n=196 ba=0.120 mk=[-0.126,0.103] med 0.008 act=0.721 Cb=0.446 Cd=-0.374 mkCb=0.027 mkCd=0.011 lines=10 shadow med 4 2.5% 2
+LEAN/8   n=206 ba=0.157 mk=[-0.183,0.137] med 0.004 act=0.707 Cb=0.523 Cd=-0.365 mkCb=-0.072 mkCd=0.023 lines=14 shadow med 4 2.5% 2
+LEAN/9   n=212 ba=0.143 mk=[-0.143,0.116] med 0.005 act=0.698 Cb=0.334 Cd=-0.236 mkCb=0.105 mkCd=-0.082 lines=14 shadow med 4 2.5% 2
+LEAN/10  n=208 ba=0.077 mk=[-0.135,0.150] med -0.025 act=0.686 Cb=0.758 Cd=-0.713 mkCb=-0.111 mkCd=0.071 lines=12 shadow med 4 2.5% 2
+RICH/1   n=731 ba=0.076 mk=[-0.034,0.062] med 0.004 act=0.678 Cb=1.006 Cd=-0.922 mkCb=0.280 mkCd=-0.248 lines=33 shadow med 12 2.5% 9
+RICH/2   n=683 ba=0.046 mk=[-0.065,0.044] med 0.010 act=0.712 Cb=1.034 Cd=-0.975 mkCb=0.091 mkCd=-0.101 lines=34 shadow med 11 2.5% 8
+RICH/3   n=713 ba=0.137 mk=[-0.058,0.056] med -0.012 act=0.654 Cb=1.071 Cd=-0.927 mkCb=0.037 mkCd=-0.020 lines=40 shadow med 12 2.5% 9
+RICH/4   n=730 ba=0.043 mk=[-0.061,0.079] med -0.003 act=0.636 Cb=0.881 Cd=-0.833 mkCb=0.225 mkCd=-0.215 lines=39 shadow med 12 2.5% 9
+RICH/5   n=730 ba=0.053 mk=[-0.042,0.065] med -0.001 act=0.646 Cb=0.755 Cd=-0.691 mkCb=-0.029 mkCd=0.033 lines=39 shadow med 12 2.5% 8
+RICH/6   n=725 ba=0.009 mk=[-0.082,0.103] med 0.001 act=0.664 Cb=0.333 Cd=-0.310 mkCb=0.037 mkCd=-0.058 lines=33 shadow med 12 2.5% 8
+RICH/7   n=711 ba=0.058 mk=[-0.044,0.035] med 0.000 act=0.685 Cb=1.284 Cd=-1.250 mkCb=0.013 mkCd=-0.004 lines=40 shadow med 12 2.5% 8
+RICH/8   n=723 ba=0.104 mk=[-0.077,0.041] med 0.001 act=0.670 Cb=1.151 Cd=-1.063 mkCb=-0.271 mkCd=0.249 lines=39 shadow med 12 2.5% 8
+RICH/9   n=727 ba=0.089 mk=[-0.059,0.089] med 0.023 act=0.655 Cb=0.876 Cd=-0.803 mkCb=0.058 mkCd=-0.028 lines=38 shadow med 12.5 2.5% 10
+RICH/10  n=713 ba=0.070 mk=[-0.097,0.040] med -0.010 act=0.665 Cb=1.049 Cd=-0.991 mkCb=-0.108 mkCd=0.052 lines=43 shadow med 12 2.5% 8
+N0 HOLDS - max err 7.4e-9, min count 81
+N1 FAILS - ba above all 20 markers: LEAN 7/10, RICH 6/10
+N2 HOLDS - excess LEAN > RICH 9/10
+N3 HOLDS - Cb>0 LEAN 10/10 RICH 10/10; Cb>Cd LEAN 10/10 RICH 10/10
+N4 FAILS - real lines below shadow 2.5%: LEAN 0/10 RICH 0/10
+N5 HOLDS - shadow median lines LEAN < RICH 10/10
+N6 HOLDS - real lines LEAN < RICH 10/10
+predictions holding: 5/7
+replay LEAN/1: identical to stage 38 [211,10,0.162] [211,10,0.162]
+replay LEAN/2: identical to stage 38 [202,7,0.279] [202,7,0.279]
+replay LEAN/3: identical to stage 38 [201,13,0.141] [201,13,0.141]
+replay RICH/1: identical to stage 38 [731,33,0.076] [731,33,0.076]
+replay RICH/2: identical to stage 38 [683,34,0.046] [683,34,0.046]
+replay RICH/3: identical to stage 38 [713,40,0.137] [713,40,0.137]

@@ -1,0 +1,238 @@
+{
+  "fixed": {
+    "saved_v528": {
+      "act": 0.994413407821229,
+      "m4b_check": true,
+      "living": 2,
+      "smc": 0.001015744032503809,
+      "dc": 0.001015744032503809,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "saved_v518_partner": {
+      "act": 0.9964448958862366,
+      "m4b_check": true,
+      "living": 2,
+      "smc": 0.001015744032503809,
+      "dc": 0.001015744032503809,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn_partner": {
+      "act": 0.98933468765871,
+      "m4b_check": true,
+      "living": 346,
+      "smc": 0.17572371762315897,
+      "dc": 0.17572371762315897,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "saved_v518": {
+      "act": 0.9933976637887253,
+      "m4b_check": true,
+      "living": 2,
+      "smc": 0.001015744032503809,
+      "dc": 0.001015744032503809,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn_world": {
+      "act": 0.9941666666666666,
+      "m4b_check": true,
+      "living": 16,
+      "smc": 0.013333333333333334,
+      "dc": 0.013333333333333334,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1200
+    },
+    "newborn_partner_before_world": {
+      "act": 0.9752925877763329,
+      "m4b_check": true,
+      "living": 331,
+      "smc": 0.4304291287386216,
+      "dc": 0.4304291287386216,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 769
+    },
+    "newborn": {
+      "act": 0.9867953275774505,
+      "m4b_check": true,
+      "living": 414,
+      "smc": 0.21025901472828848,
+      "dc": 0.21025901472828848,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn_partner_world": {
+      "act": 0.9983333333333333,
+      "m4b_check": true,
+      "living": 15,
+      "smc": 0.0125,
+      "dc": 0.0125,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1200
+    },
+    "newborn_before_world": {
+      "act": 0.9752925877763329,
+      "m4b_check": true,
+      "living": 398,
+      "smc": 0.517555266579974,
+      "dc": 0.517555266579974,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 769
+    }
+  },
+  "alpha": "state (item 69)",
+  "verdicts": [
+    {
+      "id": "DQ7",
+      "value": "newborn before the world: DC 0/769",
+      "holds": true
+    },
+    {
+      "id": "DQ8",
+      "value": "newborn DC 35.6% vs fixed 21.0%",
+      "holds": false
+    },
+    {
+      "id": "DQ9",
+      "value": "saved v518 hSMC 68.1% vs fixed 0.1%",
+      "holds": true
+    },
+    {
+      "id": "DQ10",
+      "value": "saved v518 DC 68.1% (1340/1969)",
+      "holds": true
+    },
+    {
+      "id": "DQ11",
+      "value": "newborn world DC 58.3% vs fixed 1.3%",
+      "holds": true
+    },
+    {
+      "id": "DQ12",
+      "value": "M4b in every run: newborn=true, newborn_before_world=true, newborn_partner=true, newborn_partner_before_world=true, newborn_partner_world=true, newborn_world=true, saved_v518=true, saved_v518_partner=true, saved_v528=true",
+      "holds": true
+    }
+  ],
+  "L": 32,
+  "state": {
+    "saved_v528": {
+      "act": 0.994413407821229,
+      "m4b_check": true,
+      "living": 1373,
+      "smc": 0.6973082783138649,
+      "dc": 0.6973082783138649,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "saved_v518_partner": {
+      "act": 0.9964448958862366,
+      "m4b_check": true,
+      "living": 1220,
+      "smc": 0.6196038598273235,
+      "dc": 0.6196038598273235,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn_partner": {
+      "act": 0.6571863890299644,
+      "m4b_check": true,
+      "living": 724,
+      "smc": 0.617064499746064,
+      "dc": 0.36769933976637886,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "saved_v518": {
+      "act": 0.9933976637887253,
+      "m4b_check": true,
+      "living": 1340,
+      "smc": 0.6805485017775521,
+      "dc": 0.6805485017775521,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn_world": {
+      "act": 0.9941666666666666,
+      "m4b_check": true,
+      "living": 700,
+      "smc": 0.5833333333333334,
+      "dc": 0.5833333333333334,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1200
+    },
+    "newborn_partner_before_world": {
+      "act": 0.12483745123537061,
+      "m4b_check": true,
+      "living": 92,
+      "smc": 0.7581274382314694,
+      "dc": 0.11963589076723016,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 769
+    },
+    "newborn": {
+      "act": 0.6058913153885221,
+      "m4b_check": true,
+      "living": 700,
+      "smc": 0.7460639918740477,
+      "dc": 0.35551041137633316,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn_partner_world": {
+      "act": 0.9983333333333333,
+      "m4b_check": true,
+      "living": 632,
+      "smc": 0.5266666666666666,
+      "dc": 0.5266666666666666,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1200
+    },
+    "newborn_before_world": {
+      "act": 0.0,
+      "m4b_check": true,
+      "living": 0,
+      "smc": 1.0,
+      "dc": 0.0,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 769
+    }
+  }
+}

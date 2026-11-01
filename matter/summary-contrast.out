@@ -1,0 +1,18 @@
+1 OLD 0.9/0.0 d925 kept1.6 end18 ans0.97 | SED 12.1/12.2 dnull kept9.0 end11 ans0.99 | LEARN 12.2/12.0 dnull kept7.0 end7 ans0.99 | LEARNR 12.1/11.8 dnull kept7.0 end7 ans0.99 | NR 1.1/0.0 d1065 kept1.4 end14 ans0.98
+2 OLD 0.9/0.0 d919 kept1.5 end18 ans0.96 | SED 12.1/12.3 dnull kept9.0 end11 ans0.99 | LEARN 12.3/12.3 dnull kept7.0 end7 ans0.99 | LEARNR 12.2/12.0 dnull kept7.0 end7 ans0.99 | NR 13.8/14.2 dnull kept12.7 end14 ans0.99
+3 OLD 11.8/12.1 dnull kept16.7 end16 ans0.99 | SED 15.1/15.6 dnull kept9.7 end9 ans0.99 | LEARN 12.3/12.1 dnull kept7.0 end7 ans0.99 | LEARNR 12.3/12.0 dnull kept7.1 end7 ans0.99 | NR 13.8/14.1 dnull kept12.7 end12 ans0.99
+4 OLD 11.9/12.1 dnull kept16.6 end16 ans0.99 | SED 14.9/15.4 dnull kept10.2 end10 ans0.99 | LEARN 12.3/12.0 dnull kept7.0 end7 ans0.99 | LEARNR 8.7/4.8 d7209 kept5.0 end6 ans0.99 | NR 14.0/14.1 dnull kept12.7 end12 ans0.99
+5 OLD 11.9/12.1 dnull kept16.5 end16 ans0.98 | SED 0.9/0.0 d931 kept0.7 end7 ans0.95 | LEARN 12.4/12.1 dnull kept7.0 end7 ans0.99 | LEARNR 8.4/4.2 d7052 kept4.9 end6 ans0.99 | NR 14.0/14.1 dnull kept12.6 end12 ans0.99
+6 OLD 11.9/12.1 dnull kept16.5 end16 ans0.98 | SED 12.0/12.2 dnull kept9.1 end9 ans0.98 | LEARN 12.3/12.2 dnull kept7.0 end7 ans0.99 | LEARNR 8.6/4.6 d7994 kept5.5 end6 ans0.98 | NR 14.0/14.2 dnull kept12.6 end12 ans0.99
+7 OLD 11.9/12.1 dnull kept16.4 end16 ans0.98 | SED 15.2/15.7 dnull kept9.6 end9 ans0.99 | LEARN 12.1/11.9 dnull kept7.1 end7 ans0.99 | LEARNR 8.1/3.9 d6911 kept4.8 end6 ans0.99 | NR 14.0/14.2 dnull kept12.6 end12 ans0.99
+8 OLD 12.0/12.1 dnull kept16.5 end16 ans0.99 | SED 12.3/12.4 dnull kept8.9 end8 ans0.99 | LEARN 12.2/12.1 dnull kept7.0 end7 ans0.99 | LEARNR 8.0/3.7 d6838 kept4.7 end6 ans0.99 | NR 14.0/14.2 dnull kept12.6 end12 ans0.99
+9 OLD 11.9/12.1 dnull kept16.5 end16 ans0.98 | SED 12.3/12.3 dnull kept8.9 end9 ans0.99 | LEARN 12.2/12.1 dnull kept7.0 end7 ans0.99 | LEARNR 8.0/3.7 d7188 kept5.0 end6 ans0.99 | NR 14.0/14.1 dnull kept12.6 end12 ans0.99
+10 OLD 11.9/12.1 dnull kept16.5 end17 ans0.98 | SED 14.8/15.2 dnull kept10.4 end12 ans0.99 | LEARN 12.2/12.0 dnull kept7.0 end7 ans0.99 | LEARNR 8.0/3.7 d7620 kept5.2 end6 ans0.98 | NR 14.0/14.1 dnull kept12.6 end14 ans0.99
+S0 HOLDS - conservation
+S1 FAILS - old rule (noise and clock kept) dies 2/10
+S2 FAILS - sediment gate only dies 1/10
+S3 HOLDS - learning gate alive 10/10
+S4 HOLDS - LEARN keeps fewer contingencies than OLD 10/10
+S5 FAILS - LEARN with receptors crossed at 5800 alive 3/10
+S6 FAILS - LEARN body >= receptors-removed body - 1 in 1/10
+predictions holding: 3/7

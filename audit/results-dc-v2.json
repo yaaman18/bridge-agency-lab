@@ -1,0 +1,125 @@
+{
+  "newborn_nursery": {
+    "act": 0.9539295392953929,
+    "m4b_check": true,
+    "living": 0,
+    "smc": 0.0,
+    "dc": 0.0,
+    "living_without_act": 0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 369
+  },
+  "saved_v518_partner": {
+    "act": 0.9964448958862366,
+    "m4b_check": true,
+    "living": 2,
+    "smc": 0.001015744032503809,
+    "dc": 0.001015744032503809,
+    "living_without_act": 0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1969
+  },
+  "newborn_partner": {
+    "act": 0.98933468765871,
+    "m4b_check": true,
+    "living": 346,
+    "smc": 0.17572371762315897,
+    "dc": 0.17572371762315897,
+    "living_without_act": 0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1969
+  },
+  "saved_v518": {
+    "act": 0.9933976637887253,
+    "m4b_check": true,
+    "living": 2,
+    "smc": 0.001015744032503809,
+    "dc": 0.001015744032503809,
+    "living_without_act": 0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1969
+  },
+  "newborn_world": {
+    "act": 0.9941666666666666,
+    "m4b_check": true,
+    "living": 16,
+    "smc": 0.013333333333333334,
+    "dc": 0.013333333333333334,
+    "living_without_act": 0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1200
+  },
+  "previous_reading_r10r11_environment": {
+    "saved_v518": {
+      "act": 0.9933976637887253,
+      "m4b_check": true,
+      "living": 0,
+      "smc": 0.0,
+      "dc": 0.0,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    },
+    "newborn": {
+      "act": 0.9898425596749619,
+      "m4b_check": true,
+      "living": 0,
+      "smc": 0.0,
+      "dc": 0.0,
+      "living_without_act": 0,
+      "self": 1.0,
+      "bound": 1.0,
+      "n": 1969
+    }
+  },
+  "verdicts": [
+    {
+      "id": "DQ1",
+      "value": "saved DC 2/1969",
+      "holds": true
+    },
+    {
+      "id": "DQ2",
+      "value": "newborn DC 414/1969",
+      "holds": true
+    },
+    {
+      "id": "DQ3",
+      "value": "nursery 0.0% world 1.3%",
+      "holds": true
+    },
+    {
+      "id": "DQ4",
+      "value": "newborn living 414, without act 0",
+      "holds": true
+    },
+    {
+      "id": "DQ5",
+      "value": "saved with partner 0.1% vs 0.1%",
+      "holds": false
+    },
+    {
+      "id": "DQ6",
+      "value": "newborn with partner 17.6% vs 21.0%",
+      "holds": false
+    }
+  ],
+  "newborn": {
+    "act": 0.9867953275774505,
+    "m4b_check": true,
+    "living": 414,
+    "smc": 0.21025901472828848,
+    "dc": 0.21025901472828848,
+    "living_without_act": 0,
+    "self": 1.0,
+    "bound": 1.0,
+    "n": 1969
+  },
+  "L": 32
+}

@@ -1,0 +1,18 @@
+1 PRE 0.9/0.0 d944 k17 lost0 ans0.94 | PRECAP 9.3/7.4 d8355 k1 lost56 ans0.98 | BODY 0.9/0.0 d925 k18 lost0 ans0.97 | GROW 5.8/0.0 d4253 k1 lost35 ans0.96 | GROWR 5.8/0.0 d4253 k1 lost35 ans0.96 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+2 PRE 0.9/0.0 d934 k18 lost0 ans0.94 | PRECAP 10.5/7.3 d8224 k1 lost61 ans0.96 | BODY 0.9/0.0 d919 k18 lost0 ans0.96 | GROW 4.3/0.0 d3210 k1 lost31 ans0.96 | GROWR 4.3/0.0 d3210 k1 lost31 ans0.96 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+3 PRE 0.8/0.0 d908 k18 lost0 ans0.93 | PRECAP 4.8/0.0 d4277 k1 lost43 ans0.91 | BODY 0.9/0.0 d925 k18 lost0 ans0.96 | GROW 5.8/0.0 d4232 k1 lost34 ans0.97 | GROWR 5.8/0.0 d4232 k1 lost34 ans0.97 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+4 PRE 0.9/0.0 d926 k18 lost0 ans0.95 | PRECAP 9.1/4.4 d7574 k1 lost67 ans0.93 | BODY 0.9/0.0 d942 k18 lost0 ans0.96 | GROW 1.7/0.0 d1734 k1 lost16 ans0.89 | GROWR 1.7/0.0 d1734 k1 lost16 ans0.89 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+5 PRE 0.9/0.0 d918 k18 lost0 ans0.94 | PRECAP 5.5/0.0 d4206 k1 lost44 ans0.98 | BODY 0.9/0.0 d919 k18 lost0 ans0.95 | GROW 1.2/0.0 d1231 k1 lost16 ans0.88 | GROWR 1.2/0.0 d1231 k1 lost16 ans0.88 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+6 PRE 0.9/0.0 d927 k18 lost0 ans0.95 | PRECAP 1.3/0.0 d1557 k1 lost22 ans0.78 | BODY 0.9/0.0 d899 k18 lost0 ans0.95 | GROW 13.8/13.3 dnull k9 lost40 ans0.99 | GROWR 10.4/6.4 d7550 k1 lost44 ans0.98 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+7 PRE 0.9/0.0 d941 k17 lost0 ans0.93 | PRECAP 8.2/4.9 d7287 k1 lost59 ans0.97 | BODY 0.9/0.0 d924 k18 lost0 ans0.95 | GROW 9.7/5.2 d7578 k1 lost48 ans0.97 | GROWR 10.1/5.9 d7230 k1 lost46 ans0.97 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+8 PRE 0.9/0.0 d932 k18 lost0 ans0.94 | PRECAP 5.5/0.0 d4282 k1 lost38 ans0.97 | BODY 0.9/0.0 d900 k18 lost0 ans0.96 | GROW 5.8/0.0 d4533 k1 lost31 ans0.97 | GROWR 5.8/0.0 d4533 k1 lost31 ans0.97 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+9 PRE 0.9/0.0 d945 k18 lost0 ans0.94 | PRECAP 9.3/5.1 d7253 k1 lost49 ans0.97 | BODY 0.9/0.0 d910 k18 lost0 ans0.95 | GROW 8.1/4.6 d7233 k1 lost38 ans0.95 | GROWR 6.8/2.0 d6275 k1 lost42 ans0.95 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+10 PRE 0.9/0.0 d909 k18 lost0 ans0.94 | PRECAP 7.8/2.6 d6277 k1 lost62 ans0.96 | BODY 0.9/0.0 d944 k18 lost0 ans0.97 | GROW 8.6/2.9 d6311 k1 lost46 ans0.97 | GROWR 8.6/2.9 d6298 k1 lost47 ans0.97 | GREEDY 21.2/21.3 dnull knull lost0 ans1.00 | GREEDYR 12.8/4.5 d6232 knull lost0 ans0.98 | NONE 0.1/0.0 d196 knull lost0 ans0.00
+G0 HOLDS - conservation
+G1 FAILS - GROW alive at the end 1/10
+G2 HOLDS - PRE dies 10/10
+G3 HOLDS - BODY (raised on the body, no capacity) dies 10/10
+G4 FAILS - PRECAP (pre-raised, capacity) alive 0/10
+G5 FAILS - GROW crossed alive 0/10, GREEDY crossed dies 10/10
+G6 HOLDS - GREEDY late body > GROW 10/10
+predictions holding: 4/7

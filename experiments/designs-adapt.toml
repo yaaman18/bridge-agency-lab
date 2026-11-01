@@ -1,0 +1,53 @@
+schema_version = 1
+
+[params]
+smax = 4
+decay_period = 8
+grow_cost = 1
+resource0 = 10
+rmax = 30
+horizon = 60
+alive_window = 5
+strength0 = 4
+switch_at = 20
+# Survival schedules: (yield of patch 1, yield of patch 2) before and after switch_at.
+survival_schedules = [
+  { name = "p1-high", first = [5, 0], second = [5, 0] },
+  { name = "p2-high", first = [0, 5], second = [0, 5] },
+  { name = "p1-then-p2", first = [5, 0], second = [0, 5] },
+  { name = "p2-then-p1", first = [0, 5], second = [5, 0] },
+]
+# Choice is measured with abundant resource and both patches positive, so that starvation cannot
+# change which motors are active.
+choice_resource0 = 1000
+choice_rmax = 100000
+choice_window = [5, 15]
+choice_schedules = [
+  { name = "c1-better", first = [5, 4], second = [5, 4] },
+  { name = "c2-better", first = [4, 5], second = [4, 5] },
+]
+
+# ---- Adaptive rehearsal under the frequency variant (variant_freq.jl, unchanged), 2026-10-29.
+# ---- PREDICTIONS, written before any run:
+# ---- (Q1) satiety-rehearsal: frozen criteria L2 = false; variant L2 = true; L3 = true; L3R = false.
+# ---- (Q2) Survives all 7 held-out envs (flip7, flip13, rand1-5) and also "fast-then-slow"
+# ----      (flip7 for 70 steps, then phases of 60), low confidence on the last. Dies in all with the patch
+# ----      sensors silenced. Still an agent (variant) after 200 steps where it survives.
+# ---- (Q3) Adaptivity: the share of steps where the motor of the poorer patch fires is lower in flip7 than
+# ----      in rand1-5 and in a constant 200-step p1-high run.
+# Idea: rehearse only when sated. Long stable phases fill the store, and that is when the unused coupling
+# is at risk; fast switching keeps the store low, so no rehearsal tax is paid. A motor forages with
+# c (1) + its sensor (2) >= 3; it rehearses with c (1) + clock phase (1) + satiety f (1) >= 3.
+[[template]]
+name = "satiety-rehearsal"
+L2 = true
+L3 = true
+L3R = false
+units = ["s1", "s2", "m1", "m2", "c", "a", "b", "f"]
+theta = [1, 1, 3, 3, 1, 1, 1, 1]
+patch_sensors = { s1 = 1, s2 = 2 }
+motors = { m1 = 1, m2 = 2 }
+resource_sensors = { f = [20, "high"] }
+edges = [["c", "c", 1], ["a", "b", 1], ["b", "a", 1], ["c", "m1", 1], ["c", "m2", 1], ["s1", "m1", 2], ["s2", "m2", 2], ["b", "m1", 1], ["a", "m2", 1], ["f", "m1", 1], ["f", "m2", 1]]
+initial = ["c", "a"]
+maintain = true

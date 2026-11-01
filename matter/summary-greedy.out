@@ -1,0 +1,16 @@
+1 ORG mean 19.9 late 20.3 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.8 late 17.9 death null ans 0.99 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+2 ORG mean 19.9 late 20.3 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.6 late 17.6 death null ans 0.98 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+3 ORG mean 19.9 late 20.2 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.7 late 17.9 death null ans 0.99 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+4 ORG mean 19.9 late 20.2 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.6 late 17.7 death null ans 0.98 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+5 ORG mean 19.9 late 20.2 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.7 late 17.8 death null ans 0.99 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+6 ORG mean 20.0 late 20.3 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.8 late 17.9 death null ans 0.98 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+7 ORG mean 19.9 late 20.3 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.7 late 17.7 death null ans 0.98 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+8 ORG mean 19.9 late 20.3 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.7 late 17.7 death null ans 0.98 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+9 ORG mean 20.0 late 20.3 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.7 late 17.9 death null ans 0.99 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+10 ORG mean 19.9 late 20.2 death null ans 0.99 err 4e-9 | GREEDY mean 23.1 late 23.3 death null ans 1.00 err 4e-9 | ORGR mean 18.6 late 17.6 death null ans 0.98 err 4e-9 | GREEDYR mean 12.0 late 1.1 death 5487 ans 0.97 err 2e-9
+F0 HOLDS - conservation
+F1 HOLDS - GREEDY >= 0.95 ORG 10/10
+F2 HOLDS - GREEDY with crossed receptors dies 10/10
+F3 HOLDS - ORG with crossed receptors alive at the end 10/10
+F4 HOLDS - ORG-REVR late body > GREEDY-REVR 10/10
+predictions holding: 5/5

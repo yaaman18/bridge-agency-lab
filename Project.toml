@@ -1,0 +1,5 @@
+[deps]
+AgencySubstrate = "16f699e0-7704-4155-90b3-cfd258d15f2f"
+Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"

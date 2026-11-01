@@ -1,0 +1,14 @@
+# The app's engine and drawing in Rust (2026-10-31, user decision: the front end not in JavaScript; later onto
+# dedicated hardware such as a small computer or microcontroller). being-core is no_std + alloc: the rules of the
+# circuit and the life loop (copies of the canonical Julia core/, checked bit for bit), the saved record (JSON), and
+# drawing into a pixel frame buffer. being-wasm exports it to the browser page; being-tools runs the checks natively
+# and builds the page.
+[workspace]
+resolver = "2"
+members = ["being-core", "being-wasm", "being-tools"]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"

@@ -1,0 +1,22 @@
+org 1 {"OLD":{"pre":0.986,"post":0.983,"rec":0,"junk":15,"actsPre":1,"actsPost":0.9},"L3":{"pre":0.991,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"BIN3":{"pre":0.991,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"DONLY":{"pre":0.986,"post":0.989,"rec":0,"junk":15,"actsPre":1,"actsPost":1}}
+org 2 {"OLD":{"pre":0.987,"post":0.978,"rec":0,"junk":14,"actsPre":1,"actsPost":0.9},"L3":{"pre":0.991,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"BIN3":{"pre":0.991,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"DONLY":{"pre":0.987,"post":0.983,"rec":0,"junk":14,"actsPre":1,"actsPost":1}}
+org 3 {"OLD":{"pre":0.989,"post":0.976,"rec":0,"junk":16,"actsPre":1,"actsPost":0.9},"L3":{"pre":0.99,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"BIN3":{"pre":0.99,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"DONLY":{"pre":0.989,"post":0.987,"rec":0,"junk":16,"actsPre":1,"actsPost":1}}
+org 4 {"OLD":{"pre":0.989,"post":0.978,"rec":0,"junk":16,"actsPre":1,"actsPost":0.9},"L3":{"pre":0.99,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"BIN3":{"pre":0.99,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"DONLY":{"pre":0.989,"post":0.988,"rec":0,"junk":16,"actsPre":1,"actsPost":1}}
+org 5 {"OLD":{"pre":0.99,"post":0.979,"rec":0,"junk":16,"actsPre":1,"actsPost":0.91},"L3":{"pre":0.991,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"BIN3":{"pre":0.991,"post":0.991,"rec":0,"junk":0,"actsPre":1,"actsPost":1},"DONLY":{"pre":0.99,"post":0.989,"rec":0,"junk":16,"actsPre":1,"actsPost":1}}
+body OLD     alive 8 mean body 9.7 acts late 0.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+body OLDR    alive 8 mean body 9.4 acts late 0.00,0.00,0.90,0.89,0.87,0.87,0.85,0.91,0.91,0.91
+body L3      alive 10 mean body 14.7 acts late 1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+body L3R     alive 9 mean body 14.0 acts late 1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00
+body BIN3    alive 10 mean body 14.6 acts late 1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+body BIN3R   alive 9 mean body 14.0 acts late 1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,1.00,1.00
+body DONLY   alive 8 mean body 9.7 acts late 0.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+body DONLYR  alive 8 mean body 9.7 acts late 0.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00
+scaffold BIN3 patch answered kept 360/360 RESP-ADULT worse 14 better 6 p 0.115 | SCAF-ADULT worse 14 better 10 p 0.541 | SCAF-RAISED worse 17 better 20 p 0.743
+scaffold DONLY patch answered kept 360/360 RESP-ADULT worse 0 better 0 p 1.000 | SCAF-ADULT worse 0 better 0 p 1.000 | SCAF-RAISED worse 0 better 0 p 1.000
+Q1 HOLDS - bin3 noise/clock sediment <= 2: 0,0,0,0,0
+Q2 HOLDS - bin3 body alive 10/10, body >= old + 1 in 10/10
+Q3 HOLDS - bin3 crossed body alive 9/10
+Q4 HOLDS - donly noise/clock sediment >= 10: 15,14,16,16,16
+Q5 HOLDS - donly org crossed acts 1,1,1,1,1; body crossed alive 8 vs old 8
+Q6 HOLDS - scaffold kept and waiting not significantly changed for both
+predictions holding: 6/6

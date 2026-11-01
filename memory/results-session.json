@@ -1,0 +1,233 @@
+{
+ "marks": [
+  [
+   63703,
+   "1"
+  ],
+  [
+   63762,
+   "1"
+  ],
+  [
+   63965,
+   "1"
+  ],
+  [
+   64013,
+   "1"
+  ],
+  [
+   64285,
+   "2"
+  ],
+  [
+   64555,
+   "3"
+  ],
+  [
+   64957,
+   "end"
+  ]
+ ],
+ "events": 590,
+ "segments": {
+  "1": {
+   "from": 64013,
+   "to": 64281,
+   "all": {
+    "calls": 16,
+    "waitingShare": 0.063,
+    "answerShare": 0.625,
+    "gestures": 11,
+    "ignored": 0,
+    "countedSteps": 300,
+    "callsPer100": 5.3
+   },
+   "last300": {
+    "calls": 16,
+    "waitingShare": 0.063,
+    "answerShare": 0.625,
+    "gestures": 11,
+    "ignored": 0,
+    "countedSteps": 300,
+    "callsPer100": 5.3
+   },
+   "last750": {
+    "calls": 16,
+    "waitingShare": 0.063,
+    "answerShare": 0.625,
+    "gestures": 11,
+    "ignored": 0,
+    "countedSteps": 300,
+    "callsPer100": 5.3
+   },
+   "first750": {
+    "calls": 16,
+    "waitingShare": 0.063,
+    "answerShare": 0.625,
+    "gestures": 11,
+    "ignored": 0,
+    "countedSteps": 300,
+    "callsPer100": 5.3
+   },
+   "formShare": 1,
+   "atEnd": {
+    "sedimentTotal": 101,
+    "r9m3": [
+     0,
+     0
+    ],
+    "r10m3": [
+     0,
+     0
+    ],
+    "r11m3": [
+     0,
+     0
+    ],
+    "c3m3": [
+     0,
+     4
+    ]
+   }
+  },
+  "2": {
+   "from": 64285,
+   "to": 64540,
+   "all": {
+    "calls": 16,
+    "waitingShare": 0.313,
+    "answerShare": 0.188,
+    "gestures": 6,
+    "ignored": 0,
+    "countedSteps": 200,
+    "callsPer100": 8
+   },
+   "last300": {
+    "calls": 16,
+    "waitingShare": 0.313,
+    "answerShare": 0.188,
+    "gestures": 6,
+    "ignored": 0,
+    "countedSteps": 200,
+    "callsPer100": 8
+   },
+   "last750": {
+    "calls": 16,
+    "waitingShare": 0.313,
+    "answerShare": 0.188,
+    "gestures": 6,
+    "ignored": 0,
+    "countedSteps": 200,
+    "callsPer100": 8
+   },
+   "first750": {
+    "calls": 16,
+    "waitingShare": 0.313,
+    "answerShare": 0.188,
+    "gestures": 6,
+    "ignored": 0,
+    "countedSteps": 200,
+    "callsPer100": 8
+   },
+   "formShare": 1,
+   "atEnd": {
+    "sedimentTotal": 91,
+    "r9m3": [
+     0,
+     0
+    ],
+    "r10m3": [
+     0,
+     0
+    ],
+    "r11m3": [
+     0,
+     0
+    ],
+    "c3m3": [
+     0,
+     4
+    ]
+   }
+  },
+  "3": {
+   "from": 64555,
+   "to": 64933,
+   "all": {
+    "calls": 52,
+    "waitingShare": 0.635,
+    "answerShare": 0.269,
+    "gestures": 20,
+    "ignored": 15,
+    "countedSteps": 400,
+    "callsPer100": 13
+   },
+   "last300": {
+    "calls": 33,
+    "waitingShare": 0.545,
+    "answerShare": 0.273,
+    "gestures": 13,
+    "ignored": 8,
+    "countedSteps": 300,
+    "callsPer100": 11
+   },
+   "last750": {
+    "calls": 52,
+    "waitingShare": 0.635,
+    "answerShare": 0.269,
+    "gestures": 20,
+    "ignored": 15,
+    "countedSteps": 400,
+    "callsPer100": 13
+   },
+   "first750": {
+    "calls": 52,
+    "waitingShare": 0.635,
+    "answerShare": 0.269,
+    "gestures": 20,
+    "ignored": 15,
+    "countedSteps": 400,
+    "callsPer100": 13
+   },
+   "formShare": 1,
+   "atEnd": {
+    "sedimentTotal": 101,
+    "r9m3": [
+     0,
+     0
+    ],
+    "r10m3": [
+     0,
+     0
+    ],
+    "r11m3": [
+     0,
+     0
+    ],
+    "c3m3": [
+     0,
+     4
+    ]
+   },
+   "live": {
+    "calls": 5,
+    "waitingShare": 0.2,
+    "answerShare": 0,
+    "gestures": 2,
+    "ignored": 15,
+    "countedSteps": 400,
+    "callsPer100": 1.3
+   },
+   "replay": {
+    "calls": 47,
+    "waitingShare": 0.681,
+    "answerShare": 0.298,
+    "gestures": 18,
+    "ignored": 15,
+    "countedSteps": 400,
+    "callsPer100": 11.8
+   }
+  }
+ }
+}

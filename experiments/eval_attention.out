@@ -1,0 +1,23 @@
+
+======== credit ========
+templates-digest: 36/36
+   world selfloop-pair-agent   form 1000/1000
+   world agent                 form 1000/1000
+   world triangle-agent        form 1000/1000
+   world omnivore              form 1000/1000
+   world alternator            form 387/1000
+   world reflex                form 726/1000
+   world stimulus-response     form 0/1000
+random agents with direction: 12
+
+======== consolidate ========
+   DISAGREE omnivore                 label=(false, true, true) got=(false, false, false)
+templates-digest: 34/36
+   world selfloop-pair-agent   form 631/1000
+   world agent                 form 631/1000
+   world triangle-agent        form 631/1000
+   world omnivore              form 31/1000
+   world alternator            form 387/1000
+   world reflex                form 726/1000
+   world stimulus-response     form 0/1000
+random agents with direction: 9

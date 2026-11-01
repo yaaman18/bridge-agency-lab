@@ -1,0 +1,68 @@
+schema_version = 1
+
+[params]
+smax = 4
+decay_period = 8
+grow_cost = 1
+resource0 = 10
+rmax = 30
+horizon = 60
+alive_window = 5
+strength0 = 4
+switch_at = 20
+# Survival schedules: (yield of patch 1, yield of patch 2) before and after switch_at.
+survival_schedules = [
+  { name = "p1-high", first = [5, 0], second = [5, 0] },
+  { name = "p2-high", first = [0, 5], second = [0, 5] },
+  { name = "p1-then-p2", first = [5, 0], second = [0, 5] },
+  { name = "p2-then-p1", first = [0, 5], second = [5, 0] },
+]
+# Choice is measured with abundant resource and both patches positive, so that starvation cannot
+# change which motors are active.
+choice_resource0 = 1000
+choice_rmax = 100000
+choice_window = [5, 15]
+choice_schedules = [
+  { name = "c1-better", first = [5, 4], second = [5, 4] },
+  { name = "c2-better", first = [4, 5], second = [4, 5] },
+]
+
+# ---- Option B (2026-10-29): rehearsal of the coupling not currently in use. Labels are Claude's
+# ---- PREDICTIONS of the frozen criteria. Held-out predictions (horizon 200, envs flip7, flip13,
+# ---- random10 seeds 1-5): periodic-rehearsal = live in all; hunger-rehearsal = dead in some random10.
+# ---- Prediction rationale: every edge must be used about once per decay_period (8) steps or it decays to
+# ---- 0 and, if all in-edges of a motor are 0, cannot regrow. Periodic rehearsal keeps motor in-edges
+# ---- alive but puts both motors in the choice window (L2 false via differentiation); hunger-gated
+# ---- rehearsal is invisible to the choice run (abundant resource) but also forages without sensors
+# ---- (L2 false via value_needed), and its edges decay during long satiety.
+
+# Single self-looped core c, an 8-unit token ring (one unit active at a time, cost 1/step). r8 rehearses
+# m1 and r4 rehearses m2 once per 8 steps, together with c.
+[[template]]
+name = "periodic-rehearsal"
+L2 = false
+L3 = true
+L3R = false
+units = ["s1", "s2", "m1", "m2", "c", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"]
+theta = [1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+patch_sensors = { s1 = 1, s2 = 2 }
+motors = { m1 = 1, m2 = 2 }
+resource_sensors = {}
+edges = [["c", "c", 1], ["c", "m1", 1], ["c", "m2", 1], ["s1", "m1", 1], ["s2", "m2", 1], ["r1", "r2", 1], ["r2", "r3", 1], ["r3", "r4", 1], ["r4", "r5", 1], ["r5", "r6", 1], ["r6", "r7", 1], ["r7", "r8", 1], ["r8", "r1", 1], ["r8", "m1", 1], ["r4", "m2", 1]]
+initial = ["c", "r1"]
+maintain = true
+
+# Hunger-gated rehearsal: a low-resource sensor h (store < 8) drives both motors together with c.
+[[template]]
+name = "hunger-rehearsal"
+L2 = false
+L3 = true
+L3R = false
+units = ["s1", "s2", "m1", "m2", "c", "h"]
+theta = [1, 1, 2, 2, 1, 1]
+patch_sensors = { s1 = 1, s2 = 2 }
+motors = { m1 = 1, m2 = 2 }
+resource_sensors = { h = [8, "low"] }
+edges = [["c", "c", 1], ["c", "m1", 1], ["c", "m2", 1], ["s1", "m1", 1], ["s2", "m2", 1], ["h", "m1", 1], ["h", "m2", 1]]
+initial = ["c"]
+maintain = true

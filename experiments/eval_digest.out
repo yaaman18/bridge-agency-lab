@@ -1,0 +1,37 @@
+== D1-D3 criteria under the digestion reading
+selfloop-pair-agent   L2=true L3=true  core=["c1", "c2"] diff=true needed=true surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1) surv_wo=Dict{String, Bool}("p1-high" => 0, "p2-high" => 0, "p2-then-p1" => 0, "p1-then-p2" => 0)
+agent                 L2=true L3=true  core=["c1", "c2"] diff=true needed=true surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1) surv_wo=Dict{String, Bool}("p1-high" => 0, "p2-high" => 0, "p2-then-p1" => 0, "p1-then-p2" => 0)
+static-agent          L2=false L3=false  core=["c1", "c2"] diff=true needed=false surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1) surv_wo=Dict{String, Bool}("p1-high" => 1, "p2-high" => 1, "p2-then-p1" => 1, "p1-then-p2" => 1)
+reflex                L2=false L3=true  core=["m1", "c1", "c2"] diff=false needed=false surv=Dict{String, Bool}("p1-high" => 1, "p2-high" => 0, "p2-then-p1" => 1, "p1-then-p2" => 0) surv_wo=Dict{String, Bool}()
+thermostat            L2=false L3=false  core=["c1", "c2"] diff=false needed=false surv=Dict{String, Bool}("p1-high" => 0, "p2-high" => 0, "p2-then-p1" => 0, "p1-then-p2" => 0) surv_wo=Dict{String, Bool}()
+alternator            L2=false L3=true  core=["a", "b", "m1", "m2"] diff=false needed=false surv=Dict{String, Bool}("p1-high" => 0, "p2-high" => 0, "p2-then-p1" => 0, "p1-then-p2" => 0) surv_wo=Dict{String, Bool}()
+no-loop               L2=false L3=false  core=String[] diff=false needed=false surv=Dict{String, Bool}("p1-high" => 0, "p2-high" => 0, "p2-then-p1" => 0, "p1-then-p2" => 0) surv_wo=Dict{String, Bool}()
+
+== D4-D5 world, 1000 steps
+selfloop-pair-agent               form 1000/1000  at1000=true  switches s1/s2/s3=92/1/1  stale-firing=[(603, "m1")]
+selfloop-pair-agent [CONSUME off] form 1000/1000  at1000=true  switches s1/s2/s3=0/0/0  stale-firing=none
+agent                             form 1000/1000  at1000=true  switches s1/s2/s3=92/1/1  stale-firing=[(603, "m1")]
+static-agent                      form 1000/1000  at1000=true  switches s1/s2/s3=92/1/1  stale-firing=none
+reflex                            form 726/1000  at1000=true  switches s1/s2/s3=0/0/0  stale-firing=[(329, "m1"), (330, "m1"), (331, "m1"), (332, "m1")] ...(274)
+alternator                        form 387/1000  at1000=false  switches s1/s2/s3=299/299/399  stale-firing=[(345, "m1"), (347, "m1"), (349, "m1"), (351, "m1")] ...(306)
+no-loop                           form 0/1000  at1000=false  switches s1/s2/s3=0/0/0  stale-firing=none
+
+== D6 battery (dead = no form at step 1000; lost = form absent at some step after the perturbation)
+   silence s1 30       form lost in 1/11, no form at 1000 in 0/11
+   silence s2 30       form lost in 2/11, no form at 1000 in 0/11
+   silence m1 30       form lost in 1/11, no form at 1000 in 0/11
+   silence m2 30       form lost in 2/11, no form at 1000 in 0/11
+   silence c1 30       form lost in 1/11, no form at 1000 in 0/11
+   silence c2 30       form lost in 2/11, no form at 1000 in 0/11
+   stasis 30           form lost in 11/11, no form at 1000 in 0/11
+   stasis 60           form lost in 11/11, no form at 1000 in 0/11
+   (perturbations not listed: form never lost)
+
+== D7 ablations after stasis 60 (start times as above)
+┌ Warning: Assignment to `res` in soft scope is ambiguous because a global variable by the same name exists: `res` will be treated as a new local. Disambiguate by using `local res` to suppress this warning or `global res` to assign to the existing global variable.
+└ @ ~/bridge-agency-lab/experiments/eval_digest.jl:54
+   EXPLORE off       form lost in 11/11, no form at 1000 in 11/11
+   DIGEST_GATE off   form lost in 0/11, no form at 1000 in 0/11
+
+== D8 both patch sensors silenced for the whole run
+   form at 1000: false   first step without form: 32

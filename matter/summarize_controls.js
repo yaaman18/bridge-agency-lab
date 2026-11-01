@@ -1,0 +1,20 @@
+// Stage 40 (GATE=0) and stage 41 (MIX=50) verdicts (predictions-controls.md), against stage 39 (results-neutral/).
+const fs = require("fs"), S = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], WS = ["LEAN", "RICH"];
+const load = (tag, w, s) => JSON.parse(fs.readFileSync(`${__dirname}/results-${tag}/${w}-${s}.json`));
+const fin = r => r.log[r.log.length - 1], med = a => { const b = a.slice().sort((x, y) => x - y); return (b[(b.length - 1) >> 1] + b[b.length >> 1]) / 2; };
+const cnt = f => S.filter(f).length, ex = r => fin(r).ba - med(fin(r).mk), rank = r => 1 + fin(r).mk.filter(x => x > fin(r).ba).length;
+const q = (a, p) => a.slice().sort((x, y) => x - y)[Math.floor(a.length * p)];
+const R = {}; for (const tag of ["neutral", "gate0", "mix50"]) for (const w of WS) for (const s of S) R[tag + w + s] = load(tag, w, s);
+for (const tag of ["gate0", "mix50"]) for (const w of WS) console.log(tag, w, S.map(s => { const r = R[tag + w + s], f = fin(r);
+  return `${s}: n${f.count} ba${f.ba.toFixed(3)} r${rank(r)} Cb${r.Cb[0].toFixed(2)} Cd${r.Cd[0].toFixed(2)} L${f.lines}/sh${med(r.shadowLines)}`; }).join(" | "));
+const v = [], all = tag => WS.every(w => S.every(s => R[tag + w + s].maxErr < 1e-6 && R[tag + w + s].minCount > 0));
+v.push(["G0", all("gate0"), "conservation and persistence, GATE=0"]);
+let c = WS.map(w => cnt(s => rank(R["gate0" + w + s]) === 1)); v.push(["G1", c.every(x => x <= 3), `GATE=0 ba above all 20 markers: LEAN ${c[0]}/10 RICH ${c[1]}/10`]);
+c = WS.map(w => cnt(s => R["gate0" + w + s].Cb[0] > 0)); v.push(["G2", c.every(x => x <= 7), `GATE=0 Cb > 0: LEAN ${c[0]}/10 RICH ${c[1]}/10`]);
+c = WS.map(w => cnt(s => ex(R["gate0" + w + s]) < ex(R["neutral" + w + s]))); v.push(["G3", c.every(x => x >= 8), `GATE=0 excess below stage 39: LEAN ${c[0]}/10 RICH ${c[1]}/10`]);
+v.push(["X0", all("mix50"), "conservation and persistence, MIX=50"]);
+c = WS.map(w => cnt(s => fin(R["mix50" + w + s]).lines < fin(R["neutral" + w + s]).lines)); v.push(["X1", c.every(x => x >= 8), `MIX lines fewer than stage 39: LEAN ${c[0]}/10 RICH ${c[1]}/10`]);
+c = WS.map(w => cnt(s => fin(R["mix50" + w + s]).lines <= med(R["mix50" + w + s].shadowLines))); v.push(["X2", c.every(x => x >= 7), `MIX lines <= shadow median: LEAN ${c[0]}/10 RICH ${c[1]}/10`]);
+c = WS.map(w => cnt(s => ex(R["mix50" + w + s]) > 0)); v.push(["X3", c.every(x => x >= 8), `MIX ba above marker median: LEAN ${c[0]}/10 RICH ${c[1]}/10`]);
+for (const [k, ok, msg] of v) console.log(k, ok ? "HOLDS" : "FAILS", "-", msg);
+console.log("stage 40 holding:", v.slice(0, 4).filter(x => x[1]).length + "/4; stage 41 holding:", v.slice(4).filter(x => x[1]).length + "/4");

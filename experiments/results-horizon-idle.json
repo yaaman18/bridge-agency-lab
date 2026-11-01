@@ -1,0 +1,5625 @@
+{
+  "criteria": "bridge-protocol tools/AgencySubstrate criteria.jl (unchanged)",
+  "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+  "horizons": [
+    60,
+    294,
+    392,
+    588
+  ],
+  "idle_first": true,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "runs": [
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 5.1,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 0.2,
+      "table_structure": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 60,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 0.3,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.5,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.5,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.5,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.5,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 294,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.4,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.0,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.0,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.0,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 392,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 1.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 1,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 2,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 3,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 4,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 5,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 6,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 7,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 8,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.8,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 9,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "constituents",
+      "seconds": 2.9,
+      "table_structure": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ]
+      ],
+      "self_producing_L3": true,
+      "self_repairing_L3R": null,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    },
+    {
+      "choices": {
+        "c1-better": [
+          "m2"
+        ],
+        "c2-better": [
+          "m2"
+        ]
+      },
+      "core_enables_action": false,
+      "core": [
+        "c1",
+        "c2"
+      ],
+      "survival_without_tracking": {},
+      "survival": {
+        "p1-high": true,
+        "p2-high": true,
+        "p2-then-p1": true,
+        "p1-then-p2": true
+      },
+      "table_survival": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "H": 588,
+      "value_tracking": [],
+      "structure": "q",
+      "seconds": 2.9,
+      "table_structure": [
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ],
+        [
+          false,
+          false
+        ]
+      ],
+      "self_producing_L3": false,
+      "self_repairing_L3R": false,
+      "agency_L2": false,
+      "differentiated": false,
+      "alive_somewhere": true,
+      "seed": 10,
+      "value_tracking_measured": [],
+      "value_needed": false
+    }
+  ]
+}

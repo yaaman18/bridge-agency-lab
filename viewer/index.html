@@ -1,0 +1,403 @@
+<title>誤差を消化する回路</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500;700&family=BIZ+UDPGothic:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: instrument bench. World (two patches) beside the circuit, a running trace below, controls on top. */
+:root {
+  --paper: #eceff3; --panel: #f8f9fb; --ink: #1c2530; --muted: #5a6776; --line: #c8d0d9;
+  --p1: #2f68b0; --p2: #23845a; --act: #b9790c; --bad: #b8382a; --ok: #23845a;
+  --f-display: "Zen Kaku Gothic Antique", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --f-body: "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #11161c; --panel: #192028; --ink: #e2e7ed; --muted: #94a2b1; --line: #2c3743;
+  --p1: #6fa5ea; --p2: #5dc092; --act: #e8b24c; --bad: #ef6e5e; --ok: #5dc092; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #11161c; --panel: #192028; --ink: #e2e7ed; --muted: #94a2b1; --line: #2c3743;
+  --p1: #6fa5ea; --p2: #5dc092; --act: #e8b24c; --bad: #ef6e5e; --ok: #5dc092; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 16px; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: 1.75rem; margin: 0; text-wrap: balance; letter-spacing: .01em; }
+.lede { margin: 4px 0 0; color: var(--muted); max-width: 70ch; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.bar label { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: .85rem; }
+button, select { font: inherit; font-size: .88rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+button:hover, select:hover { border-color: var(--muted); }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--act); outline-offset: 2px; }
+button.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); min-width: 5.5em; }
+.sep { width: 1px; align-self: stretch; background: var(--line); }
+.grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; }
+@media (max-width: 820px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; min-width: 0; display: grid; gap: 10px; align-content: start; }
+.eyebrow { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+svg { display: block; width: 100%; height: auto; }
+.status { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip { font-family: var(--f-mono); font-size: .78rem; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+.chip.ok { color: var(--ok); border-color: var(--ok); }
+.chip.bad { color: var(--bad); border-color: var(--bad); }
+.chip.act { color: var(--act); border-color: var(--act); }
+.readout { font-family: var(--f-mono); font-size: .8rem; font-variant-numeric: tabular-nums; display: grid; grid-template-columns: auto 1fr; gap: 2px 14px; }
+.readout dt { color: var(--muted); }
+.readout dd { margin: 0; }
+canvas { width: 100%; height: 190px; display: block; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .8rem; color: var(--muted); }
+.legend i { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 6px; border-radius: 2px; }
+.notes { font-size: .88rem; color: var(--muted); max-width: 78ch; display: grid; gap: 6px; }
+.notes b { color: var(--ink); font-weight: 700; }
+input[type=range] { width: 110px; accent-color: var(--act); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>誤差を消化する回路</h1>
+    <p class="lede">二つの区画に残った予測誤差を、回路が自分の行為で消化しながら形を保つ様子を、そのまま動かして見る。物質も資源もなく、回路を支えるのは「世界がまだ答えてくれること」だけ。</p>
+  </header>
+
+  <div class="bar" role="group" aria-label="操作">
+    <button id="play" class="primary">一時停止</button>
+    <button id="stepbtn">1歩</button>
+    <label for="speed">速さ <input id="speed" type="range" min="1" max="60" value="12"></label>
+    <button id="reset">最初から</button>
+    <span class="sep"></span>
+    <label for="type">回路 <select id="type"></select></label>
+    <label for="explore"><input id="explore" type="checkbox" checked> 古い予測を試す</label>
+  </div>
+
+  <div class="bar" role="group" aria-label="摂動">
+    <span class="eyebrow">摂動</span>
+    <button id="stasis">世界が60歩答えない</button>
+    <label for="silunit">止める <select id="silunit"></select></label>
+    <button id="silence">30歩止める</button>
+    <button id="wipe">両区画の誤差を0にする</button>
+    <span class="sep"></span>
+    <label for="seasonal"><input id="seasonal" type="checkbox" checked> 季節に従う</label>
+    <label for="g1">区画1の変化 <input id="g1" type="range" min="0" max="5" value="3"></label>
+    <label for="g2">区画2の変化 <input id="g2" type="range" min="0" max="5" value="2"></label>
+  </div>
+
+  <div class="grid">
+    <section class="panel" aria-label="世界">
+      <div class="eyebrow">世界 · 未消化の予測誤差</div>
+      <svg id="world" viewBox="0 0 420 300" role="img" aria-label="二つの区画の未消化の予測誤差と、いま行為している区画"></svg>
+      <dl class="readout" id="worldread"></dl>
+    </section>
+    <section class="panel" aria-label="回路">
+      <div class="status" id="status"></div>
+      <svg id="net" viewBox="0 0 560 330" role="img" aria-label="回路のユニットと予測（結線）の確かさ"></svg>
+      <div class="legend">
+        <span><i style="background:var(--ink)"></i>確かな予測（太いほど確か）</span>
+        <span><i style="background:var(--muted);opacity:.5"></i>確かさ0（伝えない）</span>
+        <span><i style="background:var(--act)"></i>いま行為している運動</span>
+      </div>
+    </section>
+  </div>
+
+  <section class="panel" aria-label="経過">
+    <div class="eyebrow">経過 · 直近400歩</div>
+    <canvas id="trace" width="1100" height="190"></canvas>
+    <div class="legend">
+      <span><i style="background:var(--p1)"></i>区画1の誤差</span>
+      <span><i style="background:var(--p2)"></i>区画2の誤差</span>
+      <span><i style="background:var(--act)"></i>行為した区画（上段の帯）</span>
+      <span><i style="background:var(--bad)"></i>形を失った歩（下段の帯）</span>
+    </div>
+  </section>
+
+  <section class="notes">
+    <div><b>見方。</b> 区画の誤差は、そこで行為すると消化されて減り（1歩に最大5）、世界の変化で戻る。感覚器 s は「何か残っていて、もう一方より少なくない区画」で点き、運動 m は核 c と感覚器がそろうと行為する。1歩に行為できる運動は一つだけ。</div>
+    <div><b>確かさ。</b> 予測（結線）の確かさは、行為がすべて答えられた歩にだけ上がり、確かめられないまま8歩ごとに1ずつ散逸する。結線は消えない。入ってくる予測がすべて確かさ0になったユニットは、それらを試す（古い予測を試す）。</div>
+    <div><b>形。</b> 直近5歩で活動したユニットと、確かさ1以上の予測のあいだに閉じた輪があれば「形あり」。物理的な死はなく、形を失っても活動が続けば戻りうる。</div>
+    <div><b>季節。</b> 1〜300歩は両区画が変化（3と2）、301〜600歩は区画1が止まり、601〜1000歩は区画2が止まる。1000歩で繰り返す。動きは研究用の Julia 実装と同じ規則で、3000歩分の一致を確かめてある。</div>
+  </section>
+</div>
+
+<script>
+// JavaScript port of the lab's final rule set (2026-10-29) for the viewer: AgencySubstrate's threshold
+// network with variant_digest (no resource, digestion-gated confirmation, epistemic sampling, form),
+// variant_attention (winner-take-all capacity 5, :consolidate) and variant_select (one motor acts per step),
+// in the world of env_digest_wta.jl. Checked against reference_trace.txt by check.js.
+const SIM = (() => {
+  const P = { smax: 4, decay: 8, window: 5, strength0: 4, capacity: 5, cap: 50 };
+  function build(t) {
+    const idx = Object.fromEntries(t.units.map((u, i) => [u, i]));
+    return {
+      name: t.name, names: t.units, theta: t.theta, maintain: t.maintain,
+      edges: t.edges.map(([a, b, w]) => [idx[a], idx[b], w]),
+      motors: Object.fromEntries(Object.entries(t.motors).map(([k, v]) => [idx[k], v])),
+      sensors: Object.fromEntries(Object.entries(t.sensors).map(([k, v]) => [idx[k], v])),
+      initial: t.units.map(u => t.initial.includes(u)),
+    };
+  }
+  const isMotor = (s, u) => s.motors[u] !== undefined;
+  const isSensor = (s, u) => s.sensors[u] !== undefined;
+  function init(s) {
+    return { active: s.initial.slice(), strength: s.edges.map(() => P.strength0), t: 0 };
+  }
+  function allocate(offer) {
+    const d = [0, 0]; let left = P.capacity;
+    const order = [0, 1].filter(i => offer[i] > 0).sort((i, j) => (offer[j] - offer[i]) || (i - j));
+    for (const i of order) { d[i] = Math.min(offer[i], left); left -= d[i]; }
+    return d;
+  }
+  // y: [yield1, yield2]; sil: Set of silenced unit indices; opts.explore (default true)
+  function step(st, s, y, sil, opts = {}) {
+    const explore = opts.explore !== false;
+    const n = s.names.length, old = st.active;
+    const stale = new Array(n).fill(false);
+    if (explore) for (let u = 0; u < n; u++) {
+      if (isSensor(s, u)) continue;
+      const ins = s.edges.map((e, k) => e[1] === u ? k : -1).filter(k => k >= 0);
+      stale[u] = ins.length > 0 && ins.every(k => st.strength[k] === 0);
+    }
+    const total = new Array(n).fill(0);
+    s.edges.forEach(([a, b, w], k) => { if ((st.strength[k] >= 1 || stale[b]) && old[a] && !sil.has(a)) total[b] += w; });
+    const nw = new Array(n);
+    for (let u = 0; u < n; u++) {
+      if (isSensor(s, u)) { const p = s.sensors[u] - 1; nw[u] = y[p] > 0 && y[p] >= y[1 - p]; }
+      else nw[u] = total[u] >= s.theta[u];
+    }
+    const cand = Object.keys(s.motors).map(Number).filter(m => nw[m]);
+    if (cand.length > 1) {
+      const best = Math.max(...cand.map(m => total[m]));
+      const tied = cand.filter(m => total[m] === best);
+      const prev = tied.filter(m => old[m]);
+      const byPatch = (a, b) => s.motors[a] - s.motors[b];
+      const win = (prev.length ? prev.sort(byPatch) : tied.sort(byPatch))[0];
+      for (const m of cand) if (m !== win) nw[m] = false;
+    }
+    const acting = Object.keys(s.motors).map(Number).filter(m => nw[m] && !sil.has(m));
+    const offer = [0, 0];
+    for (const m of acting) offer[s.motors[m] - 1] = y[s.motors[m] - 1];
+    const d = allocate(offer);
+    const answered = new Map(acting.map(m => [m, d[s.motors[m] - 1] > 0]));
+    const gate = d[0] + d[1] > 0 && [...answered.values()].every(Boolean);
+    const ok = u => !isMotor(s, u) || answered.get(u) === true;
+    const confirmed = s.edges.map(([a, b], k) => old[a] && !sil.has(a) && nw[b] && gate && ok(a) && ok(b));
+    if (s.maintain) {
+      confirmed.forEach((c, k) => { if (c && st.strength[k] < P.smax) st.strength[k] += 1; });
+      if ((st.t + 1) % P.decay === 0) confirmed.forEach((c, k) => { if (!c) st.strength[k] = Math.max(st.strength[k] - 1, 0); });
+    }
+    st.active = nw; st.t += 1;
+    return { acting, offer, digested: d, gate, stale, answered };
+  }
+  function form(windowStates, s) {
+    const n = s.names.length, U = new Set();
+    for (const w of windowStates) for (let u = 0; u < n; u++) if (w.active[u] && !isSensor(s, u)) U.add(u);
+    const q = windowStates[windowStates.length - 1].strength;
+    const adj = new Map([...U].map(u => [u, s.edges.map((e, k) => (e[0] === u && U.has(e[1]) && q[k] >= 1) ? e[1] : -1).filter(v => v >= 0)]));
+    const color = new Map([...U].map(u => [u, 0]));
+    const dfs = u => { color.set(u, 1); for (const v of adj.get(u)) { if (color.get(v) === 1) return true; if (color.get(v) === 0 && dfs(v)) return true; } color.set(u, 2); return false; };
+    for (const u of U) if (color.get(u) === 0 && dfs(u)) return true;
+    return false;
+  }
+  return { P, build, init, step, allocate, form };
+})();
+if (typeof module !== "undefined") module.exports = SIM;
+
+// Ground-truth types of templates-digest.toml used by the viewer (same wiring and labels).
+const TYPES = [
+  { name: "selfloop-pair-agent", label: "主体（自己結線つき）", L: [true, true, true], units: ["s1","s2","m1","m2","c1","c2"], theta: [1,1,2,2,1,1],
+    sensors: { s1: 1, s2: 2 }, motors: { m1: 1, m2: 2 }, maintain: true, initial: ["c1","c2"],
+    edges: [["c1","c1",1],["c2","c2",1],["c1","c2",1],["c2","c1",1],["s1","m1",1],["c1","m1",1],["s2","m2",1],["c2","m2",1]] },
+  { name: "agent", label: "主体（基本）", L: [true, true, false], units: ["s1","s2","m1","m2","c1","c2"], theta: [1,1,2,2,1,1],
+    sensors: { s1: 1, s2: 2 }, motors: { m1: 1, m2: 2 }, maintain: true, initial: ["c1","c2"],
+    edges: [["c1","c2",1],["c2","c1",1],["s1","m1",1],["c1","m1",1],["s2","m2",1],["c2","m2",1]] },
+  { name: "triangle-agent", label: "主体（3ユニットの核）", L: [true, true, true], units: ["s1","s2","m1","m2","c1","c2","c3"], theta: [1,1,2,2,1,1,1],
+    sensors: { s1: 1, s2: 2 }, motors: { m1: 1, m2: 2 }, maintain: true, initial: ["c1","c2","c3"],
+    edges: [["c1","c2",1],["c1","c3",1],["c2","c1",1],["c2","c3",1],["c3","c1",1],["c3","c2",1],["s1","m1",1],["c1","m1",1],["s2","m2",1],["c2","m2",1]] },
+  { name: "omnivore", label: "選ばない型（omnivore）", L: [false, true, true], units: ["m1","m2","c1","c2","c3"], theta: [1,1,1,1,1],
+    sensors: {}, motors: { m1: 1, m2: 2 }, maintain: true, initial: ["c1","c2","c3"],
+    edges: [["c1","c2",1],["c1","c3",1],["c2","c1",1],["c2","c3",1],["c3","c1",1],["c3","c2",1],["c1","m1",1],["c2","m1",1],["c1","m2",1],["c3","m2",1]] },
+  { name: "alternator", label: "交互に動く型（alternator）", L: [false, true, false], units: ["a","b","m1","m2"], theta: [1,1,1,1],
+    sensors: {}, motors: { m1: 1, m2: 2 }, maintain: true, initial: ["a"],
+    edges: [["a","b",1],["b","a",1],["a","m1",1],["b","m2",1]] },
+  { name: "reflex", label: "反射（reflex）", L: [false, true, false], units: ["m1","c1","c2"], theta: [1,1,1],
+    sensors: {}, motors: { m1: 1 }, maintain: true, initial: ["c1","c2"],
+    edges: [["c1","c2",1],["c2","c1",1],["c1","m1",1]] },
+];
+if (typeof module !== "undefined") module.exports = TYPES;
+
+(() => {
+  const $ = id => document.getElementById(id);
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const CAP = SIM.P.cap, HIST = 400;
+  let s, st, R, t, hist, win, pert, playing = true, acc = 0, last = 0, lastOut = null;
+
+  TYPES.forEach((ty, i) => { const o = document.createElement("option"); o.value = i; o.textContent = ty.label; $("type").appendChild(o); });
+
+  function season(tt) { const c = ((tt - 1) % 1000) + 1; return c <= 300 ? [3, 2] : c <= 600 ? [0, 5] : [5, 0]; }
+  function drift() { return $("seasonal").checked ? season(t + 1) : [+$("g1").value, +$("g2").value]; }
+
+  function reset() {
+    s = SIM.build(TYPES[+$("type").value]); st = SIM.init(s); R = [CAP, CAP]; t = 0; hist = []; win = []; pert = { stasisUntil: 0, sil: new Map() };
+    $("silunit").innerHTML = "";
+    s.names.forEach((n, i) => { const o = document.createElement("option"); o.value = i; o.textContent = n; $("silunit").appendChild(o); });
+    const core = s.names.findIndex(n => n.startsWith("c")); if (core >= 0) $("silunit").value = core;
+    layout();
+    for (let k = 0; k < 150; k++) tick();
+    draw();
+  }
+
+  function tick() {
+    const stasis = t + 1 <= pert.stasisUntil;
+    const y = stasis ? [0, 0] : [Math.min(R[0], 5), Math.min(R[1], 5)];
+    const sil = new Set([...pert.sil].filter(([u, until]) => t + 1 <= until).map(([u]) => u));
+    const out = SIM.step(st, s, y, sil, { explore: $("explore").checked });
+    const g = stasis ? [0, 0] : drift();
+    R = [0, 1].map(i => Math.min(CAP, R[i] - out.digested[i] + g[i]));
+    t = st.t;
+    win.push({ active: st.active.slice(), strength: st.strength.slice() }); if (win.length > SIM.P.window) win.shift();
+    const formed = SIM.form(win, s);
+    const actPatch = out.acting.length ? s.motors[out.acting[0]] : 0;
+    hist.push({ R: R.slice(), actPatch, formed, gate: out.gate }); if (hist.length > HIST) hist.shift();
+    lastOut = { ...out, y, sil, stasis, formed, g };
+  }
+
+  // ---- circuit layout ----
+  let pos = [];
+  function layout() {
+    const rows = { s: [], c: [], m: [] };
+    s.names.forEach((n, i) => (s.sensors[i] !== undefined ? rows.s : s.motors[i] !== undefined ? rows.m : rows.c).push(i));
+    const place = (arr, yy) => arr.forEach((u, k) => { pos[u] = [80 + (400 * (k + 0.5)) / arr.length, yy]; });
+    pos = []; place(rows.s, 50); place(rows.c, 165); place(rows.m, 280);
+    // keep patch order left-to-right for sensors and motors
+    const byPatch = (arr, map) => arr.slice().sort((a, b) => map[a] - map[b]);
+    place(byPatch(rows.s, s.sensors), 50); place(byPatch(rows.m, s.motors), 280);
+  }
+
+  const NS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent && parent.appendChild(e); return e; }
+
+  function drawNet() {
+    const svg = $("net"); svg.innerHTML = "";
+    const ink = css("--ink"), muted = css("--muted"), act = css("--act"), panel = css("--panel"), p1 = css("--p1"), p2 = css("--p2"), line = css("--line");
+    const defs = el("defs", {}, svg);
+    [["a-ink", ink], ["a-mut", muted], ["a-act", act]].forEach(([id, c]) => {
+      const m = el("marker", { id, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 6, markerHeight: 6, orient: "auto-start-reverse" }, defs);
+      el("path", { d: "M0,0 L10,5 L0,10 z", fill: c }, m);
+    });
+    const acting = new Set(lastOut ? lastOut.acting : []);
+    const pairs = new Set(s.edges.map(([a, b]) => a + ">" + b));
+    s.edges.forEach(([a, b], k) => {
+      const q = st.strength[k], live = q >= 1;
+      const color = acting.has(b) && st.active[a] && live ? act : live ? ink : muted;
+      const mk = color === act ? "a-act" : live ? "a-ink" : "a-mut";
+      const w = live ? 0.8 + q * 0.9 : 1, op = live ? 0.9 : 0.35;
+      if (a === b) {
+        const [x, y] = pos[a];
+        el("path", { d: `M${x - 9},${y - 14} C${x - 30},${y - 52} ${x + 30},${y - 52} ${x + 9},${y - 14}`, fill: "none", stroke: color, "stroke-width": w, opacity: op, "stroke-dasharray": live ? "" : "4 4", "marker-end": `url(#${mk})` }, svg);
+        return;
+      }
+      const [x1, y1] = pos[a], [x2, y2] = pos[b];
+      const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+      const sx = x1 + ux * 18, sy = y1 + uy * 18, ex = x2 - ux * 20, ey = y2 - uy * 20;
+      const bend = pairs.has(b + ">" + a) ? 18 : 0, mx = (sx + ex) / 2 - uy * bend, my = (sy + ey) / 2 + ux * bend;
+      el("path", { d: `M${sx},${sy} Q${mx},${my} ${ex},${ey}`, fill: "none", stroke: color, "stroke-width": w, opacity: op, "stroke-dasharray": live ? "" : "4 4", "marker-end": `url(#${mk})` }, svg);
+    });
+    s.names.forEach((n, i) => {
+      const [x, y] = pos[i], on = st.active[i], isM = s.motors[i] !== undefined, isS = s.sensors[i] !== undefined;
+      const patchC = isM ? (s.motors[i] === 1 ? p1 : p2) : isS ? (s.sensors[i] === 1 ? p1 : p2) : ink;
+      const silenced = lastOut && lastOut.sil.has(i);
+      const fill = acting.has(i) ? act : on ? patchC : panel;
+      if (isS) el("rect", { x: x - 16, y: y - 16, width: 32, height: 32, rx: 4, fill, stroke: patchC, "stroke-width": 2 }, svg);
+      else if (isM) el("path", { d: `M${x},${y - 19} L${x + 19},${y + 13} L${x - 19},${y + 13} z`, fill, stroke: acting.has(i) ? act : patchC, "stroke-width": 2 }, svg);
+      else el("circle", { cx: x, cy: y, r: 17, fill: on ? ink : panel, stroke: ink, "stroke-width": 2 }, svg);
+      const tx = el("text", { x, y: y + (isM ? 6 : 5), "text-anchor": "middle", "font-family": css("--f-mono"), "font-size": 12, fill: (on && !isS && !isM) || acting.has(i) || (on && (isS || isM)) ? panel : ink }, svg);
+      tx.textContent = n;
+      if (silenced) el("line", { x1: x - 20, y1: y - 20, x2: x + 20, y2: y + 20, stroke: css("--bad"), "stroke-width": 2.5 }, svg);
+    });
+    [["感覚器", 50], ["核・内部", 165], ["運動", 280]].forEach(([lab, y]) => { const e = el("text", { x: 8, y: y + 4, "font-size": 11, fill: muted, "font-family": css("--f-body") }, svg); e.textContent = lab; });
+  }
+
+  function drawWorld() {
+    const svg = $("world"); svg.innerHTML = "";
+    const ink = css("--ink"), muted = css("--muted"), act = css("--act"), line = css("--line"), panel = css("--panel");
+    const ap = lastOut && lastOut.acting.length ? s.motors[lastOut.acting[0]] : 0;
+    [0, 1].forEach(i => {
+      const c = css(i ? "--p2" : "--p1"), x = 70 + i * 190, top = 40, h = 190, w = 90;
+      el("rect", { x, y: top, width: w, height: h, rx: 6, fill: panel, stroke: line, "stroke-width": 1.5 }, svg);
+      const fh = (h * R[i]) / CAP;
+      el("rect", { x: x + 4, y: top + h - fh + 2, width: w - 8, height: Math.max(0, fh - 6), rx: 3, fill: c, opacity: 0.85 }, svg);
+      for (let v = 10; v < CAP; v += 10) { const yy = top + h - (h * v) / CAP; el("line", { x1: x, x2: x + 8, y1: yy, y2: yy, stroke: muted, "stroke-width": 1 }, svg); }
+      const lab = el("text", { x: x + w / 2, y: top - 12, "text-anchor": "middle", "font-size": 13, fill: ink, "font-family": css("--f-body"), "font-weight": 700 }, svg); lab.textContent = `区画${i + 1}`;
+      const val = el("text", { x: x + w / 2, y: top + h + 22, "text-anchor": "middle", "font-size": 13, fill: ink, "font-family": css("--f-mono") }, svg); val.textContent = `${R[i]} / ${CAP}`;
+      if (ap === i + 1) {
+        el("rect", { x: x - 6, y: top - 6, width: w + 12, height: h + 12, rx: 9, fill: "none", stroke: act, "stroke-width": 3 }, svg);
+        const d = el("text", { x: x + w / 2, y: top + h + 44, "text-anchor": "middle", "font-size": 12, fill: act, "font-family": css("--f-mono") }, svg);
+        d.textContent = lastOut.digested[i] > 0 ? `消化 −${lastOut.digested[i]}` : "答えなし";
+      }
+    });
+    const g = lastOut ? lastOut.g : [0, 0];
+    const rd = $("worldread"); rd.innerHTML = "";
+    const row = (k, v) => { const dt = document.createElement("dt"); dt.textContent = k; const dd = document.createElement("dd"); dd.textContent = v; rd.append(dt, dd); };
+    row("歩", t);
+    row("いまの区画", $("seasonal").checked ? seasonName(t) : "手動");
+    row("世界の変化", lastOut && lastOut.stasis ? "止まっている（答えない）" : `+${g[0]} / +${g[1]} 毎歩`);
+  }
+  function seasonName(tt) { const c = ((tt - 1) % 1000) + 1; return c <= 300 ? "両方が変化する季節" : c <= 600 ? "区画1が止まる季節" : "区画2が止まる季節"; }
+
+  function drawStatus() {
+    const box = $("status"); box.innerHTML = "";
+    const chip = (txt, cls) => { const c = document.createElement("span"); c.className = "chip " + (cls || ""); c.textContent = txt; box.appendChild(c); };
+    const o = lastOut;
+    chip(o && o.formed ? "形あり" : "形を失っている", o && o.formed ? "ok" : "bad");
+    chip(o && o.acting.length ? `行為: ${s.names[o.acting[0]]} → 区画${s.motors[o.acting[0]]}` : "行為なし", o && o.acting.length ? "act" : "");
+    chip(o && o.gate ? "確かめられた" : "確かめられない", "");
+    const staleU = o ? s.names.filter((n, i) => o.stale[i]) : [];
+    if (staleU.length) chip("古い予測を試す: " + staleU.join(" "), "act");
+    const kept = hist.filter(h => h.formed).length;
+    chip(`形の保持 ${kept}/${hist.length}`, "");
+  }
+
+  function drawTrace() {
+    const cv = $("trace"), dpr = window.devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+    cv.width = W * dpr; cv.height = H * dpr; const c = cv.getContext("2d"); c.scale(dpr, dpr);
+    c.clearRect(0, 0, W, H);
+    const top = 14, bot = H - 22, x0 = 36, x1 = W - 6, n = HIST;
+    c.strokeStyle = css("--line"); c.lineWidth = 1; c.fillStyle = css("--muted"); c.font = `11px ${css("--f-mono")}`;
+    [0, 25, 50].forEach(v => { const y = bot - ((bot - top - 14) * v) / CAP; c.beginPath(); c.moveTo(x0, y); c.lineTo(x1, y); c.stroke(); c.fillText(String(v), 6, y + 4); });
+    const X = k => x0 + ((x1 - x0) * (k + (n - hist.length))) / (n - 1);
+    hist.forEach((h, k) => {
+      if (h.actPatch) { c.fillStyle = h.actPatch === 1 ? css("--p1") : css("--p2"); c.fillRect(X(k), 2, Math.max(1.5, (x1 - x0) / n), 8); }
+      if (!h.formed) { c.fillStyle = css("--bad"); c.fillRect(X(k), bot + 6, Math.max(1.5, (x1 - x0) / n), 8); }
+    });
+    [0, 1].forEach(i => {
+      c.strokeStyle = css(i ? "--p2" : "--p1"); c.lineWidth = 2; c.beginPath();
+      hist.forEach((h, k) => { const y = bot - ((bot - top - 14) * h.R[i]) / CAP; k ? c.lineTo(X(k), y) : c.moveTo(X(k), y); });
+      c.stroke();
+    });
+  }
+
+  function draw() { drawWorld(); drawNet(); drawStatus(); drawTrace(); }
+
+  function loop(ts) {
+    if (playing) {
+      acc += ((ts - (last || ts)) / 1000) * +$("speed").value; last = ts;
+      let k = 0; while (acc >= 1 && k < 60) { tick(); acc -= 1; k++; }
+      if (k) draw();
+    } else last = ts;
+    requestAnimationFrame(loop);
+  }
+
+  $("play").onclick = () => { playing = !playing; $("play").textContent = playing ? "一時停止" : "再生"; };
+  $("stepbtn").onclick = () => { playing = false; $("play").textContent = "再生"; tick(); draw(); };
+  $("reset").onclick = reset;
+  $("type").onchange = reset;
+  $("stasis").onclick = () => { pert.stasisUntil = t + 60; };
+  $("silence").onclick = () => { pert.sil.set(+$("silunit").value, t + 30); };
+  $("wipe").onclick = () => { R = [0, 0]; draw(); };
+  $("seasonal").onchange = draw;
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { playing = false; $("play").textContent = "再生"; }
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", draw);
+  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  window.addEventListener("resize", drawTrace);
+  reset();
+  requestAnimationFrame(loop);
+})();
+</script>

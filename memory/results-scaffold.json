@@ -1,0 +1,2227 @@
+{
+ "1": {
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.996
+   },
+   "B": {
+    "patchAnsFrac": 0.998
+   },
+   "C": {
+    "patchAnsFrac": 0.997
+   }
+  },
+  "RESP-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 558,
+    "answered": 359,
+    "patchActs": 3000,
+    "patchAns": 2951,
+    "form": 1,
+    "callsLast500": 92,
+    "firstGesture": 2,
+    "firstCallAfter": 1,
+    "early": [
+     64,
+     29
+    ],
+    "late": [
+     213,
+     96
+    ],
+    "answerRate": 0.643,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.453,
+    "waitingShareLate": 0.451,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      4
+     ],
+     "c3": [
+      1,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 38,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1973,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     10,
+     4
+    ],
+    "late": [
+     16,
+     8
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 0.4,
+    "waitingShareLate": 0.5,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 42,
+    "answered": 3,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "callsLast500": 21,
+    "firstGesture": 36,
+    "firstCallAfter": 1,
+    "early": [
+     15,
+     5
+    ],
+    "late": [
+     42,
+     15
+    ],
+    "answerRate": 0.071,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.333,
+    "waitingShareLate": 0.357,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 468,
+    "answered": 325,
+    "patchActs": 3000,
+    "patchAns": 2961,
+    "form": 1,
+    "callsLast500": 78,
+    "firstGesture": 2,
+    "firstCallAfter": 1,
+    "early": [
+     64,
+     29
+    ],
+    "late": [
+     155,
+     17
+    ],
+    "answerRate": 0.694,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 0.453,
+    "waitingShareLate": 0.11,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 32,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1969,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     7,
+     2
+    ],
+    "late": [
+     18,
+     9
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.5,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 47,
+    "answered": 2,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "callsLast500": 24,
+    "firstGesture": 62,
+    "firstCallAfter": 1,
+    "early": [
+     17,
+     6
+    ],
+    "late": [
+     47,
+     17
+    ],
+    "answerRate": 0.043,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.353,
+    "waitingShareLate": 0.362,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-RAISED": {
+   "curriculum": {
+    "calls": 225,
+    "waitingShare": 0.764,
+    "patchAnsFrac": 0.955,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     1,
+     4
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 445,
+    "answered": 312,
+    "patchActs": 3000,
+    "patchAns": 2960,
+    "form": 1,
+    "callsLast500": 76,
+    "firstGesture": 0,
+    "firstCallAfter": 1,
+    "early": [
+     41,
+     12
+    ],
+    "late": [
+     154,
+     24
+    ],
+    "answerRate": 0.701,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 0.293,
+    "waitingShareLate": 0.156,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      4
+     ],
+     "c3": [
+      1,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 31,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1969,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     6,
+     2
+    ],
+    "late": [
+     18,
+     9
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.333,
+    "waitingShareLate": 0.5,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 36,
+    "answered": 1,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "callsLast500": 17,
+    "firstGesture": 59,
+    "firstCallAfter": 1,
+    "early": [
+     13,
+     5
+    ],
+    "late": [
+     36,
+     15
+    ],
+    "answerRate": 0.028,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.385,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "2": {
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.998
+   },
+   "B": {
+    "patchAnsFrac": 0.998
+   },
+   "C": {
+    "patchAnsFrac": 0.997
+   }
+  },
+  "RESP-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 664,
+    "answered": 346,
+    "patchActs": 3000,
+    "patchAns": 2955,
+    "form": 1,
+    "callsLast500": 81,
+    "firstGesture": 4,
+    "firstCallAfter": 1,
+    "early": [
+     43,
+     32
+    ],
+    "late": [
+     207,
+     99
+    ],
+    "answerRate": 0.521,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.744,
+    "waitingShareLate": 0.478,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 31,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1968,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     12,
+     4
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.333,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 243,
+    "answered": 127,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "callsLast500": 92,
+    "firstGesture": 10,
+    "firstCallAfter": 1,
+    "early": [
+     81,
+     58
+    ],
+    "late": [
+     243,
+     151
+    ],
+    "answerRate": 0.523,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.716,
+    "waitingShareLate": 0.621,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 427,
+    "answered": 284,
+    "patchActs": 3000,
+    "patchAns": 2958,
+    "form": 1,
+    "callsLast500": 70,
+    "firstGesture": 4,
+    "firstCallAfter": 1,
+    "early": [
+     46,
+     31
+    ],
+    "late": [
+     142,
+     14
+    ],
+    "answerRate": 0.665,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.674,
+    "waitingShareLate": 0.099,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      3
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 30,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1961,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     11,
+     5
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.455,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 147,
+    "answered": 106,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "callsLast500": 73,
+    "firstGesture": 11,
+    "firstCallAfter": 1,
+    "early": [
+     47,
+     11
+    ],
+    "late": [
+     147,
+     14
+    ],
+    "answerRate": 0.721,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.234,
+    "waitingShareLate": 0.095,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-RAISED": {
+   "curriculum": {
+    "calls": 256,
+    "waitingShare": 0.918,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     3,
+     4
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 458,
+    "answered": 327,
+    "patchActs": 3000,
+    "patchAns": 2958,
+    "form": 1,
+    "callsLast500": 72,
+    "firstGesture": 7,
+    "firstCallAfter": 1,
+    "early": [
+     51,
+     13
+    ],
+    "late": [
+     143,
+     8
+    ],
+    "answerRate": 0.714,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.255,
+    "waitingShareLate": 0.056,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 31,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1961,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     12,
+     5
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.417,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      3
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 23,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "callsLast500": 7,
+    "firstGesture": 110,
+    "firstCallAfter": 1,
+    "early": [
+     13,
+     6
+    ],
+    "late": [
+     23,
+     10
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.462,
+    "waitingShareLate": 0.435,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "3": {
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.998
+   },
+   "B": {
+    "patchAnsFrac": 0.998
+   },
+   "C": {
+    "patchAnsFrac": 0.997
+   }
+  },
+  "RESP-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.967,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 684,
+    "answered": 372,
+    "patchActs": 3000,
+    "patchAns": 2949,
+    "form": 1,
+    "callsLast500": 71,
+    "firstGesture": 8,
+    "firstCallAfter": 1,
+    "early": [
+     97,
+     79
+    ],
+    "late": [
+     200,
+     79
+    ],
+    "answerRate": 0.544,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.814,
+    "waitingShareLate": 0.395,
+    "end": {
+     "r9": [
+      4,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      4,
+      4
+     ],
+     "c3": [
+      4,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 27,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1975,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     8,
+     2
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.988,
+    "waitingShareEarly": 0.25,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 205,
+    "answered": 84,
+    "patchActs": 1000,
+    "patchAns": 980,
+    "form": 1,
+    "callsLast500": 109,
+    "firstGesture": 8,
+    "firstCallAfter": 1,
+    "early": [
+     43,
+     31
+    ],
+    "late": [
+     205,
+     165
+    ],
+    "answerRate": 0.41,
+    "patchAnsFrac": 0.98,
+    "waitingShareEarly": 0.721,
+    "waitingShareLate": 0.805,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      2,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.967,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 436,
+    "answered": 245,
+    "patchActs": 3000,
+    "patchAns": 2955,
+    "form": 1,
+    "callsLast500": 68,
+    "firstGesture": 8,
+    "firstCallAfter": 1,
+    "early": [
+     84,
+     73
+    ],
+    "late": [
+     151,
+     22
+    ],
+    "answerRate": 0.562,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.869,
+    "waitingShareLate": 0.146,
+    "end": {
+     "r9": [
+      4,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      4,
+      4
+     ],
+     "c3": [
+      4,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 27,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1970,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     8,
+     2
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.25,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 156,
+    "answered": 109,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "callsLast500": 73,
+    "firstGesture": 7,
+    "firstCallAfter": 1,
+    "early": [
+     54,
+     17
+    ],
+    "late": [
+     156,
+     25
+    ],
+    "answerRate": 0.699,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.315,
+    "waitingShareLate": 0.16,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-RAISED": {
+   "curriculum": {
+    "calls": 221,
+    "waitingShare": 0.769,
+    "patchAnsFrac": 0.942,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     3,
+     4
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 486,
+    "answered": 318,
+    "patchActs": 3000,
+    "patchAns": 2953,
+    "form": 1,
+    "callsLast500": 84,
+    "firstGesture": 9,
+    "firstCallAfter": 1,
+    "early": [
+     57,
+     40
+    ],
+    "late": [
+     168,
+     34
+    ],
+    "answerRate": 0.654,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.702,
+    "waitingShareLate": 0.202,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      4
+     ],
+     "c3": [
+      1,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 25,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1970,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     6,
+     2
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.333,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      3
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 123,
+    "answered": 65,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "callsLast500": 67,
+    "firstGesture": 9,
+    "firstCallAfter": 1,
+    "early": [
+     33,
+     21
+    ],
+    "late": [
+     123,
+     43
+    ],
+    "answerRate": 0.528,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.636,
+    "waitingShareLate": 0.35,
+    "end": {
+     "r9": [
+      0,
+      3
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "4": {
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.996
+   },
+   "B": {
+    "patchAnsFrac": 0.997
+   },
+   "C": {
+    "patchAnsFrac": 0.997
+   }
+  },
+  "RESP-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 575,
+    "answered": 273,
+    "patchActs": 3000,
+    "patchAns": 2957,
+    "form": 1,
+    "callsLast500": 124,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     90,
+     84
+    ],
+    "late": [
+     233,
+     120
+    ],
+    "answerRate": 0.475,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.933,
+    "waitingShareLate": 0.515,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 30,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1972,
+    "form": 1,
+    "callsLast500": 5,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     7,
+     2
+    ],
+    "late": [
+     16,
+     7
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.438,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 54,
+    "answered": 7,
+    "patchActs": 1000,
+    "patchAns": 978,
+    "form": 1,
+    "callsLast500": 15,
+    "firstGesture": 31,
+    "firstCallAfter": 1,
+    "early": [
+     23,
+     13
+    ],
+    "late": [
+     54,
+     29
+    ],
+    "answerRate": 0.13,
+    "patchAnsFrac": 0.978,
+    "waitingShareEarly": 0.565,
+    "waitingShareLate": 0.537,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.966,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 497,
+    "answered": 321,
+    "patchActs": 3000,
+    "patchAns": 2956,
+    "form": 1,
+    "callsLast500": 71,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     86,
+     59
+    ],
+    "late": [
+     153,
+     22
+    ],
+    "answerRate": 0.646,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.686,
+    "waitingShareLate": 0.144,
+    "end": {
+     "r9": [
+      0,
+      3
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 30,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1972,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     7,
+     2
+    ],
+    "late": [
+     16,
+     7
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.438,
+    "end": {
+     "r9": [
+      0,
+      2
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 41,
+    "answered": 4,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "callsLast500": 16,
+    "firstGesture": 79,
+    "firstCallAfter": 1,
+    "early": [
+     16,
+     5
+    ],
+    "late": [
+     41,
+     16
+    ],
+    "answerRate": 0.098,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.313,
+    "waitingShareLate": 0.39,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-RAISED": {
+   "curriculum": {
+    "calls": 235,
+    "waitingShare": 0.791,
+    "patchAnsFrac": 0.951,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     3,
+     4
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 455,
+    "answered": 310,
+    "patchActs": 3000,
+    "patchAns": 2956,
+    "form": 1,
+    "callsLast500": 72,
+    "firstGesture": 1,
+    "firstCallAfter": 1,
+    "early": [
+     39,
+     8
+    ],
+    "late": [
+     153,
+     26
+    ],
+    "answerRate": 0.681,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.205,
+    "waitingShareLate": 0.17,
+    "end": {
+     "r9": [
+      1,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      1,
+      4
+     ],
+     "c3": [
+      2,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 32,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1972,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     13,
+     6
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.462,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 35,
+    "answered": 1,
+    "patchActs": 1000,
+    "patchAns": 986,
+    "form": 1,
+    "callsLast500": 13,
+    "firstGesture": 23,
+    "firstCallAfter": 1,
+    "early": [
+     10,
+     3
+    ],
+    "late": [
+     35,
+     14
+    ],
+    "answerRate": 0.029,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.3,
+    "waitingShareLate": 0.4,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  }
+ },
+ "5": {
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.998
+   },
+   "B": {
+    "patchAnsFrac": 0.998
+   },
+   "C": {
+    "patchAnsFrac": 0.997
+   }
+  },
+  "RESP-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.952,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 632,
+    "answered": 358,
+    "patchActs": 3000,
+    "patchAns": 2948,
+    "form": 1,
+    "callsLast500": 78,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     68,
+     61
+    ],
+    "late": [
+     211,
+     102
+    ],
+    "answerRate": 0.566,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.897,
+    "waitingShareLate": 0.483,
+    "end": {
+     "r9": [
+      1,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      1,
+      4
+     ],
+     "c3": [
+      2,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 31,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1968,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     7,
+     2
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 208,
+    "answered": 120,
+    "patchActs": 1000,
+    "patchAns": 980,
+    "form": 1,
+    "callsLast500": 93,
+    "firstGesture": 7,
+    "firstCallAfter": 1,
+    "early": [
+     85,
+     76
+    ],
+    "late": [
+     208,
+     103
+    ],
+    "answerRate": 0.577,
+    "patchAnsFrac": 0.98,
+    "waitingShareEarly": 0.894,
+    "waitingShareLate": 0.495,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-ADULT": {
+   "curriculum": {
+    "calls": 799,
+    "waitingShare": 0.999,
+    "patchAnsFrac": 0.952,
+    "r9": [
+     0,
+     0
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     0,
+     0
+    ],
+    "c3": [
+     0,
+     0
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 466,
+    "answered": 269,
+    "patchActs": 3000,
+    "patchAns": 2952,
+    "form": 1,
+    "callsLast500": 74,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     68,
+     61
+    ],
+    "late": [
+     150,
+     15
+    ],
+    "answerRate": 0.577,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.897,
+    "waitingShareLate": 0.1,
+    "end": {
+     "r9": [
+      3,
+      3
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 31,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1968,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     7,
+     2
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      3
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 28,
+    "answered": 1,
+    "patchActs": 1000,
+    "patchAns": 983,
+    "form": 1,
+    "callsLast500": 10,
+    "firstGesture": 326,
+    "firstCallAfter": 1,
+    "early": [
+     5,
+     2
+    ],
+    "late": [
+     28,
+     10
+    ],
+    "answerRate": 0.036,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.4,
+    "waitingShareLate": 0.357,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  },
+  "SCAF-RAISED": {
+   "curriculum": {
+    "calls": 224,
+    "waitingShare": 0.696,
+    "patchAnsFrac": 0.942,
+    "r9": [
+     0,
+     3
+    ],
+    "r10": [
+     0,
+     0
+    ],
+    "r11": [
+     3,
+     4
+    ],
+    "c3": [
+     3,
+     4
+    ],
+    "sensation_q": "r1:0/4 r2:0/2 r7:0/4 r8:0/2"
+   },
+   "A": {
+    "calls": 467,
+    "answered": 333,
+    "patchActs": 3000,
+    "patchAns": 2947,
+    "form": 1,
+    "callsLast500": 75,
+    "firstGesture": 2,
+    "firstCallAfter": 1,
+    "early": [
+     43,
+     5
+    ],
+    "late": [
+     152,
+     18
+    ],
+    "answerRate": 0.713,
+    "patchAnsFrac": 0.982,
+    "waitingShareEarly": 0.116,
+    "waitingShareLate": 0.118,
+    "end": {
+     "r9": [
+      3,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      3,
+      4
+     ],
+     "c3": [
+      3,
+      4
+     ]
+    }
+   },
+   "B": {
+    "calls": 31,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1968,
+    "form": 1,
+    "callsLast500": 4,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     7,
+     2
+    ],
+    "late": [
+     12,
+     5
+    ],
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.417,
+    "end": {
+     "r9": [
+      0,
+      4
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   },
+   "C": {
+    "calls": 29,
+    "answered": 1,
+    "patchActs": 1000,
+    "patchAns": 983,
+    "form": 1,
+    "callsLast500": 10,
+    "firstGesture": 234,
+    "firstCallAfter": 1,
+    "early": [
+     10,
+     5
+    ],
+    "late": [
+     29,
+     12
+    ],
+    "answerRate": 0.034,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.5,
+    "waitingShareLate": 0.414,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ]
+    }
+   }
+  }
+ }
+}

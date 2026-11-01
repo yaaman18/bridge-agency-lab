@@ -1,0 +1,14 @@
+templates-digest sha256 8f8955bc60cfcbcb44b2bbfa9c8439218e7952840000dbc8eb16931c4f75fd4d
+agent                   label=(true, true, false) got=(true, true, false)  core=["c1", "c2"] diff=true needed=true hinge=true
+selfloop-pair-agent     label=(true, true, true) got=(true, true, true)  core=["c1", "c2"] diff=true needed=true hinge=true
+triangle-agent          label=(true, true, true) got=(true, true, true)  core=["c1", "c2", "c3"] diff=true needed=true hinge=true
+hub-agent               label=(true, true, false) got=(true, true, false)  core=["c1"] diff=true needed=true hinge=true
+redundant-sensor-agent  label=(true, true, false) got=(false, true, false)  <-- DISAGREE  core=["c1", "c2"] diff=true needed=false hinge=true
+static-agent            label=(false, false, false) got=(false, false, false)  core=["c1", "c2"] diff=true needed=false hinge=true
+solipsist               label=(false, false, false) got=(false, false, false)  core=["c1", "c2"] diff=false needed=false hinge=false
+reflex                  label=(false, true, false) got=(false, true, false)  core=["m1", "c1", "c2"] diff=false needed=false hinge=true
+omnivore                label=(false, true, true) got=(false, true, true)  core=["m1", "m2", "c1", "c2", "c3"] diff=false needed=false hinge=true
+alternator              label=(false, true, false) got=(false, true, false)  core=["a", "b", "m1", "m2"] diff=false needed=false hinge=true
+stimulus-response       label=(false, true, false) got=(false, true, false)  core=String[] diff=true needed=false hinge=false
+no-loop                 label=(false, false, false) got=(false, false, false)  core=String[] diff=false needed=false hinge=false
+agree 35/36

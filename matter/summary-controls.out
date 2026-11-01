@@ -1,0 +1,13 @@
+gate0 LEAN 1: n207 ba0.193 r2 Cb0.22 Cd-0.02 L13/sh4 | 2: n194 ba0.095 r2 Cb0.14 Cd-0.04 L11/sh4 | 3: n207 ba0.212 r1 Cb0.44 Cd-0.23 L11/sh4 | 4: n207 ba0.150 r1 Cb0.84 Cd-0.67 L12/sh4 | 5: n211 ba0.146 r2 Cb0.53 Cd-0.40 L12/sh4 | 6: n224 ba0.143 r1 Cb0.95 Cd-0.78 L16/sh5 | 7: n179 ba0.180 r1 Cb0.47 Cd-0.33 L12/sh4 | 8: n205 ba0.023 r10 Cb0.51 Cd-0.49 L14/sh4 | 9: n222 ba0.136 r2 Cb0.14 Cd-0.04 L13/sh5 | 10: n204 ba0.165 r1 Cb0.72 Cd-0.59 L14/sh4
+gate0 RICH 1: n745 ba0.070 r1 Cb0.65 Cd-0.57 L35/sh12 | 2: n740 ba0.002 r9 Cb0.14 Cd-0.13 L35/sh12 | 3: n743 ba0.092 r1 Cb1.09 Cd-0.99 L39/sh13 | 4: n736 ba0.072 r1 Cb0.98 Cd-0.90 L36/sh12 | 5: n741 ba0.008 r12 Cb1.37 Cd-1.36 L39/sh12 | 6: n734 ba0.122 r1 Cb1.37 Cd-1.24 L36/sh13 | 7: n727 ba0.091 r1 Cb0.55 Cd-0.48 L36/sh12 | 8: n743 ba0.014 r3 Cb1.08 Cd-1.08 L43/sh12 | 9: n766 ba0.090 r1 Cb0.62 Cd-0.54 L36/sh13 | 10: n745 ba0.028 r5 Cb0.15 Cd-0.14 L40/sh12
+mix50 LEAN 1: n145 ba0.263 r5 Cb0.22 Cd0.05 L3/sh5 | 2: n128 ba0.049 r7 Cb0.07 Cd0.00 L1/sh4 | 3: n149 ba0.620 r1 Cb0.49 Cd0.13 L2/sh5 | 4: n147 ba0.550 r1 Cb0.39 Cd0.19 L2/sh5 | 5: n128 ba-0.064 r14 Cb-0.07 Cd-0.02 L4/sh5 | 6: n135 ba0.138 r8 Cb0.09 Cd0.06 L2/sh5 | 7: n133 ba0.558 r1 Cb0.23 Cd0.32 L2/sh5 | 8: n144 ba0.316 r1 Cb0.08 Cd0.21 L1/sh5 | 9: n146 ba0.317 r1 Cb0.03 Cd0.25 L3/sh5 | 10: n144 ba0.508 r1 Cb0.14 Cd0.37 L1/sh5
+mix50 RICH 1: n568 ba0.297 r1 Cb0.16 Cd0.13 L6/sh15 | 2: n581 ba0.508 r1 Cb0.25 Cd0.27 L5/sh15.5 | 3: n583 ba0.208 r1 Cb0.10 Cd0.12 L3/sh14 | 4: n545 ba0.423 r1 Cb0.28 Cd0.16 L2/sh14 | 5: n575 ba0.246 r1 Cb0.15 Cd0.12 L2/sh14 | 6: n534 ba0.124 r6 Cb0.12 Cd0.02 L3/sh14 | 7: n577 ba0.138 r2 Cb0.06 Cd0.06 L8/sh15 | 8: n568 ba-0.004 r6 Cb-0.00 Cd-0.03 L4/sh15 | 9: n532 ba0.122 r5 Cb0.06 Cd0.05 L2/sh14 | 10: n598 ba0.294 r1 Cb0.26 Cd0.02 L4/sh15
+G0 HOLDS - conservation and persistence, GATE=0
+G1 FAILS - GATE=0 ba above all 20 markers: LEAN 5/10 RICH 6/10
+G2 FAILS - GATE=0 Cb > 0: LEAN 10/10 RICH 10/10
+G3 FAILS - GATE=0 excess below stage 39: LEAN 6/10 RICH 5/10
+X0 HOLDS - conservation and persistence, MIX=50
+X1 HOLDS - MIX lines fewer than stage 39: LEAN 10/10 RICH 10/10
+X2 HOLDS - MIX lines <= shadow median: LEAN 10/10 RICH 10/10
+X3 HOLDS - MIX ba above marker median: LEAN 9/10 RICH 10/10
+stage 40 holding: 1/4; stage 41 holding: 4/4

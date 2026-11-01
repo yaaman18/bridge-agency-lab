@@ -1,0 +1,2332 @@
+{
+ "1": {
+  "RESPONSIVE": {
+   "A": {
+    "calls": 708,
+    "answered": 332,
+    "patchActs": 3000,
+    "patchAns": 2959,
+    "form": 1,
+    "gestures": 351,
+    "callsLast500": 97,
+    "firstGesture": 2,
+    "firstCallAfter": 1,
+    "early": [
+     64,
+     29
+    ],
+    "late": [
+     256,
+     191
+    ],
+    "lastG": 2909,
+    "cuedLate": 108,
+    "answerRate": 0.469,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.453,
+    "waitingShareLate": 0.746,
+    "cuedShareLate": 0.422,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "3 sed: j:r9+r11=0/4 j:r2+r11=0/4 j:r8+r11=0/4"
+    }
+   },
+   "B": {
+    "calls": 89,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1975,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 12,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     21,
+     14
+    ],
+    "late": [
+     40,
+     32
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.988,
+    "waitingShareEarly": 0.667,
+    "waitingShareLate": 0.8,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "1 sed: j:r9+r11=0/4"
+    }
+   },
+   "C": {
+    "calls": 208,
+    "answered": 96,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "gestures": 111,
+    "callsLast500": 99,
+    "firstGesture": 10,
+    "firstCallAfter": 1,
+    "early": [
+     67,
+     55
+    ],
+    "late": [
+     208,
+     143
+    ],
+    "lastG": 994,
+    "cuedLate": 109,
+    "answerRate": 0.462,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.821,
+    "waitingShareLate": 0.688,
+    "cuedShareLate": 0.524,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      2,
+      4
+     ],
+     "h9": 1,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 7,
+     "others": "",
+     "J": "7 sed: j:r9+r11=1/4 j:r2+r11=0/4 j:r8+r11=0/4 j:r3+r11=0/4 j:r2+r9=0/3"
+    }
+   }
+  },
+  "REPLAY": {
+   "A": {
+    "calls": 607,
+    "answered": 327,
+    "patchActs": 3000,
+    "patchAns": 2960,
+    "form": 1,
+    "gestures": 351,
+    "callsLast500": 87,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     102,
+     76
+    ],
+    "late": [
+     186,
+     88
+    ],
+    "lastG": 2997,
+    "cuedLate": 114,
+    "answerRate": 0.539,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 0.745,
+    "waitingShareLate": 0.473,
+    "cuedShareLate": 0.613,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "12 sed: j:r1+r11=3/4 j:r7+r11=3/4 j:r1+r9=3/4 j:r7+r9=3/4 j:r9+r11=3/4"
+    }
+   },
+   "B": {
+    "calls": 105,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1973,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 12,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     35,
+     10
+    ],
+    "late": [
+     41,
+     32
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 0.286,
+    "waitingShareLate": 0.78,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "6 sed: j:r1+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/4 j:r2+r9=0/4 j:r4+r9=0/4"
+    }
+   },
+   "C": {
+    "calls": 184,
+    "answered": 94,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "gestures": 111,
+    "callsLast500": 102,
+    "firstGesture": 1,
+    "firstCallAfter": 1,
+    "early": [
+     51,
+     28
+    ],
+    "late": [
+     184,
+     103
+    ],
+    "lastG": 998,
+    "cuedLate": 108,
+    "answerRate": 0.511,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.549,
+    "waitingShareLate": 0.56,
+    "cuedShareLate": 0.587,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 7,
+     "others": "",
+     "J": "8 sed: j:r1+r11=3/4 j:r7+r11=3/4 j:r9+r11=0/4 j:r8+r9=0/4 j:r4+r11=3/3"
+    }
+   }
+  },
+  "ABSENT": {
+   "A": {
+    "calls": 3000,
+    "answered": 0,
+    "patchActs": 3000,
+    "patchAns": 2967,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "B": {
+    "calls": 2000,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1978,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "C": {
+    "calls": 1000,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 987,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   }
+  },
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.996,
+    "form": 1,
+    "patchActs": 3000
+   },
+   "B": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 2000
+   },
+   "C": {
+    "patchAnsFrac": 0.997,
+    "form": 1,
+    "patchActs": 1000
+   }
+  }
+ },
+ "2": {
+  "RESPONSIVE": {
+   "A": {
+    "calls": 638,
+    "answered": 358,
+    "patchActs": 3000,
+    "patchAns": 2957,
+    "form": 1,
+    "gestures": 386,
+    "callsLast500": 91,
+    "firstGesture": 4,
+    "firstCallAfter": 1,
+    "early": [
+     59,
+     52
+    ],
+    "late": [
+     186,
+     74
+    ],
+    "lastG": 2996,
+    "cuedLate": 116,
+    "answerRate": 0.561,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.881,
+    "waitingShareLate": 0.398,
+    "cuedShareLate": 0.624,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 6,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "6 sed: j:r1+r9=3/4 j:r2+r9=0/4 j:r1+r11=3/4 j:r7+r11=3/4 j:r9+r11=3/4"
+    }
+   },
+   "B": {
+    "calls": 73,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1963,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 13,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     20,
+     13
+    ],
+    "late": [
+     29,
+     23
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.982,
+    "waitingShareEarly": 0.65,
+    "waitingShareLate": 0.793,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "3 sed: j:r1+r9=0/4 j:r2+r9=0/4 j:r9+r11=0/4"
+    }
+   },
+   "C": {
+    "calls": 46,
+    "answered": 1,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "gestures": 2,
+    "callsLast500": 19,
+    "firstGesture": 28,
+    "firstCallAfter": 1,
+    "early": [
+     18,
+     13
+    ],
+    "late": [
+     46,
+     35
+    ],
+    "lastG": 887,
+    "cuedLate": 2,
+    "answerRate": 0.022,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.722,
+    "waitingShareLate": 0.761,
+    "cuedShareLate": 0.043,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "3 sed: j:r2+r9=0/3 j:r1+r9=0/2 j:r9+r11=0/2"
+    }
+   }
+  },
+  "REPLAY": {
+   "A": {
+    "calls": 674,
+    "answered": 354,
+    "patchActs": 3000,
+    "patchAns": 2958,
+    "form": 1,
+    "gestures": 386,
+    "callsLast500": 91,
+    "firstGesture": 1,
+    "firstCallAfter": 1,
+    "early": [
+     107,
+     88
+    ],
+    "late": [
+     193,
+     68
+    ],
+    "lastG": 2999,
+    "cuedLate": 140,
+    "answerRate": 0.525,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.822,
+    "waitingShareLate": 0.352,
+    "cuedShareLate": 0.725,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 6,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "8 sed: j:r1+r11=3/4 j:r2+r11=0/4 j:r1+r9=3/4 j:r7+r9=3/4 j:r7+r11=3/4"
+    }
+   },
+   "B": {
+    "calls": 72,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1969,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 13,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     10,
+     5
+    ],
+    "late": [
+     29,
+     23
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.5,
+    "waitingShareLate": 0.793,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "4 sed: j:r1+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/4 j:r2+r9=0/4"
+    }
+   },
+   "C": {
+    "calls": 46,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "gestures": 2,
+    "callsLast500": 21,
+    "firstGesture": 387,
+    "firstCallAfter": 1,
+    "early": [
+     8,
+     6
+    ],
+    "late": [
+     46,
+     36
+    ],
+    "lastG": 528,
+    "cuedLate": 2,
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.75,
+    "waitingShareLate": 0.783,
+    "cuedShareLate": 0.043,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "4 sed: j:r1+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/2 j:r2+r9=0/2"
+    }
+   }
+  },
+  "ABSENT": {
+   "A": {
+    "calls": 3000,
+    "answered": 0,
+    "patchActs": 3000,
+    "patchAns": 2967,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 6,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "B": {
+    "calls": 2000,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1970,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "C": {
+    "calls": 1000,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   }
+  },
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 3000
+   },
+   "B": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 2000
+   },
+   "C": {
+    "patchAnsFrac": 0.997,
+    "form": 1,
+    "patchActs": 1000
+   }
+  }
+ },
+ "3": {
+  "RESPONSIVE": {
+   "A": {
+    "calls": 749,
+    "answered": 394,
+    "patchActs": 3000,
+    "patchAns": 2952,
+    "form": 1,
+    "gestures": 414,
+    "callsLast500": 81,
+    "firstGesture": 8,
+    "firstCallAfter": 1,
+    "early": [
+     100,
+     83
+    ],
+    "late": [
+     258,
+     154
+    ],
+    "lastG": 2995,
+    "cuedLate": 137,
+    "answerRate": 0.526,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.83,
+    "waitingShareLate": 0.597,
+    "cuedShareLate": 0.531,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 6,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "13 sed: j:r1+r9=3/4 j:r2+r9=0/4 j:r1+r11=3/4 j:r7+r9=3/4 j:r9+r11=3/4"
+    }
+   },
+   "B": {
+    "calls": 110,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1970,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 21,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     36,
+     11
+    ],
+    "late": [
+     44,
+     35
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.306,
+    "waitingShareLate": 0.795,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "8 sed: j:r1+r9=0/4 j:r2+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/4 j:r6+r9=0/4"
+    }
+   },
+   "C": {
+    "calls": 85,
+    "answered": 3,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "gestures": 8,
+    "callsLast500": 36,
+    "firstGesture": 42,
+    "firstCallAfter": 1,
+    "early": [
+     20,
+     18
+    ],
+    "late": [
+     85,
+     67
+    ],
+    "lastG": 948,
+    "cuedLate": 8,
+    "answerRate": 0.035,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.9,
+    "waitingShareLate": 0.788,
+    "cuedShareLate": 0.094,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "3 sed: j:r6+r9=0/2 j:r7+r9=0/1 j:r4+r9=0/1"
+    }
+   }
+  },
+  "REPLAY": {
+   "A": {
+    "calls": 628,
+    "answered": 382,
+    "patchActs": 3000,
+    "patchAns": 2954,
+    "form": 1,
+    "gestures": 414,
+    "callsLast500": 108,
+    "firstGesture": 13,
+    "firstCallAfter": 1,
+    "early": [
+     102,
+     93
+    ],
+    "late": [
+     212,
+     101
+    ],
+    "lastG": 2996,
+    "cuedLate": 143,
+    "answerRate": 0.608,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.912,
+    "waitingShareLate": 0.476,
+    "cuedShareLate": 0.675,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 6,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "8 sed: j:r1+r9=3/4 j:r7+r9=3/4 j:r9+r11=3/4 j:r1+r11=3/4 j:r7+r11=3/4"
+    }
+   },
+   "B": {
+    "calls": 94,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1970,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 14,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     34,
+     9
+    ],
+    "late": [
+     37,
+     30
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.265,
+    "waitingShareLate": 0.811,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "5 sed: j:r1+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/4 j:r3+r9=0/4 j:r2+r9=0/3"
+    }
+   },
+   "C": {
+    "calls": 94,
+    "answered": 1,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "gestures": 8,
+    "callsLast500": 41,
+    "firstGesture": 79,
+    "firstCallAfter": 1,
+    "early": [
+     29,
+     23
+    ],
+    "late": [
+     94,
+     74
+    ],
+    "lastG": 976,
+    "cuedLate": 8,
+    "answerRate": 0.011,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.793,
+    "waitingShareLate": 0.787,
+    "cuedShareLate": 0.085,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      1,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "1 sed: j:r7+r9=0/1"
+    }
+   }
+  },
+  "ABSENT": {
+   "A": {
+    "calls": 3000,
+    "answered": 0,
+    "patchActs": 3000,
+    "patchAns": 2963,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.988,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "B": {
+    "calls": 2000,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1977,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "C": {
+    "calls": 1000,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 984,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   }
+  },
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 3000
+   },
+   "B": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 2000
+   },
+   "C": {
+    "patchAnsFrac": 0.997,
+    "form": 1,
+    "patchActs": 1000
+   }
+  }
+ },
+ "4": {
+  "RESPONSIVE": {
+   "A": {
+    "calls": 710,
+    "answered": 382,
+    "patchActs": 3000,
+    "patchAns": 2950,
+    "form": 1,
+    "gestures": 408,
+    "callsLast500": 88,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     61,
+     55
+    ],
+    "late": [
+     200,
+     78
+    ],
+    "lastG": 2997,
+    "cuedLate": 142,
+    "answerRate": 0.538,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.902,
+    "waitingShareLate": 0.39,
+    "cuedShareLate": 0.71,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 5,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "10 sed: j:r1+r9=3/4 j:r7+r9=3/4 j:r1+r11=3/4 j:r7+r11=3/4 j:r9+r11=3/4"
+    }
+   },
+   "B": {
+    "calls": 80,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1972,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 17,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     12,
+     8
+    ],
+    "late": [
+     43,
+     34
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.667,
+    "waitingShareLate": 0.791,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "7 sed: j:r1+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/4 j:r4+r9=0/4 j:r2+r9=0/4"
+    }
+   },
+   "C": {
+    "calls": 94,
+    "answered": 4,
+    "patchActs": 1000,
+    "patchAns": 986,
+    "form": 1,
+    "gestures": 11,
+    "callsLast500": 39,
+    "firstGesture": 41,
+    "firstCallAfter": 1,
+    "early": [
+     32,
+     26
+    ],
+    "late": [
+     94,
+     74
+    ],
+    "lastG": 848,
+    "cuedLate": 11,
+    "answerRate": 0.043,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.813,
+    "waitingShareLate": 0.787,
+    "cuedShareLate": 0.117,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "3 sed: j:r3+r9=0/3 j:r7+r9=0/2 j:r4+r9=0/2"
+    }
+   }
+  },
+  "REPLAY": {
+   "A": {
+    "calls": 671,
+    "answered": 379,
+    "patchActs": 3000,
+    "patchAns": 2956,
+    "form": 1,
+    "gestures": 408,
+    "callsLast500": 94,
+    "firstGesture": 12,
+    "firstCallAfter": 1,
+    "early": [
+     91,
+     63
+    ],
+    "late": [
+     219,
+     105
+    ],
+    "lastG": 2983,
+    "cuedLate": 130,
+    "answerRate": 0.565,
+    "patchAnsFrac": 0.985,
+    "waitingShareEarly": 0.692,
+    "waitingShareLate": 0.479,
+    "cuedShareLate": 0.594,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      2,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 7,
+     "others": "",
+     "J": "7 sed: j:r1+r9=1/4 j:r7+r9=1/4 j:r1+r11=1/4 j:r7+r11=1/4 j:r9+r11=1/4"
+    }
+   },
+   "B": {
+    "calls": 95,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1972,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 14,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     34,
+     15
+    ],
+    "late": [
+     36,
+     29
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.441,
+    "waitingShareLate": 0.806,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "3 sed: j:r1+r9=0/4 j:r7+r9=0/4 j:r9+r11=0/4"
+    }
+   },
+   "C": {
+    "calls": 89,
+    "answered": 3,
+    "patchActs": 1000,
+    "patchAns": 981,
+    "form": 1,
+    "gestures": 11,
+    "callsLast500": 44,
+    "firstGesture": 0,
+    "firstCallAfter": 1,
+    "early": [
+     26,
+     20
+    ],
+    "late": [
+     89,
+     66
+    ],
+    "lastG": 990,
+    "cuedLate": 11,
+    "answerRate": 0.034,
+    "patchAnsFrac": 0.981,
+    "waitingShareEarly": 0.769,
+    "waitingShareLate": 0.742,
+    "cuedShareLate": 0.124,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "1 sed: j:r7+r9=0/1"
+    }
+   }
+  },
+  "ABSENT": {
+   "A": {
+    "calls": 3000,
+    "answered": 0,
+    "patchActs": 3000,
+    "patchAns": 2968,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "B": {
+    "calls": 2000,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1972,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "C": {
+    "calls": 1000,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 989,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   }
+  },
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.996,
+    "form": 1,
+    "patchActs": 3000
+   },
+   "B": {
+    "patchAnsFrac": 0.997,
+    "form": 1,
+    "patchActs": 2000
+   },
+   "C": {
+    "patchAnsFrac": 0.997,
+    "form": 1,
+    "patchActs": 1000
+   }
+  }
+ },
+ "5": {
+  "RESPONSIVE": {
+   "A": {
+    "calls": 631,
+    "answered": 378,
+    "patchActs": 3000,
+    "patchAns": 2948,
+    "form": 1,
+    "gestures": 400,
+    "callsLast500": 114,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     70,
+     36
+    ],
+    "late": [
+     252,
+     160
+    ],
+    "lastG": 2998,
+    "cuedLate": 143,
+    "answerRate": 0.599,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.514,
+    "waitingShareLate": 0.635,
+    "cuedShareLate": 0.567,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      3,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 7,
+     "others": "",
+     "J": "10 sed: j:r1+r11=3/4 j:r5+r11=3/4 j:r7+r11=3/4 j:r9+r11=0/4 j:r1+r9=0/4"
+    }
+   },
+   "B": {
+    "calls": 76,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1968,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 12,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     11,
+     6
+    ],
+    "late": [
+     30,
+     24
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.545,
+    "waitingShareLate": 0.8,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "4 sed: j:r2+r9=0/4 j:r9+r11=0/3 j:r1+r9=0/3 j:r7+r9=0/3"
+    }
+   },
+   "C": {
+    "calls": 72,
+    "answered": 3,
+    "patchActs": 1000,
+    "patchAns": 986,
+    "form": 1,
+    "gestures": 8,
+    "callsLast500": 32,
+    "firstGesture": 133,
+    "firstCallAfter": 1,
+    "early": [
+     31,
+     23
+    ],
+    "late": [
+     72,
+     55
+    ],
+    "lastG": 951,
+    "cuedLate": 8,
+    "answerRate": 0.042,
+    "patchAnsFrac": 0.986,
+    "waitingShareEarly": 0.742,
+    "waitingShareLate": 0.764,
+    "cuedShareLate": 0.111,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "1 sed: j:r7+r9=0/1"
+    }
+   }
+  },
+  "REPLAY": {
+   "A": {
+    "calls": 694,
+    "answered": 374,
+    "patchActs": 3000,
+    "patchAns": 2946,
+    "form": 1,
+    "gestures": 400,
+    "callsLast500": 88,
+    "firstGesture": 5,
+    "firstCallAfter": 1,
+    "early": [
+     110,
+     83
+    ],
+    "late": [
+     188,
+     72
+    ],
+    "lastG": 2990,
+    "cuedLate": 119,
+    "answerRate": 0.539,
+    "patchAnsFrac": 0.982,
+    "waitingShareEarly": 0.755,
+    "waitingShareLate": 0.383,
+    "cuedShareLate": 0.633,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      2,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 4,
+     "clockToPatchSed": 6,
+     "others": "",
+     "J": "12 sed: j:r1+r11=2/4 j:r7+r11=2/4 j:r9+r11=2/4 j:r1+r9=2/4 j:r7+r9=2/4"
+    }
+   },
+   "B": {
+    "calls": 88,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1968,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 12,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     17,
+     12
+    ],
+    "late": [
+     37,
+     30
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.984,
+    "waitingShareEarly": 0.706,
+    "waitingShareLate": 0.811,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "6 sed: j:r9+r11=0/4 j:r1+r9=0/4 j:r7+r9=0/4 j:r2+r9=0/4 j:r4+r9=0/4"
+    }
+   },
+   "C": {
+    "calls": 76,
+    "answered": 3,
+    "patchActs": 1000,
+    "patchAns": 983,
+    "form": 1,
+    "gestures": 8,
+    "callsLast500": 31,
+    "firstGesture": 189,
+    "firstCallAfter": 1,
+    "early": [
+     25,
+     20
+    ],
+    "late": [
+     76,
+     57
+    ],
+    "lastG": 792,
+    "cuedLate": 8,
+    "answerRate": 0.039,
+    "patchAnsFrac": 0.983,
+    "waitingShareEarly": 0.8,
+    "waitingShareLate": 0.75,
+    "cuedShareLate": 0.105,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      4
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 7,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "2 sed: j:r3+r9=0/4 j:r2+r9=0/2"
+    }
+   }
+  },
+  "ABSENT": {
+   "A": {
+    "calls": 3000,
+    "answered": 0,
+    "patchActs": 3000,
+    "patchAns": 2964,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.988,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "B": {
+    "calls": 2000,
+    "answered": 0,
+    "patchActs": 2000,
+    "patchAns": 1978,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.989,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   },
+   "C": {
+    "calls": 1000,
+    "answered": 0,
+    "patchActs": 1000,
+    "patchAns": 987,
+    "form": 1,
+    "gestures": 0,
+    "callsLast500": 500,
+    "firstGesture": null,
+    "firstCallAfter": null,
+    "early": [
+     300,
+     300
+    ],
+    "late": [
+     1000,
+     1000
+    ],
+    "lastG": -99,
+    "cuedLate": 0,
+    "answerRate": 0,
+    "patchAnsFrac": 0.987,
+    "waitingShareEarly": 1,
+    "waitingShareLate": 1,
+    "cuedShareLate": 0,
+    "end": {
+     "r9": [
+      0,
+      0
+     ],
+     "r10": [
+      0,
+      0
+     ],
+     "r11": [
+      0,
+      0
+     ],
+     "c3": [
+      0,
+      0
+     ],
+     "h9": 0,
+     "noiseToPatchSed": 8,
+     "clockToPatchSed": 8,
+     "others": "",
+     "J": "0 sed: "
+    }
+   }
+  },
+  "BASELINE": {
+   "A": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 3000
+   },
+   "B": {
+    "patchAnsFrac": 0.998,
+    "form": 1,
+    "patchActs": 2000
+   },
+   "C": {
+    "patchAnsFrac": 0.997,
+    "form": 1,
+    "patchActs": 1000
+   }
+  }
+ }
+}

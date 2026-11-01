@@ -1,0 +1,7 @@
+983d8fc0f8bfeca73ece9526b22bb7d4c05c9a6683893c4e3b16ed22a19bb619  heldout.js
+e02379e151b9598717dc2172b76ad341bf9c5c2ca3d66c8985d3b3fbe6b477b1  predictions-heldout.md
+bc46f779359dc2c45c2644cf608df95769e4478c36d13f99493083c75ed7807c  learn.js
+2026年 10月29日 木曜日 23時07分33秒 JST
+# re-frozen after a syntax-only fix (a comment had swallowed 'let R = ...'); the script had thrown before any trial ran.
+2e271153da964710aea130a63c5135ecc5ca20c2e855ee16b7191de1782054fe  heldout.js
+2026年 10月29日 木曜日 23時07分41秒 JST

@@ -1,0 +1,36 @@
+app saved_v528 old         DC 69.7% hSMC 69.7% hSMC(both yield) 0.3% (fail 585/587) world DC 64.1% M4b true forced 0 m2 free y2>y1 0 max q r2->m2 4
+    both: Dict("y1<y2 -> m1" => 556, "y1=y2 -> m2" => 18, "y1>y2 -> m1" => 4, "y1=y2 -> m1" => 40)
+    conf R->m1 ["r1"] R->m2 String[]
+app saved_v528 idle        DC 76.2% hSMC 76.2% hSMC(both yield) 66.6% (fail 269/805) world DC 90.2% M4b true forced 14 m2 free y2>y1 0 max q r2->m2 4
+    both: Dict("y1=y2 -> m1" => 76, "y1<y2 -> m2" => 1, "y1=y2 -> m2" => 357, "y1>y2 -> m1" => 162, "y1>y2 -> m2" => 240)
+    conf R->m1 ["r1", "r7"] R->m2 ["r1", "r2"]
+app newborn old            DC 35.6% hSMC 74.6% hSMC(both yield) 3.1% (fail 493/509) world DC 58.3% M4b true forced 0 m2 free y2>y1 0 max q r2->m2 4
+    both: Dict("y1<y2 -> m1" => 455, "y1=y2 -> m2" => 9, "y1>y2 -> m1" => 2, "y1=y2 -> m1" => 43)
+    conf R->m1 ["r1", "r10"] R->m2 String[]
+app newborn idle           DC 38.5% hSMC 77.6% hSMC(both yield) 60.3% (fail 245/617) world DC 63.2% M4b true forced 9 m2 free y2>y1 0 max q r2->m2 4
+    both: Dict("y1>y2 -> m2" => 166, "y1<y2 -> m2" => 1, "y1<y2 -> m1" => 69, "y1=y2 -> m2" => 205, "y1>y2 -> m1" => 96, "y1=y2 -> m1" => 80)
+    conf R->m1 ["r1", "r10"] R->m2 ["r1", "r2", "r10"]
+raise seed 1 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 2 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 3 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 4 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 5 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 6 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 7 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 8 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 9 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 10 old  school acts Dict("m2" => 400, "m1" => 0) forced 0 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 1 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 2 idle school acts Dict("m2" => 395, "m1" => 5) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 3 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 4 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 5 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 6 idle school acts Dict("m2" => 395, "m1" => 5) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 7 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 8 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 9 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+raise seed 10 idle school acts Dict("m2" => 396, "m1" => 4) forced 4 conf m1 String[] m2 ["r1", "r2", "r5", "r6", "r7", "r8"] last on ["m2"]
+body_org ORG 10000 steps old: survived 10/10, deaths [nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing]
+body_org ORG 10000 steps idle: survived 10/10, deaths [nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing]
+Lean IdleFirst.pick on 800 choices: identical to Julia Dict("both idle" => 0, "neither" => 795, "one idle" => 5)
+written experiments/results-idle.json

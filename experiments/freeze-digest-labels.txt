@@ -1,0 +1,7 @@
+c4c3d697c120f5d571826f601e00d4febdc7b56e5461b6bbf13e7ecf662e6ef7  variant_digest_repair.jl
+9c24ae8f3a8643254291c5ab7c1081811a51270d40c5356b9389a073c638e6df  templates-digest.toml
+2026年 10月29日 木曜日 21時52分51秒 JST
+# re-frozen after a syntax-only fix (missing ']' closing choice_schedules); TOML failed to parse, so no criterion had run. Labels unchanged.
+c4c3d697c120f5d571826f601e00d4febdc7b56e5461b6bbf13e7ecf662e6ef7  variant_digest_repair.jl
+8f8955bc60cfcbcb44b2bbfa9c8439218e7952840000dbc8eb16931c4f75fd4d  templates-digest.toml
+2026年 10月29日 木曜日 21時53分13秒 JST

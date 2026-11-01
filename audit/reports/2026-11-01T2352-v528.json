@@ -1,0 +1,215 @@
+{
+  "phenomenal_claim": "not_certified",
+  "audit": "bridge-agency-lab app being",
+  "db_version": "528",
+  "rule": "bin3",
+  "input": "audit/in/state-v528.json",
+  "date": "2026-11-01T23:52:56.220",
+  "age": 137919,
+  "results": {
+    "DC": {
+      "act": 0.8958862366683595,
+      "occurrences": 1969,
+      "window": 32,
+      "steps": 2000,
+      "smc": 0.7623158963941087,
+      "self": 1.0,
+      "dc": 0.7623158963941087,
+      "living": 1501,
+      "what": "Window.checkDC of formal/LabCircuit.lean (dc_of_check: true gives an ERIEC.DC certificate) at each step of the saved being lived 2000 steps, partner absent; alpha state-dependent (D4, item 69: m1/m2 only in the world phase while their patch yields)",
+      "bound": 1.0
+    },
+    "S_adapter_selfcheck": {
+      "pass": true,
+      "templates": 6,
+      "what": "AgencySubstrate's evaluation of its frozen templates is identical with and without audit/agency_adapter.jl loaded"
+    },
+    "A_agency001": {
+      "criteria": "~/bridge-protocol/tools/AgencySubstrate (unchanged; typed criteria re-evaluated for the lab's substrate: 3)",
+      "runs": {
+        "strength=qsg, death=none": {
+          "choices": {
+            "c1-better": [
+              "m2"
+            ],
+            "c2-better": [
+              "m2"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": true,
+            "p2-high": true,
+            "p2-then-p1": true,
+            "p1-then-p2": true
+          },
+          "seconds": 0.02,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "strength=q, death=none": {
+          "choices": {
+            "c1-better": [
+              "m2"
+            ],
+            "c2-better": [
+              "m2"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": true,
+            "p2-high": true,
+            "p2-then-p1": true,
+            "p1-then-p2": true
+          },
+          "seconds": 6.66,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "strength=qsg, death=agency001": {
+          "choices": {
+            "c1-better": [
+              "m2"
+            ],
+            "c2-better": [
+              "m2"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": false,
+            "p2-high": false,
+            "p2-then-p1": false,
+            "p1-then-p2": false
+          },
+          "seconds": 0.02,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": false,
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "strength=q, death=agency001": {
+          "choices": {
+            "c1-better": [
+              "m2"
+            ],
+            "c2-better": [
+              "m2"
+            ]
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": false,
+            "p2-high": false,
+            "p2-then-p1": false,
+            "p1-then-p2": false
+          },
+          "seconds": 0.13,
+          "self_producing_L3": false,
+          "self_repairing_L3R": false,
+          "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+          "agency_L2": false,
+          "differentiated": false,
+          "alive_somewhere": false,
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "adapter": "audit/agency_adapter.jl: A1 sensors r1-r11, motors m1->1, m2->2; A2 strength; A3 death; A4 start = the saved being, partner absent"
+    },
+    "N_noninterference": {
+      "pass": true,
+      "record_unchanged_by_audit": true,
+      "app_read_path_pure": {
+        "steps": 3000,
+        "identical": true
+      },
+      "what": "the audit's input is bit-identical after every audit (DiversityAuditPure); the being lived with the page's snapshot, texts and panels at every step equals the being lived without them (SigmaPure)"
+    },
+    "pending": {
+      "decisions": {
+        "D1-D5": "decided 2026-10-31 as recommended (formal/README.md); D4 alpha state-dependent 2026-11-01 (item 69)",
+        "D6": "decided 2026-11-01 (item 70): the frozen 60 steps kept and shown as not measurable; lab variant with horizons 392 (= 2 x 196), 294, 588"
+      },
+      "L2_body_L3_constituents": "out of scope for the app's being (no death, no body; D1). Judged on body_org by the D6 lab variant (experiments/variant_horizon.jl, results-horizon.json, item 70): at the frozen 60 steps not measurable; at 294/392/588 L2 false (not value-differentiated), L3 on the constituents true"
+    },
+    "M_m4a": {
+      "suspect_fields": [],
+      "unknown_partner_fields": [],
+      "pass": true,
+      "unknown_event_kinds": [],
+      "event_kinds": [
+        "a",
+        "b",
+        "c",
+        "g",
+        "s",
+        "u"
+      ],
+      "lean": "m4a_circuit (formal/LabCircuit.lean): proved; the circuit's trace has no external set-point channel (type Empty)",
+      "unknown_fields": []
+    },
+    "C_copies": {
+      "steps": 5000,
+      "age_after": 142919,
+      "pass": true,
+      "what": "the saved being lived 5000 steps (no gestures) by core/life.jl (Julia, canonical) and rust/being-core (the app)"
+    },
+    "M4b": {
+      "vacuous": false,
+      "living_occurrences": 1501,
+      "what": "checkM4b of formal/LabCircuit.lean (m4b_of_check): every living occurrence acts; vacuous when no occurrence is living",
+      "check": true
+    },
+    "P_phenomenal": {
+      "phenomenal_claim": "not_certified",
+      "pass": true,
+      "what": "§13-5: no audit in this report certifies or upgrades a phenomenal claim"
+    }
+  }
+}

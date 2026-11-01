@@ -1,0 +1,27 @@
+sensor variant: variant_hardy.jl
+
+== rmax 30: labels 63/63  unperturbed world: (true, 1000)
+   silence s1 30       8/11 dead
+   silence s2 30       8/11 dead
+   silence m1 10       6/11 dead
+   silence m1 30       8/11 dead
+   silence m2 10       3/11 dead
+   silence m2 30       8/11 dead
+   silence c1 30       8/11 dead
+   silence c2 30       8/11 dead
+   famine 30           11/11 dead
+
+== rmax 60: labels 63/63  unperturbed world: (true, 1000)
+   silence s1 30       8/11 dead
+   silence s2 30       3/11 dead
+   silence m1 30       8/11 dead
+   silence m2 30       8/11 dead
+   silence c1 30       8/11 dead
+   silence c2 30       3/11 dead
+   famine 30           11/11 dead
+
+== rmax 100: labels 63/63  unperturbed world: (true, 1000)
+   silence m1 30       3/11 dead
+   silence m2 30       3/11 dead
+
+== rmax 200: labels 63/63  unperturbed world: (true, 1000)

@@ -1,0 +1,6 @@
+# Label overrides for the precision variant (variant_precision.jl). User decision of 2026-10-29: under the
+# reading "precariousness = dissipation of confidence", the lost contingency c3 -> c4 of
+# `partially-repairing` is retained and re-tried when c3 resumes, so its repair is genuine. The frozen
+# label in bridge-protocol (L3R = false) is not changed; this file overrides it in this lab only.
+[L3R]
+partially-repairing = true

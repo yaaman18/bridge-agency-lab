@@ -1,0 +1,170 @@
+choice=freq
+
+======== EXPLORE = true ========
+  DISAGREE templates-repair.toml partially-repairing label=(false, true, false) got=(false, true, true)
+(V1) frozen templates agree 62/63
+selfloop-pair-agent  L2/L3/L3R=(true, true, true) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          live  poor=0.14  no-sens=dead  diff-after=true
+   flip13         live  poor=0.08  no-sens=dead  diff-after=true
+   rand1          live  poor=0.02  no-sens=dead  diff-after=true
+   rand2          live  poor=0.03  no-sens=dead  diff-after=true
+   rand3          live  poor=0.04  no-sens=dead  diff-after=true
+   rand4          live  poor=0.04  no-sens=dead  diff-after=true
+   rand5          live  poor=0.04  no-sens=dead  diff-after=true
+   fast-then-slow live  poor=0.06  no-sens=dead  diff-after=true
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+agent  L2/L3/L3R=(true, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          live  poor=0.14  no-sens=dead  diff-after=true
+   flip13         live  poor=0.08  no-sens=dead  diff-after=true
+   rand1          live  poor=0.02  no-sens=dead  diff-after=true
+   rand2          live  poor=0.03  no-sens=dead  diff-after=true
+   rand3          live  poor=0.04  no-sens=dead  diff-after=true
+   rand4          live  poor=0.04  no-sens=dead  diff-after=true
+   rand5          live  poor=0.04  no-sens=dead  diff-after=true
+   fast-then-slow live  poor=0.06  no-sens=dead  diff-after=true
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+static-agent  L2/L3/L3R=(true, false, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          live  poor=0.14  no-sens=dead  diff-after=true
+   flip13         live  poor=0.08  no-sens=dead  diff-after=true
+   rand1          live  poor=0.02  no-sens=dead  diff-after=true
+   rand2          live  poor=0.03  no-sens=dead  diff-after=true
+   rand3          live  poor=0.04  no-sens=dead  diff-after=true
+   rand4          live  poor=0.04  no-sens=dead  diff-after=true
+   rand5          live  poor=0.04  no-sens=dead  diff-after=true
+   fast-then-slow live  poor=0.06  no-sens=dead  diff-after=true
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+reflex  L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m1"])
+   flip7          dead  poor=0.46  diff-after=-
+   flip13         dead  poor=0.43  diff-after=-
+   rand1          dead  poor=1.0  diff-after=-
+   rand2          dead  poor=0.18  diff-after=-
+   rand3          dead  poor=0.5  diff-after=-
+   rand4          dead  poor=1.0  diff-after=-
+   rand5          dead  poor=1.0  diff-after=-
+   fast-then-slow dead  poor=0.46  diff-after=-
+   const-p1       live  poor=0.0  diff-after=false
+thermostat  L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => [], "c2-better" => [])
+   flip7          dead  poor=0.12  diff-after=-
+   flip13         dead  poor=0.07  diff-after=-
+   rand1          dead  poor=0.0  diff-after=-
+   rand2          dead  poor=0.01  diff-after=-
+   rand3          dead  poor=0.0  diff-after=-
+   rand4          dead  poor=0.0  diff-after=-
+   rand5          dead  poor=0.0  diff-after=-
+   fast-then-slow dead  poor=0.12  diff-after=-
+   const-p1       live  poor=0.0  diff-after=false
+alternator  L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m1"])
+   flip7          live  poor=0.43  diff-after=false
+   flip13         live  poor=0.46  diff-after=false
+   rand1          live  poor=0.5  diff-after=false
+   rand2          live  poor=0.5  diff-after=false
+   rand3          live  poor=0.5  diff-after=false
+   rand4          live  poor=0.5  diff-after=false
+   rand5          live  poor=0.5  diff-after=false
+   fast-then-slow live  poor=0.48  diff-after=false
+   const-p1       live  poor=0.5  diff-after=false
+no-loop  L2/L3/L3R=(false, false, false) choices=Dict("c1-better" => [], "c2-better" => [])
+   flip7          dead  poor=0.0  diff-after=-
+   flip13         dead  poor=0.0  diff-after=-
+   rand1          dead  poor=0.0  diff-after=-
+   rand2          dead  poor=0.0  diff-after=-
+   rand3          dead  poor=0.0  diff-after=-
+   rand4          dead  poor=0.0  diff-after=-
+   rand5          dead  poor=0.0  diff-after=-
+   fast-then-slow dead  poor=0.0  diff-after=-
+   const-p1       dead  poor=0.0  diff-after=-
+repairing-agent  L2/L3/L3R=(true, true, true) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          dead  poor=0.07  no-sens=dead  diff-after=-
+   flip13         dead  poor=0.04  no-sens=dead  diff-after=-
+   rand1          dead  poor=0.02  no-sens=dead  diff-after=-
+   rand2          dead  poor=0.01  no-sens=dead  diff-after=-
+   rand3          dead  poor=0.03  no-sens=dead  diff-after=-
+   rand4          dead  poor=0.02  no-sens=dead  diff-after=-
+   rand5          dead  poor=0.02  no-sens=dead  diff-after=-
+   fast-then-slow dead  poor=0.07  no-sens=dead  diff-after=-
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+(V7) random: Dict(:agency => 125, :robust => 26, :robust_still => 13)
+
+======== EXPLORE = false ========
+(V1) frozen templates agree 63/63
+selfloop-pair-agent  L2/L3/L3R=(true, true, true) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          live  poor=0.14  no-sens=dead  diff-after=true
+   flip13         live  poor=0.08  no-sens=dead  diff-after=true
+   rand1          dead  poor=0.03  no-sens=dead  diff-after=-
+   rand2          dead  poor=0.01  no-sens=dead  diff-after=-
+   rand3          dead  poor=0.05  no-sens=dead  diff-after=-
+   rand4          dead  poor=0.03  no-sens=dead  diff-after=-
+   rand5          dead  poor=0.03  no-sens=dead  diff-after=-
+   fast-then-slow dead  poor=0.08  no-sens=dead  diff-after=-
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+agent  L2/L3/L3R=(true, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          live  poor=0.14  no-sens=dead  diff-after=true
+   flip13         live  poor=0.08  no-sens=dead  diff-after=true
+   rand1          dead  poor=0.03  no-sens=dead  diff-after=-
+   rand2          dead  poor=0.01  no-sens=dead  diff-after=-
+   rand3          dead  poor=0.05  no-sens=dead  diff-after=-
+   rand4          dead  poor=0.03  no-sens=dead  diff-after=-
+   rand5          dead  poor=0.03  no-sens=dead  diff-after=-
+   fast-then-slow dead  poor=0.08  no-sens=dead  diff-after=-
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+static-agent  L2/L3/L3R=(true, false, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          live  poor=0.14  no-sens=dead  diff-after=true
+   flip13         live  poor=0.08  no-sens=dead  diff-after=true
+   rand1          live  poor=0.02  no-sens=dead  diff-after=true
+   rand2          live  poor=0.03  no-sens=dead  diff-after=true
+   rand3          live  poor=0.04  no-sens=dead  diff-after=true
+   rand4          live  poor=0.04  no-sens=dead  diff-after=true
+   rand5          live  poor=0.04  no-sens=dead  diff-after=true
+   fast-then-slow live  poor=0.06  no-sens=dead  diff-after=true
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+reflex  L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m1"])
+   flip7          dead  poor=0.46  diff-after=-
+   flip13         dead  poor=0.43  diff-after=-
+   rand1          dead  poor=1.0  diff-after=-
+   rand2          dead  poor=0.18  diff-after=-
+   rand3          dead  poor=0.5  diff-after=-
+   rand4          dead  poor=1.0  diff-after=-
+   rand5          dead  poor=1.0  diff-after=-
+   fast-then-slow dead  poor=0.46  diff-after=-
+   const-p1       live  poor=0.0  diff-after=false
+thermostat  L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => [], "c2-better" => [])
+   flip7          dead  poor=0.12  diff-after=-
+   flip13         dead  poor=0.07  diff-after=-
+   rand1          dead  poor=0.0  diff-after=-
+   rand2          dead  poor=0.01  diff-after=-
+   rand3          dead  poor=0.0  diff-after=-
+   rand4          dead  poor=0.0  diff-after=-
+   rand5          dead  poor=0.0  diff-after=-
+   fast-then-slow dead  poor=0.12  diff-after=-
+   const-p1       live  poor=0.0  diff-after=false
+alternator  L2/L3/L3R=(false, true, false) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m1"])
+   flip7          live  poor=0.43  diff-after=false
+   flip13         live  poor=0.46  diff-after=false
+   rand1          live  poor=0.5  diff-after=false
+   rand2          live  poor=0.5  diff-after=false
+   rand3          live  poor=0.5  diff-after=false
+   rand4          live  poor=0.5  diff-after=false
+   rand5          live  poor=0.5  diff-after=false
+   fast-then-slow live  poor=0.48  diff-after=false
+   const-p1       live  poor=0.5  diff-after=false
+no-loop  L2/L3/L3R=(false, false, false) choices=Dict("c1-better" => [], "c2-better" => [])
+   flip7          dead  poor=0.0  diff-after=-
+   flip13         dead  poor=0.0  diff-after=-
+   rand1          dead  poor=0.0  diff-after=-
+   rand2          dead  poor=0.0  diff-after=-
+   rand3          dead  poor=0.0  diff-after=-
+   rand4          dead  poor=0.0  diff-after=-
+   rand5          dead  poor=0.0  diff-after=-
+   fast-then-slow dead  poor=0.0  diff-after=-
+   const-p1       dead  poor=0.0  diff-after=-
+repairing-agent  L2/L3/L3R=(true, true, true) choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+   flip7          dead  poor=0.07  no-sens=dead  diff-after=-
+   flip13         dead  poor=0.04  no-sens=dead  diff-after=-
+   rand1          dead  poor=0.02  no-sens=dead  diff-after=-
+   rand2          dead  poor=0.01  no-sens=dead  diff-after=-
+   rand3          dead  poor=0.03  no-sens=dead  diff-after=-
+   rand4          dead  poor=0.02  no-sens=dead  diff-after=-
+   rand5          dead  poor=0.02  no-sens=dead  diff-after=-
+   fast-then-slow dead  poor=0.07  no-sens=dead  diff-after=-
+   const-p1       live  poor=0.0  no-sens=dead  diff-after=true
+(V7) random: Dict(:agency => 126, :robust => 12, :robust_still => 1)

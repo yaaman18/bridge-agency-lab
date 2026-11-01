@@ -1,0 +1,13 @@
+RESP-ADULT A: pairs 41, worse 15, better 6, tied 20, sign p 0.078, median diff 0.000, mean old 0.532 L3 0.561, worse by > 0.05: 13, better by > 0.05: 5
+RESP-ADULT C: pairs 41, worse 6, better 15, tied 20, sign p 0.078, median diff 0.000, mean old 0.520 L3 0.460, worse by > 0.05: 3, better by > 0.05: 10
+SCAF-ADULT A: pairs 41, worse 16, better 9, tied 16, sign p 0.230, median diff 0.000, mean old 0.156 L3 0.162, worse by > 0.05: 3, better by > 0.05: 3
+SCAF-ADULT C: pairs 41, worse 12, better 11, tied 18, sign p 1.000, median diff 0.000, mean old 0.340 L3 0.350, worse by > 0.05: 9, better by > 0.05: 9
+SCAF-RAISED A: pairs 41, worse 19, better 18, tied 4, sign p 1.000, median diff 0.000, mean old 0.147 L3 0.158, worse by > 0.05: 7, better by > 0.05: 2
+SCAF-RAISED C: pairs 41, worse 16, better 19, tied 6, sign p 0.736, median diff 0.000, mean old 0.345 L3 0.313, worse by > 0.05: 11, better by > 0.05: 17
+W1 RESP-ADULT HOLDS - sign test p 0.078 (worse 15 / better 6)
+W2 RESP-ADULT HOLDS - median diff 0.000, mean 0.532 -> 0.561
+W1 SCAF-ADULT HOLDS - sign test p 0.230 (worse 16 / better 9)
+W2 SCAF-ADULT HOLDS - median diff 0.000, mean 0.156 -> 0.162
+W1 SCAF-RAISED HOLDS - sign test p 1.000 (worse 19 / better 18)
+W2 SCAF-RAISED HOLDS - median diff 0.000, mean 0.147 -> 0.158
+predictions holding: 6/6

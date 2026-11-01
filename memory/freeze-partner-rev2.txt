@@ -1,0 +1,5 @@
+9c0b064a70b1efddc9cf969764f20afce11fc7add3ee98bd0cc4102ba46e63ea  partner.js
+7ff0564d184b2d4bb242c6b4590987cab320da11ad8a20d170dfa97fd89dd123  test_partner.js
+cfa3203f1365c870eb6c9b997af79e4bb2d606d182aa41a0060c705848ba2d65  predictions-partner-rev2.md
+96e91ac4fed42c8f045ef9b4cf6a9d86c9a79d53f051b532db6188577b69e657  check_partner_off.js
+2026年 10月30日 金曜日 06時38分35秒 JST

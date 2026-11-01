@@ -1,0 +1,40 @@
+{
+ "migration_kept": true,
+ "absent_20000": {
+  "old_engine_answered": 0.996,
+  "new_answered": 0.988,
+  "old_acts": 20000,
+  "new_acts": 20000,
+  "new_calls": 20000,
+  "new_formed_at_end": true,
+  "sediment_old": 44,
+  "sediment_new": 84
+ },
+ "restore_identical": true,
+ "replay": {
+  "recorded": 131,
+  "delivered_in_1000": 44,
+  "ignored": 44,
+  "rec_unchanged": true
+ },
+ "blind_blocks": "replay,live,live,live,replay,live,live,replay,replay,replay",
+ "stats": {
+  "live": {
+   "steps": 4500,
+   "calls": 4088,
+   "answered": 130,
+   "gestures": 131,
+   "waiting": 4087
+  },
+  "replay": {
+   "steps": 2500,
+   "calls": 2161,
+   "answered": 114,
+   "gestures": 114,
+   "waiting": 2161
+  }
+ },
+ "hidden_in_blind": true,
+ "state_bytes": 107159,
+ "v2_migration_kept": true
+}

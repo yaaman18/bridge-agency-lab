@@ -1,0 +1,3 @@
+LEAN/1 err 7.2e-9 start {"count":81,"bodies":9,"lines":81,"ba":0,"act":1,"Fg":0} end {"count":211,"bodies":6,"lines":10,"ba":0.162,"act":0.685,"Fg":0.983} min count 81
+LEAN/2 err 7.2e-9 start {"count":81,"bodies":9,"lines":81,"ba":0,"act":1,"Fg":0} end {"count":202,"bodies":6,"lines":7,"ba":0.279,"act":0.695,"Fg":0.984} min count 81
+LEAN/3 err 7.1e-9 start {"count":81,"bodies":9,"lines":81,"ba":0,"act":1,"Fg":0} end {"count":201,"bodies":6,"lines":13,"ba":0.141,"act":0.754,"Fg":0.994} min count 81

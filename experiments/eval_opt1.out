@@ -1,0 +1,22 @@
+designs-opt1 sha256 d23410ff719d72170484a9188ffff30059fc6a711d05efb0af45f2768716cf1f
+frozen criteria: alternating-rehearsal L2=false choices=Dict("c1-better" => ["m1", "m2"], "c2-better" => ["m1", "m2"]) | periodic-rehearsal L2=false choices=Dict("c1-better" => ["m1", "m2"], "c2-better" => ["m1", "m2"]) | hunger-rehearsal L2=false choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"])
+
+(P1) frozen templates under the frequency variant
+  agree 63/63
+
+(P2-P5) my designs under the variant
+alternating-rehearsal L2/L3/L3R=(true, true, false) differentiated=true choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1"] needed=true hinge=true
+   held-out intact:  flip7=dead flip13=dead rand1=live rand2=live rand3=dead rand4=dead rand5=live
+   held-out no-sens: flip7=dead flip13=dead rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+   agent after 200 steps (variant, surviving edges): flip7=- flip13=- rand1=true rand2=true rand3=- rand4=- rand5=true
+periodic-rehearsal L2/L3/L3R=(true, true, false) differentiated=true choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1", "s2"] needed=true hinge=true
+   held-out intact:  flip7=dead flip13=dead rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+   held-out no-sens: flip7=dead flip13=dead rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+   agent after 200 steps (variant, surviving edges): flip7=- flip13=- rand1=- rand2=- rand3=- rand4=- rand5=-
+hunger-rehearsal L2/L3/L3R=(false, true, false) differentiated=true choices=Dict("c1-better" => ["m1"], "c2-better" => ["m2"]) tracking=["s1", "s2"] needed=false hinge=true
+   held-out intact:  flip7=live flip13=live rand1=dead rand2=dead rand3=dead rand4=dead rand5=dead
+   held-out no-sens: flip7=live flip13=live rand1=live rand2=live rand3=live rand4=live rand5=live
+   agent after 200 steps (variant, surviving edges): flip7=true flip13=true rand1=- rand2=- rand3=- rand4=- rand5=-
+
+random circuits (seed 20261009, 20,000) under the variant
+Dict(:agency => 126, :robust_still_agent => 0, :robust => 12)

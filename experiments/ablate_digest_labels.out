@@ -1,0 +1,3 @@
+both on           1 disagree: redundant-sensor-agent.L2
+DIGEST_GATE off   7 disagree: agent.L2, selfloop-pair-agent.L2, triangle-agent.L2, hub-agent.L2, redundant-sensor-agent.L2, solipsist.L3, solipsist.L3R
+EXPLORE off       8 disagree: agent.L2, selfloop-pair-agent.L2, selfloop-pair-agent.L3R, triangle-agent.L2, triangle-agent.L3R, hub-agent.L2, redundant-sensor-agent.L2, omnivore.L3R
