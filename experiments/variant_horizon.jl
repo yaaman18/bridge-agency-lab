@@ -3,10 +3,14 @@
 # the material body (D1), with horizons taken from the system's own time scales instead of the frozen 60 steps.
 # Nothing in ~/bridge-protocol is changed. Predictions: experiments/predictions-horizon.md (frozen-horizon.txt).
 # IDLE=1 (item 72): the circuit with the idle-first choice (core/circuit.jl), predictions-idle.md.
+# CONTRAST=bin3 and CUR=swap (item 74): the contrast rule of the app, and the raising with the nursery swapped
+# (experiments/curricula.jl); predictions-body-bin3.md. Since item 75 the default is bin3 + idle_first (B1 below);
+# item 70's runs are CONTRAST=none IDLE=0 OUT=experiments/results-horizon.json.
 #
 # Adapter choices (all derived from D1/D6 of formal/README.md and reported with the results):
 #   B1 system = body_org of stage 42 as reproduced by core/check/reproduce_body_org.jl (U = 0.02, MCOST = 0.004, the
-#      circuit newborn(false) raised on the curriculum before the body, rule of stage 42, noise seed = the run's seed);
+#      circuit newborn(false) raised on the curriculum before the body; rule bin3 + idle_first since item 75, the
+#      app's rule, and the core gate since item 77 (items 70-74 ran the rule of stage 42, contrast nothing), noise seed = the run's seed);
 #      the world is seed!(w, 12, 12, 1); each trajectory starts from a fresh copy of the raised circuit and the body.
 #   B2 schedules = the frozen schedules of templates.toml, given as the growth of body_org's pools (g_k * U per step, in
 #      place of the seasons); the yields the circuit reads are body_org's y_k = min(5, floor(R_k / U)).
@@ -33,6 +37,7 @@ using AgencySubstrate
 const AS = AgencySubstrate
 import ..LabCore
 const LC = LabCore
+include(joinpath(@__DIR__, "curricula.jl"))
 
 struct BodyOrg
     names::Vector{String}
@@ -46,15 +51,18 @@ struct BodyOrg
     U::Float64
     MCOST::Float64
     idle_first::Bool
+    contrast::Union{Nothing,Symbol}
+    core_gate::Bool
     side::IdDict{Any,Any}
 end
 
 """The circuit of body_org (B1) raised on the curriculum with noise seed `seed`."""
-function BodyOrg(seed::Integer; structure::Symbol = :constituents, abundant_r0::Integer, U = 0.02, MCOST = 0.004, idle_first = false)
+function BodyOrg(seed::Integer; structure::Symbol = :constituents, abundant_r0::Integer, U = 0.02, MCOST = 0.004, idle_first = false,
+                 contrast = nothing, cur = :std, core_gate = false)
     b = LC.newborn(false); c = LC.init(b); noise = LC.Mulberry(seed)
-    for y in LC.BO_CUR; LC.step!(c, b, [y[1], y[2], 0.0]; noise = noise, contrast = nothing, idle_first); end
+    for y in curriculum(cur); LC.step!(c, b, [y[1], y[2], 0.0]; noise = noise, contrast, idle_first, core_gate); end
     motors = Dict(LC.unit(b, "m1") => 1, LC.unit(b, "m2") => 2)
-    BodyOrg(copy(b.names), copy(b.edges), motors, b, c, noise, structure, abundant_r0, U, MCOST, idle_first, IdDict())
+    BodyOrg(copy(b.names), copy(b.edges), motors, b, c, noise, structure, abundant_r0, U, MCOST, idle_first, contrast, core_gate, IdDict())
 end
 
 AS.nunits(s::BodyOrg) = length(s.names)
@@ -90,7 +98,7 @@ function AS.step!(st::AS.State, s::BodyOrg, p::AS.Params, sch::AS.Schedule, sile
     else
         g = [Float64(AS.yield_of(sch, 1, t)), Float64(AS.yield_of(sch, 2, t))]
         y = abundant ? g : [min(5.0, floor(r / s.U + 1e-9)) for r in pool]
-        o = LC.step!(c, s.b, [y[1], y[2], 0.0]; noise = S.noise, contrast = nothing, sil = silenced, idle_first = s.idle_first)
+        o = LC.step!(c, s.b, [y[1], y[2], 0.0]; noise = S.noise, contrast = s.contrast, sil = silenced, idle_first = s.idle_first, core_gate = s.core_gate)
         acting = [s.b.patch[m] for m in o.acting if s.b.patch[m] <= 2]
         if abundant                                                      # B4
             feed = LC.port_take!(w.port, LC.P_CAPACITY * s.U)
@@ -151,10 +159,17 @@ const INSTALLED = _install()
 
 with_horizon(p::AS.Params, H) = AS.Params(p.smax, p.decay_period, p.grow_cost, p.resource0, p.rmax, H, p.alive_window, p.strength0)
 
-"""The frozen setup with every horizon set to H (only the horizon changes)."""
-function setup_with(H)
+"""Item 76: survival schedules with both patches positive, the frozen ones with the empty patch given `low` (frozen
+switch_at; the choice schedules and window stay frozen). `low = nothing` keeps the frozen survival schedules."""
+function survival_with(su, low)
+    low === nothing && return su.survival
+    f(v) = Tuple(x == 0 ? low : x for x in v)
+    [AS.Schedule("$(x.name)-$(low)", f(x.first), f(x.second), x.switch) for x in su.survival]
+end
+"""The frozen setup with every horizon set to H (only the horizon changes; and the survival schedules with `low`, item 76)."""
+function setup_with(H; low = nothing)
     su = AS.load_templates()
-    merge(su, (params = with_horizon(su.params, H), choice_params = with_horizon(su.choice_params, H)))
+    merge(su, (params = with_horizon(su.params, H), choice_params = with_horizon(su.choice_params, H), survival = survival_with(su, low)))
 end
 
 """Tables for Lean's checks (formal/LabCircuit.lean): survival intact/ablated per schedule, structure all-silenced /
@@ -172,18 +187,26 @@ end # module
 
 const LBA = LabBodyAgency
 const AS = LBA.AS
+if abspath(PROGRAM_FILE) == @__FILE__   # the runs (the module above is also included by experiments/diag/diag_l2.jl)
 const LAB = normpath(joinpath(@__DIR__, ".."))
 const HS = parse.(Int, split(get(ENV, "HORIZONS", "60,294,392,588"), ","))
 const SEEDS = parse.(Int, split(get(ENV, "SEEDS", "1,2,3,4,5,6,7,8,9,10"), ","))
-const OUT = get(ENV, "OUT", joinpath(LAB, "experiments", "results-horizon.json"))
-const IDLE = get(ENV, "IDLE", "0") == "1"   # item 72: the idle-first choice in the raising and the trials
+# The circuit's rule. Default since item 75 (user 2026-11-02): bin3 + idle_first, the app's rule (L2's system, D1), and
+# since item 77 (user 2026-11-02) with the core gate (GATE, below; output results-horizon-gate.json).
+# CONTRAST=none IDLE=0 is the rule of stage 42 (item 70, results-horizon.json; item 72 IDLE=1, results-horizon-idle.json).
+const IDLE = get(ENV, "IDLE", "1") == "1"   # item 72: the idle-first choice in the raising and the trials
+const CONTRAST = get(ENV, "CONTRAST", "bin3") in ("", "none") ? nothing : Symbol(get(ENV, "CONTRAST", "bin3"))   # item 74
+const OUT = get(ENV, "OUT", joinpath(LAB, "experiments", CONTRAST == :bin3 && IDLE ? (get(ENV, "GATE", "1") == "1" ? "results-horizon-gate.json" : "results-horizon-bin3idle.json") : "results-horizon-other.json"))
+const CUR = Symbol(get(ENV, "CUR", "std"))   # item 74
+const GATE = get(ENV, "GATE", "1") == "1"   # item 76 step 2: the core gate (default since item 77; GATE=0 for items 74-76)
+const LOW = get(ENV, "LOW", "") == "" ? nothing : parse(Int, ENV["LOW"])   # item 76: survival schedules with the empty patch at LOW
 
 res = Dict{String,Any}("horizons" => HS, "seeds" => SEEDS, "criteria" => "bridge-protocol tools/AgencySubstrate criteria.jl (unchanged)",
-    "templates_sha256" => AS.load_templates().sha256, "idle_first" => IDLE, "runs" => Any[])
+    "templates_sha256" => AS.load_templates().sha256, "idle_first" => IDLE, "contrast" => CONTRAST === nothing ? nothing : String(CONTRAST), "curriculum" => String(CUR), "survival_low" => LOW, "core_gate" => GATE, "runs" => Any[])
 for H in HS
-    su = LBA.setup_with(H)
+    su = LBA.setup_with(H; low = LOW)
     for seed in SEEDS, structure in (:constituents, :q)
-        s = LBA.BodyOrg(seed; structure, abundant_r0 = su.choice_params.resource0, idle_first = IDLE)
+        s = LBA.BodyOrg(seed; structure, abundant_r0 = su.choice_params.resource0, idle_first = IDLE, contrast = CONTRAST, cur = CUR, core_gate = GATE)
         t0 = time(); r = AS.evaluate(s, su); tb = LBA.tables(s, su, r)
         push!(res["runs"], Dict("H" => H, "seed" => seed, "structure" => String(structure), "agency_L2" => r.agency,
             "self_producing_L3" => r.self_producing, "self_repairing_L3R" => structure == :q ? r.self_repairing : nothing,
@@ -199,3 +222,4 @@ for H in HS
 end
 write(OUT, JSON.json(res, 2))
 println("written ", relpath(OUT, LAB))
+end

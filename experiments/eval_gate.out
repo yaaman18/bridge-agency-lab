@@ -1,0 +1,12 @@
+seed 1: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 2: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 3: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 4: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 5: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 6: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 7: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 8: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 9: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+seed 10: patch motor on with the core silenced (choice runs) 2 steps; school switches 27 acts [203, 197]
+body_org ORG 10000 steps bin3+idle+gate: survived 10/10, deaths [nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing]
+written experiments/results-gate.json

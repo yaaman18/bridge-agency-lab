@@ -4,7 +4,7 @@
 # built by sh audit/dc_lean.sh)
 using JSON
 const LAB = normpath(joinpath(@__DIR__, ".."))
-r = JSON.parse(read(joinpath(LAB, "experiments", "results-horizon.json"), String))
+r = JSON.parse(read(get(ENV, "IN", joinpath(LAB, "experiments", "results-horizon.json")), String))   # IN: another results file (item 74)
 # structure table: intact = own activity (sensors silenced, abundant), ablated = every unit silenced
 # survival table: intact = as it is, ablated = value-tracking units silenced (only where they exist)
 tab(rows) = "(fun (i : Fin $(length(rows))) (v : ERIEC.Agency.Variant) => match v with | .intact => (#[" *

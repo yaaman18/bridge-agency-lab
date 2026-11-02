@@ -1,0 +1,988 @@
+{
+  "raise_bin3+idle-swap": [
+    {
+      "school_acts": {
+        "m2": 172,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 173,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 49,
+        "m1": 218
+      },
+      "conf_m2": [],
+      "unforced_switches": 26,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 174,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 171,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 181,
+        "m1": 206
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 26,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 174,
+        "m1": 212
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 173,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 173,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 169,
+        "m1": 207
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 24,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    }
+  ],
+  "raise_bin3": [
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    }
+  ],
+  "body_org_ORG_bin3+idle_death": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "raise_bin3+idle": [
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 197,
+        "m1": 203
+      },
+      "conf_m2": [
+        "r2",
+        "r8"
+      ],
+      "unforced_switches": 27,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r7"
+      ]
+    }
+  ],
+  "raise_old": [
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    },
+    {
+      "school_acts": {
+        "m2": 400,
+        "m1": 0
+      },
+      "conf_m2": [
+        "r1",
+        "r2",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m2"
+      ],
+      "conf_m1": []
+    }
+  ],
+  "raise_old-swap": [
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r5",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r5",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r5",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r5",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r5",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ]
+    },
+    {
+      "school_acts": {
+        "m2": 0,
+        "m1": 400
+      },
+      "conf_m2": [],
+      "unforced_switches": 0,
+      "forced": 0,
+      "last_on": [
+        "m1"
+      ],
+      "conf_m1": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ]
+    }
+  ],
+  "body_org_ORG_bin3_death": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "seed8": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed7": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed10": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed9": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed5": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed4": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed3": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed2": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "seed1": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  },
+  "body_org_ORG_death": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "seed6": {
+    "school_acts": [
+      203,
+      197
+    ],
+    "motor_on_steps_core_silenced": 2,
+    "school_switches": 27
+  }
+}

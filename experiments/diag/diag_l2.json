@@ -1,0 +1,536 @@
+{
+  "A2 p1-high r3,r4 off": {
+    "alive": true,
+    "on": {
+      "m2": 3,
+      "m1": 388
+    },
+    "first_on_after_switch": {
+      "m2": 92,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "A2 p1-then-p2 r2,r3,r4,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 90,
+      "m1": 26
+    },
+    "first_on_after_switch": {
+      "m2": 46,
+      "m1": 21
+    },
+    "min_body": 5,
+    "end_body": 5,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "A2 p1-then-p2 r3,r4 off": {
+    "alive": true,
+    "on": {
+      "m2": 365,
+      "m1": 26
+    },
+    "first_on_after_switch": {
+      "m2": 25,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "A bin3+idle p1-then-p2 r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 366,
+      "m1": 26
+    },
+    "first_on_after_switch": {
+      "m2": 24,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "A nothing acts p1-high": {
+    "alive": false,
+    "on": {
+      "m2": 0,
+      "m1": 0
+    },
+    "first_on_after_switch": {
+      "m2": null,
+      "m1": null
+    },
+    "min_body": 0,
+    "end_body": 0,
+    "death": 197,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "B c1-better r7,r8 off": [
+    "m1"
+  ],
+  "A bin3 p1-then-p2 r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 369,
+      "m1": 23
+    },
+    "first_on_after_switch": {
+      "m2": 24,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3 p1-high r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 0,
+      "m1": 392
+    },
+    "first_on_after_switch": {
+      "m2": null,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3+idle p2-high r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 387,
+      "m1": 5
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 103
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "A nothing acts p1-then-p2": {
+    "alive": false,
+    "on": {
+      "m2": 0,
+      "m1": 0
+    },
+    "first_on_after_switch": {
+      "m2": null,
+      "m1": null
+    },
+    "min_body": 0,
+    "end_body": 0,
+    "death": 197,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3+idle p1-high intact": {
+    "alive": true,
+    "on": {
+      "m2": 3,
+      "m1": 389
+    },
+    "first_on_after_switch": {
+      "m2": 92,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 21,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "A bin3 p2-then-p1 intact": {
+    "alive": true,
+    "on": {
+      "m2": 21,
+      "m1": 371
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 24
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "B c2-better core off": [
+    "m2"
+  ],
+  "B c1-better r8 off": [
+    "m1"
+  ],
+  "A bin3+idle p1-high r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 3,
+      "m1": 389
+    },
+    "first_on_after_switch": {
+      "m2": 92,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 21,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "A bin3+idle p2-then-p1 r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 23,
+      "m1": 369
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 23
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "B c2-better r8 off": [
+    "m1"
+  ],
+  "B c2-better r7,r8 off": [
+    "m1"
+  ],
+  "B c1-better core off": [
+    "m1"
+  ],
+  "A bin3+idle p2-then-p1 intact": {
+    "alive": true,
+    "on": {
+      "m2": 24,
+      "m1": 368
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 24
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "A bin3+idle p1-then-p2 intact": {
+    "alive": true,
+    "on": {
+      "m2": 366,
+      "m1": 26
+    },
+    "first_on_after_switch": {
+      "m2": 24,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "B c1-better intact": [
+    "m1"
+  ],
+  "A2 p2-high r2,r3,r4,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 90,
+      "m1": 5
+    },
+    "first_on_after_switch": {
+      "m2": 46,
+      "m1": 42
+    },
+    "min_body": 5,
+    "end_body": 6,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "B c1-better r7 off": [
+    "m1"
+  ],
+  "A bin3 p2-high intact": {
+    "alive": true,
+    "on": {
+      "m2": 390,
+      "m1": 2
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": null
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3+idle p2-high intact": {
+    "alive": true,
+    "on": {
+      "m2": 387,
+      "m1": 5
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 103
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "B c2-better intact": [
+    "m2"
+  ],
+  "B c2-better r7 off": [
+    "m2"
+  ],
+  "A bin3 p1-high intact": {
+    "alive": true,
+    "on": {
+      "m2": 0,
+      "m1": 392
+    },
+    "first_on_after_switch": {
+      "m2": null,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A2 p2-high r3,r4 off": {
+    "alive": true,
+    "on": {
+      "m2": 387,
+      "m1": 4
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 102
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 3
+    }
+  },
+  "A2 p2-then-p1 r3,r4 off": {
+    "alive": true,
+    "on": {
+      "m2": 24,
+      "m1": 367
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 24
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "A nothing acts p2-then-p1": {
+    "alive": false,
+    "on": {
+      "m2": 0,
+      "m1": 0
+    },
+    "first_on_after_switch": {
+      "m2": null,
+      "m1": null
+    },
+    "min_body": 0,
+    "end_body": 0,
+    "death": 197,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3 p2-high r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 390,
+      "m1": 2
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": null
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3 p1-then-p2 intact": {
+    "alive": true,
+    "on": {
+      "m2": 369,
+      "m1": 23
+    },
+    "first_on_after_switch": {
+      "m2": 24,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A nothing acts p2-high": {
+    "alive": false,
+    "on": {
+      "m2": 0,
+      "m1": 0
+    },
+    "first_on_after_switch": {
+      "m2": null,
+      "m1": null
+    },
+    "min_body": 0,
+    "end_body": 0,
+    "death": 197,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A bin3 p2-then-p1 r2,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 20,
+      "m1": 372
+    },
+    "first_on_after_switch": {
+      "m2": 21,
+      "m1": 23
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 0,
+      "m1": 0
+    }
+  },
+  "A2 p1-high r2,r3,r4,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 3,
+      "m1": 388
+    },
+    "first_on_after_switch": {
+      "m2": 92,
+      "m1": 21
+    },
+    "min_body": 9,
+    "end_body": 23,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  },
+  "A2 p2-then-p1 r2,r3,r4,r8 off": {
+    "alive": true,
+    "on": {
+      "m2": 13,
+      "m1": 358
+    },
+    "first_on_after_switch": {
+      "m2": 92,
+      "m1": 23
+    },
+    "min_body": 9,
+    "end_body": 22,
+    "death": null,
+    "on_while_idle": {
+      "m2": 3,
+      "m1": 0
+    }
+  }
+}

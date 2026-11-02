@@ -86,7 +86,8 @@ end
 const L2RULES = (:learn2, :learn3, :bin3)
 # One step of the circuit. y = [yield1, yield2(, gesture)]. Returns what turn_sed.js returns (unit indices 1-based).
 function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothing,Symbol} = nothing, explore = true,
-               fail = true, memory = true, orient = true, sil = Set{Int}(), idle_first = false)
+               fail = true, memory = true, orient = true, sil = Set{Int}(), idle_first = false,
+               core_gate = false)
     n = length(b.names); old = st.active; ne = length(b.edges)
     g = length(y) >= 3 ? y[3] : 0
     ys = Float64[y[1], y[2], g, isempty(st.pend) ? 0 : 1]
@@ -107,6 +108,14 @@ function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothi
     nw = Vector{Bool}(undef, n)
     for u in 1:n
         nw[u] = b.kind[u] == 'R' ? feature(b.perm, b.feat[u])(ys, now, noise) : total[u] >= b.theta[u]
+    end
+    # core_gate (item 76, opt-in; formal/LabCircuit.lean CoreGate): a patch motor comes on only if some contingency from a
+    # core unit drove it this step
+    if core_gate
+        for u in 1:n
+            (b.kind[u] == 'M' && b.patch[u] <= 2 && nw[u]) || continue
+            any(k -> drove[k] && b.kind[b.edges[k][1]] == 'C', b.ins[u]) || (nw[u] = false)
+        end
     end
     motors = [u for u in 1:n if b.kind[u] == 'M']
     cand = [m for m in motors if nw[m] && b.patch[m] <= 2]

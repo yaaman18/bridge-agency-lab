@@ -548,6 +548,42 @@ theorem no_lockout (F : Nat) (hF : 1 ≤ F) (pref : Nat → Bool) (k : Nat) :
 
 end IdleFirst
 
+/-! ## The core gate (item 76, step 2; lab option `step!(...; core_gate = true)`)
+
+AGENCY-001's hinge (`core_enables_action`) asks that silencing the core changes the choice. In the newborn wiring every
+receptor reaches every motor directly, so two confident receptor inputs reach a motor's threshold without the core
+(item 75). The gate: a patch motor comes on only if its input reaches the threshold and some contingency from a core
+unit drove it. -/
+
+namespace CoreGate
+
+variable (N : Net)
+
+/-- Some contingency from a core unit drove motor `m` (`drove k`: the edge counted this step, `core/circuit.jl`). -/
+def coreDrive (drove : Fin N.nK → Bool) (m : Fin N.nU) : Bool :=
+  decide (∃ k, N.dst k = m ∧ N.kind (N.src k) = .core ∧ drove k = true)
+
+/-- The gated motor: threshold and a core drive. -/
+def motorOn (theta total : Nat) (drove : Fin N.nK → Bool) (m : Fin N.nU) : Bool :=
+  decide (theta ≤ total) && coreDrive N drove m
+
+/-- The gate never adds an act: a gated motor that is on also reaches its threshold. -/
+theorem gate_le (theta total : Nat) (drove : Fin N.nK → Bool) (m : Fin N.nU)
+    (h : motorOn N theta total drove m = true) : theta ≤ total := by
+  simp [motorOn] at h; exact h.1
+
+/-- With every core unit silenced (a silenced source drives nothing), no gated motor comes on. -/
+theorem off_when_core_silenced (sil : Fin N.nU → Bool) (drove : Fin N.nK → Bool)
+    (hd : ∀ k, drove k = true → sil (N.src k) = false) (hs : ∀ u, N.kind u = .core → sil u = true)
+    (theta total : Nat) (m : Fin N.nU) : motorOn N theta total drove m = false := by
+  simp only [motorOn, coreDrive, Bool.and_eq_false_iff, decide_eq_false_iff_not]
+  right
+  rintro ⟨k, -, hc, hk⟩
+  have h1 := hd k hk; have h2 := hs _ hc
+  rw [h1] at h2; exact Bool.false_ne_true h2
+
+end CoreGate
+
 end BridgeLab
 
 #print axioms BridgeLab.Window.elemDC_iff_fields
@@ -568,3 +604,5 @@ end BridgeLab
 #print axioms BridgeLab.IdleFirst.pick_idle
 #print axioms BridgeLab.IdleFirst.old_rule_locks
 #print axioms BridgeLab.IdleFirst.no_lockout
+#print axioms BridgeLab.CoreGate.gate_le
+#print axioms BridgeLab.CoreGate.off_when_core_silenced

@@ -115,7 +115,7 @@ end
 results["P_phenomenal"] = Dict("phenomenal_claim" => "not_certified", "pass" => true,
     "what" => "§13-5: no audit in this report certifies or upgrades a phenomenal claim")
 results["pending"] = Dict(
-    "L2_body_L3_constituents" => "out of scope for the app's being (no death, no body; D1). Judged on body_org by the D6 lab variant (experiments/variant_horizon.jl, results-horizon.json, item 70): at the frozen 60 steps not measurable; at 294/392/588 L2 false (not value-differentiated), L3 on the constituents true",
+    "L2_body_L3_constituents" => "out of scope for the app's being (no death, no body; D1). Judged on body_org by the D6 lab variant (experiments/variant_horizon.jl) with the app's rule bin3+idle and the core gate (items 75, 77; results-horizon-gate.json): at the frozen 60 steps not measurable; at 294/392/588 core c1,c2, the core enables the action, alive, value-differentiated (r2, r8 track value), ValueNeeded false, so L2 false (recorded as the result, user 2026-11-02: the body's margin makes value tracking pay in the amount of body, not in survival), L3 on the constituents true. With the rule of stage 42 (item 70, results-horizon.json) not value-differentiated",
     "decisions" => Dict("D1-D5" => "decided 2026-10-31 as recommended (formal/README.md); D4 alpha state-dependent 2026-11-01 (item 69)", "D6" => "decided 2026-11-01 (item 70): the frozen 60 steps kept and shown as not measurable; lab variant with horizons 392 (= 2 x 196), 294, 588"))
 
 report = Dict{String,Any}("audit" => "bridge-agency-lab app being", "phenomenal_claim" => "not_certified",
@@ -153,7 +153,7 @@ pc(x) = string(round(100x; digits = 1), "%")
 println(io, "| $(pc(dcr["self"])) | $(pc(dcr["smc"])) | $(pc(dcr["act"])) | $(pc(dcr["bound"])) | $(pc(dcr["dc"])) |\n")
 println(io, "M4b の判定（生きている出来事はすべて行為する、m4b_of_check）: $(mb["check"] ? "成立" : "不成立")$(mb["vacuous"] ? "（生きている出来事が無いので空虚に成立）" : "（生きている出来事 $(mb["living_occurrences"])）")。\n")
 println(io, "## アプリの存在では対象外のもの\n")
-println(io, "- L2・L3 はアプリの存在では対象外（D1）。body_org での判定は D6 のラボ変種（`experiments/variant_horizon.jl`、項番70）: 凍結の 60 歩では測れない。294・392・588 歩では L2 偽（価値で行為が違わない）、構成体の L3 真。")
+println(io, "- L2・L3 はアプリの存在では対象外（D1）。body_org での判定は D6 のラボ変種（`experiments/variant_horizon.jl`、項番70）: 凍結の 60 歩では測れない。規則は bin3+idle に核の関門（項番75・77）。294・392・588 歩で核 c1・c2、核が行為を通す、生き残る、価値で行為が分かれる（r2・r8）が、価値の追跡がなくても生き残る（ValueNeeded 偽）ので L2 偽。これを結果として記録した（2026-11-02 ユーザー決定: 身体の余裕が大きく、価値の追跡は生死でなく身体の量に効く）。構成体の L3 真（`results-horizon-gate.json`、項番74〜77）。")
 write(stem * ".md", String(take!(io)))
 println(read(stem * ".md", String))
 println("written: ", relpath(stem, LAB), ".{json,md}")

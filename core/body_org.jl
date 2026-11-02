@@ -19,6 +19,7 @@ function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
     U = Float64(_opt(o, :U)); MCOST = Float64(_opt(o, :MCOST)); STEPS = Int(_opt(o, :STEPS))
     ctr = _opt(o, :CONTRAST); contrast = ctr === nothing ? nothing : Symbol(ctr)
     idle_first = _opt(o, :IDLE, false) == true   # item 72 (lab option, not in matter/body_org.js)
+    core_gate = _opt(o, :GATE, false) == true   # item 76 (lab option)
     REVR = _opt(o, :REVR); KC = _opt(o, :KC, 0); PER = _opt(o, :PER); RAISE = _opt(o, :RAISE, "pre"); DROPR = _opt(o, :DROPR)
     w = make_world(; reservoir = 300.0); seed!(w, 12, 12, 1)
     pool = [0.0, 0.0]; T0 = total(w) + 0
@@ -28,7 +29,7 @@ function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
         b = newborn(false; perm = perm)
         DROPR === nothing || drop_sources!(b, DROPR)
         circuit = init(b); noise = Mulberry(seed)
-        if RAISE != "body"; for y in BO_CUR; step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first); end; end
+        if RAISE != "body"; for y in BO_CUR; step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first, core_gate = core_gate); end; end
     end
     keptK(k) = circuit.q[k] >= 1 || circuit.sg[k] >= 1
     lost = 0; blocked = 0
@@ -42,7 +43,7 @@ function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
         acting = Int[]; d = [0.0, 0.0]
         if alive && cond == "ORG"
             was = [keptK(k) for k in eachindex(circuit.q)]; q0 = copy(circuit.q); s0 = copy(circuit.sg)
-            out = step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first)
+            out = step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first, core_gate = core_gate)
             if PER !== nothing
                 cap = floor(Int, length(body) / PER); nk = count(keptK, eachindex(circuit.q))
                 k = 1
