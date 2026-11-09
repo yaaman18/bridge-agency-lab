@@ -9,3 +9,8 @@ papers/pdf/
 papers/text/
 discussion/.codex-turns/
 discussion/.deepseek-turns/
+
+# secrets (API keys etc.; never commit)
+.env
+.env.*
+!.env.example
