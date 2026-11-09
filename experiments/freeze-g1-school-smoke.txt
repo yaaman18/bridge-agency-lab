@@ -1,0 +1,8 @@
+# S44 smoke freeze (2026-11-09, spec r3 after S-R 2 APPROVE). Before the first run of the smoke (seed 1). Re-frozen once before any run: the checker's sha line parse (strip).
+7417d06b70f4f9ded622dd2dc7248d4a7ef60bff48d9dc2ba3be4b736c8e5b45  predictions-g1-school-smoke.md
+7dbe87d13f717f165ca03475590911b44482e10f51300b21e28066d52a580591  ../discussion/specs/S44-g1-school.md
+f1fddd533c20686f8eb7aac87e3d34587202f15d84561d586e72d07f35c96d48  g1_school.jl
+199be6778531e0455587ed2e02af84322dca838ca58356847f03f8b7e3e8f05a  check_g1_school.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+cdff2b9471c7554e3c45a0a1f2bd53eafc8cd0c232d837590a743708b3f87c61  curricula.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

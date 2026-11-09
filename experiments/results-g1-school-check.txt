@@ -1,0 +1,32 @@
+GATE ok   M1 (d): the G0 examples cross / nocross, an equality -> other, mixed directions without equality -> other
+GATE ok   GQ3 (c): +1 majority -> 的中, all 0 -> 外れ, one group empty -> 判定不能, tie -> 外れ, a missing schedule -> dropped
+GATE ok   freeze sha predictions-g1-school.md
+GATE ok   freeze sha ../discussion/specs/S44-g1-school.md
+GATE ok   freeze sha g1_school.jl
+GATE ok   freeze sha check_g1_school.jl
+GATE ok   freeze sha variant_horizon.jl
+GATE ok   freeze sha curricula.jl
+GATE ok   freeze sha ../core/circuit.jl
+GATE ok   identity: pi = nothing gives the shared curriculum and org (both arms)
+GATE ok   pi check on every seed
+GATE ok   pi check (b) negative: one label changed fails
+GATE ok   the same pi for both arms of every seed
+GATE ok   same-pi (a) negative: a different pi on one arm fails
+GATE ok   tail recorded as the 27th label
+GATE ok   4 schedules on every arm and seed
+GATE ok   M1 recomputed from the recorded q
+GQ1 types: std cross 0/30, swap nocross 0/30: 外れ  (std Dict("other" => 29, "nocross" => 1), swap Dict("other" => 29, "cross" => 1))
+GQ2 survival: swap alive 81/120, std dead 41/120: 外れ
+GQ3 paired sign by tail: 外れ  Dict{String, Any}("25" => (plus = 13, minus = 3, zero = 44), "52" => (plus = 7, minus = 15, zero = 38))
+   D_s: [(511, "52", 0.5), (512, "52", 0.25), (513, "52", -0.75), (514, "25", 0.0), (515, "52", 0.0), (516, "25", 0.5), (517, "52", 0.0), (518, "52", 0.0), (519, "52", 0.0), (520, "25", 0.0), (521, "25", 0.5), (522, "52", 0.0), (523, "52", -0.25), (524, "52", -0.5), (525, "25", 0.0), (526, "25", 0.0), (527, "25", 0.0), (528, "52", -0.75), (529, "52", 0.25), (530, "52", 0.0), (531, "25", 0.5), (532, "25", 0.5), (533, "25", 0.0), (534, "52", -1.0), (535, "52", 0.25), (536, "25", 0.0), (537, "25", 0.0), (538, "25", -0.25), (539, "25", 0.5), (540, "25", 0.25)]
+   group 52: n=15 mean D_s=-0.133
+   group 25: n=15 mean D_s=0.167
+GQ4 SQ1: std m2 30/30, swap m1 30/30: 的中  Tuple{Int64, JSON.Object{String, Any}, JSON.Object{String, Any}}[(511, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (512, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (513, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (514, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (515, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (516, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (517, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (518, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (519, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (520, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (521, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (522, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (523, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (524, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (525, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (526, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (527, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (528, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (529, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (530, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (531, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (532, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (533, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (534, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (535, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (536, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (537, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (538, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (539, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400)), (540, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400))]
+GQ5 diversity of the raised circuit: std 30, swap 30 (of 30): 的中
+GQ6 both arms other: 29/30: 的中
+described run/q0 per seed (seed, longest run, q0 std, q0 swap): [(511, 2, 6, 6), (512, 4, 8, 6), (513, 4, 6, 6), (514, 4, 8, 8), (515, 4, 8, 8), (516, 4, 6, 6), (517, 5, 8, 8), (518, 4, 6, 8), (519, 4, 6, 6), (520, 5, 4, 4), (521, 7, 6, 6), (522, 4, 6, 6), (523, 5, 6, 6), (524, 6, 6, 6), (525, 3, 6, 6), (526, 3, 6, 8), (527, 4, 6, 6), (528, 5, 6, 6), (529, 3, 6, 8), (530, 3, 8, 8), (531, 4, 6, 6), (532, 5, 6, 6), (533, 4, 8, 8), (534, 8, 4, 4), (535, 3, 8, 8), (536, 6, 6, 6), (537, 3, 8, 8), (538, 3, 6, 6), (539, 5, 8, 8), (540, 9, 6, 6)]
+   longest run 1-2: seeds 1, mean q0 std 6.0 swap 6.0
+   longest run 3-3: seeds 7, mean q0 std 6.86 swap 7.43
+   longest run 4-27: seeds 22, mean q0 std 6.36 swap 6.36
+described: trajectories without r5 std 120/120 swap 120/120; types std 2 swap 2; pi 30/30; tail 52 15 25 15; pairs with the contrast (std cross & swap nocross) 0/30
+all gates: ok

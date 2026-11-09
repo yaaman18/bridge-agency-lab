@@ -1,0 +1,8 @@
+# S44 main freeze (2026-11-09, after the smoke on seed 1). Before the first run on seeds 511-540. r2: re-frozen before any main run (codex #3/#4 wording; the empty-bin label).
+38b34a57e3f62bcd8c283dcfed0905868371019947427524d462ddb6a58cff71  predictions-g1-school.md
+7dbe87d13f717f165ca03475590911b44482e10f51300b21e28066d52a580591  ../discussion/specs/S44-g1-school.md
+f1fddd533c20686f8eb7aac87e3d34587202f15d84561d586e72d07f35c96d48  g1_school.jl
+10b5d64538833335c415d14f277f3e928ea8376610d4c06b398764a7ee4b06b2  check_g1_school.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+cdff2b9471c7554e3c45a0a1f2bd53eafc8cd0c232d837590a743708b3f87c61  curricula.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

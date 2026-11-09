@@ -1,0 +1,27 @@
+GATE ok   M1 (d): the G0 examples cross / nocross, an equality -> other, mixed directions without equality -> other
+GATE ok   GQ3 (c): +1 majority -> 的中, all 0 -> 外れ, one group empty -> 判定不能, tie -> 外れ, a missing schedule -> dropped
+GATE ok   freeze sha predictions-g1-school-smoke.md
+GATE ok   freeze sha ../discussion/specs/S44-g1-school.md
+GATE ok   freeze sha g1_school.jl
+GATE ok   freeze sha check_g1_school.jl
+GATE ok   freeze sha variant_horizon.jl
+GATE ok   freeze sha curricula.jl
+GATE ok   freeze sha ../core/circuit.jl
+GATE ok   identity: pi = nothing gives the shared curriculum and org (both arms)
+GATE ok   pi check on every seed
+GATE ok   pi check (b) negative: one label changed fails
+GATE ok   the same pi for both arms of every seed
+GATE ok   same-pi (a) negative: a different pi on one arm fails
+GATE ok   tail recorded as the 27th label
+GATE ok   4 schedules on every arm and seed
+GATE ok   M1 recomputed from the recorded q
+GQ1 types: std cross 0/1, swap nocross 0/1: 外れ  (std Dict("other" => 1), swap Dict("other" => 1))
+GQ2 survival: swap alive 3/4, std dead 1/4: 外れ
+GQ3 paired sign by tail: 判定不能  Dict{String, Any}("25" => (plus = 1, minus = 1, zero = 2), "52" => nothing)
+   D_s: [(1, "25", 0.0)]
+   group 52: n=0 mean D_s=-
+   group 25: n=1 mean D_s=0.0
+GQ4 SQ1: std m2 1/1, swap m1 1/1: 的中  Tuple{Int64, JSON.Object{String, Any}, JSON.Object{String, Any}}[(1, JSON.Object("m2" => 400, "m1" => 0), JSON.Object("m2" => 0, "m1" => 400))]
+GQ5 diversity of the raised circuit: std 1, swap 1 (of 1): 判定不能
+described: trajectories without r5 std 4/4 swap 4/4; types std 1 swap 1; pi 1/1; tail 52 0 25 1; pairs with the contrast (std cross & swap nocross) 0/1
+all gates: ok
