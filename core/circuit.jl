@@ -14,10 +14,14 @@ const FEATURES = Tuple{String,Function}[
     ("y1>=3", (y, t, r) -> y[1] >= 3), ("y2>=3", (y, t, r) -> y[2] >= 3), ("y1==0", (y, t, r) -> y[1] == 0),
     ("y2==0", (y, t, r) -> y[2] == 0), ("noise", (y, t, r) -> r() < 0.5), ("clock3", (y, t, r) -> t % 3 == 0),
     ("y1>y2", (y, t, r) -> y[1] > y[2]), ("y2>y1", (y, t, r) -> y[2] > y[1]), ("partner", (y, t, r) -> y[3] > 0),
-    ("waiting", (y, t, r) -> y[4] > 0), ("not waiting", (y, t, r) -> y[4] == 0)]
+    ("waiting", (y, t, r) -> y[4] > 0), ("not waiting", (y, t, r) -> y[4] == 0),
+    # item 78 B (lab option newborn(...; extra), not in the app): more kinds of patch receptors
+    ("y1>=1", (y, t, r) -> y[1] >= 1), ("y2>=1", (y, t, r) -> y[2] >= 1), ("y1>=4", (y, t, r) -> y[1] >= 4),
+    ("y2>=4", (y, t, r) -> y[2] >= 4), ("y1>=y2+2", (y, t, r) -> y[1] >= y[2] + 2), ("y2>=y1+2", (y, t, r) -> y[2] >= y[1] + 2)]
+const EXTRA_FEATURES = 12:17
 # The JavaScript files permute their module-level FEATURES array to cross the receptors (the reversal of the world);
 # here each circuit carries the permutation: slot s holds feature perm[s].
-const CROSS = ((1, 2), (3, 4), (7, 8))
+const CROSS = ((1, 2), (3, 4), (7, 8), (12, 13), (14, 15), (16, 17))
 cross!(perm::Vector{Int}) = (for (i, j) in CROSS; perm[i], perm[j] = perm[j], perm[i]; end; perm)
 feature(perm, s) = FEATURES[perm[s]][2]
 
@@ -40,10 +44,11 @@ function reindex!(b::Circuit)
 end
 unit(b::Circuit, n::AbstractString) = findfirst(==(n), b.names)
 
-function newborn(partner::Bool = true, proprio::Bool = partner; perm = collect(1:length(FEATURES)))
+function newborn(partner::Bool = true, proprio::Bool = partner; perm = collect(1:length(FEATURES)), extra = Int[], rest::Bool = false, rest_body::Union{Nothing,Symbol} = nothing)
     names = String[]; kind = Char[]; feat = Int[]; theta = Int[]; patch = Int[]
     nr = partner ? (proprio ? 11 : 9) : 8
     for i in 1:nr; push!(names, "r$i"); push!(kind, 'R'); push!(feat, i); push!(theta, 0); push!(patch, 0); end
+    for (j, f) in enumerate(extra); push!(names, "r$(nr + j)"); push!(kind, 'R'); push!(feat, f); push!(theta, 0); push!(patch, 0); end
     for n in (partner ? ("c1", "c2", "c3") : ("c1", "c2")); push!(names, n); push!(kind, 'C'); push!(feat, 0); push!(theta, 1); push!(patch, 0); end
     for (i, n) in enumerate(partner ? ("m1", "m2", "m3") : ("m1", "m2")); push!(names, n); push!(kind, 'M'); push!(feat, 0); push!(theta, 2); push!(patch, i); end
     id(n) = findfirst(==(n), names)
@@ -52,7 +57,28 @@ function newborn(partner::Bool = true, proprio::Bool = partner; perm = collect(1
     add("c1", "c1", 4); add("c2", "c2", 4); add("c1", "c2", 4); add("c2", "c1", 4)
     if partner; add("c3", "c3", 4); add("c1", "c3", 4); add("c3", "c1", 4); add("c2", "c3", 4); add("c3", "c2", 4); end
     pairs = partner ? (("c1", "m1"), ("c2", "m2"), ("c3", "m3")) : (("c1", "m1"), ("c2", "m2"))
-    for (c, m) in pairs; add(c, m, 0); for i in 1:nr; add("r$i", m, 0); end; end
+    for (c, m) in pairs; add(c, m, 0); for i in 1:nr + length(extra); add("r$i", m, 0); end; end
+    # S33 (opt-in, notes/R-rest.md §3, §5; formal/LabCircuit.lean Rest): the motor m0 (patch 4) acts on nothing in the
+    # medium; it competes with the patch motors for the act (candidates, core gate, rank, idle preference) and is never
+    # answered, so its contingencies are never confirmed nor weakened. Its edges come from both cores and every receptor.
+    if rest
+        push!(names, "m0"); push!(kind, 'M'); push!(feat, 0); push!(theta, 2); push!(patch, 4)
+        for c in (partner ? ("c1", "c2", "c3") : ("c1", "c2")); add(c, "m0", 0); end
+        for i in 1:nr + length(extra); add("r$i", "m0", 0); end
+    end
+    # S34 (opt-in, notes/R-rest2.md, BP4 approved 2026-11-08): the body receptor rb (on when the body's quantity is at least
+    # its own quantity at the trial's start; read through step!'s body_flag) with an innate edge rb -> m0 (q0 = 1), and
+    # ordinary edges rb -> m1, m2 (q0 = 0). :B also makes the core edges into m0 innate (q0 = 1).
+    # (2026-11-08, notes/R-rest2.md §5–6): these innate edges are never confirmed. With α every edge into a patch-4 motor with
+    # q0 > 0 (not only these) is exempt from the global decay (see the decay line below).
+    if rest_body !== nothing
+        (rest && rest_body in (:A, :B)) || error("rest_body needs rest = true and :A or :B")
+        push!(names, "rb"); push!(kind, 'R'); push!(feat, -1); push!(theta, 0); push!(patch, 0)
+        add("rb", "m1", 0); add("rb", "m2", 0); add("rb", "m0", 1)
+        if rest_body == :B
+            for (k, (a, c, _)) in enumerate(edges); (kind[a] == 'C' && names[c] == "m0") && (q0[k] = 1); end
+        end
+    end
     reindex!(Circuit(names, kind, feat, theta, patch, edges, q0, [n[1] == 'c' for n in names], perm, Vector{Int}[]))
 end
 # Remove every contingency whose source is one of the named units (body_org.js DROPR; the units stay).
@@ -72,7 +98,9 @@ mutable struct CState
     prev::Union{Nothing,Vector{Bool}}
     cOn::Union{Nothing,Vector{Float64}}; cOff::Union{Nothing,Vector{Float64}}
     lastM::Union{Nothing,Vector{Int}}
+    lastC::Union{Nothing,Vector{Int}}   # item 84 (sed_fade only): the step each contingency was last confirmed
 end
+CState(active, q, sg, h, off, t, pend, fresh, prev, cOn, cOff, lastM) = CState(active, q, sg, h, off, t, pend, fresh, prev, cOn, cOff, lastM, nothing)
 init(b::Circuit) = CState(copy(b.initial), copy(b.q0), zeros(Int, length(b.q0)), zeros(Int, length(b.q0)), zeros(Int, length(b.names)),
                          0, Pend[], fill(5, P_KINDS), nothing, nothing, nothing, nothing)
 
@@ -87,7 +115,7 @@ const L2RULES = (:learn2, :learn3, :bin3)
 # One step of the circuit. y = [yield1, yield2(, gesture)]. Returns what turn_sed.js returns (unit indices 1-based).
 function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothing,Symbol} = nothing, explore = true,
                fail = true, memory = true, orient = true, sil = Set{Int}(), idle_first = false,
-               core_gate = false)
+               core_gate = false, seen_both = false, sed_fade = false, y_offer = nothing, sed_fade_drive = false, rest_off = false, body_flag = nothing)
     n = length(b.names); old = st.active; ne = length(b.edges)
     g = length(y) >= 3 ? y[3] : 0
     ys = Float64[y[1], y[2], g, isempty(st.pend) ? 0 : 1]
@@ -107,18 +135,20 @@ function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothi
     end
     nw = Vector{Bool}(undef, n)
     for u in 1:n
-        nw[u] = b.kind[u] == 'R' ? feature(b.perm, b.feat[u])(ys, now, noise) : total[u] >= b.theta[u]
+        nw[u] = b.kind[u] == 'R' ? (b.feat[u] == -1 ? body_flag === true : feature(b.perm, b.feat[u])(ys, now, noise)) : total[u] >= b.theta[u]   # S34: feat -1 = the body receptor
     end
     # core_gate (item 76, opt-in; formal/LabCircuit.lean CoreGate): a patch motor comes on only if some contingency from a
     # core unit drove it this step
     if core_gate
         for u in 1:n
-            (b.kind[u] == 'M' && b.patch[u] <= 2 && nw[u]) || continue
+            (b.kind[u] == 'M' && (b.patch[u] <= 2 || b.patch[u] == 4) && nw[u]) || continue
             any(k -> drove[k] && b.kind[b.edges[k][1]] == 'C', b.ins[u]) || (nw[u] = false)
         end
     end
     motors = [u for u in 1:n if b.kind[u] == 'M']
-    cand = [m for m in motors if nw[m] && b.patch[m] <= 2]
+    # S33 rest_off (the release of notes/R-rest-def.md §3): m0 is neither a candidate nor acting this step
+    if rest_off; for m in motors; b.patch[m] == 4 && (nw[m] = false); end; end
+    cand = [m for m in motors if nw[m] && (b.patch[m] <= 2 || b.patch[m] == 4)]
     # idle_first (item 72, opt-in; formal/LabCircuit.lean IdleFirst): among the candidates, a motor that has not acted
     # for longer than FORGET steps is preferred; the old ranking decides among the preferred ones (or all, if none is idle).
     idle_first && st.lastM === nothing && (st.lastM = zeros(Int, n))
@@ -141,7 +171,9 @@ function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothi
     acting = [m for m in motors if nw[m] && !(m in sil)]
     onPatch = [m for m in acting if b.patch[m] <= 2]
     ci = findfirst(m -> b.patch[m] == 3, acting); call = ci === nothing ? 0 : acting[ci]
-    offer = [0.0, 0.0]; for m in onPatch; offer[b.patch[m]] = y[b.patch[m]]; end
+    # y_offer (S12, D3a, opt-in; formal/Clamp.lean): the answer channel's yields; nothing = y (the receptors and the offer read the same yields)
+    yo = y_offer === nothing ? y : y_offer
+    offer = [0.0, 0.0]; for m in onPatch; offer[b.patch[m]] = yo[b.patch[m]]; end
     d = allocate(offer)
     answered = Dict{Int,Bool}(m => d[b.patch[m]] > 0 for m in onPatch)
     gate = d[1] + d[2] > 0 && all(values(answered))
@@ -163,10 +195,12 @@ function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothi
     L2 = ct in L2RULES
     if idle_first && !(L2 || ct == :donly)   # the rules that do not keep lastM keep it when idle_first is on
         for m in onPatch; st.lastM[m] = now; end
+        for m in acting; b.patch[m] == 4 && (st.lastM[m] = now); end   # S33: m0's last act
     end
     if L2 || ct == :donly
         st.lastM === nothing && (st.lastM = zeros(Int, n))
         for m in motors
+            (b.patch[m] == 4 && m in acting) && (st.lastM[m] = now)   # S33: m0's last act (its edges keep no statistics)
             b.patch[m] <= 2 || continue
             if m in onPatch
                 st.lastM[m] = now
@@ -178,7 +212,8 @@ function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothi
     function passes(k)
         (!STATS || !rm(k)) && return true
         cc = st.cOn[k] - st.cOff[k]
-        return L2 && isnan(cc) ? true : cc > (ct == :bin3 ? THETA_B : THETA_C)
+        # seen_both (item 79, opt-in; formal/LabCircuit.lean SeenBoth): an undefined contrast no longer passes
+        return L2 && isnan(cc) ? !seen_both : cc > (ct == :bin3 ? THETA_B : THETA_C)
     end
     if L2; for k in 1:ne; confirmed[k] && !passes(k) && (confirmed[k] = false); end; end
     function grow(k)
@@ -229,12 +264,29 @@ function step!(st::CState, b::Circuit, y; noise = nothing, contrast::Union{Nothi
                             [k for (k, (a, c, _)) in enumerate(b.edges) if c == call && b.kind[a] == 'R' && drove[k]]))
     end
     for u in 1:n
-        if b.kind[u] == 'R' && b.feat[u] >= 10
+        if b.kind[u] == 'R' && 10 <= b.feat[u] <= 11
             nw[u] = feature(b.perm, b.feat[u])(Float64[0, 0, 0, isempty(st.pend) ? 0 : 1], now, noise)
         end
     end
+    # sed_fade (item 84, opt-in; formal/LabCircuit.lean SedFade): a contingency not confirmed for a multiple of FORGET
+    # steps loses one sediment, so a habit that is never confirmed stops being kept (and paid for) after FORGET * P_SMAX
+    if sed_fade
+        st.lastC === nothing && (st.lastC = zeros(Int, ne))
+        for k in 1:ne
+            # T1 variant SFD (opt-in, formal/LabCircuit.lean SedFade.stepDrive): an edge that drove its motor this update
+            # while that motor acted restarts its age like a confirmation (use restores, P033); the sediment is untouched
+            if confirmed[k] || (sed_fade_drive && drove[k] && b.edges[k][2] in acting)
+                st.lastC[k] = now
+            else
+                a = now - st.lastC[k]
+                (a >= FORGET && a % FORGET == 0) && (st.sg[k] = max(st.sg[k] - 1, 0))
+            end
+        end
+    end
     now % P_FRESH == 0 && (st.fresh = [min(5, f + 1) for f in st.fresh])
-    if now % P_DECAY == 0; for k in 1:ne; !confirmed[k] && (st.q[k] = max(st.q[k] - 1, 0)); end; end
+    # S34 α (user approval 2026-11-08, notes/R-rest2.md §6; formal/LabCircuit.lean RestAlpha): an edge into a patch-4 motor (m0)
+    # with q0 > 0 is exempt from this global decay (every such edge; newborn makes them only with rest_body)
+    if now % P_DECAY == 0; for k in 1:ne; (!confirmed[k] && !(b.patch[b.edges[k][2]] == 4 && b.q0[k] > 0)) && (st.q[k] = max(st.q[k] - 1, 0)); end; end
     for u in 1:n
         b.kind[u] == 'R' || continue
         st.off[u] = nw[u] ? 0 : st.off[u] + 1

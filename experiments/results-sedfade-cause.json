@@ -1,0 +1,4070 @@
+{
+  "spec": "discussion/specs/S19-body-sedfade-cause.md r1",
+  "seeds": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "runs": [
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "std",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "swap",
+      "schedule": "p1-high"
+    },
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "std",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 3,
+                "tau": 91,
+                "before": 4
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 3,
+                "tau": 91,
+                "before": 4
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 343,
+            "death": null
+          },
+          "t": 64,
+          "sg_E": [
+            4,
+            4
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 318,
+            "death": null
+          },
+          "t": 96,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 293,
+            "death": null
+          },
+          "t": 128,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 268,
+            "death": null
+          },
+          "t": 160,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 245,
+            "death": null
+          },
+          "t": 192,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 221,
+            "death": null
+          },
+          "t": 224,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 195,
+            "death": null
+          },
+          "t": 256,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 170,
+            "death": null
+          },
+          "t": 288,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 149,
+            "death": null
+          },
+          "t": 320,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 125,
+            "death": null
+          },
+          "t": 352,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 101,
+            "death": null
+          },
+          "t": 384,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        }
+      ],
+      "seed": 111,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 3,
+                "tau": 91,
+                "before": 4
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 3,
+                "tau": 91,
+                "before": 4
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 340,
+            "death": null
+          },
+          "t": 64,
+          "sg_E": [
+            4,
+            4
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 316,
+            "death": null
+          },
+          "t": 96,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 292,
+            "death": null
+          },
+          "t": 128,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 268,
+            "death": null
+          },
+          "t": 160,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 242,
+            "death": null
+          },
+          "t": 192,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 217,
+            "death": null
+          },
+          "t": 224,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 192,
+            "death": null
+          },
+          "t": 256,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 167,
+            "death": null
+          },
+          "t": 288,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 143,
+            "death": null
+          },
+          "t": 320,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 119,
+            "death": null
+          },
+          "t": 352,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 93,
+            "death": null
+          },
+          "t": 384,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        }
+      ],
+      "seed": 115,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 3,
+                "tau": 91,
+                "before": 4
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 3,
+                "tau": 91,
+                "before": 4
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 343,
+            "death": null
+          },
+          "t": 64,
+          "sg_E": [
+            4,
+            4
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 318,
+            "death": null
+          },
+          "t": 96,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 296,
+            "death": null
+          },
+          "t": 128,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 2,
+                "tau": 191,
+                "before": 3
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 272,
+            "death": null
+          },
+          "t": 160,
+          "sg_E": [
+            3,
+            3
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 245,
+            "death": null
+          },
+          "t": 192,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 219,
+            "death": null
+          },
+          "t": 224,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 196,
+            "death": null
+          },
+          "t": 256,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 1,
+                "tau": 291,
+                "before": 2
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 172,
+            "death": null
+          },
+          "t": 288,
+          "sg_E": [
+            2,
+            2
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 145,
+            "death": null
+          },
+          "t": 320,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 120,
+            "death": null
+          },
+          "t": 352,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        },
+        {
+          "m_star": "m2",
+          "N": {
+            "sg0": 391,
+            "sgkept": false,
+            "decs": [
+              {
+                "route": "sed_fade",
+                "edge": "r2->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              },
+              {
+                "route": "sed_fade",
+                "edge": "r8->m2",
+                "after": 0,
+                "tau": 391,
+                "before": 1
+              }
+            ],
+            "qkept": false,
+            "acts": 95,
+            "death": null
+          },
+          "t": 384,
+          "sg_E": [
+            1,
+            1
+          ],
+          "E": [
+            "r2->m2",
+            "r8->m2"
+          ],
+          "q_E": [
+            0,
+            0
+          ],
+          "F": {
+            "sg0": null,
+            "sgkept": true,
+            "decs": [],
+            "qkept": false,
+            "acts": 396,
+            "death": null
+          }
+        }
+      ],
+      "seed": 130,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "swap",
+      "schedule": "p2-high"
+    },
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "std",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "swap",
+      "schedule": "p1-then-p2"
+    },
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "std",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 111,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 112,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 113,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 114,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 115,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 116,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 117,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 118,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 119,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 120,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 121,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 122,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 123,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 124,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 125,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 126,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 127,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 128,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 129,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 130,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 131,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 132,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 133,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 134,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 135,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 136,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 137,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 138,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 139,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 140,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 141,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 142,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 143,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 144,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 145,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 146,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 147,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 148,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 149,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    },
+    {
+      "points": [],
+      "seed": 150,
+      "arm": "swap",
+      "schedule": "p2-then-p1"
+    }
+  ],
+  "rule": "sf",
+  "control_override_identity": true,
+  "H": 392
+}

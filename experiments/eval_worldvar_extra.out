@@ -1,0 +1,13 @@
+seasons L2           survived 10/10  richer [0.47, 0.38, 0.5, 0.32, 0.4, 0.26, 0.34, 0.4, 0.36, 0.54]  body mean 21.5  answered 0.992
+seasons stage42      survived 10/10  richer [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]  body mean 19.9  answered 0.988
+seasons GREEDY       survived 10/10  richer [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  body mean 23.1  answered 1.0
+seasons NONE         survived 0/10  richer [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN]  body mean 0.1  answered 0.0
+heldout L2           survived 10/10  richer [0.17, 0.17, 0.14, 0.17, 0.2, 0.15, 0.13, 0.17, 0.14, 0.16]  body mean 18.4  answered 0.989
+heldout stage42      survived 10/10  richer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  body mean 17.2  answered 0.989
+heldout GREEDY       survived 10/10  richer [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  body mean 20.9  answered 1.0
+heldout NONE         survived 0/10  richer [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN]  body mean 0.1  answered 0.0
+random L2            survived 10/10  richer [0.36, 0.33, 0.42, 0.43, 0.34, 0.28, 0.39, 0.41, 0.36, 0.42]  body mean 17.3  answered 0.997
+random stage42       survived 10/10  richer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  body mean 13.7  answered 0.997
+random GREEDY        survived 10/10  richer [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]  body mean 19.5  answered 1.0
+random NONE          survived 0/10  richer [NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN]  body mean 0.1  answered 0.0
+written experiments/results-worldvar-extra.json

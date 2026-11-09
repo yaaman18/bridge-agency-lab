@@ -1,0 +1,17 @@
+A survived 1/10  deaths [4525, 3272, 6741, 4589, 4223, 1852, 3251, 1513, 8821]  body mean 5.7
+B survived 10/10  deaths Any[]  body mean 17.8
+C survived 1/10  deaths [4572, 3283, 6750, 5681, 4341, 1881, 3272, 4395, 8891]  body mean 7.4
+D survived 10/10  deaths Any[]  body mean 17.8
+
+per seed (A vs D harvest/step after 800; A deaths: kept_last200, upkeep/actcost/harvest last300, block totals death/before, world)
+seed  1  harvest A 0.0714  D 0.083  ratio 0.86  | death 4525 kept 13.7 upkeep 8.07 act 1.2 harv 16.1 blocks 1.0/7.0 [0.0, 1.0]
+seed  2  harvest A 0.0811  D 0.0845  ratio 0.96  | death 3272 kept 12.0 upkeep 7.2 act 1.2 harv 15.04 blocks 1.0/8.0 [0.0, 1.0]
+seed  3  harvest A 0.0771  D 0.0804  ratio 0.96  | death 6741 kept 15.0 upkeep 9.0 act 1.2 harv 16.4 blocks 1.0/4.0 [0.0, 1.0]
+seed  4  harvest A 0.0796  D 0.0896  ratio 0.89
+seed  5  harvest A 0.08  D 0.087  ratio 0.92  | death 4589 kept 15.0 upkeep 9.0 act 1.19 harv 12.58 blocks 2.0/4.0 [1.0, 1.0]
+seed  6  harvest A 0.0803  D 0.0851  ratio 0.94  | death 4223 kept 14.0 upkeep 8.4 act 1.18 harv 12.1 blocks 2.0/2.0 [0.0, 2.0]
+seed  7  harvest A 0.0682  D 0.0831  ratio 0.82  | death 1852 kept 13.3 upkeep 8.13 act 1.2 harv 15.86 blocks 1.0/7.0 [0.0, 1.0]
+seed  8  harvest A 0.0703  D 0.0819  ratio 0.86  | death 3251 kept 13.3 upkeep 8.13 act 1.2 harv 15.98 blocks 1.0/5.0 [0.0, 1.0]
+seed  9  harvest A 0.0541  D 0.0893  ratio 0.61  | death 1513 kept 14.1 upkeep 8.45 act 1.2 harv 12.16 blocks 5.0/2.0 [4.0, 1.0]
+seed 10  harvest A 0.0783  D 0.0856  ratio 0.91  | death 8821 kept 14.0 upkeep 8.4 act 1.2 harv 13.64 blocks 2.0/3.0 [2.0, 0.0]
+written

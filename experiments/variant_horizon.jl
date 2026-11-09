@@ -53,17 +53,56 @@ struct BodyOrg
     idle_first::Bool
     contrast::Union{Nothing,Symbol}
     core_gate::Bool
+    seen_both::Bool
+    sed_fade::Bool             # item 84: the sediment of unconfirmed contingencies fades (core/circuit.jl sed_fade)
+    grow::Bool                 # item 81: raised with the body (FEED, RAISE body), upkeep KC, capacity PER
+    KC::Float64
+    PER::Union{Nothing,Int}
+    w0::Any
+    pool0::Vector{Float64}
     side::IdDict{Any,Any}
 end
 
 """The circuit of body_org (B1) raised on the curriculum with noise seed `seed`."""
 function BodyOrg(seed::Integer; structure::Symbol = :constituents, abundant_r0::Integer, U = 0.02, MCOST = 0.004, idle_first = false,
-                 contrast = nothing, cur = :std, core_gate = false)
-    b = LC.newborn(false); c = LC.init(b); noise = LC.Mulberry(seed)
-    for y in curriculum(cur); LC.step!(c, b, [y[1], y[2], 0.0]; noise = noise, contrast, idle_first, core_gate); end
+                 contrast = nothing, cur = :std, core_gate = false, extra = false, seen_both = false, grow = false, KC = 0.0,
+                 PER = nothing, readcur = false, sed_fade = false, KC_trial = KC, rest = false, rest_body = nothing)
+    if grow
+        # item 81: the circuit raised with the body (core/body_org.jl FEED, RAISE "body": 800 steps of the nursery and school
+        # order fed to the pools), paying KC per kept contingency, under the capacity PER; the trials start from step 800
+        o = (U = U, MCOST = MCOST, STEPS = 800, FEED = true, RAISE = "body", KC = KC, IDLE = idle_first, GATE = core_gate,
+             SEENBOTH = seen_both, READCUR = readcur, SEDFADE = sed_fade, CONTRAST = contrast === nothing ? nothing : String(contrast))
+        o = PER === nothing ? o : merge(o, (PER = PER,))
+        snap = Ref{Any}(nothing)
+        LC.body_org_run("ORG", seed, merge(o, (ON_STEP = x -> x.t == 799 && (snap[] = deepcopy((b = x.b, c = x.circuit, w = x.w, pool = x.pool, noise = x.noise))),)))
+        S = snap[]; motors = Dict(LC.unit(S.b, "m1") => 1, LC.unit(S.b, "m2") => 2)
+        return BodyOrg(copy(S.b.names), copy(S.b.edges), motors, S.b, S.c, S.noise, structure, abundant_r0, U, MCOST, idle_first, contrast,
+                       core_gate, seen_both, sed_fade, true, Float64(KC_trial), PER, S.w, copy(S.pool), IdDict())
+    end
+    b = LC.newborn(false; extra = extra ? collect(LC.EXTRA_FEATURES) : Int[], rest = rest, rest_body = rest_body); c = LC.init(b); noise = LC.Mulberry(seed)   # S33: rest adds m0 (opt-in)
+    for y in curriculum(cur); LC.step!(c, b, [y[1], y[2], 0.0]; noise = noise, contrast, idle_first, core_gate, seen_both, sed_fade, sed_fade_drive = SEDFADE_DRIVE[]); end
     motors = Dict(LC.unit(b, "m1") => 1, LC.unit(b, "m2") => 2)
-    BodyOrg(copy(b.names), copy(b.edges), motors, b, c, noise, structure, abundant_r0, U, MCOST, idle_first, contrast, core_gate, IdDict())
+    BodyOrg(copy(b.names), copy(b.edges), motors, b, c, noise, structure, abundant_r0, U, MCOST, idle_first, contrast, core_gate, seen_both, sed_fade,
+            false, Float64(KC_trial), nothing, nothing, Float64[], IdDict())
 end
+
+# item 95 (S7): a read-only hook called after each living update with (st, o, c, y): the AS state, LC.step!'s result,
+# the circuit's state after the update and the yields read. Default nothing; it writes nothing back.
+const ON_STEP = Ref{Any}(nothing)
+# item 103 (S12, D3a CLAMP): an optional map (st, y) -> (y_sense, y_offer) giving the circuit's two channels their own yields
+# (y = the yields of the real pools). Default nothing: both channels read y. The intake stays min(pool, d * U) of the real pools.
+const CLAMP = Ref{Any}(nothing)
+# S19 (G3): an optional map (st, sed_fade) -> Bool giving a branch its own sed_fade (measurement on copies, D6 R5-b'). Default nothing: s.sed_fade.
+const SEDFADE_OVERRIDE = Ref{Any}(nothing)
+# S22 (G17): optional trial start pools [p1, p2] (absolute amounts) instead of [0, 0] (not used with grow). Default nothing.
+const POOL0 = Ref{Any}(nothing)
+# T1 (S25): the lab variant SFD (core/circuit.jl sed_fade_drive) in the raising and the trials of the non-grow version. Default false.
+const SEDFADE_DRIVE = Ref(false)
+# S33 (notes/R-rest-def.md §3): the release of the rest motor m0 for the trial steps, an optional map st -> Bool (default nothing = never)
+const REST_OFF = Ref{Any}(nothing)
+# S34: an optional map st -> Bool | nothing that fixes the body receptor's reading (nothing = the body's own reading)
+const BODY_CLAMP = Ref{Any}(nothing)
+body_quantity(w) = sum(w.B[i] for i in body_sites(w); init = 0.0)
 
 AS.nunits(s::BodyOrg) = length(s.names)
 AS.is_sensor(s::BodyOrg, u::Int) = s.b.kind[u] == 'R'
@@ -72,9 +111,11 @@ body_sites(w) = [i for i in eachindex(w.C) if w.C[i] != 0]
 strength(s::BodyOrg, c, w) = s.structure == :q ? copy(c.q) : Int[w.C[i] != 0 ? 1 : 0 for i in eachindex(w.C)]
 
 function AS.initial_state(s::BodyOrg, p::AS.Params)
-    c = deepcopy(s.raised); w = LC.make_world(; reservoir = 300.0); LC.seed!(w, 12, 12, 1)
+    c = deepcopy(s.raised)
+    w = s.grow ? deepcopy(s.w0) : (w1 = LC.make_world(; reservoir = 300.0); LC.seed!(w1, 12, 12, 1); w1)
     st = AS.State(copy(c.active), strength(s, c, w), 0, 0, false)
-    s.side[st] = (c = c, w = w, noise = deepcopy(s.noise), pool = [0.0, 0.0])
+    s.side[st] = (c = c, w = w, noise = deepcopy(s.noise), pool = s.grow ? copy(s.pool0) : (POOL0[] === nothing ? [0.0, 0.0] : Float64.(copy(POOL0[]))),
+                   Q0 = body_quantity(w))   # S34: the body's quantity at the trial's start (the body receptor's reference)
     st
 end
 
@@ -98,8 +139,16 @@ function AS.step!(st::AS.State, s::BodyOrg, p::AS.Params, sch::AS.Schedule, sile
     else
         g = [Float64(AS.yield_of(sch, 1, t)), Float64(AS.yield_of(sch, 2, t))]
         y = abundant ? g : [min(5.0, floor(r / s.U + 1e-9)) for r in pool]
-        o = LC.step!(c, s.b, [y[1], y[2], 0.0]; noise = S.noise, contrast = s.contrast, sil = silenced, idle_first = s.idle_first, core_gate = s.core_gate)
+        keptK(k) = c.q[k] >= 1 || c.sg[k] >= 1
+        was = [keptK(k) for k in eachindex(c.q)]; q0 = copy(c.q); s0 = copy(c.sg)
+        ysn, yof = CLAMP[] === nothing ? (y, nothing) : CLAMP[](st, y)
+        o = LC.step!(c, s.b, [ysn[1], ysn[2], 0.0]; noise = S.noise, contrast = s.contrast, sil = silenced, idle_first = s.idle_first, core_gate = s.core_gate, seen_both = s.seen_both, sed_fade = SEDFADE_OVERRIDE[] === nothing ? s.sed_fade : SEDFADE_OVERRIDE[](st, s.sed_fade), sed_fade_drive = SEDFADE_DRIVE[],
+                     y_offer = yof === nothing ? nothing : [yof[1], yof[2], 0.0], rest_off = REST_OFF[] === nothing ? false : REST_OFF[](st),
+                     body_flag = LC.unit(s.b, "rb") === nothing ? nothing : (bc = BODY_CLAMP[] === nothing ? nothing : BODY_CLAMP[](st); bc === nothing ? body_quantity(w) >= S.Q0 : bc))
+        s.PER === nothing || LC.enforce_capacity!(c, was, q0, s0, floor(Int, length(body) / s.PER))   # item 81, as body_org
+        ON_STEP[] === nothing || ON_STEP[](st, o, c, y)
         acting = [s.b.patch[m] for m in o.acting if s.b.patch[m] <= 2]
+        s.KC != 0 && pay!(w, body, s.KC * count(keptK, eachindex(c.q)))                                 # item 81: upkeep, as body_org
         if abundant                                                      # B4
             feed = LC.port_take!(w.port, LC.P_CAPACITY * s.U)
             for i in body; w.A[i] += feed / length(body); end
@@ -196,17 +245,33 @@ const SEEDS = parse.(Int, split(get(ENV, "SEEDS", "1,2,3,4,5,6,7,8,9,10"), ","))
 # CONTRAST=none IDLE=0 is the rule of stage 42 (item 70, results-horizon.json; item 72 IDLE=1, results-horizon-idle.json).
 const IDLE = get(ENV, "IDLE", "1") == "1"   # item 72: the idle-first choice in the raising and the trials
 const CONTRAST = get(ENV, "CONTRAST", "bin3") in ("", "none") ? nothing : Symbol(get(ENV, "CONTRAST", "bin3"))   # item 74
-const OUT = get(ENV, "OUT", joinpath(LAB, "experiments", CONTRAST == :bin3 && IDLE ? (get(ENV, "GATE", "1") == "1" ? "results-horizon-gate.json" : "results-horizon-bin3idle.json") : "results-horizon-other.json"))
+# item 92 (user 2026-11-07, "bは規定値で"): the SF line of item 86 is the default of the L2 system: sed_fade on and the trial upkeep
+# KC_trial 0.0015 (raised on the script, no upkeep while raised). SF=0 gives the defaults before item 92 (results-horizon-gate.json);
+# SEDFADE and KCTRIAL still override. The default output is results-horizon-sf.json.
+# (codex I-R: SF applies only without GROW and when SEDFADE, KC and KCTRIAL are not given; an empty value counts as not given)
+unset(k) = get(ENV, k, "") == ""
+const SF = get(ENV, "SF", "1") == "1" && get(ENV, "GROW", "0") != "1"
+const OUT = get(ENV, "OUT", joinpath(LAB, "experiments", CONTRAST == :bin3 && IDLE ? (get(ENV, "GATE", "1") == "1" ? (SF && unset("SEDFADE") && unset("KC") && unset("KCTRIAL") ? "results-horizon-sf.json" : "results-horizon-gate.json") : "results-horizon-bin3idle.json") : "results-horizon-other.json"))
 const CUR = Symbol(get(ENV, "CUR", "std"))   # item 74
+const GROW = get(ENV, "GROW", "0") == "1"   # item 81: raised with the body, KC 0.002 (stages 46-54)
+const READCUR = get(ENV, "READCUR", "0") == "1"   # item 82: the grown circuit reads the scripted yields while raised
+const PERV = get(ENV, "PER", "") == "" ? nothing : parse(Int, ENV["PER"])
+const SEENBOTH = get(ENV, "SEENBOTH", "0") == "1"   # item 79: seen both before growing
+const SEDFADE = unset("SEDFADE") ? SF : ENV["SEDFADE"] == "1"   # item 84: the sediment of unconfirmed contingencies fades (default on since item 92)
+# item 85 (controls): KC overrides the upkeep of the raising and the trials (default 0.002 with GROW), KCTRIAL only the trials
+const KCV = get(ENV, "KC", "") == "" ? (GROW ? 0.002 : 0.0) : parse(Float64, ENV["KC"])
+const KCT = !unset("KCTRIAL") ? parse(Float64, ENV["KCTRIAL"]) : (SF && unset("KC") ? 0.0015 : KCV)   # item 92: 0.0015 by default; KC still sets the trials when KCTRIAL is not given
+const EXTRA = get(ENV, "EXTRA", "0") == "1"   # item 78 B: the extra receptors (core/circuit.jl EXTRA_FEATURES)
 const GATE = get(ENV, "GATE", "1") == "1"   # item 76 step 2: the core gate (default since item 77; GATE=0 for items 74-76)
 const LOW = get(ENV, "LOW", "") == "" ? nothing : parse(Int, ENV["LOW"])   # item 76: survival schedules with the empty patch at LOW
 
 res = Dict{String,Any}("horizons" => HS, "seeds" => SEEDS, "criteria" => "bridge-protocol tools/AgencySubstrate criteria.jl (unchanged)",
-    "templates_sha256" => AS.load_templates().sha256, "idle_first" => IDLE, "contrast" => CONTRAST === nothing ? nothing : String(CONTRAST), "curriculum" => String(CUR), "survival_low" => LOW, "core_gate" => GATE, "runs" => Any[])
+    "templates_sha256" => AS.load_templates().sha256, "idle_first" => IDLE, "contrast" => CONTRAST === nothing ? nothing : String(CONTRAST), "curriculum" => String(CUR), "survival_low" => LOW, "core_gate" => GATE, "extra_receptors" => EXTRA, "seen_both" => SEENBOTH, "grow" => GROW, "PER" => PERV, "readcur" => READCUR, "sed_fade" => SEDFADE, "KC" => KCV, "KC_trial" => KCT, "runs" => Any[])
 for H in HS
     su = LBA.setup_with(H; low = LOW)
     for seed in SEEDS, structure in (:constituents, :q)
-        s = LBA.BodyOrg(seed; structure, abundant_r0 = su.choice_params.resource0, idle_first = IDLE, contrast = CONTRAST, cur = CUR, core_gate = GATE)
+        s = LBA.BodyOrg(seed; structure, abundant_r0 = su.choice_params.resource0, idle_first = IDLE, contrast = CONTRAST, cur = CUR, core_gate = GATE, extra = EXTRA, seen_both = SEENBOTH, grow = GROW,
+                         KC = KCV, PER = PERV, readcur = READCUR, sed_fade = SEDFADE, KC_trial = KCT)
         t0 = time(); r = AS.evaluate(s, su); tb = LBA.tables(s, su, r)
         push!(res["runs"], Dict("H" => H, "seed" => seed, "structure" => String(structure), "agency_L2" => r.agency,
             "self_producing_L3" => r.self_producing, "self_repairing_L3R" => structure == :q ? r.self_repairing : nothing,

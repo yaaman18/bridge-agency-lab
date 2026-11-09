@@ -8,11 +8,51 @@
 bo_season(t) = (c = (t % 1000) + 1; c <= 300 ? [3.0, 2.0] : c <= 600 ? [0.0, 5.0] : [5.0, 0.0])
 const BO_CUR = vcat([((i ÷ 50) % 2 == 0 ? [5.0, 0.0] : [0.0, 5.0]) for i in 0:399], [((i ÷ 15) % 2 == 0 ? [5.0, 2.0] : [2.0, 5.0]) for i in 0:399])
 _opt(o, k, default = nothing) = o isa AbstractDict ? get(o, String(k), default) : get(o, k, default)
+# Item 78 (lab option SCHED, world variation; the default is the frozen seasons): "heldout" = the seasons of
+# sense/heldout.js ((2,4) (4,0) (0,4) (3,3) per 250 steps); "random" = 300-step blocks whose yields are drawn from 0..5
+# for each patch by Mulberry(7919 * SCHEDSEED + block), drawn again while both are 0 (a block with no food at all would
+# decide survival by the world alone).
+function bo_world(t, o)
+    sc = _opt(o, :SCHED)
+    sc === nothing && return bo_season(t)
+    if sc == "heldout"
+        c = (t % 1000) + 1
+        return c <= 250 ? [2.0, 4.0] : c <= 500 ? [4.0, 0.0] : c <= 750 ? [0.0, 4.0] : [3.0, 3.0]
+    elseif sc == "random"
+        r = Mulberry(7919 * Int(_opt(o, :SCHEDSEED, 1)) + t ÷ 300)
+        while true
+            g = [floor(6 * r()), floor(6 * r())]
+            g[1] + g[2] > 0 && return g
+        end
+    end
+    error("unknown SCHED $sc")
+end
 function bo_season_at(t, o)
     ph = _opt(o, :PHASE, 0)
-    g = _opt(o, :FEED, false) == true ? (t < 800 ? BO_CUR[t+1] : bo_season(t - 800 + ph)) : bo_season(t + ph)
+    g = _opt(o, :FEED, false) == true ? (t < 800 ? BO_CUR[t+1] : bo_world(t - 800 + ph, o)) : bo_world(t + ph, o)
     rev = _opt(o, :REV)
     return rev !== nothing && t >= rev ? [g[2], g[1]] : g
+end
+
+# The capacity of stage 46 (PER): at most `cap` kept contingencies (confidence >= 1 or sediment >= 1). Over it, the ones
+# newly kept this step are undone (in edge order), then the weakest (confidence + sediment, the last of equals) are lost.
+# Returns (blocked, lost). Shared with experiments/variant_horizon.jl (item 81).
+function enforce_capacity!(circuit, was, q0, s0, cap)
+    keptK(k) = circuit.q[k] >= 1 || circuit.sg[k] >= 1
+    blocked = 0; lost = 0; nk = count(keptK, eachindex(circuit.q))
+    k = 1
+    while k <= length(circuit.q) && nk > cap
+        if keptK(k) && !was[k]; circuit.q[k] = q0[k]; circuit.sg[k] = s0[k]; nk -= 1; blocked += 1; end
+        k += 1
+    end
+    while nk > cap
+        wk = 0
+        for k in eachindex(circuit.q)
+            (keptK(k) && (wk == 0 || circuit.q[k] + circuit.sg[k] <= circuit.q[wk] + circuit.sg[wk])) && (wk = k)
+        end
+        circuit.q[wk] = 0; circuit.sg[wk] = 0; nk -= 1; lost += 1
+    end
+    return blocked, lost
 end
 
 function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
@@ -20,44 +60,39 @@ function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
     ctr = _opt(o, :CONTRAST); contrast = ctr === nothing ? nothing : Symbol(ctr)
     idle_first = _opt(o, :IDLE, false) == true   # item 72 (lab option, not in matter/body_org.js)
     core_gate = _opt(o, :GATE, false) == true   # item 76 (lab option)
+    seen_both = _opt(o, :SEENBOTH, false) == true   # item 79 (lab option)
+    sed_fade = _opt(o, :SEDFADE, false) == true   # item 84 (lab option)
+    READCUR = _opt(o, :READCUR, false) == true && _opt(o, :FEED, false) == true   # item 82: during the fed raising the circuit reads the scripted yields
     REVR = _opt(o, :REVR); KC = _opt(o, :KC, 0); PER = _opt(o, :PER); RAISE = _opt(o, :RAISE, "pre"); DROPR = _opt(o, :DROPR)
     w = make_world(; reservoir = 300.0); seed!(w, 12, 12, 1)
     pool = [0.0, 0.0]; T0 = total(w) + 0
     perm = collect(1:length(FEATURES))   # the run's receptor features (crossed at REVR for the circuit and the rule alike)
     b = nothing; circuit = nothing; noise = nothing
     if cond == "ORG"
-        b = newborn(false; perm = perm)
+        b = newborn(false; perm = perm, extra = _opt(o, :EXTRA, false) == true ? collect(EXTRA_FEATURES) : Int[])   # item 78 B
         DROPR === nothing || drop_sources!(b, DROPR)
         circuit = init(b); noise = Mulberry(seed)
-        if RAISE != "body"; for y in BO_CUR; step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first, core_gate = core_gate); end; end
+        if RAISE != "body"; for y in BO_CUR; step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first, core_gate = core_gate, seen_both = seen_both, sed_fade = sed_fade); end; end
     end
     keptK(k) = circuit.q[k] >= 1 || circuit.sg[k] >= 1
     lost = 0; blocked = 0
+    ON_STEP = _opt(o, :ON_STEP)   # lab option (item 80): a read-only observer called after each step; it must not change anything
+    SEEN = _opt(o, :SEEN, false) == true; seen = Vector{Vector{Float64}}()   # item 78: the yields the circuit read (lab option)
     acts = Vector{Vector{Int}}(); logv = Any[]; alive = true; death = nothing; maxErr = 0.0; nActs = 0; nAns = 0
     moved = 0.0; spent = 0.0; sumCount = 0; sumLate = 0; nform = 0; kept = 0; upkeep = 0.0; win = Any[]
     for t in 0:STEPS-1
         (REVR !== nothing && t == REVR) && cross!(perm)
         y = [min(5.0, floor(r / U + 1e-9)) for r in pool]
+        SEEN && push!(seen, y)
         body = [i for i in eachindex(w.C) if w.C[i] != 0]
         if alive && isempty(body); alive = false; death = t; end
         acting = Int[]; d = [0.0, 0.0]
         if alive && cond == "ORG"
             was = [keptK(k) for k in eachindex(circuit.q)]; q0 = copy(circuit.q); s0 = copy(circuit.sg)
-            out = step!(circuit, b, [y[1], y[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first, core_gate = core_gate)
+            yin = READCUR && t < 800 ? BO_CUR[t+1] : y   # item 82 (lab option); the harvest still comes from the pools
+            out = step!(circuit, b, [yin[1], yin[2], 0.0]; noise = noise, contrast = contrast, idle_first = idle_first, core_gate = core_gate, seen_both = seen_both, sed_fade = sed_fade)
             if PER !== nothing
-                cap = floor(Int, length(body) / PER); nk = count(keptK, eachindex(circuit.q))
-                k = 1
-                while k <= length(circuit.q) && nk > cap
-                    if keptK(k) && !was[k]; circuit.q[k] = q0[k]; circuit.sg[k] = s0[k]; nk -= 1; blocked += 1; end
-                    k += 1
-                end
-                while nk > cap
-                    wk = 0
-                    for k in eachindex(circuit.q)
-                        (keptK(k) && (wk == 0 || circuit.q[k] + circuit.sg[k] <= circuit.q[wk] + circuit.sg[wk])) && (wk = k)
-                    end
-                    circuit.q[wk] = 0; circuit.sg[wk] = 0; nk -= 1; lost += 1
-                end
+                bl, lo = enforce_capacity!(circuit, was, q0, s0, floor(Int, length(body) / PER)); blocked += bl; lost += lo
             end
             acting = [b.patch[m] for m in out.acting if b.patch[m] <= 2]; d = out.d
             push!(win, (active = copy(circuit.active), q = copy(circuit.q))); length(win) > 5 && popfirst!(win)
@@ -104,6 +139,7 @@ function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
             if over > 0; pool[k] -= over; port_give!(w.port, over); end
         end
         step!(w, ())
+        ON_STEP === nothing || ON_STEP((t = t, w = w, circuit = circuit, b = b, noise = noise, y = y, acting = acting, d = d, pool = pool, g = g, alive = alive))   # read-only observer (viewer/export_body.jl)
         c = nconstituents(w); sumCount += c; t >= STEPS / 2 && (sumLate += c)
         if (t + 1) % 500 == 0
             maxErr = max(maxErr, abs(total(w) + pool[1] + pool[2] - T0))
@@ -114,5 +150,5 @@ function body_org_run(cond::String, seed::Integer, o, replay_acts = nothing)
         "lost" => lost, "blocked" => blocked, "keptEnd" => cond == "ORG" ? count(keptK, eachindex(circuit.q)) : nothing,
         "meanLate" => sumLate / (STEPS / 2), "kept" => kept / STEPS, "upkeep" => upkeep, "final" => count_matter(w).constituents,
         "nActs" => nActs, "answered" => nAns / max(1, nActs), "moved" => moved, "spent" => spent, "form" => nform / STEPS,
-        "log" => logv, "acts" => acts)
+        "log" => logv, "acts" => acts, (SEEN ? ("seen" => seen,) : ())...)
 end

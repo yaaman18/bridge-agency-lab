@@ -1,0 +1,2109 @@
+[
+ {
+  "n": 1,
+  "item": 1,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/0303-2647",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Autopoiesis: The Organization of Living Systems, its Characterization and a Model Varela, Francisco G.; Maturana, Humberto R.; Uribe, Ricardo (1974). *BioSystems*, 5(4), 187–196.",
+  "openalex_title": ""
+ },
+ {
+  "n": 2,
+  "item": 1,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-94-009-8947-4",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Autopoiesis and Cognition: The Realization of the Living Maturana, Humberto R.; Varela, Francisco J. (1980). 書籍、D. Reidel Publishing Company / Springer、Boston Studies in the Philosophy and History of Science, Vol. 42.",
+  "openalex_title": "Autopoiesis and Cognition"
+ },
+ {
+  "n": 3,
+  "item": 1,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Mind in Life: Biology, Phenomenology, and the Sciences of Mind Thompson, Evan (2007). 書籍、Harvard University Press。ISBN 978-0-674-02511-0。",
+  "openalex_title": "Thompson, Evan. Mind in Life: Biology, Phenomenology, and the Sciences of Mind"
+ },
+ {
+  "n": 4,
+  "item": 2,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.jtbi.2015.02.029",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://hal.science/hal-01192916",
+   "https://hal.science/hal-01192916/document"
+  ],
+  "cite": "Biological Organisation as Closure of Constraints Montévil, Maël; Mossio, Matteo (2015). *Journal of Theoretical Biology*, 372, 179–191.",
+  "openalex_title": "Biological organisation as closure of constraints"
+ },
+ {
+  "n": 5,
+  "item": 2,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-94-017-9837-2",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Biological Autonomy: A Philosophical and Theoretical Enquiry Moreno, Alvaro; Mossio, Matteo (2015). 書籍、Springer、History, Philosophy and Theory of the Life Sciences, Vol. 12。",
+  "openalex_title": "Biological Autonomy: A Philosophical and Theoretical Enquiry"
+ },
+ {
+  "n": 6,
+  "item": 3,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.jtbi.2005.07.007",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Organizational Invariance and Metabolic Closure: Analysis in Terms of (M,R) Systems Letelier, Juan-Carlos; Soto-Andrade, Jorge; Guíñez Abarzúa, Flavio; Cornish-Bowden, Athel; Cárdenas, María Luz (2006). *Journal of Theoretical Biology*, 238(4), 949–961.",
+  "openalex_title": "Organizational invariance and metabolic closure: Analysis in terms of systems"
+ },
+ {
+  "n": 7,
+  "item": 3,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.jtbi.2009.11.010",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://hal.science/hal-00564468",
+   "https://hal.science/hal-00564468/document"
+  ],
+  "cite": "Closure to Efficient Causation, Computability and Artificial Life Cárdenas, María Luz; Letelier, Juan-Carlos; Gutiérrez, Claudio; Cornish-Bowden, Athel; Soto-Andrade, Jorge (2010). *Journal of Theoretical Biology*, 263(1), 79–88.",
+  "openalex_title": "Closure to efficient causation, computability and artificial life"
+ },
+ {
+  "n": 8,
+  "item": 3,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.biosystems.2021.104463",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "A Biochemically-Realisable Relational Model of the Self-Manufacturing Cell Hofmeyr, Jan-Hendrik S. (2021). *BioSystems*, 207, 104463.",
+  "openalex_title": "A biochemically-realisable relational model of the self-manufacturing cell"
+ },
+ {
+  "n": 9,
+  "item": 4,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.jtbi.2003.11.020",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Detecting Autocatalytic, Self-Sustaining Sets in Chemical Reaction Systems Hordijk, Wim; Steel, Mike (2004). *Journal of Theoretical Biology*, 227(4), 451–461.",
+  "openalex_title": "Detecting autocatalytic, self-sustaining sets in chemical reaction systems"
+ },
+ {
+  "n": 10,
+  "item": 4,
+  "file": "010_i04_Evolvability2012.pdf",
+  "status": "ok",
+  "doi": "10.1007/s10441-012-9165-1",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1205.0584",
+  "candidates": [
+   "https://arxiv.org/pdf/1205.0584"
+  ],
+  "cite": "The Structure of Autocatalytic Sets: Evolvability, Enablement, and Emergence Hordijk, Wim; Steel, Mike; Kauffman, Stuart (2012). *Acta Biotheoretica*, 60, 379–392.",
+  "openalex_title": "The Structure of Autocatalytic Sets: Evolvability, Enablement, and Emergence",
+  "pages": 13,
+  "text_chars": 33372
+ },
+ {
+  "n": 11,
+  "item": 5,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1007/s11097-005-9002-y",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://figshare.com/articles/journal_contribution/Autopoiesis_adaptivity_teleology_agency/23368025"
+  ],
+  "cite": "Autopoiesis, Adaptivity, Teleology, Agency Di Paolo, Ezequiel A. (2005). *Phenomenology and the Cognitive Sciences*, 4(4), 429–452.",
+  "openalex_title": "Autopoiesis, Adaptivity, Teleology, Agency"
+ },
+ {
+  "n": 12,
+  "item": 5,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1177/1059712309343819",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://philpapers.org/archive/BARDAI-6.pdf"
+  ],
+  "cite": "Defining Agency: Individuality, Normativity, Asymmetry, and Spatio-temporality in Action Barandiaran, Xabier E.; Di Paolo, Ezequiel A.; Rohde, Marieke (2009). *Adaptive Behavior*, 17(5), 367–386.",
+  "openalex_title": "Defining Agency: Individuality, Normativity, Asymmetry, and Spatio-temporality in Action"
+ },
+ {
+  "n": 13,
+  "item": 6,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-0-8176-4910-4",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Viability Theory Aubin, Jean-Pierre (1991). 書籍、Birkhäuser Boston、Systems & Control: Foundations & Applications。2009年再刊（Modern Birkhäuser Classics）の DOI を確認した。",
+  "openalex_title": "Viability Theory"
+ },
+ {
+  "n": 14,
+  "item": 6,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-94-015-1320-3",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Design for a Brain: The Origin of Adaptive Behaviour Ashby, W. Ross (1960). 書籍、Chapman & Hall（第2版。初版1952年）。Springer 電子版の DOI を確認した。",
+  "openalex_title": "Design for a Brain"
+ },
+ {
+  "n": 15,
+  "item": 7,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/1064546041255548",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Thirty Years of Computational Autopoiesis: A Review McMullin, Barry (2004). *Artificial Life*, 10(3), 277–295.",
+  "openalex_title": "Thirty Years of Computational Autopoiesis: A Review"
+ },
+ {
+  "n": 16,
+  "item": 7,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/1064546041255539",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Autopoiesis and Cognition in the Game of Life Beer, Randall D. (2004). *Artificial Life*, 10(3), 309–326.",
+  "openalex_title": "Autopoiesis and Cognition in the Game of Life"
+ },
+ {
+  "n": 17,
+  "item": 7,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/ARTL_a_00143",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Characterizing Autopoiesis in the Game of Life Beer, Randall D. (2015). *Artificial Life*, 21(1), 1–19.",
+  "openalex_title": "Characterizing Autopoiesis in the Game of Life"
+ },
+ {
+  "n": 18,
+  "item": 7,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/ARTL_a_00196",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Exploring the Space of Viable Configurations in a Model of Metabolism–Boundary Co-construction Agmon, Eran; Gates, Alexander J.; Churavy, Valentin; Beer, Randall D. (2016). *Artificial Life*, 22(2), 153–171.",
+  "openalex_title": "Exploring the Space of Viable Configurations in a Model of Metabolism–Boundary Co-construction"
+ },
+ {
+  "n": 19,
+  "item": 8,
+  "file": "019_i08_Egbert2010.pdf",
+  "status": "ok",
+  "doi": "10.1371/journal.pcbi.1001004",
+  "oa_status": "gold",
+  "source": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1001004&type=printable",
+  "candidates": [
+   "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1001004&type=printable",
+   "http://sro.sussex.ac.uk/id/eprint/28456/1/journal.pcbi.1001004.pdf",
+   "https://europepmc.org/articles/3000427?pdf=render"
+  ],
+  "cite": "A Minimal Model of Metabolism-Based Chemotaxis Egbert, Matthew D.; Barandiaran, Xabier E.; Di Paolo, Ezequiel A. (2010). *PLoS Computational Biology*, 6(12), e1001004.",
+  "openalex_title": "A Minimal Model of Metabolism-Based Chemotaxis",
+  "pages": 17,
+  "text_chars": 72913
+ },
+ {
+  "n": 20,
+  "item": 8,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1162/artl_a_00047",
+  "oa_status": "hybrid",
+  "source": "",
+  "candidates": [
+   "https://direct.mit.edu/artl/article-pdf/18/1/1/1663581/artl_a_00047.pdf",
+   "http://sro.sussex.ac.uk/id/eprint/23592/1/artl_a_00047.pdf"
+  ],
+  "cite": "Behavioral Metabolution: The Adaptive and Evolutionary Potential of Metabolism-Based Chemotaxis Egbert, Matthew D.; Barandiaran, Xabier E.; Di Paolo, Ezequiel A. (2012). *Artificial Life*, 18(1), 1–25.",
+  "openalex_title": "Behavioral Metabolution: The Adaptive and Evolutionary Potential of Metabolism-Based Chemotaxis"
+ },
+ {
+  "n": 21,
+  "item": 8,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-3-642-21283-3_30",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "The Role of the Spatial Boundary in Autopoiesis Virgo, Nathaniel; Egbert, Matthew D.; Froese, Tom (2011). In Kampis, G.; Karsai, I.; Szathmáry, E. (eds.), *Advances in Artificial Life. Darwin Meets von Neumann*（ECAL 2009 Proceedings）、Lecture Notes in Computer Science, Vol. 5777, Springer, 240–247.",
+  "openalex_title": "The Role of the Spatial Boundary in Autopoiesis"
+ },
+ {
+  "n": 22,
+  "item": 9,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "The Principles of Life Gánti, Tibor (2003). 書籍、Oxford University Press（James Griesemer と Eörs Szathmáry による解説付き）。ISBN 978-0-19-850726-0。",
+  "openalex_title": ""
+ },
+ {
+  "n": 23,
+  "item": 9,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1023/B:ORIG.0000016440.53346.dc",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "A Universal Definition of Life: Autonomy and Open-ended Evolution Ruiz-Mirazo, Kepa; Peretó, Juli; Moreno, Alvaro (2004). *Origins of Life and Evolution of Biospheres*, 34(3), 323–346.",
+  "openalex_title": "A Universal Definition of Life: Autonomy and Open-Ended Evolution"
+ },
+ {
+  "n": 24,
+  "item": 9,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.7551/mitpress/9780262182683.001.0001",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Protocells: Bridging Nonliving and Living Matter Rasmussen, Steen; Bedau, Mark A.; Chen, Liaohai; Deamer, David; Packard, Norman H.; Stadler, Peter F. (eds.) (2008). 編著書、MIT Press。",
+  "openalex_title": "Protocells"
+ },
+ {
+  "n": 25,
+  "item": 10,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/BF02458289",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "“The Arrival of the Fittest”: Toward a Theory of Biological Organization Fontana, Walter; Buss, Leo W. (1994). *Bulletin of Mathematical Biology*, 56(1), 1–64.",
+  "openalex_title": "“The arrival of the fittest”: Toward a theory of biological organization"
+ },
+ {
+  "n": 26,
+  "item": 10,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/43028?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/43028"
+  ],
+  "cite": "What Would Be Conserved if “the Tape Were Played Twice”? Fontana, Walter; Buss, Leo W. (1994). *Proceedings of the National Academy of Sciences of the United States of America*, 91, 757–761.",
+  "openalex_title": "What would be conserved if \"the tape were played twice\"?",
+  "pmcid": "PMC43028"
+ },
+ {
+  "n": 27,
+  "item": 10,
+  "file": "027_i10_Dittrich2007.pdf",
+  "status": "ok",
+  "doi": "10.1007/s11538-006-9130-8",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/q-bio/0501016",
+  "candidates": [
+   "https://arxiv.org/pdf/q-bio/0501016"
+  ],
+  "cite": "Chemical Organisation Theory Dittrich, Peter; Speroni di Fenizio, Pietro (2007). *Bulletin of Mathematical Biology*, 69(4), 1199–1231.",
+  "openalex_title": "Chemical Organisation Theory",
+  "pages": 20,
+  "text_chars": 44341
+ },
+ {
+  "n": 28,
+  "item": 11,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1073/pnas.231499798",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/61115?pdf=render",
+   "http://europepmc.org/pmc/articles/PMC61115"
+  ],
+  "cite": "Degeneracy and Complexity in Biological Systems Edelman, Gerald M.; Gally, Joseph A. (2001). *Proceedings of the National Academy of Sciences of the United States of America*, 98(24), 13763–13768.",
+  "openalex_title": "Degeneracy and complexity in biological systems",
+  "pmcid": "PMC61115"
+ },
+ {
+  "n": 29,
+  "item": 11,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.23915/distill.00023",
+  "oa_status": "diamond",
+  "source": "",
+  "candidates": [
+   "https://doi.org/10.23915/distill.00023"
+  ],
+  "cite": "Growing Neural Cellular Automata Mordvintsev, Alexander; Randazzo, Ettore; Niklasson, Eyvind; Levin, Michael (2020). *Distill*, 5(2), e23.",
+  "openalex_title": "Growing Neural Cellular Automata"
+ },
+ {
+  "n": 30,
+  "item": 12,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1017/S0140525X01000115",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "O'Regan, J. K., & Noë, A. (2001). A sensorimotor account of vision and visual consciousness. *Behavioral and Brain Sciences*, 24(5), 939–973.",
+  "openalex_title": "A sensorimotor account of vision and visual consciousness"
+ },
+ {
+  "n": 31,
+  "item": 12,
+  "file": "031_i12_Buhrmann2013.pdf",
+  "status": "ok",
+  "doi": "10.3389/fpsyg.2013.00285",
+  "oa_status": "gold",
+  "source": "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00285/pdf",
+  "candidates": [
+   "https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00285/pdf",
+   "https://europepmc.org/articles/3664438?pdf=render"
+  ],
+  "cite": "Buhrmann, T., Di Paolo, E. A., & Barandiaran, X. E. (2013). A dynamical systems account of sensorimotor contingencies. *Frontiers in Psychology*, 4, 285.",
+  "openalex_title": "A Dynamical Systems Account of Sensorimotor Contingencies",
+  "pages": 19,
+  "text_chars": 107006
+ },
+ {
+  "n": 32,
+  "item": 12,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1093/acprof:oso/9780198786849.001.0001",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Di Paolo, E. A., Buhrmann, T., & Barandiaran, X. E. (2017). *Sensorimotor Life: An Enactive Proposal*. Oxford University Press.",
+  "openalex_title": "Sensorimotor Life"
+ },
+ {
+  "n": 33,
+  "item": 13,
+  "file": "033_i13_Egbert2014.pdf",
+  "status": "ok",
+  "doi": "10.3389/fnhum.2014.00590",
+  "oa_status": "gold",
+  "source": "https://www.frontiersin.org/articles/10.3389/fnhum.2014.00590/pdf",
+  "candidates": [
+   "https://www.frontiersin.org/articles/10.3389/fnhum.2014.00590/pdf",
+   "https://europepmc.org/articles/4126554?pdf=render"
+  ],
+  "cite": "Egbert, M. D., & Barandiaran, X. E. (2014). Modeling habits as self-sustaining patterns of sensorimotor behavior. *Frontiers in Human Neuroscience*, 8, 590. ★",
+  "openalex_title": "Modeling habits as self-sustaining patterns of sensorimotor behavior",
+  "pages": 15,
+  "text_chars": 87296
+ },
+ {
+  "n": 34,
+  "item": 13,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1162/978-0-262-32621-6-ch029",
+  "oa_status": "hybrid",
+  "source": "",
+  "candidates": [
+   "https://direct.mit.edu/isal/proceedings-pdf/alife2014/26/168/1901469/978-0-262-32621-6-ch029.pdf"
+  ],
+  "cite": "Egbert, M. D., & Cañamero, L. (2014). Habit-Based Regulation of Essential Variables. In *Proceedings of ALIFE 14: The Fourteenth International Conference on the Synthesis and Simulation of Living Systems* (pp. 168–175). MIT Press. ★",
+  "openalex_title": "Habit-Based Regulation of Essential Variables"
+ },
+ {
+  "n": 35,
+  "item": 14,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Ashby, W. R. (1952). *Design for a Brain: The Origin of Adaptive Behaviour*. Chapman & Hall.（第2版 1960）",
+  "openalex_title": "Design for a Brain: The origin of adaptive behaviour"
+ },
+ {
+  "n": 36,
+  "item": 14,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.7551/mitpress/3120.003.0047",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://figshare.com/articles/presentation/Homeostatic_adaptation_to_inversion_of_the_visual_field_and_other_sensorimotor_disruptions/23373269"
+  ],
+  "cite": "Di Paolo, E. A. (2000). Homeostatic adaptation to inversion of the visual field and other sensorimotor disruptions. In *From Animals to Animats 6: Proceedings of the 6th International Conference on Simulation of Adaptive Behavior* (pp. 440–449). MIT Press.",
+  "openalex_title": "Homeostatic adaptation to inversion of the visual field and other sensorimotor disruptions"
+ },
+ {
+  "n": 37,
+  "item": 14,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-3-540-69134-1_1",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Iizuka, H., & Di Paolo, E. A. (2008). Extended homeostatic adaptation: Improving the link between internal and behavioural stability. In *From Animals to Animats 10* (Lecture Notes in Computer Science, pp. 1–11). Springer.",
+  "openalex_title": "Extended Homeostatic Adaptation: Improving the Link between Internal and Behavioural Stability"
+ },
+ {
+  "n": 38,
+  "item": 14,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.biosystems.2007.05.014",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Ikegami, T., & Suzuki, K. (2008). From a homeostatic to a homeodynamic self. *BioSystems*, 91(2), 388–400.",
+  "openalex_title": "From a homeostatic to a homeodynamic self"
+ },
+ {
+  "n": 39,
+  "item": 15,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/089976603322297278",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Philipona, D., O'Regan, J. K., & Nadal, J.-P. (2003). Is there something out there? Inferring space from sensorimotor dependencies. *Neural Computation*, 15(9), 2029–2049.",
+  "openalex_title": "Is There Something Out There? Inferring Space from Sensorimotor Dependencies"
+ },
+ {
+  "n": 40,
+  "item": 15,
+  "file": "040_i15_ORegan2015.pdf",
+  "status": "ok",
+  "doi": "10.1016/j.robot.2015.01.003",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1810.01872",
+  "candidates": [
+   "https://arxiv.org/pdf/1810.01872"
+  ],
+  "cite": "Laflaquière, A., O'Regan, J. K., Argentieri, S., Gas, B., & Terekhov, A. V. (2015). Learning agent's spatial configuration from sensorimotor invariants. *Robotics and Autonomous Systems*, 71, 49–59.",
+  "openalex_title": "Learning agent’s spatial configuration from sensorimotor invariants",
+  "pages": 26,
+  "text_chars": 65243
+ },
+ {
+  "n": 41,
+  "item": 16,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1038/s41583-021-00507-y",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://www.nature.com/articles/s41583-021-00507-y.pdf",
+   "https://europepmc.org/articles/8541743?pdf=render"
+  ],
+  "cite": "Faust, T. E., Gunner, G., & Schafer, D. P. (2021). Mechanisms governing activity-dependent synaptic pruning in the developing mammalian CNS. *Nature Reviews Neuroscience*, 22(11), 657–673.",
+  "openalex_title": "Mechanisms governing activity-dependent synaptic pruning in the developing mammalian CNS"
+ },
+ {
+  "n": 42,
+  "item": 16,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.tins.2011.02.001",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/3073830?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/3073830"
+  ],
+  "cite": "Fu, M., & Zuo, Y. (2011). Experience-dependent structural plasticity in the cortex. *Trends in Neurosciences*, 34(4), 177–187.",
+  "openalex_title": "Experience-dependent structural plasticity in the cortex",
+  "pmcid": "PMC3073830"
+ },
+ {
+  "n": 43,
+  "item": 17,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1038/nrn2501",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/2819160?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/2819160"
+  ],
+  "cite": "Kerchner, G. A., & Nicoll, R. A. (2008). Silent synapses and the emergence of a postsynaptic mechanism for LTP. *Nature Reviews Neuroscience*, 9(11), 813–825. ★",
+  "openalex_title": "Silent synapses and the emergence of a postsynaptic mechanism for LTP",
+  "pmcid": "PMC2819160"
+ },
+ {
+  "n": 44,
+  "item": 17,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1038/385533a0",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Frey, U., & Morris, R. G. M. (1997). Synaptic tagging and long-term potentiation. *Nature*, 385(6616), 533–536. ★",
+  "openalex_title": "Synaptic tagging and long-term potentiation"
+ },
+ {
+  "n": 45,
+  "item": 18,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.neuron.2017.05.039",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "http://www.cell.com/article/S0896627317304981/pdf",
+   "https://europepmc.org/articles/5657245?pdf=render"
+  ],
+  "cite": "Davis, R. L., & Zhong, Y. (2017). The Biology of Forgetting — A Perspective. *Neuron*, 95(3), 490–503. ★",
+  "openalex_title": "The Biology of Forgetting—A Perspective"
+ },
+ {
+  "n": 46,
+  "item": 18,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.tics.2013.01.001",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Hardt, O., Nader, K., & Nadel, L. (2013). Decay happens: The role of active forgetting in memory. *Trends in Cognitive Sciences*, 17(3), 111–120. ★",
+  "openalex_title": "Decay happens: the role of active forgetting in memory"
+ },
+ {
+  "n": 47,
+  "item": 19,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1038/nrn1327",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Turrigiano, G. G., & Nelson, S. B. (2004). Homeostatic plasticity in the developing nervous system. *Nature Reviews Neuroscience*, 5(2), 97–107.",
+  "openalex_title": "Homeostatic plasticity in the developing nervous system"
+ },
+ {
+  "n": 48,
+  "item": 19,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1523/JNEUROSCI.02-01-00032.1982",
+  "oa_status": "hybrid",
+  "source": "",
+  "candidates": [
+   "https://www.jneurosci.org/content/jneuro/2/1/32.full.pdf",
+   "https://europepmc.org/articles/6564292?pdf=render"
+  ],
+  "cite": "Bienenstock, E. L., Cooper, L. N., & Munro, P. W. (1982). Theory for the development of neuron selectivity: Orientation specificity and binocular interaction in visual cortex. *Journal of Neuroscience*, 2(1), 32–48.",
+  "openalex_title": "Theory for the development of neuron selectivity: orientation specificity and binocular interaction in visual cortex"
+ },
+ {
+  "n": 49,
+  "item": 20,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Rescorla, R. A., & Wagner, A. R. (1972). A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement. In A. H. Black & W. F. Prokasy (Eds.), *Classical Conditioning II: Current Research and Theory* (pp. 64–99). Appleton-Century-Crofts. ★",
+  "openalex_title": "A theory of Pavlovian conditioning : Variations in the effectiveness of reinforcement and nonreinforcement"
+ },
+ {
+  "n": 50,
+  "item": 20,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "http://hdl.handle.net/2060/19680014821"
+  ],
+  "cite": "Kamin, L. J. (1969). Predictability, surprise, attention, and conditioning. In B. A. Campbell & R. M. Church (Eds.), *Punishment and Aversive Behavior* (pp. 279–296). Appleton-Century-Crofts. ★",
+  "openalex_title": "Predictability, surprise, attention, and conditioning"
+ },
+ {
+  "n": 51,
+  "item": 20,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1037/h0046700",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Lubow, R. E., & Moore, A. U. (1959). Latent inhibition: The effect of nonreinforced pre-exposure to the conditional stimulus. *Journal of Comparative and Physiological Psychology*, 52(4), 415–419. ★",
+  "openalex_title": "Latent inhibition: The effect of nonreinforced pre-exposure to the conditional stimulus."
+ },
+ {
+  "n": 52,
+  "item": 21,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1037/0033-295X.101.4.587",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Pearce, J. M. (1994). Similarity and discrimination: A selective review and a connectionist model. *Psychological Review*, 101(4), 587–607. ★",
+  "openalex_title": ""
+ },
+ {
+  "n": 53,
+  "item": 21,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Minsky, M., & Papert, S. (1969). *Perceptrons: An Introduction to Computational Geometry*. MIT Press. ★",
+  "openalex_title": "Perceptrons: An Introduction to Computational Geometry"
+ },
+ {
+  "n": 54,
+  "item": 22,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1037/h0022681",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Thompson, R. F., & Spencer, W. A. (1966). Habituation: A model phenomenon for the study of neuronal substrates of behavior. *Psychological Review*, 73(1), 16–43.",
+  "openalex_title": "Habituation: A model phenomenon for the study of neuronal substrates of behavior."
+ },
+ {
+  "n": 55,
+  "item": 22,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.nlm.2008.09.012",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/2754195?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/2754195"
+  ],
+  "cite": "Rankin, C. H., Abrams, T., Barry, R. J., Bhatnagar, S., Clayton, D. F., Colombo, J., Coppola, G., Geyer, M. A., Glanzman, D. L., Marsland, S., McSweeney, F. K., Wilson, D. A., Wu, C.-F., & Thompson, R. F. (2009). Habituation revisited: An updated and revised description of the behavioral characteristics of habituation. *Neurobiology of Learning and Memory*, 92(2), 135–138.",
+  "openalex_title": "Habituation revisited: An updated and revised description of the behavioral characteristics of habituation",
+  "pmcid": "PMC2754195"
+ },
+ {
+  "n": 56,
+  "item": 22,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1146/annurev.ph.25.030163.002553",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Sokolov, E. N. (1963). Higher nervous functions: The orienting reflex. *Annual Review of Physiology*, 25, 545–580.（単著書版： *Perception and the Conditioned Reflex*, Pergamon Press, 1963）",
+  "openalex_title": "Higher Nervous Functions: The Orienting Reflex"
+ },
+ {
+  "n": 57,
+  "item": 23,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/TSMC.1983.6313077",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Barto, A. G., Sutton, R. S., & Anderson, C. W. (1983). Neuronlike adaptive elements that can solve difficult learning control problems. *IEEE Transactions on Systems, Man, and Cybernetics*, SMC-13(5), 834–846.",
+  "openalex_title": "Neuronlike adaptive elements that can solve difficult learning control problems"
+ },
+ {
+  "n": 58,
+  "item": 23,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1093/cercor/bhl152",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Izhikevich, E. M. (2007). Solving the distal reward problem through linkage of STDP and dopamine signaling. *Cerebral Cortex*, 17(10), 2443–2452.",
+  "openalex_title": "Solving the Distal Reward Problem through Linkage of STDP and Dopamine Signaling"
+ },
+ {
+  "n": 59,
+  "item": 24,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-94-010-9435-1_11",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Wimsatt, W. C. (1986). Developmental constraints, generative entrenchment, and the innate-acquired distinction. In W. Bechtel (Ed.), *Integrating Scientific Disciplines* (pp. 185–208). Martinus Nijhoff.",
+  "openalex_title": "Developmental Constraints, Generative Entrenchment, and the Innate-Acquired Distinction"
+ },
+ {
+  "n": 60,
+  "item": 24,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1086/psaprocbienmeetp.1986.2.192789",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Schank, J. C., & Wimsatt, W. C. (1986). Generative entrenchment and evolution. *PSA: Proceedings of the Biennial Meeting of the Philosophy of Science Association*, 1986(2), 33–60.",
+  "openalex_title": "Generative Entrenchment and Evolution"
+ },
+ {
+  "n": 61,
+  "item": 25,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.3758/BF03196324",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://link.springer.com/content/pdf/10.3758/BF03196324.pdf"
+  ],
+  "cite": "Neuringer, A. (2002). Operant variability: Evidence, functions, and theory. *Psychonomic Bulletin & Review*, 9(4), 672–705.",
+  "openalex_title": "Operant variability: Evidence, functions, and theory"
+ },
+ {
+  "n": 62,
+  "item": 25,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1109/TEVC.2006.890271",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "http://cogprints.org/5473/1/ims.pdf",
+   "https://inria.hal.science/hal-00793610",
+   "https://inria.hal.science/hal-00793610/document"
+  ],
+  "cite": "Oudeyer, P.-Y., Kaplan, F., & Hafner, V. V. (2007). Intrinsic Motivation Systems for Autonomous Mental Development. *IEEE Transactions on Evolutionary Computation*, 11(2), 265–286.",
+  "openalex_title": "Intrinsic Motivation Systems for Autonomous Mental Development"
+ },
+ {
+  "n": 63,
+  "item": 26,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1177/105971239300100401",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Tyrrell, T. (1993). The use of hierarchies for action selection. *Adaptive Behavior*, 1(4), 387–420.",
+  "openalex_title": "The Use of Hierarchies for Action Selection"
+ },
+ {
+  "n": 64,
+  "item": 26,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1080/09540098908915643",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://nantes-universite.hal.science/hal-04599498",
+   "https://nantes-universite.hal.science/hal-04599498/document"
+  ],
+  "cite": "Maes, P. (1989). How to do the right thing. *Connection Science*, 1(3), 291–323.",
+  "openalex_title": "How to do the Right Thing"
+ },
+ {
+  "n": 65,
+  "item": 26,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/S0306-4522",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Redgrave, P., Prescott, T. J., & Gurney, K. (1999). The basal ganglia: A vertebrate solution to the selection problem? *Neuroscience*, 89(4), 1009–1023.",
+  "openalex_title": ""
+ },
+ {
+  "n": 66,
+  "item": 26,
+  "file": "066_i26_Prescott2006.pdf",
+  "status": "ok",
+  "doi": "10.1016/j.neunet.2005.06.049",
+  "oa_status": "closed",
+  "source": "http://eprints.whiterose.ac.uk/107037/1/Prescott%20Neural%20Networks%202006%20Preprint1.pdf",
+  "candidates": [
+   "http://eprints.whiterose.ac.uk/107037/1/Prescott%20Neural%20Networks%202006%20Preprint1.pdf",
+   "http://eprints.whiterose.ac.uk/113503/1/Prescott%202006%20Neural%20Networks%20Robot%20Basal%20Ganglia%20Preprint.pdf"
+  ],
+  "cite": "Prescott, T. J., Montes González, F. M., Gurney, K., Humphries, M. D., & Redgrave, P. (2006). A robot model of the basal ganglia: Behavior and intrinsic processing. *Neural Networks*, 19(1), 31–61.",
+  "openalex_title": "A robot model of the basal ganglia: Behavior and intrinsic processing",
+  "pages": 45,
+  "text_chars": 170545
+ },
+ {
+  "n": 67,
+  "item": 27,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1037/0033-295X.84.3.279",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Gibbon, J. (1977). Scalar expectancy theory and Weber's law in animal timing. *Psychological Review*, 84(3), 279–325.",
+  "openalex_title": ""
+ },
+ {
+  "n": 68,
+  "item": 27,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1038/nrn1764",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Buhusi, C. V., & Meck, W. H. (2005). What makes us tick? Functional and neural mechanisms of interval timing. *Nature Reviews Neuroscience*, 6(10), 755–765.",
+  "openalex_title": "What makes us tick? Functional and neural mechanisms of interval timing"
+ },
+ {
+  "n": 69,
+  "item": 28,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1097/00004647-200110000-00001",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://journals.sagepub.com/doi/pdf/10.1097/00004647-200110000-00001"
+  ],
+  "cite": "Attwell, D., & Laughlin, S. B. (2001). An energy budget for signaling in the grey matter of the brain. *Journal of Cerebral Blood Flow & Metabolism*, 21(10), 1133–1145.",
+  "openalex_title": "An Energy Budget for Signaling in the Grey Matter of the Brain"
+ },
+ {
+  "n": 70,
+  "item": 28,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1242/jeb.017574",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://journals.biologists.com/jeb/article-pdf/211/11/1792/1262412/1792.pdf"
+  ],
+  "cite": "Niven, J. E., & Laughlin, S. B. (2008). Energy limitation as a selective pressure on the evolution of sensory systems. *Journal of Experimental Biology*, 211(11), 1792–1804.",
+  "openalex_title": "Energy limitation as a selective pressure on the evolution of sensory systems"
+ },
+ {
+  "n": 71,
+  "item": 29,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/S0921-8890",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "McFarland, D., & Spier, E. (1997). Basic cycles, utility and opportunism in self-sufficient robots. *Robotics and Autonomous Systems*, 20(2–4), 179–190.",
+  "openalex_title": ""
+ },
+ {
+  "n": 72,
+  "item": 29,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1007/s10514-006-6574-5",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://uwe-repository.worktribe.com/output/1041765"
+  ],
+  "cite": "Melhuish, C., Ieropoulos, I., Greenman, J., & Horsfield, I. (2006). Energetically autonomous robots: Food for thought. *Autonomous Robots*, 21(3), 187–198.",
+  "openalex_title": "Energetically autonomous robots: Food for thought"
+ },
+ {
+  "n": 73,
+  "item": 29,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Walter, W. G. (1950). An imitation of life. *Scientific American*, 42–45.",
+  "openalex_title": "An Imitation of Life"
+ },
+ {
+  "n": 74,
+  "item": 30,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/0040-5809",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Charnov, E. L. (1976). Optimal foraging, the marginal value theorem. *Theoretical Population Biology*, 9(2), 129–136.",
+  "openalex_title": ""
+ },
+ {
+  "n": 75,
+  "item": 30,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1073/pnas.92.5.1446",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/42536?pdf=render",
+   "http://europepmc.org/pmc/articles/PMC42536"
+  ],
+  "cite": "Charnov, E. L., & Parker, G. A. (1995). Dimensionless invariants from foraging theory's marginal value theorem. *Proceedings of the National Academy of Sciences of the United States of America*, 92(5), 1446–1450.",
+  "openalex_title": "Dimensionless invariants from foraging theory's marginal value theorem.",
+  "pmcid": "PMC42536"
+ },
+ {
+  "n": 76,
+  "item": 31,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1515/9781400847266",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Odling-Smee, F. J., Laland, K. N., & Feldman, M. W. (2003). *Niche Construction: The Neglected Process in Evolution*. Princeton University Press. (Monographs in Population Biology, 37)",
+  "openalex_title": "Niche Construction"
+ },
+ {
+  "n": 77,
+  "item": 31,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1086/285870",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Odling-Smee, F. J., Laland, K. N., & Feldman, M. W. (1996). Niche construction. *The American Naturalist*, 147(4), 641–648.",
+  "openalex_title": "Niche Construction"
+ },
+ {
+  "n": 78,
+  "item": 32,
+  "file": "078_i32_Kolchinsky2018.pdf",
+  "status": "ok",
+  "doi": "10.1098/rsfs.2018.0041",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1806.08053",
+  "candidates": [
+   "https://arxiv.org/pdf/1806.08053",
+   "https://europepmc.org/articles/6227811?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/6227811"
+  ],
+  "cite": "Kolchinsky, A., & Wolpert, D. H. (2018). Semantic information, autonomous agency and non-equilibrium statistical physics. *Interface Focus*, 8(6), 20180041.",
+  "openalex_title": "Semantic information, autonomous agency and non-equilibrium statistical physics",
+  "pages": 19,
+  "text_chars": 107549
+ },
+ {
+  "n": 79,
+  "item": 32,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/s11229-008-9375-x",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Bickhard, M. H. (2009). The interactivist model. *Synthese*, 166(3), 547–591.",
+  "openalex_title": "The interactivist model"
+ },
+ {
+  "n": 80,
+  "item": 33,
+  "file": "080_i33_Keramati2014.pdf",
+  "status": "ok",
+  "doi": "10.7554/eLife.04811",
+  "oa_status": "gold",
+  "source": "https://www.biorxiv.org/content/biorxiv/early/2014/06/05/005140.full.pdf",
+  "candidates": [
+   "https://www.biorxiv.org/content/biorxiv/early/2014/06/05/005140.full.pdf",
+   "https://europepmc.org/articles/4270100?pdf=render",
+   "https://doi.org/10.7554/elife.04811"
+  ],
+  "cite": "Keramati, M., & Gutkin, B. (2014). Homeostatic reinforcement learning for integrating reward collection and physiological stability. *eLife*, 3, e04811.",
+  "openalex_title": "Homeostatic reinforcement learning for integrating reward collection and physiological stability",
+  "pages": 33,
+  "text_chars": 61337
+ },
+ {
+  "n": 81,
+  "item": 33,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.physbeh.2011.06.004",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Sterling, P. (2012). Allostasis: A model of predictive regulation. *Physiology & Behavior*, 106(1), 5–15.",
+  "openalex_title": "Allostasis: A model of predictive regulation"
+ },
+ {
+  "n": 82,
+  "item": 33,
+  "file": "082_i33_Kirchhoff2018.pdf",
+  "status": "ok",
+  "doi": "10.1098/rsif.2017.0792",
+  "oa_status": "hybrid",
+  "source": "https://purehost.bath.ac.uk/ws/files/345281596/kirchhoff-et-al-2018-the-markov-blankets-of-life-autonomy-active-inference-and-the-free-energy-principle.pdf",
+  "candidates": [
+   "https://purehost.bath.ac.uk/ws/files/345281596/kirchhoff-et-al-2018-the-markov-blankets-of-life-autonomy-active-inference-and-the-free-energy-principle.pdf",
+   "https://europepmc.org/articles/5805980?pdf=render",
+   "https://doi.org/10.1098/rsif.2017.0792"
+  ],
+  "cite": "Kirchhoff, M., Parr, T., Palacios, E., Friston, K., & Kiverstein, J. (2018). The Markov blankets of life: Autonomy, active inference and the free energy principle. *Journal of the Royal Society Interface*, 15(138), 20170792.",
+  "openalex_title": "The Markov blankets of life: autonomy, active inference and the free energy principle",
+  "pages": 12,
+  "text_chars": 69673
+ },
+ {
+  "n": 83,
+  "item": 34,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1145/267658.267688",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Cañamero, D. (1997). \"Modeling motivations and emotions as a basis for intelligent behavior.\" *Proceedings of the First International Conference on Autonomous Agents (AGENTS '97)*, ACM, pp. 148–155.",
+  "openalex_title": "Modeling motivations and emotions as a basis for intelligent behavior"
+ },
+ {
+  "n": 84,
+  "item": 34,
+  "file": "084_i34_Lewis2016.pdf",
+  "status": "ok",
+  "doi": "10.1177/1059712316666331",
+  "oa_status": "hybrid",
+  "source": "https://uhra.herts.ac.uk/id/eprint/5545/1/Published_Version.pdf",
+  "candidates": [
+   "https://journals.sagepub.com/doi/pdf/10.1177/1059712316666331",
+   "https://uhra.herts.ac.uk/id/eprint/5545/1/Published_Version.pdf",
+   "https://europepmc.org/articles/5152795?pdf=render"
+  ],
+  "cite": "Lewis, M., & Cañamero, L. (2016). \"Hedonic quality or reward? A study of basic pleasure in homeostasis and decision making of a motivated autonomous robot.\" *Adaptive Behavior*, 24(5), 267–291.",
+  "openalex_title": "Hedonic quality or reward? A study of basic pleasure in homeostasis and decision making of a motivated autonomous robot",
+  "pages": 26,
+  "text_chars": 101941
+ },
+ {
+  "n": 85,
+  "item": 34,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1038/s42256-019-0103-7",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Man, K., & Damasio, A. (2019). \"Homeostasis and soft robotics in the design of feeling machines.\" *Nature Machine Intelligence*, 1(10), 446–452.",
+  "openalex_title": "Homeostasis and soft robotics in the design of feeling machines"
+ },
+ {
+  "n": 86,
+  "item": 35,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1038/nrn894",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Craig, A. D. (2002). \"How do you feel? Interoception: the sense of the physiological condition of the body.\" *Nature Reviews Neuroscience*, 3(8), 655–666.",
+  "openalex_title": "How do you feel? Interoception: the sense of the physiological condition of the body"
+ },
+ {
+  "n": 87,
+  "item": 35,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1038/nrn3950",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/4731102?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/4731102"
+  ],
+  "cite": "Barrett, L. F., & Simmons, W. K. (2015). \"Interoceptive predictions in the brain.\" *Nature Reviews Neuroscience*, 16(7), 419–429.",
+  "openalex_title": "Interoceptive predictions in the brain",
+  "pmcid": "PMC4731102"
+ },
+ {
+  "n": 88,
+  "item": 35,
+  "file": "",
+  "status": "text_only",
+  "doi": "10.1016/j.bpsc.2017.12.004",
+  "oa_status": "hybrid",
+  "source": "Europe PMC fullTextXML PMC6054486",
+  "candidates": [
+   "https://www.sciencedirect.com/science/article/pii/S2451902217302343/pdf",
+   "https://orca.cardiff.ac.uk/id/eprint/121484/1/1-s2.0-S2451902217302343-main.pdf",
+   "https://www.zora.uzh.ch/id/eprint/153058/1/2018_Khalsa.pdf",
+   "http://sro.sussex.ac.uk/id/eprint/74442/1/Interoception%20and%20Mental%20Health%20-%20A%20Roadmap.pdf",
+   "https://europepmc.org/articles/6054486?pdf=render"
+  ],
+  "cite": "Khalsa, S. S., Adolphs, R., Cameron, O. G., Critchley, H. D., Davenport, P. W., Feinstein, J. S., et al. (2018). \"Interoception and Mental Health: A Roadmap.\" *Biological Psychiatry: Cognitive Neuroscience and Neuroimaging*, 3(6), 501–513.",
+  "openalex_title": "Interoception and Mental Health: A Roadmap",
+  "text_chars": 84191
+ },
+ {
+  "n": 89,
+  "item": 36,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1109/JRA.1986.1087032",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "http://hdl.handle.net/1721.1/6432"
+  ],
+  "cite": "Brooks, R. A. (1986). \"A robust layered control system for a mobile robot.\" *IEEE Journal of Robotics and Automation*, 2(1), 14–23.",
+  "openalex_title": "A robust layered control system for a mobile robot"
+ },
+ {
+  "n": 90,
+  "item": 36,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/0004-3702",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Brooks, R. A. (1991). \"Intelligence without representation.\" *Artificial Intelligence*, 47(1–3), 139–159.",
+  "openalex_title": ""
+ },
+ {
+  "n": 91,
+  "item": 37,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.newideapsych.2007.12.002",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Auvray, M., Lenay, C., & Stewart, J. (2009). \"Perceptual interactions in a minimalist virtual environment.\" *New Ideas in Psychology*, 27(1), 32–47.",
+  "openalex_title": "Perceptual interactions in a minimalist virtual environment"
+ },
+ {
+  "n": 92,
+  "item": 37,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-7687.00065"
+  ],
+  "cite": "Murray, L., & Trevarthen, C. (1985). \"Emotional regulation of interactions between two-month-olds and their mothers.\" In T. M. Field & N. A. Fox (Eds.), *Social Perception in Infants*, Ablex, pp. 177–197.",
+  "openalex_title": "Expectancies for social contingency in 2‐month‐olds"
+ },
+ {
+  "n": 93,
+  "item": 37,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1111/1467-7687.00065",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-7687.00065"
+  ],
+  "cite": "Nadel, J., Carchon, I., Kervella, C., Marcelli, D., & Réserbat-Plantey, D. (1999). \"Expectancies for social contingency in 2-month-olds.\" *Developmental Science*, 2(2), 164–173.",
+  "openalex_title": "Expectancies for social contingency in 2‐month‐olds"
+ },
+ {
+  "n": 94,
+  "item": 37,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Watson, J. S. (1972). \"Smiling, cooing and 'the game'.\" *Merrill-Palmer Quarterly*, 18, 323–339.",
+  "openalex_title": "Smiling, cooing, and \"the game.\""
+ },
+ {
+  "n": 95,
+  "item": 38,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/s11097-007-9076-9",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "De Jaegher, H., & Di Paolo, E. (2007). \"Participatory sense-making: An enactive approach to social cognition.\" *Phenomenology and the Cognitive Sciences*, 6(4), 485–507.",
+  "openalex_title": "Participatory sense-making"
+ },
+ {
+  "n": 96,
+  "item": 39,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1080/09540090310001655110",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://www.tandfonline.com/doi/pdf/10.1080/09540090310001655110?needAccess=true"
+  ],
+  "cite": "Lungarella, M., Metta, G., Pfeifer, R., & Sandini, G. (2003). \"Developmental robotics: a survey.\" *Connection Science*, 15(4), 151–190.",
+  "openalex_title": "Developmental robotics: a survey"
+ },
+ {
+  "n": 97,
+  "item": 39,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/TAMD.2009.2021702",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Asada, M., Hosoda, K., Kuniyoshi, Y., Ishiguro, H., Inui, T., Yoshikawa, Y., Ogino, M., & Yoshida, C. (2009). \"Cognitive developmental robotics: A survey.\" *IEEE Transactions on Autonomous Mental Development*, 1(1), 12–34.",
+  "openalex_title": "Cognitive Developmental Robotics: A Survey"
+ },
+ {
+  "n": 98,
+  "item": 40,
+  "file": "098_i40_Cobbe2019.pdf",
+  "status": "ok",
+  "doi": "",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1812.02341",
+  "candidates": [
+   "https://arxiv.org/pdf/1812.02341"
+  ],
+  "cite": "Cobbe, K., Klimov, O., Hesse, C., Kim, T., & Schulman, J. (2019). \"Quantifying Generalization in Reinforcement Learning.\" *Proceedings of the 36th International Conference on Machine Learning (ICML 2019)*, PMLR 97, pp. 1282–1289.",
+  "openalex_title": "Quantifying Generalization in Reinforcement Learning",
+  "pages": 14,
+  "text_chars": 36740
+ },
+ {
+  "n": 99,
+  "item": 40,
+  "file": "099_i40_Tobin2017.pdf",
+  "status": "ok",
+  "doi": "10.1109/IROS.2017.8202133",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1703.06907",
+  "candidates": [
+   "https://arxiv.org/pdf/1703.06907"
+  ],
+  "cite": "Tobin, J., Fong, R., Ray, A., Schneider, J., Zaremba, W., & Abbeel, P. (2017). \"Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World.\" *2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)*, pp. 23–30.",
+  "openalex_title": "Domain randomization for transferring deep neural networks from simulation to the real world",
+  "pages": 8,
+  "text_chars": 41611
+ },
+ {
+  "n": 100,
+  "item": 41,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.biosystems.2007.05.018",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "http://edoc.mpg.de/402027"
+  ],
+  "cite": "Bertschinger, Nils; Olbrich, Eckehard; Ay, Nihat; Jost, Jürgen (2008). \"Autonomy: An information theoretic perspective.\" *Biosystems*, 91(2), 331–345.",
+  "openalex_title": "Autonomy: An information theoretic perspective"
+ },
+ {
+  "n": 101,
+  "item": 41,
+  "file": "101_i41_Krakauer2020.pdf",
+  "status": "ok",
+  "doi": "10.1007/s12064-020-00313-7",
+  "oa_status": "hybrid",
+  "source": "https://arxiv.org/pdf/1412.2447",
+  "candidates": [
+   "https://link.springer.com/content/pdf/10.1007/s12064-020-00313-7.pdf",
+   "https://arxiv.org/pdf/1412.2447",
+   "https://europepmc.org/articles/7244620?pdf=render"
+  ],
+  "cite": "Krakauer, David; Bertschinger, Nils; Olbrich, Eckehard; Flack, Jessica C.; Ay, Nihat (2020). \"The information theory of individuality.\" *Theory in Biosciences*, 139(2), 209–223.",
+  "openalex_title": "The information theory of individuality",
+  "pages": 17,
+  "text_chars": 56957
+ },
+ {
+  "n": 102,
+  "item": 41,
+  "file": "102_i41_Klyubin2005.pdf",
+  "status": "ok",
+  "doi": "10.1109/CEC.2005.1554676",
+  "oa_status": "green",
+  "source": "https://uhra.herts.ac.uk/id/eprint/282/1/901241.pdf",
+  "candidates": [
+   "http://hdl.handle.net/2299/1114",
+   "https://uhra.herts.ac.uk/id/eprint/282/1/901241.pdf"
+  ],
+  "cite": "Klyubin, Alexander S.; Polani, Daniel; Nehaniv, Chrystopher L. (2005). \"Empowerment: A universal agent-centric measure of control.\" *Proceedings of the 2005 IEEE Congress on Evolutionary Computation (CEC 2005)*, Vol. 1, 128–135.",
+  "openalex_title": "Empowerment: A Universal Agent-Centric Measure of Control",
+  "pages": 8,
+  "text_chars": 33228
+ },
+ {
+  "n": 103,
+  "item": 42,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1177/1059712317700501",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "McGregor, Simon (2017). \"The Bayesian stance: Equations for 'as-if' sensorimotor agency.\" *Adaptive Behavior*, 25(2), 72–82.",
+  "openalex_title": "The Bayesian stance: Equations for ‘as-if’ sensorimotor agency"
+ },
+ {
+  "n": 104,
+  "item": 42,
+  "file": "104_i42_Biehl2016.pdf",
+  "status": "ok",
+  "doi": "10.7551/978-0-262-33936-0-ch115",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1605.05676",
+  "candidates": [
+   "https://arxiv.org/pdf/1605.05676",
+   "https://uhra.herts.ac.uk/id/eprint/13892/1/Biehl_Polani_Ikegami_Alife_2016.pdf",
+   "https://uhra.herts.ac.uk/id/eprint/14291/1/978_0_262_33936_0_ch115.pdf"
+  ],
+  "cite": "Biehl, Martin; Ikegami, Takashi; Polani, Daniel (2016). \"Towards information based spatiotemporal patterns as a foundation for agent representation in dynamical systems.\" *Proceedings of the Artificial Life Conference 2016 (ALIFE 2016)*, MIT Press, 722–729.",
+  "openalex_title": "Towards information based spatiotemporal patterns as a foundation for agent representation in dynamical systems",
+  "pages": 8,
+  "text_chars": 41755
+ },
+ {
+  "n": 105,
+  "item": 43,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/08997660360581949",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Aharonov, Ranit; Segev, Lior; Meilijson, Isaac; Ruppin, Eytan (2003). \"Localization of Function via Lesion Analysis.\" *Neural Computation*, 15(4), 885–913.",
+  "openalex_title": "Localization of Function via Lesion Analysis"
+ },
+ {
+  "n": 106,
+  "item": 43,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1162/0899766041336387",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Keinan, Alon; Sandbank, Ben; Hilgetag, Claus C.; Meilijson, Isaac; Ruppin, Eytan (2004). \"Fair Attribution of Functional Contribution in Artificial and Biological Networks.\" *Neural Computation*, 16(9), 1887–1915.",
+  "openalex_title": "Fair Attribution of Functional Contribution in Artificial and Biological Networks"
+ },
+ {
+  "n": 107,
+  "item": 43,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.neucom.2004.01.046",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Keinan, Alon; Hilgetag, Claus C.; Meilijson, Isaac; Ruppin, Eytan (2004). \"Causal localization of neural function: the Shapley value method.\" *Neurocomputing*, 58–60, 215–222.",
+  "openalex_title": "Causal localization of neural function: the Shapley value method"
+ },
+ {
+  "n": 108,
+  "item": 44,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1073/pnas.1708274114",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/5856500?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/5856500"
+  ],
+  "cite": "Nosek, Brian A.; Ebersole, Charles R.; DeHaven, Alexander C.; Mellor, David T. (2018). \"The preregistration revolution.\" *Proceedings of the National Academy of Sciences (PNAS)*, 115(11), 2600–2606.",
+  "openalex_title": "The preregistration revolution",
+  "pmcid": "PMC5856500"
+ },
+ {
+  "n": 109,
+  "item": 44,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/j.ecolmodel.2010.08.019",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Grimm, Volker; Berger, Uta; DeAngelis, Donald L.; Polhill, J. Gary; Giske, Jarl; Railsback, Steven F. (2010). \"The ODD protocol: A review and first update.\" *Ecological Modelling*, 221(23), 2760–2768.",
+  "openalex_title": "The ODD protocol: A review and first update"
+ },
+ {
+  "n": 110,
+  "item": 44,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1126/science.1213847",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/3383002?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/3383002"
+  ],
+  "cite": "Peng, Roger D. (2011). \"Reproducible Research in Computational Science.\" *Science*, 334(6060), 1226–1227.",
+  "openalex_title": "Reproducible Research in Computational Science",
+  "pmcid": "PMC3383002"
+ },
+ {
+  "n": 111,
+  "item": 45,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1016/S0304-3975",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Rutten, Jan J. M. M. (2000). \"Universal coalgebra: a theory of systems.\" *Theoretical Computer Science*, 249(1), 3–80.",
+  "openalex_title": "On the number of occurrences of a symbol in words of regular languages"
+ },
+ {
+  "n": 112,
+  "item": 45,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1145/1516507.1516510",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://dl.acm.org/doi/pdf/10.1145/1516507.1516510"
+  ],
+  "cite": "Sangiorgi, Davide (2009). \"On the origins of bisimulation and coinduction.\" *ACM Transactions on Programming Languages and Systems*, 31(4), Article 15, 1–41.",
+  "openalex_title": "On the origins of bisimulation and coinduction"
+ },
+ {
+  "n": 113,
+  "item": 46,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1017/9781108668804",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Fong, Brendan; Spivak, David I. (2019). *An Invitation to Applied Category Theory: Seven Sketches in Compositionality*. Cambridge University Press.",
+  "openalex_title": "An Invitation to Applied Category Theory"
+ },
+ {
+  "n": 114,
+  "item": 46,
+  "file": "114_i46_Myers2021.pdf",
+  "status": "ok",
+  "doi": "10.4204/EPTCS.333.11",
+  "oa_status": "diamond",
+  "source": "https://arxiv.org/pdf/2005.05956",
+  "candidates": [
+   "https://arxiv.org/pdf/2005.05956"
+  ],
+  "cite": "Myers, David Jaz (2021). \"Double Categories of Open Dynamical Systems (Extended Abstract).\" *Proceedings of Applied Category Theory 2020 (ACT 2020)*, EPTCS 333, 154–167.",
+  "openalex_title": "Double Categories of Open Dynamical Systems (Extended Abstract)",
+  "pages": 14,
+  "text_chars": 32403
+ },
+ {
+  "n": 115,
+  "item": 46,
+  "file": "115_i46_Baez2018.pdf",
+  "status": "ok",
+  "doi": "10.48550/arXiv.1504.05625",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1504.05625",
+  "candidates": [
+   "https://arxiv.org/pdf/1504.05625"
+  ],
+  "cite": "Baez, John C.; Fong, Brendan (2018). \"A Compositional Framework for Passive Linear Networks.\" *Theory and Applications of Categories*, 33(38), 1158–1222.",
+  "openalex_title": "A Compositional Framework for Passive Linear Networks",
+  "pages": 54,
+  "text_chars": 149711
+ },
+ {
+  "n": 116,
+  "item": 47,
+  "file": "",
+  "status": "text_only",
+  "doi": "10.1007/s10817-017-9448-y",
+  "oa_status": "hybrid",
+  "source": "Europe PMC fullTextXML PMC6044317",
+  "candidates": [
+   "https://link.springer.com/content/pdf/10.1007/s10817-017-9448-y.pdf",
+   "https://europepmc.org/articles/6044317?pdf=render"
+  ],
+  "cite": "Immler, Fabian (2018). \"A Verified ODE Solver and the Lorenz Attractor.\" *Journal of Automated Reasoning*, 61(1–4), 73–111.",
+  "openalex_title": "A Verified ODE Solver and the Lorenz Attractor",
+  "text_chars": 299417
+ },
+ {
+  "n": 117,
+  "item": 47,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1007/978-3-319-63588-0",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Platzer, André (2018). *Logical Foundations of Cyber-Physical Systems*. Springer.",
+  "openalex_title": "Logical Foundations of Cyber-Physical Systems"
+ },
+ {
+  "n": 118,
+  "item": 48,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1109/ARITH54963.2022.00014",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://inria.hal.science/hal-03721525",
+   "https://inria.hal.science/hal-03721525/document"
+  ],
+  "cite": "Sibidanov, Alexei; Zimmermann, Paul; Glondu, Stéphane (2022). \"The CORE-MATH Project.\" *Proceedings of the 29th IEEE Symposium on Computer Arithmetic (ARITH 2022)*, 26–34.（Best Paper Award）",
+  "openalex_title": "The CORE-MATH Project"
+ },
+ {
+  "n": 119,
+  "item": 48,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1145/3747840",
+  "oa_status": "hybrid",
+  "source": "",
+  "candidates": [
+   "https://dl.acm.org/doi/pdf/10.1145/3747840",
+   "https://hal.science/hal-04474530v2/file/crsurvey.pdf",
+   "https://hal.science/hal-04474530v4/file/crsurvey-HaL.pdf",
+   "https://hal.science/hal-04474530v2/file/crsurvey.pdf/document",
+   "https://hal.science/hal-04474530v4/file/crsurvey-HaL.pdf/document"
+  ],
+  "cite": "Brisebarre, Nicolas; Hanrot, Guillaume; Muller, Jean-Michel; Zimmermann, Paul (2025). \"Correctly-rounded evaluation of a function: Why, how, and at what cost?\" *ACM Computing Surveys*, 58.",
+  "openalex_title": "Correctly Rounded Evaluation of a Function: Why, How, and at What Cost?"
+ },
+ {
+  "n": 120,
+  "item": 49,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Warden, Pete; Situnayake, Daniel (2019). *TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers*. O'Reilly Media.",
+  "openalex_title": "TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers"
+ },
+ {
+  "n": 121,
+  "item": 49,
+  "file": "121_i49_Lin2022.pdf",
+  "status": "ok",
+  "doi": "10.52202/068431-1667",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/2206.15472",
+  "candidates": [
+   "https://arxiv.org/pdf/2206.15472"
+  ],
+  "cite": "Lin, Ji; Zhu, Ligeng; Chen, Wei-Ming; Wang, Wei-Chen; Gan, Chuang; Han, Song (2022). \"On-Device Training Under 256KB Memory.\" *Advances in Neural Information Processing Systems (NeurIPS 2022)*.",
+  "openalex_title": "On-Device Training Under 256KB Memory",
+  "pages": 18,
+  "text_chars": 70762
+ },
+ {
+  "n": 122,
+  "item": 49,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/MM.2018.112130359",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Davies, Mike; Srinivasa, Narayan; Lin, Tsung-Han; et al. (2018). \"Loihi: A Neuromorphic Manycore Processor with On-Chip Learning.\" *IEEE Micro*, 38(1), 82–99.",
+  "openalex_title": "Loihi: A Neuromorphic Manycore Processor with On-Chip Learning"
+ },
+ {
+  "n": 123,
+  "item": 50,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Braitenberg, Valentino (1984). *Vehicles: Experiments in Synthetic Psychology*. MIT Press.",
+  "openalex_title": "Vehicles: Experiments in Synthetic Psychology."
+ },
+ {
+  "n": 124,
+  "item": 50,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.7551/mitpress/3118.003.0051",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Beer, Randall D. (1996). \"Toward the evolution of dynamical neural networks for minimally cognitive behavior.\" In Maes, Pattie et al. (eds.), *From Animals to Animats 4: Proceedings of the Fourth International Conference on Simulation of Adaptive Behavior*, MIT Press, 421–429.",
+  "openalex_title": "Toward the Evolution of Dynamical Neural Networks for Minimally Cognitive Behavior"
+ },
+ {
+  "n": 125,
+  "item": 50,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Nolfi, Stefano; Floreano, Dario (2000). *Evolutionary Robotics: The Biology, Intelligence, and Technology of Self-Organizing Machines*. MIT Press.",
+  "openalex_title": "Evolutionary robotics: The biology, intelligence, and technology of self‐organizing machines"
+ },
+ {
+  "n": 126,
+  "item": 50,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.artint.2008.12.001",
+  "oa_status": "bronze",
+  "source": "",
+  "candidates": [
+   "https://www.sciencedirect.com/science/article/pii/S0004370208002105/pdf"
+  ],
+  "cite": "Froese, Tom; Ziemke, Tom (2009). \"Enactive artificial intelligence: Investigating the systemic organization of life and mind.\" *Artificial Intelligence*, 173(3–4), 466–500.",
+  "openalex_title": "Enactive artificial intelligence: Investigating the systemic organization of life and mind"
+ },
+ {
+  "n": 127,
+  "item": 51,
+  "file": "127_i51_Jacovi2020.pdf",
+  "status": "ok",
+  "doi": "10.18653/v1/2020.acl-main.386",
+  "oa_status": "hybrid",
+  "source": "https://www.aclweb.org/anthology/2020.acl-main.386.pdf",
+  "candidates": [
+   "https://www.aclweb.org/anthology/2020.acl-main.386.pdf",
+   "https://arxiv.org/pdf/2004.03685"
+  ],
+  "cite": "Jacovi, Alon; Goldberg, Yoav (2020). \"Towards Faithfully Interpretable NLP Systems: How Should We Define and Evaluate Faithfulness?\" *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)*, 4198–4205.",
+  "openalex_title": "Towards Faithfully Interpretable NLP Systems: How Should We Define and Evaluate Faithfulness?",
+  "pages": 8,
+  "text_chars": 35265
+ },
+ {
+  "n": 128,
+  "item": 51,
+  "file": "128_i51_Turpin2023.pdf",
+  "status": "ok",
+  "doi": "10.48550/arXiv.2305.04388",
+  "oa_status": "",
+  "source": "https://arxiv.org/pdf/2305.04388",
+  "candidates": [
+   "https://arxiv.org/pdf/2305.04388"
+  ],
+  "cite": "Turpin, Miles; Michael, Julian; Perez, Ethan; Bowman, Samuel R. (2023). \"Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting.\" *Advances in Neural Information Processing Systems (NeurIPS 2023)*.",
+  "openalex_title": "",
+  "pages": 32,
+  "text_chars": 163507
+ },
+ {
+  "n": 129,
+  "item": 51,
+  "file": "129_i51_Lapuschkin2019.pdf",
+  "status": "ok",
+  "doi": "10.1038/s41467-019-08987-4",
+  "oa_status": "gold",
+  "source": "https://www.nature.com/articles/s41467-019-08987-4.pdf",
+  "candidates": [
+   "https://www.nature.com/articles/s41467-019-08987-4.pdf",
+   "https://arxiv.org/pdf/1902.10178",
+   "https://europepmc.org/articles/6411769?pdf=render"
+  ],
+  "cite": "Lapuschkin, Sebastian; Wäldchen, Stephan; Binder, Alexander; Montavon, Grégoire; Samek, Wojciech; Müller, Klaus-Robert (2019). \"Unmasking Clever Hans predictors and assessing what machines really learn.\" *Nature Communications*, 10, 1096.",
+  "openalex_title": "Unmasking Clever Hans predictors and assessing what machines really learn",
+  "pages": 8,
+  "text_chars": 44250
+ },
+ {
+  "n": 130,
+  "item": 52,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/4235.996017",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Deb, K., Pratap, A., Agarwal, S., & Meyarivan, T. (2002). \"A Fast and Elitist Multiobjective Genetic Algorithm: NSGA-II\". *IEEE Transactions on Evolutionary Computation*, 6(2), 182–197.",
+  "openalex_title": "A fast and elitist multiobjective genetic algorithm: NSGA-II"
+ },
+ {
+  "n": 131,
+  "item": 52,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/TEVC.2003.810758",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Zitzler, E., Thiele, L., Laumanns, M., Fonseca, C. M., & Grunert da Fonseca, V. (2003). \"Performance Assessment of Multiobjective Optimizers: An Analysis and Review\". *IEEE Transactions on Evolutionary Computation*, 7(2), 117–132.",
+  "openalex_title": "Performance assessment of multiobjective optimizers: an analysis and review"
+ },
+ {
+  "n": 132,
+  "item": 53,
+  "file": "132_i53_Kramer2016.pdf",
+  "status": "ok",
+  "doi": "10.12688/f1000research.8018.1",
+  "oa_status": "gold",
+  "source": "https://f1000research.com/articles/5-776/v1/pdf",
+  "candidates": [
+   "https://f1000research.com/articles/5-776/v1/pdf",
+   "https://europepmc.org/articles/4850877?pdf=render"
+  ],
+  "cite": "Kramer, J., & Meunier, J. (2016). \"Kin and Multilevel Selection in Social Evolution: A Never-Ending Controversy?\" *F1000Research*, 5 (F1000 Faculty Rev): 776.",
+  "openalex_title": "Kin and multilevel selection in social evolution: a never-ending controversy?",
+  "pages": 13,
+  "text_chars": 73526
+ },
+ {
+  "n": 133,
+  "item": 53,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1098/rstb.2019.0365",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://philsci-archive.pitt.edu/20872/1/The_Price_equation_and_the_causal_analysis_of_evolutionary_change.pdf",
+   "https://europepmc.org/articles/7133506?pdf=render",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/7133506"
+  ],
+  "cite": "Okasha, S. (2020). \"The Price Equation and the Causal Analysis of Evolutionary Change\". *Philosophical Transactions of the Royal Society B*, 375(1797), 20190365.",
+  "openalex_title": "The Price equation and the causal analysis of evolutionary change",
+  "pmcid": "PMC7133506"
+ },
+ {
+  "n": 134,
+  "item": 54,
+  "file": "134_i54_Vagner2015.pdf",
+  "status": "ok",
+  "doi": "",
+  "oa_status": "green",
+  "source": "https://arxiv.org/pdf/1408.1598",
+  "candidates": [
+   "https://arxiv.org/pdf/1408.1598"
+  ],
+  "cite": "Vagner, D., Spivak, D. I., & Lerman, E. (2015). \"Algebras of Open Dynamical Systems on the Operad of Wiring Diagrams\". *Theory and Applications of Categories*, 30(51), 1793–1822.",
+  "openalex_title": "Algebras of Open Dynamical Systems on the Operad of Wiring Diagrams",
+  "pages": 26,
+  "text_chars": 57355
+ },
+ {
+  "n": 135,
+  "item": 54,
+  "file": "135_i54_Fong2019.pdf",
+  "status": "ok",
+  "doi": "10.1016/j.jpaa.2019.02.014",
+  "oa_status": "bronze",
+  "source": "https://arxiv.org/pdf/1806.08304",
+  "candidates": [
+   "https://arxiv.org/pdf/1806.08304",
+   "https://doi.org/10.1016/j.jpaa.2019.02.014"
+  ],
+  "cite": "Fong, B., & Spivak, D. I. (2019). \"Hypergraph Categories\". *Journal of Pure and Applied Algebra*, 223(11), 4746–4777.",
+  "openalex_title": "Hypergraph categories",
+  "pages": 38,
+  "text_chars": 90888
+ },
+ {
+  "n": 136,
+  "item": 55,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/SP.1982.10014",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Goguen, J. A., & Meseguer, J. (1982). \"Security Policies and Security Models\". *Proceedings of the 1982 IEEE Symposium on Security and Privacy*, 11–20.",
+  "openalex_title": "Security Policies and Security Models"
+ },
+ {
+  "n": 137,
+  "item": 55,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/JSAC.2002.806121",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Sabelfeld, A., & Myers, A. C. (2003). \"Language-Based Information-Flow Security\". *IEEE Journal on Selected Areas in Communications*, 21(1), 5–19.",
+  "openalex_title": "Language-based information-flow security"
+ },
+ {
+  "n": 138,
+  "item": 55,
+  "file": "138_i55_Segura2016.pdf",
+  "status": "ok",
+  "doi": "10.1109/TSE.2016.2532875",
+  "oa_status": "green",
+  "source": "http://eprints.whiterose.ac.uk/110335/1/segura16-tse.pdf",
+  "candidates": [
+   "http://eprints.whiterose.ac.uk/110335/1/segura16-tse.pdf",
+   "https://idus.us.es/handle/11441/38271"
+  ],
+  "cite": "Segura, S., Fraser, G., Sanchez, A. B., & Ruiz-Cortés, A. (2016). \"A Survey on Metamorphic Testing\". *IEEE Transactions on Software Engineering*, 42(9).",
+  "openalex_title": "A Survey on Metamorphic Testing",
+  "pages": 21,
+  "text_chars": 133245
+ },
+ {
+  "n": 139,
+  "item": 56,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1073/pnas.50.6.1143",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/221287?pdf=render",
+   "http://europepmc.org/pmc/articles/PMC221287"
+  ],
+  "cite": "Cohen, P. J. (1963). \"The Independence of the Continuum Hypothesis\". *Proceedings of the National Academy of Sciences of the United States of America*, 50(6), 1143–1148.",
+  "openalex_title": "THE INDEPENDENCE OF THE CONTINUUM HYPOTHESIS",
+  "pmcid": "PMC221287"
+ },
+ {
+  "n": 140,
+  "item": 56,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1073/pnas.51.1.105",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Cohen, P. J. (1964). \"The Independence of the Continuum Hypothesis, II\". *Proceedings of the National Academy of Sciences of the United States of America*, 51(1), 105–110.",
+  "openalex_title": "THE INDEPENDENCE OF THE CONTINUUM HYPOTHESIS, II"
+ },
+ {
+  "n": 141,
+  "item": 57,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.2168/LMCS-11",
+  "oa_status": "",
+  "source": "",
+  "candidates": [],
+  "cite": "Berger, U., Lawrence, A., Nordvall Forsberg, F., & Seisenberger, M. (2015). \"Extracting Verified Decision Procedures: DPLL and Resolution\". *Logical Methods in Computer Science*, 11(1:6), 1–18.",
+  "openalex_title": ""
+ },
+ {
+  "n": 142,
+  "item": 57,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/ICRE.1994.292398",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Gotel, O. C. Z., & Finkelstein, A. C. W. (1994). \"An Analysis of the Requirements Traceability Problem\". *Proceedings of the IEEE International Conference on Requirements Engineering*, 94–101.",
+  "openalex_title": "An analysis of the requirements traceability problem"
+ },
+ {
+  "n": 143,
+  "item": 57,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/32.895989",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Ramesh, B., & Jarke, M. (2001). \"Toward Reference Models for Requirements Traceability\". *IEEE Transactions on Software Engineering*, 27(1), 58–93.",
+  "openalex_title": "Toward reference models for requirements traceability"
+ },
+ {
+  "n": 144,
+  "item": 58,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/C-M.1978.218136",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "DeMillo, R. A., Lipton, R. J., & Sayward, F. G. (1978). \"Hints on Test Data Selection: Help for the Practicing Programmer\". *Computer*, 11(4), 34–41.",
+  "openalex_title": "Hints on Test Data Selection: Help for the Practicing Programmer"
+ },
+ {
+  "n": 145,
+  "item": 58,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1109/TSE.2010.62",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Jia, Y., & Harman, M. (2011). \"An Analysis and Survey of the Development of Mutation Testing\". *IEEE Transactions on Software Engineering*, 37(5), 649–678.",
+  "openalex_title": "An Analysis and Survey of the Development of Mutation Testing"
+ },
+ {
+  "n": 146,
+  "item": 59,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Popper, K. R. (1959). *The Logic of Scientific Discovery*. Hutchinson & Co.（原著 *Logik der Forschung*, 1934）",
+  "openalex_title": "The Logic of Scientific Discovery."
+ },
+ {
+  "n": 147,
+  "item": 59,
+  "file": "",
+  "status": "text_only",
+  "doi": "10.1007/s11229-022-03692-0",
+  "oa_status": "hybrid",
+  "source": "Europe PMC fullTextXML PMC9096069",
+  "candidates": [
+   "https://link.springer.com/content/pdf/10.1007/s11229-022-03692-0.pdf",
+   "https://philsci-archive.pitt.edu/20482/2/StatSig-its-critics-Mayo_Hand.pdf",
+   "https://europepmc.org/articles/9096069?pdf=render"
+  ],
+  "cite": "Mayo, D. G., & Hand, D. (2022). \"Statistical Significance and Its Critics: Practicing Damaging Science, or Damaging Scientific Practice?\" *Synthese*, 200, 220.",
+  "openalex_title": "Statistical significance and its critics: practicing damaging science, or damaging scientific practice?",
+  "text_chars": 114550
+ },
+ {
+  "n": 148,
+  "item": 60,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "10.1093/acprof:osobl/9780199552047.001.0001",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Godfrey-Smith, P. (2009). *Darwinian Populations and Natural Selection*. Oxford University Press.",
+  "openalex_title": "Darwinian Populations and Natural Selection"
+ },
+ {
+  "n": 149,
+  "item": 60,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1017/psa.2025.15",
+  "oa_status": "hybrid",
+  "source": "",
+  "candidates": [
+   "https://doi.org/10.1017/psa.2025.15"
+  ],
+  "cite": "Devanesan, A. (2025). \"Are Physiological Individuals Evolutionary Individuals? The Case of the Holobiont\". *Philosophy of Science*.",
+  "openalex_title": "Are Physiological Individuals Evolutionary Individuals? The Case of the Holobiont"
+ },
+ {
+  "n": 150,
+  "item": 61,
+  "file": "150_i61_Connes1994.pdf",
+  "status": "ok",
+  "doi": "10.1088/0264-9381/11/12/007",
+  "oa_status": "bronze",
+  "source": "https://arxiv.org/pdf/gr-qc/9406019",
+  "candidates": [
+   "https://iopscience.iop.org/article/10.1088/0264-9381/11/12/007/pdf",
+   "https://arxiv.org/pdf/gr-qc/9406019"
+  ],
+  "cite": "Connes, A., & Rovelli, C. (1994). \"Von Neumann Algebra Automorphisms and Time-Thermodynamics Relation in Generally Covariant Quantum Theories\". *Classical and Quantum Gravity*, 11(12), 2899–2917.",
+  "openalex_title": "Von Neumann algebra automorphisms and time-thermodynamics relation in generally covariant quantum theories",
+  "pages": 25,
+  "text_chars": 61503
+ },
+ {
+  "n": 151,
+  "item": 61,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1016/j.jtbi.2015.02.029",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://hal.science/hal-01192916",
+   "https://hal.science/hal-01192916/document"
+  ],
+  "cite": "Montévil, M., & Mossio, M. (2015). \"Biological Organisation as Closure of Constraints\". *Journal of Theoretical Biology*, 372, 179–191.",
+  "openalex_title": "Biological organisation as closure of constraints"
+ },
+ {
+  "n": 152,
+  "item": 62,
+  "file": "",
+  "status": "oa_failed",
+  "doi": "10.1073/pnas.50.5.869",
+  "oa_status": "green",
+  "source": "",
+  "candidates": [
+   "https://europepmc.org/articles/221940?pdf=render",
+   "http://europepmc.org/pmc/articles/PMC221940"
+  ],
+  "cite": "Lawvere, F. W. (1963). \"Functorial Semantics of Algebraic Theories\". *Proceedings of the National Academy of Sciences of the United States of America*, 50(5), 869–872.",
+  "openalex_title": "FUNCTORIAL SEMANTICS OF ALGEBRAIC THEORIES",
+  "pmcid": "PMC221940"
+ },
+ {
+  "n": 153,
+  "item": 62,
+  "file": "",
+  "status": "no_oa_found",
+  "doi": "",
+  "oa_status": "closed",
+  "source": "",
+  "candidates": [],
+  "cite": "Freire, A. R. (2019). \"Translating Non Interpretable Theories\". *South American Journal of Logic*, 5(1), 1–21.",
+  "openalex_title": "The Application of the Interpretive Theory of Translation"
+ }
+]

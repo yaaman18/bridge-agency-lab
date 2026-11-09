@@ -3,3 +3,9 @@ rust/target/
 formal/.olean/
 core/check/out/
 .DS_Store
+
+# papers (copyrighted full texts; keep local)
+papers/pdf/
+papers/text/
+discussion/.codex-turns/
+discussion/.deepseek-turns/

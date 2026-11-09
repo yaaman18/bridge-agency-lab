@@ -1,0 +1,8 @@
+# S43 main freeze (2026-11-09, after the smoke on seed 1; codex accept on the smoke result message). Before the first run on seeds 501-510.
+ee888350518ef20ace4baaa38eaa8f2a0b6b17173edd00ed061418eb18e2fd2c predictions-rb-fork.md
+4dfaafbb1fa514582ce20312290c0e23aef38777feb5901d27b5b810d68654b9 ../discussion/specs/S43-rb-fork.md
+45f70550e9d0d54b5e36a4f71be3b29861c7bd371b9dddffe3e5a9dd10aed43e fork.jl
+25513a7c444ce04057e851d236763494a69aaf7275fa1505d8e6cee30a8370b7 check_rb_fork.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111 variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473 ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca ../core/matter.jl

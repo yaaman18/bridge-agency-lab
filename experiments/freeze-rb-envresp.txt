@@ -1,0 +1,8 @@
+# S39 freeze (2026-11-09, before the first run on claim seeds 461-470; codex I-R accepted at [AUTO 4/10])
+481eacff17963ec561b5cca513d694eb903c8f07f4d25a150413b83fad97edb9  predictions-rb-envresp.md
+148723d1f61af46e69d4e4b059ac019678b7118c4eb92809915b32dbcd209b19  ../discussion/specs/S39-rb-envresp.md
+b36d1d489aea428170777d752f1616d4411b34c58c07ebd24bd028177d242732  envresp.jl
+f83291b1a20ed26a0faee00803dc24d345fe35260de4a194d021544279aa0e8b  check_rb_envresp.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+05eb8b60c1640f87fe65172f5630945166bc1760a782a66a14e298b16af946a0  ../core/dc.jl

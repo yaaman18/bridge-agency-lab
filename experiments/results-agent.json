@@ -1,0 +1,1483 @@
+{
+  "posthoc_window_from_survival_p1_high": false,
+  "spec": "discussion/specs/S15-body-agent.md r1",
+  "objects": [
+    {
+      "raised_hash": "5ef2df27d0653e43dc1708dc07b2a4fff789ad684a4d2738778412e8192c54eb",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 71,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "1f49d14635001945470d7519bae8f254feda06e5e94f915deea247ea8070ec12",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 71,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "d66257de4c0a32094662a93984928b2db19c5b215a4e0f51deb7adec8c111197",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 72,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "4e74d863f5b5d2931875636f617d2778abd792e7fdccb9999f60bb701c7b5420",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 72,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "26062bda88550b1c73c20625a6bc496a3d2074d848bc103dac8450ad94139fd4",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 73,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "e8c2c098c7705b0a8e2e9b058b1ba81af0f51b5ea1c33317035855bc49437e13",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 73,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "aff6243c4f69e6a45477b500da6f0874fcc4c44a7fa6a05b786cb4ee21d9641d",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 74,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "abc25364676b5b4849aca83646d0c037fb9117f34b6f5698f63be6502ba3e038",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 74,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "ca5867107c38ff82a79fc6c4526b55a185b49111ded9e5a882e9b759498b027d",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 75,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "0eb0b573fd91190a8782b8bec2d9f197ec3564bc2d643057f26343db2643e4e9",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 75,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "209215ec9d3da73b30357aa40604a1a984fe78fc7e3f879fd2496a27e5ff0f68",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 76,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "1d1fdd5ccda0104b6018ac92a1ac2e4098f1902e0b98273534c4d676b254ea97",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 76,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "7aaeb09b2b4b9c5500efb0a8e8e6a488ae87a90f9719a5d57fe4abada51e7078",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 77,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "4d01493b1c7f26522b410ad0c1338475371d153bd43f9e86a0406834146c8800",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 77,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "466553626b27091295e7664a0534ce2e9d5cc4a5c67399e766fd17a56b06b0f0",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 78,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "0799232bcd0ac386c82138afa73938514777cb778ed30889152c5fe4811df3e7",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 78,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "fa9e9750fa032d1a1ba278fab2b1c3b07031c48de70912f0c029aedd0782667a",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 79,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "3dfc30bd7284ac7c6421ae4027b1221ec92320dfd629d08e95c0ad678a15ee86",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 79,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "894430c508e34eebf3dd35d84ffe965895d1fc22255ec7e139bc95e0950beaad",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 80,
+      "arm": "std",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "9c6efbeb2c0549568fc5fb7f8d8283e2e866ae04c348eabe04df811b805657a3",
+      "provenance_same": true,
+      "dc": {
+        "act": true,
+        "smc": false,
+        "dc": false,
+        "self": true,
+        "bound": true
+      },
+      "r7_r8_attributable": true,
+      "witness": [
+        "r7",
+        "r8"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r7",
+        "r8"
+      ],
+      "builds": false,
+      "choice_C2": [
+        "m2"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 5,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 80,
+      "arm": "swap",
+      "choice_C1": [
+        "m1"
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    }
+  ],
+  "seeds": [
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "rule": "sf",
+  "H": 392,
+  "agents_built_in_julia": 0
+}

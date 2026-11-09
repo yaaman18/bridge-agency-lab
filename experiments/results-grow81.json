@@ -1,0 +1,1532 @@
+{
+  "random L2": [
+    {
+      "kept": 5.7493,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 4.9257,
+      "keptEnd": 14,
+      "upkeep": 114.98599999999796,
+      "death": 4525,
+      "answered": 0.9971194327498338
+    },
+    {
+      "kept": 4.0563,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 4.3294,
+      "keptEnd": 12,
+      "upkeep": 81.12600000000177,
+      "death": 3272,
+      "answered": 0.9947852760736197
+    },
+    {
+      "kept": 9.1194,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 7.7028,
+      "keptEnd": 15,
+      "upkeep": 182.3880000000083,
+      "death": 6741,
+      "answered": 0.9961378490790256
+    },
+    {
+      "kept": 13.4735,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.7919,
+      "keptEnd": 15,
+      "upkeep": 269.4699999999906,
+      "death": null,
+      "answered": 0.9967525877816116
+    },
+    {
+      "kept": 6.3281,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 5.5547,
+      "keptEnd": 15,
+      "upkeep": 126.56200000000021,
+      "death": 4589,
+      "answered": 0.9973770491803279
+    },
+    {
+      "kept": 5.6768,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 5.2203,
+      "keptEnd": 14,
+      "upkeep": 113.53600000000793,
+      "death": 4223,
+      "answered": 0.9966737942504158
+    },
+    {
+      "kept": 2.3345,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 2.1945,
+      "keptEnd": 13,
+      "upkeep": 46.68999999999914,
+      "death": 1852,
+      "answered": 0.994028230184582
+    },
+    {
+      "kept": 4.1927,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 3.5789,
+      "keptEnd": 13,
+      "upkeep": 83.8540000000024,
+      "death": 3251,
+      "answered": 0.9953689410311825
+    },
+    {
+      "kept": 1.8554,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 1.6522,
+      "keptEnd": 15,
+      "upkeep": 37.107999999999116,
+      "death": 1513,
+      "answered": 0.9926715522984677
+    },
+    {
+      "kept": 11.6094,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 10.4283,
+      "keptEnd": 14,
+      "upkeep": 232.1879999999838,
+      "death": 8821,
+      "answered": 0.995453512161855
+    }
+  ],
+  "random bin3+PER1": [
+    {
+      "kept": 7.0553,
+      "blocked": 484,
+      "lost": 28,
+      "meanCount": 12.1928,
+      "keptEnd": 6,
+      "upkeep": 141.10600000000406,
+      "death": null,
+      "answered": 0.9798159380882661
+    },
+    {
+      "kept": 3.223,
+      "blocked": 3,
+      "lost": 14,
+      "meanCount": 4.4037,
+      "keptEnd": 1,
+      "upkeep": 64.46000000000176,
+      "death": 3323,
+      "answered": 0.9731199033524615
+    },
+    {
+      "kept": 2.3469,
+      "blocked": 393,
+      "lost": 15,
+      "meanCount": 2.981,
+      "keptEnd": 1,
+      "upkeep": 46.937999999999505,
+      "death": 2992,
+      "answered": 0.9416936603424341
+    },
+    {
+      "kept": 8.7555,
+      "blocked": 148,
+      "lost": 22,
+      "meanCount": 13.0647,
+      "keptEnd": 9,
+      "upkeep": 175.11000000001079,
+      "death": null,
+      "answered": 0.9937960042060988
+    },
+    {
+      "kept": 4.3595,
+      "blocked": 114,
+      "lost": 15,
+      "meanCount": 6.1965,
+      "keptEnd": 1,
+      "upkeep": 87.19000000000094,
+      "death": 5448,
+      "answered": 0.9638626781770728
+    },
+    {
+      "kept": 3.9787,
+      "blocked": 19,
+      "lost": 13,
+      "meanCount": 5.7971,
+      "keptEnd": 1,
+      "upkeep": 79.57399999999811,
+      "death": 4340,
+      "answered": 0.9844192634560907
+    },
+    {
+      "kept": 6.7929,
+      "blocked": 558,
+      "lost": 24,
+      "meanCount": 12.4569,
+      "keptEnd": 9,
+      "upkeep": 135.85800000000845,
+      "death": null,
+      "answered": 0.9923351532969341
+    },
+    {
+      "kept": 2.9525,
+      "blocked": 74,
+      "lost": 18,
+      "meanCount": 4.3147,
+      "keptEnd": 1,
+      "upkeep": 59.04999999999892,
+      "death": 3340,
+      "answered": 0.9767673415200796
+    },
+    {
+      "kept": 2.5972,
+      "blocked": 557,
+      "lost": 18,
+      "meanCount": 3.1664,
+      "keptEnd": 1,
+      "upkeep": 51.94399999999988,
+      "death": 3445,
+      "answered": 0.9713050314465409
+    },
+    {
+      "kept": 8.3951,
+      "blocked": 819,
+      "lost": 28,
+      "meanCount": 13.9023,
+      "keptEnd": 6,
+      "upkeep": 167.90200000000144,
+      "death": null,
+      "answered": 0.9879365079365079
+    }
+  ],
+  "random GREEDY": [
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 17.3736,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 17.7588,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 16.8421,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 18.9272,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 18.2643,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 17.9227,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 17.4612,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 17.1193,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 18.7685,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 17.987,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    }
+  ],
+  "seasons L2+PER1": [
+    {
+      "kept": 9.9681,
+      "blocked": 1450,
+      "lost": 31,
+      "meanCount": 14.1247,
+      "keptEnd": 12,
+      "upkeep": 199.36200000000306,
+      "death": null,
+      "answered": 0.97799053593045
+    },
+    {
+      "kept": 3.3583,
+      "blocked": 187,
+      "lost": 17,
+      "meanCount": 4.7434,
+      "keptEnd": 1,
+      "upkeep": 67.16599999999941,
+      "death": 3213,
+      "answered": 0.9515669515669516
+    },
+    {
+      "kept": 9.361,
+      "blocked": 86,
+      "lost": 11,
+      "meanCount": 16.5941,
+      "keptEnd": 10,
+      "upkeep": 187.22000000001984,
+      "death": null,
+      "answered": 0.9795380875202593
+    },
+    {
+      "kept": 1.9452,
+      "blocked": 90,
+      "lost": 12,
+      "meanCount": 2.7285,
+      "keptEnd": 1,
+      "upkeep": 38.90400000000044,
+      "death": 1989,
+      "answered": 0.9303455723542117
+    },
+    {
+      "kept": 2.175,
+      "blocked": 10,
+      "lost": 12,
+      "meanCount": 2.8811,
+      "keptEnd": 1,
+      "upkeep": 43.50000000000053,
+      "death": 2104,
+      "answered": 0.9581827568404749
+    },
+    {
+      "kept": 10.0991,
+      "blocked": 747,
+      "lost": 20,
+      "meanCount": 15.3345,
+      "keptEnd": 10,
+      "upkeep": 201.98200000000404,
+      "death": null,
+      "answered": 0.9891723060905778
+    },
+    {
+      "kept": 1.6418,
+      "blocked": 46,
+      "lost": 14,
+      "meanCount": 2.2643,
+      "keptEnd": 1,
+      "upkeep": 32.835999999999,
+      "death": 1711,
+      "answered": 0.9552614996849401
+    },
+    {
+      "kept": 3.3511,
+      "blocked": 521,
+      "lost": 23,
+      "meanCount": 4.8034,
+      "keptEnd": 1,
+      "upkeep": 67.02200000000148,
+      "death": 3856,
+      "answered": 0.9351824817518248
+    },
+    {
+      "kept": 9.4494,
+      "blocked": 638,
+      "lost": 22,
+      "meanCount": 15.6509,
+      "keptEnd": 10,
+      "upkeep": 188.98800000000247,
+      "death": null,
+      "answered": 0.9849686847599165
+    },
+    {
+      "kept": 10.0908,
+      "blocked": 152,
+      "lost": 18,
+      "meanCount": 15.3227,
+      "keptEnd": 12,
+      "upkeep": 201.81599999999952,
+      "death": null,
+      "answered": 0.9756770567194686
+    }
+  ],
+  "random L2+PER1": [
+    {
+      "kept": 4.1239,
+      "blocked": 384,
+      "lost": 20,
+      "meanCount": 5.1966,
+      "keptEnd": 1,
+      "upkeep": 82.47800000000102,
+      "death": 4616,
+      "answered": 0.9681295715778474
+    },
+    {
+      "kept": 1.9065,
+      "blocked": 77,
+      "lost": 16,
+      "meanCount": 2.3967,
+      "keptEnd": 1,
+      "upkeep": 38.129999999999136,
+      "death": 2011,
+      "answered": 0.9380434782608695
+    },
+    {
+      "kept": 6.9375,
+      "blocked": 325,
+      "lost": 39,
+      "meanCount": 9.7782,
+      "keptEnd": 1,
+      "upkeep": 138.75000000000136,
+      "death": 8776,
+      "answered": 0.9855343559047263
+    },
+    {
+      "kept": 8.5715,
+      "blocked": 632,
+      "lost": 37,
+      "meanCount": 11.486,
+      "keptEnd": 4,
+      "upkeep": 171.4299999999944,
+      "death": null,
+      "answered": 0.9909414058020869
+    },
+    {
+      "kept": 4.3016,
+      "blocked": 412,
+      "lost": 21,
+      "meanCount": 5.1628,
+      "keptEnd": 1,
+      "upkeep": 86.03200000000155,
+      "death": 5373,
+      "answered": 0.975119376727821
+    },
+    {
+      "kept": 3.9482,
+      "blocked": 21,
+      "lost": 22,
+      "meanCount": 5.6759,
+      "keptEnd": 1,
+      "upkeep": 78.96400000000084,
+      "death": 4296,
+      "answered": 0.9837033538025508
+    },
+    {
+      "kept": 1.5702,
+      "blocked": 37,
+      "lost": 20,
+      "meanCount": 1.9532,
+      "keptEnd": 1,
+      "upkeep": 31.40400000000004,
+      "death": 1921,
+      "answered": 0.9247386759581881
+    },
+    {
+      "kept": 2.653,
+      "blocked": 464,
+      "lost": 20,
+      "meanCount": 3.2078,
+      "keptEnd": 1,
+      "upkeep": 53.05999999999939,
+      "death": 3376,
+      "answered": 0.9714506172839507
+    },
+    {
+      "kept": 7.6083,
+      "blocked": 1196,
+      "lost": 45,
+      "meanCount": 11.0874,
+      "keptEnd": 7,
+      "upkeep": 152.16600000000554,
+      "death": null,
+      "answered": 0.9752383039333845
+    },
+    {
+      "kept": 1.7216,
+      "blocked": 1,
+      "lost": 13,
+      "meanCount": 2.3953,
+      "keptEnd": 1,
+      "upkeep": 34.431999999999164,
+      "death": 1681,
+      "answered": 0.9520414776409591
+    }
+  ],
+  "seasons L2": [
+    {
+      "kept": 12.8595,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.3046,
+      "keptEnd": 13,
+      "upkeep": 257.19000000002313,
+      "death": null,
+      "answered": 0.9921906287545054
+    },
+    {
+      "kept": 13.1077,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.1094,
+      "keptEnd": 14,
+      "upkeep": 262.1540000000235,
+      "death": null,
+      "answered": 0.9919903884661594
+    },
+    {
+      "kept": 13.396,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.0435,
+      "keptEnd": 15,
+      "upkeep": 267.9199999999702,
+      "death": null,
+      "answered": 0.9926934240816735
+    },
+    {
+      "kept": 12.4714,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.0945,
+      "keptEnd": 15,
+      "upkeep": 249.42800000002478,
+      "death": null,
+      "answered": 0.9912492456246228
+    },
+    {
+      "kept": 13.4977,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.1991,
+      "keptEnd": 14,
+      "upkeep": 269.9540000000113,
+      "death": null,
+      "answered": 0.9903884661593912
+    },
+    {
+      "kept": 13.2402,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.8254,
+      "keptEnd": 14,
+      "upkeep": 264.80400000000475,
+      "death": null,
+      "answered": 0.992092092092092
+    },
+    {
+      "kept": 13.2308,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.9458,
+      "keptEnd": 14,
+      "upkeep": 264.6159999999945,
+      "death": null,
+      "answered": 0.9903903903903903
+    },
+    {
+      "kept": 12.7299,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.0592,
+      "keptEnd": 12,
+      "upkeep": 254.59800000002357,
+      "death": null,
+      "answered": 0.9914897877452944
+    },
+    {
+      "kept": 13.1591,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 15.0831,
+      "keptEnd": 13,
+      "upkeep": 263.18199999999354,
+      "death": null,
+      "answered": 0.9896876251501802
+    },
+    {
+      "kept": 13.284,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.8971,
+      "keptEnd": 14,
+      "upkeep": 265.68000000000285,
+      "death": null,
+      "answered": 0.9912799438709031
+    }
+  ],
+  "heldout L2+PER1": [
+    {
+      "kept": 2.4008,
+      "blocked": 12,
+      "lost": 14,
+      "meanCount": 2.9944,
+      "keptEnd": 1,
+      "upkeep": 48.015999999999856,
+      "death": 2288,
+      "answered": 0.9425444596443229
+    },
+    {
+      "kept": 5.4981,
+      "blocked": 111,
+      "lost": 29,
+      "meanCount": 7.7741,
+      "keptEnd": 1,
+      "upkeep": 109.96199999999897,
+      "death": 6329,
+      "answered": 0.9736274672416653
+    },
+    {
+      "kept": 9.5729,
+      "blocked": 351,
+      "lost": 29,
+      "meanCount": 12.9808,
+      "keptEnd": 7,
+      "upkeep": 191.45800000001267,
+      "death": null,
+      "answered": 0.990268143700176
+    },
+    {
+      "kept": 7.1514,
+      "blocked": 41,
+      "lost": 31,
+      "meanCount": 9.9263,
+      "keptEnd": 1,
+      "upkeep": 143.02799999999604,
+      "death": 7899,
+      "answered": 0.9828057835091832
+    },
+    {
+      "kept": 9.2595,
+      "blocked": 354,
+      "lost": 25,
+      "meanCount": 12.4039,
+      "keptEnd": 6,
+      "upkeep": 185.19000000001324,
+      "death": null,
+      "answered": 0.9779585951179318
+    },
+    {
+      "kept": 1.6613,
+      "blocked": 10,
+      "lost": 13,
+      "meanCount": 2.2891,
+      "keptEnd": 1,
+      "upkeep": 33.225999999999274,
+      "death": 1769,
+      "answered": 0.9436201780415431
+    },
+    {
+      "kept": 2.5427,
+      "blocked": 18,
+      "lost": 19,
+      "meanCount": 3.3151,
+      "keptEnd": 1,
+      "upkeep": 50.85400000000015,
+      "death": 2673,
+      "answered": 0.961003861003861
+    },
+    {
+      "kept": 2.2249,
+      "blocked": 38,
+      "lost": 18,
+      "meanCount": 3.0087,
+      "keptEnd": 1,
+      "upkeep": 44.49800000000132,
+      "death": 2477,
+      "answered": 0.9623041084286319
+    },
+    {
+      "kept": 8.9901,
+      "blocked": 1016,
+      "lost": 38,
+      "meanCount": 11.8784,
+      "keptEnd": 7,
+      "upkeep": 179.80199999999616,
+      "death": null,
+      "answered": 0.9843376114857516
+    },
+    {
+      "kept": 9.6271,
+      "blocked": 43,
+      "lost": 19,
+      "meanCount": 13.205,
+      "keptEnd": 10,
+      "upkeep": 192.54200000001038,
+      "death": null,
+      "answered": 0.9881961259079903
+    }
+  ],
+  "heldout bin3": [
+    {
+      "kept": 11.917,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8119,
+      "keptEnd": 12,
+      "upkeep": 238.34000000001518,
+      "death": null,
+      "answered": 0.9953944733680417
+    },
+    {
+      "kept": 11.8463,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8498,
+      "keptEnd": 12,
+      "upkeep": 236.92600000000803,
+      "death": null,
+      "answered": 0.9950941129355226
+    },
+    {
+      "kept": 11.7593,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8943,
+      "keptEnd": 12,
+      "upkeep": 235.18600000001518,
+      "death": null,
+      "answered": 0.9950955860274247
+    },
+    {
+      "kept": 11.7412,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8023,
+      "keptEnd": 13,
+      "upkeep": 234.82400000001704,
+      "death": null,
+      "answered": 0.9951719975859988
+    },
+    {
+      "kept": 11.7087,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.93,
+      "keptEnd": 12,
+      "upkeep": 234.1740000000077,
+      "death": null,
+      "answered": 0.9948938726471767
+    },
+    {
+      "kept": 11.8208,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8523,
+      "keptEnd": 12,
+      "upkeep": 236.41600000000747,
+      "death": null,
+      "answered": 0.994994994994995
+    },
+    {
+      "kept": 11.7988,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8722,
+      "keptEnd": 12,
+      "upkeep": 235.97600000000676,
+      "death": null,
+      "answered": 0.9952952952952953
+    },
+    {
+      "kept": 11.9494,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.7762,
+      "keptEnd": 13,
+      "upkeep": 238.98800000002,
+      "death": null,
+      "answered": 0.9951942330796957
+    },
+    {
+      "kept": 11.8185,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.8188,
+      "keptEnd": 12,
+      "upkeep": 236.37000000000717,
+      "death": null,
+      "answered": 0.9949939927913496
+    },
+    {
+      "kept": 11.891,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.7582,
+      "keptEnd": 12,
+      "upkeep": 237.82000000001463,
+      "death": null,
+      "answered": 0.9949884734890247
+    }
+  ],
+  "seasons bin3": [
+    {
+      "kept": 11.9029,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.6893,
+      "keptEnd": 12,
+      "upkeep": 238.05800000000926,
+      "death": null,
+      "answered": 0.9952943532238686
+    },
+    {
+      "kept": 11.8169,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.7087,
+      "keptEnd": 12,
+      "upkeep": 236.338000000007,
+      "death": null,
+      "answered": 0.9952943532238686
+    },
+    {
+      "kept": 11.8869,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.6344,
+      "keptEnd": 12,
+      "upkeep": 237.73800000001083,
+      "death": null,
+      "answered": 0.9950955860274247
+    },
+    {
+      "kept": 11.8692,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.5698,
+      "keptEnd": 12,
+      "upkeep": 237.3840000000131,
+      "death": null,
+      "answered": 0.9952725809696238
+    },
+    {
+      "kept": 11.9731,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.6313,
+      "keptEnd": 12,
+      "upkeep": 239.4620000000204,
+      "death": null,
+      "answered": 0.9952943532238686
+    },
+    {
+      "kept": 11.8582,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.6732,
+      "keptEnd": 12,
+      "upkeep": 237.16400000000831,
+      "death": null,
+      "answered": 0.994994994994995
+    },
+    {
+      "kept": 11.7669,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.7201,
+      "keptEnd": 12,
+      "upkeep": 235.3380000000102,
+      "death": null,
+      "answered": 0.9951951951951952
+    },
+    {
+      "kept": 11.8142,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.6894,
+      "keptEnd": 12,
+      "upkeep": 236.2840000000136,
+      "death": null,
+      "answered": 0.9949939927913496
+    },
+    {
+      "kept": 12.2884,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.4753,
+      "keptEnd": 12,
+      "upkeep": 245.76800000001487,
+      "death": null,
+      "answered": 0.9950941129355226
+    },
+    {
+      "kept": 11.7528,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 14.6857,
+      "keptEnd": 12,
+      "upkeep": 235.05600000000723,
+      "death": null,
+      "answered": 0.9952891650796832
+    }
+  ],
+  "seasons GREEDY": [
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 21.1918,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    }
+  ],
+  "heldout GREEDY": [
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1775,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1756,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1362,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1298,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1343,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.133,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1674,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1715,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1593,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "kept": 4.0,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 19.1551,
+      "keptEnd": null,
+      "upkeep": 79.99999999999918,
+      "death": null,
+      "answered": 1.0
+    }
+  ],
+  "heldout L2": [
+    {
+      "kept": 13.7154,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.3908,
+      "keptEnd": 14,
+      "upkeep": 274.30800000001346,
+      "death": null,
+      "answered": 0.9897877452943532
+    },
+    {
+      "kept": 12.4039,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.0656,
+      "keptEnd": 12,
+      "upkeep": 248.07800000000634,
+      "death": null,
+      "answered": 0.9888866639967961
+    },
+    {
+      "kept": 13.1995,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.4712,
+      "keptEnd": 14,
+      "upkeep": 263.99000000001394,
+      "death": null,
+      "answered": 0.9905915323791412
+    },
+    {
+      "kept": 11.9734,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.3371,
+      "keptEnd": 11,
+      "upkeep": 239.4680000000027,
+      "death": null,
+      "answered": 0.988030577348622
+    },
+    {
+      "kept": 12.5591,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.203,
+      "keptEnd": 11,
+      "upkeep": 251.18200000000735,
+      "death": null,
+      "answered": 0.9881858229875851
+    },
+    {
+      "kept": 13.1722,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.2209,
+      "keptEnd": 13,
+      "upkeep": 263.4440000000113,
+      "death": null,
+      "answered": 0.9885885885885886
+    },
+    {
+      "kept": 13.3988,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.4434,
+      "keptEnd": 13,
+      "upkeep": 267.97600000000637,
+      "death": null,
+      "answered": 0.9891891891891892
+    },
+    {
+      "kept": 12.744,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.2868,
+      "keptEnd": 13,
+      "upkeep": 254.8800000000113,
+      "death": null,
+      "answered": 0.9895875050060072
+    },
+    {
+      "kept": 13.0129,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.0253,
+      "keptEnd": 13,
+      "upkeep": 260.25800000002823,
+      "death": null,
+      "answered": 0.9889867841409692
+    },
+    {
+      "kept": 12.352,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.2104,
+      "keptEnd": 12,
+      "upkeep": 247.0399999999965,
+      "death": null,
+      "answered": 0.9877718753132204
+    }
+  ],
+  "random bin3": [
+    {
+      "kept": 5.219,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 5.584,
+      "keptEnd": 12,
+      "upkeep": 104.37999999999971,
+      "death": 4591,
+      "answered": 0.997379340467351
+    },
+    {
+      "kept": 3.6899,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 4.1713,
+      "keptEnd": 12,
+      "upkeep": 73.79800000000095,
+      "death": 3236,
+      "answered": 0.9959677419354839
+    },
+    {
+      "kept": 7.9457,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 7.7166,
+      "keptEnd": 12,
+      "upkeep": 158.91400000000434,
+      "death": 6771,
+      "answered": 0.9977817213842058
+    },
+    {
+      "kept": 12.1447,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 12.6464,
+      "keptEnd": 13,
+      "upkeep": 242.89400000003823,
+      "death": null,
+      "answered": 0.9989851836817536
+    },
+    {
+      "kept": 6.3372,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 7.1078,
+      "keptEnd": 12,
+      "upkeep": 126.74400000000543,
+      "death": 5687,
+      "answered": 0.9971806167400881
+    },
+    {
+      "kept": 11.0486,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 11.2282,
+      "keptEnd": 12,
+      "upkeep": 220.9720000000035,
+      "death": 9474,
+      "answered": 0.9978867286559594
+    },
+    {
+      "kept": 2.0606,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 2.5918,
+      "keptEnd": 12,
+      "upkeep": 41.21199999999873,
+      "death": 1911,
+      "answered": 0.9947396107311941
+    },
+    {
+      "kept": 3.7693,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 4.4063,
+      "keptEnd": 12,
+      "upkeep": 75.38600000000167,
+      "death": 3278,
+      "answered": 0.9966319657072872
+    },
+    {
+      "kept": 5.1293,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 5.1132,
+      "keptEnd": 12,
+      "upkeep": 102.58600000000295,
+      "death": 4401,
+      "answered": 0.9972658920027341
+    },
+    {
+      "kept": 11.4409,
+      "blocked": 0,
+      "lost": 0,
+      "meanCount": 13.1416,
+      "keptEnd": 12,
+      "upkeep": 228.81800000001235,
+      "death": null,
+      "answered": 0.9981958504560489
+    }
+  ],
+  "seasons bin3+PER1": [
+    {
+      "kept": 3.3548,
+      "blocked": 6,
+      "lost": 13,
+      "meanCount": 4.9015,
+      "keptEnd": 1,
+      "upkeep": 67.09600000000229,
+      "death": 3311,
+      "answered": 0.9740625
+    },
+    {
+      "kept": 10.2395,
+      "blocked": 12,
+      "lost": 23,
+      "meanCount": 15.4775,
+      "keptEnd": 10,
+      "upkeep": 204.78999999998925,
+      "death": null,
+      "answered": 0.9952943532238686
+    },
+    {
+      "kept": 4.0857,
+      "blocked": 8,
+      "lost": 15,
+      "meanCount": 6.2329,
+      "keptEnd": 1,
+      "upkeep": 81.71400000000136,
+      "death": 4159,
+      "answered": 0.978585657370518
+    },
+    {
+      "kept": 4.0212,
+      "blocked": 68,
+      "lost": 15,
+      "meanCount": 5.9657,
+      "keptEnd": 1,
+      "upkeep": 80.42400000000693,
+      "death": 4065,
+      "answered": 0.9775193798449613
+    },
+    {
+      "kept": 2.889,
+      "blocked": 5,
+      "lost": 12,
+      "meanCount": 4.3437,
+      "keptEnd": 1,
+      "upkeep": 57.78000000000218,
+      "death": 2896,
+      "answered": 0.9696861626248217
+    },
+    {
+      "kept": 9.4649,
+      "blocked": 29,
+      "lost": 23,
+      "meanCount": 14.534,
+      "keptEnd": 9,
+      "upkeep": 189.2980000000004,
+      "death": null,
+      "answered": 0.994328922495274
+    },
+    {
+      "kept": 6.6668,
+      "blocked": 14,
+      "lost": 18,
+      "meanCount": 10.247,
+      "keptEnd": 1,
+      "upkeep": 133.3359999999988,
+      "death": 6784,
+      "answered": 0.981203007518797
+    },
+    {
+      "kept": 5.7188,
+      "blocked": 14,
+      "lost": 20,
+      "meanCount": 8.3672,
+      "keptEnd": 1,
+      "upkeep": 114.37600000000575,
+      "death": 5633,
+      "answered": 0.9804241435562806
+    },
+    {
+      "kept": 6.137,
+      "blocked": 886,
+      "lost": 24,
+      "meanCount": 8.8277,
+      "keptEnd": 1,
+      "upkeep": 122.74000000000977,
+      "death": 6549,
+      "answered": 0.9546218487394958
+    },
+    {
+      "kept": 10.0541,
+      "blocked": 18,
+      "lost": 18,
+      "meanCount": 15.454,
+      "keptEnd": 10,
+      "upkeep": 201.08200000000153,
+      "death": null,
+      "answered": 0.9956766539312286
+    }
+  ],
+  "heldout bin3+PER1": [
+    {
+      "kept": 9.9932,
+      "blocked": 3,
+      "lost": 35,
+      "meanCount": 12.7407,
+      "keptEnd": 8,
+      "upkeep": 199.86399999999753,
+      "death": null,
+      "answered": 0.9953944733680417
+    },
+    {
+      "kept": 9.9135,
+      "blocked": 1,
+      "lost": 34,
+      "meanCount": 12.7991,
+      "keptEnd": 10,
+      "upkeep": 198.27000000000194,
+      "death": null,
+      "answered": 0.9950941129355226
+    },
+    {
+      "kept": 9.8232,
+      "blocked": 1,
+      "lost": 34,
+      "meanCount": 12.8371,
+      "keptEnd": 10,
+      "upkeep": 196.46399999999807,
+      "death": null,
+      "answered": 0.9950955860274247
+    },
+    {
+      "kept": 9.8418,
+      "blocked": 2,
+      "lost": 31,
+      "meanCount": 12.7229,
+      "keptEnd": 10,
+      "upkeep": 196.8360000000069,
+      "death": null,
+      "answered": 0.9951719975859988
+    },
+    {
+      "kept": 9.7602,
+      "blocked": 1,
+      "lost": 35,
+      "meanCount": 12.8929,
+      "keptEnd": 12,
+      "upkeep": 195.20400000000828,
+      "death": null,
+      "answered": 0.9948938726471767
+    },
+    {
+      "kept": 9.9076,
+      "blocked": 1,
+      "lost": 32,
+      "meanCount": 12.8048,
+      "keptEnd": 12,
+      "upkeep": 198.15200000000814,
+      "death": null,
+      "answered": 0.994994994994995
+    },
+    {
+      "kept": 9.7812,
+      "blocked": 1,
+      "lost": 35,
+      "meanCount": 12.8762,
+      "keptEnd": 11,
+      "upkeep": 195.62400000000588,
+      "death": null,
+      "answered": 0.9952952952952953
+    },
+    {
+      "kept": 9.938,
+      "blocked": 1,
+      "lost": 36,
+      "meanCount": 12.7601,
+      "keptEnd": 9,
+      "upkeep": 198.75999999999962,
+      "death": null,
+      "answered": 0.9952943532238686
+    },
+    {
+      "kept": 9.995,
+      "blocked": 1,
+      "lost": 34,
+      "meanCount": 12.6848,
+      "keptEnd": 8,
+      "upkeep": 199.8999999999993,
+      "death": null,
+      "answered": 0.9949939927913496
+    },
+    {
+      "kept": 10.0393,
+      "blocked": 0,
+      "lost": 33,
+      "meanCount": 12.6737,
+      "keptEnd": 9,
+      "upkeep": 200.78600000000293,
+      "death": null,
+      "answered": 0.9949884734890247
+    }
+  ]
+}

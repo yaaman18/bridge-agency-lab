@@ -1,0 +1,430 @@
+{
+  "B": [
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.0741239130434783,
+      "meanCount": 17.0686,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07747173913043483,
+      "meanCount": 17.8558,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07377826086956527,
+      "meanCount": 17.0446,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07963043478260876,
+      "meanCount": 18.3908,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08090000000000004,
+      "meanCount": 18.6352,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07724130434782615,
+      "meanCount": 17.8501,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07650217391304354,
+      "meanCount": 17.6955,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07382173913043484,
+      "meanCount": 17.0302,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07707391304347833,
+      "meanCount": 17.7439,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07969130434782615,
+      "meanCount": 18.4002,
+      "death": null
+    }
+  ],
+  "A": [
+    {
+      "alive_steps": 4525,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.07139865771812084,
+      "block_total_death": 1.0,
+      "harvest_last300": 16.1,
+      "kept_last200": 13.665,
+      "upkeep_last300": 8.068,
+      "meanCount": 4.9257,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 4525,
+      "block_total_before": 7.0
+    },
+    {
+      "alive_steps": 3272,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.08114077669902917,
+      "block_total_death": 1.0,
+      "harvest_last300": 15.04,
+      "kept_last200": 12.0,
+      "upkeep_last300": 7.2,
+      "meanCount": 4.3294,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 3272,
+      "block_total_before": 8.0
+    },
+    {
+      "alive_steps": 6741,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.07706783369803065,
+      "block_total_death": 1.0,
+      "harvest_last300": 16.4,
+      "kept_last200": 15.0,
+      "upkeep_last300": 9.0,
+      "meanCount": 7.7028,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 6741,
+      "block_total_before": 4.0
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.07963043478260876,
+      "meanCount": 11.7919,
+      "death": null
+    },
+    {
+      "alive_steps": 4589,
+      "actcost_last300": 1.192,
+      "harvest_per_step_after800": 0.08000527843758248,
+      "block_total_death": 2.0,
+      "harvest_last300": 12.580000000000002,
+      "kept_last200": 15.0,
+      "upkeep_last300": 9.0,
+      "meanCount": 5.5547,
+      "world_at_death": [
+        1.0,
+        1.0
+      ],
+      "death": 4589,
+      "block_total_before": 4.0
+    },
+    {
+      "alive_steps": 4223,
+      "actcost_last300": 1.184,
+      "harvest_per_step_after800": 0.08028045574057845,
+      "block_total_death": 2.0,
+      "harvest_last300": 12.099999999999994,
+      "kept_last200": 14.0,
+      "upkeep_last300": 8.4,
+      "meanCount": 5.2203,
+      "world_at_death": [
+        0.0,
+        2.0
+      ],
+      "death": 4223,
+      "block_total_before": 2.0
+    },
+    {
+      "alive_steps": 1852,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.06815589353612175,
+      "block_total_death": 1.0,
+      "harvest_last300": 15.859999999999998,
+      "kept_last200": 13.315,
+      "upkeep_last300": 8.126,
+      "meanCount": 2.1945,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 1852,
+      "block_total_before": 7.0
+    },
+    {
+      "alive_steps": 3251,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.07033863729090171,
+      "block_total_death": 1.0,
+      "harvest_last300": 15.979999999999995,
+      "kept_last200": 13.335,
+      "upkeep_last300": 8.134,
+      "meanCount": 3.5789,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 3251,
+      "block_total_before": 5.0
+    },
+    {
+      "alive_steps": 1513,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.054081346423562465,
+      "block_total_death": 5.0,
+      "harvest_last300": 12.159999999999998,
+      "kept_last200": 14.13,
+      "upkeep_last300": 8.452,
+      "meanCount": 1.6522,
+      "world_at_death": [
+        4.0,
+        1.0
+      ],
+      "death": 1513,
+      "block_total_before": 2.0
+    },
+    {
+      "alive_steps": 8821,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.07832439845405809,
+      "block_total_death": 2.0,
+      "harvest_last300": 13.639999999999993,
+      "kept_last200": 14.0,
+      "upkeep_last300": 8.4,
+      "meanCount": 10.4283,
+      "world_at_death": [
+        2.0,
+        0.0
+      ],
+      "death": 8821,
+      "block_total_before": 3.0
+    }
+  ],
+  "C": [
+    {
+      "alive_steps": 4572,
+      "actcost_last300": 1.196,
+      "harvest_per_step_after800": 0.08280487804878042,
+      "block_total_death": 1.0,
+      "harvest_last300": 17.339999999999996,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 6.2104,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 4572,
+      "block_total_before": 7.0
+    },
+    {
+      "alive_steps": 3283,
+      "actcost_last300": 0.86,
+      "harvest_per_step_after800": 0.09005235602094244,
+      "block_total_death": 1.0,
+      "harvest_last300": 16.399999999999995,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 5.0314,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 3283,
+      "block_total_before": 8.0
+    },
+    {
+      "alive_steps": 6750,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.08452100840336135,
+      "block_total_death": 1.0,
+      "harvest_last300": 15.099999999999998,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 9.2096,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 6750,
+      "block_total_before": 4.0
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.0896152173913044,
+      "meanCount": 14.5308,
+      "death": null
+    },
+    {
+      "alive_steps": 5681,
+      "actcost_last300": 0.864,
+      "harvest_per_step_after800": 0.08550297070272489,
+      "block_total_death": 1.0,
+      "harvest_last300": 16.499999999999996,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 7.9477,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 5681,
+      "block_total_before": 5.0
+    },
+    {
+      "alive_steps": 4341,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.08489692177351031,
+      "block_total_death": 2.0,
+      "harvest_last300": 11.999999999999993,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 6.0969,
+      "world_at_death": [
+        0.0,
+        2.0
+      ],
+      "death": 4341,
+      "block_total_before": 2.0
+    },
+    {
+      "alive_steps": 1881,
+      "actcost_last300": 0.864,
+      "harvest_per_step_after800": 0.07729879740980578,
+      "block_total_death": 1.0,
+      "harvest_last300": 16.559999999999995,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 2.6727,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 1881,
+      "block_total_before": 7.0
+    },
+    {
+      "alive_steps": 3272,
+      "actcost_last300": 0.88,
+      "harvest_per_step_after800": 0.08105177993527511,
+      "block_total_death": 1.0,
+      "harvest_last300": 17.239999999999995,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 4.4882,
+      "world_at_death": [
+        0.0,
+        1.0
+      ],
+      "death": 3272,
+      "block_total_before": 5.0
+    },
+    {
+      "alive_steps": 4395,
+      "actcost_last300": 1.2,
+      "harvest_per_step_after800": 0.08590264255910986,
+      "block_total_death": 1.0,
+      "harvest_last300": 15.479999999999997,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 6.2485,
+      "world_at_death": [
+        1.0,
+        0.0
+      ],
+      "death": 4395,
+      "block_total_before": 5.0
+    },
+    {
+      "alive_steps": 8891,
+      "actcost_last300": 1.188,
+      "harvest_per_step_after800": 0.08371523915461622,
+      "block_total_death": 2.0,
+      "harvest_last300": 12.219999999999994,
+      "kept_last200": 4.0,
+      "upkeep_last300": 7.8,
+      "meanCount": 11.8778,
+      "world_at_death": [
+        2.0,
+        0.0
+      ],
+      "death": 8891,
+      "block_total_before": 3.0
+    }
+  ],
+  "D": [
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08300000000000006,
+      "meanCount": 17.3736,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08450434782608701,
+      "meanCount": 17.7588,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08038913043478264,
+      "meanCount": 16.8421,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.0896152173913044,
+      "meanCount": 18.9272,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08700217391304353,
+      "meanCount": 18.2643,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08506739130434789,
+      "meanCount": 17.9227,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08310434782608701,
+      "meanCount": 17.4612,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08188695652173919,
+      "meanCount": 17.1193,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08931304347826095,
+      "meanCount": 18.7685,
+      "death": null
+    },
+    {
+      "alive_steps": 10000,
+      "harvest_per_step_after800": 0.08561086956521743,
+      "meanCount": 17.987,
+      "death": null
+    }
+  ]
+}

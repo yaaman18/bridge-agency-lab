@@ -1,0 +1,1 @@
+60f9d43bdee13a539f78ccacefe738c444723a40cb00ae7c56590b82ce86c7a5  predictions-l2sweep-refine.md  (frozen 2026-11-03 before the refinement runs of item 86)

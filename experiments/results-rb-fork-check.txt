@@ -1,0 +1,32 @@
+GATE ok  rule rb
+GATE ok  H 392, L 160
+GATE ok  seeds
+GATE ok  arm swap
+GATE ok  combinations (seed x schedule, each once)
+GATE ok  branches present
+GATE ok  A1/A2 on the main runs (dead set <=> no body site before a live update; the last site removed -> dead at the next update; a dead update: no act, no circuit update, q only by B7, sg and lastM kept, no unit on, never undead)
+GATE ok  A1/A2 on every branch, actual and m* silenced
+GATE ok  A3 present for every combination with an eligible point
+GATE ok  B7 flag unit tests (built q: decay update, other update; wrong: no decay, decay off period, below zero, extra)
+GATE ok  A3 negative tests ((a) all sites emptied -> dead, (b) one site below THETA_EXIST with no free matter -> removed by the world, dead at the next update, (c) a copy known alive -> alive and equal to the run; after the death in (b), 16 dead updates pass A1/A2 (n_dead 16) with B7 exercised twice; the checker catches a corrupted dead update: clock, q, act, undead)
+GATE ok  A4 the protocol's survives agrees with ours (not dead at H and a non-sensor unit on in each step of the alive window)
+GATE freeze sha ok  predictions-rb-fork.md
+GATE freeze sha ok  ../discussion/specs/S43-rb-fork.md
+GATE freeze sha ok  fork.jl
+GATE freeze sha ok  check_rb_fork.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+GATE freeze sha ok  ../core/matter.jl
+branches 480 (excluded or dead at t+1: 0), main set (t+L<=H, rest15) 230: ["death" => 40, "release" => 190]
+FK1 NM equal to the actual branch before m*'s first act: 的中 (0 diverged)
+FK2 H-fork (T_NM vs k_idle_due) matches the outcome: 的中 (0 mismatches)
+FK3 Q_t orders T_NM, discordant pairs <= 10%: 外れ (4379/25770 = 0.17)
+FK4 no (Q_t, k_idle_due) group with different outcomes: 的中 (0 of 37 groups with >= 2 branches; 87 groups in all)
+  T_NM: ["dead" => 230]; NM at the due (win, act) Pair{Union{Nothing, Tuple{String, String}}, Int64}[("m1", "none") => 90, ("m2", "none") => 100, nothing => 40]
+  deaths (dead_A, k_idle_due, Q_t, sites_t, minB_t) [(91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (84, 96, 3.554, 5, 0.449), (95, 101, 5.3, 13, 0.311), (91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (84, 96, 3.548, 5, 0.449), (95, 101, 5.3, 13, 0.311), (92, 97, 5.202, 13, 0.297), (59, 59, 3.419, 9, 0.211), (84, 96, 3.536, 5, 0.448), (99, 101, 5.417, 13, 0.292), (91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (84, 96, 3.554, 5, 0.449), (95, 101, 5.3, 13, 0.311), (91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (83, 96, 3.523, 5, 0.447), (95, 101, 5.3, 13, 0.311), (94, 97, 5.294, 13, 0.307), (59, 59, 3.419, 9, 0.211), (83, 96, 3.523, 5, 0.447), (95, 101, 5.3, 13, 0.311), (92, 97, 5.262, 13, 0.313), (59, 59, 3.419, 9, 0.211), (84, 96, 3.554, 5, 0.449), (96, 101, 5.342, 13, 0.312), (95, 97, 5.329, 13, 0.304), (59, 59, 3.419, 9, 0.211), (84, 96, 3.536, 5, 0.448), (95, 101, 5.265, 13, 0.255), (91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (83, 96, 3.523, 5, 0.447), (95, 101, 5.3, 13, 0.311), (91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (84, 96, 3.548, 5, 0.449), (95, 101, 5.3, 13, 0.311)]
+  releases: T_NM - k_idle_due [11 => 10, 16 => 5, 17 => 1, 20 => 2, 21 => 7, 25 => 1, 26 => 5, 27 => 15, 28 => 2, 29 => 6, 30 => 6, 31 => 2, 35 => 1, 36 => 8, 37 => 7, 38 => 2, 4 => 8, 41 => 2, 42 => 2, 44 => 8, 46 => 7, 47 => 1, 5 => 1, 52 => 1, 58 => 9, 6 => 1, 61 => 1, 62 => 1, 64 => 2, 65 => 5, 67 => 16, 69 => 1, 72 => 1, 73 => 2, 76 => 1, 77 => 8, 79 => 1, 80 => 7, 81 => 1, 83 => 7, 86 => 1, 87 => 13, 89 => 2]
+  the other motor in NM (acts, answered, offered intake) [(0, 0) => 71, (1, 0) => 159]
+  A4 by combination (protocol survives, ours dead at H, ours window) Tuple{Int64, String, Bool, Bool, Bool}[(501, "p1-high", 1, 0, 1), (501, "p2-high", 1, 0, 1), (501, "p1-then-p2", 1, 0, 1), (501, "p2-then-p1", 1, 0, 1), (502, "p1-high", 1, 0, 1), (502, "p2-high", 1, 0, 1), (502, "p1-then-p2", 1, 0, 1), (502, "p2-then-p1", 1, 0, 1), (503, "p1-high", 1, 0, 1), (503, "p2-high", 1, 0, 1), (503, "p1-then-p2", 1, 0, 1), (503, "p2-then-p1", 1, 0, 1), (504, "p1-high", 1, 0, 1), (504, "p2-high", 1, 0, 1), (504, "p1-then-p2", 1, 0, 1), (504, "p2-then-p1", 1, 0, 1), (505, "p1-high", 1, 0, 1), (505, "p2-high", 1, 0, 1), (505, "p1-then-p2", 1, 0, 1), (505, "p2-then-p1", 1, 0, 1), (506, "p1-high", 1, 0, 1), (506, "p2-high", 1, 0, 1), (506, "p1-then-p2", 1, 0, 1), (506, "p2-then-p1", 1, 0, 1), (507, "p1-high", 1, 0, 1), (507, "p2-high", 1, 0, 1), (507, "p1-then-p2", 1, 0, 1), (507, "p2-then-p1", 1, 0, 1), (508, "p1-high", 1, 0, 1), (508, "p2-high", 1, 0, 1), (508, "p1-then-p2", 1, 0, 1), (508, "p2-then-p1", 1, 0, 1), (509, "p1-high", 1, 0, 1), (509, "p2-high", 1, 0, 1), (509, "p1-then-p2", 1, 0, 1), (509, "p2-then-p1", 1, 0, 1), (510, "p1-high", 1, 0, 1), (510, "p2-high", 1, 0, 1), (510, "p1-then-p2", 1, 0, 1), (510, "p2-then-p1", 1, 0, 1)]
+  A3 not verified (no eligible point): Tuple{Any, Any, Any}[]
+  regrowth after death (sites reappearing) main 0, branches 0
+  by seed (release, death, lock) [(501, 19, 4, 0), (502, 19, 4, 0), (503, 19, 4, 0), (504, 19, 4, 0), (505, 19, 4, 0), (506, 19, 4, 0), (507, 19, 4, 0), (508, 19, 4, 0), (509, 19, 4, 0), (510, 19, 4, 0)]

@@ -1,0 +1,9 @@
+# S34 freeze (2026-11-08, before the first run on claim seeds 421-430; the seed-1 smoke tests ran before this freeze and are not verifications)
+5471b178ff4cc56a9523b6d825dd9d9db4941b4f6c2c08cb9e958257c81a32d2  predictions-rest2.md
+dc8c62783c74e3d99bd2a87a3ecdb507398d29501a91e7bdf301b773d0068851  ../discussion/specs/S34-body-rest2.md
+aad15aad0150e39836a0f58a2d6a40d46f4d3024312eff3cd79fc2d874d8254f  rest2.jl
+e5fbfd0de79388c382ade69e9c6e3760b1b9ffdb7a21370b279511015b4c5da7  check_rest2.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+05eb8b60c1640f87fe65172f5630945166bc1760a782a66a14e298b16af946a0  ../core/dc.jl
+a2efebb9db2f2074520505403006bb49c65f3d583a8002b69e85a59f31c765ea  ../formal/LabCircuit.lean

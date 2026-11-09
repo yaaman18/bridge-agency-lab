@@ -1,0 +1,7 @@
+# S40 freeze (2026-11-09, predictions r2, before the first run on claim seeds 471-480; codex I-R accepted at [AUTO 4/10])
+73fc1cbfe1c4ebc60588ca18e416a1cc5d0200d29728b75406a5fc3f5f2bfbc9  predictions-rb-restmech.md
+a2012fe7369ca70e3ce9e6e0054e1b2c9600e2425b2ce849e1b0d6ebeb99bef4  ../discussion/specs/S40-rb-restmech.md
+3ad6891bc0bd5619fc8d562242b8f6c18b8a641f3504a4163d875c8442abab02  restmech.jl
+097bee87120a403f4057432a5e6321fbfd358d4ab7c7570b9556848d39843a29  check_rb_restmech.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

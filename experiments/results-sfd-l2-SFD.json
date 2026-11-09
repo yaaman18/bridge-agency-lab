@@ -1,0 +1,4546 @@
+{
+  "spec": "discussion/specs/S25-body-sfd.md r1",
+  "horizons": [
+    60,
+    294,
+    392,
+    588
+  ],
+  "cond": "SFD",
+  "seeds": [
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310
+  ],
+  "runs": [
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "std",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "std",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": false,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 60,
+      "value_needed": false
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 294,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 392,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 291,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 292,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 293,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 294,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 295,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 296,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 297,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 298,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r2",
+        "r7",
+        "r8"
+      ],
+      "seed": 299,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 300,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 301,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 302,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 303,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 304,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 305,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 306,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 307,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 308,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r2",
+        "r8"
+      ],
+      "seed": 309,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "constituents",
+      "arm": "swap",
+      "self_producing_L3": true,
+      "H": 588,
+      "value_needed": true
+    },
+    {
+      "agency_L2": true,
+      "alive_somewhere": true,
+      "value_tracking": [
+        "r1",
+        "r7"
+      ],
+      "seed": 310,
+      "structure": "q",
+      "arm": "swap",
+      "self_producing_L3": false,
+      "H": 588,
+      "value_needed": true
+    }
+  ]
+}

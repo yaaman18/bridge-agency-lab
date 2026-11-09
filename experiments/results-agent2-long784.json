@@ -1,0 +1,1855 @@
+{
+  "spec": "discussion/specs/S17-body-agent2.md r1",
+  "objects": [
+    {
+      "raised_hash": "05fcedebf69524a86976b8ffae4918bad13552b3582b181947a5762503296e73",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 1,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 241,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "6048180eca4ad2f35a8b774982b5115f7c9b98a260df2f2e1e9f98c3d786e299",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 2,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 241,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "fe0e72e76aa96df59bba3a786ec67f8d19fcc43d0e034bce00696e23d009b62b",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 3,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 242,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "d645dc790482e657e877783fae9746685bea080f821f088ac042e861aedc3bf3",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 4,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 242,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "188e2bd3c95dbb16a0715529d6fb7dbec106a2762967d444a247bb7c9ca948bc",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 5,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 243,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "aec7020c928aa88b77bbafec4950cdb25e3a11dbdac6fc07ffbc798d35631bf5",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 6,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 243,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "091716be2b8e8ff3d4df4575a5a3f1231c84c58664fb8d34e215cbf7e69ac178",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 7,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 244,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "e259ff7cefa4d77908b2b1517363282cc196a175a362e5171191b75019aa762d",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 8,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 244,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "616f94a411ab28af57d63f497a3e6da91863c3aa66770ec878a4927a03475fce",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 9,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 245,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "921906ff8ed15849caa245a324a9fe69bda39830dc12eba22598158095e0533d",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 10,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 245,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "7f29a15cfa5ddc9b7ae57d947e292b912f87ceb2e2f5126e8ee9f0f914fb5213",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 11,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 246,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "2602a3c0a1aff282e2ba4e5344e657d5e8a23b44f6320b075eeaa5fe38954482",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 12,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 246,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "8ee691a4642f5a1351d289f67695efcda0725276437d957e0cff30c05c17c9ec",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 13,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 247,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "4a837706e00e5590e014375b0935cef589be54613e67b4bc1257aad3df6f46fb",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 14,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 247,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "289890882a8ae8f76ebec6d0a7b084c77d36f39ea23118514e5c8a81d20af613",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 15,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 248,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "raised_hash": "cef5ed15c65bda5e7bdfdc8f0f1a439c2d75160a6f7f7576936d32fdd1e115f0",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 16,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 248,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "601951358bba7ab6d2cba3cf6f8595e4f864075c2255a5dd042d47171162ee44",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 17,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 249,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          false
+        ]
+      ]
+    },
+    {
+      "raised_hash": "738aee384eb1ad117a78d83a2e173998f9aacb69f6f3b08d54b2ee59d9156412",
+      "provenance_same": true,
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 18,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 249,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "60d6371908200bb4b25e57fa322ba59cff2784452d8b2a497112f2e8734c2c81",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 19,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 250,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "std",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "raised_hash": "71ca5b2749ecfd7898b6a2cc81df8e7658634ae0b81aa489c08ff567bebed8ca",
+      "provenance_same": true,
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "choice_B2": [
+        "m2"
+      ],
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "builds": true,
+      "trajectory_matches_tab": true,
+      "choice_B1": [
+        "m1"
+      ],
+      "lean_index": 20,
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "seed": 250,
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "arm": "swap",
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    }
+  ],
+  "seeds": [
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250
+  ],
+  "rule": "sf",
+  "H": 784,
+  "agents_built_in_julia": 20
+}

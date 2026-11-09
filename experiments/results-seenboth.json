@@ -1,0 +1,349 @@
+{
+  "base bin3 seed8": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 25,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed2": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "base bin3 seed6": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 28,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed9": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "base bin3 seed2": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 25,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed1": {
+    "conf_m2": [],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed5": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "extra bin3 seed3": {
+    "conf_m2": [],
+    "grew_while_undefined": 119,
+    "conf_m1": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ]
+  },
+  "extra bin3 seed1": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 112,
+    "conf_m1": []
+  },
+  "base bin3 seed7": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 29,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base bin3 seed10": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 24,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed8": {
+    "conf_m2": [],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "extra bin3 seed9": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 109,
+    "conf_m1": []
+  },
+  "extra bin3 seed8": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 109,
+    "conf_m1": []
+  },
+  "extra seenboth seed2": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "extra bin3 seed4": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 111,
+    "conf_m1": []
+  },
+  "extra seenboth seed4": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "extra seenboth seed5": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "extra bin3 seed5": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 107,
+    "conf_m1": []
+  },
+  "base bin3 seed5": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 26,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "extra seenboth seed3": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "extra seenboth seed8": {
+    "conf_m2": [],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r9(y1>=1)"
+    ]
+  },
+  "extra seenboth seed7": {
+    "conf_m2": [],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r9(y1>=1)"
+    ]
+  },
+  "extra seenboth seed10": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "extra bin3 seed2": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 110,
+    "conf_m1": []
+  },
+  "extra bin3 seed6": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 113,
+    "conf_m1": []
+  },
+  "extra seenboth seed9": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "base seenboth seed4": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "extra bin3 seed10": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 105,
+    "conf_m1": []
+  },
+  "extra seenboth seed1": {
+    "conf_m2": [],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r9(y1>=1)"
+    ]
+  },
+  "base bin3 seed9": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 25,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base bin3 seed4": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 24,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed6": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r5(noise)",
+      "r7(y1>y2)"
+    ]
+  },
+  "extra seenboth seed6": {
+    "conf_m2": [
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "base bin3 seed3": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 24,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed3": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "base seenboth seed7": {
+    "conf_m2": [],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  },
+  "base bin3 seed1": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 24,
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "extra bin3 seed7": {
+    "conf_m2": [
+      "r9(y1>=1)",
+      "r10(y2>=1)"
+    ],
+    "grew_while_undefined": 115,
+    "conf_m1": []
+  },
+  "base seenboth seed10": {
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "grew_while_undefined": 0,
+    "conf_m1": []
+  }
+}

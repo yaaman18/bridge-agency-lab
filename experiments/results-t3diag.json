@@ -1,0 +1,363 @@
+{
+  "spec": "notes/T3.md T3-d, predictions-t3diag.md",
+  "rows": [
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 311,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 2,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 311,
+      "N_q_undef": 2,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": [
+        "r2->m2 (cOff undef)",
+        "r8->m2 (cOff undef)"
+      ]
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 312,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 2,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 312,
+      "N_q_undef": 2,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": [
+        "r2->m2 (cOff undef)",
+        "r8->m2 (cOff undef)"
+      ]
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 313,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 313,
+      "N_q_undef": 0,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 314,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 2,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 314,
+      "N_q_undef": 2,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": [
+        "r2->m2 (cOff undef)",
+        "r8->m2 (cOff undef)"
+      ]
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 315,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 2,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 315,
+      "N_q_undef": 2,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": [
+        "r2->m2 (cOff undef)",
+        "r8->m2 (cOff undef)"
+      ]
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 316,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 2,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 316,
+      "N_q_undef": 2,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": [
+        "r2->m2 (cOff undef)",
+        "r8->m2 (cOff undef)"
+      ]
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 317,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 317,
+      "N_q_undef": 0,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 318,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 2,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 318,
+      "N_q_undef": 2,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": [
+        "r2->m2 (cOff undef)",
+        "r8->m2 (cOff undef)"
+      ]
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 319,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 319,
+      "N_q_undef": 0,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 320,
+      "N_q_undef": 0,
+      "arm": "std",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    },
+    {
+      "q_edges": [
+        "r1->m1",
+        "r7->m1",
+        "r2->m2",
+        "r8->m2"
+      ],
+      "cOff_only": 0,
+      "N_all": 16,
+      "N_q": 4,
+      "seed": 320,
+      "N_q_undef": 0,
+      "arm": "swap",
+      "cOn_only": 0,
+      "both": 0,
+      "q_undef_edges": []
+    }
+  ]
+}

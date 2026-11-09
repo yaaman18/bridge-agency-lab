@@ -1,0 +1,866 @@
+{
+  "seasons NONE": [
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    }
+  ],
+  "heldout NONE": [
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    }
+  ],
+  "random L2": [
+    {
+      "richer": 0.013953488372093023,
+      "nActs": 451,
+      "meanCount": 0.8014,
+      "death": 760,
+      "answered": 0.9889135254988913
+    },
+    {
+      "richer": 0.05754124116260801,
+      "nActs": 7911,
+      "meanCount": 13.5135,
+      "death": null,
+      "answered": 0.9973454683352294
+    },
+    {
+      "richer": 0.4402035623409669,
+      "nActs": 9960,
+      "meanCount": 17.7131,
+      "death": null,
+      "answered": 0.9971887550200803
+    },
+    {
+      "richer": 0.2667540247098465,
+      "nActs": 10000,
+      "meanCount": 17.9192,
+      "death": null,
+      "answered": 0.9979
+    },
+    {
+      "richer": 0.06534859521331945,
+      "nActs": 7207,
+      "meanCount": 11.504,
+      "death": null,
+      "answered": 0.9947273484112669
+    },
+    {
+      "richer": 0.2747952684258417,
+      "nActs": 10000,
+      "meanCount": 16.9343,
+      "death": null,
+      "answered": 0.9977
+    },
+    {
+      "richer": 0.04987237384645592,
+      "nActs": 7903,
+      "meanCount": 13.1617,
+      "death": null,
+      "answered": 0.9977223839048462
+    },
+    {
+      "richer": 0.022520661157024793,
+      "nActs": 7467,
+      "meanCount": 12.4369,
+      "death": null,
+      "answered": 0.9961162448104995
+    },
+    {
+      "richer": 0.056910569105691054,
+      "nActs": 7584,
+      "meanCount": 13.4843,
+      "death": null,
+      "answered": 0.9968354430379747
+    },
+    {
+      "richer": 0.11923786109403811,
+      "nActs": 3737,
+      "meanCount": 6.5868,
+      "death": 5341,
+      "answered": 0.9954508964409955
+    }
+  ],
+  "random stage42": [
+    {
+      "richer": 0.0,
+      "nActs": 10000,
+      "meanCount": 14.0404,
+      "death": null,
+      "answered": 0.9992
+    },
+    {
+      "richer": 0.0001666944490748458,
+      "nActs": 10000,
+      "meanCount": 13.9442,
+      "death": null,
+      "answered": 0.9962
+    },
+    {
+      "richer": 0.00041747843028110213,
+      "nActs": 10000,
+      "meanCount": 13.2161,
+      "death": null,
+      "answered": 0.9958
+    },
+    {
+      "richer": 0.00014925373134328358,
+      "nActs": 10000,
+      "meanCount": 14.0297,
+      "death": null,
+      "answered": 0.9977
+    },
+    {
+      "richer": 0.0009777901941611957,
+      "nActs": 10000,
+      "meanCount": 13.8209,
+      "death": null,
+      "answered": 0.9971
+    },
+    {
+      "richer": 0.0002858776443682104,
+      "nActs": 10000,
+      "meanCount": 13.3834,
+      "death": null,
+      "answered": 0.9966
+    },
+    {
+      "richer": 0.00026698705112802027,
+      "nActs": 10000,
+      "meanCount": 11.5208,
+      "death": null,
+      "answered": 0.997
+    },
+    {
+      "richer": 0.0013190436933223414,
+      "nActs": 10000,
+      "meanCount": 13.8026,
+      "death": null,
+      "answered": 0.9951
+    },
+    {
+      "richer": 0.00027770063871146905,
+      "nActs": 10000,
+      "meanCount": 14.2574,
+      "death": null,
+      "answered": 0.9987
+    },
+    {
+      "richer": 0.0014785608674223755,
+      "nActs": 10000,
+      "meanCount": 15.4795,
+      "death": null,
+      "answered": 0.9966
+    }
+  ],
+  "random GREEDY": [
+    {
+      "richer": 1.0,
+      "nActs": 9712,
+      "meanCount": 19.3082,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9635,
+      "meanCount": 19.5426,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9636,
+      "meanCount": 18.7426,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9642,
+      "meanCount": 20.5401,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9716,
+      "meanCount": 19.725,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9565,
+      "meanCount": 19.2599,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9633,
+      "meanCount": 18.9726,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9572,
+      "meanCount": 19.0669,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.0263,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9499,
+      "meanCount": 19.9264,
+      "death": null,
+      "answered": 1.0
+    }
+  ],
+  "random NONE": [
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    },
+    {
+      "richer": null,
+      "nActs": 0,
+      "meanCount": 0.1011,
+      "death": 196,
+      "answered": 0.0
+    }
+  ],
+  "seasons L2": [
+    {
+      "richer": 0.013468013468013467,
+      "nActs": 307,
+      "meanCount": 0.5178,
+      "death": 526,
+      "answered": 0.9837133550488599
+    },
+    {
+      "richer": 0.1885245901639344,
+      "nActs": 6137,
+      "meanCount": 12.6962,
+      "death": null,
+      "answered": 0.9916897506925207
+    },
+    {
+      "richer": 0.06501880709296078,
+      "nActs": 10000,
+      "meanCount": 21.2854,
+      "death": null,
+      "answered": 0.9946
+    },
+    {
+      "richer": 0.09244186046511628,
+      "nActs": 10000,
+      "meanCount": 21.4579,
+      "death": null,
+      "answered": 0.9946
+    },
+    {
+      "richer": 0.18792401628222524,
+      "nActs": 6139,
+      "meanCount": 12.7046,
+      "death": null,
+      "answered": 0.9916924580550578
+    },
+    {
+      "richer": 0.25777202072538863,
+      "nActs": 6610,
+      "meanCount": 14.8528,
+      "death": 6964,
+      "answered": 0.9947049924357034
+    },
+    {
+      "richer": 0.007741027445460943,
+      "nActs": 7798,
+      "meanCount": 15.0985,
+      "death": null,
+      "answered": 0.9943575275711721
+    },
+    {
+      "richer": 0.007768361581920904,
+      "nActs": 7786,
+      "meanCount": 15.0707,
+      "death": null,
+      "answered": 0.9935782173131261
+    },
+    {
+      "richer": 0.01639344262295082,
+      "nActs": 493,
+      "meanCount": 1.0844,
+      "death": 877,
+      "answered": 0.9918864097363083
+    },
+    {
+      "richer": 0.19274680993955676,
+      "nActs": 6169,
+      "meanCount": 12.765,
+      "death": null,
+      "answered": 0.9918949586642892
+    }
+  ],
+  "seasons GREEDY": [
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 23.0732,
+      "death": null,
+      "answered": 1.0
+    }
+  ],
+  "seasons stage42": [
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9474,
+      "death": null,
+      "answered": 0.9885
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9257,
+      "death": null,
+      "answered": 0.9877
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9119,
+      "death": null,
+      "answered": 0.987
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9175,
+      "death": null,
+      "answered": 0.987
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9191,
+      "death": null,
+      "answered": 0.9878
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9528,
+      "death": null,
+      "answered": 0.9884
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9252,
+      "death": null,
+      "answered": 0.9873
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9496,
+      "death": null,
+      "answered": 0.9884
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9748,
+      "death": null,
+      "answered": 0.9891
+    },
+    {
+      "richer": 0.006382978723404255,
+      "nActs": 10000,
+      "meanCount": 19.9427,
+      "death": null,
+      "answered": 0.9891
+    }
+  ],
+  "heldout stage42": [
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.1948,
+      "death": null,
+      "answered": 0.9886
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.1972,
+      "death": null,
+      "answered": 0.99
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2177,
+      "death": null,
+      "answered": 0.9892
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2335,
+      "death": null,
+      "answered": 0.9897
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2237,
+      "death": null,
+      "answered": 0.9894
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2263,
+      "death": null,
+      "answered": 0.9904
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2069,
+      "death": null,
+      "answered": 0.9896
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2108,
+      "death": null,
+      "answered": 0.9885
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2464,
+      "death": null,
+      "answered": 0.9908
+    },
+    {
+      "richer": 0.00020048115477145148,
+      "nActs": 10000,
+      "meanCount": 17.2123,
+      "death": null,
+      "answered": 0.987
+    }
+  ],
+  "heldout GREEDY": [
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    },
+    {
+      "richer": 1.0,
+      "nActs": 9999,
+      "meanCount": 20.8971,
+      "death": null,
+      "answered": 1.0
+    }
+  ],
+  "heldout L2": [
+    {
+      "richer": 0.027646771832818346,
+      "nActs": 7314,
+      "meanCount": 11.8494,
+      "death": null,
+      "answered": 0.9922067268252666
+    },
+    {
+      "richer": 0.010167130919220056,
+      "nActs": 8135,
+      "meanCount": 14.1048,
+      "death": null,
+      "answered": 0.9944683466502766
+    },
+    {
+      "richer": 0.017606837606837608,
+      "nActs": 9030,
+      "meanCount": 15.7634,
+      "death": null,
+      "answered": 0.9929125138427464
+    },
+    {
+      "richer": 0.020822665983956306,
+      "nActs": 9071,
+      "meanCount": 15.8836,
+      "death": null,
+      "answered": 0.993385514276265
+    },
+    {
+      "richer": 0.010312151616499442,
+      "nActs": 8115,
+      "meanCount": 14.0577,
+      "death": null,
+      "answered": 0.9944547134935305
+    },
+    {
+      "richer": 0.038236767406912675,
+      "nActs": 9059,
+      "meanCount": 15.8205,
+      "death": null,
+      "answered": 0.9932663649409427
+    },
+    {
+      "richer": 0.04094333442515558,
+      "nActs": 7421,
+      "meanCount": 12.2769,
+      "death": null,
+      "answered": 0.9938013744778331
+    },
+    {
+      "richer": 0.0323746918652424,
+      "nActs": 7342,
+      "meanCount": 12.0573,
+      "death": null,
+      "answered": 0.9935984745301008
+    },
+    {
+      "richer": 0.010018088214832336,
+      "nActs": 8080,
+      "meanCount": 13.9717,
+      "death": null,
+      "answered": 0.994430693069307
+    },
+    {
+      "richer": 0.009760178471834913,
+      "nActs": 8146,
+      "meanCount": 14.1353,
+      "death": null,
+      "answered": 0.9945985759882151
+    }
+  ]
+}

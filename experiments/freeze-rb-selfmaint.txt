@@ -1,0 +1,11 @@
+# S37 freeze (2026-11-09, before the first run on claim seeds 441-450; codex I-R 4 rounds accepted)
+16aad5d3a7fbe8e3ac1fa974d481663720ef6a11cec45600808c7805bbce70fe  predictions-rb-selfmaint.md
+42f95b5553e5d6678cfbba3d3947618460e81c54df01cd8f1fc1bec6124ddc71  ../discussion/specs/S37-rb-selfmaint.md
+df0b15deee2b6a83c7d69a56f764d5071f3d244634c096f19a882fa7c40997b0  selfmaint.jl
+35f327418bf471e2457339b1d2011260963e14a3fc40c0ddd6d67864bc6ac82a  check_rb_selfmaint.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+05eb8b60c1640f87fe65172f5630945166bc1760a782a66a14e298b16af946a0  ../core/dc.jl
+9836d8627212bad99bc8f30ee2cfb533b044d0dc0115bc538bd251dccfa37897  dc_lean_body.sh
+fd40717258d52eba8cc7a7933013521c66ac75ccfdf92700b2985565dc651e3d  ../formal/LabCircuit.lean
+5e08541d0771bde4ce9982f3db2544000f9414bad7d23bd0dfa5b823ec0de622  ../formal/SelfMaintenance.lean

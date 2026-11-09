@@ -1,0 +1,7 @@
+# S31 freeze (2026-11-08, before the first run on claim seeds 381-400)
+f4dd343ff3611174e8cfe35c43055b9cfe54dd6ae4f66a74a51227b53930984f  predictions-blunt.md
+8c26a2ee4cb7a554b089a70c54d058b4119267de9a7b4e49b9298341c696c6cf  ../discussion/specs/S31-body-blunt.md
+cba22b47469ace34464f6aac1436cc281f3bebd15dd416fc9892edd8cc30df48  blunt.jl
+f0c30deaf4fce266540a5e9a5422762e35bee5e251a437333e0da3dcac072f46  check_blunt.jl
+0643b216528f54a7524b964cc4e3e6ff550133098265cf8274f840d394ffbcd5  variant_horizon.jl
+a0723fb347f8b5a53cf4d13864cc11260d29a1aa56edd3e9ec6f63426dad3aee  ../core/circuit.jl

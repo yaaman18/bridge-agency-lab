@@ -1,0 +1,7 @@
+# S42 freeze (2026-11-09, codex I-R 3 accept). Before the first run on seeds 491-500.
+4694fc09f67cbfb539bc39459a722dbf2ef1b70bd08e78e508f1afacf4da461c predictions-rb-lockin.md
+afaa0a99467a817fafd1fdf26e774cfbd54a0547df462dd151efaf4470d8c854 ../discussion/specs/S42-rb-lockin.md
+143e9cc96e6b26679b9271545c376623217e624e81d375b9b3870678afe25bf2 lockin.jl
+dda4d42679a36e2abc5b8ef8105892580c8099b3fed9082c94e77354b4d6c440 check_rb_lockin.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111 variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473 ../core/circuit.jl

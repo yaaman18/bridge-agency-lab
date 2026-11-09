@@ -1,0 +1,41 @@
+GATE freeze sha ok  predictions-rb-selfmaint.md
+GATE freeze sha ok  ../discussion/specs/S37-rb-selfmaint.md
+GATE freeze sha ok  selfmaint.jl
+GATE freeze sha ok  check_rb_selfmaint.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+GATE freeze sha ok  ../core/dc.jl
+GATE freeze sha ok  dc_lean_body.sh
+GATE freeze sha ok  ../formal/LabCircuit.lean
+GATE freeze sha ok  ../formal/SelfMaintenance.lean
+GATE Lean checkDC identical to Julia (formal/gen/lean-output-body.txt)
+branch points 560 in 80 runs (:std 80, :swap 480)
+RP1 no confirmation in X: 的中 (X confirmations 0)
+RP2 original kappa never empty in X: 的中 (0 points with it empty)
+RP3 original (a) fails everywhere: 的中 (a: [("fails", 560)], T holds 0)
+RP4 b1p holds everywhere, LSH2 map unbroken on kappa_prec: 的中 (b1p: [("holds", 560)], q increases 0)
+RP5 X dies by t+H: 的中 (0 X branches alive)
+RP6 Y dies no earlier than X: 的中 (Y earlier 0, both alive (undetermined) 0, Y later 0, same 560)
+RP7 :std all die before H, b2 fails: 的中 (:std runs dead 40/40, deaths [78], b2 fails 80/80)
+RP8 :swap a_prec >= 50% and T_prec in every run alive at H: 的中 (a_prec 0.958, runs alive 40/40, with T_prec 40)
+RP9 T_prec_core = T_prec: 的中 (points where they differ: Tuple{Any, Any, Any}[])
+  std a: [("fails", 80)]
+  std a_prec: [("fails", 80)]
+  std b1: [("holds", 40), ("undetermined", 40)]
+  std b1p: [("holds", 80)]
+  std b2: [("fails", 80)]
+  std b3: [("fails", 80)]
+  std T: [("fails", 80)]
+  std T_prec: [("fails", 80)]
+  std T_prec_core: [("fails", 80)]
+  swap a: [("fails", 480)]
+  swap a_prec: [("fails", 20), ("holds", 460)]
+  swap b1: [("undetermined", 480)]
+  swap b1p: [("holds", 480)]
+  swap b2: [("holds", 480)]
+  swap b3: [("holds", 480)]
+  swap T: [("fails", 480)]
+  swap T_prec: [("fails", 20), ("holds", 460)]
+  swap T_prec_core: [("fails", 20), ("holds", 460)]
+  std acts per living update Dict("none" => 0, "patch" => 140, "m0" => 2980)  m0 acts in X 2400 in Y 0
+  swap acts per living update Dict("none" => 0, "patch" => 11389, "m0" => 4291)  m0 acts in X 12943 in Y 0

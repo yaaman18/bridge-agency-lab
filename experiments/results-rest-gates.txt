@@ -1,0 +1,11 @@
+# S33 gates G0/G1 on the frozen versions (2026-11-08, after the run; sha of freeze-rest.txt all OK)
+G1 sh formal/check.sh rc=0, sorry 0
+'BridgeLab.Rest.admits_same' depends on axioms: [propext]
+'BridgeLab.Rest.admits_off' depends on axioms: [propext]
+'BridgeLab.Rest.rest_no_offer' depends on axioms: [propext]
+'BridgeLab.Rest.rest_edges_zero' depends on axioms: [propext]
+G0 sh core/check/run.sh rc=0
+all 1 identical
+app/index.html embeds the WebAssembly module built from rust/ exactly
+results-body-org.json reproduced exactly (10 seeds x 4 conditions x 10000 steps; keys added since stage 42: blocked, kept, keptEnd, lost, meanLate, upkeep)
+G0 S32 records (seeds 401, 402) rebuilt with the new code: trials and raising bit-identical (2026-11-08, before the freeze)

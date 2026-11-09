@@ -1,0 +1,50 @@
+GATE freeze sha ok  predictions-rb-tiesource.md
+GATE freeze sha ok  ../discussion/specs/S38-rb-tiesource.md
+GATE freeze sha ok  tiesource_rb.jl
+GATE freeze sha ok  check_rb_tiesource.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+TR1 J3, J4 = J0: 的中
+TR2 normal J0 no patch act and m0 at every step: 的中 (no patch act alone: true)
+TR3 J1256 no patch act: 的中
+TR4 rb_false J56 patch at k>=3 only: 的中
+  std  normal   J0    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J3    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J4    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J5    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J6    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J12   acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J56   acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J125  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J126  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  normal   J1256 acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J0    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J3    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J4    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J5    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J6    acts m0 253 patch 297 none 0  patch by probe [1,1:0 2,2:0 3,3:99 4,4:99 5,5:99]  rb on 0
+  std  rb_false J12   acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J56   acts m0 220 patch 330 none 0  patch by probe [1,1:0 2,2:0 3,3:110 4,4:110 5,5:110]  rb on 0
+  std  rb_false J125  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J126  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  std  rb_false J1256 acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J0    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J3    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J4    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J5    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J6    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J12   acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J56   acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J125  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J126  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap normal   J1256 acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J0    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J3    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J4    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J5    acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J6    acts m0 253 patch 297 none 0  patch by probe [1,1:0 2,2:0 3,3:99 4,4:99 5,5:99]  rb on 0
+  swap rb_false J12   acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J56   acts m0 220 patch 330 none 0  patch by probe [1,1:0 2,2:0 3,3:110 4,4:110 5,5:110]  rb on 0
+  swap rb_false J125  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J126  acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0
+  swap rb_false J1256 acts m0 550 patch 0 none 0  patch by probe [1,1:0 2,2:0 3,3:0 4,4:0 5,5:0]  rb on 0

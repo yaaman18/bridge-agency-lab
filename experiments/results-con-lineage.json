@@ -1,0 +1,47 @@
+[
+  {
+    "deaths": 1279,
+    "end_constituents": 101,
+    "steps": 3000,
+    "unexplained_0to1": 0,
+    "born_counter": 1371,
+    "reoccupied_same_step": 490,
+    "births": 1371,
+    "bad_parent": 0,
+    "world": 1,
+    "bad_neighbour": 0,
+    "reservoir": 2000.0,
+    "died_counter": 1279,
+    "live_sites_with_ended_node": 0
+  },
+  {
+    "deaths": 1279,
+    "end_constituents": 101,
+    "steps": 3000,
+    "unexplained_0to1": 0,
+    "born_counter": 1371,
+    "reoccupied_same_step": 490,
+    "births": 1371,
+    "bad_parent": 0,
+    "world": 2,
+    "bad_neighbour": 0,
+    "reservoir": 300.0,
+    "died_counter": 1279,
+    "live_sites_with_ended_node": 0
+  },
+  {
+    "deaths": 2436,
+    "end_constituents": 102,
+    "steps": 6000,
+    "unexplained_0to1": 0,
+    "born_counter": 2529,
+    "reoccupied_same_step": 958,
+    "births": 2529,
+    "bad_parent": 0,
+    "world": 3,
+    "bad_neighbour": 0,
+    "reservoir": 2000.0,
+    "died_counter": 2436,
+    "live_sites_with_ended_node": 0
+  }
+]

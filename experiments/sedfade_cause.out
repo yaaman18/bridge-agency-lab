@@ -1,0 +1,6 @@
+control override identity: true
+seed=111 swap p2-high     targets 11 N sgkept 0 F sgkept 11 (2.5 s)
+seed=115 swap p2-high     targets 11 N sgkept 0 F sgkept 11 (1.1 s)
+seed=130 swap p2-high     targets 11 N sgkept 0 F sgkept 11 (1.1 s)
+written /Users/yamaguchimitsuyuki/bridge-agency-lab/experiments/results-sedfade-cause.json  targets 33
+done-sfc

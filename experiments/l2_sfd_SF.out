@@ -1,0 +1,9 @@
+SF std H=60 L2 true 0/40
+SF std H=294 L2 true 40/40
+SF std H=392 L2 true 40/40
+SF std H=588 L2 true 40/40
+SF swap H=60 L2 true 0/40
+SF swap H=294 L2 true 40/40
+SF swap H=392 L2 true 40/40
+SF swap H=588 L2 true 40/40
+written

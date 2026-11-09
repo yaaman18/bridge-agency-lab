@@ -1,0 +1,4 @@
+seasons  survived 8/10  deaths [1386, 2266]  body mean 12.4  kept/step 7.5
+heldout  survived 10/10  deaths Any[]  body mean 11.9  kept/step 9.3
+random   survived 3/10  deaths [5015, 2557, 2165, 4957, 8756, 1101, 2569]  body mean 6.7  kept/step 5.4
+written

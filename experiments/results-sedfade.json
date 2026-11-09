@@ -1,0 +1,986 @@
+{
+  "random L2": [
+    {
+      "keptAlive": 13.072751677852349,
+      "sedOnlyR": 5.147651006711409,
+      "lost": 0,
+      "meanCount": 4.9257,
+      "upkeep": 114.98599999999796,
+      "death": 4525
+    },
+    {
+      "keptAlive": 12.716423948220065,
+      "sedOnlyR": 5.149676375404531,
+      "lost": 0,
+      "meanCount": 4.3294,
+      "upkeep": 81.12600000000177,
+      "death": 3272
+    },
+    {
+      "keptAlive": 13.875105201144589,
+      "sedOnlyR": 5.759131459350278,
+      "lost": 0,
+      "meanCount": 7.7028,
+      "upkeep": 182.3880000000083,
+      "death": 6741
+    },
+    {
+      "keptAlive": 13.796630434782609,
+      "sedOnlyR": 5.844347826086956,
+      "lost": 0,
+      "meanCount": 11.7919,
+      "upkeep": 269.4699999999906,
+      "death": null
+    },
+    {
+      "keptAlive": 14.385325943520717,
+      "sedOnlyR": 7.316178411190288,
+      "lost": 0,
+      "meanCount": 5.5547,
+      "upkeep": 126.56200000000021,
+      "death": 4589
+    },
+    {
+      "keptAlive": 14.007303534910896,
+      "sedOnlyR": 6.595384165936313,
+      "lost": 0,
+      "meanCount": 5.2203,
+      "upkeep": 113.53600000000793,
+      "death": 4223
+    },
+    {
+      "keptAlive": 13.826996197718632,
+      "sedOnlyR": 5.937262357414449,
+      "lost": 0,
+      "meanCount": 2.1945,
+      "upkeep": 46.68999999999914,
+      "death": 1852
+    },
+    {
+      "keptAlive": 13.516931864545084,
+      "sedOnlyR": 5.888208894328845,
+      "lost": 0,
+      "meanCount": 3.5789,
+      "upkeep": 83.8540000000024,
+      "death": 3251
+    },
+    {
+      "keptAlive": 13.718092566619916,
+      "sedOnlyR": 6.5049088359046285,
+      "lost": 0,
+      "meanCount": 1.6522,
+      "upkeep": 37.107999999999116,
+      "death": 1513
+    },
+    {
+      "keptAlive": 13.434733823712754,
+      "sedOnlyR": 5.992768981423763,
+      "lost": 0,
+      "meanCount": 10.4283,
+      "upkeep": 232.1879999999838,
+      "death": 8821
+    }
+  ],
+  "random L2+fade+PER1": [
+    {
+      "keptAlive": 8.166883963494133,
+      "sedOnlyR": 0.9504563233376793,
+      "lost": 10,
+      "meanCount": 2.0361,
+      "upkeep": 27.215999999999728,
+      "death": 1567
+    },
+    {
+      "keptAlive": 7.349605168700646,
+      "sedOnlyR": 0.8312993539124193,
+      "lost": 12,
+      "meanCount": 2.4774,
+      "upkeep": 35.54599999999953,
+      "death": 2193
+    },
+    {
+      "keptAlive": 7.6534795042898,
+      "sedOnlyR": 0.6401334604385128,
+      "lost": 16,
+      "meanCount": 3.4555,
+      "upkeep": 46.581999999999866,
+      "death": 2898
+    },
+    {
+      "keptAlive": 7.472101841820152,
+      "sedOnlyR": 0.5387323943661971,
+      "lost": 20,
+      "meanCount": 5.1041,
+      "upkeep": 68.29200000000212,
+      "death": 4492
+    },
+    {
+      "keptAlive": 7.420597322348095,
+      "sedOnlyR": 0.7112255406797117,
+      "lost": 21,
+      "meanCount": 5.6388,
+      "upkeep": 86.9060000000033,
+      "death": 5655
+    },
+    {
+      "keptAlive": 8.464738292011019,
+      "sedOnlyR": 1.002754820936639,
+      "lost": 21,
+      "meanCount": 5.4897,
+      "upkeep": 76.39800000000162,
+      "death": 4430
+    },
+    {
+      "keptAlive": 7.7749077490774905,
+      "sedOnlyR": 1.2361623616236161,
+      "lost": 11,
+      "meanCount": 2.3148,
+      "upkeep": 31.743999999999556,
+      "death": 1884
+    },
+    {
+      "keptAlive": 6.607947562474395,
+      "sedOnlyR": 0.36993035641130684,
+      "lost": 13,
+      "meanCount": 2.9996,
+      "upkeep": 47.12799999999976,
+      "death": 3241
+    },
+    {
+      "keptAlive": 7.565637065637065,
+      "sedOnlyR": 0.7476558190843905,
+      "lost": 25,
+      "meanCount": 4.7306,
+      "upkeep": 69.71400000000153,
+      "death": 4426
+    },
+    {
+      "keptAlive": 6.881484286255207,
+      "sedOnlyR": 0.5316168118137069,
+      "lost": 19,
+      "meanCount": 3.8392,
+      "upkeep": 50.34800000000143,
+      "death": 3441
+    }
+  ],
+  "heldout L2+fade+PER1": [
+    {
+      "keptAlive": 7.790334855403349,
+      "sedOnlyR": 0.802130898021309,
+      "lost": 20,
+      "meanCount": 3.9108,
+      "upkeep": 55.63400000000224,
+      "death": 3428
+    },
+    {
+      "keptAlive": 8.401348808030113,
+      "sedOnlyR": 0.8549247176913425,
+      "lost": 20,
+      "meanCount": 8.9846,
+      "upkeep": 122.20399999999908,
+      "death": 7176
+    },
+    {
+      "keptAlive": 7.0947845804988665,
+      "sedOnlyR": 0.5151927437641723,
+      "lost": 20,
+      "meanCount": 3.2309,
+      "upkeep": 45.75599999999946,
+      "death": 3005
+    },
+    {
+      "keptAlive": 7.10482180293501,
+      "sedOnlyR": 0.5710691823899371,
+      "lost": 18,
+      "meanCount": 3.6431,
+      "upkeep": 47.007999999998965,
+      "death": 3185
+    },
+    {
+      "keptAlive": 7.549328089151098,
+      "sedOnlyR": 0.7561455260570304,
+      "lost": 24,
+      "meanCount": 4.3244,
+      "upkeep": 60.918000000001165,
+      "death": 3851
+    },
+    {
+      "keptAlive": 8.666666666666666,
+      "sedOnlyR": 1.1040414161656646,
+      "lost": 15,
+      "meanCount": 9.2109,
+      "upkeep": 118.73600000000317,
+      "death": 6788
+    },
+    {
+      "keptAlive": 6.948431685273791,
+      "sedOnlyR": 0.6507177033492823,
+      "lost": 19,
+      "meanCount": 2.7726,
+      "upkeep": 41.02800000000054,
+      "death": 2681
+    },
+    {
+      "keptAlive": 7.953586956521739,
+      "sedOnlyR": 1.137391304347826,
+      "lost": 25,
+      "meanCount": 12.0142,
+      "upkeep": 161.21400000000781,
+      "death": null
+    },
+    {
+      "keptAlive": 8.011427911808843,
+      "sedOnlyR": 0.8648274269883413,
+      "lost": 27,
+      "meanCount": 11.2026,
+      "upkeep": 153.65400000001262,
+      "death": 9463
+    },
+    {
+      "keptAlive": 6.8105112620665,
+      "sedOnlyR": 0.5534501251340722,
+      "lost": 37,
+      "meanCount": 6.3237,
+      "upkeep": 90.19600000000243,
+      "death": 6394
+    }
+  ],
+  "seasons L2+PER1": [
+    {
+      "keptAlive": 9.885434782608696,
+      "sedOnlyR": 2.4179347826086954,
+      "lost": 31,
+      "meanCount": 14.1247,
+      "upkeep": 199.36200000000306,
+      "death": null
+    },
+    {
+      "keptAlive": 10.41815167840862,
+      "sedOnlyR": 3.177786987152922,
+      "lost": 17,
+      "meanCount": 4.7434,
+      "upkeep": 67.16599999999941,
+      "death": 3213
+    },
+    {
+      "keptAlive": 9.252717391304348,
+      "sedOnlyR": 1.9933695652173913,
+      "lost": 11,
+      "meanCount": 16.5941,
+      "upkeep": 187.22000000001984,
+      "death": null
+    },
+    {
+      "keptAlive": 9.794785534062237,
+      "sedOnlyR": 2.9823380992430613,
+      "lost": 12,
+      "meanCount": 2.7285,
+      "upkeep": 38.90400000000044,
+      "death": 1989
+    },
+    {
+      "keptAlive": 9.979294478527608,
+      "sedOnlyR": 2.7845092024539877,
+      "lost": 12,
+      "meanCount": 2.8811,
+      "upkeep": 43.50000000000053,
+      "death": 2104
+    },
+    {
+      "keptAlive": 10.056521739130435,
+      "sedOnlyR": 2.191521739130435,
+      "lost": 20,
+      "meanCount": 15.3345,
+      "upkeep": 201.98200000000404,
+      "death": null
+    },
+    {
+      "keptAlive": 8.798024149286498,
+      "sedOnlyR": 2.5499451152579584,
+      "lost": 14,
+      "meanCount": 2.2643,
+      "upkeep": 32.835999999999,
+      "death": 1711
+    },
+    {
+      "keptAlive": 8.104712041884817,
+      "sedOnlyR": 1.4761125654450262,
+      "lost": 23,
+      "meanCount": 4.8034,
+      "upkeep": 67.02200000000148,
+      "death": 3856
+    },
+    {
+      "keptAlive": 9.386739130434783,
+      "sedOnlyR": 1.5167391304347826,
+      "lost": 22,
+      "meanCount": 15.6509,
+      "upkeep": 188.98800000000247,
+      "death": null
+    },
+    {
+      "keptAlive": 10.066956521739131,
+      "sedOnlyR": 2.0066304347826085,
+      "lost": 18,
+      "meanCount": 15.3227,
+      "upkeep": 201.81599999999952,
+      "death": null
+    }
+  ],
+  "seasons L2+fade+PER1": [
+    {
+      "keptAlive": 6.611712285168682,
+      "sedOnlyR": 0.4716740929344367,
+      "lost": 16,
+      "meanCount": 2.4307,
+      "upkeep": 35.46200000000023,
+      "death": 2371
+    },
+    {
+      "keptAlive": 7.905951840072694,
+      "sedOnlyR": 0.9422989550204453,
+      "lost": 30,
+      "meanCount": 9.9029,
+      "upkeep": 119.47600000000276,
+      "death": 7403
+    },
+    {
+      "keptAlive": 7.190631808278867,
+      "sedOnlyR": 0.7898965141612201,
+      "lost": 27,
+      "meanCount": 9.969,
+      "upkeep": 120.08400000000418,
+      "death": 8144
+    },
+    {
+      "keptAlive": 9.102257636122179,
+      "sedOnlyR": 1.2208942009738823,
+      "lost": 8,
+      "meanCount": 4.7025,
+      "upkeep": 54.24199999999958,
+      "death": 3059
+    },
+    {
+      "keptAlive": 8.505924170616113,
+      "sedOnlyR": 1.0580568720379147,
+      "lost": 6,
+      "meanCount": 6.259,
+      "upkeep": 72.28400000000103,
+      "death": 4176
+    },
+    {
+      "keptAlive": 8.454545454545455,
+      "sedOnlyR": 1.261480787253983,
+      "lost": 7,
+      "meanCount": 2.8379,
+      "upkeep": 32.98599999999964,
+      "death": 1867
+    },
+    {
+      "keptAlive": 9.776304347826088,
+      "sedOnlyR": 1.2520652173913043,
+      "lost": 0,
+      "meanCount": 17.3265,
+      "upkeep": 194.7720000000093,
+      "death": null
+    },
+    {
+      "keptAlive": 7.788043478260869,
+      "sedOnlyR": 1.2497826086956523,
+      "lost": 7,
+      "meanCount": 16.8993,
+      "upkeep": 158.1680000000006,
+      "death": null
+    },
+    {
+      "keptAlive": 8.168211920529801,
+      "sedOnlyR": 1.1033112582781457,
+      "lost": 9,
+      "meanCount": 2.0198,
+      "upkeep": 27.181999999999398,
+      "death": 1555
+    },
+    {
+      "keptAlive": 6.922013470400567,
+      "sedOnlyR": 0.5444877702942219,
+      "lost": 22,
+      "meanCount": 4.1458,
+      "upkeep": 53.05400000000188,
+      "death": 3621
+    }
+  ],
+  "random L2+fade": [
+    {
+      "keptAlive": 9.156282722513089,
+      "sedOnlyR": 1.5858638743455498,
+      "lost": 0,
+      "meanCount": 5.3115,
+      "upkeep": 84.64199999999823,
+      "death": 4620
+    },
+    {
+      "keptAlive": 9.436174469787915,
+      "sedOnlyR": 1.699079631852741,
+      "lost": 0,
+      "meanCount": 3.9071,
+      "upkeep": 62.23200000000035,
+      "death": 3299
+    },
+    {
+      "keptAlive": 9.413263584205197,
+      "sedOnlyR": 1.6619979750253122,
+      "lost": 0,
+      "meanCount": 7.594,
+      "upkeep": 126.39600000000257,
+      "death": 6726
+    },
+    {
+      "keptAlive": 9.17891304347826,
+      "sedOnlyR": 1.362282608695652,
+      "lost": 0,
+      "meanCount": 13.3098,
+      "upkeep": 182.01000000000488,
+      "death": null
+    },
+    {
+      "keptAlive": 9.47754521438732,
+      "sedOnlyR": 1.7108311318837635,
+      "lost": 0,
+      "meanCount": 6.9354,
+      "upkeep": 108.1300000000023,
+      "death": 5721
+    },
+    {
+      "keptAlive": 9.447641886490807,
+      "sedOnlyR": 1.6478245974648853,
+      "lost": 0,
+      "meanCount": 11.4561,
+      "upkeep": 180.41000000000105,
+      "death": 9557
+    },
+    {
+      "keptAlive": 9.780425531914894,
+      "sedOnlyR": 2.188936170212766,
+      "lost": 0,
+      "meanCount": 2.4146,
+      "upkeep": 37.87200000000007,
+      "death": 1975
+    },
+    {
+      "keptAlive": 9.05069860279441,
+      "sedOnlyR": 1.6363273453093812,
+      "lost": 0,
+      "meanCount": 3.85,
+      "upkeep": 60.21200000000199,
+      "death": 3305
+    },
+    {
+      "keptAlive": 9.6183879093199,
+      "sedOnlyR": 2.040302267002519,
+      "lost": 0,
+      "meanCount": 2.1214,
+      "upkeep": 30.121999999999932,
+      "death": 1594
+    },
+    {
+      "keptAlive": 8.191239975323874,
+      "sedOnlyR": 1.2233189389265886,
+      "lost": 0,
+      "meanCount": 2.9442,
+      "upkeep": 40.5559999999995,
+      "death": 2421
+    }
+  ],
+  "random L2+PER1": [
+    {
+      "keptAlive": 8.517819706498951,
+      "sedOnlyR": 1.2154088050314464,
+      "lost": 20,
+      "meanCount": 5.1966,
+      "upkeep": 82.47800000000102,
+      "death": 4616
+    },
+    {
+      "keptAlive": 8.770437654830719,
+      "sedOnlyR": 1.4822460776218003,
+      "lost": 16,
+      "meanCount": 2.3967,
+      "upkeep": 38.129999999999136,
+      "death": 2011
+    },
+    {
+      "keptAlive": 7.6341524573721165,
+      "sedOnlyR": 1.6436810431293882,
+      "lost": 39,
+      "meanCount": 9.7782,
+      "upkeep": 138.75000000000136,
+      "death": 8776
+    },
+    {
+      "keptAlive": 8.468369565217392,
+      "sedOnlyR": 1.2816304347826086,
+      "lost": 37,
+      "meanCount": 11.486,
+      "upkeep": 171.4299999999944,
+      "death": null
+    },
+    {
+      "keptAlive": 7.49595451563525,
+      "sedOnlyR": 1.273562212989285,
+      "lost": 21,
+      "meanCount": 5.1628,
+      "upkeep": 86.03200000000155,
+      "death": 5373
+    },
+    {
+      "keptAlive": 8.870423340961098,
+      "sedOnlyR": 1.6839244851258581,
+      "lost": 22,
+      "meanCount": 5.6759,
+      "upkeep": 78.96400000000084,
+      "death": 4296
+    },
+    {
+      "keptAlive": 6.511150758251561,
+      "sedOnlyR": 0.7948260481712757,
+      "lost": 20,
+      "meanCount": 1.9532,
+      "upkeep": 31.40400000000004,
+      "death": 1921
+    },
+    {
+      "keptAlive": 6.904891304347826,
+      "sedOnlyR": 0.8994565217391305,
+      "lost": 20,
+      "meanCount": 3.2078,
+      "upkeep": 53.05999999999939,
+      "death": 3376
+    },
+    {
+      "keptAlive": 7.385543478260869,
+      "sedOnlyR": 1.8042391304347827,
+      "lost": 45,
+      "meanCount": 11.0874,
+      "upkeep": 152.16600000000554,
+      "death": null
+    },
+    {
+      "keptAlive": 10.129398410896709,
+      "sedOnlyR": 2.6390465380249717,
+      "lost": 13,
+      "meanCount": 2.3953,
+      "upkeep": 34.431999999999164,
+      "death": 1681
+    }
+  ],
+  "seasons L2": [
+    {
+      "keptAlive": 13.021521739130435,
+      "sedOnlyR": 4.6839130434782605,
+      "lost": 0,
+      "meanCount": 15.3046,
+      "upkeep": 257.19000000002313,
+      "death": null
+    },
+    {
+      "keptAlive": 13.255326086956522,
+      "sedOnlyR": 4.796086956521739,
+      "lost": 0,
+      "meanCount": 15.1094,
+      "upkeep": 262.1540000000235,
+      "death": null
+    },
+    {
+      "keptAlive": 13.608478260869566,
+      "sedOnlyR": 5.463260869565217,
+      "lost": 0,
+      "meanCount": 15.0435,
+      "upkeep": 267.9199999999702,
+      "death": null
+    },
+    {
+      "keptAlive": 12.707391304347826,
+      "sedOnlyR": 4.353152173913044,
+      "lost": 0,
+      "meanCount": 15.0945,
+      "upkeep": 249.42800000002478,
+      "death": null
+    },
+    {
+      "keptAlive": 13.717608695652174,
+      "sedOnlyR": 5.0251086956521736,
+      "lost": 0,
+      "meanCount": 15.1991,
+      "upkeep": 269.9540000000113,
+      "death": null
+    },
+    {
+      "keptAlive": 13.432717391304347,
+      "sedOnlyR": 5.438152173913044,
+      "lost": 0,
+      "meanCount": 14.8254,
+      "upkeep": 264.80400000000475,
+      "death": null
+    },
+    {
+      "keptAlive": 13.424891304347826,
+      "sedOnlyR": 5.079565217391305,
+      "lost": 0,
+      "meanCount": 14.9458,
+      "upkeep": 264.6159999999945,
+      "death": null
+    },
+    {
+      "keptAlive": 12.880652173913044,
+      "sedOnlyR": 4.50445652173913,
+      "lost": 0,
+      "meanCount": 15.0592,
+      "upkeep": 254.59800000002357,
+      "death": null
+    },
+    {
+      "keptAlive": 13.349782608695651,
+      "sedOnlyR": 4.821847826086956,
+      "lost": 0,
+      "meanCount": 15.0831,
+      "upkeep": 263.18199999999354,
+      "death": null
+    },
+    {
+      "keptAlive": 13.533260869565217,
+      "sedOnlyR": 5.250326086956521,
+      "lost": 0,
+      "meanCount": 14.8971,
+      "upkeep": 265.68000000000285,
+      "death": null
+    }
+  ],
+  "heldout L2+PER1": [
+    {
+      "keptAlive": 10.264112903225806,
+      "sedOnlyR": 2.8736559139784945,
+      "lost": 14,
+      "meanCount": 2.9944,
+      "upkeep": 48.015999999999856,
+      "death": 2288
+    },
+    {
+      "keptAlive": 8.416892747332248,
+      "sedOnlyR": 1.236389943931995,
+      "lost": 29,
+      "meanCount": 7.7741,
+      "upkeep": 109.96199999999897,
+      "death": 6329
+    },
+    {
+      "keptAlive": 9.48304347826087,
+      "sedOnlyR": 1.7621739130434784,
+      "lost": 29,
+      "meanCount": 12.9808,
+      "upkeep": 191.45800000001267,
+      "death": null
+    },
+    {
+      "keptAlive": 8.974221721369206,
+      "sedOnlyR": 1.4347091139597126,
+      "lost": 31,
+      "meanCount": 9.9263,
+      "upkeep": 143.02799999999604,
+      "death": 7899
+    },
+    {
+      "keptAlive": 9.115,
+      "sedOnlyR": 1.8106521739130435,
+      "lost": 25,
+      "meanCount": 12.4039,
+      "upkeep": 185.19000000001324,
+      "death": null
+    },
+    {
+      "keptAlive": 8.402476780185758,
+      "sedOnlyR": 1.4654282765737874,
+      "lost": 13,
+      "meanCount": 2.2891,
+      "upkeep": 33.225999999999274,
+      "death": 1769
+    },
+    {
+      "keptAlive": 9.089161772557395,
+      "sedOnlyR": 1.817939135077416,
+      "lost": 19,
+      "meanCount": 3.3151,
+      "upkeep": 50.85400000000015,
+      "death": 2673
+    },
+    {
+      "keptAlive": 8.053667262969588,
+      "sedOnlyR": 0.9528920691711389,
+      "lost": 18,
+      "meanCount": 3.0087,
+      "upkeep": 44.49800000000132,
+      "death": 2477
+    },
+    {
+      "keptAlive": 8.8875,
+      "sedOnlyR": 1.3854347826086957,
+      "lost": 38,
+      "meanCount": 11.8784,
+      "upkeep": 179.80199999999616,
+      "death": null
+    },
+    {
+      "keptAlive": 9.562934782608696,
+      "sedOnlyR": 1.7234782608695651,
+      "lost": 19,
+      "meanCount": 13.205,
+      "upkeep": 192.54200000001038,
+      "death": null
+    }
+  ],
+  "seasons L2+fade": [
+    {
+      "keptAlive": 9.001739130434782,
+      "sedOnlyR": 1.3204347826086957,
+      "lost": 0,
+      "meanCount": 14.6416,
+      "upkeep": 180.3200000000006,
+      "death": null
+    },
+    {
+      "keptAlive": 9.443369565217392,
+      "sedOnlyR": 1.435108695652174,
+      "lost": 0,
+      "meanCount": 14.7769,
+      "upkeep": 188.8280000000014,
+      "death": null
+    },
+    {
+      "keptAlive": 9.685652173913043,
+      "sedOnlyR": 1.1890217391304347,
+      "lost": 0,
+      "meanCount": 17.0309,
+      "upkeep": 193.04600000001645,
+      "death": null
+    },
+    {
+      "keptAlive": 9.082173913043478,
+      "sedOnlyR": 1.1592391304347827,
+      "lost": 0,
+      "meanCount": 15.0353,
+      "upkeep": 180.2300000000133,
+      "death": null
+    },
+    {
+      "keptAlive": 8.57108695652174,
+      "sedOnlyR": 1.0541304347826086,
+      "lost": 0,
+      "meanCount": 14.4871,
+      "upkeep": 172.5600000000039,
+      "death": null
+    },
+    {
+      "keptAlive": 9.107717391304348,
+      "sedOnlyR": 1.217608695652174,
+      "lost": 0,
+      "meanCount": 14.9518,
+      "upkeep": 182.5260000000115,
+      "death": null
+    },
+    {
+      "keptAlive": 9.776304347826088,
+      "sedOnlyR": 1.2520652173913043,
+      "lost": 0,
+      "meanCount": 17.3265,
+      "upkeep": 194.7720000000093,
+      "death": null
+    },
+    {
+      "keptAlive": 9.631195652173913,
+      "sedOnlyR": 1.3160869565217392,
+      "lost": 0,
+      "meanCount": 16.3883,
+      "upkeep": 192.08200000001395,
+      "death": null
+    },
+    {
+      "keptAlive": 8.950760869565217,
+      "sedOnlyR": 1.1605434782608695,
+      "lost": 0,
+      "meanCount": 15.4704,
+      "upkeep": 179.5420000000055,
+      "death": null
+    },
+    {
+      "keptAlive": 8.750652173913043,
+      "sedOnlyR": 1.1741304347826087,
+      "lost": 0,
+      "meanCount": 13.938,
+      "upkeep": 175.01200000000568,
+      "death": null
+    }
+  ],
+  "heldout L2+fade": [
+    {
+      "keptAlive": 9.221847826086956,
+      "sedOnlyR": 1.3972826086956522,
+      "lost": 0,
+      "meanCount": 12.1877,
+      "upkeep": 184.37000000001134,
+      "death": null
+    },
+    {
+      "keptAlive": 9.343586956521738,
+      "sedOnlyR": 1.429891304347826,
+      "lost": 0,
+      "meanCount": 12.2682,
+      "upkeep": 186.99200000001088,
+      "death": null
+    },
+    {
+      "keptAlive": 9.301739130434783,
+      "sedOnlyR": 1.4040217391304348,
+      "lost": 0,
+      "meanCount": 11.9251,
+      "upkeep": 185.98200000001032,
+      "death": null
+    },
+    {
+      "keptAlive": 9.009891304347827,
+      "sedOnlyR": 1.2826086956521738,
+      "lost": 0,
+      "meanCount": 12.3714,
+      "upkeep": 178.90000000000535,
+      "death": null
+    },
+    {
+      "keptAlive": 9.166521739130435,
+      "sedOnlyR": 1.3971739130434782,
+      "lost": 0,
+      "meanCount": 11.8765,
+      "upkeep": 183.51600000000744,
+      "death": null
+    },
+    {
+      "keptAlive": 9.294239130434782,
+      "sedOnlyR": 1.4430434782608696,
+      "lost": 0,
+      "meanCount": 13.066,
+      "upkeep": 185.95800000000423,
+      "death": null
+    },
+    {
+      "keptAlive": 8.984782608695653,
+      "sedOnlyR": 1.2853260869565217,
+      "lost": 0,
+      "meanCount": 12.0372,
+      "upkeep": 180.20800000001546,
+      "death": null
+    },
+    {
+      "keptAlive": 9.110108695652174,
+      "sedOnlyR": 1.3795652173913044,
+      "lost": 0,
+      "meanCount": 12.4353,
+      "upkeep": 182.49400000000577,
+      "death": null
+    },
+    {
+      "keptAlive": 9.004565217391304,
+      "sedOnlyR": 1.2903260869565218,
+      "lost": 0,
+      "meanCount": 11.8703,
+      "upkeep": 180.5320000000138,
+      "death": null
+    },
+    {
+      "keptAlive": 8.925326086956522,
+      "sedOnlyR": 1.2277173913043478,
+      "lost": 0,
+      "meanCount": 11.9071,
+      "upkeep": 178.22600000001313,
+      "death": null
+    }
+  ],
+  "heldout L2": [
+    {
+      "keptAlive": 13.951847826086956,
+      "sedOnlyR": 5.0629347826086954,
+      "lost": 0,
+      "meanCount": 12.3908,
+      "upkeep": 274.30800000001346,
+      "death": null
+    },
+    {
+      "keptAlive": 12.490326086956522,
+      "sedOnlyR": 4.000326086956521,
+      "lost": 0,
+      "meanCount": 12.0656,
+      "upkeep": 248.07800000000634,
+      "death": null
+    },
+    {
+      "keptAlive": 13.394891304347826,
+      "sedOnlyR": 4.815108695652174,
+      "lost": 0,
+      "meanCount": 12.4712,
+      "upkeep": 263.99000000001394,
+      "death": null
+    },
+    {
+      "keptAlive": 12.16608695652174,
+      "sedOnlyR": 3.633804347826087,
+      "lost": 0,
+      "meanCount": 12.3371,
+      "upkeep": 239.4680000000027,
+      "death": null
+    },
+    {
+      "keptAlive": 12.697391304347827,
+      "sedOnlyR": 4.1654347826086955,
+      "lost": 0,
+      "meanCount": 12.203,
+      "upkeep": 251.18200000000735,
+      "death": null
+    },
+    {
+      "keptAlive": 13.358804347826087,
+      "sedOnlyR": 4.663695652173913,
+      "lost": 0,
+      "meanCount": 12.2209,
+      "upkeep": 263.4440000000113,
+      "death": null
+    },
+    {
+      "keptAlive": 13.6075,
+      "sedOnlyR": 4.857173913043479,
+      "lost": 0,
+      "meanCount": 12.4434,
+      "upkeep": 267.97600000000637,
+      "death": null
+    },
+    {
+      "keptAlive": 12.895978260869565,
+      "sedOnlyR": 4.220326086956522,
+      "lost": 0,
+      "meanCount": 12.2868,
+      "upkeep": 254.8800000000113,
+      "death": null
+    },
+    {
+      "keptAlive": 13.190869565217392,
+      "sedOnlyR": 4.560652173913043,
+      "lost": 0,
+      "meanCount": 12.0253,
+      "upkeep": 260.25800000002823,
+      "death": null
+    },
+    {
+      "keptAlive": 12.520217391304348,
+      "sedOnlyR": 3.9245652173913044,
+      "lost": 0,
+      "meanCount": 12.2104,
+      "upkeep": 247.0399999999965,
+      "death": null
+    }
+  ]
+}

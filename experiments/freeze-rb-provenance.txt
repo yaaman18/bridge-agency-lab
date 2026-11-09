@@ -1,0 +1,7 @@
+# S41 freeze (2026-11-09, predictions r2, spec r2, before the first run on claim seeds 481-490; codex I-R accepted at [AUTO 4/10])
+69cf05162b0fe4cb899d6f5c7bbbe7c821744987804218ee06a13c383fd794ac  predictions-rb-provenance.md
+e9403183dc0c223015d2cafe289e0f0f2a9343128552231a24eb3b8a97574e2d  ../discussion/specs/S41-rb-provenance.md
+af303f9df22e2f8852f33ca17e9ed5857e5c62babcc3315e82e3278eb0ee2507  provenance.jl
+74acd0e88f51886dc9d810a86211dafd6691db3c01c35bc699cc0c0cb7859978  check_rb_provenance.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

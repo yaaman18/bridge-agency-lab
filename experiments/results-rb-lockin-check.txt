@@ -1,0 +1,31 @@
+GATE ok  rule rb
+GATE ok  H 392, L 160
+GATE ok  seeds
+GATE ok  arm swap
+GATE ok  combinations (seed x schedule, each once)
+GATE ok  branches present
+GATE ok  decision self-check on every update
+GATE ok  replay agrees with the recorded first act
+GATE ok  one-step comparison: the idle_first-off side is not dead
+GATE ok  one-step comparison negative control (no idle motor at t+1: same act, replay agrees)
+GATE freeze sha ok  predictions-rb-lockin.md
+GATE freeze sha ok  ../discussion/specs/S42-rb-lockin.md
+GATE freeze sha ok  lockin.jl
+GATE freeze sha ok  check_rb_lockin.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+branches 440 (excluded y1 == y2 or dead at t+1: 2), main points 258, main set (rest15) 210: release 171, death 39, lock 0
+LK1 no lock in the main set: 的中 (0)
+LK2 every release with m* idle, and since_lastM == 101 >= 90%: 的中 (idle 171/171, 101 171/171 = 1.0)
+LK3 idle_first off -> the act is not m* >= 90%: 的中 (171/171 = 1.0)
+LK4 every first act answered and raises an edge of m*: 的中 (171/171)
+  first-act flags: how ["idle, then key" => 171]; allzero_stale 0; m0 a candidate 171; key(m*) >= key(m0) 0
+  since_lastM [101 => 171]; candidate at idle onset Pair{Bool, Int64}[1 => 171]; act with idle_first off ["m0" => 171]
+  act with idle_first off, the breakdown (codex I-R 1 #3: m0, none or the other motor) ["m0" => 171]
+  later act of m* with no idle motor (updates after the first act) [1 => 162, 2 => 9]
+  deaths: (dead update, k_idle_due) [(91, 97), (59, 59), (84, 96), (97, 101), (94, 97), (59, 59), (84, 96), (99, 101), (91, 97), (59, 59), (84, 96), (95, 101), (91, 97), (59, 59), (84, 96), (95, 101), (91, 97), (59, 59), (84, 96), (95, 101), (94, 97), (59, 59), (84, 96), (100, 101), (42, 74), (42, 73), (32, 73), (91, 97), (59, 59), (84, 96), (98, 101), (91, 97), (59, 59), (84, 96), (95, 101), (92, 97), (59, 59), (84, 96), (100, 101)]; dead update vs the idle due ["before" => 30, "same" => 9]; candidate at idle onset (deaths after the due) Pair{Any, Any}[]
+  locks: candidate at idle onset Pair{Any, Any}[]
+  m0_all15 70/210; other motor's acts [0 => 4, 1 => 92, 2 => 114]; order_constant 438/438; no act of m* in the trial before t 18
+  by seed (release, death, lock) [(491, 19, 4, 0), (492, 19, 4, 0), (493, 19, 4, 0), (494, 19, 4, 0), (495, 19, 4, 0), (496, 19, 4, 0), (497, 0, 3, 0), (498, 19, 4, 0), (499, 19, 4, 0), (500, 19, 4, 0)]
+  extension (t in 256:32:384, rest15) 144: ["release/idle" => 144]
+  not rest15 at the main points: ["death" => 2, "release" => 46]

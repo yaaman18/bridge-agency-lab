@@ -1,0 +1,25 @@
+GATE ok  rule rb
+GATE ok  H 392, W 15
+GATE ok  seeds
+GATE ok  arm swap
+GATE ok  combinations (seed x schedule, each once)
+GATE ok  branch points present
+GATE ok  15 records per branch
+GATE ok  state comparator detects each one-sided change (negative controls)
+GATE ok  tie12 from the decision rule (m1-m2 tie true, m1-m0 tie false)
+GATE freeze sha ok  predictions-rb-restmech.md
+GATE freeze sha ok  ../discussion/specs/S40-rb-restmech.md
+GATE freeze sha ok  restmech.jl
+GATE freeze sha ok  check_rb_restmech.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+branch points 480, recorded updates 21600
+RM1 mu wiring and involution: 的中
+RM2 equivariance outside patch-number ties: 的中 (1960/1960; with a tie 0, of which equal 0)
+RM3 ZM = mu(N) up to the first symmetry break: 的中 (points 480, broken by a patch-number tie 0, mismatches 0)
+RM4 decision self-check: 的中 (0 failures)
+RM5 Z m0 wins: newly high motor's conf < m0's and decided by key at >= 90%: 的中 (5954/6055; conf deficit alone 6019)
+  N: m0 1878 patch 5322 none 0 dead 0 of 7200; m0 wins by: ["key" => 1047, "tie on key, decided by old" => 811, "idle, then key" => 20]
+  Z: m0 6055 patch 1145 none 0 dead 0 of 7200; m0 wins by: ["key" => 5985, "tie on key, decided by old" => 70]
+  ZM: m0 1878 patch 5322 none 0 dead 0 of 7200; m0 wins by: ["key" => 1047, "tie on key, decided by old" => 811, "idle, then key" => 20]
+  Z m0 wins (conf of the newly high motor, conf of m0, that motor a candidate): Pair{Any, Int64}[("0", "2", true) => 4392, ("0", "3", true) => 1401, ("0", "3", false) => 97, ("1", "2", true) => 84, ("3", "3", true) => 36, ("2", "3", true) => 15, ("0", "2", false) => 10, ("1", "2", false) => 9, ("1", "3", false) => 8, ("1", "3", true) => 3]

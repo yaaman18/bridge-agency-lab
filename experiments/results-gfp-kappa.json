@@ -1,0 +1,3132 @@
+{
+  "spec": "discussion/specs/S27-body-gfp.md r1",
+  "objects": [
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "c33623968cb1469872785f7109dd41597e5432fe89089b3537633c72752a4361",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 1,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 321,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "26c27e62f25d8e2759dfa144c88a0314fcea6062a457f388bd849fe47fc840d4",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 2,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 321,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "5ea7d2b32770894fe9dee88856ab583ab72cff5307c70d8d5653ed7ede7a4e42",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 3,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 322,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "ce7fbdb9ac7588a80197e6f89958a5c2a94e5e65625a6633c18829642b95ef57",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 4,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 322,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 7,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "50b10d47daed4e091a87820c1421811ab4a4bd3c4860ce0ac79fefc19a57566d",
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 5,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 323,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 7,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "4f89010c418f8d8b903104d172c70f9bcce7cd7aad9964ef443f68085a7d396e",
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 6,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 323,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 7,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "c28d3766964e5b4370a2355eaad5c27bbf530da93f07415d83bf4150b35b66dc",
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 7,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 324,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 7,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "b148c4ef2d7b70e59cfd150d5d3b3caa08f12bc0563901e4485a2e463816b383",
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 8,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 324,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "5e5725b2907bba06d7130912e1cb57661b70546efb38af4457404efd5108bc51",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 9,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 325,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "87248f6b49297ab0e0aedf70703754827abc378903d9c48ee560a7065b7f3903",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 10,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 325,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "29b35852b7b3395751a43e7bbec9e5918331f40c4a43c40eb15a33ef140969d3",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 11,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 326,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "3e2a73f1ef38ae3b97baf2eb0d3dc26b928ffee653a1bf385e3647eeed030396",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 12,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 326,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 7,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "27052c35e4ab0954169d7a41c9d91963304c3f583651780ab1f62f328af07d7e",
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 13,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 327,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "ac8975c205017d3e4be789e1c65bb63b0930d732283d7937d9e23b38e44cec2f",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 14,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 327,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "7ec5c0f2ba03d48fbf1776fb8eebbac2d333c447a42d1964751125bfed45850b",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 15,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 328,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "88d8a935a0a6cee5a01e1a16d2e946f2a42f0a4e9c477e821e551a1f4939c483",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 16,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 328,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "358f7a8b6caa3e38a5139463ad844ad0facb99e6b5717c3a8d188ea4051fcf91",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 17,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 329,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r7"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "d080f8e7c4a5c9c1cdf29a827173b5bcd663d015ec2fa848e5938563cc90d6b6",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 18,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 329,
+      "arm": "swap"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 5,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 7,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r2",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "2e066cbe1cf527e631ccf91d3776076c52f0db7f7217d8210136b5f41d0bb325",
+      "T_struct": [
+        "r5",
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 19,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 330,
+      "arm": "std"
+    },
+    {
+      "provenance_same": true,
+      "choice_B2": [
+        "m2"
+      ],
+      "mode": "kappa",
+      "value_kappa": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "attributable": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r7",
+        "r8"
+      ],
+      "unattributable": {
+        "r5": "on through the window in neither",
+        "r6": "on through the window in neither"
+      },
+      "trajectory_matches_tab": true,
+      "nu_fin": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2",
+        "r1->m1",
+        "r7->m1"
+      ],
+      "values": {
+        "r7": 5,
+        "r1": 5,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "needed_julia": true,
+      "kappa": [
+        "c1->c1",
+        "c1->c2",
+        "c1->m1",
+        "c2->c1",
+        "c2->c2"
+      ],
+      "survived_B1_B2": [
+        true,
+        true
+      ],
+      "value_gfp": {
+        "r7": 7,
+        "r1": 7,
+        "r2": 0,
+        "r5": 0,
+        "r8": 0,
+        "r6": 0,
+        "r3": 0,
+        "r4": 0
+      },
+      "nu_bits": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tool": {
+        "differentiated": true,
+        "alive": true,
+        "T": [
+          "r1",
+          "r2",
+          "r7",
+          "r8"
+        ],
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "hinge": true,
+        "needed": true
+      },
+      "tab": [
+        [
+          true,
+          false
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "nu_has_receptor_edge": true,
+      "raised_hash": "1a8ce1657c0f033de677df632b38d6f7c1d37e32ab382d8292a932dd2faec73d",
+      "T_struct": [
+        "r7",
+        "r1"
+      ],
+      "dc": {
+        "act": true,
+        "smc": true,
+        "dc": true,
+        "self": true,
+        "bound": true
+      },
+      "kappa_sub_nu": true,
+      "r7_r8_attributable": true,
+      "witness": [
+        "r1",
+        "r2"
+      ],
+      "tool_L2": true,
+      "builds": true,
+      "lean_index": 20,
+      "choice_B1": [
+        "m1"
+      ],
+      "gfp_ge_kappa": true,
+      "seed": 330,
+      "arm": "swap"
+    }
+  ],
+  "seeds": [
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330
+  ],
+  "rule": "sf",
+  "H": 392,
+  "agents_built_in_julia": 20
+}

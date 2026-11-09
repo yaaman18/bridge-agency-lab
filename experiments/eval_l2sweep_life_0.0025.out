@@ -1,0 +1,4 @@
+seasons  survived 1/10  deaths [2574, 4476, 1253, 2216, 1173, 917, 4845, 1743, 1660]  body mean 4.2  kept/step 2.8
+heldout  survived 4/10  deaths [9492, 2157, 6969, 4971, 1876, 9689]  body mean 8.2  kept/step 7.0
+random   survived 2/10  deaths [1711, 2507, 2111, 2094, 3464, 1056, 2492, 745]  body mean 4.0  kept/step 3.5
+written

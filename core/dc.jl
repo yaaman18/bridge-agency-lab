@@ -21,7 +21,7 @@ const DC_L = P_SMAX * P_DECAY   # 32
 # D4: features each motor's acts reach in the medium (feature indices of FEATURES): m1 acts on patch 1 (y1>=3, y1==0,
 # y1>y2, y2>y1), m2 on patch 2 (y2>=3, y2==0, y1>y2, y2>y1), m3 (the call) on the partner's gesture while a live partner
 # answers. (Until item 67 m3 also reached waiting / not waiting, features 10, 11; they are internal now.)
-const ALPHA_FEATURES = Dict("m1" => [1, 3, 7, 8], "m2" => [2, 4, 7, 8], "m3" => Int[])
+const ALPHA_FEATURES = Dict("m1" => [1, 3, 7, 8], "m2" => [2, 4, 7, 8], "m3" => Int[], "m0" => Int[])   # S33: m0 (rest) reaches nothing
 const PARTNER_FEATURE = 9
 
 struct DCStep
@@ -83,9 +83,11 @@ function dc_window(b::Circuit, recs::AbstractVector{DCStep}; alpha::Symbol = :st
     aff = falses(n, n)
     for (mn, feats) in ALPHA_FEATURES
         m = unit(b, mn)
+        m === nothing && continue   # S7 (2026-11-07): a circuit without this motor (BODY's newborn(false) has no m3) reaches nothing through it
         alpha === :state && !lab_gate(b, last, m) && continue
         for u in 1:n
             b.kind[u] == 'R' || continue
+            b.feat[u] >= 1 || continue   # S34: the body receptor (feat -1) is reached by no motor (BP4 (i))
             f = b.perm[b.feat[u]]
             (f in feats || (mn == "m3" && f == PARTNER_FEATURE && last.partner_live)) && (aff[m, u] = true)
         end
@@ -126,3 +128,17 @@ function check_dc(b::Circuit, w::DCWindow)
     s, m, a, d = elem_self(b, w), elem_smc(b, w), elem_act(b, w), elem_bound(b, w)
     (self = s, smc = m, act = a, bound = d, dc = s && m && a && d)
 end
+
+# ---- G9 (gaps C): νΦ of the window as the greatest fixed point (formal/LabCircuit.lean Window.phiFin / nuFin, nuFin_eq) ----
+"""Φ(Y) on edge sets: the edges re-produced by a motor that some edge of Y enables (Lean `Window.phiFin`)."""
+phi_fin(b, w, Y::BitVector) = BitVector([any(m -> ismotor(b, m) && w.reproduced[m, k] && any(c -> Y[c] && enables(b, w, c, m), eachindex(b.edges)), eachindex(b.names)) for k in eachindex(b.edges)])
+"""νΦ by nK iterations from all edges (Lean `Window.nuFin`; equal to `Closure.nu (Phi piRel rhoRel)` by `nuFin_eq`)."""
+function nu_fin(b, w)
+    Y = trues(length(b.edges))
+    for _ in 1:length(b.edges); Y = phi_fin(b, w, Y); end
+    Y
+end
+"""The structural value counted on νΦ (Lean `Window.valueGfp`): |{k : via[e, k]} ∩ νΦ|."""
+value_gfp(b, w, nu::BitVector, e::Int) = count(k -> w.via[e, k] && nu[k], eachindex(b.edges))
+"""The structural value counted on κ (Lean `nuPhiOf` = kept self edges, used in S15/S17)."""
+value_kappa(b, w, e::Int) = count(k -> w.via[e, k] && w.kept[k] && selfedge(b, k), eachindex(b.edges))

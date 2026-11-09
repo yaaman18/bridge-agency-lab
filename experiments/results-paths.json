@@ -1,0 +1,5113 @@
+{
+  "spec": "discussion/specs/S10-body-paths.md r2",
+  "A": [
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        2
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": 216
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 87,
+        "m1": 17
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": 418
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 87,
+        "m1": 17
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": 418
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        4
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 92,
+        "m1": 27
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": 432
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 337,
+        "m1": 55
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 340,
+        "m1": 45
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        2
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": 371
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        2,
+        2
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 97,
+        "m1": 141
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        2,
+        2
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 97,
+        "m1": 141
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        2,
+        2,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        4
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        4
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 98,
+        "m1": 141
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        2,
+        2,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 211,
+        "m1": 164
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": 567
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 244,
+        "m1": 141
+      },
+      "seed": 35,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": 213
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 86,
+        "m1": 15
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": 416
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 86,
+        "m1": 15
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": 416
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        4,
+        4,
+        4
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        1,
+        1,
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 338,
+        "m1": 54
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": 369
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 97,
+        "m1": 141
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 97,
+        "m1": 141
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        4,
+        4,
+        4
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        1,
+        1,
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 212,
+        "m1": 179
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": 583
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 35,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        2
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": 216
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 74,
+        "m1": 3
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": 375
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 74,
+        "m1": 3
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": 375
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        4
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 76,
+        "m1": 3
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": 380
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 337,
+        "m1": 55
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 342,
+        "m1": 43
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        2
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": 371
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        2,
+        2
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 96,
+        "m1": 140
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        2,
+        2
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 96,
+        "m1": 140
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        2,
+        2,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        3
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        4
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 97,
+        "m1": 140
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        2,
+        2,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        0,
+        0,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 211,
+        "m1": 163
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": 566
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 245,
+        "m1": 140
+      },
+      "seed": 37,
+      "arm": "swap",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": 213
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 96,
+        "m1": 43
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 96,
+        "m1": 43
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        4,
+        4,
+        4
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        1,
+        1,
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 338,
+        "m1": 54
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 64,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        4
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 289,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "C",
+      "sg_before": [
+        4
+      ],
+      "q_end": [
+        0
+      ],
+      "q_before": [
+        4
+      ],
+      "edges": [
+        "c2->m2"
+      ],
+      "sg_end": [
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 1,
+        "m1": 2
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": 370
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 96,
+        "m1": 140
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "R",
+      "sg_before": [
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2"
+      ],
+      "sg_end": [
+        0,
+        0
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 96,
+        "m1": 140
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        4,
+        4,
+        4
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        1,
+        1,
+        1
+      ],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    },
+    {
+      "t0": 192,
+      "mode": "persist",
+      "cut": "RC",
+      "sg_before": [
+        4,
+        4,
+        4
+      ],
+      "q_end": [
+        0,
+        0,
+        0
+      ],
+      "q_before": [
+        4,
+        4,
+        4
+      ],
+      "edges": [
+        "r2->m2",
+        "r8->m2",
+        "c2->m2"
+      ],
+      "sg_end": [
+        0,
+        0,
+        0
+      ],
+      "alive_at_deadline": false,
+      "acts": {
+        "m2": 212,
+        "m1": 179
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": 583
+    },
+    {
+      "t0": 192,
+      "mode": "once",
+      "cut": "U",
+      "sg_before": [],
+      "q_end": [],
+      "q_before": [],
+      "edges": [],
+      "sg_end": [],
+      "alive_at_deadline": true,
+      "acts": {
+        "m2": 388,
+        "m1": 4
+      },
+      "seed": 37,
+      "arm": "std",
+      "death": null
+    }
+  ],
+  "B": [
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 23,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 24,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 25,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 26,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 28,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 29,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 3
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 33
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 3
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 34,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 37,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 35,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 36,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 37
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 37,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 41,
+          "std": 41
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 38,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2"
+        ],
+        "acts": {
+          "swap": 33,
+          "std": 35
+        },
+        "tie_probes_acted": {
+          "swap": 3,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 39,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 3
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    },
+    {
+      "Q_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "QG_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "G_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "differ_J0": [
+        "1,1",
+        "2,2",
+        "3,3",
+        "4,4",
+        "5,5"
+      ],
+      "G_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "Q_once": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "none": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 43,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      },
+      "r5_edges_std": {
+        "m2": {
+          "q": 0,
+          "sg": 0
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "seed": 40,
+      "r5_edges_swap": {
+        "m2": {
+          "q": 0,
+          "sg": 1
+        },
+        "m1": {
+          "q": 0,
+          "sg": 0
+        }
+      },
+      "QG_persist": {
+        "choices": {
+          "swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        "verdict": "difference remains",
+        "differ": [
+          "1,1",
+          "2,2",
+          "3,3",
+          "4,4",
+          "5,5"
+        ],
+        "acts": {
+          "swap": 39,
+          "std": 39
+        },
+        "tie_probes_acted": {
+          "swap": 5,
+          "std": 5
+        }
+      }
+    }
+  ],
+  "C0_B": true,
+  "rule": "sf",
+  "H": 392
+}

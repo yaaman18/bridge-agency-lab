@@ -1,0 +1,8 @@
+# S32 freeze (2026-11-08, before the first run on claim seeds 401-410)
+9a89475dd6a0eba5778bd84f843f82a2340884befd39b95cd9d4b48246c5ab95  predictions-activity.md
+122b30b1467d589b4331d2dcda8f62c2fc3093fad25cd34f276e8fabb1f95ee3  ../discussion/specs/S32-body-activity.md
+3b4df0a91d9a407566102a83cdffa81cc8af4fad183506ef2c23a9bdeb289fea  activity.jl
+bd898e7f50e439915bf9d37c2c80823f786f1a3402cfeff40174f542afe82a5a  check_activity.jl
+0643b216528f54a7524b964cc4e3e6ff550133098265cf8274f840d394ffbcd5  variant_horizon.jl
+a0723fb347f8b5a53cf4d13864cc11260d29a1aa56edd3e9ec6f63426dad3aee  ../core/circuit.jl
+f62cd49b15cde6fd5f3c6554af616368a4b38e35f08f0d29ffb4f2992f9bc4a0  ../formal/LabCircuit.lean

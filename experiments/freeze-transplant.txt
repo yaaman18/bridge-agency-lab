@@ -1,0 +1,7 @@
+# S36 freeze (2026-11-09, before the first run on claim seeds 431-440; codex I-R 3 rounds accepted)
+8543f58698dbe9f563e46600ef3ef4da6e0124932b80b45baaea223106c8732d  predictions-transplant.md
+1ac3f2a284bf2351862be7e1340098c718a9573bf52210b7f8f821ed00375496  ../discussion/specs/S36-body-transplant.md
+ded5b99e215c7b7b8c365002cdb999342757fb8b18b0da906ddabe7d74b3f14e  transplant.jl
+75ed8c2b6a0ba11fa8dbfe45fdf3a3a55dccdc362bd04571d1b94dfeffe072d6  check_transplant.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

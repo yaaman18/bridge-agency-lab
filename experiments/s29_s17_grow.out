@@ -1,0 +1,11 @@
+seed=361 std prov=true toolL2=false dc=false (self = true, smc = false, act = false, bound = true, dc = false) witness=nothing needed=false builds=false values r7=0 r8=0 B1=["m1"] B2=["m1", "m2"] Ts=["r5"] traj=true
+seed=362 std prov=true toolL2=false dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r2", "r7"] needed=false builds=false values r7=5 r8=0 B1=["m1"] B2=["m2"] Ts=["r7", "r1"] traj=true
+seed=363 std prov=true toolL2=false dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r2", "r7"] needed=true builds=true values r7=5 r8=0 B1=["m1"] B2=["m2"] Ts=["r5", "r7", "r1"] traj=true
+seed=364 std prov=true toolL2=false dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r2", "r7"] needed=true builds=true values r7=5 r8=0 B1=["m1"] B2=["m2"] Ts=["r5", "r7", "r1"] traj=true
+seed=365 std prov=true toolL2=false dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r1", "r2"] needed=false builds=false values r7=0 r8=0 B1=["m1"] B2=["m2"] Ts=["r5", "r1"] traj=true
+seed=366 std prov=true toolL2=false dc=false (self = true, smc = false, act = false, bound = true, dc = false) witness=nothing needed=false builds=false values r7=0 r8=0 B1=["m1"] B2=["m2"] Ts=["r5"] traj=true
+seed=367 std prov=true toolL2=true dc=false (self = true, smc = false, act = true, bound = true, dc = false) witness=nothing needed=false builds=false values r7=5 r8=0 B1=["m1"] B2=["m2"] Ts=["r5", "r7", "r1"] traj=true
+seed=368 std prov=true toolL2=false dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r1", "r2"] needed=false builds=false values r7=0 r8=0 B1=["m1"] B2=["m2"] Ts=["r5", "r1"] traj=true
+seed=369 std prov=true toolL2=true dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r2", "r7"] needed=true builds=true values r7=5 r8=0 B1=["m1"] B2=["m2"] Ts=["r7", "r1"] traj=true
+seed=370 std prov=true toolL2=true dc=true (self = true, smc = true, act = true, bound = true, dc = true) witness=["r2", "r7"] needed=true builds=true values r7=5 r8=0 B1=["m1"] B2=["m2"] Ts=["r5", "r7", "r1"] traj=true
+objects 10, Agent definitions written: 4 (formal/gen/AgentBody2.lean)

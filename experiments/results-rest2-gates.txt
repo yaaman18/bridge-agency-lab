@@ -1,0 +1,6 @@
+# S34 gates G0/G1 before the run (2026-11-08)
+G1 sh formal/check.sh rc=0 sorry=0
+G0 sh core/check/run.sh rc=0
+app/index.html embeds the WebAssembly module built from rust/ exactly
+results-body-org.json reproduced exactly (10 seeds x 4 conditions x 10000 steps; keys added since stage 42: blocked, kept, keptEnd, lost, meanLate, upkeep)
+G0 S32 records (401, 402) and S33 seed-1 smoke rebuilt with the α code: bit-identical (2026-11-08)

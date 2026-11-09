@@ -20,10 +20,11 @@ for x in r["runs"]
         push!(expect, x["value_needed"])
     end
 end
-write(joinpath(LAB, "formal", "gen", "Trials.lean"), String(take!(io)))
+const GEN = get(ENV, "GEN", "Trials.lean")   # S21: another generated file name (default unchanged)
+write(joinpath(LAB, "formal", "gen", GEN), String(take!(io)))
 bp = joinpath(homedir(), "bridge-protocol"); ol = joinpath(LAB, "formal", ".olean")
 out = cd(bp) do
-    read(`lake env sh -c "LEAN_PATH=\"\$LEAN_PATH:$ol\" lean \"$(joinpath(LAB, "formal", "gen", "Trials.lean"))\""`, String)
+    read(`lake env sh -c "LEAN_PATH=\"\$LEAN_PATH:$ol\" lean \"$(joinpath(LAB, "formal", "gen", GEN))\""`, String)
 end
 got = [l == "true" for l in split(strip(out), "\n")]
 same = got == expect

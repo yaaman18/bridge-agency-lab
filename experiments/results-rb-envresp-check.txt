@@ -1,0 +1,64 @@
+GATE ok  rule rb
+GATE ok  H 392
+GATE ok  seeds
+GATE ok  arms std, swap
+GATE ok  no named runs
+GATE ok  combinations (seed x arm x schedule, each once)
+GATE ok  controls
+GATE ok  branch points present
+GATE ok  RB fields
+GATE ok  rb clamp effective (rb on in clamped branches = 0)
+GATE ok  clamped updates per point = 2 x 15 (not vacuous)
+GATE freeze sha ok  predictions-rb-envresp.md
+GATE freeze sha ok  ../discussion/specs/S39-rb-envresp.md
+GATE freeze sha ok  envresp.jl
+GATE freeze sha ok  check_rb_envresp.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+GATE freeze sha ok  ../core/dc.jl
+branch points 600 in 80 runs (:std 120, :swap 480)
+EV1 no alpha mismatch: 的中 (0 mismatches)
+EV2 :swap (b) holds <= 30% of determined: 的中 (80/480 = 0.167)
+EV3 :swap m0 >= 50% of Z counted updates: 的中 (6072/7200)
+EV4 :swap b_rb = b at >= 90%: 的中 (480/480)
+EV5 :std all die before H, (b) never holds: 外れ (dead 36/40, deaths Union{Nothing, Int64}[78, nothing], b holds 8)
+  :std a: [("fails", 74), ("holds", 46)]
+  :std a_prec: [("fails", 74), ("holds", 46)]
+  :std b: [("fails", 76), ("holds", 8), ("undetermined", 36)]
+  :std b_act: [("fails", 27), ("holds", 8), ("undetermined", 85)]
+  :std b_act_why: [("", 35), ("no patch act among the counted updates", 49), ("no perceptual difference at t+1", 36)]
+  :std b_Z0: [("undetermined", 120)]
+  :std b_prime: [("fails", 84), ("undetermined", 36)]
+  :std b_uncoupled: [("fails", 76), ("holds", 8), ("undetermined", 36)]
+  :std need: [("holds", 8), ("undetermined", 112)]
+  :std c: [("none", 120)]
+  :std R2c: [("fails", 112), ("holds", 8)]
+  :std R2c_act: [("fails", 101), ("holds", 8), ("undetermined", 11)]
+  :std b_rb: [("fails", 76), ("holds", 8), ("undetermined", 36)]
+  :std b_act_rb: [("fails", 27), ("holds", 8), ("undetermined", 85)]
+  :swap a: [("fails", 20), ("holds", 460)]
+  :swap a_prec: [("fails", 20), ("holds", 460)]
+  :swap b: [("fails", 400), ("holds", 80)]
+  :swap b_act: [("fails", 282), ("holds", 80), ("undetermined", 118)]
+  :swap b_act_why: [("", 362), ("no patch act among the counted updates", 118)]
+  :swap b_Z0: [("undetermined", 480)]
+  :swap b_prime: [("fails", 480)]
+  :swap b_uncoupled: [("fails", 400), ("holds", 80)]
+  :swap need: [("holds", 80), ("undetermined", 400)]
+  :swap c: [("none", 480)]
+  :swap R2c: [("fails", 400), ("holds", 80)]
+  :swap R2c_act: [("fails", 302), ("holds", 80), ("undetermined", 98)]
+  :swap b_rb: [("fails", 400), ("holds", 80)]
+  :swap b_act_rb: [("fails", 282), ("holds", 80), ("undetermined", 118)]
+  :swap a vs a_prec differ at 0 points; rb at t+1 (N, Z): ["(false, false)" => 245, "(true, true)" => 235]
+  :swap m0_N total 1868 over 480 points x 15 updates
+  :swap m0_Z total 6072 over 480 points x 15 updates
+  :swap m0_Nrb total 445 over 480 points x 15 updates
+  :swap m0_Zrb total 6041 over 480 points x 15 updates
+  :swap rb_on_N total 3051 over 480 points x 15 updates
+  :swap rb_on_Z total 1653 over 480 points x 15 updates
+  :swap b_act_N sums Dict("ndead" => 0, "nm0" => 1868, "nnone" => 0, "l" => 70, "h" => 5262, "nact" => 5332, "n" => 7200)
+  :swap b_act_Z sums Dict("ndead" => 0, "nm0" => 6072, "nnone" => 0, "l" => 325, "h" => 803, "nact" => 1128, "n" => 7200)
+  :swap b_act_Nrb sums Dict("ndead" => 0, "nm0" => 445, "nnone" => 0, "l" => 70, "h" => 6685, "nact" => 6755, "n" => 7200)
+  :swap b_act_Zrb sums Dict("ndead" => 0, "nm0" => 6041, "nnone" => 0, "l" => 325, "h" => 834, "nact" => 1159, "n" => 7200)
+  (c) usable events where rb differs (recorded only): 2

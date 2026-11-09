@@ -1,0 +1,184 @@
+{
+  "pools seed7": {
+    "body": 10,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "readcur seed2": {
+    "body": 17,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "pools seed8": {
+    "body": 11,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "readcur seed9": {
+    "body": 17,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "readcur seed5": {
+    "body": 17,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "readcur seed7": {
+    "body": 16,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "pools seed1": {
+    "body": 11,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "pools seed2": {
+    "body": 12,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "pools seed4": {
+    "body": 14,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "readcur seed6": {
+    "body": 17,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "pools seed6": {
+    "body": 12,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "readcur seed10": {
+    "body": 18,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "pools seed3": {
+    "body": 12,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "pools seed9": {
+    "body": 11,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "readcur seed3": {
+    "body": 16,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "pools seed5": {
+    "body": 11,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": []
+  },
+  "readcur seed4": {
+    "body": 17,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "pools seed10": {
+    "body": 16,
+    "conf_m2": [
+      "r2(y2>=3)"
+    ],
+    "conf_m1": [
+      "r2(y2>=3)"
+    ]
+  },
+  "readcur seed1": {
+    "body": 16,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  },
+  "readcur seed8": {
+    "body": 16,
+    "conf_m2": [
+      "r2(y2>=3)",
+      "r8(y2>y1)"
+    ],
+    "conf_m1": [
+      "r1(y1>=3)",
+      "r7(y1>y2)"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+# S35 freeze (2026-11-08, before the run on seeds 421-430; diagnosis on used seeds, seed-1 smoke seen before)
+65ee2ef89e9b9e6e562fa76656a6899895ffd43cdcf4222fda03f54187b314ff  ../discussion/specs/S35-diag-rb-arms.md
+5fb9c7bcba9e5592f0dba87aab130e363d678dc6c7179b3829e13fec696fea50  diag_rb_arms.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

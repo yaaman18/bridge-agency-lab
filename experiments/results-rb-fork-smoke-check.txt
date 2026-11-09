@@ -1,0 +1,32 @@
+GATE ok  rule rb
+GATE ok  H 392, L 160
+GATE ok  seeds
+GATE ok  arm swap
+GATE ok  combinations (seed x schedule, each once)
+GATE ok  branches present
+GATE ok  A1/A2 on the main runs (dead set <=> no body site before a live update; the last site removed -> dead at the next update; a dead update: no act, no circuit update, q only by B7, sg and lastM kept, no unit on, never undead)
+GATE ok  A1/A2 on every branch, actual and m* silenced
+GATE ok  A3 present for every combination with an eligible point
+GATE ok  B7 flag unit tests (built q: decay update, other update; wrong: no decay, decay off period, below zero, extra)
+GATE ok  A3 negative tests ((a) all sites emptied -> dead, (b) one site below THETA_EXIST with no free matter -> removed by the world, dead at the next update, (c) a copy known alive -> alive and equal to the run; after the death in (b), 16 dead updates pass A1/A2 (n_dead 16) with B7 exercised twice; the checker catches a corrupted dead update: clock, q, act, undead)
+GATE ok  A4 the protocol's survives agrees with ours (not dead at H and a non-sensor unit on in each step of the alive window)
+GATE freeze sha ok  predictions-rb-fork-smoke.md
+GATE freeze sha ok  ../discussion/specs/S43-rb-fork.md
+GATE freeze sha ok  fork.jl
+GATE freeze sha ok  check_rb_fork.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+GATE freeze sha ok  ../core/matter.jl
+branches 48 (excluded or dead at t+1: 0), main set (t+L<=H, rest15) 23: ["death" => 4, "release" => 19]
+FK1 NM equal to the actual branch before m*'s first act: 的中 (0 diverged)
+FK2 H-fork (T_NM vs k_idle_due) matches the outcome: 的中 (0 mismatches)
+FK3 Q_t orders T_NM, discordant pairs <= 10%: 外れ (49/253 = 0.194)
+FK4 no (Q_t, k_idle_due) group with different outcomes: 判定不能（分母 0） (0 of 0 groups with >= 2 branches; 23 groups in all)
+  T_NM: ["dead" => 23]; NM at the due (win, act) Pair{Union{Nothing, Tuple{String, String}}, Int64}[("m1", "none") => 9, ("m2", "none") => 10, nothing => 4]
+  deaths (dead_A, k_idle_due, Q_t, sites_t, minB_t) [(91, 97, 5.212, 13, 0.315), (59, 59, 3.419, 9, 0.211), (84, 96, 3.554, 5, 0.449), (95, 101, 5.3, 13, 0.311)]
+  releases: T_NM - k_idle_due [11 => 1, 16 => 1, 19 => 1, 27 => 2, 30 => 1, 31 => 1, 37 => 1, 4 => 1, 44 => 1, 46 => 1, 58 => 1, 62 => 1, 65 => 1, 67 => 1, 73 => 1, 80 => 1, 87 => 2]
+  the other motor in NM (acts, answered, offered intake) [(0, 0) => 6, (1, 0) => 17]
+  A4 by combination (protocol survives, ours dead at H, ours window) Tuple{Int64, String, Bool, Bool, Bool}[(1, "p1-high", 1, 0, 1), (1, "p2-high", 1, 0, 1), (1, "p1-then-p2", 1, 0, 1), (1, "p2-then-p1", 1, 0, 1)]
+  A3 not verified (no eligible point): Tuple{Any, Any, Any}[]
+  regrowth after death (sites reappearing) main 0, branches 0
+  by seed (release, death, lock) [(1, 19, 4, 0)]

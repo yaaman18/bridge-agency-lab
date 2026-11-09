@@ -1,0 +1,2005 @@
+{
+  "spec": "discussion/specs/S14-body-residual.md r1",
+  "pairs": [
+    {
+      "differing_fields": [
+        "sg",
+        "h",
+        "off",
+        "cOn",
+        "cOff",
+        "lastC"
+      ],
+      "role": "residual",
+      "TC2": true,
+      "TC3": true,
+      "seed": 29,
+      "pairs": [
+        {
+          "groups": "sg+h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "sg+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "swap": {
+        "4,4": "m2",
+        "3,3": "m2",
+        "2,2": "m2",
+        "5,5": "m2",
+        "1,1": "m2"
+      },
+      "single": [
+        {
+          "groups": "sg",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "TC1": true,
+      "std": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "",
+        "5,5": "m1",
+        "1,1": ""
+      }
+    },
+    {
+      "differing_fields": [
+        "sg",
+        "h",
+        "off",
+        "cOn",
+        "cOff",
+        "lastC"
+      ],
+      "role": "residual",
+      "TC2": true,
+      "TC3": true,
+      "seed": 39,
+      "pairs": [
+        {
+          "groups": "sg+h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "sg+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "swap": {
+        "4,4": "m2",
+        "3,3": "m2",
+        "2,2": "m2",
+        "5,5": "m2",
+        "1,1": "m2"
+      },
+      "single": [
+        {
+          "groups": "sg",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1,m2",
+            "3,3": "m1,m2",
+            "2,2": "m2",
+            "5,5": "m1,m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "TC1": true,
+      "std": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "m1",
+        "5,5": "m1",
+        "1,1": "m1"
+      }
+    },
+    {
+      "differing_fields": [
+        "sg",
+        "h",
+        "off",
+        "cOn",
+        "cOff",
+        "lastC"
+      ],
+      "role": "residual",
+      "TC2": true,
+      "TC3": true,
+      "seed": 40,
+      "pairs": [
+        {
+          "groups": "sg+h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "sg+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "swap": {
+        "4,4": "m2",
+        "3,3": "m2",
+        "2,2": "m2",
+        "5,5": "m2",
+        "1,1": "m2"
+      },
+      "single": [
+        {
+          "groups": "sg",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h",
+          "swap_becomes_std": false,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "TC1": true,
+      "std": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "m1",
+        "5,5": "m1",
+        "1,1": "m1"
+      }
+    },
+    {
+      "differing_fields": [
+        "sg",
+        "h",
+        "off",
+        "cOn",
+        "cOff",
+        "lastC"
+      ],
+      "role": "comparison",
+      "TC2": true,
+      "TC3": true,
+      "seed": 23,
+      "pairs": [
+        {
+          "groups": "sg+h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "sg+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "sg+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "sg+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "h+stats",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "h+lastC",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "h+activity",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "stats+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "stats+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "lastC+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        }
+      ],
+      "swap": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "",
+        "5,5": "m1",
+        "1,1": ""
+      },
+      "single": [
+        {
+          "groups": "sg",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        }
+      ],
+      "TC1": true,
+      "std": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "m1",
+        "5,5": "m1",
+        "1,1": "m1"
+      }
+    },
+    {
+      "differing_fields": [
+        "sg",
+        "h",
+        "off",
+        "cOn",
+        "cOff",
+        "lastC"
+      ],
+      "role": "comparison",
+      "TC2": true,
+      "TC3": true,
+      "seed": 24,
+      "pairs": [
+        {
+          "groups": "sg+h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "sg+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "sg+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h+stats",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "h+lastC",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "h+activity",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "stats+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "stats+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "swap": {
+        "4,4": "m2",
+        "3,3": "m2",
+        "2,2": "m2",
+        "5,5": "m2",
+        "1,1": "m2"
+      },
+      "single": [
+        {
+          "groups": "sg",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        },
+        {
+          "groups": "activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m2",
+            "3,3": "m2",
+            "2,2": "m2",
+            "5,5": "m2",
+            "1,1": "m2"
+          }
+        }
+      ],
+      "TC1": true,
+      "std": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "m1",
+        "5,5": "m1",
+        "1,1": "m1"
+      }
+    },
+    {
+      "differing_fields": [
+        "sg",
+        "h",
+        "off",
+        "cOn",
+        "cOff",
+        "lastC"
+      ],
+      "role": "comparison",
+      "TC2": true,
+      "TC3": true,
+      "seed": 25,
+      "pairs": [
+        {
+          "groups": "sg+h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "sg+stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "sg+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "sg+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "h+stats",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "h+lastC",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "h+activity",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "stats+lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "stats+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "lastC+activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        }
+      ],
+      "swap": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "",
+        "5,5": "m1",
+        "1,1": ""
+      },
+      "single": [
+        {
+          "groups": "sg",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "h",
+          "swap_becomes_std": true,
+          "std_becomes_swap": true,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          }
+        },
+        {
+          "groups": "stats",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "lastC",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        },
+        {
+          "groups": "activity",
+          "swap_becomes_std": false,
+          "std_becomes_swap": false,
+          "std_given_swap": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "m1",
+            "5,5": "m1",
+            "1,1": "m1"
+          },
+          "in_range": true,
+          "swap_given_std": {
+            "4,4": "m1",
+            "3,3": "m1",
+            "2,2": "",
+            "5,5": "m1",
+            "1,1": ""
+          }
+        }
+      ],
+      "TC1": true,
+      "std": {
+        "4,4": "m1",
+        "3,3": "m1",
+        "2,2": "m1",
+        "5,5": "m1",
+        "1,1": "m1"
+      }
+    }
+  ],
+  "H": 392,
+  "sha_ok": true
+}

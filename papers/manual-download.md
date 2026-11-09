@@ -1,0 +1,113 @@
+# 手で取ってほしい論文（公開版はあるが自動では取れなかったもの）
+
+自動取得は出版社や機関リポジトリのボット対策で止まった。下の URL はどれも OpenAlex が「無料で読める版」として挙げたもの。
+ブラウザで開いて PDF を `papers/pdf/manual/` に `P<番号>.pdf` の名前で保存すれば、次の索引の作り直しで拾う。★は議論の最優先項目。
+
+- ★P034（項目13）Egbert, M. D., & Cañamero, L. (2014). Habit-Based Regulation of Essential Variables. In Proceedings of ALIFE 1
+  - https://direct.mit.edu/isal/proceedings-pdf/alife2014/26/168/1901469/978-0-262-32621-6-ch029.pdf
+- ★P043（項目17）Kerchner, G. A., & Nicoll, R. A. (2008). Silent synapses and the emergence of a postsynaptic mechanism for LTP
+  - https://europepmc.org/articles/2819160?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/2819160
+- ★P045（項目18）Davis, R. L., & Zhong, Y. (2017). The Biology of Forgetting — A Perspective. Neuron, 95(3), 490–503. ★
+  - http://www.cell.com/article/S0896627317304981/pdf
+  - https://europepmc.org/articles/5657245?pdf=render
+- ★P050（項目20）Kamin, L. J. (1969). Predictability, surprise, attention, and conditioning. In B. A. Campbell & R. M. Church (
+  - http://hdl.handle.net/2060/19680014821
+- ★P069（項目28）Attwell, D., & Laughlin, S. B. (2001). An energy budget for signaling in the grey matter of the brain. Journal
+  - https://journals.sagepub.com/doi/pdf/10.1097/00004647-200110000-00001
+- ★P070（項目28）Niven, J. E., & Laughlin, S. B. (2008). Energy limitation as a selective pressure on the evolution of sensory 
+  - https://journals.biologists.com/jeb/article-pdf/211/11/1792/1262412/1792.pdf
+- ★P072（項目29）Melhuish, C., Ieropoulos, I., Greenman, J., & Horsfield, I. (2006). Energetically autonomous robots: Food for 
+  - https://uwe-repository.worktribe.com/output/1041765
+- ★P075（項目30）Charnov, E. L., & Parker, G. A. (1995). Dimensionless invariants from foraging theory's marginal value theorem
+  - https://europepmc.org/articles/42536?pdf=render
+  - http://europepmc.org/pmc/articles/PMC42536
+- ★P092（項目37）Murray, L., & Trevarthen, C. (1985). "Emotional regulation of interactions between two-month-olds and their mo
+  - https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-7687.00065
+- ★P093（項目37）Nadel, J., Carchon, I., Kervella, C., Marcelli, D., & Réserbat-Plantey, D. (1999). "Expectancies for social co
+  - https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1467-7687.00065
+- P004（項目2）Biological Organisation as Closure of Constraints Montévil, Maël; Mossio, Matteo (2015). Journal of Theoretica
+  - https://hal.science/hal-01192916
+  - https://hal.science/hal-01192916/document
+- P007（項目3）Closure to Efficient Causation, Computability and Artificial Life Cárdenas, María Luz; Letelier, Juan-Carlos; 
+  - https://hal.science/hal-00564468
+  - https://hal.science/hal-00564468/document
+- P011（項目5）Autopoiesis, Adaptivity, Teleology, Agency Di Paolo, Ezequiel A. (2005). Phenomenology and the Cognitive Scien
+  - https://figshare.com/articles/journal_contribution/Autopoiesis_adaptivity_teleology_agency/23368025
+- P012（項目5）Defining Agency: Individuality, Normativity, Asymmetry, and Spatio-temporality in Action Barandiaran, Xabier E
+  - https://philpapers.org/archive/BARDAI-6.pdf
+- P020（項目8）Behavioral Metabolution: The Adaptive and Evolutionary Potential of Metabolism-Based Chemotaxis Egbert, Matthe
+  - https://direct.mit.edu/artl/article-pdf/18/1/1/1663581/artl_a_00047.pdf
+  - http://sro.sussex.ac.uk/id/eprint/23592/1/artl_a_00047.pdf
+- P026（項目10）What Would Be Conserved if “the Tape Were Played Twice”? Fontana, Walter; Buss, Leo W. (1994). Proceedings of 
+  - https://europepmc.org/articles/43028?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/43028
+- P028（項目11）Degeneracy and Complexity in Biological Systems Edelman, Gerald M.; Gally, Joseph A. (2001). Proceedings of th
+  - https://europepmc.org/articles/61115?pdf=render
+  - http://europepmc.org/pmc/articles/PMC61115
+- P029（項目11）Growing Neural Cellular Automata Mordvintsev, Alexander; Randazzo, Ettore; Niklasson, Eyvind; Levin, Michael (
+  - https://doi.org/10.23915/distill.00023
+- P036（項目14）Di Paolo, E. A. (2000). Homeostatic adaptation to inversion of the visual field and other sensorimotor disrupt
+  - https://figshare.com/articles/presentation/Homeostatic_adaptation_to_inversion_of_the_visual_field_and_other_sensorimotor_disruptions/23373269
+- P041（項目16）Faust, T. E., Gunner, G., & Schafer, D. P. (2021). Mechanisms governing activity-dependent synaptic pruning in
+  - https://www.nature.com/articles/s41583-021-00507-y.pdf
+  - https://europepmc.org/articles/8541743?pdf=render
+- P042（項目16）Fu, M., & Zuo, Y. (2011). Experience-dependent structural plasticity in the cortex. Trends in Neurosciences, 3
+  - https://europepmc.org/articles/3073830?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/3073830
+- P048（項目19）Bienenstock, E. L., Cooper, L. N., & Munro, P. W. (1982). Theory for the development of neuron selectivity: Or
+  - https://www.jneurosci.org/content/jneuro/2/1/32.full.pdf
+  - https://europepmc.org/articles/6564292?pdf=render
+- P055（項目22）Rankin, C. H., Abrams, T., Barry, R. J., Bhatnagar, S., Clayton, D. F., Colombo, J., Coppola, G., Geyer, M. A.
+  - https://europepmc.org/articles/2754195?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/2754195
+- P061（項目25）Neuringer, A. (2002). Operant variability: Evidence, functions, and theory. Psychonomic Bulletin & Review, 9(4
+  - https://link.springer.com/content/pdf/10.3758/BF03196324.pdf
+- P062（項目25）Oudeyer, P.-Y., Kaplan, F., & Hafner, V. V. (2007). Intrinsic Motivation Systems for Autonomous Mental Develop
+  - http://cogprints.org/5473/1/ims.pdf
+  - https://inria.hal.science/hal-00793610
+  - https://inria.hal.science/hal-00793610/document
+- P064（項目26）Maes, P. (1989). How to do the right thing. Connection Science, 1(3), 291–323.
+  - https://nantes-universite.hal.science/hal-04599498
+  - https://nantes-universite.hal.science/hal-04599498/document
+- P087（項目35）Barrett, L. F., & Simmons, W. K. (2015). "Interoceptive predictions in the brain." Nature Reviews Neuroscience
+  - https://europepmc.org/articles/4731102?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/4731102
+- P089（項目36）Brooks, R. A. (1986). "A robust layered control system for a mobile robot." IEEE Journal of Robotics and Autom
+  - http://hdl.handle.net/1721.1/6432
+- P096（項目39）Lungarella, M., Metta, G., Pfeifer, R., & Sandini, G. (2003). "Developmental robotics: a survey." Connection S
+  - https://www.tandfonline.com/doi/pdf/10.1080/09540090310001655110?needAccess=true
+- P100（項目41）Bertschinger, Nils; Olbrich, Eckehard; Ay, Nihat; Jost, Jürgen (2008). "Autonomy: An information theoretic per
+  - http://edoc.mpg.de/402027
+- P108（項目44）Nosek, Brian A.; Ebersole, Charles R.; DeHaven, Alexander C.; Mellor, David T. (2018). "The preregistration re
+  - https://europepmc.org/articles/5856500?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/5856500
+- P110（項目44）Peng, Roger D. (2011). "Reproducible Research in Computational Science." Science, 334(6060), 1226–1227.
+  - https://europepmc.org/articles/3383002?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/3383002
+- P112（項目45）Sangiorgi, Davide (2009). "On the origins of bisimulation and coinduction." ACM Transactions on Programming La
+  - https://dl.acm.org/doi/pdf/10.1145/1516507.1516510
+- P118（項目48）Sibidanov, Alexei; Zimmermann, Paul; Glondu, Stéphane (2022). "The CORE-MATH Project." Proceedings of the 29th
+  - https://inria.hal.science/hal-03721525
+  - https://inria.hal.science/hal-03721525/document
+- P119（項目48）Brisebarre, Nicolas; Hanrot, Guillaume; Muller, Jean-Michel; Zimmermann, Paul (2025). "Correctly-rounded evalu
+  - https://dl.acm.org/doi/pdf/10.1145/3747840
+  - https://hal.science/hal-04474530v2/file/crsurvey.pdf
+  - https://hal.science/hal-04474530v4/file/crsurvey-HaL.pdf
+- P126（項目50）Froese, Tom; Ziemke, Tom (2009). "Enactive artificial intelligence: Investigating the systemic organization of
+  - https://www.sciencedirect.com/science/article/pii/S0004370208002105/pdf
+- P133（項目53）Okasha, S. (2020). "The Price Equation and the Causal Analysis of Evolutionary Change". Philosophical Transact
+  - https://philsci-archive.pitt.edu/20872/1/The_Price_equation_and_the_causal_analysis_of_evolutionary_change.pdf
+  - https://europepmc.org/articles/7133506?pdf=render
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/7133506
+- P139（項目56）Cohen, P. J. (1963). "The Independence of the Continuum Hypothesis". Proceedings of the National Academy of Sc
+  - https://europepmc.org/articles/221287?pdf=render
+  - http://europepmc.org/pmc/articles/PMC221287
+- P149（項目60）Devanesan, A. (2025). "Are Physiological Individuals Evolutionary Individuals? The Case of the Holobiont". Phi
+  - https://doi.org/10.1017/psa.2025.15
+- P151（項目61）Montévil, M., & Mossio, M. (2015). "Biological Organisation as Closure of Constraints". Journal of Theoretical
+  - https://hal.science/hal-01192916
+  - https://hal.science/hal-01192916/document
+- P152（項目62）Lawvere, F. W. (1963). "Functorial Semantics of Algebraic Theories". Proceedings of the National Academy of Sc
+  - https://europepmc.org/articles/221940?pdf=render
+  - http://europepmc.org/pmc/articles/PMC221940

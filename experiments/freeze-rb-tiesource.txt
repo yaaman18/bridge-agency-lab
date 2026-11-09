@@ -1,0 +1,7 @@
+# S38 freeze (2026-11-09, before the first run on claim seeds 451-460; codex I-R accepted at [AUTO 8/10])
+6ab6384d283bd3c09d27ee4c2939cdb91a9c668beb8b510abcaabde0438fd479  predictions-rb-tiesource.md
+9f8c1b450b6eedc388098873e86078c084395a38cb0958925e218654ac3c7026  ../discussion/specs/S38-rb-tiesource.md
+af606505effffb54b25eca1ba5f35bc16605fc4d97362f99276689055bf4be80  tiesource_rb.jl
+9a7545957b7af0962391a3589a680d4fdfca493c2c8d1a7ae49ce81af6a9ca37  check_rb_tiesource.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

@@ -1,0 +1,28 @@
+GATE ok  rule rb
+GATE ok  H 392, W 15
+GATE ok  seeds
+GATE ok  arm swap
+GATE ok  combinations (seed x schedule, each once)
+GATE ok  targets present
+GATE ok  attribution unit tests (real update, perturbed q caught, W, W then D, D, W at q = 0)
+GATE ok  target fields
+GATE ok  one class per distinct zeroing (seed, schedule, edge, place)
+GATE freeze sha ok  predictions-rb-provenance.md
+GATE freeze sha ok  ../discussion/specs/S41-rb-provenance.md
+GATE freeze sha ok  provenance.jl
+GATE freeze sha ok  check_rb_provenance.jl
+GATE freeze sha ok  variant_horizon.jl
+GATE freeze sha ok  ../core/circuit.jl
+events 6044, targets 18855 (distinct (seed, schedule, edge, zeroing) 219)
+PV1 attribution matches everywhere: 的中 (0 targets with a mismatch)
+PV2 initially positive -> zeroed by D while m* did not act >= 90%: 的中 (occurrences 17708/17708 = 1.0, distinct 120/120 = 1.0)
+PV3 initially zero -> Z0: 的中 (1147/1147)
+PV4 no zeroing by W: 的中 (W 0, undetermined 0)
+  classes (occurrences): Pair{Any, Int64}["zeroed by D while m* did not act" => 17708, "Z0 (zero over the trial)" => 1147]
+  classes (distinct): Pair{Any, Int64}["zeroed by D while m* did not act" => 120, "Z0 (zero over the trial)" => 99]
+  conf(m*) = 0: 18582 targets, distinct 219; Pair{Any, Int64}["zeroed by D while m* did not act" => 17460, "Z0 (zero over the trial)" => 1122]
+  0 < conf(m*) < conf(m0): 273 targets, distinct 36; Pair{Any, Int64}["zeroed by D while m* did not act" => 248, "Z0 (zero over the trial)" => 25]
+  core edges: 5900 targets, distinct 40; Pair{Any, Int64}["zeroed by D while m* did not act" => 5900]
+  by edge (distinct): Pair{Any, Int64}[("r5->m2", "Z0 (zero over the trial)") => 20, ("r4->m1", "Z0 (zero over the trial)") => 20, ("r2->m2", "zeroed by D while m* did not act") => 20, ("r3->m2", "Z0 (zero over the trial)") => 20, ("c1->m1", "zeroed by D while m* did not act") => 20, ("c2->m2", "zeroed by D while m* did not act") => 20, ("r8->m2", "zeroed by D while m* did not act") => 20, ("r7->m1", "zeroed by D while m* did not act") => 20, ("r1->m1", "zeroed by D while m* did not act") => 20, ("r5->m1", "Z0 (zero over the trial)") => 12, ("rb->m1", "Z0 (zero over the trial)") => 10, ("r6->m2", "Z0 (zero over the trial)") => 10, ("rb->m2", "Z0 (zero over the trial)") => 7]
+  by seed (distinct, initially positive, D while not acting / all): [(481, 12, 12), (482, 12, 12), (483, 12, 12), (484, 12, 12), (485, 12, 12), (486, 12, 12), (487, 12, 12), (488, 12, 12), (489, 12, 12), (490, 12, 12)]
+  D zeroings while m* did not act: updates since m*'s last act median 26 (n 13249); m* never acted in the trial before the zeroing: 4459

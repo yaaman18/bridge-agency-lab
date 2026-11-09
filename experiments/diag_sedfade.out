@@ -1,0 +1,28 @@
+plain seed  1  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  2  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0) r5(noise)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  3  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  4  m1 <-  | sed r4(y2==0)   m2 <- r2(y2>=3) | sed r3(y1==0) r8(y2>y1)
+plain seed  5  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  6  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  7  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  8  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed  9  m1 <-  | sed r1(y1>=3) r2(y2>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r1(y1>=3) r3(y1==0) r8(y2>y1)
+plain seed 10  m1 <- r2(y2>=3) | sed r1(y1>=3) r4(y2==0)   m2 <- r2(y2>=3) | sed r3(y1==0) r8(y2>y1)
+fade  seed  1  m1 <- r1(y1>=3) r2(y2>=3) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  2  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  3  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  4  m1 <-  | sed    m2 <- r2(y2>=3) | sed 
+fade  seed  5  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  6  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  7  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  8  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed  9  m1 <- r1(y1>=3) r7(y1>y2) | sed    m2 <- r1(y1>=3) | sed r2(y2>=3)
+fade  seed 10  m1 <-  | sed r2(y2>=3)   m2 <- r2(y2>=3) | sed 
+
+GREEDY load 0.008/step: survived 10/10  deaths Int64[]
+GREEDY load 0.01/step: survived 10/10  deaths Int64[]
+GREEDY load 0.012/step: survived 7/10  deaths [7365, 6866, 4270]
+GREEDY load 0.014/step: survived 5/10  deaths [4679, 6833, 1993, 4250, 4489]
+GREEDY load 0.016/step: survived 3/10  deaths [4684, 3401, 6817, 9566, 1985, 3373, 4490]
+GREEDY load 0.0186/step: survived 2/10  deaths [4638, 3354, 6781, 5767, 9547, 1959, 3364, 4458]
+GREEDY load 0.026/step: survived 1/10  deaths [4572, 3283, 6750, 5681, 4341, 1881, 3272, 4395, 8891]

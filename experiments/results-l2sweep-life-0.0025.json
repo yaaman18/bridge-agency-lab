@@ -1,0 +1,158 @@
+{
+  "seasons": [
+    {
+      "kept": 2.3421,
+      "meanCount": 3.5534,
+      "death": 2574
+    },
+    {
+      "kept": 3.9184,
+      "meanCount": 5.7471,
+      "death": 4476
+    },
+    {
+      "kept": 1.1886,
+      "meanCount": 1.6432,
+      "death": 1253
+    },
+    {
+      "kept": 2.0459,
+      "meanCount": 3.0524,
+      "death": 2216
+    },
+    {
+      "kept": 1.0521,
+      "meanCount": 1.3716,
+      "death": 1173
+    },
+    {
+      "kept": 0.8603,
+      "meanCount": 1.1449,
+      "death": 917
+    },
+    {
+      "kept": 4.2604,
+      "meanCount": 6.3071,
+      "death": 4845
+    },
+    {
+      "kept": 1.6053,
+      "meanCount": 2.4251,
+      "death": 1743
+    },
+    {
+      "kept": 9.0309,
+      "meanCount": 14.5613,
+      "death": null
+    },
+    {
+      "kept": 1.5173,
+      "meanCount": 2.1691,
+      "death": 1660
+    }
+  ],
+  "random": [
+    {
+      "kept": 1.7503,
+      "meanCount": 1.6509,
+      "death": 1711
+    },
+    {
+      "kept": 2.4075,
+      "meanCount": 2.7319,
+      "death": 2507
+    },
+    {
+      "kept": 2.1356,
+      "meanCount": 1.998,
+      "death": 2111
+    },
+    {
+      "kept": 9.4438,
+      "meanCount": 11.9119,
+      "death": null
+    },
+    {
+      "kept": 2.0303,
+      "meanCount": 2.1758,
+      "death": 2094
+    },
+    {
+      "kept": 3.297,
+      "meanCount": 3.7283,
+      "death": 3464
+    },
+    {
+      "kept": 1.106,
+      "meanCount": 1.153,
+      "death": 1056
+    },
+    {
+      "kept": 2.4499,
+      "meanCount": 2.5169,
+      "death": 2492
+    },
+    {
+      "kept": 0.7743,
+      "meanCount": 0.7216,
+      "death": 745
+    },
+    {
+      "kept": 9.2503,
+      "meanCount": 11.3521,
+      "death": null
+    }
+  ],
+  "heldout": [
+    {
+      "kept": 8.7885,
+      "meanCount": 10.376,
+      "death": 9492
+    },
+    {
+      "kept": 9.3265,
+      "meanCount": 10.6218,
+      "death": null
+    },
+    {
+      "kept": 9.2765,
+      "meanCount": 10.7788,
+      "death": null
+    },
+    {
+      "kept": 2.1469,
+      "meanCount": 2.3832,
+      "death": 2157
+    },
+    {
+      "kept": 6.5387,
+      "meanCount": 7.3877,
+      "death": 6969
+    },
+    {
+      "kept": 4.7207,
+      "meanCount": 5.6849,
+      "death": 4971
+    },
+    {
+      "kept": 1.8396,
+      "meanCount": 1.9862,
+      "death": 1876
+    },
+    {
+      "kept": 9.3528,
+      "meanCount": 10.8754,
+      "death": null
+    },
+    {
+      "kept": 8.9244,
+      "meanCount": 10.3465,
+      "death": 9689
+    },
+    {
+      "kept": 9.35,
+      "meanCount": 11.3004,
+      "death": null
+    }
+  ]
+}

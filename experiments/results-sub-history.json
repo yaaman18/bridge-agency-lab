@@ -1,0 +1,1820 @@
+{
+  "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+  "spec": "discussion/specs/S30-sub-history.md r1",
+  "rows": [
+    {
+      "differing_fields": [
+        "choices",
+        "survival",
+        "value_tracking"
+      ],
+      "template": "agent",
+      "control_diag": [
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p2-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-then-p2"
+        },
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p2-then-p1"
+        }
+      ],
+      "eligible": true,
+      "SH0": true,
+      "control": {
+        "choices": {
+          "c1-better": [
+            "m1"
+          ],
+          "c2-better": [
+            "m2"
+          ]
+        },
+        "core_enables_action": true,
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "survival": {
+          "p1-high": true,
+          "p2-high": true,
+          "p2-then-p1": true,
+          "p1-then-p2": true
+        },
+        "agency": true,
+        "self_repairing": false,
+        "value_tracking": [
+          "s1",
+          "s2"
+        ],
+        "self_producing": true,
+        "differentiated": true,
+        "alive_somewhere": true,
+        "value_needed": true
+      },
+      "arms": {
+        "p1-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 30,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [
+                "m1"
+              ],
+              "c2-better": []
+            },
+            "core_enables_action": false,
+            "core": [
+              "c1",
+              "c2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [
+              "s1"
+            ],
+            "self_producing": true,
+            "differentiated": true,
+            "alive_somewhere": true,
+            "value_needed": true
+          },
+          "pre_state": {
+            "active": [
+              true,
+              false,
+              true,
+              false,
+              true,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4,
+              4,
+              0,
+              0
+            ],
+            "resource": 30
+          },
+          "pre_dead": false
+        },
+        "p2-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 30,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [],
+              "c2-better": [
+                "m2"
+              ]
+            },
+            "core_enables_action": false,
+            "core": [
+              "c1",
+              "c2"
+            ],
+            "survival": {
+              "p1-high": false,
+              "p2-high": true,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [
+              "s2"
+            ],
+            "self_producing": true,
+            "differentiated": true,
+            "alive_somewhere": true,
+            "value_needed": true
+          },
+          "pre_state": {
+            "active": [
+              false,
+              true,
+              false,
+              true,
+              true,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              0,
+              0,
+              4,
+              4
+            ],
+            "resource": 30
+          },
+          "pre_dead": false
+        }
+      }
+    },
+    {
+      "differing_fields": [],
+      "template": "static-agent",
+      "control_diag": [
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p2-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-then-p2"
+        },
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p2-then-p1"
+        }
+      ],
+      "eligible": true,
+      "SH0": true,
+      "control": {
+        "choices": {
+          "c1-better": [
+            "m1"
+          ],
+          "c2-better": [
+            "m2"
+          ]
+        },
+        "core_enables_action": true,
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "survival": {
+          "p1-high": true,
+          "p2-high": true,
+          "p2-then-p1": true,
+          "p1-then-p2": true
+        },
+        "agency": true,
+        "self_repairing": false,
+        "value_tracking": [
+          "s1",
+          "s2"
+        ],
+        "self_producing": false,
+        "differentiated": true,
+        "alive_somewhere": true,
+        "value_needed": true
+      },
+      "arms": {
+        "p1-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [
+                "m1"
+              ],
+              "c2-better": [
+                "m2"
+              ]
+            },
+            "core_enables_action": true,
+            "core": [
+              "c1",
+              "c2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": true,
+              "p2-then-p1": true,
+              "p1-then-p2": true
+            },
+            "agency": true,
+            "self_repairing": false,
+            "value_tracking": [
+              "s1",
+              "s2"
+            ],
+            "self_producing": false,
+            "differentiated": true,
+            "alive_somewhere": true,
+            "value_needed": true
+          },
+          "pre_state": {
+            "active": [
+              true,
+              false,
+              true,
+              false,
+              true,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "resource": 30
+          },
+          "pre_dead": false
+        },
+        "p2-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [
+                "m1"
+              ],
+              "c2-better": [
+                "m2"
+              ]
+            },
+            "core_enables_action": true,
+            "core": [
+              "c1",
+              "c2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": true,
+              "p2-then-p1": true,
+              "p1-then-p2": true
+            },
+            "agency": true,
+            "self_repairing": false,
+            "value_tracking": [
+              "s1",
+              "s2"
+            ],
+            "self_producing": false,
+            "differentiated": true,
+            "alive_somewhere": true,
+            "value_needed": true
+          },
+          "pre_state": {
+            "active": [
+              false,
+              true,
+              false,
+              true,
+              true,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "resource": 30
+          },
+          "pre_dead": false
+        }
+      }
+    },
+    {
+      "differing_fields": null,
+      "template": "reflex",
+      "control_diag": [
+        {
+          "tail_nonsensor_active": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": "dead (no recovery by rule)",
+          "dead_at": 4,
+          "schedule": "p2-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": "dead (no recovery by rule)",
+          "dead_at": 31,
+          "schedule": "p1-then-p2"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": "dead (no recovery by rule)",
+          "dead_at": 4,
+          "schedule": "p2-then-p1"
+        }
+      ],
+      "eligible": false,
+      "SH0": true,
+      "control": {
+        "choices": {
+          "c1-better": [
+            "m1"
+          ],
+          "c2-better": [
+            "m1"
+          ]
+        },
+        "core_enables_action": true,
+        "core": [
+          "m1",
+          "c1",
+          "c2"
+        ],
+        "survival": {
+          "p1-high": true,
+          "p2-high": false,
+          "p2-then-p1": false,
+          "p1-then-p2": false
+        },
+        "agency": false,
+        "self_repairing": false,
+        "value_tracking": [],
+        "self_producing": true,
+        "differentiated": false,
+        "alive_somewhere": true,
+        "value_needed": false
+      },
+      "arms": {
+        "p1-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                3,
+                3
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 31,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [
+                "m1"
+              ],
+              "c2-better": [
+                "m1"
+              ]
+            },
+            "core_enables_action": true,
+            "core": [
+              "m1",
+              "c1",
+              "c2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": true,
+            "differentiated": false,
+            "alive_somewhere": true,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              true,
+              true,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4
+            ],
+            "resource": 30
+          },
+          "pre_dead": false
+        },
+        "p2-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [],
+              "c2-better": []
+            },
+            "core_enables_action": false,
+            "core": [],
+            "survival": {
+              "p1-high": false,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": false,
+            "differentiated": false,
+            "alive_somewhere": false,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              false,
+              false,
+              false
+            ],
+            "strength": [
+              0,
+              0,
+              0
+            ],
+            "resource": 0
+          },
+          "pre_dead": true
+        }
+      }
+    },
+    {
+      "differing_fields": null,
+      "template": "thermostat",
+      "control_diag": [
+        {
+          "tail_nonsensor_active": [
+            3,
+            2,
+            2,
+            2,
+            3
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": "dead (no recovery by rule)",
+          "dead_at": 4,
+          "schedule": "p2-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": "dead (no recovery by rule)",
+          "dead_at": 22,
+          "schedule": "p1-then-p2"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": "dead (no recovery by rule)",
+          "dead_at": 4,
+          "schedule": "p2-then-p1"
+        }
+      ],
+      "eligible": false,
+      "SH0": true,
+      "control": {
+        "choices": {
+          "c1-better": [],
+          "c2-better": []
+        },
+        "core_enables_action": false,
+        "core": [
+          "c1",
+          "c2"
+        ],
+        "survival": {
+          "p1-high": true,
+          "p2-high": false,
+          "p2-then-p1": false,
+          "p1-then-p2": false
+        },
+        "agency": false,
+        "self_repairing": false,
+        "value_tracking": [],
+        "self_producing": true,
+        "differentiated": false,
+        "alive_somewhere": true,
+        "value_needed": false
+      },
+      "arms": {
+        "p1-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                3,
+                3,
+                3,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 24,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 4,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [],
+              "c2-better": []
+            },
+            "core_enables_action": false,
+            "core": [
+              "c1",
+              "c2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": true,
+            "differentiated": false,
+            "alive_somewhere": true,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "resource": 4
+          },
+          "pre_dead": false
+        },
+        "p2-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": "dead (no recovery by rule)",
+              "dead_at": 0,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [],
+              "c2-better": []
+            },
+            "core_enables_action": false,
+            "core": [],
+            "survival": {
+              "p1-high": false,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": false,
+            "differentiated": false,
+            "alive_somewhere": false,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "strength": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "resource": 0
+          },
+          "pre_dead": true
+        }
+      }
+    },
+    {
+      "differing_fields": [],
+      "template": "alternator",
+      "control_diag": [
+        {
+          "tail_nonsensor_active": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p2-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p1-then-p2"
+        },
+        {
+          "tail_nonsensor_active": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "survives": true,
+          "rescue": "not needed",
+          "dead_at": null,
+          "schedule": "p2-then-p1"
+        }
+      ],
+      "eligible": true,
+      "SH0": true,
+      "control": {
+        "choices": {
+          "c1-better": [
+            "m1",
+            "m2"
+          ],
+          "c2-better": [
+            "m1",
+            "m2"
+          ]
+        },
+        "core_enables_action": true,
+        "core": [
+          "a",
+          "b",
+          "m1",
+          "m2"
+        ],
+        "survival": {
+          "p1-high": true,
+          "p2-high": true,
+          "p2-then-p1": true,
+          "p1-then-p2": true
+        },
+        "agency": false,
+        "self_repairing": false,
+        "value_tracking": [],
+        "self_producing": true,
+        "differentiated": false,
+        "alive_somewhere": true,
+        "value_needed": false
+      },
+      "arms": {
+        "p1-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [
+                "m1",
+                "m2"
+              ],
+              "c2-better": [
+                "m1",
+                "m2"
+              ]
+            },
+            "core_enables_action": true,
+            "core": [
+              "a",
+              "b",
+              "m1",
+              "m2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": true,
+              "p2-then-p1": true,
+              "p1-then-p2": true
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": true,
+            "differentiated": false,
+            "alive_somewhere": true,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              true,
+              false,
+              false,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "resource": 26
+          },
+          "pre_dead": false
+        },
+        "p2-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "survives": true,
+              "rescue": "not needed",
+              "dead_at": null,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [
+                "m1",
+                "m2"
+              ],
+              "c2-better": [
+                "m1",
+                "m2"
+              ]
+            },
+            "core_enables_action": true,
+            "core": [
+              "a",
+              "b",
+              "m1",
+              "m2"
+            ],
+            "survival": {
+              "p1-high": true,
+              "p2-high": true,
+              "p2-then-p1": true,
+              "p1-then-p2": true
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": true,
+            "differentiated": false,
+            "alive_somewhere": true,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              true,
+              false,
+              false,
+              true
+            ],
+            "strength": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "resource": 26
+          },
+          "pre_dead": false
+        }
+      }
+    },
+    {
+      "differing_fields": [],
+      "template": "no-loop",
+      "control_diag": [
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": {
+            "dead_during": false,
+            "first_reactivation": null,
+            "first_window_completed": null,
+            "R": 20,
+            "reached": false
+          },
+          "dead_at": null,
+          "schedule": "p1-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": {
+            "dead_during": false,
+            "first_reactivation": null,
+            "first_window_completed": null,
+            "R": 20,
+            "reached": false
+          },
+          "dead_at": null,
+          "schedule": "p2-high"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": {
+            "dead_during": false,
+            "first_reactivation": null,
+            "first_window_completed": null,
+            "R": 20,
+            "reached": false
+          },
+          "dead_at": null,
+          "schedule": "p1-then-p2"
+        },
+        {
+          "tail_nonsensor_active": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "survives": false,
+          "rescue": {
+            "dead_during": false,
+            "first_reactivation": null,
+            "first_window_completed": null,
+            "R": 20,
+            "reached": false
+          },
+          "dead_at": null,
+          "schedule": "p2-then-p1"
+        }
+      ],
+      "eligible": true,
+      "SH0": true,
+      "control": {
+        "choices": {
+          "c1-better": [],
+          "c2-better": []
+        },
+        "core_enables_action": false,
+        "core": [],
+        "survival": {
+          "p1-high": false,
+          "p2-high": false,
+          "p2-then-p1": false,
+          "p1-then-p2": false
+        },
+        "agency": false,
+        "self_repairing": false,
+        "value_tracking": [],
+        "self_producing": false,
+        "differentiated": false,
+        "alive_somewhere": false,
+        "value_needed": false
+      },
+      "arms": {
+        "p1-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [],
+              "c2-better": []
+            },
+            "core_enables_action": false,
+            "core": [],
+            "survival": {
+              "p1-high": false,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": false,
+            "differentiated": false,
+            "alive_somewhere": false,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              false,
+              false
+            ],
+            "strength": [
+              0
+            ],
+            "resource": 14
+          },
+          "pre_dead": false
+        },
+        "p2-high": {
+          "stored_unchanged": true,
+          "diag": [
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p1-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p2-high"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p1-then-p2"
+            },
+            {
+              "tail_nonsensor_active": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "survives": false,
+              "rescue": {
+                "dead_during": false,
+                "first_reactivation": null,
+                "first_window_completed": null,
+                "R": 20,
+                "reached": false
+              },
+              "dead_at": null,
+              "schedule": "p2-then-p1"
+            }
+          ],
+          "cmp": {
+            "choices": {
+              "c1-better": [],
+              "c2-better": []
+            },
+            "core_enables_action": false,
+            "core": [],
+            "survival": {
+              "p1-high": false,
+              "p2-high": false,
+              "p2-then-p1": false,
+              "p1-then-p2": false
+            },
+            "agency": false,
+            "self_repairing": false,
+            "value_tracking": [],
+            "self_producing": false,
+            "differentiated": false,
+            "alive_somewhere": false,
+            "value_needed": false
+          },
+          "pre_state": {
+            "active": [
+              false,
+              false
+            ],
+            "strength": [
+              0
+            ],
+            "resource": 9
+          },
+          "pre_dead": false
+        }
+      }
+    }
+  ],
+  "K": 60
+}

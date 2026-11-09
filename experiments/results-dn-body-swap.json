@@ -1,0 +1,2498 @@
+{
+  "templates_sha256": "e18130213f6a29022a0f22323e46c41b969351df5fbb7c92143bc53ce4757425",
+  "spec": "discussion/specs/S2-body-dn.md r2",
+  "horizons": [
+    294,
+    392,
+    588
+  ],
+  "summary": {
+    "H_294": {
+      "contract_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "excluded": 0,
+      "arms": {
+        "swap": {
+          "choices": {
+            "c1-better=m1 c2-better=m1": 10
+          },
+          "D_true": 0,
+          "N_tested_true": 0,
+          "N_guard_false": 10,
+          "N_tested_false": 0
+        },
+        "std": {
+          "choices": {
+            "c1-better=m2 c2-better=m2": 10
+          },
+          "D_true": 0,
+          "N_tested_true": 0,
+          "N_guard_false": 10,
+          "N_tested_false": 0
+        }
+      }
+    },
+    "H_392": {
+      "contract_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "excluded": 0,
+      "arms": {
+        "swap": {
+          "choices": {
+            "c1-better=m1 c2-better=m1": 10
+          },
+          "D_true": 0,
+          "N_tested_true": 0,
+          "N_guard_false": 10,
+          "N_tested_false": 0
+        },
+        "std": {
+          "choices": {
+            "c1-better=m2 c2-better=m2": 10
+          },
+          "D_true": 0,
+          "N_tested_true": 0,
+          "N_guard_false": 10,
+          "N_tested_false": 0
+        }
+      }
+    },
+    "H_588": {
+      "contract_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "excluded": 0,
+      "arms": {
+        "swap": {
+          "choices": {
+            "c1-better=m1 c2-better=m1": 10
+          },
+          "D_true": 0,
+          "N_tested_true": 0,
+          "N_guard_false": 10,
+          "N_tested_false": 0
+        },
+        "std": {
+          "choices": {
+            "c1-better=m2 c2-better=m2": 10
+          },
+          "D_true": 0,
+          "N_tested_true": 0,
+          "N_guard_false": 10,
+          "N_tested_false": 0
+        }
+      }
+    }
+  },
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "runs": [
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 1,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 2,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 3,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 4,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 5,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 6,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 7,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 8,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 9,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 10,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 294
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 1,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 2,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 3,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 4,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 5,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 6,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 7,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 8,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 9,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 10,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 392
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 1,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 2,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 3,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 4,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 5,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 6,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 7,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 8,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 9,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    },
+    {
+      "S2_2": {
+        "ok": true,
+        "world_equal": true,
+        "su_bytes": "1518",
+        "su_equal": true,
+        "pool_equal": true
+      },
+      "S2_7": {
+        "std_rebuilt_equal": true,
+        "ok": true,
+        "swap_rebuilt_equal": true,
+        "order_swapped_equal": true
+      },
+      "obs": {
+        "swap": {
+          "choices": {
+            "c1-better": "m1",
+            "c2-better": "m1"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        },
+        "std": {
+          "choices": {
+            "c1-better": "m2",
+            "c2-better": "m2"
+          },
+          "core_enables_action": false,
+          "core": [
+            "c1",
+            "c2"
+          ],
+          "value_tracking": [],
+          "survival_without_tracking": {},
+          "survival": {
+            "p1-high": 1,
+            "p2-high": 1,
+            "p2-then-p1": 1,
+            "p1-then-p2": 1
+          },
+          "agency": false,
+          "differentiated": false,
+          "alive_somewhere": true,
+          "N": "guard_false",
+          "value_tracking_measured": [],
+          "value_needed": false
+        }
+      },
+      "seed": 10,
+      "S2_1": {
+        "side_empty": true,
+        "noise_equal": true,
+        "std_matches_s1": true,
+        "swap_matches_s1": true,
+        "ok": true,
+        "raised_equal": false,
+        "fields_differ": []
+      },
+      "H": 588
+    }
+  ],
+  "rules": {
+    "contrast": null,
+    "idle_first": false,
+    "core_gate": false,
+    "structure": "constituents",
+    "cur": "std",
+    "seed_steps": 800
+  },
+  "negative_control": {
+    "i_world_shift": {
+      "detected": true,
+      "world_equal": false,
+      "pool_equal": true
+    },
+    "detected": true,
+    "iii_clean": {
+      "equal": true
+    },
+    "seed": 1,
+    "ii_mcost": {
+      "detected": true,
+      "fields_differ": [
+        "MCOST"
+      ]
+    },
+    "H": 392
+  },
+  "negative_control_detected": true
+}

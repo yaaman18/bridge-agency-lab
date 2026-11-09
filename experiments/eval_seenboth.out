@@ -1,0 +1,40 @@
+base bin3       seed  1  grew while undefined  24  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  2  grew while undefined  25  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  3  grew while undefined  24  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  4  grew while undefined  24  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  5  grew while undefined  26  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  6  grew while undefined  28  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  7  grew while undefined  29  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  8  grew while undefined  25  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed  9  grew while undefined  25  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base bin3       seed 10  grew while undefined  24  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed  1  grew while undefined   0  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- 
+base seenboth   seed  2  grew while undefined   0  m1 <-    m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed  3  grew while undefined   0  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed  4  grew while undefined   0  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed  5  grew while undefined   0  m1 <-    m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed  6  grew while undefined   0  m1 <- r1(y1>=3) r5(noise) r7(y1>y2)   m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed  7  grew while undefined   0  m1 <-    m2 <- 
+base seenboth   seed  8  grew while undefined   0  m1 <- r1(y1>=3) r7(y1>y2)   m2 <- 
+base seenboth   seed  9  grew while undefined   0  m1 <-    m2 <- r2(y2>=3) r8(y2>y1)
+base seenboth   seed 10  grew while undefined   0  m1 <-    m2 <- r2(y2>=3) r8(y2>y1)
+extra bin3      seed  1  grew while undefined 112  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  2  grew while undefined 110  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  3  grew while undefined 119  m1 <- r9(y1>=1) r10(y2>=1)   m2 <- 
+extra bin3      seed  4  grew while undefined 111  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  5  grew while undefined 107  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  6  grew while undefined 113  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  7  grew while undefined 115  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  8  grew while undefined 109  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed  9  grew while undefined 109  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra bin3      seed 10  grew while undefined 105  m1 <-    m2 <- r9(y1>=1) r10(y2>=1)
+extra seenboth  seed  1  grew while undefined   0  m1 <- r9(y1>=1)   m2 <- 
+extra seenboth  seed  2  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)
+extra seenboth  seed  3  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)
+extra seenboth  seed  4  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)
+extra seenboth  seed  5  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)
+extra seenboth  seed  6  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)
+extra seenboth  seed  7  grew while undefined   0  m1 <- r9(y1>=1)   m2 <- 
+extra seenboth  seed  8  grew while undefined   0  m1 <- r9(y1>=1)   m2 <- 
+extra seenboth  seed  9  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)
+extra seenboth  seed 10  grew while undefined   0  m1 <-    m2 <- r10(y2>=1)

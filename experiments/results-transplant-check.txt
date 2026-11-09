@@ -1,0 +1,13 @@
+G complete (each (seed, schedule) once per variant, H=392, planned seeds) true  G maps edge by edge true  G interventions change the state true
+G involution true  G self-transplant state true  TP0 T0 records = base true  (raised circuits equal to the first seed's: false)
+NOTE: the raised circuits differ across seeds; the 'trial-side variation only' reading is withdrawn (predictions unchanged)
+TP1 T1 (std <- swap) all survive: 外れ (36/40)
+TP2 T2 (std, pairs swapped) all survive: 的中 (40/40)
+TP3 T1r (swap <- std) all die before H: 的中 (40/40 die before H, 0 survive)
+TP4 T2r (swap, pairs swapped) all die before H: 外れ (36/40 die before H, 4 survive)
+base_std        survive 0/40 deaths [78] intake steps 0 m0|on 1.0 m0|off 0.955
+T1_std<-swap    survive 36/40 deaths Union{Nothing, Int64}[73, 95] intake steps 10023 m0|on 0.549 m0|off 0.117
+T2_std          survive 40/40 deaths Nothing[] intake steps 11136 m0|on 0.547 m0|off 0.088
+base_swap       survive 36/40 deaths Union{Nothing, Int64}[73, 95] intake steps 10098 m0|on 0.537 m0|off 0.109
+T1r_swap<-std   survive 0/40 deaths [78] intake steps 0 m0|on 1.0 m0|off 0.955
+T2r_swap        survive 4/40 deaths Union{Nothing, Int64}[78] intake steps 1128 m0|on 0.593 m0|off 0.73
