@@ -1,0 +1,7 @@
+# S46 smoke freeze (2026-11-09, spec r2 after S-R 2 APPROVE). Before the first run. Smoke = train seeds 511,512, gates only. Expected: every gate ok.
+7a66542d696b4a97732d692e7cc6c700684da397273bb5aad9c87cdea4879d03  ../discussion/specs/S46-pred-grid.md
+f4a1ea46b1ef1fb42256a9f6afc4d8385fbeda60d72211477ebdc9ab11142931  pred_grid.jl
+e53c998defdea63a7f44a8bd2634dbb4d5d068d588e7b17821667ee179e397d4  check_pred_grid.jl
+f1fddd533c20686f8eb7aac87e3d34587202f15d84561d586e72d07f35c96d48  g1_school.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

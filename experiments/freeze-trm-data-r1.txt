@@ -1,0 +1,7 @@
+# S45 freeze (2026-11-09, spec r2 after S-R 2 APPROVE). Before the first run. Expected: every gate of check_trm_data.jl ok (no claim predictions in S45; baselines are exploratory).
+8351b5bec274d48a3d5716ed551a334d8ee54685e30de40d4d3c1faa2518bf04  ../discussion/specs/S45-trm-stageA.md
+ba7767bbc92a5c696fed80c910d3ed4c8137de0fa50d29280dbdbec40f07225e  trm_data.jl
+e73fc4da3736ab38f2ad7d503ba542e5f39a1c5dfbe351cf10cb92431dfbcf05  check_trm_data.jl
+f1fddd533c20686f8eb7aac87e3d34587202f15d84561d586e72d07f35c96d48  g1_school.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

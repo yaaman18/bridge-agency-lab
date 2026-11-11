@@ -33,6 +33,8 @@
 - **実装の分担**（2026-11-07 ユーザー決定、2026-11-06 の分担を改める）: Lean の statement と証明、Julia・Rust・試験のコードは **Claude（claude-lab）が書く**。
   Claude は書いたあと自分で関門（FILE:・GATE:、負の対照）を走らせ、Codex がレビューする（I-R）。deepseek-lab の席は休止（`discussion/agents/deepseek-lab.md`、
   `deepseek-turn.sh` は記録として残す）。理由: 節約より速さと正確さを優先（S2〜S5 で deepseek-lab の手は 26〜30 分・打ち切り・崩れた下書き、Claude は数分）。
+- **fable-lab**（2026-11-10 ユーザー決定）: Claude Fable 5.2 は「煮詰まったときの啓示」と「ユーザーの任意の確認」にだけ使う、読むだけ・議決権なしの助言役。
+  呼び方は `discussion/fable-turn.sh`（Pro のサブスクの範囲、2026-11-16 まで）、指針は `discussion/agents/fable-lab.md`、取り決めは `discussion/README.md` §1.2。
 - **切り出しの約束**（2026-11-05、`discussion/promise-cutout.md`）: いまの作業はすべて「系統」の側（個体は試作）。系統から一体を切り出して
   法則を凍結するのはユーザーの決定で、切り出した個体の法則・db には誰も触れず、救わない。約束を変えるのはユーザーだけ。
 - 委任しないもの: `~/bridge-protocol` への書き込み、アプリの db への書き込みと artifact の公開、git の commit / push、ファイルの削除、
@@ -42,6 +44,8 @@
 
 - 実行: `cd experiments && julia --project=.. <script>.jl`
 - Lean: `formal/` に statement を先に書き、`sh formal/check.sh` で型検査（bridge-protocol は変えない）。証明の後に Julia を書く。
+  新しい Lean は切り出しの臨界経路に要る statement に限る（`discussion/dev-guidelines.md` §3、2026-11-10 ユーザー決定「r3でやって」）。
 - 監査: アプリの db の存在を ArtifactData で読むだけにして `audit/in/state-v<版>.json` に置き、`sh audit/run.sh <file>`（`audit/README.md`）。db には書かない。
 - 報告は日本語で、作業の途中報告を挟まず最後に一回だけ返す。
-- 結果は README.md の「実験の経緯」「確認した事実」「未決」を更新して残す。
+- 結果は README.md の「実験の経緯」「確認した事実」「未決」を更新して残す。項番は段の区切りで足す（`discussion/dev-guidelines.md` §5）。
+- 作業の正本の手順は `discussion/procedure-cutout.md`（切り出しまで、r3）、指針は `discussion/dev-guidelines.md`。

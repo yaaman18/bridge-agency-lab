@@ -1,0 +1,36 @@
+GATE ok   freeze sha ../discussion/specs/S45-trm-stageA.md
+GATE ok   freeze sha trm_data.jl
+GATE ok   freeze sha check_trm_data.jl
+GATE ok   freeze sha g1_school.jl
+GATE ok   freeze sha variant_horizon.jl
+GATE ok   freeze sha ../core/circuit.jl
+GATE ok   replay: 240 trajectories (seeds 511-540 x 2 arms x 4 schedules) match g1_school.jl's record
+GATE ok   at most one motor acts per update
+GATE ok   IR/train: read back, source times <= u and teacher u+1, labels only on the last 9
+GATE ok   IR/train: dataset.json has exactly the PuzzleDatasetMetadata fields; seq_len 89
+GATE ok   IR/train: labels re-checked from the file
+GATE ok   IR/explore: read back, source times <= u and teacher u+1, labels only on the last 9
+GATE ok   IR/explore: dataset.json has exactly the PuzzleDatasetMetadata fields; seq_len 89
+GATE ok   IR/explore: labels re-checked from the file
+GATE ok   negative: a label put on an input position fails the label check
+GATE ok   IRC/explore: read back, source times <= u and teacher u+1, labels only on the last 9
+GATE ok   IRC/explore: dataset.json has exactly the PuzzleDatasetMetadata fields; seq_len 105
+GATE ok   IRC/explore: labels re-checked from the file
+GATE ok   IR/confirm: read back, source times <= u and teacher u+1, labels only on the last 9
+GATE ok   IR/confirm: dataset.json has exactly the PuzzleDatasetMetadata fields; seq_len 89
+GATE ok   IR/confirm: labels re-checked from the file
+GATE ok   IRC/confirm: read back, source times <= u and teacher u+1, labels only on the last 9
+GATE ok   IRC/confirm: dataset.json has exactly the PuzzleDatasetMetadata fields; seq_len 105
+GATE ok   IRC/confirm: labels re-checked from the file
+GATE ok   IRC/train: read back, source times <= u and teacher u+1, labels only on the last 9
+GATE ok   IRC/train: dataset.json has exactly the PuzzleDatasetMetadata fields; seq_len 105
+GATE ok   IRC/train: labels re-checked from the file
+GATE ok   splits are disjoint by seed
+raised circuits shared across splits (train-explore, train-confirm): Dict("swap" => (0, 0), "std" => (0, 0))  (hash of raised q, sg, lastM: content, not the seed)
+GATE ok   no raised circuit is shared between train and explore / confirm
+GATE ok   future invariance: rewriting u+1.. leaves the input unchanged and changes the teacher
+GATE ok   auxiliary: the shifted build fails the source-time check
+GATE ok   evaluator unit tests (O1 const = 0, L_b = 0 undecided, by hand; Brier by hand)
+GATE ok   no e / O1 on the confirm seeds
+excluded examples (u+1 dead) by arm: std 25213, swap 17817
+all gates: ok

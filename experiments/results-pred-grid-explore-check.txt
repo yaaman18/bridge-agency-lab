@@ -1,0 +1,17 @@
+GATE ok   freeze sha ../discussion/specs/S46-pred-grid.md
+GATE ok   freeze sha pred_grid.jl
+GATE ok   freeze sha check_pred_grid.jl
+GATE ok   freeze sha g1_school.jl
+GATE ok   freeze sha variant_horizon.jl
+GATE ok   freeze sha ../core/circuit.jl
+GATE ok   replay: natural runs match g1_school.jl's record (seeds <= 540: 240)
+GATE ok   the natural branch equals the natural run for all its updates and the death time
+GATE ok   mX only: no other motor acts in any branch; all silenced: no act
+GATE ok   negative: the m0-only plan without silencing fails the silence gate, at every fork whose natural branch has an act of m1 or m2 (1766 forks)
+GATE ok   common noise: r5 equal across the 5 plans on every update where all are alive (compared > 0)
+GATE ok   key source times <= t; the negative (a key reading t+1) is caught
+GATE ok   leak: tables unchanged when non-train records are rewritten
+GATE ok   bootstrap unit: all positive excludes 0, half and half includes 0
+GATE ok   the confirm losses only on the confirm stage
+GATE ok   PH4: the same evaluation examples for the three training sizes (primary_explore)
+all gates: ok

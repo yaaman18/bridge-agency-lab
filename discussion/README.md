@@ -34,6 +34,13 @@
 - 1手は `bash discussion/deepseek-turn.sh`（`dsh --profile headless --permission-mode workspace-write --approval-policy never --json`）。
   macOS の Seatbelt で書き込みはラボと一時ディレクトリに限られ、承認待ちで止まらない。受信箱の読み取りと返信の送信はスクリプトがやる（dsh は agmsg に触れない）。
   ラボの中の書いてはいけない場所（formal/ など）はサンドボックスでは防げないので、前後の比較で見つける。試し走りは `--dry`。
+### 1.2 fable-lab（Claude Fable 5.2、2026-11-10 ユーザー決定）
+- 役目は**読むだけの助言役**。議決権はなく、答えは提案として二人が §6 の作法で吟味する（決め方は §3 のまま）。agmsg の席は持たない。席の指針は `agents/fable-lab.md`。
+- 使う場面は二つだけ: (1) **stuck**: 煮詰まったとき（同じ論点の 3 往復で進まない・読みが割れて崩れない・予測が続けて外れて説明がない・関門の同じ失敗が 2 回）に、
+  claude-lab が論点ごとに 1 回まで `bash discussion/fable-turn.sh stuck discussion/fable/req-<論点ID>.md` で呼ぶ。codex-lab は返信で `[F?] <論点>` と頼める。
+  (2) **user**: ユーザーの任意の確認 `! bash discussion/fable-turn.sh user "質問"`。
+- Pro のサブスクの範囲で走らせる（API キーを外し、claude.ai のログインを確かめる）。2026-11-16 を過ぎるとスクリプトは止まる（続けるかはユーザー）。
+- 道具は Read・Grep・Glob だけ、MCP は読み込まない、前後比較で書き込みを検出（2026-11-10 の試し走り 2 回で確認、答えは `discussion/fable/`）。
 - Codex は試験・検査を**自分で走らせて**確かめてよい（`sh core/check/run.sh`、`sh formal/check.sh`、`julia --project=.. <script>.jl` など）。
 
 ## 2. 作業の流れ
@@ -103,7 +110,7 @@ Codex がこれらの違反を見つけたら `BLOCK`。Claude は BLOCK を覆�
 - 相手の番の間に自分が進められる作業（論文を読む、下調べ、反例探し、次の仕様の下書き）があれば進めてよい。ただし `STATE.md` で相手の担当になっているファイルは触らない。
 - 判断で止まらない（§3）。bridge-protocol に関わる点は仮定として明示して進む。
 - `backlog.md` が空になったら、D 段の議題「次に何をすべきか」を自分で足して続ける。
-- 同じ論点を3回往復しても進まないときは、§3 の「割れたとき」で決めて次へ。
+- 同じ論点を3回往復しても進まないときは、まず fable-lab に 1 回問い（§1.2）、その答えを吟味してもなお割れたら §3 の「割れたとき」で決めて次へ。
 - 止まるのは：レート制限、§3 の違反で進められる作業が尽きたとき、ユーザーが止めたとき。
 - `[USER]` で始まるメッセージはユーザーから（送り手 `yamaguchi`）。最優先で従い、承認・差し戻しを `bp-proposals.md`・`decisions-log.md` のユーザー欄に書き写す。
 - **再開できるように**：作業が一区切りするたびに Claude が `STATE.md` を更新する（段階・作業 ID・担当・次の一手・関連ファイル・置いている仮定）。
@@ -135,6 +142,7 @@ D0 の 8 往復で Codex の入力が約 684 万トークン（キャッシュ�
 ```
 # S<番号> <題>
 - 目的 / 対応する要件（requirements.md の番号）/ 出典（bridge-protocol の宣言・ユーザー決定・decisions-log・P<番号> p.<頁>）
+- 用語（decisions-log #36）: 区間・入力は `discussion/glossary.md` の名で書き、条件 ID（型・収量の対・枠の長さ・並び）を添える。生活の比喩の名は使わない
 - 対象集団（decisions-log #34）: 生成器（種子から何が決まるか）・変動させる条件・固定条件・一般化の範囲。予測と一緒に凍結する
 - 要件（番号付き、検証できる文で）
 - 非目標

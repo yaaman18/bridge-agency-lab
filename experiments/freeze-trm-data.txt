@@ -1,0 +1,7 @@
+# S45 freeze r2 (2026-11-09, spec r3 after I-R 1 CHANGES; r1 kept as freeze-trm-data-r1.txt with its results *-r1.*). Expected: every gate ok. Re-frozen once: the first r2 run stopped on an undefined name (ex0) before writing results.
+11b75f2b05ae34162a7f9876d8622bdb37e8d9fafeaca2c7f3151062bfc86275  ../discussion/specs/S45-trm-stageA.md
+63af7f96f12ab192f192037ef92d8e112d7fa26159ff8640d676c58e2b0c88b2  trm_data.jl
+4a373b19bba198a8d0e87708c50daa8c8da1a54b715d14ede66265a03f9a2af3  check_trm_data.jl
+f1fddd533c20686f8eb7aac87e3d34587202f15d84561d586e72d07f35c96d48  g1_school.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

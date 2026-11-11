@@ -1,0 +1,8 @@
+# S46 main freeze (2026-11-09, after the smoke r2 and the exploration; the confirm seeds 541-560 never run). PH5 added after the exploration (pred_grid.jl primaries, check_pred_grid.jl).
+ae9efb698fea918f183abf17109ae2bf8a68a39508d7e66927a1e033d8f06d14  predictions-pred-grid.md
+1b92292b8859af7cbbc90a83a99f06397324c50affaae2c721c6a6f99da68e98  ../discussion/specs/S46-pred-grid.md
+3c9e8387fb9f7215b54cd43d3983feb02191405dccc70d7181b5ca078a493401  pred_grid.jl
+8e0e8dda42ab8db8bf33b0c581d65e0bd11e18f3cdec3f1f078c17a4118c6f6b  check_pred_grid.jl
+f1fddd533c20686f8eb7aac87e3d34587202f15d84561d586e72d07f35c96d48  g1_school.jl
+a17d7d402e6ea968c3578e35eddd300bc0b2182ae8f9f405661ce2cbee6b2111  variant_horizon.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

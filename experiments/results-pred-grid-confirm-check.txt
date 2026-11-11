@@ -1,0 +1,25 @@
+GATE ok   freeze sha predictions-pred-grid.md
+GATE ok   freeze sha ../discussion/specs/S46-pred-grid.md
+GATE ok   freeze sha pred_grid.jl
+GATE ok   freeze sha check_pred_grid.jl
+GATE ok   freeze sha g1_school.jl
+GATE ok   freeze sha variant_horizon.jl
+GATE ok   freeze sha ../core/circuit.jl
+GATE ok   replay: natural runs match g1_school.jl's record (seeds <= 540: 240)
+GATE ok   the natural branch equals the natural run for all its updates and the death time
+GATE ok   mX only: no other motor acts in any branch; all silenced: no act
+GATE ok   negative: the m0-only plan without silencing fails the silence gate, at every fork whose natural branch has an act of m1 or m2 (2756 forks)
+GATE ok   common noise: r5 equal across the 5 plans on every update where all are alive (compared > 0)
+GATE ok   key source times <= t; the negative (a key reading t+1) is caught
+GATE ok   leak: tables unchanged when non-train records are rewritten
+GATE ok   bootstrap unit: all positive excludes 0, half and half includes 0
+GATE ok   the confirm losses only on the confirm stage
+GATE ok   PH4: the same evaluation examples for the three training sizes (primary_confirm)
+PH1 (C2): pairs 2342, rb disagreement k=1 0.0 k=8 0.0623398804440649 by kind JSON.Object{String, Any}("m2" => Any[1171, 0, 71], "m1" => Any[1171, 0, 75]): 的中
+PH2 (C3): L_H4 0.1560933462969119 L_H4plan 0.16040762239581613 diff -0.0043142760989069535 CI Any[-0.009879145939080562, 0.00039434203707733686] n 5857: 外れ
+PH3 (C1): r6 k=1 L_R 0.16624948935905995 L_H4 0.006739101682072653: 的中
+PH4 (C4): L(S5) 0.22727609778307348 L(S10) 0.18079795746274072 L(S20) 0.16040762239581613: 的中
+PH5 (C3, added after the exploration): rb k=32 L_R 0.17128776213981128 L_Rplan 0.1489681876235174 diff 0.022319574516293874 CI Any[0.01800178083046089, 0.026584142787569133] n 5467: 的中
+each primary is judged on its own; no overall success is declared (no multiplicity correction is claimed)
+natural transfer (only if PH2 holds): n 1172 L_H4 0.18874316937844288 L_H4plan 0.19434941436769668 -> （PH2 不成立のため問わない）
+all gates: ok
