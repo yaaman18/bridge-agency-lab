@@ -1,0 +1,5 @@
+# S50 smoke (seeds 629-630; L2, L2+SF, GREEDY; J0 + 2 Tj x 5 J per task). Timing only; no effect is read.
+threads 16; smoke wall 34.7 s; 6 tasks, 66 runs; Julia 1.11.6
+seconds per task (11 runs, under 16 threads): mean 27.9, max 29.8
+main run: 36 tasks x 11 = 396 runs; CPU 0.28 h; wall estimate (rounds of 16 tasks) 0.023 h
+stop rule (instruction, 6 h): estimate 0.023 h -> within

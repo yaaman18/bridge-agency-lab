@@ -1,0 +1,9 @@
+# S50 freeze 2 (before the main run; 2026-11-14 13:10). Main: julia --project=.. -t 16 phase_jump.jl main (seeds 631-642, once), then julia --project=.. check_phase_jump.jl main.
+# smoke estimate (results-phase-jump-smoke.out): 36 tasks x 11 runs = 396 runs, about 28 s per task under 16 threads, wall about 0.023 h (within the 6 h rule). Gates Z0-Z4 and negative controls all passed (results-phase-jump-gates.out).
+c985b08d55faae3ed02ff324334f63c4582f51f2d88bef35c69afbf450a6edc6  phase_jump.jl
+5c931abde46f976d8babd6bd6a8b3476a33fb76bffbd5d8f3b3bcfa7d5cb41f6  check_phase_jump.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  ../core/matter.jl
+8583dd5050fb4f4edda99b12f1ac5b7f3b7bdacf3c1b8d5defb761a644f03a6b  ../discussion/specs/S50-phase-jump.md
+8aae22b4ba9a98f8b22a530a2617c0a792f23ac382da39fe53611ac4dfe521d4  predictions-phase-jump.md

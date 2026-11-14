@@ -1,0 +1,6 @@
+# S49c freeze 0 (spec r1 draft and predictions, before the S-R; 2026-11-14 12:30)
+7a1162c6e1a1b6c7a317d9b4992825ea80e7922130ce10e02f15a134f8340660  ../discussion/specs/S49c-interval-audit.md
+8ad9f5371e102602f79bce09729df0549d7b1a83e48a731ada7a0a6eb02cf101  predictions-rust-onelife-c.md
+# S49c freeze 1 (spec r2 and predictions after the S-R, before any code change; 2026-11-14 12:32)
+b83a9bf366789bc99bff95c46f3bbfbc164f65e7358b96f2d7274a1bbc6825c2  ../discussion/specs/S49c-interval-audit.md
+87f81a4a997130b2ee8554375e001c7d902c9b09a08e2d118b8fb04bb6e954d3  predictions-rust-onelife-c.md

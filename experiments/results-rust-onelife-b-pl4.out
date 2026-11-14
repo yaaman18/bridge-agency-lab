@@ -1,0 +1,2 @@
+S49b PL4 alone (rerun after the full run was interrupted during PL4 at 14:20), 2026-11-14 17:02:22; onelife-run.rs 2c39cc2fcbc5742b
+PL4: copy edits (cd 1, results path 1, old paths left 0, lines changed 2); exit 0; PR1-PR6 true 6 of 6; Q1-Q6 true 6 of 6; S49 results files unchanged true -> true (18:40:34)

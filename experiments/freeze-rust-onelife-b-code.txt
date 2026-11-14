@@ -1,0 +1,17 @@
+# S49b code freeze (lab-coder, 2026-11-14 12:10; after gates L0-L2 and core/check/run.sh, before the one run of sh experiments/onelife_rust_lock_check.sh)
+# changed files
+2c39cc2fcbc5742b3161a16d951882c384f842c33c6bed3ee0ad647994fab9e5  ../rust/being-tools/src/bin/onelife-run.rs
+cea026b007371f8c9b67d64a84817af48107877a58fe45c591d51218667de6e4  ../rust/being-tools/Cargo.toml
+# new files
+21a0193f234ed4ec8df8b009f0f2808d0e0c23492b833faa76c819102bb76760  onelife_rust_lock_check.sh
+# reference (not changed)
+689487e58047c0edec618ddc927a8fd998fe4ffdb23310fc2a9c09d12c0a0d70  ../rust/being-core/src/onelife.rs
+e8026d8df92747728db5b1094ca5917c6f9cceed283dde6db9306e79047d7faa  ../rust/being-core/src/matter.rs
+a759621541673a8e4c4a00790af18dccbb93632131713b3b13ce675a4c37f3ae  ../rust/being-core/src/fdexp.rs
+a86d61a15fd896a5b5fd42b2ce7e9d7f8e0993ec676fe19d4fa49f2dabb1d533  ../rust/being-core/src/sha256.rs
+457b93be0b6d2a778466027f78acf1804d996b912964eb89dd7f3b347d0ba438  ../rust/being-tools/src/main.rs
+e643daeeb663508430c428af7fb23bd48e3d798f696b8f92cfc36397241ebba5  onelife_rust_check.sh
+0c1716dce6b6e02c88f70b5fc55ffa320d6bd5ca704709bdebc43c71564f758c  onelife_rust_check.jl
+7dc1527b46f43d16de6c1338b40e72aa90027e3ad9d4c8590a30927b0e5e08a6  results-rust-onelife.json
+0b46e73eafbf592f9bbd20c943fe226baac51674a6259b76faa27b6d80bfd6cd  results-rust-onelife.out
+9710a8bf3b9c4bc3162cd6aed8e9e8bf2ec930ba3a3a9127fd98de933f84e75a  ../rust/Cargo.lock

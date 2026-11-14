@@ -9,3 +9,5 @@ being-core = { path = "../being-core" }
 [features]
 # S49 test build only: onelife-run aborts at a chosen point of a save (cargo build --features crashpoint)
 crashpoint = []
+# S49b test build only (gate L2): onelife-run without the writer's lock (cargo build --features nolock)
+nolock = []

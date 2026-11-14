@@ -1,0 +1,4 @@
+# S49b freeze 1 (spec r2 and predictions, before any code change; 2026-11-14 11:45)
+0e2abb09acb4f0184a21b9eafdddc15087eecb4959738a77d6c2237ac14d5ba6  ../discussion/specs/S49b-single-writer.md
+77df943de8f1e9564f149fcb0e4e1efb3f1117256a6b184b8e93c1dc1eae56d1  predictions-rust-onelife-b.md
+fea452007e33bb6ad0a73262f39b6393bf612617f65e6f64159f52ee89c2bd33  ../rust/being-tools/src/bin/onelife-run.rs

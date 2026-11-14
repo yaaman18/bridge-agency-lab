@@ -1,0 +1,4 @@
+# S50 freeze 1 (spec r3 and predictions, before any code exists; 2026-11-14 12:56)
+8583dd5050fb4f4edda99b12f1ac5b7f3b7bdacf3c1b8d5defb761a644f03a6b  ../discussion/specs/S50-phase-jump.md
+8aae22b4ba9a98f8b22a530a2617c0a792f23ac382da39fe53611ac4dfe521d4  predictions-phase-jump.md
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl

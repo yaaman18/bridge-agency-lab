@@ -1,0 +1,67 @@
+== Z0
+Z0 shas equal freeze-phase-jump-smoke.txt: Dict{String, Bool}("discussion/specs/S50-phase-jump.md" => 1, "experiments/predictions-phase-jump.md" => 1, "core/body_org.jl" => 1)
+Z0 neg: body_org.jl against the sha of the predictions (must be false): false
+Z0 shas now (circuit.jl, matter.jl for freeze-phase-jump.txt): circuit.jl 295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  matter.jl 00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca
+Z0 sh core/check/run.sh: exit 0
+   | inputs 400000; mismatches of jsmath.jl  exp 0 tanh 0 log 0 cos 0 hypot 0
+   | (Julia Base for comparison: exp 36746 tanh 48549 log 27768 cos 3969)
+   | == JavaScript copies against Julia
+   | all 42 identical
+   | == Rust (the app's engine) against Julia
+   | rust scenarios written in 3500 ms
+   | all 29 identical
+   | wasm scenario written; ui keys 28 texts; age 88893
+   | all 1 identical
+   | app/index.html embeds the WebAssembly module built from rust/ exactly
+   | results-body-org.json reproduced exactly (10 seeds x 4 conditions x 10000 steps; keys added since stage 42: blocked, kept, keptEnd, lost, meanLate, upkeep)
+   | == OneLife (S49): Rust (rust/being-core/src/onelife.rs) against Julia (core/one_life.jl), seed 627, L2 and L2+SF, D3, 3000 drives
+   | L2: the saves after n = 0..3000 drives identical; {"law":"L2","dead_at":2091,"death":2090,"errors":0}
+   | L2+SF: the saves after n = 0..3000 drives identical; {"law":"L2+SF","dead_at":2148,"death":2147,"errors":0}
+== Z1 (J = 0 with the SCHED function = the default run without SCHED)
+Z1 seed 629 L2: J0 = none true   neg: Tj3800 J100 = none false (must be false)   death nothing
+Z1 seed 629 L2+SF: J0 = none true   neg: Tj3800 J100 = none false (must be false)   death nothing
+Z1 seed 629 GREEDY: J0 = none true   neg: Tj3800 J100 = none false (must be false)   death nothing
+Z1 seed 630 L2: J0 = none true   neg: Tj3800 J100 = none false (must be false)   death nothing
+Z1 seed 630 L2+SF: J0 = none true   neg: Tj3800 J100 = none false (must be false)   death nothing
+Z1 seed 630 GREEDY: J0 = none true   neg: Tj3800 J100 = none false (must be false)   death nothing
+== Z2 (J = 1000 = J = 0; J = 100 changes the schedule from Tj on only)
+Z2 seed 629 L2 Tj 3800: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 629 L2 Tj 4250: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 629 L2+SF Tj 3800: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 629 L2+SF Tj 4250: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 629 GREEDY Tj 3800: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 629 GREEDY Tj 4250: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 630 L2 Tj 3800: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 630 L2 Tj 4250: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 630 L2+SF Tj 3800: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 630 L2+SF Tj 4250: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 630 GREEDY Tj 3800: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 seed 630 GREEDY Tj 4250: J1000 = J0 true   neg: J100 = J0 false (must be false)
+Z2 schedule Tj 3800: J100 differs at 0 steps before Tj (must be 0), 1800 from Tj (must be > 0); J1000 differs at 0 (must be 0); J0 vs default 0 (must be 0)
+Z2 schedule Tj 4250: J100 differs at 0 steps before Tj (must be 0), 1700 from Tj (must be > 0); J1000 differs at 0 (must be 0); J0 vs default 0 (must be 0)
+== Z3 (the quantities)
+Z3 seed 629 L2 Tj 3800: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.67, 0.6, 0.6, 0.99, 0.99, 0.98, 0.99, 0.98, 0.98, 0.98] (some window must be < 1) true
+Z3 seed 629 L2 Tj 4250: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.98, 0.99, 0.98, 0.98, 0.98, 0.87, 0.6, 0.6, 0.8, 0.98] (some window must be < 1) true
+Z3 seed 629 L2+SF Tj 3800: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.99, 0.95, 0.99, 0.97, 0.97, 0.98, 0.99, 0.98, 0.98, 0.98] (some window must be < 1) true
+Z3 seed 629 L2+SF Tj 4250: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.98, 0.99, 0.98, 0.98, 0.98, 0.99, 0.95, 0.99, 0.97, 0.97] (some window must be < 1) true
+Z3 seed 629 GREEDY Tj 3800: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.2, 0.2, 0.2, 0.99, 1.0, 1.0, 0.99, 1.0, 1.0, 1.0] (some window must be < 1) true
+Z3 seed 629 GREEDY Tj 4250: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [1.0, 0.99, 1.0, 1.0, 1.0, 0.6, 0.2, 0.2, 0.59, 1.0] (some window must be < 1) true
+Z3 seed 630 L2 Tj 3800: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.75, 0.66, 0.67, 0.99, 0.98, 0.98, 0.99, 0.98, 0.98, 0.98] (some window must be < 1) true
+Z3 seed 630 L2 Tj 4250: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.98, 0.99, 0.98, 0.98, 0.98, 0.88, 0.67, 0.66, 0.82, 0.98] (some window must be < 1) true
+Z3 seed 630 L2+SF Tj 3800: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.67, 0.67, 0.67, 0.98, 0.98, 0.98, 0.99, 0.98, 0.98, 0.98] (some window must be < 1) true
+Z3 seed 630 L2+SF Tj 4250: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.98, 0.99, 0.98, 0.98, 0.98, 0.84, 0.67, 0.66, 0.82, 0.98] (some window must be < 1) true
+Z3 seed 630 GREEDY Tj 3800: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [0.2, 0.2, 0.2, 0.99, 1.0, 1.0, 0.99, 1.0, 1.0, 1.0] (some window must be < 1) true
+Z3 seed 630 GREEDY Tj 4250: A(base, base, 0) = B = 1 in all live windows, A_1000 = C_1000, D_0 = C_1000: true   neg: acts shifted by 1 step, A per window [1.0, 0.99, 1.0, 1.0, 1.0, 0.6, 0.2, 0.2, 0.59, 1.0] (some window must be < 1) true
+Z3 moved: the recomputed takes sum to the run's moved in every run: true   neg: one take removed equals moved false (must be false)
+== Z4 (sign test)
+Z4 n12 10/2: 乱れあり p 0.03857421875 (want 乱れあり)
+Z4 n12 9/3: 検出不能 p 0.14599609375 (want 検出不能)
+Z4 n12 2/10: 逆 p 0.03857421875 (want 逆)
+Z4 n8 8/0: 乱れあり p 0.0078125 (want 乱れあり)
+Z4 n8 7/1: 検出不能 p 0.0703125 (want 検出不能)
+Z4 n7 7/0: 検出不能 p 0.015625 (want 検出不能)
+Z4 10/2 + 2 ties: 乱れあり p 0.03857421875 (want 乱れあり)
+Z4 8/0 + 4 not verifiable: 乱れあり p 0.0078125 (want 乱れあり)
+Z4 all not verifiable: 確かめられず p - (want 確かめられず)
+Z4 neg: the test without n >= 8 on 7/0 -> 乱れあり (differs from the wanted 検出不能, so the gate would fail: true)
+== summary {"Z4 neg":true,"Z3 neg":true,"Z0 shas":true,"Z2":true,"Z0 run.sh":true,"Z2 neg":true,"Z3":true,"Z4":true,"Z1":true,"Z1 neg":true}

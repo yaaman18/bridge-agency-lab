@@ -5,8 +5,12 @@
 //! No birth: a missing run file is an error. Any error (the run file, a line, a drive out of {0..5}^2 on a living
 //! state, n at u64::MAX, a write) stops with a non-zero exit and nothing saved; nothing is repaired or made anew.
 //! The only inputs are the run file and the standard input; the only argument is the run file's place.
+//! One writer (S49b §2): before the run file is read, flock(LOCK_EX | LOCK_NB) is taken on "<name>.lock" beside it
+//! (made if missing; never read, written or removed; the OS drops the lock when the process ends). If it cannot be
+//! taken, nothing is read or written and the exit is 9.
 use being_core::onelife;
 use std::io::{BufRead, Write};
+use std::os::unix::io::AsRawFd;
 use std::path::{Path, PathBuf};
 
 const E_USAGE: i32 = 2;
@@ -17,6 +21,23 @@ const E_LINE: i32 = 6;
 const E_NMAX: i32 = 7;
 const E_DRIVE: i32 = 8;
 const E_WRITE: i32 = 9;
+const E_LOCK: i32 = 9;
+
+#[cfg(not(feature = "nolock"))]
+extern "C" {
+    fn flock(fd: i32, operation: i32) -> i32;
+}
+/// flock(fd, LOCK_EX | LOCK_NB) == 0 (LOCK_EX = 2, LOCK_NB = 4 on macOS and Linux).
+#[cfg(not(feature = "nolock"))]
+fn lock_ex_nb(f: &std::fs::File) -> bool {
+    unsafe { flock(f.as_raw_fd(), 2 | 4) == 0 }
+}
+/// The negative control of gate L2 (feature nolock, test build only): the lock is not taken.
+#[cfg(feature = "nolock")]
+fn lock_ex_nb(f: &std::fs::File) -> bool {
+    let _ = f.as_raw_fd();
+    true
+}
 
 /// The crash points of the test build (feature crashpoint): abort at `stage` of the `k`-th save of this process.
 #[cfg(feature = "crashpoint")]
@@ -77,6 +98,24 @@ fn parent_of(p: &Path) -> PathBuf {
     }
 }
 
+/// "<name><ext>" beside the run file.
+fn beside(path: &Path, ext: &str) -> PathBuf {
+    let mut name = path.file_name().unwrap_or_default().to_os_string();
+    name.push(ext);
+    parent_of(path).join(name)
+}
+
+/// The writer's lock: "<name>.lock" opened (made if missing, not truncated) and held for the life of the process.
+fn take_lock(path: &Path) -> Result<std::fs::File, String> {
+    let lp = beside(path, ".lock");
+    let f = std::fs::OpenOptions::new().write(true).create(true).truncate(false).open(&lp).map_err(|e| format!("cannot open the lock file {}: {}", lp.display(), e))?;
+    if lock_ex_nb(&f) {
+        Ok(f)
+    } else {
+        Err(format!("the run file is held by another writer (lock {})", lp.display()))
+    }
+}
+
 /// Temporary file in the same directory -> fsync -> rename -> fsync of the directory.
 fn replace(path: &Path, bytes: &[u8], #[allow(unused)] save: u64, #[cfg(feature = "crashpoint")] c: &Option<Crash>) -> std::io::Result<()> {
     let dir = parent_of(path);
@@ -123,6 +162,13 @@ fn run() -> i32 {
         return E_USAGE;
     };
     let path = Path::new(&args[1]);
+    let _lock = match take_lock(path) {
+        Ok(f) => f,
+        Err(e) => {
+            eprintln!("onelife-run: {}", e);
+            return E_LOCK;
+        }
+    };
     let bytes = match std::fs::read(path) {
         Ok(b) => b,
         Err(e) => {

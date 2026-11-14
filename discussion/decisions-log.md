@@ -421,20 +421,39 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 種別: 実装・読み。決めたこと: 測り方の候補 C1・C2・C3（S47b §3）を走らせる前に凍結して全部報告／評価の種子は 3 案で共有（codex A2）／C3 は別趣旨と明記（A1）／対象は (c) の 4 腕だけ／R2 の GREEDY の側は式の写し。「新しい趣旨の候補をいくつか」の読みは `user-decisions.md` 2026-11-14。
 - 結果の読み: README 項番156。PB1 は C1・C3 成立、C2 外れ。PB2 成立。PB3 は C2 L2+SF で外れ。凍結した表の「割れる」の行で、まとめの文は作らない。
 - 合意: 両者合意（S-R CHANGES → 採用、I-R APPROVE、[AUTO 1/10]・[3/10]）。元に戻す方法: `experiments/pa_regrid.jl`・`check_pa_regrid.jl`・`predictions-pa-regrid.md`・`freeze-pa-regrid*.txt`・`results-pa-regrid-*`・`discussion/specs/S47b-regrid.md`・README 項番156 を除く。
-- ユーザー: 指示の範囲（2026-11-14「１から５まで順番にやって」の 2・3・4 番）。中身の判断は事後承認の対象（承認 / 差し戻し / 保留）
+- ユーザー: **承認**（2026-11-14 ユーザー「これらを全部承認するからやってちょうだい」）
 
 ### #46 S48b の実装上の判断と結果の読み（2026-11-14）
 - 種別: 実装・読み。決めたこと: 死ぬ駆動列は歩の番号だけの固定の列 D3・D4（状態に依る切り替えは採らない、codex B1）／数の規則はセルごと 3 以上（B3）／6000 までに死なない体は対象外（B2）／回帰の smoke は写しで走らせる。
 - 結果の読み: README 項番157。PD1〜PD5 成立（40/40）。限定: 二つの固定の列・入力を失う死に限る、D4 は独立な 20 例でない。
 - 合意: 両者合意（S-R CHANGES → 採用、I-R APPROVE）。元に戻す方法: `experiments/one_life_death*.jl`・`predictions-one-life-b.md`・`freeze-one-life-b.txt`・`freeze-one-life-death-code.txt`・`results-one-life-death-*`・`discussion/specs/S48b-death-drive.md`・README 項番157 を除く。
-- ユーザー: 指示の範囲（2026-11-14「１から５まで順番にやって」の 2・3・4 番）。中身の判断は事後承認の対象（承認 / 差し戻し / 保留）
+- ユーザー: **承認**（2026-11-14 ユーザー「これらを全部承認するからやってちょうだい」）
 
 ### #47 S49 の実装上の判断と結果の読み（P1-6 の一部、2026-11-14）
 - 種別: 実装・読み。決めたこと: 規範の exp は fdlibm の書き下しで許容差なし（codex C3）／onelife-run は死後も入力を消費し同じ中身を保存し続ける（C1）／走りのファイルの並びと n の規則（S49 r2）／主張はプロセスの中断まで／OneLife の回路は `circuit.rs` を変えず別に書く／OneLife のモジュールを wasm から外す／誕生の CLI は照合の種子だけ／サービスの登録・誕生・1 歩の実時間はしない。
 - 仕様と違う実装（申告、次の版で扱う）: 状態を起動のとき一度だけ読む／Rust の読み込みの形の検査／死後の形式の崩れた行は誤り／一時ファイルの名前が固定で、書き手が一つという前提（排他なし）。
 - 結果の読み: README 項番158。PR1〜PR6 成立（この機械だけ）。
 - 合意: 両者合意（S-R: BLOCK 2 点 → r1 で対応、CHANGES 6 点 → r2 で採用。I-R: CHANGES〈申告と限定の追加〉→ 記録に採用、[AUTO 4/10]）。元に戻す方法: `rust/being-core/src/{onelife,matter,fdexp,sha256}.rs`・`rust/being-tools/src/bin/`・`core/check/onelife_scenarios.jl`・`experiments/onelife_rust_check.*`・`results-rust-onelife.*`・`predictions-rust-onelife.md`・`freeze-rust-onelife*.txt`・仕様 S49 を除き、`lib.rs`・`being-tools/src/main.rs`・`being-tools/Cargo.toml`・`core/check/run.sh` を git の版に戻す。
-- ユーザー: 指示の範囲（2026-11-14「１から５まで順番にやって」の 4 番）。中身の判断は事後承認の対象（承認 / 差し戻し / 保留）
+- ユーザー: **承認**（2026-11-14 ユーザー「これらを全部承認するからやってちょうだい」）
+
+### #48 時間・停止の読みと用語（D-TIME、2026-11-14）
+- 種別: 読み・用語。決めたこと（`notes/D-TIME.md` §3・§4）: 個体の状態に届く時間は歩の数だけ／歩長は宿主が世界と step を結ぶ実行形式の約束で、定数として閉じ J2 で凍結／停止の時機を選べることは「救う力」の一手段になりうる。裁量のない自動の再開だけを基盤の維持とし、ほかは介入として記録（仮定 H5）／状態の外に追記型の監査の記録／用語集 §5（死・停止・歩行・行為なし・歩行・行為あり、上から順の排他の分類。歩は分けられない単位）。
+- ユーザーの決定・指示（`user-decisions.md`、`bp-proposals.md`）: 1 歩＝10 秒の仮置き（H4、「中庸な範囲で設定して」。数値は claude-lab が選んだ）／終わらなかった歩を失敗として終端させる案は採らない／四つの定義を用語集に入れる／BP6 は保留。
+- 選ばなかった案・取り下げ: 歩長を世界の法則とする／歩を進める・止める力を三つめの力とする／欠測で埋める規則／自己相関から歩長を決める／同じ n の採り直しの禁止（二人の合意だったが、ユーザーの判断で「捨てて数える」に改めた）。
+- 合意: 両者合意（codex-lab 2 往復、[AUTO 2/10]〜[4/10]）。元に戻す方法: `notes/D-TIME.md`・用語集 §5・`bp-proposals.md` の BP6 と BP5 の追記・STATE の H4 を除く。
+- ユーザー: **承認**（2026-11-14 ユーザー「1,2,3をまとめてやってから議論の続きをしよう」: 2 = #48・#49・#50 の事後承認）
+
+### #49 S50 の実装上の判断と結果の読み（位相の飛び、2026-11-14）
+- 種別: 実装・読み。決めたこと: 主の量は V＝D_J − A_J（codex-lab の案）／検定は有効な n の正確な両側の符号検定／Tj 二点・J 五値・12 種子／身体は同じ時刻の基準と比べ因果の分解をしない／PJ4 は成立に数えない（GREEDY の単位が 1）。
+- 結果の読み: README 項番159。PJ1・PJ2・PJ3・PJ5 成立、PJ4 は読めない。
+- 合意: 両者合意（S-R: BLOCK → r2、CHANGES → r3。I-R: CHANGES〈J100 の 1 セルの明記、受け取りの差の範囲〉→ 採用、[AUTO 7/10]）。元に戻す方法: `experiments/phase_jump.jl`・`check_phase_jump.jl`・`predictions-phase-jump.md`・`freeze-phase-jump*.txt`・`results-phase-jump-*`・仕様 S50・README 項番159 を除く。
+- ユーザー: **承認**（2026-11-14 ユーザー「1,2,3をまとめてやってから議論の続きをしよう」: 2 = #48・#49・#50 の事後承認）
+
+### #50 S49b の実装上の判断と結果の読み（単一の書き手の排他、2026-11-14）
+- 種別: 実装・読み。決めたこと: 錠は走りのファイルの隣の `<name>.lock` への flock（排他・待たない）、取れなければ exit 9／錠のファイルは読まない・書かない・消さない／flock は C の関数を直接呼ぶ（クレートを足さない）／負の対照は feature `nolock` の試験ビルド。
+- 結果の読み: README 項番160。L0〜L2、PL1・PL2・PL3・PL5 成立。**PL4 は走らせ直しで真、全体の一回の走りでは未完**（全体の走りが 14:20 にセッションの中断で切れた。凍結したスクリプトの PL4 の部分と同じ論理で PL4 だけを走らせ直した。凍結物は不変）。
+- 合意: 両者合意（I-R: P1 accept、P2 accept〈補足: 外からの `.lock` の改変のもとでの排他は未保証と書く → 採用〉、P3 accept〈上の言い方〉、P4 defer〈exit 9 と書き込みの失敗の番号の重なりは次の版〉、[AUTO 8/10]）。元に戻す方法: `git checkout rust/being-tools/Cargo.toml rust/being-tools/src/bin/onelife-run.rs` と、`experiments/onelife_rust_lock_check.sh`・`predictions-rust-onelife-b.md`・`freeze-rust-onelife-b*.txt`・`results-rust-onelife-b*`・仕様 S49b・README 項番160 を除く。
+- ユーザー: **承認**（2026-11-14 ユーザー「1,2,3をまとめてやってから議論の続きをしよう」: 2 = #48・#49・#50 の事後承認）
 
 ## 議論より前からの未決（二人で決めてよい）
 - [2026-11-03 項番86] L2 の系に sed_fade と KC 0.0015 を採るか（項番77「L2 は偽で確定」を改めるか）— README.md 未決。

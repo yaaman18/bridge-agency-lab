@@ -1,0 +1,47 @@
+S49b onelife-run lock check, mode full, work dir /var/folders/82/qvmvqs01469ck832bd6f4k280000gn/T//onelife-lock.LRZqX6, 2026-11-14 12:10:29
+L0 build: warnings 0 (nolock build 0); being-core crates in its tree 1; being-core files with the S49 sha 4 of 4 -> true
+L1 sources: forbidden uses '', reads of the lock file '', std::fs::read( 1 time(s), std::env::args() 1 time(s); unreadable lock file with arbitrary bytes: exit 0, n 3, lock bytes unchanged true -> true; negative controls caught: std::env::var true, fs::read of the lock true
+L2 negative control (627-L2-D1, 20 trials of PL2): nolock build trials failed 20 (both exited 0 in 0); release build trials passed 20; references checked true / true -> true
+L2 detail: nolock trials without a lock-refused side 20; trials where a side stopped with a write error (exit 9 is also E_WRITE) 20
+L2b negative control (PL1 with the nolock build, 627-L2-D1): {"second_exit":0,"lock_message":false,"file_unchanged":false,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":false}; caught true
+== PL1: a second onelife-run while one holds the run file (blocked on its input after 10 drives from n = 1999)
+PL1 627-L2-D1 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 627-L2-D3 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 627-L2+SF-D1 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 627-L2+SF-D3 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 628-L2-D1 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 628-L2-D3 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 628-L2+SF-D1 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1 628-L2+SF-D3 {"second_exit":9,"lock_message":true,"file_unchanged":true,"first_exit":0,"end_same_as_solo":true,"payload_is_walk":true,"pass":true}
+PL1: true
+== PL2: two onelife-run started together on one run file (n = 1999, 40 drives each: the life's drive file and the other one), 50 trials per life
+PL2 627-L2-D1 {"trials":50,"trials_ok":50,"won_A":21,"won_B":29,"observations":5114,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 627-L2-D3 {"trials":50,"trials_ok":50,"won_A":18,"won_B":32,"observations":5284,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 627-L2+SF-D1 {"trials":50,"trials_ok":50,"won_A":22,"won_B":28,"observations":5229,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 627-L2+SF-D3 {"trials":50,"trials_ok":50,"won_A":24,"won_B":26,"observations":5240,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 628-L2-D1 {"trials":50,"trials_ok":50,"won_A":22,"won_B":28,"observations":5234,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 628-L2-D3 {"trials":50,"trials_ok":50,"won_A":34,"won_B":16,"observations":5205,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 628-L2+SF-D1 {"trials":50,"trials_ok":50,"won_A":25,"won_B":25,"observations":5286,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2 628-L2+SF-D3 {"trials":50,"trials_ok":50,"won_A":30,"won_B":20,"observations":5266,"refs":[true,true],"ends_differ":true,"pass":true}
+PL2: true
+== PL3: drives 0..1999, SIGKILL at n = 2000, a new onelife-run with drives 2000..9999 (lock file missing / with arbitrary bytes)
+PL3 627-L2-D1 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 627-L2-D3 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 627-L2+SF-D1 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 627-L2+SF-D3 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 628-L2-D1 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 628-L2-D3 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 628-L2+SF-D1 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3 628-L2+SF-D3 {"uninterrupted_exit":0,"uninterrupted_is_walk":true,"rows":[{"lock":"missing","lock_file_at_resume":false,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":null,"ok":true},{"lock":"arbitrary","lock_file_at_resume":true,"kill_exit":137,"n_at_kill":2000,"resume_exit":0,"end_same_as_uninterrupted":true,"lock_bytes_unchanged":true,"ok":true}],"pass":true}
+PL3: true
+== PL5: malformed lines (exit 6, nothing saved) and out-of-range drives (alive: exit 8, nothing saved; dead: consumed)
+PL5 627-L2-D1: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 627-L2-D3: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 627-L2+SF-D1: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 627-L2+SF-D3: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 628-L2-D1: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 628-L2-D3: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 628-L2+SF-D1: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5 628-L2+SF-D3: states alive "dead":false / dead "dead":true; cases 31, as expected 31, failing ''; control (valid drive alive) true -> true
+PL5: true
+== PL4: the whole of experiments/onelife_rust_check.sh (a copy writing its results to the work dir), 14:20:07
