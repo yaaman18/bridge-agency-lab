@@ -1,0 +1,6 @@
+# S53 freeze 0 (spec r1 and predictions, before the S-R, before any code; 2026-11-14 21:33)
+85da7a66555e37a2b055b9777d6f7c7302df29f082c06c7e5d63b4c54d4abadd  ../discussion/specs/S53-stake.md
+b0de9a38439d0496e5440a64ac938c06fedbd92ac6e8da211492afd4b9e97b68  predictions-stake.md
+# S53 freeze 1 (spec r2 and predictions r2 after the S-R, before any code; 2026-11-14 21:40)
+241cb1f45f64a467ea1774987b6b1b56efa7cd83c32b4a93474b8f9ee674c6f7  ../discussion/specs/S53-stake.md
+1501d86f9376709be14993e12fce6be1cee58d083801c7751b341d9ea07cb6ba  predictions-stake.md

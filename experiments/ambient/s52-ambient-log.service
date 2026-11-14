@@ -1,0 +1,14 @@
+# S52 ambient logger: a measuring tool, not an individual. Remove with:
+#   sudo systemctl disable --now s52-ambient-log
+[Unit]
+Description=S52 ambient log (Wi-Fi/Bluetooth received signal and chip temperature; no individual)
+After=NetworkManager.service bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /home/pi/s52/ambient-log.sh /home/pi/s52/ambient.tsv
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

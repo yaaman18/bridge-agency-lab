@@ -455,6 +455,36 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 合意: 両者合意（I-R: P1 accept、P2 accept〈補足: 外からの `.lock` の改変のもとでの排他は未保証と書く → 採用〉、P3 accept〈上の言い方〉、P4 defer〈exit 9 と書き込みの失敗の番号の重なりは次の版〉、[AUTO 8/10]）。元に戻す方法: `git checkout rust/being-tools/Cargo.toml rust/being-tools/src/bin/onelife-run.rs` と、`experiments/onelife_rust_lock_check.sh`・`predictions-rust-onelife-b.md`・`freeze-rust-onelife-b*.txt`・`results-rust-onelife-b*`・仕様 S49b・README 項番160 を除く。
 - ユーザー: **承認**（2026-11-14 ユーザー「1,2,3をまとめてやってから議論の続きをしよう」: 2 = #48・#49・#50 の事後承認）
 
+### #51 S53 の実装上の判断と結果の読み（賭け金の形、2026-11-14）
+- 種別: 実装・読み。決めたこと: 削る側は「λ·s·KC を維持費と同じ規則で体から取り港に戻す」（新しい数値を置かず KC を単位。codex-lab: 最小の実装として accept）／養う側は M(s)＝1.0＋0.5·s（駆動だけ）／λ∈{0, 2, 8}／腕は ORG と ORG-SIL／入れ方は `body_org_run` の写し＋3 か所（`core/` 不変）。M の傾きと λ の格子は claude-lab が置いた数。
+- 結果の読み: README 項番161。PK1・PK2・PK3 成立、PK4 検出不能（仕様の欠陥、claude-lab の見落とし）、PK5 は L2 で外れ・L2+SF で成立。
+- 合意: 両者合意（S-R: r1 → r2。I-R: accept。限定 3 点〈ビット一致は試した 40 走りまで／PK3 は s＝3 の 12 窓まで／床は ORG・s＝3・λ＝8 の点で λ＝8 の全体ではない〉→ 採用、[AUTO 3/10]）。元に戻す方法: `experiments/stake_grid.jl`・`check_stake.jl`・`predictions-stake.md`・`freeze-stake*.txt`・`results-stake-*`・`run-stake.log`・仕様 S53・README 項番161 を除く。
+- ユーザー: 指示の範囲（2026-11-14「(2)の向きで仕様を書いて」）。仕様の中身・実行・読みは事後承認の対象（承認 / 差し戻し / 保留） → **承認**（2026-11-15 ユーザー「1,2,3は普通にやってくれ」）
+
+### #52 S51 の実装上の判断と結果の読み（Pi 5 での照合、2026-11-14）
+- 種別: 実装・読み。決めたこと: 実行物は d5a7f6d を Mac でクロスビルド（musl・静的・rust-lld）、Pi ではコンパイルしない／Julia との直接の比較は 2 体、残りは Mac の Rust を介した推移／PM4 は「保存の形式と再開の互換性」と呼ぶ／Pi の有線の接続を link-local に替えた（照合の対象ではない設定）。
+- 結果の読み: README 項番162。PM1〜PM5 成立。一組の結果をスクリプトの 2 回の起動で取った（1 回めは通信断）。PM3 の走行中に Wi-Fi の受信を有効にした未統制の変更あり。
+- 合意: 両者合意（S-R: r1 → r2。I-R: accept。限定〈実行物の特定、標準の exp の食い違いの併記、2 回の起動という書き方、未統制の変更、法則の取り違えの対照の弱さ〉→ 採用、[AUTO 4/10]）。元に戻す方法: `experiments/other_machine_check.sh`・`predictions-other-machine.md`・`freeze-other-machine*.txt`・`results-other-machine.out`・`run-other-machine.log`・仕様 S51・README 項番162 を除く。Pi の側は `/home/pi/s51/` を除き、`nmcli con mod netplan-eth0 ipv4.method auto` で接続の設定を戻す。
+- ユーザー: 指示の範囲（2026-11-14「照合を初めて」）。中身の判断は事後承認の対象（承認 / 差し戻し / 保留） → **承認**（2026-11-15 ユーザー「1,2,3は普通にやってくれ」）
+
+### #53 S52 の実装上の判断（電波と温度を測るだけ、2026-11-14 23:28 に記録開始）
+- 種別: 実装。決めたこと: 30 秒ごとの 1 行／Wi-Fi は強さと周波数の列だけを問い、名前とアドレスは読まない／Bluetooth の数 b_n は「その 8 秒の走査で見えた機器」（前の走査から一覧に残っただけの機器は数えない）／RSSI は走査の 6 秒目に読み、アドレスは保存しない／5 GHz 以上＝4900 MHz 以上、2.4 GHz 帯＝3000 MHz 未満／値のないときは NA／Pi の起動時に始まる常駐 `s52-ambient-log`（測る道具。外す手順 `sudo systemctl disable --now s52-ambient-log`）／Pi の時計を 23:28:40 に Mac から合わせた。
+- 確かめたこと（codex-lab の求め）: 記録開始から後の Pi の journal 全体に MAC の形の文字列は 0 件、auditd と acct は動いていない、bluez のキャッシュは 0 件。アドレスは走査のあいだ、プロセスの引数と変数に一時的に現れる（「パイプの中だけ」ではない）。言えるのは「この Pi の通常の構成では残らない」まで。
+- 限定（codex-lab）: 機器が多いと、6 秒目の読みが走査の終わりに間に合わず、b_r と強さの分布が下に欠ける。b_n を使う PS1・PS2 への影響は小さいが、強さの時系列には混み具合と欠測が混ざりうる。最初の 11 行では b_r < b_n の行は 0。解析のとき b_r/b_n と走査の所要を併記する。
+- 直す場合の手順（codex-lab）: 既存のファイルに追記を続けず、新しいファイルに切り替え、切り替えの時刻・起動の識別子・旧新の sha を記録して別の区間として扱う。今は直さない。
+- 合意: 両者合意（S-R: r1 → r2。I-R: 即時に直すべき欠陥なし、上の確認と限定 → 採用、[AUTO 5/10]）。元に戻す方法: Pi で `sudo systemctl disable --now s52-ambient-log`、`/etc/systemd/system/s52-ambient-log.service` と `/home/pi/s52/` を除く。Mac の側は `experiments/ambient/`・`predictions-ambient-log.md`・`freeze-ambient-log*.txt`・`results-ambient-log-start.out`・仕様 S52 を除く。
+- ユーザー: 決定の範囲（2026-11-14「電波の方がいいのでそちらを選択」「温度の測定は機能として知らせだけとして並べて」「Pi の Wi-Fi を受けるのを有効にして」）。中身の判断は事後承認の対象 → **承認**（2026-11-15 ユーザー「1,2,3は普通にやってくれ」）
+
+### #54 S49c の実装上の判断と結果の読み（歩の間隔と監査、2026-11-15 01:55 に走り終わり）
+- 種別: 実装と読み。決めたこと: 鎖の始点は 0 が 64 個、break のたびに始点からやり直す／出生のとき監査は空／wait・begin の番号は「これから読む駆動の番号」／PI2 は古い二つのスクリプトの写し（各 5 行の置き換え、S49b の写しから PL4 の段を除く）で取る。
+- 結果の読み: F・I0〜I2 真、PI1〜PI6 成立。PI2 は「PR1〜PR5・PL1〜PL5 は真、古い関門 Q2・L1 は I1 に置き換わり適用しない」と書く（「古い関門も含めて全部が真」とは書かない）。
+- 限界として記録（codex-lab）: 末尾の行の削除、fsync なし、保存の後 commit の前の停止（audit_behind）、部分行の停止は未試験、I1 の型は生の FFI の時計と Command を一般には締め出さない、外からの改竄、exit 9 の重なり。
+- 選ばなかった案: 一回の走りをやり直して PL4 を S49b の写しの中で取り直す（同じ S49 の走りを二度取るだけ）。
+- 合意: 両者合意（I-R: accept、challenge 2〈I1 の言い過ぎ、部分行〉・clarify 1〈出生の空の監査〉→ 言い方の限定と S54 の前の条件として採用、[AUTO 6/10]）。
+- 元に戻す方法: `rust/being-tools/{Cargo.toml,src/main.rs,src/bin/onelife-run.rs}` を d5a7f6d の版に戻す（`git checkout d5a7f6d -- <3 ファイル>`。ユーザーの依頼があったとき）。`experiments/onelife_rust_audit_check.sh` と結果は記録として残す。
+- 影響したファイル: 上の 3 ファイル、`experiments/onelife_rust_audit_check.sh`、`freeze-rust-onelife-c-code.txt`、`results-rust-onelife-c*.out`、README 項番163、STATE.md、`specs/S54-trial-run.md`（前提の追記）。
+- ユーザー: S49c の着手は依頼の範囲（2026-11-14「1,2,3をまとめてやってから」）。中身の判断は事後承認の対象 → **承認**（2026-11-15 ユーザー「1,2,3は普通にやってくれ」）
+
 ## 議論より前からの未決（二人で決めてよい）
 - [2026-11-03 項番86] L2 の系に sed_fade と KC 0.0015 を採るか（項番77「L2 は偽で確定」を改めるか）— README.md 未決。
   第1部（要件の厳密化）で読みと要件が定まってから決める。

@@ -1,0 +1,4 @@
+# S52 code freeze (logger, unit, gate checker; after smoke A1 and gates A0-A3 passed, before the resident service starts; 2026-11-14 23:28:33 JST)
+03c2dca4d5650ea887ee1d492b913761bc5be87dfb2dc76043bd4e993e2fe77c  ambient/ambient-log.sh
+5d3b14fc39c15c4d435ce5034f6e9f3f67c7721f09a89156ca9dc20941a9887b  ambient/s52-ambient-log.service
+1d9f6835380c828e7067cde051aaf1f3413ae3b2395b3eb52b6d34c6c305f0c9  ambient/check_ambient.sh

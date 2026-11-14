@@ -1,0 +1,16 @@
+# S53 code freeze (lab-coder; after gates F/K1/K2/K3 and the smoke on trial windows 643-644, before any run of the evaluation windows 645-656; 2026-11-14 21:48)
+# new files
+4bca29396911a6a6848377e9b35577806a7f8f22b675e6bb3361a7dc55f94657  stake_grid.jl
+3874e48e7176fdada850286710450e41599c91b3e53461e4cd881885af02c6fa  check_stake.jl
+# read (not changed)
+1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37  synth_world.jl
+d63000f3eaaa415c928f3f8f2649fb6b2aa3118bb76c85c34fe71da4a4e4ad56  pa_grid.jl
+52a99a112c9eb154a288d63991f21ae8b32349c19d0e0632caa31e638ed9cb56  pa_regrid.jl
+c3ff5b2fd05d1fd7f09ad2da51e2b23a840382f834abc45904ca498ea5ea14e6  check_pa_grid.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+2a687291b52d9d158bdb971e4feb333377fb4a918937bfe67b9d5d0748ade21c  ../core/LabCore.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  ../core/matter.jl
+241cb1f45f64a467ea1774987b6b1b56efa7cd83c32b4a93474b8f9ee674c6f7  ../discussion/specs/S53-stake.md
+1501d86f9376709be14993e12fce6be1cee58d083801c7751b341d9ea07cb6ba  predictions-stake.md
+9bc6597a65f76c25cc06810fccfba6e5dae3ec8d35f90e4e88cc8b5bc2a563e3  freeze-stake.txt

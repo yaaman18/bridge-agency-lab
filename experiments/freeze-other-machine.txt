@@ -1,0 +1,6 @@
+# S51 freeze 0 (spec r1 and predictions, before the S-R, before any build for the Pi; 2026-11-14 20:09)
+9ee5b98266c6ab5a0f88666277d016ddeaa088eaaea6f6447058085d37cfa207  ../discussion/specs/S51-other-machine.md
+5b8fa3cb48ff731f18e96b2a860175bb47ef40eb18b40ac30ced2f0ae866421e  predictions-other-machine.md
+# S51 freeze 1 (spec r2 and predictions after the S-R, before any build for the Pi; 2026-11-14 20:11)
+11bc6ad15b43ce9bda5e4474250c4560aefb1f07bcfa4431fcb5a18da3fccc48  ../discussion/specs/S51-other-machine.md
+3bd64d9e7917f02dad5d26a4668eedf856f899be0d1cc54a555cdf7f108e9b26  predictions-other-machine.md

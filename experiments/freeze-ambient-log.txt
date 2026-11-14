@@ -1,0 +1,6 @@
+# S52 freeze 0 (spec r1 and predictions, before the S-R, before the logger exists; 2026-11-14 21:08)
+60669f2c2af3e59465f0bf01da2cfde965c8bc244c4e64da397261f14622bda6  ../discussion/specs/S52-ambient-log.md
+89a1550730c0d75408fbe4ae5123f629932f5cdb9394a281e38ae5f5979ae15c  predictions-ambient-log.md
+# S52 freeze 1 (spec r2 and predictions r2 after the S-R, before the logger exists; 2026-11-14 21:09)
+fdb95150edee8af435840c391a2cb3dc3fbe8bd12992d74097a5e7b7c9ab5751  ../discussion/specs/S52-ambient-log.md
+7444812c02db339244678427cb210d37382887f3d0b50d3c45a6a5f0a60ed747  predictions-ambient-log.md

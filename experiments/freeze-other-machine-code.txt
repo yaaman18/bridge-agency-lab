@@ -1,0 +1,25 @@
+# S51 code freeze (lab-coder, 2026-11-14 20:22; after the builds and the smoke 627-L2-D1 N = 50, before the one run of sh experiments/other_machine_check.sh)
+# build dir /var/folders/82/qvmvqs01469ck832bd6f4k280000gn/T/s51-build.0qj5Ke (git archive d5a7f6d rust; cargo build --release --offline -p being-tools --target-dir $B/target-mac;
+#   CARGO_TARGET_AARCH64_UNKNOWN_LINUX_MUSL_LINKER=rust-lld cargo build --release --offline -p being-tools --target aarch64-unknown-linux-musl --target-dir $B/target-pi; rustc 1.99.0)
+# script
+89a39a45765528a5e032be7b0bcf6449d7d888c57976b0e61e88e555de789dac  other_machine_check.sh
+# sources (extracted from d5a7f6d)
+689487e58047c0edec618ddc927a8fd998fe4ffdb23310fc2a9c09d12c0a0d70  source/rust/being-core/src/onelife.rs
+e8026d8df92747728db5b1094ca5917c6f9cceed283dde6db9306e79047d7faa  source/rust/being-core/src/matter.rs
+a759621541673a8e4c4a00790af18dccbb93632131713b3b13ce675a4c37f3ae  source/rust/being-core/src/fdexp.rs
+a86d61a15fd896a5b5fd42b2ce7e9d7f8e0993ec676fe19d4fa49f2dabb1d533  source/rust/being-core/src/sha256.rs
+2c39cc2fcbc5742b3161a16d951882c384f842c33c6bed3ee0ad647994fab9e5  source/rust/being-tools/src/bin/onelife-run.rs
+# executables
+bff6fc60ff99fd128f02150794cc4d40437808c36628c22da86ed548418feaa9  mac/being-tools
+583960358c84fc600d68d5269b6ca6a15fc192dd5961d09e79ac163c9637e986  mac/onelife-run
+e1b5ec8f1585dd3bc3c6c0a86923d7e4ae43875034166a436ab7f660d06da5f5  pi/being-tools
+bd7948bc187c039f2a2b74e67709fa7476054f669ca30568c29c2491659d3a54  pi/onelife-run
+# inputs (drives from core/check/onelife_scenarios.jl drives, N = 10000; copies of core/check/out)
+af3e2448cf713022a9f9ad1bce7e62ce015630aa1767c7ff58a61758c54cb3de  input/in/D1.txt
+b232dc931db2021d5c4d7d28234d0abe9b0b9b0924ae078db32d6fc36f49be93  input/in/D3.txt
+8de4ce58042456809a2a529b6c8bb65a8be1215a6160f6f6e3f33a8016a2f73c  input/in/math-v8.txt
+5c09e653dc84b4133f3806a5513878d8f1734cfe3bdddd4aeca8386d037fddc8  input/in/D3-3000.txt
+be65839590cc22dbd416289b29f3dcc621a9c6f1d51bcb639f603d5f45064e6b  input/jl/627-L2-D3.sha
+d6f1035b89bf143f836a4f5a0c2719ea40d46c305852322dae8c08d6afa928aa  input/jl/627-L2-D3-3000.save
+ff0bb02155b65e028251ade1eb15ec67af048667c7e10364f25467a514659447  input/jl/627-L2+SF-D3.sha
+b681a23baf82454fb4ec01202711915f4196b720723aa845de8a10223282cc22  input/jl/627-L2+SF-D3-3000.save

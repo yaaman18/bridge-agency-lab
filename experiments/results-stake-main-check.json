@@ -1,0 +1,616 @@
+{
+  "L2": {
+    "PK1": {
+      "of": 120,
+      "list": [],
+      "holds": true,
+      "violations": 0
+    },
+    "s3 lam2": {
+      "yieldMean": 2.5023550724637684,
+      "levyReq": {
+        "ORG-SIL": 12.276,
+        "ORG": 377.59199999999976
+      },
+      "levyTaken": {
+        "ORG-SIL": 12.276,
+        "ORG": 377.59199999999987
+      }
+    },
+    "s1 lam0": {
+      "yieldMean": 1.7476086956521746,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s3 lam8": {
+      "yieldMean": 2.5023550724637684,
+      "levyReq": {
+        "ORG-SIL": 30.384000000000004,
+        "ORG": 152.832
+      },
+      "levyTaken": {
+        "ORG-SIL": 30.384000000000004,
+        "ORG": 152.832
+      }
+    },
+    "s1 lam8": {
+      "yieldMean": 1.7476086956521746,
+      "levyReq": {
+        "ORG-SIL": 15.311999999999998,
+        "ORG": 152.2720000000001
+      },
+      "levyTaken": {
+        "ORG-SIL": 15.311999999999998,
+        "ORG": 152.2720000000001
+      }
+    },
+    "PK3 lam8": {
+      "neg": 0,
+      "holds": true,
+      "deathW lam8": [
+        51,
+        48,
+        57,
+        52,
+        54,
+        48,
+        52,
+        57,
+        53,
+        54,
+        54,
+        53
+      ],
+      "deathW lam0": [
+        101,
+        97,
+        105,
+        110,
+        119,
+        105,
+        110,
+        114,
+        100,
+        117,
+        114,
+        106
+      ],
+      "pos": 12,
+      "judge": "上積みあり",
+      "p": 0.00048828125,
+      "dir": "larger"
+    },
+    "PK4 lam2": {
+      "SIL dead at T0+2000 s0": 12,
+      "G2000": {
+        "neg": 1,
+        "pos": 5,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "nBoth": 0,
+      "SIL dead at T0+2000 s3": 12,
+      "G2000 s0": [
+        0,
+        8,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "G500": {
+        "reason": "fewer than 8 windows with both arms alive at T0+500",
+        "dir": "undetectable"
+      },
+      "holds": false,
+      "G500 s0": [],
+      "G2000 s3": [
+        0,
+        9,
+        12,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        7
+      ],
+      "G500 s3": []
+    },
+    "s1 lam2": {
+      "yieldMean": 1.7476086956521746,
+      "levyReq": {
+        "ORG-SIL": 4.784,
+        "ORG": 78.12400000000004
+      },
+      "levyTaken": {
+        "ORG-SIL": 4.784,
+        "ORG": 78.12400000000004
+      }
+    },
+    "PK5": {
+      "lam2": {
+        "neg": 1,
+        "pos": 5,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "larger at both": false,
+      "lam8": {
+        "neg": 3,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "holds": false
+    },
+    "PK4 lam8": {
+      "SIL dead at T0+2000 s0": 12,
+      "G2000": {
+        "neg": 3,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "nBoth": 0,
+      "SIL dead at T0+2000 s3": 12,
+      "G2000 s0": [
+        0,
+        8,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "G500": {
+        "reason": "fewer than 8 windows with both arms alive at T0+500",
+        "dir": "undetectable"
+      },
+      "holds": false,
+      "G500 s0": [],
+      "G2000 s3": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "G500 s3": []
+    },
+    "PK3 lam2": {
+      "neg": 0,
+      "holds": true,
+      "deathW lam0": [
+        101,
+        97,
+        105,
+        110,
+        119,
+        105,
+        110,
+        114,
+        100,
+        117,
+        114,
+        106
+      ],
+      "deathW lam2": [
+        80,
+        77,
+        84,
+        86,
+        91,
+        81,
+        86,
+        88,
+        87,
+        90,
+        89,
+        84
+      ],
+      "pos": 12,
+      "judge": "上積みあり",
+      "p": 0.00048828125,
+      "dir": "larger"
+    },
+    "s3 lam0": {
+      "yieldMean": 2.5023550724637684,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s2 lam0": {
+      "yieldMean": 2.123795289855072,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s2 lam8": {
+      "yieldMean": 2.123795289855072,
+      "levyReq": {
+        "ORG-SIL": 24.192,
+        "ORG": 174.4960000000001
+      },
+      "levyTaken": {
+        "ORG-SIL": 24.192,
+        "ORG": 174.4960000000001
+      }
+    },
+    "s0 lam0": {
+      "yieldMean": 1.412622282608696,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s2 lam2": {
+      "yieldMean": 2.123795289855072,
+      "levyReq": {
+        "ORG-SIL": 8.839999999999998,
+        "ORG": 186.25600000000017
+      },
+      "levyTaken": {
+        "ORG-SIL": 8.84,
+        "ORG": 186.25600000000017
+      }
+    },
+    "PK2": {
+      "neg": 0,
+      "holds": true,
+      "pos": 12,
+      "judge": "上積みあり",
+      "p": 0.00048828125,
+      "dir": "larger"
+    }
+  },
+  "L2+SF": {
+    "PK1": {
+      "of": 120,
+      "list": [],
+      "holds": true,
+      "violations": 0
+    },
+    "s3 lam2": {
+      "yieldMean": 2.5023550724637684,
+      "levyReq": {
+        "ORG-SIL": 14.58,
+        "ORG": 299.68799999999993
+      },
+      "levyTaken": {
+        "ORG-SIL": 14.580000000000002,
+        "ORG": 299.68799999999993
+      }
+    },
+    "s1 lam0": {
+      "yieldMean": 1.7476086956521746,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s3 lam8": {
+      "yieldMean": 2.5023550724637684,
+      "levyReq": {
+        "ORG-SIL": 35.135999999999996,
+        "ORG": 158.016
+      },
+      "levyTaken": {
+        "ORG-SIL": 35.135999999999996,
+        "ORG": 158.016
+      }
+    },
+    "s1 lam8": {
+      "yieldMean": 1.7476086956521746,
+      "levyReq": {
+        "ORG-SIL": 18.255999999999997,
+        "ORG": 129.66400000000007
+      },
+      "levyTaken": {
+        "ORG-SIL": 18.255999999999997,
+        "ORG": 129.66400000000007
+      }
+    },
+    "PK3 lam8": {
+      "neg": 0,
+      "holds": true,
+      "deathW lam8": [
+        64,
+        59,
+        60,
+        62,
+        62,
+        60,
+        61,
+        63,
+        58,
+        66,
+        61,
+        56
+      ],
+      "deathW lam0": [
+        122,
+        123,
+        138,
+        147,
+        132,
+        139,
+        124,
+        148,
+        129,
+        137,
+        127,
+        117
+      ],
+      "pos": 12,
+      "judge": "上積みあり",
+      "p": 0.00048828125,
+      "dir": "larger"
+    },
+    "PK4 lam2": {
+      "SIL dead at T0+2000 s0": 12,
+      "G2000": {
+        "neg": 1,
+        "pos": 8,
+        "judge": "上積みあり",
+        "p": 0.0390625,
+        "dir": "larger"
+      },
+      "nBoth": 0,
+      "SIL dead at T0+2000 s3": 12,
+      "G2000 s0": [
+        10,
+        0,
+        11,
+        12,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2
+      ],
+      "G500": {
+        "reason": "fewer than 8 windows with both arms alive at T0+500",
+        "dir": "undetectable"
+      },
+      "holds": false,
+      "G500 s0": [],
+      "G2000 s3": [
+        11,
+        9,
+        13,
+        17,
+        11,
+        2,
+        0,
+        0,
+        9,
+        0,
+        5,
+        0
+      ],
+      "G500 s3": []
+    },
+    "s1 lam2": {
+      "yieldMean": 1.7476086956521746,
+      "levyReq": {
+        "ORG-SIL": 5.792,
+        "ORG": 87.23600000000005
+      },
+      "levyTaken": {
+        "ORG-SIL": 5.792,
+        "ORG": 87.23600000000005
+      }
+    },
+    "PK5": {
+      "lam2": {
+        "neg": 1,
+        "pos": 8,
+        "judge": "上積みあり",
+        "p": 0.0390625,
+        "dir": "larger"
+      },
+      "larger at both": false,
+      "lam8": {
+        "neg": 5,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "holds": true
+    },
+    "PK4 lam8": {
+      "SIL dead at T0+2000 s0": 12,
+      "G2000": {
+        "neg": 5,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "nBoth": 0,
+      "SIL dead at T0+2000 s3": 12,
+      "G2000 s0": [
+        10,
+        0,
+        11,
+        12,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        2
+      ],
+      "G500": {
+        "reason": "fewer than 8 windows with both arms alive at T0+500",
+        "dir": "undetectable"
+      },
+      "holds": false,
+      "G500 s0": [],
+      "G2000 s3": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "G500 s3": []
+    },
+    "PK3 lam2": {
+      "neg": 0,
+      "holds": true,
+      "deathW lam0": [
+        122,
+        123,
+        138,
+        147,
+        132,
+        139,
+        124,
+        148,
+        129,
+        137,
+        127,
+        117
+      ],
+      "deathW lam2": [
+        95,
+        97,
+        104,
+        110,
+        107,
+        104,
+        101,
+        110,
+        99,
+        103,
+        94,
+        91
+      ],
+      "pos": 12,
+      "judge": "上積みあり",
+      "p": 0.00048828125,
+      "dir": "larger"
+    },
+    "s3 lam0": {
+      "yieldMean": 2.5023550724637684,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s2 lam0": {
+      "yieldMean": 2.123795289855072,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s2 lam8": {
+      "yieldMean": 2.123795289855072,
+      "levyReq": {
+        "ORG-SIL": 28.128,
+        "ORG": 199.9680000000001
+      },
+      "levyTaken": {
+        "ORG-SIL": 28.128000000000007,
+        "ORG": 199.9680000000001
+      }
+    },
+    "s0 lam0": {
+      "yieldMean": 1.412622282608696,
+      "levyReq": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-SIL": 0.0,
+        "ORG": 0.0
+      }
+    },
+    "s2 lam2": {
+      "yieldMean": 2.123795289855072,
+      "levyReq": {
+        "ORG-SIL": 10.552000000000001,
+        "ORG": 157.36800000000008
+      },
+      "levyTaken": {
+        "ORG-SIL": 10.552000000000001,
+        "ORG": 157.36800000000008
+      }
+    },
+    "PK2": {
+      "neg": 0,
+      "holds": true,
+      "pos": 12,
+      "judge": "上積みあり",
+      "p": 0.00048828125,
+      "dir": "larger"
+    }
+  }
+}

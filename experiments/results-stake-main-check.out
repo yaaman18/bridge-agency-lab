@@ -1,0 +1,84 @@
+==== law L2  (windows 645,646,647,648,649,650,651,652,653,654,655,656, n = 12)
+s0 lam0 M=1.0 levy/step=0.0  realized yield mean (patch mean, from T0) 1.413  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 0 10 13 9 9 0 10 0 15 9 13 17 | S@T0+2000: 0 8 9 0 0 0 0 0 1 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 474 2059 3578 684 1338 283 1950 277 2026 828 1660 758
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 101 97 105 110 119 105 110 114 100 117 114 106
+s1 lam0 M=1.5 levy/step=0.0  realized yield mean (patch mean, from T0) 1.748  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 2 12 15 12 14 5 14 8 15 10 17 18 | S@T0+2000: 8 6 13 13 0 0 0 13 7 0 4 6 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 5915 3199 6574 7304 1449 1356 1977 8462 2968 1969 2293 4196
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 101 97 105 110 119 105 110 114 100 117 114 106
+s1 lam2 M=1.5 levy/step=0.004  realized yield mean (patch mean, from T0) 1.748  levy requested / taken: ORG 78.124 / 78.124, ORG-SIL 4.784 / 4.784
+   ORG      S@T0+500: 0 12 15 11 12 0 12 0 12 10 15 16 | S@T0+2000: 0 0 13 13 0 0 0 0 5 0 2 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 462 1790 2882 4364 1394 301 1937 289 2194 883 2268 767
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 93 89 97 101 108 95 101 103 100 107 104 98
+s1 lam8 M=1.5 levy/step=0.016  realized yield mean (patch mean, from T0) 1.748  levy requested / taken: ORG 152.272 / 152.272, ORG-SIL 15.312 / 15.312
+   ORG      S@T0+500: 0 8 11 8 9 0 10 0 0 8 12 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 404 1119 949 670 957 221 1893 242 320 796 1656 290
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 76 72 78 80 85 75 81 82 81 85 83 79
+s2 lam0 M=2.0 levy/step=0.0  realized yield mean (patch mean, from T0) 2.124  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 8 16 12 14 14 13 15 9 7 12 17 16 | S@T0+2000: 10 9 10 15 0 7 6 15 8 4 8 7 | S@9200: 0 0 0 0 0 0 14 0 0 0 0 0 | deathW: 5969 4732 8475 8789 1490 3938 9201 8627 2204 3979 3822 2503
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 101 97 105 110 119 105 110 114 100 117 114 106
+s2 lam2 M=2.0 levy/step=0.008  realized yield mean (patch mean, from T0) 2.124  levy requested / taken: ORG 186.256 / 186.256, ORG-SIL 8.84 / 8.84
+   ORG      S@T0+500: 8 13 9 12 12 10 13 7 0 11 15 15 | S@T0+2000: 0 7 8 13 0 0 0 13 0 0 0 4 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 1544 3180 2610 2364 1411 1377 1678 2946 228 1990 1469 2485
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 86 83 90 93 99 88 93 95 93 98 96 91
+s2 lam8 M=2.0 levy/step=0.032  realized yield mean (patch mean, from T0) 2.124  levy requested / taken: ORG 174.496 / 174.496, ORG-SIL 24.192 / 24.192
+   ORG      S@T0+500: 0 7 6 6 0 0 6 0 0 5 8 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 207 604 577 644 139 210 1129 227 119 726 747 124
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 61 58 63 63 66 58 64 65 64 66 65 63
+s3 lam0 M=2.5 levy/step=0.0  realized yield mean (patch mean, from T0) 2.502  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 9 17 13 18 13 9 16 11 12 12 17 17 | S@T0+2000: 8 11 15 16 13 7 9 8 11 8 9 9 | S@9200: 8 10 0 13 0 17 8 0 0 0 5 8 | deathW: 9201 9201 8557 9201 3700 9201 9201 8656 3263 2202 9201 9201
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 101 97 105 110 119 105 110 114 100 117 114 106
+s3 lam2 M=2.5 levy/step=0.012  realized yield mean (patch mean, from T0) 2.502  levy requested / taken: ORG 377.592 / 377.592, ORG-SIL 12.276 / 12.276
+   ORG      S@T0+500: 7 14 9 12 8 0 12 8 0 8 13 12 | S@T0+2000: 0 9 12 14 0 0 0 0 0 0 8 7 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 1604 4686 5219 8659 1460 219 1704 1869 244 1068 2538 2196
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 80 77 84 86 91 81 86 88 87 90 89 84
+s3 lam8 M=2.5 levy/step=0.048  realized yield mean (patch mean, from T0) 2.502  levy requested / taken: ORG 152.832 / 152.832, ORG-SIL 30.384 / 30.384
+   ORG      S@T0+500: 0 0 0 0 0 0 4 0 0 0 3 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 190 87 430 119 79 95 720 207 107 320 710 120
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 51 48 57 52 54 48 52 57 53 54 54 53
+PK1 ORG-SIL S <= ORG S (T0+2000) everywhere: true  violations 0/120  Any[]
+PK2 lam0: ORG S(s3) > S(s0): true  Dict{String, Any}("neg" => 0, "pos" => 12, "judge" => "上積みあり", "p" => 0.00048828125, "dir" => "larger")
+PK3 s3: ORG-SIL death earlier with lam8 than lam0 (predicted): true  Dict{String, Any}("neg" => 0, "pos" => 12, "judge" => "上積みあり", "p" => 0.00048828125, "dir" => "larger")
+PK3 s3: ORG-SIL death earlier with lam2 than lam0 (no prediction): true  Dict{String, Any}("neg" => 0, "pos" => 12, "judge" => "上積みあり", "p" => 0.00048828125, "dir" => "larger")
+PK4 lam2: G500(s3) > G500(s0): false  windows both alive 0  Dict{String, Any}("reason" => "fewer than 8 windows with both arms alive at T0+500", "dir" => "undetectable")  G500 s3 Any[] s0 Any[]
+    G2000 (beside): Dict{String, Any}("neg" => 1, "pos" => 5, "judge" => "検出不能", "dir" => "undetectable")  s3 [0, 9, 12, 14, 0, 0, 0, 0, 0, 0, 8, 7] s0 [0, 8, 9, 0, 0, 0, 0, 0, 1, 0, 0, 0]  ORG-SIL dead at T0+2000: s3 12, s0 12
+PK4 lam8: G500(s3) > G500(s0): false  windows both alive 0  Dict{String, Any}("reason" => "fewer than 8 windows with both arms alive at T0+500", "dir" => "undetectable")  G500 s3 Any[] s0 Any[]
+    G2000 (beside): Dict{String, Any}("neg" => 3, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")  s3 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] s0 [0, 8, 9, 0, 0, 0, 0, 0, 1, 0, 0, 0]  ORG-SIL dead at T0+2000: s3 12, s0 12
+PK5 lam2: ORG S(s3) vs S(s0): undetectable  Dict{String, Any}("neg" => 1, "pos" => 5, "judge" => "検出不能", "dir" => "undetectable")
+PK5 lam8: ORG S(s3) vs S(s0): undetectable  Dict{String, Any}("neg" => 3, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")
+PK5 predicted (larger at lam2, not larger at lam8): false   larger at both (6.13 false on this grid): false
+==== law L2+SF  (windows 645,646,647,648,649,650,651,652,653,654,655,656, n = 12)
+s0 lam0 M=1.0 levy/step=0.0  realized yield mean (patch mean, from T0) 1.413  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 4 0 12 10 10 10 8 0 18 9 3 16 | S@T0+2000: 10 0 11 12 0 0 0 0 3 0 0 2 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 5925 253 6294 7694 1371 1331 680 303 2031 890 687 4190
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 122 123 138 147 132 139 124 148 129 137 127 117
+s1 lam0 M=1.5 levy/step=0.0  realized yield mean (patch mean, from T0) 1.748  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 7 0 12 14 9 12 11 0 17 9 17 18 | S@T0+2000: 0 0 5 5 9 0 4 0 0 3 8 0 | S@9200: 0 0 0 8 0 0 0 0 0 0 0 0 | deathW: 614 273 2387 9201 3420 1290 7041 334 1809 3483 2366 856
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 122 123 138 147 132 139 124 148 129 137 127 117
+s1 lam2 M=1.5 levy/step=0.004  realized yield mean (patch mean, from T0) 1.748  levy requested / taken: ORG 87.236 / 87.236, ORG-SIL 5.792 / 5.792
+   ORG      S@T0+500: 5 0 12 14 8 0 11 0 16 8 15 15 | S@T0+2000: 0 0 5 3 0 0 5 0 0 0 6 0 | S@9200: 0 0 0 8 0 0 0 0 0 0 0 0 | deathW: 605 262 2339 9201 865 273 2888 328 1000 892 2321 836
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 112 113 124 132 118 125 119 133 117 135 113 107
+s1 lam8 M=1.5 levy/step=0.016  realized yield mean (patch mean, from T0) 1.748  levy requested / taken: ORG 129.664 / 129.664, ORG-SIL 18.256 / 18.256
+   ORG      S@T0+500: 2 0 7 10 5 0 8 0 10 6 13 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 510 230 1295 741 738 159 614 271 754 790 1704 298
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 98 90 96 101 98 96 94 102 92 102 87 85
+s2 lam0 M=2.0 levy/step=0.0  realized yield mean (patch mean, from T0) 2.124  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 11 14 13 18 10 10 16 5 4 13 19 17 | S@T0+2000: 7 9 8 13 0 0 3 15 8 0 2 5 | S@9200: 11 0 0 0 0 0 6 0 0 0 0 9 | deathW: 9201 3146 4881 3047 1506 1278 9201 8419 8663 1053 2292 9201
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 122 123 138 147 132 139 124 148 129 137 127 117
+s2 lam2 M=2.0 levy/step=0.008  realized yield mean (patch mean, from T0) 2.124  levy requested / taken: ORG 157.368 / 157.368, ORG-SIL 10.552 / 10.552
+   ORG      S@T0+500: 9 0 11 13 8 0 14 4 4 10 17 16 | S@T0+2000: 0 0 8 11 0 0 0 0 5 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 1797 275 4710 2288 1362 235 1346 565 2176 980 1951 1986
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 103 104 113 120 116 113 109 120 107 112 103 99
+s2 lam8 M=2.0 levy/step=0.032  realized yield mean (patch mean, from T0) 2.124  levy requested / taken: ORG 199.968 / 199.968, ORG-SIL 28.128 / 28.128
+   ORG      S@T0+500: 4 0 7 8 0 0 8 0 0 4 11 8 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 975 226 686 706 130 103 762 246 167 775 756 717
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 77 71 74 76 76 74 74 78 72 72 67 68
+s3 lam0 M=2.5 levy/step=0.0  realized yield mean (patch mean, from T0) 2.502  levy requested / taken: ORG 0.0 / 0.0, ORG-SIL 0.0 / 0.0
+   ORG      S@T0+500: 12 17 14 19 17 15 15 13 16 6 19 16 | S@T0+2000: 14 12 17 18 16 8 13 11 13 12 6 8 | S@9200: 8 0 8 0 9 0 0 18 0 0 0 11 | deathW: 9201 3280 9201 8042 9201 2271 3788 9201 5035 2093 3173 9201
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 122 123 138 147 132 139 124 148 129 137 127 117
+s3 lam2 M=2.5 levy/step=0.012  realized yield mean (patch mean, from T0) 2.502  levy requested / taken: ORG 299.688 / 299.688, ORG-SIL 14.58 / 14.58
+   ORG      S@T0+500: 9 12 9 17 12 13 10 10 12 5 17 13 | S@T0+2000: 11 9 13 17 11 2 0 0 9 0 5 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2866 3082 2236 3039 2207 2013 890 1774 3273 570 2043 981
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 95 97 104 110 107 104 101 110 99 103 94 91
+s3 lam8 M=2.5 levy/step=0.048  realized yield mean (patch mean, from T0) 2.502  levy requested / taken: ORG 158.016 / 158.016, ORG-SIL 35.136 / 35.136
+   ORG      S@T0+500: 0 0 0 0 0 0 0 0 0 0 7 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 479 225 402 179 96 128 216 206 149 358 681 173
+   ORG-SIL  S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 64 59 60 62 62 60 61 63 58 66 61 56
+PK1 ORG-SIL S <= ORG S (T0+2000) everywhere: true  violations 0/120  Any[]
+PK2 lam0: ORG S(s3) > S(s0): true  Dict{String, Any}("neg" => 0, "pos" => 12, "judge" => "上積みあり", "p" => 0.00048828125, "dir" => "larger")
+PK3 s3: ORG-SIL death earlier with lam8 than lam0 (predicted): true  Dict{String, Any}("neg" => 0, "pos" => 12, "judge" => "上積みあり", "p" => 0.00048828125, "dir" => "larger")
+PK3 s3: ORG-SIL death earlier with lam2 than lam0 (no prediction): true  Dict{String, Any}("neg" => 0, "pos" => 12, "judge" => "上積みあり", "p" => 0.00048828125, "dir" => "larger")
+PK4 lam2: G500(s3) > G500(s0): false  windows both alive 0  Dict{String, Any}("reason" => "fewer than 8 windows with both arms alive at T0+500", "dir" => "undetectable")  G500 s3 Any[] s0 Any[]
+    G2000 (beside): Dict{String, Any}("neg" => 1, "pos" => 8, "judge" => "上積みあり", "p" => 0.0390625, "dir" => "larger")  s3 [11, 9, 13, 17, 11, 2, 0, 0, 9, 0, 5, 0] s0 [10, 0, 11, 12, 0, 0, 0, 0, 3, 0, 0, 2]  ORG-SIL dead at T0+2000: s3 12, s0 12
+PK4 lam8: G500(s3) > G500(s0): false  windows both alive 0  Dict{String, Any}("reason" => "fewer than 8 windows with both arms alive at T0+500", "dir" => "undetectable")  G500 s3 Any[] s0 Any[]
+    G2000 (beside): Dict{String, Any}("neg" => 5, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")  s3 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] s0 [10, 0, 11, 12, 0, 0, 0, 0, 3, 0, 0, 2]  ORG-SIL dead at T0+2000: s3 12, s0 12
+PK5 lam2: ORG S(s3) vs S(s0): larger  Dict{String, Any}("neg" => 1, "pos" => 8, "judge" => "上積みあり", "p" => 0.0390625, "dir" => "larger")
+PK5 lam8: ORG S(s3) vs S(s0): undetectable  Dict{String, Any}("neg" => 5, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")
+PK5 predicted (larger at lam2, not larger at lam8): true   larger at both (6.13 false on this grid): false

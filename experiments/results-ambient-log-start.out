@@ -1,0 +1,35 @@
+# S52 ambient log: start record (lab-coder, 2026-11-14). Times are JST.
+freeze 1 check: spec fdb95150... and predictions 7444812c... match experiments/freeze-ambient-log.txt (freeze 1).
+code freeze: experiments/freeze-ambient-log-code.txt, 2026-11-14 23:28:33
+  03c2dca4d5650ea887ee1d492b913761bc5be87dfb2dc76043bd4e993e2fe77c  ambient/ambient-log.sh
+  5d3b14fc39c15c4d435ce5034f6e9f3f67c7721f09a89156ca9dc20941a9887b  ambient/s52-ambient-log.service
+  1d9f6835380c828e7067cde051aaf1f3413ae3b2395b3eb52b6d34c6c305f0c9  ambient/check_ambient.sh
+
+## Gates
+negative controls (check_ambient.sh neg): NEG PASS (A0: 12 broken inputs caught, 1 clean passes; A1: 5 caught, 1 valid passes; A2: 2 caught, 1 passes; A3: 1 caught, 1 passes)
+A1 smoke (/home/pi/s52/smoke.tsv, manual run, not resident): A1 PASS (20 rows, interval 30.00-30.01 s by uptime, 30 s by Pi clock, 0 failed rows). Not used for any claim.
+A0 smoke: PASS (20 rows)
+A2 before start: PASS (wlan0 disconnected, active connections: wired/loopback only)
+A3 before start: PASS (no onelife-run)
+A0 production at +3 min: PASS (6 rows); A2 at +3 min: PASS; A3 at +3 min: PASS
+
+## Pi clock
+before setting: Pi 1791258622 (about 39 days behind)
+set: sudo date -s @1794666520 = 2026-11-14 23:28:40 JST (Mac time)
+
+## Resident service
+installed /etc/systemd/system/s52-ambient-log.service; systemctl enable --now at Pi 1794666527 = 2026-11-14 23:28:47 JST
++3 min check (2026-11-14 23:31:54): ambient.tsv 7 lines (header + 6 rows), all fail=0, service active
+remove: sudo systemctl disable --now s52-ambient-log   (then optionally sudo rm /etc/systemd/system/s52-ambient-log.service; sudo systemctl daemon-reload)
+
+## Pi-side files (sha256)
+03c2dca4d5650ea887ee1d492b913761bc5be87dfb2dc76043bd4e993e2fe77c  /home/pi/s52/ambient-log.sh
+5d3b14fc39c15c4d435ce5034f6e9f3f67c7721f09a89156ca9dc20941a9887b  /home/pi/s52/s52-ambient-log.service
+5d3b14fc39c15c4d435ce5034f6e9f3f67c7721f09a89156ca9dc20941a9887b  /etc/systemd/system/s52-ambient-log.service
+f747854bbae2aad8e6436fe5a7a633599bdce2cde46d87f3cf35cb80e7acb3d0  /home/pi/s52/smoke.tsv
+(/home/pi/s52/smoke.err is empty; ambient.tsv grows, so no sha)
+
+## Bluetooth method
+8 s `bluetoothctl --timeout 8 scan on`; at 6 s, `bluetoothctl info` for each listed device, reading RSSI (decimal in parentheses).
+A device counts in b_n if it shows in this scan's [NEW]/[CHG] Device lines or has an RSSI during discovery. BlueZ clears RSSI when discovery stops,
+and unpaired devices expire about 30 s after (they carry over into the next scan, but are not counted unless seen again). Addresses stay in pipe memory only and are dropped.

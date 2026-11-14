@@ -396,6 +396,170 @@ mod onelife_tools {
         );
     }
 
+    /// One record of the audit: (kind, n or 0, the third field), if the line is well formed (the hash not checked).
+    struct Rec {
+        kind: String,
+        n: u128,
+        arg: String,
+    }
+    const GENESIS: &str = "0000000000000000000000000000000000000000000000000000000000000000";
+    fn hex64(t: &str) -> bool {
+        t.len() == 64 && t.bytes().all(|b| matches!(b, b'0'..=b'9' | b'a'..=b'f'))
+    }
+    fn dec(t: &str) -> Option<u128> {
+        if t.is_empty() || t.len() > 20 || !t.bytes().all(|b| b.is_ascii_digit()) {
+            return None;
+        }
+        t.parse::<u128>().ok().filter(|v| *v <= 1u128 << 64)
+    }
+    /// (record, prev, hash, hash holds) of a line "<record...> <prev> <hash>".
+    fn split_line(l: &str) -> Option<(Rec, String, String, bool)> {
+        let t: Vec<&str> = l.split(' ').collect();
+        if t.len() < 4 || !hex64(t[t.len() - 1]) || !hex64(t[t.len() - 2]) {
+            return None;
+        }
+        let r = &t[..t.len() - 2];
+        let rec = match (r[0], r.len()) {
+            ("start" | "wait" | "begin", 2) => Rec { kind: r[0].into(), n: dec(r[1])?, arg: String::new() },
+            ("commit", 3) if hex64(r[2]) => Rec { kind: r[0].into(), n: dec(r[1])?, arg: r[2].into() },
+            ("end", 3) if r[2] == "eof" => Rec { kind: r[0].into(), n: dec(r[1])?, arg: r[2].into() },
+            ("error", 3) if dec(r[2]).is_some() => Rec { kind: r[0].into(), n: dec(r[1])?, arg: r[2].into() },
+            ("break", 2) if matches!(r[1], "missing" | "unreadable" | "mismatch") => Rec { kind: r[0].into(), n: 0, arg: r[1].into() },
+            _ => return None,
+        };
+        let h = t[t.len() - 1];
+        let ok = hex(&sha256(l[..l.len() - 65].as_bytes())) == h;
+        Some((rec, t[t.len() - 2].into(), h.into(), ok))
+    }
+    fn jlist(v: &[String]) -> String {
+        format!("[{}]", v.iter().map(|x| format!("\"{}\"", x)).collect::<Vec<_>>().join(","))
+    }
+    /// The audit read back (S49c §2 "how to read"): the chain, the start/end/error/break sequence, unfinished steps
+    /// (begin k, then start k-1), saves done but not recorded (begin k, then start k: "audit behind"), unknown stops
+    /// (wait k, then start), stops without end or error, starts below the last commit, and the run file against the
+    /// last commit.
+    fn audit_report(run: &str) {
+        let ap = format!("{}.audit", run);
+        let (state, bytes) = match std::fs::read(&ap) {
+            Ok(b) => ("present", b),
+            Err(e) if e.kind() == std::io::ErrorKind::NotFound => ("missing", Vec::new()),
+            Err(_) => ("unreadable", Vec::new()),
+        };
+        let partial = !bytes.is_empty() && bytes[bytes.len() - 1] != b'\n';
+        let text = String::from_utf8_lossy(&bytes).into_owned();
+        let mut lines: Vec<&str> = text.split('\n').collect();
+        if !partial {
+            lines.pop();
+        }
+        let mut recs: Vec<Rec> = Vec::new();
+        let (mut fails, mut first_fail, mut breaks) = (0u64, None::<usize>, Vec::<String>::new());
+        let mut prev = GENESIS.to_string();
+        for (i, l) in lines.iter().enumerate() {
+            let bad_last = partial && i + 1 == lines.len();
+            let ok = match split_line(l) {
+                Some((rec, p, h, hok)) => {
+                    let link = if rec.kind == "break" { p == GENESIS } else { p == prev };
+                    if rec.kind == "break" {
+                        breaks.push(rec.arg.clone());
+                    }
+                    prev = h;
+                    recs.push(rec);
+                    hok && link && !bad_last
+                }
+                None => false,
+            };
+            if !ok {
+                fails += 1;
+                if first_fail.is_none() {
+                    first_fail = Some(i + 1);
+                }
+            }
+        }
+        let count = |k: &str| recs.iter().filter(|r| r.kind == k).count();
+        let mut seq: Vec<String> = Vec::new();
+        let (mut unfinished, mut behind, mut unknown, mut noend, mut below, mut odd) = (0, 0, 0, 0, 0, 0);
+        let mut last: Option<&Rec> = None;
+        let mut last_commit: Option<&Rec> = None;
+        for r in &recs {
+            match r.kind.as_str() {
+                "start" => {
+                    seq.push(format!("start {}", r.n));
+                    if let Some(p) = last {
+                        match p.kind.as_str() {
+                            "end" | "error" => {}
+                            "begin" => {
+                                noend += 1;
+                                if r.n + 1 == p.n {
+                                    unfinished += 1;
+                                } else if r.n == p.n {
+                                    behind += 1;
+                                } else {
+                                    odd += 1;
+                                }
+                            }
+                            "wait" => {
+                                noend += 1;
+                                unknown += 1;
+                            }
+                            _ => noend += 1,
+                        }
+                    }
+                    if let Some(c) = last_commit {
+                        if r.n < c.n {
+                            below += 1;
+                        }
+                    }
+                }
+                "end" | "error" => seq.push(format!("{} {}", r.kind, r.n)),
+                "break" => {
+                    seq.push(format!("break {}", r.arg));
+                    continue;
+                }
+                "commit" => last_commit = Some(r),
+                _ => {}
+            }
+            last = Some(r);
+        }
+        let open = !matches!(last.map(|r| r.kind.as_str()), Some("end") | Some("error"));
+        let runf = std::fs::read(run).ok().and_then(|b| onelife::run_decode(&b).ok()).map(|(n, p, _)| (n, hex(&sha256(&p))));
+        let runj = runf.as_ref().map_or("null".to_string(), |(n, h)| format!("{{\"n\":{},\"payload_sha\":\"{}\"}}", n, h));
+        let lcj = last_commit.map_or("null".to_string(), |c| format!("{{\"n\":{},\"sha\":\"{}\"}}", c.n, c.arg));
+        let verdict = match (&runf, last_commit) {
+            (None, _) => "no run file",
+            (_, None) => "no commit",
+            (Some((n, h)), Some(c)) if *n as u128 == c.n && *h == c.arg => "match",
+            _ => "rollback or audit behind",
+        };
+        println!(
+            "{{\"audit\":\"{}\",\"lines\":{},\"partial_last_line\":{},\"chain_ok\":{},\"chain_failures\":{},\"first_failure_line\":{},\"breaks\":{},\"break_reasons\":{},\"starts\":{},\"waits\":{},\"begins\":{},\"commits\":{},\"ends\":{},\"errors\":{},\"unfinished_steps\":{},\"audit_behind\":{},\"unknown_stops\":{},\"stops_without_end\":{},\"starts_below_last_commit\":{},\"unclassified\":{},\"open\":{},\"run\":{},\"last_commit\":{},\"run_vs_last_commit\":\"{}\",\"sequence\":{}}}",
+            state,
+            lines.len(),
+            partial,
+            fails == 0 && state == "present",
+            fails,
+            first_fail.map_or("null".to_string(), |x| x.to_string()),
+            breaks.len(),
+            jlist(&breaks),
+            count("start"),
+            count("wait"),
+            count("begin"),
+            count("commit"),
+            count("end"),
+            count("error"),
+            unfinished,
+            behind,
+            unknown,
+            noend,
+            below,
+            odd,
+            open,
+            runj,
+            lcj,
+            verdict,
+            jlist(&seq)
+        );
+    }
+
     pub fn main(cmd: &str, a: &[String]) {
         match cmd {
             // onelife-check SEED LAW DRIVEFILE N PREFIX [POINTS]
@@ -547,6 +711,8 @@ mod onelife_tools {
                     bad_std
                 );
             }
+            // onelife-audit RUNFILE (S49c §2): reads "<RUNFILE>.audit" and the run file, writes nothing; one JSON line
+            "onelife-audit" => audit_report(&a[0]),
             _ => {
                 eprintln!("unknown {}", cmd);
                 std::process::exit(2)

@@ -11,3 +11,5 @@ being-core = { path = "../being-core" }
 crashpoint = []
 # S49b test build only (gate L2): onelife-run without the writer's lock (cargo build --features nolock)
 nolock = []
+# S49c test build only: onelife-run without the step interval (cargo build --features fastinterval)
+fastinterval = []
