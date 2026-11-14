@@ -1,0 +1,13 @@
+# S47 freeze 2 (main run; written 2026-11-14 00:41, before the main run starts). Smoke estimate 1.98 h wall (16 threads) <= 48 h: no cut, 60 points kept.
+# Pre-run amendments of the reading (codex-lab pre-run check, before any main result; the frozen spec text is not rewritten):
+#  PA7 and the ORG vs GREEDY-KC sign test: primary = all windows (a dead body counts 0); windows where ORG is alive at T0+tau = sensitivity analysis.
+#  PA5: established only if both the all-step agreement and the agreement over steps where ORG and ORG-FIX are both alive are >= 0.9 at all 4 points x 2 laws; a point whose windows are all excluded = not checked.
+#  Implementation choices fixed before the run: first REVRK cross at T0+K; REPLAY-x kept series 0 after donor death; PHASE 0; stream constants 104729/130363, permutation seed 4747; type-restricted permutation on the ORG table only.
+436febd2874e111b63ca65d4d9e49a7f5a6c76efdd83e7e8a117f91f0c12ded7  ../discussion/specs/S47-synth-grid.md
+9ca12176be606899ec50b3122fad66a9dbd7d63abc02f27170de928e94972bfc  predictions-pa-grid.md
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  ../core/matter.jl
+1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37  synth_world.jl
+d63000f3eaaa415c928f3f8f2649fb6b2aa3118bb76c85c34fe71da4a4e4ad56  pa_grid.jl
+c3ff5b2fd05d1fd7f09ad2da51e2b23a840382f834abc45904ca498ea5ea14e6  check_pa_grid.jl

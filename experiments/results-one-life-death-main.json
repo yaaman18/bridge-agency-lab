@@ -1,0 +1,4669 @@
+{
+  "summary": {
+    "PD4": "established",
+    "PD2": "established",
+    "PD1_dead": 40,
+    "reference_out_of_scope": "none (D3, D4 fed through FEED + SCHED as a function; body_org.jl unchanged)",
+    "PD3": "established",
+    "PD1": "established",
+    "PD5": "established"
+  },
+  "lives": [
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7873,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2127
+        },
+        {
+          "load_same": true,
+          "steps": 7872,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2128
+        },
+        {
+          "load_same": true,
+          "steps": 7871,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2129
+        },
+        {
+          "load_same": true,
+          "steps": 7870,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2130
+        },
+        {
+          "load_same": true,
+          "steps": 7869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2131
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2129,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2127,
+        2128,
+        2129,
+        2130,
+        2131,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2129,
+      "seed": 617,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 617,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7850,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2150
+        },
+        {
+          "load_same": true,
+          "steps": 7849,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2151
+        },
+        {
+          "load_same": true,
+          "steps": 7848,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2152
+        },
+        {
+          "load_same": true,
+          "steps": 7847,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2153
+        },
+        {
+          "load_same": true,
+          "steps": 7846,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2154
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2152,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2150,
+        2151,
+        2152,
+        2153,
+        2154,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2152,
+      "seed": 617,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 617,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7876,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2124
+        },
+        {
+          "load_same": true,
+          "steps": 7875,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2125
+        },
+        {
+          "load_same": true,
+          "steps": 7874,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2126
+        },
+        {
+          "load_same": true,
+          "steps": 7873,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2127
+        },
+        {
+          "load_same": true,
+          "steps": 7872,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2128
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2126,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2124,
+        2125,
+        2126,
+        2127,
+        2128,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2126,
+      "seed": 618,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 618,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7860,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2140
+        },
+        {
+          "load_same": true,
+          "steps": 7859,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2141
+        },
+        {
+          "load_same": true,
+          "steps": 7858,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2142
+        },
+        {
+          "load_same": true,
+          "steps": 7857,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2143
+        },
+        {
+          "load_same": true,
+          "steps": 7856,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2144
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2142,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2140,
+        2141,
+        2142,
+        2143,
+        2144,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2142,
+      "seed": 618,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 618,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7875,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2125
+        },
+        {
+          "load_same": true,
+          "steps": 7874,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2126
+        },
+        {
+          "load_same": true,
+          "steps": 7873,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2127
+        },
+        {
+          "load_same": true,
+          "steps": 7872,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2128
+        },
+        {
+          "load_same": true,
+          "steps": 7871,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2129
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2127,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2125,
+        2126,
+        2127,
+        2128,
+        2129,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2127,
+      "seed": 619,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 619,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7878,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2122
+        },
+        {
+          "load_same": true,
+          "steps": 7877,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2123
+        },
+        {
+          "load_same": true,
+          "steps": 7876,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2124
+        },
+        {
+          "load_same": true,
+          "steps": 7875,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2125
+        },
+        {
+          "load_same": true,
+          "steps": 7874,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2126
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2124,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2122,
+        2123,
+        2124,
+        2125,
+        2126,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2124,
+      "seed": 619,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 619,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7870,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2130
+        },
+        {
+          "load_same": true,
+          "steps": 7869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2131
+        },
+        {
+          "load_same": true,
+          "steps": 7868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2132
+        },
+        {
+          "load_same": true,
+          "steps": 7867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2133
+        },
+        {
+          "load_same": true,
+          "steps": 7866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2134
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2132,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2130,
+        2131,
+        2132,
+        2133,
+        2134,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2132,
+      "seed": 620,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 620,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2133
+        },
+        {
+          "load_same": true,
+          "steps": 7866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2134
+        },
+        {
+          "load_same": true,
+          "steps": 7865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2135
+        },
+        {
+          "load_same": true,
+          "steps": 7864,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2136
+        },
+        {
+          "load_same": true,
+          "steps": 7863,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2137
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2135,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2133,
+        2134,
+        2135,
+        2136,
+        2137,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2135,
+      "seed": 620,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 620,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7873,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2127
+        },
+        {
+          "load_same": true,
+          "steps": 7872,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2128
+        },
+        {
+          "load_same": true,
+          "steps": 7871,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2129
+        },
+        {
+          "load_same": true,
+          "steps": 7870,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2130
+        },
+        {
+          "load_same": true,
+          "steps": 7869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2131
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2129,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2127,
+        2128,
+        2129,
+        2130,
+        2131,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2129,
+      "seed": 621,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 621,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2131
+        },
+        {
+          "load_same": true,
+          "steps": 7868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2132
+        },
+        {
+          "load_same": true,
+          "steps": 7867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2133
+        },
+        {
+          "load_same": true,
+          "steps": 7866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2134
+        },
+        {
+          "load_same": true,
+          "steps": 7865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2135
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2131,
+        2132,
+        2133,
+        2134,
+        2135,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2133,
+      "seed": 621,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 621,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7882,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2118
+        },
+        {
+          "load_same": true,
+          "steps": 7881,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2119
+        },
+        {
+          "load_same": true,
+          "steps": 7880,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2120
+        },
+        {
+          "load_same": true,
+          "steps": 7879,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2121
+        },
+        {
+          "load_same": true,
+          "steps": 7878,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2122
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2120,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2118,
+        2119,
+        2120,
+        2121,
+        2122,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2120,
+      "seed": 622,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 622,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2135
+        },
+        {
+          "load_same": true,
+          "steps": 7864,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2136
+        },
+        {
+          "load_same": true,
+          "steps": 7863,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2137
+        },
+        {
+          "load_same": true,
+          "steps": 7862,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2138
+        },
+        {
+          "load_same": true,
+          "steps": 7861,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2139
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2137,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2135,
+        2136,
+        2137,
+        2138,
+        2139,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2137,
+      "seed": 622,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 622,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7880,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2120
+        },
+        {
+          "load_same": true,
+          "steps": 7879,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2121
+        },
+        {
+          "load_same": true,
+          "steps": 7878,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2122
+        },
+        {
+          "load_same": true,
+          "steps": 7877,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2123
+        },
+        {
+          "load_same": true,
+          "steps": 7876,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2124
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2122,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2120,
+        2121,
+        2122,
+        2123,
+        2124,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2122,
+      "seed": 623,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 623,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7849,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2151
+        },
+        {
+          "load_same": true,
+          "steps": 7848,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2152
+        },
+        {
+          "load_same": true,
+          "steps": 7847,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2153
+        },
+        {
+          "load_same": true,
+          "steps": 7846,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2154
+        },
+        {
+          "load_same": true,
+          "steps": 7845,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2155
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2153,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2151,
+        2152,
+        2153,
+        2154,
+        2155,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2153,
+      "seed": 623,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 623,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7891,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2109
+        },
+        {
+          "load_same": true,
+          "steps": 7890,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2110
+        },
+        {
+          "load_same": true,
+          "steps": 7889,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2111
+        },
+        {
+          "load_same": true,
+          "steps": 7888,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2112
+        },
+        {
+          "load_same": true,
+          "steps": 7887,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2113
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2111,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2109,
+        2110,
+        2111,
+        2112,
+        2113,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2111,
+      "seed": 624,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 624,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7852,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2148
+        },
+        {
+          "load_same": true,
+          "steps": 7851,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2149
+        },
+        {
+          "load_same": true,
+          "steps": 7850,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2150
+        },
+        {
+          "load_same": true,
+          "steps": 7849,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2151
+        },
+        {
+          "load_same": true,
+          "steps": 7848,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2152
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2150,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2148,
+        2149,
+        2150,
+        2151,
+        2152,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2150,
+      "seed": 624,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 624,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7899,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2101
+        },
+        {
+          "load_same": true,
+          "steps": 7898,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2102
+        },
+        {
+          "load_same": true,
+          "steps": 7897,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2103
+        },
+        {
+          "load_same": true,
+          "steps": 7896,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2104
+        },
+        {
+          "load_same": true,
+          "steps": 7895,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2105
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2103,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2101,
+        2102,
+        2103,
+        2104,
+        2105,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2103,
+      "seed": 625,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 625,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7882,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2118
+        },
+        {
+          "load_same": true,
+          "steps": 7881,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2119
+        },
+        {
+          "load_same": true,
+          "steps": 7880,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2120
+        },
+        {
+          "load_same": true,
+          "steps": 7879,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2121
+        },
+        {
+          "load_same": true,
+          "steps": 7878,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2122
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2120,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2118,
+        2119,
+        2120,
+        2121,
+        2122,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2120,
+      "seed": 625,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 625,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7896,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2104
+        },
+        {
+          "load_same": true,
+          "steps": 7895,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2105
+        },
+        {
+          "load_same": true,
+          "steps": 7894,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2106
+        },
+        {
+          "load_same": true,
+          "steps": 7893,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2107
+        },
+        {
+          "load_same": true,
+          "steps": 7892,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2108
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2106,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        2000,
+        2104,
+        2105,
+        2106,
+        2107,
+        2108,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2106,
+      "seed": 626,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 626,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 7878,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2122
+        },
+        {
+          "load_same": true,
+          "steps": 7877,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2123
+        },
+        {
+          "load_same": true,
+          "steps": 7876,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2124
+        },
+        {
+          "load_same": true,
+          "steps": 7875,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2125
+        },
+        {
+          "load_same": true,
+          "steps": 7874,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2126
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 2124,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        2000,
+        2122,
+        2123,
+        2124,
+        2125,
+        2126,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 2124,
+      "seed": 626,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D3",
+      "pd5_other_law_refused": true
+    },
+    {
+      "end_ok": null,
+      "pd5": true,
+      "pd5_accepted": 0,
+      "pd4_rows": [
+        {
+          "load_same": true,
+          "steps": 10000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 0
+        },
+        {
+          "load_same": true,
+          "steps": 9869,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 131
+        },
+        {
+          "load_same": true,
+          "steps": 9868,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 132
+        },
+        {
+          "load_same": true,
+          "steps": 9867,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 133
+        },
+        {
+          "load_same": true,
+          "steps": 9866,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 134
+        },
+        {
+          "load_same": true,
+          "steps": 9865,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 135
+        },
+        {
+          "load_same": true,
+          "steps": 8000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 2000
+        },
+        {
+          "load_same": true,
+          "steps": 6000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 4000
+        },
+        {
+          "load_same": true,
+          "steps": 4000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 6000
+        },
+        {
+          "load_same": true,
+          "steps": 2000,
+          "first_bad": null,
+          "error": false,
+          "nbad": 0,
+          "from": 8000
+        }
+      ],
+      "drive_ok": true,
+      "death_one": 133,
+      "first_bad": null,
+      "pd4": true,
+      "pd3": true,
+      "pd4_all_points": true,
+      "det_ok": true,
+      "law": "L2+SF",
+      "pd4_points": [
+        0,
+        131,
+        132,
+        133,
+        134,
+        135,
+        2000,
+        4000,
+        6000,
+        8000
+      ],
+      "death_ref": 133,
+      "seed": 626,
+      "pd2": true,
+      "err_any": false,
+      "dead_before_6000": true,
+      "drive": "D4",
+      "pd5_other_law_refused": true
+    }
+  ],
+  "cells": {
+    "L2+SF D4": {
+      "pd5": "established",
+      "pd5_not_checked_lives": 0,
+      "d_max": 133,
+      "pd4": "established",
+      "pd3_pass": 10,
+      "pd3": "established",
+      "pd4_not_checked_lives": 0,
+      "pd5_fail": 0,
+      "d_min": 133,
+      "pd2_pass": 10,
+      "pd3_not_checked_lives": 0,
+      "pd4_pass": 10,
+      "pd5_pass": 10,
+      "pd2_fail": 0,
+      "pd3_fail": 0,
+      "dead_before_6000": 10,
+      "pd4_fail": 0,
+      "n": 10
+    },
+    "L2+SF D3": {
+      "pd5": "established",
+      "pd5_not_checked_lives": 0,
+      "d_max": 2153,
+      "pd4": "established",
+      "pd3_pass": 10,
+      "pd3": "established",
+      "pd4_not_checked_lives": 0,
+      "pd5_fail": 0,
+      "d_min": 2120,
+      "pd2_pass": 10,
+      "pd3_not_checked_lives": 0,
+      "pd4_pass": 10,
+      "pd5_pass": 10,
+      "pd2_fail": 0,
+      "pd3_fail": 0,
+      "dead_before_6000": 10,
+      "pd4_fail": 0,
+      "n": 10
+    },
+    "L2 D3": {
+      "pd5": "established",
+      "pd5_not_checked_lives": 0,
+      "d_max": 2132,
+      "pd4": "established",
+      "pd3_pass": 10,
+      "pd3": "established",
+      "pd4_not_checked_lives": 0,
+      "pd5_fail": 0,
+      "d_min": 2103,
+      "pd2_pass": 10,
+      "pd3_not_checked_lives": 0,
+      "pd4_pass": 10,
+      "pd5_pass": 10,
+      "pd2_fail": 0,
+      "pd3_fail": 0,
+      "dead_before_6000": 10,
+      "pd4_fail": 0,
+      "n": 10
+    },
+    "L2 D4": {
+      "pd5": "established",
+      "pd5_not_checked_lives": 0,
+      "d_max": 133,
+      "pd4": "established",
+      "pd3_pass": 10,
+      "pd3": "established",
+      "pd4_not_checked_lives": 0,
+      "pd5_fail": 0,
+      "d_min": 133,
+      "pd2_pass": 10,
+      "pd3_not_checked_lives": 0,
+      "pd4_pass": 10,
+      "pd5_pass": 10,
+      "pd2_fail": 0,
+      "pd3_fail": 0,
+      "dead_before_6000": 10,
+      "pd4_fail": 0,
+      "n": 10
+    }
+  },
+  "N": 10000,
+  "mode": "main",
+  "seeds": [
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "P1000 s1 L300 M2.5 K2000 L2": {
+    "G3": true,
+    "G1": true,
+    "G2": true,
+    "G6": true
+  },
+  "P1000 s1 L300 M2.5 K2000 L2+SF": {
+    "G3": true,
+    "G1": true,
+    "G2": true,
+    "G6": true
+  },
+  "P250 s2 L1 M1.5 K250 G1g": true,
+  "P250 s2 L1 M1.5 K250 L2": {
+    "G3": true,
+    "G1": true,
+    "G2": true,
+    "G6": true
+  },
+  "P250 s2 L1 M1.5 K250 L2+SF": {
+    "G3": true,
+    "G1": true,
+    "G2": true,
+    "G6": true
+  },
+  "P1000 s0 L- M2.5 K- L2": {
+    "G3": true,
+    "G1": true,
+    "G2": true,
+    "G6": true
+  },
+  "G4": true,
+  "P1000 s0 L- M2.5 K- G1g": true,
+  "P1000 s1 L300 M2.5 K2000 G1g": true,
+  "P1000 s0 L- M2.5 K- L2+SF": {
+    "G3": true,
+    "G1": true,
+    "G2": true,
+    "G6": true
+  }
+}

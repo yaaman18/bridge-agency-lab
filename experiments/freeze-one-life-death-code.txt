@@ -1,0 +1,10 @@
+# S48b freeze 2 (new code, after smoke 615-616 and the gates, before main; 2026-11-14 08:15)
+4ac3ae33357ac017f2fd592cfdb4d6ca4a83c9dbeaf6027ccdabd9a26e8bf9b2  one_life_death.jl
+abb3cb6bb44cb4bac15ea77869b5b5fd0606627a2811bdb9fa1c3b8743033d14  one_life_death_resume.jl
+# unchanged (as in freeze-one-life-b.txt / S48)
+c61c5a2152e47c9bb8555e4ed91e815255ebbf2560bf456d6faa1f9943fb6044  ../core/one_life.jl
+b8940eae6a0c4922bbb83b51fc0fcf54d94654a470f3a8ed1b522c861e8fec1d  ../formal/OneLife.lean
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+1408f045c95d30247c00ed30032671fbc126f26d3f1dd46b197a9c2555f2bb5d  one_life_check.jl
+94479482fd27f505bc9079e88b77e7482669ac1b21ed2997f5f607d1f3ce20cb  one_life_resume.jl
+# main: cd experiments && julia --project=.. one_life_death.jl main   (seeds 617-626, run once)

@@ -1,0 +1,5 @@
+# S48b freeze 1 (predictions and spec, before any code exists; 2026-11-14 07:31)
+911031f41cf58f547924303f64d73ec220df145c0d4ff9291fafbb041c7f720d  ../discussion/specs/S48b-death-drive.md
+344bbff7d95ecddec3912d96b2b03287cf2f7f2f0c793dda9a0fa6c06ecb846b  predictions-one-life-b.md
+c61c5a2152e47c9bb8555e4ed91e815255ebbf2560bf456d6faa1f9943fb6044  ../core/one_life.jl
+b8940eae6a0c4922bbb83b51fc0fcf54d94654a470f3a8ed1b522c861e8fec1d  ../formal/OneLife.lean

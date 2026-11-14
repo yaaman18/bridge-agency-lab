@@ -1,0 +1,4 @@
+# S49 freeze 1 (spec r2 and predictions, before any code exists; 2026-11-14 07:34)
+8f31ce86c59f7de9bb2c97da5b1a9e851d32fb4e94022c087a847af39f36709f  ../discussion/specs/S49-rust-onelife.md
+6367d3a1b6f216ba6a9956f347d4aa0c0959d22a50fd9b04aca76087de407940  predictions-rust-onelife.md
+c61c5a2152e47c9bb8555e4ed91e815255ebbf2560bf456d6faa1f9943fb6044  ../core/one_life.jl

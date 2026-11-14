@@ -5,3 +5,7 @@ edition = "2021"
 
 [dependencies]
 being-core = { path = "../being-core" }
+
+[features]
+# S49 test build only: onelife-run aborts at a chosen point of a save (cargo build --features crashpoint)
+crashpoint = []

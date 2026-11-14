@@ -1,0 +1,5 @@
+# S47 freeze 1 (2026-11-13, spec r3 after S-R APPROVE and the user's reading). Before any code exists. Predictions and spec only; the code shas are added as freeze 2 after the gates and before the main run.
+436febd2874e111b63ca65d4d9e49a7f5a6c76efdd83e7e8a117f91f0c12ded7  ../discussion/specs/S47-synth-grid.md
+9ca12176be606899ec50b3122fad66a9dbd7d63abc02f27170de928e94972bfc  predictions-pa-grid.md
+69e4c969ababebdec13f3e08b1336f134f5991d33ec7cc93502ff1aaa9477574  ../core/body_org.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl

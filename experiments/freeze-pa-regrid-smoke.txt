@@ -1,0 +1,3 @@
+# S47b freeze 1 (predictions and spec, before any code exists; 2026-11-14 07:31)
+5e9e93b29aa70b69e1b29271180f79804558edad11fe2d26e656768c2b0876e3  ../discussion/specs/S47b-regrid.md
+999c5514c2b96a0ea5d5a9486620de0c6170de6c47433ddc077b20d4726b1bf6  predictions-pa-regrid.md

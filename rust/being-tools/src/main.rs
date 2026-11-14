@@ -325,6 +325,232 @@ fn main() {
         Some("page") => page(),
         Some("run-state") => run_state(&args[2], args[3].parse().unwrap(), &args[4]),
         Some("purity") => purity(&args[2], args[3].parse().unwrap()),
-        _ => eprintln!("usage: being-tools check | page | run-state IN STEPS OUT | purity IN STEPS"),
+        Some(c) if c.starts_with("onelife-") => onelife_tools::main(c, &args[2..]),
+        _ => eprintln!("usage: being-tools check | page | run-state IN STEPS OUT | purity IN STEPS | onelife-..."),
+    }
+}
+
+/// S49 (discussion/specs/S49-rust-onelife.md): the checks of the Rust OneLife against core/one_life.jl. The birth is
+/// here for the checks only (the seeds of the check scene); onelife-run has no birth.
+mod onelife_tools {
+    use being_core::{fdexp, matter, onelife, sha256::sha256};
+    use std::io::Write;
+
+    const CHECK_SEEDS: std::ops::RangeInclusive<i64> = 627..=628;
+
+    fn hex(b: &[u8]) -> String {
+        b.iter().map(|x| format!("{:02x}", x)).collect()
+    }
+    fn law_of(s: &str) -> onelife::Law {
+        match s {
+            "L2" => onelife::Law::L2,
+            "L2+SF" => onelife::Law::L2SF,
+            _ => panic!("law {}", s),
+        }
+    }
+    fn drives(path: &str) -> Vec<[i64; 2]> {
+        std::fs::read_to_string(path)
+            .unwrap()
+            .lines()
+            .map(|l| {
+                let v: Vec<i64> = l.split_whitespace().map(|x| x.parse().unwrap()).collect();
+                assert!(v.len() == 2, "drive line");
+                [v[0], v[1]]
+            })
+            .collect()
+    }
+    fn points(s: Option<&String>) -> Vec<usize> {
+        s.map_or(Vec::new(), |s| s.split(',').filter(|x| !x.is_empty()).map(|x| x.parse().unwrap()).collect())
+    }
+    /// Steps s from drive index `from` to `to`; writes "n sha" for n = from..to to <prefix>.sha and the saves at the
+    /// points (and at `to`) to <prefix>-<n>.save. Prints the first n after which the state is dead.
+    fn walk(mut s: onelife::OneLife, dv: &[[i64; 2]], from: usize, to: usize, prefix: &str, pts: &[usize]) {
+        let mut out = std::io::BufWriter::new(std::fs::File::create(format!("{}.sha", prefix)).unwrap());
+        let mut dead_at: Option<usize> = if s.dead { Some(from) } else { None };
+        let mut errs = 0;
+        let put = |n: usize, s: &onelife::OneLife, out: &mut std::io::BufWriter<std::fs::File>| {
+            let b = onelife::save(s);
+            writeln!(out, "{} {}", n, hex(&sha256(&b))).unwrap();
+            if pts.contains(&n) || n == to {
+                std::fs::write(format!("{}-{}.save", prefix, n), &b).unwrap();
+            }
+        };
+        put(from, &s, &mut out);
+        for n in from..to {
+            let (s2, e) = onelife::step(&s, dv[n]);
+            if e {
+                errs += 1;
+            }
+            s = s2;
+            if s.dead && dead_at.is_none() {
+                dead_at = Some(n + 1);
+            }
+            put(n + 1, &s, &mut out);
+        }
+        println!(
+            "{{\"law\":\"{}\",\"dead_at\":{},\"death\":{},\"errors\":{}}}",
+            s.law.name(),
+            dead_at.map_or("null".to_string(), |x| x.to_string()),
+            s.death.map_or("null".to_string(), |x| x.to_string()),
+            errs
+        );
+    }
+
+    pub fn main(cmd: &str, a: &[String]) {
+        match cmd {
+            // onelife-check SEED LAW DRIVEFILE N PREFIX [POINTS]
+            "onelife-check" => {
+                let seed: i64 = a[0].parse().unwrap();
+                assert!(CHECK_SEEDS.contains(&seed), "check seeds only");
+                let s = onelife::birth(seed, law_of(&a[1]));
+                let dv = drives(&a[2]);
+                walk(s, &dv, 0, a[3].parse().unwrap(), &a[4], &points(a.get(5)));
+            }
+            // onelife-continue SAVE DRIVEFILE FROM TO PREFIX: a save (of either law, by its law identity) continued
+            "onelife-continue" => {
+                let s = onelife::load(&std::fs::read(&a[0]).unwrap()).expect("load");
+                let dv = drives(&a[1]);
+                walk(s, &dv, a[2].parse().unwrap(), a[3].parse().unwrap(), &a[4], &[]);
+            }
+            // onelife-birth-run SEED LAW RUNFILE: the first run file (n = 0) of a check life; refuses an existing file
+            "onelife-birth-run" => {
+                let seed: i64 = a[0].parse().unwrap();
+                assert!(CHECK_SEEDS.contains(&seed), "check seeds only");
+                assert!(!std::path::Path::new(&a[2]).exists(), "run file exists");
+                let s = onelife::birth(seed, law_of(&a[1]));
+                std::fs::write(&a[2], onelife::run_encode(0, &onelife::save(&s))).unwrap();
+            }
+            // onelife-wrap SAVE N RUNFILE: a save as a run file at n (for the checks)
+            "onelife-wrap" => {
+                let b = std::fs::read(&a[0]).unwrap();
+                onelife::load(&b).expect("load");
+                assert!(!std::path::Path::new(&a[2]).exists(), "run file exists");
+                std::fs::write(&a[2], onelife::run_encode(a[1].parse().unwrap(), &b)).unwrap();
+            }
+            // onelife-info RUNFILE: n, the payload's SHA-256 and the life's t, dead, death (JSON); exit 1 if refused
+            "onelife-info" => match onelife::run_decode(&std::fs::read(&a[0]).unwrap()) {
+                Ok((n, p, s)) => println!(
+                    "{{\"n\":{},\"payload_sha\":\"{}\",\"law\":\"{}\",\"t\":{},\"dead\":{},\"death\":{}}}",
+                    n,
+                    hex(&sha256(&p)),
+                    s.law.name(),
+                    s.t,
+                    s.dead,
+                    s.death.map_or("null".to_string(), |x| x.to_string())
+                ),
+                Err(e) => {
+                    eprintln!("{}", e);
+                    std::process::exit(1)
+                }
+            },
+            // onelife-roundtrip RUNFILE: read, re-encode the state and the run file; prints whether the bytes are the same
+            "onelife-roundtrip" => {
+                let b = std::fs::read(&a[0]).unwrap();
+                let (n, p, s) = onelife::run_decode(&b).expect("run file");
+                let p2 = onelife::save(&s);
+                println!("{{\"payload_same\":{},\"file_same\":{}}}", p2 == p, onelife::run_encode(n, &p2) == b);
+            }
+            // onelife-selftest: SHA-256 test vectors (Q3); sqrt and floor against the hardware (std) on 2,000,000 inputs
+            "onelife-selftest" => {
+                let mil = vec![b'a'; 1_000_000];
+                let v = [
+                    (hex(&sha256(b"")), "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),
+                    (hex(&sha256(b"abc")), "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"),
+                    (hex(&sha256(&mil)), "cdc76e5c9914fb9281a1c7e284d73e67f1809a48a497200e046d39ccc7112cd0"),
+                    (
+                        hex(&sha256(b"abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq")),
+                        "248d6a61d20638b8e5c026930c3e6039a33ce45964ff2167f6ecedd419db06c1",
+                    ),
+                ];
+                let sha_ok: Vec<bool> = v.iter().map(|(a, b)| a == b).collect();
+                let mut r = onelife::Mulberry::new(627);
+                let (mut bad_sqrt, mut bad_floor) = (0, 0);
+                for i in 0..2_000_000u32 {
+                    let x = match i % 4 {
+                        0 => f64::from_bits(((r.next() * 4294967296.0) as u64) << 32 | (r.next() * 4294967296.0) as u64)
+                            .abs(),
+                        1 => r.next() * 4.0,
+                        2 => (r.next() * 200.0).round(),
+                        _ => (r.next() - 0.5) * 1e6,
+                    };
+                    if !x.is_nan() && x >= 0.0 && fdexp::sqrt(x).to_bits() != x.sqrt().to_bits() {
+                        bad_sqrt += 1;
+                    }
+                    let y = if i % 2 == 0 { x } else { -x };
+                    if fdexp::floor(y).to_bits() != y.floor().to_bits() && !(y.is_nan()) {
+                        bad_floor += 1;
+                    }
+                }
+                println!("{{\"sha_vectors\":{:?},\"sqrt_mismatch\":{},\"floor_mismatch\":{}}}", sha_ok, bad_sqrt, bad_floor);
+            }
+            // onelife-exp MATHV8 D1 D3 N EVERY OUT: the exp inputs of Q1 with fdexp and std exp ("x fd std" in hex)
+            "onelife-exp" => {
+                let mut xs: Vec<f64> = Vec::new();
+                for l in std::fs::read_to_string(&a[0]).unwrap().lines() {
+                    let h = l.split_whitespace().next().unwrap();
+                    xs.push(f64::from_bits(u64::from_str_radix(h, 16).unwrap()));
+                }
+                let n_math = xs.len();
+                // the kernel's arguments (birth)
+                for dy in -3i64..=3 {
+                    for dx in -3i64..=3 {
+                        let rr = fdexp::hypot(dx as f64, dy as f64) / 3.0;
+                        if rr == 0.0 || rr > 1.0 {
+                            continue;
+                        }
+                        xs.push(4.0 - 1.0 / (rr * (1.0 - rr) + 1e-9));
+                    }
+                }
+                let n_kernel = xs.len() - n_math;
+                // the bell arguments of the 8 lives, every EVERY steps (all sites)
+                let nn: usize = a[3].parse().unwrap();
+                let every: usize = a[4].parse().unwrap();
+                for seed in CHECK_SEEDS {
+                    for law in [onelife::Law::L2, onelife::Law::L2SF] {
+                        for df in [&a[1], &a[2]] {
+                            let dv = drives(df);
+                            let mut s = onelife::birth(seed, law);
+                            for n in 0..nn {
+                                if n % every == 0 && !s.dead {
+                                    xs.extend(matter::exp_args(&s.w));
+                                }
+                                s = onelife::step(&s, dv[n]).0;
+                            }
+                        }
+                    }
+                }
+                let n_life = xs.len() - n_math - n_kernel;
+                // the whole double range of exp, and special values
+                let mut r = onelife::Mulberry::new(628);
+                for _ in 0..100_000 {
+                    xs.push(-750.0 + 1462.0 * r.next());
+                }
+                for x in [0.0, -0.0, f64::INFINITY, f64::NEG_INFINITY, f64::NAN, 709.78, 709.79, -745.13, -745.14, 1e-300, -1e-300, 0.34657, 1.0397] {
+                    xs.push(x);
+                }
+                let mut out = std::io::BufWriter::new(std::fs::File::create(&a[5]).unwrap());
+                let mut bad_std = 0;
+                for &x in &xs {
+                    let (f, s) = (fdexp::exp(x), x.exp());
+                    if f.to_bits() != s.to_bits() {
+                        bad_std += 1;
+                    }
+                    writeln!(out, "{:016x} {:016x} {:016x}", x.to_bits(), f.to_bits(), s.to_bits()).unwrap();
+                }
+                println!(
+                    "{{\"inputs\":{},\"math\":{},\"kernel\":{},\"life\":{},\"wide\":{},\"fd_vs_std_differ\":{}}}",
+                    xs.len(),
+                    n_math,
+                    n_kernel,
+                    n_life,
+                    xs.len() - n_math - n_kernel - n_life,
+                    bad_std
+                );
+            }
+            _ => {
+                eprintln!("unknown {}", cmd);
+                std::process::exit(2)
+            }
+        }
     }
 }

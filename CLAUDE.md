@@ -33,6 +33,9 @@
 - **実装の分担**（2026-11-07 ユーザー決定、2026-11-06 の分担を改める）: Lean の statement と証明、Julia・Rust・試験のコードは **Claude（claude-lab）が書く**。
   Claude は書いたあと自分で関門（FILE:・GATE:、負の対照）を走らせ、Codex がレビューする（I-R）。deepseek-lab の席は休止（`discussion/agents/deepseek-lab.md`、
   `deepseek-turn.sh` は記録として残す）。理由: 節約より速さと正確さを優先（S2〜S5 で deepseek-lab の手は 26〜30 分・打ち切り・崩れた下書き、Claude は数分）。
+- **実装の席 lab-coder**（2026-11-13 ユーザー決定、上の 2026-11-07 の分担を改める）: Lean・Julia・Rust・試験のコードは、Claude Code のサブエージェント `lab-coder`（Opus 5.5、
+  `.claude/agents/lab-coder.md`）が合意済みの S 仕様に沿って書き、関門を走らせて報告する。claude-lab は仕様・予測の凍結・差分の点検・記録、Codex がレビュー（I-R）。
+  理由: claude-lab が Fable で動く回は、コードを書かせるとトークンがもったいない。Lean も同じ席に書かせる（Claude の系統の中にとどまる）。
 - **fable-lab**（2026-11-10 ユーザー決定）: Claude Fable 5.2 は「煮詰まったときの啓示」と「ユーザーの任意の確認」にだけ使う、読むだけ・議決権なしの助言役。
   呼び方は `discussion/fable-turn.sh`（Pro のサブスクの範囲、2026-11-16 まで）、指針は `discussion/agents/fable-lab.md`、取り決めは `discussion/README.md` §1.2。
 - **切り出しの約束**（2026-11-05、`discussion/promise-cutout.md`）: いまの作業はすべて「系統」の側（個体は試作）。系統から一体を切り出して

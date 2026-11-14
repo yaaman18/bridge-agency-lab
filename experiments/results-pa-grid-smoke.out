@@ -1,0 +1,14 @@
+# S47 smoke (seeds 561-564; 6 points x (L2, L2+SF, GREEDY); NC rows = the same windows reversed). Timing only; no effect, survival or p value is read.
+threads 16; smoke wall time 134.6 s; Julia 1.11.6
+seconds per run (measured under 16 threads, mean over the smoke runs):
+  GREEDY       2.527 s  (24 runs)
+  GREEDY cell  1.84 s  (168 runs)
+  GREEDY-KC    2.019 s  (48 runs)
+  ORG          4.098 s  (48 runs)
+  ORG cell     1.76 s  (336 runs)
+  ORG-FIX      2.919 s  (48 runs)
+  ORG-SIL      1.968 s  (48 runs)
+main run per point: GREEDY 24, GREEDY cell 276, GREEDY-KC 24, ORG 48, ORG cell 552, ORG-FIX 24, ORG-SIL 24  = 972 runs
+  (spec §8 Q5 counts 2 x (24 + 36 + 288) + 24 + 288 = 1008 per point; the 12 + 12 + 12 diagonal cells reuse ORG_j / GREEDY_j: 972)
+main run: 60 points x 972 = 58320 runs; CPU 31.71 h; wall estimate with 16 threads 1.98 h (tail of the last tasks not included: at most one task, ~12.1 min)
+reduction rule (§8 Q5, threshold 48 h): estimate 1.98 h -> no cut

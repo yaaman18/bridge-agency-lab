@@ -1,0 +1,27 @@
+S48 one_life_check mode smoke N 10000 seeds 589-590
+== gates (seed 589, N 10000)
+  G2 true
+  G2_neg true
+  G3 true
+  G3_neg true
+  G4_1 true
+  G4_2 true
+  G4_2_hits String[]
+  G4_3 true
+  G4_neg true
+  G5 true
+  G5_neg true
+  G6 true
+  G6_neg true
+  G7 true
+  G7_neg true
+synthetic emptied: Dict{String, Any}("L2" => Dict{String, Bool}("p3" => 1, "death0" => 1), "L2+SF" => Dict{String, Bool}("p3" => 1, "death0" => 1))
+589 L2 D1        death nothing | P1 true P3 nothing P4 true (20) P5 true  47.6 s
+589 L2 D2        death nothing | P1 true P3 nothing P4 true (20) P5 true  47.0 s
+589 L2+SF D1     death nothing | P1 true P3 nothing P4 true (20) P5 true  46.6 s
+589 L2+SF D2     death nothing | P1 true P3 nothing P4 true (20) P5 true  46.4 s
+590 L2 D1        death nothing | P1 true P3 nothing P4 true (20) P5 true  46.2 s
+590 L2 D2        death nothing | P1 true P3 nothing P4 true (20) P5 true  46.0 s
+590 L2+SF D1     death nothing | P1 true P3 nothing P4 true (20) P5 true  46.2 s
+590 L2+SF D2     death 3568 | P1 true P3 true P4 true (23) P5 true  37.4 s
+deaths 1 / 8  P1 true  P3 generated true synthetic true  P4 true  P5 true  (366.3 s)

@@ -1,0 +1,29 @@
+S48b one_life_death mode smoke N 10000 seeds 615-616
+== gates (seed 615 L2 D3, N 10000)
+  H1_neg true
+  H1_runtime true
+  H1_static true
+  H2_pd3_base true
+  H2_pd3_neg true
+  H2_pd4_neg true
+615 L2 D3        death 2144 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  369.4 s
+615 L2 D4        death 133 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  45.0 s
+615 L2+SF D3     death 2126 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  47.5 s
+615 L2+SF D4     death 133 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  47.2 s
+616 L2 D3        death 2106 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  50.9 s
+616 L2 D4        death 133 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  46.1 s
+616 L2+SF D3     death 2137 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  51.6 s
+616 L2+SF D4     death 133 | PD2 true PD3 true PD5 true (PD4 launched, 10 pts)  47.2 s
+615 L2 D3        PD4 true (all points true)
+615 L2 D4        PD4 true (all points true)
+615 L2+SF D3     PD4 true (all points true)
+615 L2+SF D4     PD4 true (all points true)
+616 L2 D3        PD4 true (all points true)
+616 L2 D4        PD4 true (all points true)
+616 L2+SF D3     PD4 true (all points true)
+616 L2+SF D4     PD4 true (all points true)
+cell L2 D3: dead<6000 2/2 d 2106..2144 PD2 2/2 PD3 not checked (2/2) PD4 not checked (2/2) PD5 not checked (2/2)
+cell L2 D4: dead<6000 2/2 d 133..133 PD2 2/2 PD3 not checked (2/2) PD4 not checked (2/2) PD5 not checked (2/2)
+cell L2+SF D3: dead<6000 2/2 d 2126..2137 PD2 2/2 PD3 not checked (2/2) PD4 not checked (2/2) PD5 not checked (2/2)
+cell L2+SF D4: dead<6000 2/2 d 133..133 PD2 2/2 PD3 not checked (2/2) PD4 not checked (2/2) PD5 not checked (2/2)
+summary Dict{String, Any}("PD4" => "not checked in some cells", "PD2" => "established", "PD1_dead" => 8, "reference_out_of_scope" => "none (D3, D4 fed through FEED + SCHED as a function; body_org.jl unchanged)", "PD3" => "not checked in some cells", "PD1" => "established", "PD5" => "not checked in some cells")  (937.0 s)

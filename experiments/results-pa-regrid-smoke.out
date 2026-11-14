@@ -1,0 +1,10 @@
+# S47b smoke (seeds 601-602; 6 point-K x (L2, L2+SF, GREEDY)). Timing only; no effect, survival or p value is read.
+threads 16; smoke wall time 27.5 s; Julia 1.11.6
+seconds per run (measured under 16 threads, mean over the smoke runs):
+  GREEDY       2.622 s  (12 runs)
+  GREEDY-KC    1.161 s  (24 runs)
+  ORG          3.084 s  (24 runs)
+  ORG-FIX      2.117 s  (24 runs)
+main run per point-K: GREEDY 12, GREEDY-KC 24, ORG 24, ORG-FIX 24  = 84 runs
+main run: 60 point-K x 84 = 5040 runs; CPU 3.07 h; wall estimate with 16 threads 0.19 h
+stop rule (instruction, 6 h): estimate 0.19 h -> within

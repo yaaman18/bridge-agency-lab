@@ -1,0 +1,47 @@
+== point P250 s2 L1 M1.5 K250
+G1g diagonal = GREEDY_j: Bool[1, 1, 1, 1]   G5 (acts shifted by 1 step, must be false): Bool[0, 0, 0, 0]
+L2 G1 diagonal = ORG_j: Bool[1, 1, 1, 1]   G5 acts shifted (false): Bool[0, 0, 0, 0]   kept shifted (false): Bool[0, 0, 0, 0]
+L2 off-diagonal cell(562, 561) ran; acts after T0 = row's acts while alive: true
+L2 G2 ORG-FIX state = saved, kept constant: Bool[1, 1, 1, 1]   neg: ORG not fixed (false): Bool[0, 0, 0, 0]  kept altered (false): Bool[0, 0, 0, 0]  another window's snapshot (false unless equal type): Bool[0, 0, 0, 0]
+L2 ORG-FIX acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2 G3 ORG-SIL no act after T0: Bool[1, 1, 1, 1]   neg: ORG (false): Bool[0, 0, 0, 0]   SIL acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2 G6 bill = ORG kept x KC: Bool[1, 1, 1, 1] (bill = ORG kept while ORG alive: Bool[1, 1, 1, 1])   neg: bill shifted (false): Bool[0, 0, 0, 0]   bill 4 = GREEDY: Bool[1, 1, 1, 1]   neg: one bill 5 (false): Bool[0, 0, 0, 0]
+L2+SF G1 diagonal = ORG_j: Bool[1, 1, 1, 1]   G5 acts shifted (false): Bool[0, 0, 0, 0]   kept shifted (false): Bool[0, 0, 0, 0]
+L2+SF off-diagonal cell(562, 561) ran; acts after T0 = row's acts while alive: true
+L2+SF G2 ORG-FIX state = saved, kept constant: Bool[1, 1, 1, 1]   neg: ORG not fixed (false): Bool[0, 0, 0, 0]  kept altered (false): Bool[0, 0, 0, 0]  another window's snapshot (false unless equal type): Bool[0, 0, 0, 0]
+L2+SF ORG-FIX acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2+SF G3 ORG-SIL no act after T0: Bool[1, 1, 1, 1]   neg: ORG (false): Bool[0, 0, 0, 0]   SIL acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2+SF G6 bill = ORG kept x KC: Bool[1, 1, 1, 1] (bill = ORG kept while ORG alive: Bool[1, 1, 1, 1])   neg: bill shifted (false): Bool[0, 0, 0, 0]   bill 4 = GREEDY: Bool[1, 1, 1, 1]   neg: one bill 5 (false): Bool[0, 0, 0, 0]
+== point P1000 s0 L- M2.5 K-
+G1g diagonal = GREEDY_j: Bool[1, 1, 1, 1]   G5 (acts shifted by 1 step, must be false): Bool[0, 0, 0, 0]
+L2 G1 diagonal = ORG_j: Bool[1, 1, 1, 1]   G5 acts shifted (false): Bool[0, 0, 0, 0]   kept shifted (false): Bool[0, 0, 0, 0]
+L2 off-diagonal cell(562, 561) ran; acts after T0 = row's acts while alive: true
+L2 G2 ORG-FIX state = saved, kept constant: Bool[1, 1, 1, 1]   neg: ORG not fixed (false): Bool[0, 0, 0, 0]  kept altered (false): Bool[0, 0, 0, 0]  another window's snapshot (false unless equal type): Bool[0, 0, 0, 0]
+L2 ORG-FIX acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2 G3 ORG-SIL no act after T0: Bool[1, 1, 1, 1]   neg: ORG (false): Bool[0, 0, 0, 0]   SIL acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2 G6 bill = ORG kept x KC: Bool[1, 1, 1, 1] (bill = ORG kept while ORG alive: Bool[1, 1, 1, 1])   neg: bill shifted (false): Bool[0, 0, 0, 0]   bill 4 = GREEDY: Bool[1, 1, 1, 1]   neg: one bill 5 (false): Bool[0, 0, 0, 0]
+L2+SF G1 diagonal = ORG_j: Bool[1, 1, 1, 1]   G5 acts shifted (false): Bool[0, 0, 0, 0]   kept shifted (false): Bool[0, 0, 0, 0]
+L2+SF off-diagonal cell(562, 561) ran; acts after T0 = row's acts while alive: true
+L2+SF G2 ORG-FIX state = saved, kept constant: Bool[1, 1, 1, 1]   neg: ORG not fixed (false): Bool[0, 0, 0, 0]  kept altered (false): Bool[0, 0, 0, 0]  another window's snapshot (false unless equal type): Bool[0, 0, 0, 0]
+L2+SF ORG-FIX acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2+SF G3 ORG-SIL no act after T0: Bool[1, 1, 1, 1]   neg: ORG (false): Bool[0, 0, 0, 0]   SIL acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2+SF G6 bill = ORG kept x KC: Bool[1, 1, 1, 1] (bill = ORG kept while ORG alive: Bool[1, 1, 1, 1])   neg: bill shifted (false): Bool[0, 0, 0, 0]   bill 4 = GREEDY: Bool[1, 1, 1, 1]   neg: one bill 5 (false): Bool[0, 0, 0, 0]
+== point P1000 s1 L300 M2.5 K2000
+G1g diagonal = GREEDY_j: Bool[1, 1, 1, 1]   G5 (acts shifted by 1 step, must be false): Bool[0, 0, 0, 0]
+L2 G1 diagonal = ORG_j: Bool[1, 1, 1, 1]   G5 acts shifted (false): Bool[0, 0, 0, 0]   kept shifted (false): Bool[0, 0, 0, 0]
+L2 off-diagonal cell(562, 561) ran; acts after T0 = row's acts while alive: true
+L2 G2 ORG-FIX state = saved, kept constant: Bool[1, 1, 1, 1]   neg: ORG not fixed (false): Bool[0, 0, 0, 0]  kept altered (false): Bool[0, 0, 0, 0]  another window's snapshot (false unless equal type): Bool[0, 0, 0, 0]
+L2 ORG-FIX acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2 G3 ORG-SIL no act after T0: Bool[1, 1, 1, 1]   neg: ORG (false): Bool[0, 0, 0, 0]   SIL acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2 G6 bill = ORG kept x KC: Bool[1, 1, 1, 1] (bill = ORG kept while ORG alive: Bool[1, 1, 1, 1])   neg: bill shifted (false): Bool[0, 0, 0, 0]   bill 4 = GREEDY: Bool[1, 1, 1, 1]   neg: one bill 5 (false): Bool[0, 0, 0, 0]
+L2+SF G1 diagonal = ORG_j: Bool[1, 1, 1, 1]   G5 acts shifted (false): Bool[0, 0, 0, 0]   kept shifted (false): Bool[0, 0, 0, 0]
+L2+SF off-diagonal cell(562, 561) ran; acts after T0 = row's acts while alive: true
+L2+SF G2 ORG-FIX state = saved, kept constant: Bool[1, 1, 1, 1]   neg: ORG not fixed (false): Bool[0, 0, 0, 0]  kept altered (false): Bool[0, 0, 0, 0]  another window's snapshot (false unless equal type): Bool[0, 0, 0, 0]
+L2+SF ORG-FIX acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2+SF G3 ORG-SIL no act after T0: Bool[1, 1, 1, 1]   neg: ORG (false): Bool[0, 0, 0, 0]   SIL acts before T0 = ORG's: Bool[1, 1, 1, 1]
+L2+SF G6 bill = ORG kept x KC: Bool[1, 1, 1, 1] (bill = ORG kept while ORG alive: Bool[1, 1, 1, 1])   neg: bill shifted (false): Bool[0, 0, 0, 0]   bill 4 = GREEDY: Bool[1, 1, 1, 1]   neg: one bill 5 (false): Bool[0, 0, 0, 0]
+== G4 (item 81, seeds 1-10)
+seasons L2: equal to results-grow81.json 10/10, alive 10/10   neg: against the entry of random L2 (false): Bool[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+random L2: equal to results-grow81.json 10/10, alive 1/10   neg: against the entry of seasons L2 (false): Bool[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+seasons GREEDY: equal to results-grow81.json 10/10, alive 10/10   neg: against the entry of random GREEDY (false): Bool[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+== summary {"P1000 s1 L300 M2.5 K2000 L2":{"G3":true,"G1":true,"G2":true,"G6":true},"P1000 s1 L300 M2.5 K2000 L2+SF":{"G3":true,"G1":true,"G2":true,"G6":true},"P250 s2 L1 M1.5 K250 G1g":true,"P250 s2 L1 M1.5 K250 L2":{"G3":true,"G1":true,"G2":true,"G6":true},"P250 s2 L1 M1.5 K250 L2+SF":{"G3":true,"G1":true,"G2":true,"G6":true},"P1000 s0 L- M2.5 K- L2":{"G3":true,"G1":true,"G2":true,"G6":true},"G4":true,"P1000 s0 L- M2.5 K- G1g":true,"P1000 s1 L300 M2.5 K2000 G1g":true,"P1000 s0 L- M2.5 K- L2+SF":{"G3":true,"G1":true,"G2":true,"G6":true}}

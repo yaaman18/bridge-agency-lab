@@ -1,0 +1,9 @@
+# S47b freeze (main run; written 2026-11-14 07:38, before the main run starts). Smoke estimate 0.19 h wall (16 threads, 5040 runs) <= 6 h: main run started.
+52a99a112c9eb154a288d63991f21ae8b32349c19d0e0632caa31e638ed9cb56  pa_regrid.jl
+69696bf11ac4c1738b9a1e2c8b01c76bae36153a61a01106b561c28deafe50be  check_pa_regrid.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  ../core/matter.jl
+1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37  synth_world.jl
+5e9e93b29aa70b69e1b29271180f79804558edad11fe2d26e656768c2b0876e3  ../discussion/specs/S47b-regrid.md
+999c5514c2b96a0ea5d5a9486620de0c6170de6c47433ddc077b20d4726b1bf6  predictions-pa-regrid.md

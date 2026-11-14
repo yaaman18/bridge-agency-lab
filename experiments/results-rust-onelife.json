@@ -1,0 +1,2848 @@
+{
+ "PR1.627-L2+SF-D1": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": null,
+  "dead_at_rust": null,
+  "pass": true
+ },
+ "PR2.628-L2+SF-D3": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2128,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2129,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2130,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR4.627-L2-D3": {
+  "dead_at": 2091,
+  "uninterrupted_end_payload_is_dead_payload": true,
+  "checks_after_death": 17,
+  "payload_unchanged": 17,
+  "final_n": 10000,
+  "pass": true
+ },
+ "PR3.627-L2-D3": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "PR2.627-L2+SF-D1": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR4.627-L2+SF-D3": {
+  "dead_at": 2148,
+  "uninterrupted_end_payload_is_dead_payload": true,
+  "checks_after_death": 17,
+  "payload_unchanged": 17,
+  "final_n": 10000,
+  "pass": true
+ },
+ "PR4.628-L2+SF-D3": {
+  "dead_at": 2129,
+  "uninterrupted_end_payload_is_dead_payload": true,
+  "checks_after_death": 17,
+  "payload_unchanged": 17,
+  "final_n": 10000,
+  "pass": true
+ },
+ "PR3.628-L2-D3": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "PR3.628-L2+SF-D1": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "Q3": {
+  "selftest": {
+   "sha_vectors": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "sqrt_mismatch": 0,
+   "floor_mismatch": 0
+  },
+  "pass": true
+ },
+ "PR3.627-L2+SF-D3": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "PR5.628-L2+SF-D1": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR5.627-L2+SF-D1": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR1.627-L2-D1": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": null,
+  "dead_at_rust": null,
+  "pass": true
+ },
+ "PR3c.627-L2-D1.1999": {
+  "life": "627-L2-D1",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR1.628-L2-D3": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": 2121,
+  "dead_at_rust": 2121,
+  "pass": true
+ },
+ "PR2.628-L2+SF-D1": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR2.628-L2-D3": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2120,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2121,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2122,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR1": true,
+ "PR2.627-L2-D3": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2090,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2091,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2092,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3c.627-L2+SF-D3.1999": {
+  "life": "627-L2+SF-D3",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "Q6": {
+  "alive": {
+   "life": "g-627-L2-D3",
+   "n0": 1999,
+   "rows": [
+    {
+     "stage": 1,
+     "abort_exit": 134,
+     "file_is_version": 2000,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    },
+    {
+     "stage": 2,
+     "abort_exit": 134,
+     "file_is_version": 2000,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    },
+    {
+     "stage": 3,
+     "abort_exit": 134,
+     "file_is_version": 2000,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    },
+    {
+     "stage": 4,
+     "abort_exit": 134,
+     "file_is_version": 2001,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    }
+   ],
+   "pass": true
+  },
+  "dead": {
+   "life": "g-627-L2-D3",
+   "n0": 2150,
+   "rows": [
+    {
+     "stage": 1,
+     "abort_exit": 134,
+     "file_is_version": 2151,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    },
+    {
+     "stage": 2,
+     "abort_exit": 134,
+     "file_is_version": 2151,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    },
+    {
+     "stage": 3,
+     "abort_exit": 134,
+     "file_is_version": 2151,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    },
+    {
+     "stage": 4,
+     "abort_exit": 134,
+     "file_is_version": 2152,
+     "complete_version": true,
+     "continue_exit": 0,
+     "end_same": true
+    }
+   ],
+   "pass": true
+  },
+  "marker_release": 0,
+  "marker_crashpoint": 1,
+  "pass": true
+ },
+ "PR5.627-L2+SF-D3": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "Q2": {
+  "forbidden_found": 0,
+  "env_args": 1,
+  "exit_no_arg": 2,
+  "exit_two_args": 2,
+  "pass": true,
+  "negative_control_caught": true
+ },
+ "PR3c.627-L2-D3.9970": {
+  "life": "627-L2-D3",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3c.627-L2+SF-D1.1999": {
+  "life": "627-L2+SF-D1",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3": true,
+ "PR5": true,
+ "PR3c.627-L2-D1.9970": {
+  "life": "627-L2-D1",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3.628-L2+SF-D3": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "PR2.628-L2-D1": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR4.628-L2-D3": {
+  "dead_at": 2121,
+  "uninterrupted_end_payload_is_dead_payload": true,
+  "checks_after_death": 17,
+  "payload_unchanged": 17,
+  "final_n": 10000,
+  "pass": true
+ },
+ "PR3c.627-L2+SF-D1.9970": {
+  "life": "627-L2+SF-D1",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR1.628-L2+SF-D1": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": null,
+  "dead_at_rust": null,
+  "pass": true
+ },
+ "PR1.628-L2+SF-D3": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": 2129,
+  "dead_at_rust": 2129,
+  "pass": true
+ },
+ "PR3c.628-L2-D1.9970": {
+  "life": "628-L2-D1",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR1.627-L2+SF-D3": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": 2148,
+  "dead_at_rust": 2148,
+  "pass": true
+ },
+ "PR5.627-L2-D3": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR3.627-L2-D1": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "PR5.628-L2-D3": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR3c.628-L2+SF-D3.9970": {
+  "life": "628-L2+SF-D3",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3c.628-L2-D3.9970": {
+  "life": "628-L2-D3",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR1.627-L2-D3": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": 2091,
+  "dead_at_rust": 2091,
+  "pass": true
+ },
+ "PR3c.628-L2+SF-D1.1999": {
+  "life": "628-L2+SF-D1",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "Q5": {
+  "roundtrip_live": {
+   "payload_same": true,
+   "file_same": true
+  },
+  "roundtrip_dead": {
+   "payload_same": true,
+   "file_same": true
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR5.628-L2+SF-D3": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR3c.628-L2-D3.1999": {
+  "life": "628-L2-D3",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3c.627-L2+SF-D3.9970": {
+  "life": "627-L2+SF-D3",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3.627-L2+SF-D1": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "PR5.627-L2-D1": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR4": true,
+ "PR5.628-L2-D1": {
+  "flips": {
+   "flips": 200,
+   "tail": 40,
+   "unchanged": 200,
+   "header": 40,
+   "exit_codes": [
+    4
+   ],
+   "payload": 120,
+   "refused": 200
+  },
+  "cases": {
+   "all_ok": true,
+   "cases": [
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_n",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_in_L",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "truncated_payload",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "trailing_byte",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "unknown_version",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "reserved_nonzero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_too_large",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_zero",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "L_wrong",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "bad_magic",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_check_value",
+     "ok": true
+    },
+    {
+     "expected": 4,
+     "exit": 4,
+     "case": "payload_other_law",
+     "ok": true
+    },
+    {
+     "expected": 7,
+     "exit": 7,
+     "case": "n_max",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_6_0_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_minus1_live",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_huge_live",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_not_integers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_one_number",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_three_numbers",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_empty",
+     "ok": true
+    },
+    {
+     "expected": 6,
+     "exit": 6,
+     "case": "line_float",
+     "ok": true
+    },
+    {
+     "expected": 8,
+     "exit": 8,
+     "case": "drive_after_valid_then_bad",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_valid_drive",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_no_input",
+     "ok": true
+    },
+    {
+     "expected": 0,
+     "exit": 0,
+     "case": "control_dead_out_of_range_drive",
+     "ok": true
+    },
+    {
+     "expected": 3,
+     "exit": 3,
+     "case": "missing_file",
+     "ok": true
+    }
+   ]
+  },
+  "pass": true
+ },
+ "PR3.628-L2-D1": {
+  "uninterrupted_exit": 0,
+  "uninterrupted_n": 10000,
+  "uninterrupted_payload_is_julia": true,
+  "kills": 5,
+  "kills_ok": 5,
+  "normal_ends": 15,
+  "normal_ends_ok": 15,
+  "segments_payload_is_julia": 20,
+  "segments": 20,
+  "final_file_same": true,
+  "pass": true
+ },
+ "Q1": {
+  "rust": {
+   "inputs": 780553,
+   "math": 400000,
+   "kernel": 28,
+   "life": 280512,
+   "wide": 100013,
+   "fd_vs_std_differ": 63871
+  },
+  "julia": {
+   "inputs": 780553,
+   "fd_mismatch": 0,
+   "std_mismatch": 63871,
+   "first_bad": null
+  },
+  "pass": true,
+  "negative_control_std_differs": 63871
+ },
+ "PR1.628-L2-D1": {
+  "saves": 10001,
+  "differing": 0,
+  "first_differing": null,
+  "final_same": true,
+  "dead_at_julia": null,
+  "dead_at_rust": null,
+  "pass": true
+ },
+ "Q4": {
+  "warnings": 0,
+  "warnings_crashpoint": 0,
+  "being_core_tree": 1,
+  "pass": true
+ },
+ "PR3c.628-L2+SF-D1.9970": {
+  "life": "628-L2+SF-D1",
+  "n0": 9970,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 9971,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 9972,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "Q6bin": {
+  "marker_release": 0,
+  "marker_crashpoint": 1
+ },
+ "PR6": true,
+ "PR2": true,
+ "PR3c.627-L2-D3.1999": {
+  "life": "627-L2-D3",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3c.628-L2-D1.1999": {
+  "life": "628-L2-D1",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ },
+ "PR2.627-L2-D1": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR2.627-L2+SF-D3": {
+  "rows": [
+   {
+    "n": 0,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 1999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2000,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2147,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2148,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 2149,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   },
+   {
+    "n": 9999,
+    "saves_same": true,
+    "julia_save_in_rust": true,
+    "rust_save_in_julia": true
+   }
+  ],
+  "pass": true
+ },
+ "PR3c.628-L2+SF-D3.1999": {
+  "life": "628-L2+SF-D3",
+  "n0": 1999,
+  "rows": [
+   {
+    "stage": 1,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 2,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 3,
+    "abort_exit": 134,
+    "file_is_version": 2000,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   },
+   {
+    "stage": 4,
+    "abort_exit": 134,
+    "file_is_version": 2001,
+    "complete_version": true,
+    "continue_exit": 0,
+    "end_same": true
+   }
+  ],
+  "pass": true
+ }
+}

@@ -1,0 +1,23 @@
+# S49 code freeze (lab-coder, 2026-11-14 09:30; after gates Q0-Q6, before the one run of sh experiments/onelife_rust_check.sh)
+# new files
+a759621541673a8e4c4a00790af18dccbb93632131713b3b13ce675a4c37f3ae  ../rust/being-core/src/fdexp.rs
+e8026d8df92747728db5b1094ca5917c6f9cceed283dde6db9306e79047d7faa  ../rust/being-core/src/matter.rs
+689487e58047c0edec618ddc927a8fd998fe4ffdb23310fc2a9c09d12c0a0d70  ../rust/being-core/src/onelife.rs
+a86d61a15fd896a5b5fd42b2ce7e9d7f8e0993ec676fe19d4fa49f2dabb1d533  ../rust/being-core/src/sha256.rs
+fea452007e33bb6ad0a73262f39b6393bf612617f65e6f64159f52ee89c2bd33  ../rust/being-tools/src/bin/onelife-run.rs
+1e127ae7d61061fa27682372a3b0deb6160d8b91f6a89ad864e4e9ce1ea840d4  ../core/check/onelife_scenarios.jl
+e643daeeb663508430c428af7fb23bd48e3d798f696b8f92cfc36397241ebba5  onelife_rust_check.sh
+0c1716dce6b6e02c88f70b5fc55ffa320d6bd5ca704709bdebc43c71564f758c  onelife_rust_check.jl
+# changed files (default behaviour unchanged)
+45116a12e1c838c6fa519bc5abb636a9e84f94963e65a52af0da2d413f820ffc  ../rust/being-core/src/lib.rs
+457b93be0b6d2a778466027f78acf1804d996b912964eb89dd7f3b347d0ba438  ../rust/being-tools/src/main.rs
+f09488bc9fd0b07fd4483090015cc5b64b9405c316c87e34a101b8ed9da28469  ../rust/being-tools/Cargo.toml
+f368c0831cc409d0981a628dc648a82f2e89a41906ab568134d4f16a67825db1  ../core/check/run.sh
+# reference (not changed)
+c61c5a2152e47c9bb8555e4ed91e815255ebbf2560bf456d6faa1f9943fb6044  ../core/one_life.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  ../core/matter.jl
+65cc0230ada6e88d91a527d30dc9660fb6da265cd4e3cd7bc0e7aebb109090b1  ../core/jsmath.jl
+035f3d7369d9500487b85d850650312953a5355e517db18f6223c70dcef9d76e  ../rust/being-core/src/circuit.rs
+9710a8bf3b9c4bc3162cd6aed8e9e8bf2ec930ba3a3a9127fd98de933f84e75a  ../rust/Cargo.lock

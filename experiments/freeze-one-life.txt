@@ -1,0 +1,7 @@
+# S48 freeze (2026-11-13, spec r2 after S-R APPROVE, user: code by the lab-coder seat). Before any code exists. Covers smoke (seeds 589-590) and main (591-600).
+6835e57ddd2ef5ef675eaf78126451c3ca0aa179ecfa01bdbcb14b5165c2b195  ../discussion/specs/S48-one-life.md
+36882e598ef35391ed311c87395a1c403503e08bf97b00581db99788f5113ed2  predictions-one-life.md
+69e4c969ababebdec13f3e08b1336f134f5991d33ec7cc93502ff1aaa9477574  ../core/body_org.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  ../core/matter.jl
+65cc0230ada6e88d91a527d30dc9660fb6da265cd4e3cd7bc0e7aebb109090b1  ../core/jsmath.jl

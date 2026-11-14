@@ -1,0 +1,36 @@
+== R0
+R0 shas equal freeze-pa-grid.txt (freeze 2): Dict{String, Bool}("check_pa_grid.jl" => 1, "synth_world.jl" => 1, "../core/body_org.jl" => 1, "pa_grid.jl" => 1)
+R0 neg: pa_grid.jl against the sha of check_pa_grid.jl (must be false): false
+== R1 / R3 (R1 side)
+R1 regression: 336/336 (key, arm, seed) equal in countAt (T0+500, T0+2000, horizon) and death; arms ["GREEDY", "GREEDY-KC", "ORG", "ORG-FIX"], point-K 4
+R3 neg (R1): reference countAt[1] of ("P1000 s1 L300 M2.5 K- | GREEDY", "GREEDY", "565") shifted by 1 -> mismatches 1 (must be 1)
+== R2 / R3 (R2 side)
+R2 K=none L2 seed 601: ORG crossing steps Int64[]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   K none: crossings before [2800, 4800, 10000] = [0, 0, 0] (must be all 0)
+R2 K=none L2 seed 602: ORG crossing steps Int64[]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   K none: crossings before [2800, 4800, 10000] = [0, 0, 0] (must be all 0)
+R2 K=none L2+SF seed 601: ORG crossing steps Int64[]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   K none: crossings before [2800, 4800, 10000] = [0, 0, 0] (must be all 0)
+R2 K=none L2+SF seed 602: ORG crossing steps Int64[]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   K none: crossings before [2800, 4800, 10000] = [0, 0, 0] (must be all 0)
+R2 K=2000 L2 seed 601: ORG crossing steps [2800, 4800, 6800, 8800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C1: crossings before 4800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+   C2: crossings before 10000 = 4 (want 4; GREEDY rule copy 4)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=2000 L2 seed 602: ORG crossing steps [2800, 4800, 6800, 8800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C1: crossings before 4800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+   C2: crossings before 10000 = 4 (want 4; GREEDY rule copy 4)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=2000 L2+SF seed 601: ORG crossing steps [2800, 4800, 6800, 8800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C1: crossings before 4800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+   C2: crossings before 10000 = 4 (want 4; GREEDY rule copy 4)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=2000 L2+SF seed 602: ORG crossing steps [2800, 4800, 6800, 8800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C1: crossings before 4800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+   C2: crossings before 10000 = 4 (want 4; GREEDY rule copy 4)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=1000 L2 seed 601: ORG crossing steps [1800, 2800, 3800, 4800, 5800, 6800, 7800, 8800, 9800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C3: crossings before 2800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=1000 L2 seed 602: ORG crossing steps [1800, 2800, 3800, 4800, 5800, 6800, 7800, 8800, 9800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C3: crossings before 2800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=1000 L2+SF seed 601: ORG crossing steps [1800, 2800, 3800, 4800, 5800, 6800, 7800, 8800, 9800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C3: crossings before 2800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+R2 K=1000 L2+SF seed 602: ORG crossing steps [1800, 2800, 3800, 4800, 5800, 6800, 7800, 8800, 9800]  ORG-FIX same: true  = T0+K, T0+2K, ...: true
+   C3: crossings before 2800 = 1 (want 1; GREEDY rule copy 1)   neg: before T0+K = 0 (must be 0, so the gate fails there)
+== summary {"R1+R3":true,"R2":true,"R0":true,"R3 (R2 side)":true}
