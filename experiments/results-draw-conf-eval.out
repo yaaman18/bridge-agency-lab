@@ -1,0 +1,74 @@
+==== law L2  (windows 690-725, n = 36)
+   DET  alive T0+500 36/36, T0+2000 35/36, horizon 27/36 | death steps from T0: 9201 9201 9201 9201 9201 9201 9201 9201 9201 2868 9201 1862 8658 9201 9201 8322 5178 9201 4169 9201 9201 9201 9201 9201 7755 9201 9201 9201 9201 2607 9201 9201 7105 9201 9201 9201
+        body (countAt T0+500/2000/9200): 9/11/14 6/12/7 10/8/17 15/16/10 8/8/9 14/7/8 13/13/10 16/8/5 8/8/17 11/14/0 10/10/15 14/0/0 12/15/0 9/8/17 9/14/3 6/8/0 7/14/0 18/9/13 16/16/0 13/12/14 8/8/10 15/13/13 14/9/10 8/10/16 7/8/0 17/4/12 11/14/13 3/9/11 12/13/10 11/7/0 7/8/13 9/4/10 5/11/0 11/6/14 15/6/13 14/10/9
+        answered share of acts from T0 (mean 0.994): 0.996 0.995 0.995 0.994 0.991 0.993 0.994 0.996 0.995 0.993 0.994 0.989 0.993 0.995 0.995 0.994 0.995 0.994 0.99 0.992 0.992 0.992 0.994 0.994 0.992 0.995 0.996 0.995 0.996 0.994 0.993 0.995 0.993 0.993 0.993 0.995
+        drawing steps: 8771 8597 9110 7947 7801 7829 8593 8963 8588 2449 8266 1184 7418 8589 8437 7388 5038 8260 2525 7120 8382 7418 7996 8764 6741 8410 8309 8982 8719 2334 8244 8481 6560 8807 8508 8889 | agreement with DET's choice at the same state (mean 1.0) | rejected share of bit groups (mean 0.0)
+   UNI  alive T0+500 36/36, T0+2000 36/36, horizon 34/36 | death steps from T0: 9201 9201 9201 9201 9201 9201 9201 9201 9201 6272 9201 9201 9201 9201 9201 9201 9201 9201 4199 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201
+        body (countAt T0+500/2000/9200): 11/17/17 18/17/15 14/9/17 13/16/12 18/11/8 14/13/15 17/15/14 18/17/13 15/17/18 10/16/0 15/13/19 18/14/17 15/16/15 15/11/17 17/17/7 8/16/16 15/16/18 17/13/15 16/17/0 12/15/17 16/9/11 18/18/16 9/9/17 8/13/17 13/8/14 13/14/14 13/16/14 13/16/14 8/16/17 15/8/17 8/13/17 18/14/13 12/17/15 17/12/14 13/14/15 17/16/8
+        answered share of acts from T0 (mean 0.994): 0.995 0.994 0.995 0.993 0.993 0.994 0.993 0.993 0.995 0.995 0.992 0.993 0.993 0.993 0.995 0.993 0.995 0.994 0.991 0.994 0.992 0.992 0.994 0.993 0.993 0.995 0.995 0.995 0.995 0.992 0.992 0.993 0.993 0.994 0.994 0.995
+        drawing steps: 5227 4854 5513 4019 3659 3942 4168 4337 4528 3052 4241 3667 3762 4104 4653 4237 4469 4162 1510 4452 3280 3805 4117 4609 4534 4768 4366 5062 4794 5283 4228 3923 4666 4432 4453 4101 | agreement with DET's choice at the same state (mean 0.5) | rejected share of bit groups (mean 0.0)
+   CONF alive T0+500 36/36, T0+2000 36/36, horizon 34/36 | death steps from T0: 9201 9201 9201 9201 9201 9201 9201 9201 9201 6270 9201 9201 9201 9201 9201 9201 9201 9201 4186 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201 9201
+        body (countAt T0+500/2000/9200): 9/14/17 16/17/15 12/8/17 13/17/9 16/12/9 15/14/14 17/16/11 18/14/12 15/14/18 10/14/0 14/13/15 17/17/16 15/16/17 15/8/16 15/18/6 8/17/17 13/17/18 16/12/16 15/16/0 13/14/16 17/10/10 5/18/15 9/9/15 8/9/19 16/9/16 17/13/16 13/15/16 14/16/12 5/17/17 14/8/16 8/15/18 17/18/12 16/14/15 16/12/17 11/18/17 14/17/8
+        answered share of acts from T0 (mean 0.994): 0.995 0.994 0.996 0.993 0.993 0.995 0.994 0.993 0.994 0.996 0.992 0.994 0.993 0.992 0.995 0.993 0.995 0.994 0.991 0.993 0.993 0.992 0.994 0.992 0.993 0.995 0.994 0.996 0.995 0.993 0.993 0.993 0.992 0.995 0.995 0.993
+        drawing steps: 5035 4982 5404 4052 3742 4005 4440 4478 4791 2353 4432 3777 3923 4319 4712 4597 4497 4139 1601 4631 3403 3466 4235 4652 4603 4769 5019 5078 4837 5243 4349 3962 4785 4442 4570 4464 | agreement with DET's choice at the same state (mean 0.546) | rejected share of bit groups (mean 0.273)
+        CONF weights [patch1, patch2] over drawing steps (26 kinds), top: Any[3, 3]x80164 Any[2, 3]x25979 Any[3, 2]x20217 Any[2, 2]x9334 Any[3, 4]x4651 Any[4, 3]x4298 Any[2, 4]x4188 Any[4, 2]x3328 Any[1, 3]x1061 Any[3, 1]x964 Any[1, 2]x347 Any[2, 1]x306
+   PB1 UNI cs [1, 2] w [1, 1]: n 152977, shares [0.498, 0.502] vs [0.5, 0.5], max dev 0.002, uncorrected p 0.069, Holm reject at 1 %: false, within 0.05: true
+   PB1 UNI: groups with fewer than 400 draws (reported, not judged): 0 groups, 0 draws
+   PB1 L2 UNI goodness of fit: holds (1 group(s) judged)
+   PB1 CONF cs [1, 2] w [1, 1]: n 89678, shares [0.5, 0.5] vs [0.5, 0.5], max dev 0.0, uncorrected p 0.862, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [1, 2]: n 4541, shares [0.33, 0.67] vs [0.333, 0.667], max dev 0.003, uncorrected p 0.644, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [1, 3]: n 1061, shares [0.246, 0.754] vs [0.25, 0.75], max dev 0.004, uncorrected p 0.763, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [2, 1]: n 3637, shares [0.653, 0.347] vs [0.667, 0.333], max dev 0.014, uncorrected p 0.075, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [2, 3]: n 25979, shares [0.396, 0.604] vs [0.4, 0.6], max dev 0.004, uncorrected p 0.236, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [3, 1]: n 965, shares [0.751, 0.249] vs [0.75, 0.25], max dev 0.001, uncorrected p 0.926, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [3, 2]: n 20217, shares [0.592, 0.408] vs [0.6, 0.4], max dev 0.008, uncorrected p 0.026, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [3, 4]: n 4651, shares [0.424, 0.576] vs [0.429, 0.571], max dev 0.004, uncorrected p 0.548, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [4, 3]: n 4298, shares [0.574, 0.426] vs [0.571, 0.429], max dev 0.002, uncorrected p 0.758, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF: groups with fewer than 400 draws (reported, not judged): 10 groups, 760 draws
+   PB1 L2 CONF goodness of fit: holds (9 group(s) judged)
+PB1 verdict L2: holds (replay from the bit files: 580969/580969 records reproduced)
+   PB2 per window N: 2983 2861 2423 2091 1398 1016 1907 1954 2413 1157 2300 1684 1460 1415 2854 2696 1163 1023 501 1909 1909 1674 1581 1753 1977 2700 2521 1117 1000 2400 1547 1800 1415 1288 1904 2315 | dropped (N < 100): 0
+   PB2 per window D: 0.04 0.003 -0.025 0.035 0.026 0.03 0.027 0.022 -0.062 -0.077 0.05 0.057 0.019 0.078 0.079 0.005 0.123 0.078 -0.002 0.052 0.013 -0.004 0.023 0.074 -0.016 0.007 0.126 -0.073 0.073 0.029 0.04 0.049 0.077 0.101 0.039 0.057 (median 0.03)
+   PB2 plain difference of answered shares (heavier chosen - lighter chosen): 0.012 0.022 0.011 0.029 0.037 0.043 0.041 0.04 0.02 0.015 0.034 0.045 0.034 0.07 0.009 0.024 0.034 0.082 0.063 0.038 0.037 0.041 0.044 0.049 0.016 0.008 0.027 0.031 0.059 0.028 0.035 0.04 0.076 0.045 0.024 0.018
+   PB2 p_L: min 0.167, 5 % 0.333, 25 % 0.4, median 0.4, 75 % 0.4, max 0.444 (66109 steps)
+PB2 verdict L2: holds (D > 0 in 29, D < 0 in 7, ties 0, p 0.0, larger)
+PB3 verdict L2 UNI vs DET (death step): holds (predicted larger; wins 9, losses 0, ties 27, non-ties 9, p 0.004, result larger)
+PB4 verdict L2 CONF vs UNI (death step): holds (predicted undetectable; wins 0, losses 2, ties 34, non-ties 2, p 0.5, result undetectable)
+PB4 verdict L2 CONF vs DET (death step): holds (predicted larger; wins 9, losses 0, ties 27, non-ties 9, p 0.004, result larger)
+==== law L2+SF  (windows 690-725, n = 36)
+   DET  alive T0+500 36/36, T0+2000 30/36, horizon 18/36 | death steps from T0: 9201 9201 8156 6728 512 9201 9015 9201 1245 9201 1741 3179 4778 9201 8517 9201 9201 2361 6977 826 1025 8946 9201 8255 9201 5679 9201 9201 9201 9201 9201 9201 9201 9201 5567 1073
+        body (countAt T0+500/2000/9200): 10/9/16 14/6/9 12/8/0 17/14/0 2/0/0 15/12/10 16/11/0 5/8/11 4/0/0 7/10/12 11/0/0 13/15/0 12/9/0 5/8/19 9/18/0 7/7/13 8/19/12 18/13/0 12/17/0 12/0/0 4/0/0 10/18/0 14/9/14 12/4/0 10/5/15 14/9/0 2/18/9 3/14/7 8/18/9 9/10/13 9/16/9 9/11/13 14/6/11 11/14/11 8/11/0 15/0/0
+        answered share of acts from T0 (mean 0.99): 0.994 0.993 0.994 0.991 0.978 0.993 0.991 0.989 0.996 0.99 0.991 0.987 0.989 0.99 0.993 0.991 0.991 0.986 0.991 0.982 0.985 0.989 0.991 0.992 0.99 0.99 0.992 0.991 0.992 0.991 0.991 0.993 0.989 0.991 0.989 0.988
+        drawing steps: 7103 6193 6127 4101 223 6172 6153 5803 713 6272 985 1582 2810 5725 6196 5866 5942 1051 3974 268 442 5656 5662 5519 5166 3385 6180 6320 6065 6079 6111 6248 6121 6226 3028 685 | agreement with DET's choice at the same state (mean 1.0) | rejected share of bit groups (mean 0.0)
+   UNI  alive T0+500 35/36, T0+2000 35/36, horizon 25/36 | death steps from T0: 9201 3723 9201 9201 2480 9201 5538 7925 9201 9201 9201 9201 5586 5381 9201 9201 9201 460 4404 9201 9201 9201 9201 9201 7287 9201 9201 9201 9201 9201 3820 9201 9201 2230 9201 9201
+        body (countAt T0+500/2000/9200): 9/18/4 17/17/0 15/9/19 9/17/13 16/15/0 16/15/16 20/18/0 18/17/0 10/17/19 4/18/11 12/11/18 18/17/18 10/17/0 17/12/0 18/15/8 7/18/4 11/16/11 0/0/0 17/18/0 14/18/17 7/13/6 17/18/18 10/11/16 9/18/18 18/8/0 16/16/18 4/18/20 16/16/16 10/18/17 18/10/16 9/17/0 16/17/13 19/18/16 13/15/0 18/16/17 4/17/10
+        answered share of acts from T0 (mean 0.992): 0.994 0.994 0.994 0.993 0.994 0.982 0.994 0.993 0.995 0.992 0.994 0.992 0.992 0.991 0.994 0.993 0.994 0.972 0.989 0.994 0.991 0.993 0.995 0.994 0.995 0.993 0.994 0.996 0.995 0.992 0.98 0.992 0.994 0.994 0.994 0.994
+        drawing steps: 4595 1192 4737 3428 906 4249 2466 3408 3325 2619 3608 3225 1956 1947 4316 3794 3878 56 1415 4129 3221 3656 3620 4232 3254 4591 4014 4092 4459 4460 1356 3012 4358 1116 4087 3363 | agreement with DET's choice at the same state (mean 0.499) | rejected share of bit groups (mean 0.0)
+   CONF alive T0+500 35/36, T0+2000 33/36, horizon 28/36 | death steps from T0: 9201 9201 9201 9201 9201 9201 4439 9201 9201 9201 9201 9201 9201 1181 9201 9201 9201 458 9201 9201 4486 2650 9201 9201 9201 9201 9201 9201 9201 9201 9201 7798 9201 9201 3577 1044
+        body (countAt T0+500/2000/9200): 11/15/3 14/18/9 13/7/3 10/18/14 11/13/11 18/15/16 19/17/0 6/16/13 8/16/16 4/16/12 11/8/18 18/17/20 10/18/17 15/0/0 17/15/8 8/17/19 13/18/17 0/0/0 11/17/11 17/5/18 8/13/0 6/18/0 8/9/11 10/4/20 16/3/17 16/14/8 2/20/13 17/14/16 5/18/18 17/6/11 10/12/19 17/16/0 19/16/17 11/3/8 11/18/0 12/0/0
+        answered share of acts from T0 (mean 0.993): 0.994 0.992 0.995 0.993 0.989 0.99 0.994 0.994 0.993 0.994 0.993 0.993 0.992 0.992 0.995 0.994 0.996 0.978 0.992 0.992 0.992 0.994 0.994 0.993 0.993 0.995 0.995 0.995 0.996 0.993 0.989 0.993 0.993 0.993 0.994 0.995
+        drawing steps: 4460 4019 3286 3277 3480 3632 2294 4205 3237 3259 3425 3137 3629 290 4388 4305 3962 53 4016 3013 1431 647 3295 4011 4039 4064 3836 4238 4702 3698 3985 2771 4628 3618 1370 496 | agreement with DET's choice at the same state (mean 0.549) | rejected share of bit groups (mean 0.273)
+        CONF weights [patch1, patch2] over drawing steps (33 kinds), top: Any[3, 3]x61675 Any[3, 2]x17255 Any[2, 3]x14308 Any[2, 2]x5183 Any[3, 4]x5028 Any[4, 3]x4821 Any[4, 2]x2109 Any[2, 4]x1823 Any[3, 1]x1091 Any[1, 3]x1008 Any[4, 4]x305 Any[3, 5]x253
+   PB1 UNI cs [1, 2] w [1, 1]: n 116140, shares [0.497, 0.503] vs [0.5, 0.5], max dev 0.003, uncorrected p 0.087, Holm reject at 1 %: false, within 0.05: true
+   PB1 UNI: groups with fewer than 400 draws (reported, not judged): 0 groups, 0 draws
+   PB1 L2+SF UNI goodness of fit: holds (1 group(s) judged)
+   PB1 CONF cs [1, 2] w [1, 1]: n 67180, shares [0.5, 0.5] vs [0.5, 0.5], max dev 0.0, uncorrected p 0.865, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [1, 2]: n 2031, shares [0.329, 0.671] vs [0.333, 0.667], max dev 0.004, uncorrected p 0.706, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [1, 3]: n 1023, shares [0.24, 0.76] vs [0.25, 0.75], max dev 0.01, uncorrected p 0.481, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [2, 1]: n 2269, shares [0.668, 0.332] vs [0.667, 0.333], max dev 0.001, uncorrected p 0.917, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [2, 3]: n 14309, shares [0.401, 0.599] vs [0.4, 0.6], max dev 0.001, uncorrected p 0.819, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [3, 1]: n 1092, shares [0.723, 0.277] vs [0.75, 0.25], max dev 0.027, uncorrected p 0.036, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [3, 2]: n 17255, shares [0.597, 0.403] vs [0.6, 0.4], max dev 0.003, uncorrected p 0.456, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [3, 4]: n 5028, shares [0.427, 0.573] vs [0.429, 0.571], max dev 0.002, uncorrected p 0.823, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF cs [1, 2] w [4, 3]: n 4821, shares [0.57, 0.43] vs [0.571, 0.429], max dev 0.002, uncorrected p 0.819, Holm reject at 1 %: false, within 0.05: true
+   PB1 CONF: groups with fewer than 400 draws (reported, not judged): 13 groups, 1188 draws
+   PB1 L2+SF CONF goodness of fit: holds (9 group(s) judged)
+PB1 verdict L2+SF: holds (replay from the bit files: 397539/397539 records reproduced)
+   PB2 per window N: 1764 1719 2190 1378 1678 1954 547 1147 1595 1577 1380 1464 1136 242 1689 987 1437 40 1553 1684 707 493 1601 1484 1394 1812 1752 2461 1006 1537 1753 1878 989 1902 697 389 | dropped (N < 100): 1
+   PB2 per window D: 0.045 0.022 0.053 0.019 0.135 0.133 0.028 0.079 0.003 0.086 -0.015 0.023 0.026 -0.125 -0.012 0.138 0.081 -0.035 0.037 -0.067 -0.1 -0.0 0.114 0.032 -0.096 0.095 -0.057 0.001 0.08 0.096 0.037 0.21 -0.077 0.154 -0.053 (median 0.028)
+   PB2 plain difference of answered shares (heavier chosen - lighter chosen): 0.03 0.054 0.001 0.038 0.069 0.079 0.064 0.055 0.02 0.035 0.03 0.032 0.014 0.029 0.027 0.046 0.015 0.039 0.008 0.039 0.011 0.019 0.035 0.013 0.025 0.022 0.009 0.055 0.045 0.054 0.026 0.084 0.018 0.028 0.0
+   PB2 p_L: min 0.143, 5 % 0.25, 25 % 0.4, median 0.4, 75 % 0.4, max 0.455 (48976 steps)
+PB2 verdict L2+SF: holds (D > 0 in 24, D < 0 in 11, ties 0, p 0.041, larger)
+PB3 verdict L2+SF UNI vs DET (death step): no prediction (reported) (predicted -; wins 15, losses 9, ties 12, non-ties 24, p 0.307, result not significant)
+PB4 verdict L2+SF CONF vs UNI (death step): no prediction (reported) (predicted -; wins 8, losses 8, ties 20, non-ties 16, p 1.0, result not significant)
+PB4 verdict L2+SF CONF vs DET (death step): no prediction (reported) (predicted -; wins 13, losses 7, ties 16, non-ties 20, p 0.263, result not significant)

@@ -1,0 +1,49 @@
+S59 evaluation, windows 810:845 (partners 850:885), classes kept by the pilot: a,b,c
+== validity (T0..tp-1, both alive; v1 restored 0.5-2x, v2 levied 0.5-2x, v3 shortfall share <= 0.2, v4 |mean s diff| <= 50%)
+B2-delay: valid windows 34/36; failing v1 1, v2 1, v3 0, v4 1, B2-ret denominator 0 0, early death 0
+B2-delay main D = sum over a,b,c (Z_B2-ret - Z_ctrl): (1) valid windows: D>0 3, D<0 4, D=0 27, p nothing -> undetectable
+B2-delay   (2) all 36 windows: D>0 3, D<0 4, D=0 29, p nothing -> undetectable
+B2-delay   (3) excluded windows (u, D, Z_B2-ret by class, Z_ctrl by class): u816 D=0 B[0, 0, 0] C[0, 0, 0]; u817 D=0 B[0, 0, 0] C[0, 0, 0]
+B2-delay   attribution reserved: false (valid < 27: false, (1)/(2) directions opposite: false)
+B2-delay   class a (all 36): B2-ret wins 4, losses 2, ties 30
+B2-delay   class b (all 36): B2-ret wins 3, losses 1, ties 32
+B2-delay   class c (all 36): B2-ret wins 0, losses 5, ties 31
+B2-delay   class 0 (no perturbation) same quantity: D>0 7 D<0 3 p 0.34375 -> not significant
+B2-delay   shortfall (unpaid restorations, KC units): before tp 915.79, tp..tp+T by class [2767.21, 2631.26, 2349.89, 2824.96]
+B2-yoke: valid windows 28/36; failing v1 3, v2 3, v3 0, v4 5, B2-ret denominator 0 0, early death 0
+B2-yoke main D = sum over a,b,c (Z_B2-ret - Z_ctrl): (1) valid windows: D>0 5, D<0 8, D=0 15, p 0.5810546875 -> not significant
+B2-yoke   (2) all 36 windows: D>0 5, D<0 10, D=0 21, p 0.3017578125 -> not significant
+B2-yoke   (3) excluded windows (u, D, Z_B2-ret by class, Z_ctrl by class): u816 D=-3 B[0, 0, 0] C[1, 1, 1]; u817 D=0 B[0, 0, 0] C[0, 0, 0]; u820 D=0 B[0, 0, 0] C[0, 0, 0]; u824 D=-1 B[0, 0, 0] C[0, 0, 1]; u827 D=0 B[0, 0, 0] C[0, 0, 0]; u831 D=0 B[0, 0, 0] C[0, 0, 0]; u834 D=0 B[0, 0, 0] C[0, 0, 0]; u836 D=0 B[0, 0, 0] C[0, 0, 0]
+B2-yoke   attribution reserved: false (valid < 27: false, (1)/(2) directions opposite: false)
+B2-yoke   class a (all 36): B2-ret wins 4, losses 5, ties 27
+B2-yoke   class b (all 36): B2-ret wins 4, losses 5, ties 27
+B2-yoke   class c (all 36): B2-ret wins 0, losses 8, ties 28
+B2-yoke   class 0 (no perturbation) same quantity: D>0 4 D<0 2 p nothing -> undetectable
+B2-yoke   shortfall (unpaid restorations, KC units): before tp 1257.39, tp..tp+T by class [2509.26, 1807.28, 2904.7, 2905.81]
+qualification (B2-ret wins against both controls on their valid windows, not reserved): false
+== descriptive (not test N; all 36 windows)
+A-ret   : in-band survival T after tp (a,b,c) 0.13 (14/108), class 0 6/36; alive at tp+T a/b/c/0 [23, 31, 31, 31]; alive out of band [19, 25, 27, 25]; alive at end [14, 28, 18, 21]
+          class 0 from T0: mean kept 9.11, candidates 5911 (steps 4441), restored 0, unpaid 5911 (steps 4441), levied 0.0 KC, shortfall 0.0 KC, vanished 3867, re-formed within FORGET 625
+B2-free : in-band survival T after tp (a,b,c) 0.167 (18/108), class 0 6/36; alive at tp+T a/b/c/0 [36, 34, 35, 36]; alive out of band [31, 30, 26, 30]; alive at end [35, 34, 34, 35]
+          class 0 from T0: mean kept 10.7, candidates 10731 (steps 8495), restored 10731, unpaid 0 (steps 0), levied 0.0 KC, shortfall 0.0 KC, vanished 2808, re-formed within FORGET 149
+B2-ret  : in-band survival T after tp (a,b,c) 0.102 (11/108), class 0 7/36; alive at tp+T a/b/c/0 [32, 33, 34, 34]; alive out of band [27, 29, 32, 27]; alive at end [31, 32, 30, 30]
+          class 0 from T0: mean kept 9.96, candidates 8680 (steps 6787), restored 5992, unpaid 2688 (steps 2113), levied 599200.0 KC, shortfall -0.0 KC, vanished 3237, re-formed within FORGET 254
+B2-delay: in-band survival T after tp (a,b,c) 0.111 (12/108), class 0 3/36; alive at tp+T a/b/c/0 [31, 33, 33, 31]; alive out of band [28, 31, 26, 28]; alive at end [25, 32, 26, 24]
+          class 0 from T0: mean kept 9.93, candidates 7765 (steps 6050), restored 5341, unpaid 2424 (steps 1867), levied 523492.2 KC, shortfall 10607.78 KC, vanished 2880, re-formed within FORGET 231
+B2-yoke : in-band survival T after tp (a,b,c) 0.194 (21/108), class 0 5/36; alive at tp+T a/b/c/0 [34, 32, 33, 32]; alive out of band [28, 27, 23, 27]; alive at end [31, 29, 26, 29]
+          class 0 from T0: mean kept 9.89, candidates 8280 (steps 6372), restored 5124, unpaid 3156 (steps 2423), levied 501866.7 KC, shortfall 10533.32 KC, vanished 3321, re-formed within FORGET 324
+== secondary (selected after the perturbation; pairs not matched; not used for the judgment)
+B2-ret  : out of the band in tp..tp+299 82/108, of which Z = 1: 7
+B2-delay: out of the band in tp..tp+299 79/108, of which Z = 1: 7
+B2-yoke : out of the band in tp..tp+299 72/108, of which Z = 1: 11
+B2-free : out of the band in tp..tp+299 86/108, of which Z = 1: 10
+A-ret   : out of the band in tp..tp+299 82/108, of which Z = 1: 11
+window-classes where only one of B2-ret / B2-delay left the band: 29
+window-classes where only one of B2-ret / B2-yoke left the band: 34
+== predictions
+PM0 (R1-R5 hold): holds
+PM1 (p1 holds, p2 does not, p3 holds for a, b, c): fails  (p1 true, p2 true, p3 JSON.Object{String, Any}("c" => true, "b" => true, "a" => true))
+PM2 (delay valid >= 27, yoke valid < 27): fails  (34, 28)
+PM3 (no qualification; B2-ret does not lose significantly): holds  (qualification false, delay undetectable, yoke not significant)
+PM4 (B2-free >= B2-ret and B2-free >= A-ret; kept classes, all 36): holds  (A-ret 0.13, B2-free 0.167, B2-ret 0.102)
+wall 229.8 s, threads 8

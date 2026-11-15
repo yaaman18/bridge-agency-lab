@@ -36,6 +36,8 @@
 - **実装の席 lab-coder**（2026-11-13 ユーザー決定、上の 2026-11-07 の分担を改める）: Lean・Julia・Rust・試験のコードは、Claude Code のサブエージェント `lab-coder`（Opus 5.5、
   `.claude/agents/lab-coder.md`）が合意済みの S 仕様に沿って書き、関門を走らせて報告する。claude-lab は仕様・予測の凍結・差分の点検・記録、Codex がレビュー（I-R）。
   理由: claude-lab が Fable で動く回は、コードを書かせるとトークンがもったいない。Lean も同じ席に書かせる（Claude の系統の中にとどまる）。
+- **deepseek-lab の一部再開**（2026-11-15 ユーザー決定）: 公式 TRM（Python）の Julia への移植（S56 とその続き）のコーディングは、`discussion/deepseek-turn.sh`（OpenRouter 経由の `deepseek/deepseek-v4.1-flash-1017`）に書かせ、claude-lab は仕様・手の割り付け・関門・記録、Codex がレビューする。書いてよい場所は `experiments/trm/` だけ。理由: Claude のトークンの節約。ほかのコードは lab-coder のまま。
+- **deepseek-lab の停止と移植の書き手の交代**（2026-11-16 ユーザー決定）: DeepSeek の席を止める。S56 の残り（r5 の試験と実装）は **codex-lab が書く**。書いてよい場所は `experiments/trm/` だけ。書き手とレビューが同じ席にならないよう、codex が書いた分のレビューは Claude の側（Opus 5.5 のサブエージェント）が行い、claude-lab は仕様・関門・記録。ほかのコードは lab-coder のまま。理由: DeepSeek は移植で空の合格・配線の誤り・壊れた写しを繰り返した。
 - **fable-lab**（2026-11-10 ユーザー決定）: Claude Fable 5.2 は「煮詰まったときの啓示」と「ユーザーの任意の確認」にだけ使う、読むだけ・議決権なしの助言役。
   呼び方は `discussion/fable-turn.sh`（Pro のサブスクの範囲、2026-11-16 まで）、指針は `discussion/agents/fable-lab.md`、取り決めは `discussion/README.md` §1.2。
 - **切り出しの約束**（2026-11-05、`discussion/promise-cutout.md`）: いまの作業はすべて「系統」の側（個体は試作）。系統から一体を切り出して

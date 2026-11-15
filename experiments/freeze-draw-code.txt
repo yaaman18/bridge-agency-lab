@@ -1,0 +1,33 @@
+# S55 code freeze (after gates run 2 all pass and the pilot; spec r3 / predictions r2 = freeze 2 of freeze-draw.txt; 2026-11-15 12:27)
+# pilot decision (frozen rule spec §4, PA1): L2 admit, L2+SF admit
+# admit L2 true
+# admit L2+SF true
+e7b088d0cb9631aa9ffeb17d0e3590e94fbf1a4e8c3a2ed1a77c241f8539f035  draw_grid.jl
+b6b48fac69e6f8dc931403241760b8b5e622952cfef94d181dbb3d8eda71716f  check_draw.jl
+1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37  synth_world.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  ../core/circuit.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+c929bf889eee7f2e55b276ab091a88f86baa6125edb89127e41110350ea27cc7  results-draw-pilot.json
+5d44ec1467df235b9b8cbd23bed74989b7067ea9ab952981aeedfb7d82f321a4  draw-bits/SHA256SUMS
+41b1886d72e55a73b7488b9a3c5a4b2be6c45c118995e62b1e4c7afff151a9b2  draw-bits/SHA256SUMS-d4b
+6819f1cb4feb8a619c9d7e56b29c49f8480e85ba80f453ccf955b80846c2de61  draw-bits/unit-d4b.bits
+3c42d90098cf3bb4c2d7182354c751814b1b628bd93d7b601513affef06ff376  draw-bits/u670.bits
+65dbe31358d4a4c2adde18dfd6effbbc333ce828d38058f5db61dc97a266232b  draw-bits/u671.bits
+87cc2bc9fb8619c03cd93b7e3f7beacd56da2335c86e41bfde199a82b114ea7a  draw-bits/u672.bits
+a1c4caa5d83e6d07a051d5c40204e5764625614216ffed59a20e4a2bd2a7f9d0  draw-bits/u673.bits
+076b5b2044176ece8faa12b34fc6df573dc5bbbf6d396a6473305670c4bb58d0  draw-bits/u674.bits
+af2fc1b03202d6d49301915b3cd423ad37e52918ae873cb0dfcb796e8e610a23  draw-bits/u675.bits
+48acb149e6ee533bb6cf50fc5dbc0e2cb484fac999a9f6410d37b2da370bb659  draw-bits/u676.bits
+a35dd2f80521da9f4249f10a35f593142bc0250876f1553ddf40a8fd1402eb95  draw-bits/u677.bits
+3d99e10f17f660e2e473c7257eafcab22d6915cace1ad67d3b84e769c2ceaff1  draw-bits/u678.bits
+a81a953880cfee5c670a2f247c63debe113b3c03b8b3d06b00a3b1fb7429a46f  draw-bits/u679.bits
+a2e018a8f0f748fea2022cc9a03ee0be82b5fa249015414f0be17230f47e645d  draw-bits/u680.bits
+5b10408fba1923637677b273a962b614571314f42a97254b3c866d118ab6b784  draw-bits/u681.bits
+ba11a72dccf0f6a56feb3db83b2f7ba0ef0da09ee83c7954b4846ba8b2cd2f8c  draw-bits/u682.bits
+883cd693f92782ebdc05aac4f06b650249352d39471c721b5ad97af415459c5e  draw-bits/u683.bits
+927f37c759769183cf3705c65631eb0cbac15c18551228f83eff5b563d368c45  draw-bits/u684.bits
+abfd03e9f3ebcb2f4df901a7910cbfd37f1fcaed2c35c13c0c1a1e40fc141914  draw-bits/u685.bits
+8216f3f8aacfc23717265f944b9760be42ae694d53edea5d393562d2a44e941d  draw-bits/u670-biased.bits
+2849b37c8d2a8db3ad85ac7a38f9fba6c9bde00a93974d6a1457e5b2c5d19aca  draw-bits/u671-biased.bits
+bbf2d35a4e54294a7f583248ad192cd5de6c3e67c978a70fcd5e93c0883d4789  draw-bits/u672-biased.bits
+b3be915e948762586ec62d8aa905ade838e8865d12554927d7b4659f4c50e819  draw-bits/u673-biased.bits

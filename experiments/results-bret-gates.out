@@ -1,0 +1,66 @@
+F: spec and predictions equal freeze 2 of freeze-bret-norm.txt: true  Dict("discussion/specs/S58-bret-norm.md" => "fae828f25492f67a3e4095c912a778506ff8ea853030d37060a563e177012efa", "experiments/predictions-bret-norm.md" => "09b15ba848f9c817fd2df9546c92c2f0cd8f67612f08f0f8b4d4776d1e8310b0")
+R1 u726 PER=none : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 54 / 34, steps where the capacity acted: 0 / 0 | deaths nothing / nothing | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u726 PER=1    : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 8 / 5, steps where the capacity acted: 172 / 152 | deaths 2738 / 2701 | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u727 PER=none : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 21 / 40, steps where the capacity acted: 0 / 0 | deaths 2990 / nothing | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u727 PER=1    : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 9 / 20, steps where the capacity acted: 73 / 474 | deaths 2548 / nothing | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u728 PER=none : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 11 / 32, steps where the capacity acted: 0 / 0 | deaths 2428 / nothing | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u728 PER=1    : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 13 / 16, steps where the capacity acted: 221 / 674 | deaths 4375 / 9233 | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u729 PER=none : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 46 / 42, steps where the capacity acted: 0 / 0 | deaths nothing / nothing | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 u729 PER=1    : A-ret = core L2+SF true, AB-free = core SFD true | steps where the decay took the last sg: 4 / 25, steps where the capacity acted: 96 / 1014 | deaths 2186 / nothing | AB-free from T0 = core L2+SF to T0 and differs after: true   neg: AB-free = core L2+SF (must be false) false, A-ret = core SFD (must be false) false
+R1 sample: steps with the last sg removed by the decay 380, steps with the capacity acting 2876 (the world of S55 has no capacity PER; the runs with PER = 1 are added only for this gate)
+R1 note: spec §1 raises every arm as A-ret to T0, and core's SFD uses the drive rule from step 0; so AB-free is compared with core SFD with the arm's rule from step 0 (gate only), and the experiment's AB-free (from T0) with core L2+SF to T0
+R1: true
+R2: runs 112, steps failing the balance 0, max |levied (+ shortfall) - KC x restored| 5.204170427930421e-18 (restored in all runs 1420707, control shortfall 0.0)   neg: B-ret levying one KC too many, failing steps (must be > 0) 8640
+R2: true
+R3 u726 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3: steps where the read s differs from the record 0 of 253423   neg: delay reading t - 376, differing steps (must be > 0) 8643 of 9200
+R3: true
+R4 A-ret u726  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.94009; b: kept 9, cut 5 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 A-ret u727  : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 A-ret u728  : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 A-ret u729  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 2.91656; b: kept 9, cut 4 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 AB-free u726: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.75348; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 AB-free u727: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 6, given 1.40835; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 AB-free u728: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 11, given 2.86327; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 AB-free u729: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 9, given 2.05479; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 AB-ret u726 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.59278; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 AB-ret u727 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 4, given 1.12728; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 AB-ret u728 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 13, given 3.06094; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 AB-ret u729 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 7, given 1.95095; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-ret u726  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.4105; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 B-ret u727  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-ret u728  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-ret u729  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-delay u726: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.4105; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 B-delay u727: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-delay u728: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-delay u729: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-yoke u726 : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 B-yoke u727 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-yoke u728 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-yoke u729 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 partner runs: prefix equal and as specified in 16/16
+R4   neg: perturbing at tp - 1, prefix equal to class 0 (must be false) for a, b: Bool[0, 0]
+R4: true
+R5: steps where B or the body changed between the head and the levy 0 of 1120000 (112 runs)   neg: class-a cut moved between the head and the levy, changed steps (must be > 0) 1
+R5: true
+note u726: tp 3926, B-ret class 0 death nothing, restored T0..tp-1 9097 of used 9097, mean s T0..tp-1 1474.4
+note u727: tp 3927, B-ret class 0 death nothing, restored T0..tp-1 7990 of used 7990, mean s T0..tp-1 1305.67
+note u728: tp 3928, B-ret class 0 death nothing, restored T0..tp-1 8472 of used 8472, mean s T0..tp-1 1406.34
+note u729: tp 3929, B-ret class 0 death nothing, restored T0..tp-1 7499 of used 7499, mean s T0..tp-1 1247.36
+== summary {"R4":true,"R3":true,"R1":true,"R5":true,"R2":true,"F":true}

@@ -1,0 +1,10 @@
+# S53b code freeze (lab-coder; after gates F/K1-K4 and the smoke on trial windows 643-644, before any run of the evaluation windows 657-668; 2026-11-15 07:47)
+# new files
+16de6766c0abd31ae82fb3813f6c7e50c545213a503f084ca4a8471fe03e9f9b  stake_fix_grid.jl
+910c88446e1f214ebf3eb91e662adab6ea6a8f224d0385194002460cdd6c9116  check_stake_fix.jl
+# read (not changed)
+4bca29396911a6a6848377e9b35577806a7f8f22b675e6bb3361a7dc55f94657  stake_grid.jl
+1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37  synth_world.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  ../core/body_org.jl
+2a687291b52d9d158bdb971e4feb333377fb4a918937bfe67b9d5d0748ade21c  ../core/LabCore.jl
+f852159c6075665aeecb1091310f64e9ce92a435f8495a3c59456c54d6aa9968  freeze-stake-fix.txt

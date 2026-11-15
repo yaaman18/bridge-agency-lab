@@ -1,0 +1,86 @@
+S56 手 2: TrmPort.jl の層・ブロック・埋め込みの照合（fixtures を正解とする）
+tolerance: |got - want| <= 1.0e-5 + 1.0e-5*|want| elementwise; shape exact; all finite (got and want)
+
+== config a (W1): hidden=32 pos=rope mlp_t=false puzzle_emb_ndim=0
+  block_first_op oracle=self_attn ours=self_attn
+  rope cos_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  rope sin_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  input_embeddings max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_H max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_L max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_input_h max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_first_op_out max_abs_diff 4.77e-07  PASS (max_abs_diff 4.77e-07)
+  block_norm1_out max_abs_diff 4.77e-07  PASS (max_abs_diff 4.77e-07)
+  block_mlp_out max_abs_diff 1.07e-06  PASS (max_abs_diff 1.07e-06)
+  block_norm2_out max_abs_diff 1.19e-06  PASS (max_abs_diff 1.19e-06)
+  W0 rope cos_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  W0 rope sin_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  W0 input_embeddings: shape+finite only (no reference in fixture) — shape (2, 8, 32) == (2, 8, 32) ok; finite=true ok  PASS
+
+== config b (W1): hidden=32 pos=learned mlp_t=false puzzle_emb_ndim=0
+  block_first_op oracle=self_attn ours=self_attn
+  input_embeddings max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_H max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_L max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_input_h max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_first_op_out max_abs_diff 5.96e-07  PASS (max_abs_diff 5.96e-07)
+  block_norm1_out max_abs_diff 4.77e-07  PASS (max_abs_diff 4.77e-07)
+  block_mlp_out max_abs_diff 1.61e-06  PASS (max_abs_diff 1.61e-06)
+  block_norm2_out max_abs_diff 1.28e-06  PASS (max_abs_diff 1.28e-06)
+  W0 input_embeddings: shape+finite only (no reference in fixture) — shape (2, 8, 32) == (2, 8, 32) ok; finite=true ok  PASS
+
+== config c (W1): hidden=32 pos=none mlp_t=true puzzle_emb_ndim=0
+  block_first_op oracle=mlp_t ours=mlp_t
+  input_embeddings max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_H max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_L max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_input_h max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_first_op_out max_abs_diff 1.07e-06  PASS (max_abs_diff 1.07e-06)
+  block_norm1_out max_abs_diff 9.54e-07  PASS (max_abs_diff 9.54e-07)
+  block_mlp_out max_abs_diff 1.43e-06  PASS (max_abs_diff 1.43e-06)
+  block_norm2_out max_abs_diff 8.34e-07  PASS (max_abs_diff 8.34e-07)
+  W0 input_embeddings: shape+finite only (no reference in fixture) — shape (2, 8, 32) == (2, 8, 32) ok; finite=true ok  PASS
+
+== config d (W1): hidden=32 pos=rope mlp_t=false puzzle_emb_ndim=32
+  block_first_op oracle=self_attn ours=self_attn
+  rope cos_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  rope sin_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  input_embeddings max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_H max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_L max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_input_h max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_first_op_out max_abs_diff 3.81e-06  PASS (max_abs_diff 3.81e-06)
+  block_norm1_out max_abs_diff 9.54e-07  PASS (max_abs_diff 9.54e-07)
+  block_mlp_out max_abs_diff 9.54e-07  PASS (max_abs_diff 9.54e-07)
+  block_norm2_out max_abs_diff 1.25e-06  PASS (max_abs_diff 1.25e-06)
+  W0 rope cos_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  W0 rope sin_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  W0 input_embeddings: shape+finite only (no reference in fixture) — shape (2, 10, 32) == (2, 10, 32) ok; finite=true ok  PASS
+
+== config e (W1): hidden=128 pos=rope mlp_t=false puzzle_emb_ndim=0
+  block_first_op oracle=self_attn ours=self_attn
+  rope cos_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  rope sin_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  input_embeddings max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_H max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  reset_z_L max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_input_h max_abs_diff 0.00e+00  PASS (max_abs_diff 0.00e+00)
+  block_first_op_out max_abs_diff 1.91e-06  PASS (max_abs_diff 1.91e-06)
+  block_norm1_out max_abs_diff 1.43e-06  PASS (max_abs_diff 1.43e-06)
+  block_mlp_out max_abs_diff 1.91e-06  PASS (max_abs_diff 1.91e-06)
+  block_norm2_out max_abs_diff 1.91e-06  PASS (max_abs_diff 1.91e-06)
+  W0 rope cos_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  W0 rope sin_cached max_abs_diff 5.96e-08  PASS (max_abs_diff 5.96e-08)
+  W0 input_embeddings: shape+finite only (no reference in fixture) — shape (2, 8, 128) == (2, 8, 128) ok; finite=true ok  PASS
+
+== negative controls
+negative control (i) caught: mlp.down_proj.weight[1,1] + 0.01 of layer 0 — config a block_mlp_out: fixture off elements 16 max_abs_diff vs fixture 9.13e-03 (diagnostic vs usual read: 9.133e-03)
+negative control (vii) caught: rope applied to value too — config a block_first_op_out: fixture off elements 512 max_abs_diff vs fixture 1.68e+00 (diagnostic vs usual read: 1.681e+00)
+negative control (viii) caught: mlp_t first norm before transpose — config c block_norm1_out: fixture off elements 512 max_abs_diff vs fixture 1.23e+00 (diagnostic vs usual read: 1.234e+00)
+negative control (ix) caught: row-major data read as column-major, same shape (all weights) — config a block_norm2_out: fixture off elements 512 max_abs_diff vs fixture 4.26e+00 (diagnostic vs usual read: 4.262e+00)
+negative control (x) caught: reset_carry writes H_init into z_L (and L_init into z_H) — config a reset_z_L: fixture off elements 512 max_abs_diff vs fixture 1.29e+00 (diagnostic vs usual read: 1.294e+00)
+
+== summary
+quantities compared with oracle: 5 configs x W1 (8 quantities plus rope when the config is rope); W0: rope when the config is rope, input_embeddings shape+finite only (no reference in fixture); failures: 0
+negative controls caught: 5/5
+ALL PASS

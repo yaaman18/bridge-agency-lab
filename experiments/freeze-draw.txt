@@ -1,0 +1,9 @@
+# S55 freeze 0 (spec r1 and predictions r1, before the S-R; 2026-11-15 09:05)
+a5e149314fc4cf6ec62fb33992ab518b583a6492b540fa258d9f56d436e61c02  ../discussion/specs/S55-draw.md
+00784253d4f5166b6b106761237f7a5e64b56c4cab81b2bfd420c6ec5d66f04c  predictions-draw.md
+# S55 freeze 1 (spec r2 and predictions r2 after the S-R, before any code is written or run; 2026-11-15 09:06)
+8fe1096b311bf008cf1a817eb2989086353b4b330f52b30e1a242acf9174584c  ../discussion/specs/S55-draw.md
+0a66bbc46561a7096579d1e8b52a4d87a7ad33b665b70b2e9e8f80e041a65dac  predictions-draw.md
+# S55 freeze 2 (spec r3: facts from the gates, gate D4b added; predictions r2 unchanged; before the pilot and any evaluation run; 2026-11-15 12:21)
+5bb56246fc69440b9c0731300c6da62238289a8dce3d49a2ef4f8bd0433af037  ../discussion/specs/S55-draw.md
+0a66bbc46561a7096579d1e8b52a4d87a7ad33b665b70b2e9e8f80e041a65dac  predictions-draw.md

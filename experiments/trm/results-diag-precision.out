@@ -1,0 +1,208 @@
+S56 diag precision (measurement only; no tolerance is changed here)
+Julia 1.11.6; sequence x1,x2,x1; z after the step; all numbers are max abs diffs
+(jf) f64-julia|f64-python: the same official path in double in both languages
+(fv) f32-julia|fixture: the port's Float32 against the official Float32 reference
+(fj) f32-julia|f64-julia: what rounding alone does inside the port's path
+
+== c W0 ==
+step  quantity           f64-julia|f64-python  f32-julia|fixture  f32-julia|f64-julia
+   1  logits               4.376388948841589  0.00012347102165222168               0.0
+   1  z_H                  3.849006414413452  0.00015884637832641602               0.0
+   1  z_L                 4.2707741260528564  0.00010263919830322266               0.0
+   1  q_halt_logits                        0               0.0               0.0
+   1  q_continue_logits                    0               0.0               0.0
+   2  logits               3.548596762311906  0.007732599973678589               0.0
+   2  z_H                  3.511421322822571  0.008019119501113892               0.0
+   2  z_L                  4.280418634414673  0.007052779197692871               0.0
+   2  q_halt_logits                        0               0.0               0.0
+   2  q_continue_logits                    0               0.0               0.0
+   3  logits               3.691235764126696  0.9504181444644928               0.0
+   3  z_H                 3.9496580362319946  1.5549710988998413               0.0
+   3  z_L                  4.328347086906433  1.1180596947669983               0.0
+   3  q_halt_logits                        0               0.0               0.0
+   3  q_continue_logits                    0               0.0               0.0
+  julia64|python64 > 1e-8: step1.logits julia64|python64=4.376388948841589; step1.z_H julia64|python64=3.849006414413452; step1.z_L julia64|python64=4.2707741260528564; step2.logits julia64|python64=3.548596762311906; step2.z_H julia64|python64=3.511421322822571; step2.z_L julia64|python64=4.280418634414673; step3.logits julia64|python64=3.691235764126696; step3.z_H julia64|python64=3.9496580362319946; step3.z_L julia64|python64=4.328347086906433（最大 4.376388948841589）
+
+== c W1 ==
+step  quantity           f64-julia|f64-python  f32-julia|fixture  f32-julia|f64-julia
+   1  logits              3.7865282510458917  9.85860824584961e-5               0.0
+   1  z_H                  4.009539365768433  0.0001427978277206421               0.0
+   1  z_L                 3.9337339401245117  9.34600830078125e-5               0.0
+   1  q_halt_logits      5.555152893066406e-5  4.0531158447265625e-5               0.0
+   1  q_continue_logits  0.00012499094009399414  8.034706115722656e-5               0.0
+   2  logits              3.4261436398398954  0.02171945571899414               0.0
+   2  z_H                  4.226146221160889  0.0226287841796875               0.0
+   2  z_L                   4.84346616268158  0.05044972896575928               0.0
+   2  q_halt_logits      0.002697765827178955  0.016534745693206787               0.0
+   2  q_continue_logits  0.007549166679382324  0.0165289044380188               0.0
+   3  logits              3.3097905571140096  0.35357216000556946               0.0
+   3  z_H                  4.076948761940002  0.5059937238693237               0.0
+   3  z_L                   4.10957670211792  0.43531574308872223               0.0
+   3  q_halt_logits      0.07774931192398071  0.10033369064331055               0.0
+   3  q_continue_logits   0.2986215353012085  0.07613509893417358               0.0
+  julia64|python64 > 1e-8: step1.logits julia64|python64=3.7865282510458917; step1.z_H julia64|python64=4.009539365768433; step1.z_L julia64|python64=3.9337339401245117; step1.q_halt_logits julia64|python64=5.555152893066406e-5; step1.q_continue_logits julia64|python64=0.00012499094009399414; step2.logits julia64|python64=3.4261436398398954; step2.z_H julia64|python64=4.226146221160889; step2.z_L julia64|python64=4.84346616268158; step2.q_halt_logits julia64|python64=0.002697765827178955; step2.q_continue_logits julia64|python64=0.007549166679382324; step3.logits julia64|python64=3.3097905571140096; step3.z_H julia64|python64=4.076948761940002; step3.z_L julia64|python64=4.10957670211792; step3.q_halt_logits julia64|python64=0.07774931192398071; step3.q_continue_logits julia64|python64=0.2986215353012085（最大 4.84346616268158）
+
+== d W0 ==
+step  quantity           f64-julia|f64-python  f32-julia|fixture  f32-julia|f64-julia
+   1  logits              3.8133671691814253  7.316470146179199e-6  2.8452645540237427
+   1  z_H                  4.744401454925537  5.125999450683594e-6  2.9397687911987305
+   1  z_L                  3.921661138534546  5.4836273193359375e-6  2.6907941102981567
+   1  q_halt_logits                        0               0.0               0.0
+   1  q_continue_logits                    0               0.0               0.0
+   2  logits                 3.8121881610002  2.086162567138672e-5  4.325644910335541
+   2  z_H                  5.191955089569092  2.863258123397827e-5  3.907687783241272
+   2  z_L                  4.317826271057129  2.372264862060547e-5  3.3717077374458313
+   2  q_halt_logits                        0               0.0               0.0
+   2  q_continue_logits                    0               0.0               0.0
+   3  logits               3.833007377962075  0.0001971721649169922  3.3756555318832397
+   3  z_H                  4.803241848945618  0.0002105236053466797  3.6956485509872437
+   3  z_L                  4.335489273071289  0.00019739754498004913  4.1427305936813354
+   3  q_halt_logits                        0               0.0               0.0
+   3  q_continue_logits                    0               0.0               0.0
+  julia64|python64 > 1e-8: step1.logits julia64|python64=3.8133671691814253; step1.z_H julia64|python64=4.744401454925537; step1.z_L julia64|python64=3.921661138534546; step2.logits julia64|python64=3.8121881610002; step2.z_H julia64|python64=5.191955089569092; step2.z_L julia64|python64=4.317826271057129; step3.logits julia64|python64=3.833007377962075; step3.z_H julia64|python64=4.803241848945618; step3.z_L julia64|python64=4.335489273071289（最大 5.191955089569092）
+
+== d W1 ==
+step  quantity           f64-julia|f64-python  f32-julia|fixture  f32-julia|f64-julia
+   1  logits               3.861181478050548  4.5299530029296875e-6  3.117539167404175
+   1  z_H                  5.009561538696289  5.841255187988281e-6  3.940534830093384
+   1  z_L                  4.381588459014893  5.9604644775390625e-6  3.8281244039535522
+   1  q_halt_logits       3.6331487894058228  2.384185791015625e-6  3.633147716522217
+   1  q_continue_logits      3.6028892993927  2.130866050720215e-6   3.6028892993927
+   2  logits                4.72058078769334  3.039836883544922e-6  4.134198427200317
+   2  z_H                   4.42038106918335  5.841255187988281e-6  4.3689903020858765
+   2  z_L                  5.487858533859253  8.285045623779297e-6  4.502644777297974
+   2  q_halt_logits        3.439836263656616  4.5299530029296875e-6  3.4398436546325684
+   2  q_continue_logits   2.3164744079113007  3.0994415283203125e-6  2.3164736926555634
+   3  logits               4.428188563675865  2.384185791015625e-6  3.6639128923416138
+   3  z_H                   5.00063419342041  3.6954879760742188e-6  3.974623441696167
+   3  z_L                  4.645806193351746  6.616115570068359e-6  2.688299536705017
+   3  q_halt_logits       1.7984176278114319  7.152557373046875e-7  1.7984172701835632
+   3  q_continue_logits    4.259440302848816  2.384185791015625e-6  4.259439826011658
+  julia64|python64 > 1e-8: step1.logits julia64|python64=3.861181478050548; step1.z_H julia64|python64=5.009561538696289; step1.z_L julia64|python64=4.381588459014893; step1.q_halt_logits julia64|python64=3.6331487894058228; step1.q_continue_logits julia64|python64=3.6028892993927; step2.logits julia64|python64=4.72058078769334; step2.z_H julia64|python64=4.42038106918335; step2.z_L julia64|python64=5.487858533859253; step2.q_halt_logits julia64|python64=3.439836263656616; step2.q_continue_logits julia64|python64=2.3164744079113007; step3.logits julia64|python64=4.428188563675865; step3.z_H julia64|python64=5.00063419342041; step3.z_L julia64|python64=4.645806193351746; step3.q_halt_logits julia64|python64=1.7984176278114319; step3.q_continue_logits julia64|python64=4.259440302848816（最大 5.487858533859253）
+
+== verdict material (columns only; the judgement is claude-lab's) ==
+note, why (b)=0 and (c) is large: Julia f32 and the fixtures are bit-identical (no rounding difference of its own).
+  Julia f64 is one path in f64; Python f64 is another rounding of the same f32 weights, and in c a 1-ulp change
+  of one weight moves the f64 run by ~1e-4 in step 1 (measured, chaotic). So (c) ~1 cannot be read as a port difference.
+(a) c W0 python f32|f64 (official, float32 vs double, per step): 1:1.285e-04 2:8.720e-03 3:1.033e+00
+(b) c W0 julia f32|fixture (per step):           1:0.0 2:0.0 3:0.0
+(c) c W0 julia f64|python f64 (all step-quantities): >1e-8: step1.logits julia64|python64=4.376388948841589; step1.z_H julia64|python64=3.849006414413452; step1.z_L julia64|python64=4.2707741260528564; step2.logits julia64|python64=3.548596762311906; step2.z_H julia64|python64=3.511421322822571; step2.z_L julia64|python64=4.280418634414673; step3.logits julia64|python64=3.691235764126696; step3.z_H julia64|python64=3.9496580362319946; step3.z_L julia64|python64=4.328347086906433 (max 4.376)
+    c W0 julia f32|f64 (per step, same path):    1:4.376 2:4.28 3:4.328
+(a) c W1 python f32|f64 (official, float32 vs double, per step): 1:2.202e-04 2:5.881e-02 3:4.589e-01
+(b) c W1 julia f32|fixture (per step):           1:0.0 2:0.0 3:0.0
+(c) c W1 julia f64|python f64 (all step-quantities): >1e-8: step1.logits julia64|python64=3.7865282510458917; step1.z_H julia64|python64=4.009539365768433; step1.z_L julia64|python64=3.9337339401245117; step1.q_halt_logits julia64|python64=5.555152893066406e-5; step1.q_continue_logits julia64|python64=0.00012499094009399414; step2.logits julia64|python64=3.4261436398398954; step2.z_H julia64|python64=4.226146221160889; step2.z_L julia64|python64=4.84346616268158; step2.q_halt_logits julia64|python64=0.002697765827178955; step2.q_continue_logits julia64|python64=0.007549166679382324; step3.logits julia64|python64=3.3097905571140096; step3.z_H julia64|python64=4.076948761940002; step3.z_L julia64|python64=4.10957670211792; step3.q_halt_logits julia64|python64=0.07774931192398071; step3.q_continue_logits julia64|python64=0.2986215353012085 (max 4.843)
+    c W1 julia f32|f64 (per step, same path):    1:4.01 2:4.843 3:4.11
+(a) d W0 python f32|f64 (official, float32 vs double, per step): 1:2.652e-06 2:8.412e-06 3:5.570e-05
+(b) d W0 julia f32|fixture (per step):           1:2.94 2:4.326 3:4.143
+(c) d W0 julia f64|python f64 (all step-quantities): >1e-8: step1.logits julia64|python64=3.8133671691814253; step1.z_H julia64|python64=4.744401454925537; step1.z_L julia64|python64=3.921661138534546; step2.logits julia64|python64=3.8121881610002; step2.z_H julia64|python64=5.191955089569092; step2.z_L julia64|python64=4.317826271057129; step3.logits julia64|python64=3.833007377962075; step3.z_H julia64|python64=4.803241848945618; step3.z_L julia64|python64=4.335489273071289 (max 5.192)
+    d W0 julia f32|f64 (per step, same path):    1:4.744 2:5.192 3:4.803
+(a) d W1 python f32|f64 (official, float32 vs double, per step): 1:1.997e-05 2:1.293e-05 3:6.005e-06
+(b) d W1 julia f32|fixture (per step):           1:3.941 2:4.503 3:3.975
+(c) d W1 julia f64|python f64 (all step-quantities): >1e-8: step1.logits julia64|python64=3.861181478050548; step1.z_H julia64|python64=5.009561538696289; step1.z_L julia64|python64=4.381588459014893; step1.q_halt_logits julia64|python64=3.6331487894058228; step1.q_continue_logits julia64|python64=3.6028892993927; step2.logits julia64|python64=4.72058078769334; step2.z_H julia64|python64=4.42038106918335; step2.z_L julia64|python64=5.487858533859253; step2.q_halt_logits julia64|python64=3.439836263656616; step2.q_continue_logits julia64|python64=2.3164744079113007; step3.logits julia64|python64=4.428188563675865; step3.z_H julia64|python64=5.00063419342041; step3.z_L julia64|python64=4.645806193351746; step3.q_halt_logits julia64|python64=1.7984176278114319; step3.q_continue_logits julia64|python64=4.259440302848816 (max 5.488)
+    d W1 julia f32|f64 (per step, same path):    1:5.01 2:5.488 3:5.001
+
+== Python measurements (diag_precision.py standard output, same steps and fixtures) ==
+S56 diag precision (measurement only): c and d, f32 vs f64, ACT steps 1-3
+torch 2.2.2; python 3.11.13; upstream /Users/yamaguchimitsuyuki/trm_test/TinyRecursiveModels
+sequence: passed input x1, x2, x1 (as oracle_work.run_act_sequence steps 1-3); z after the step
+(a) and (b) are max abs diffs, not tolerances
+
+== c W0 ==
+step  quantity           f32|fixture|max   f64-vs-f32 max
+   1  logits                  0.000000e+00      6.784413e-05
+   1  z_H                     0.000000e+00      1.285374e-04
+   1  z_L                     0.000000e+00      9.536743e-05
+   1  q_halt_logits           0.000000e+00      0.000000e+00
+   1  q_continue_logits       0.000000e+00      0.000000e+00
+   2  logits                  0.000000e+00      3.916259e-03
+   2  z_H                     0.000000e+00      8.720458e-03
+   2  z_L                     0.000000e+00      8.154750e-03
+   2  q_halt_logits           0.000000e+00      0.000000e+00
+   2  q_continue_logits       0.000000e+00      0.000000e+00
+   3  logits                  0.000000e+00      6.211830e-01
+   3  z_H                     0.000000e+00      7.860696e-01
+   3  z_L                     0.000000e+00      1.032566e+00
+   3  q_halt_logits           0.000000e+00      0.000000e+00
+   3  q_continue_logits       0.000000e+00      0.000000e+00
+  f32 fixture max step1: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step1: logits=6.784e-05 z_H=1.285e-04 z_L=9.537e-05 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f32 fixture max step2: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step2: logits=3.916e-03 z_H=8.720e-03 z_L=8.155e-03 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f32 fixture max step3: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step3: logits=6.212e-01 z_H=7.861e-01 z_L=1.033e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+wrote diag/py_f64_c_W0.json
+
+== c W1 ==
+step  quantity           f32|fixture|max   f64-vs-f32 max
+   1  logits                  0.000000e+00      1.767490e-04
+   1  z_H                     0.000000e+00      2.202392e-04
+   1  z_L                     0.000000e+00      1.854897e-04
+   1  q_halt_logits           0.000000e+00      9.608269e-05
+   1  q_continue_logits       0.000000e+00      1.308918e-04
+   2  logits                  0.000000e+00      2.414372e-02
+   2  z_H                     0.000000e+00      2.502096e-02
+   2  z_L                     0.000000e+00      5.881250e-02
+   2  q_halt_logits           0.000000e+00      1.602548e-02
+   2  q_continue_logits       0.000000e+00      1.691949e-02
+   3  logits                  0.000000e+00      3.103711e-01
+   3  z_H                     0.000000e+00      4.588795e-01
+   3  z_L                     0.000000e+00      3.988401e-01
+   3  q_halt_logits           0.000000e+00      1.098356e-01
+   3  q_continue_logits       0.000000e+00      2.224864e-01
+  f32 fixture max step1: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step1: logits=1.767e-04 z_H=2.202e-04 z_L=1.855e-04 q_halt_logits=9.608e-05 q_continue_logits=1.309e-04
+  f32 fixture max step2: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step2: logits=2.414e-02 z_H=2.502e-02 z_L=5.881e-02 q_halt_logits=1.603e-02 q_continue_logits=1.692e-02
+  f32 fixture max step3: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step3: logits=3.104e-01 z_H=4.589e-01 z_L=3.988e-01 q_halt_logits=1.098e-01 q_continue_logits=2.225e-01
+wrote diag/py_f64_c_W1.json
+
+== d W0 ==
+step  quantity           f32|fixture|max   f64-vs-f32 max
+   1  logits                  0.000000e+00      2.324495e-06
+   1  z_H                     0.000000e+00      2.559274e-06
+   1  z_L                     0.000000e+00      2.652407e-06
+   1  q_halt_logits           0.000000e+00      0.000000e+00
+   1  q_continue_logits       0.000000e+00      0.000000e+00
+   2  logits                  0.000000e+00      5.440190e-06
+   2  z_H                     0.000000e+00      8.411705e-06
+   2  z_L                     0.000000e+00      5.841255e-06
+   2  q_halt_logits           0.000000e+00      0.000000e+00
+   2  q_continue_logits       0.000000e+00      0.000000e+00
+   3  logits                  0.000000e+00      5.044036e-05
+   3  z_H                     0.000000e+00      5.570054e-05
+   3  z_L                     0.000000e+00      4.955754e-05
+   3  q_halt_logits           0.000000e+00      0.000000e+00
+   3  q_continue_logits       0.000000e+00      0.000000e+00
+  f32 fixture max step1: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step1: logits=2.324e-06 z_H=2.559e-06 z_L=2.652e-06 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f32 fixture max step2: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step2: logits=5.440e-06 z_H=8.412e-06 z_L=5.841e-06 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f32 fixture max step3: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step3: logits=5.044e-05 z_H=5.570e-05 z_L=4.956e-05 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+wrote diag/py_f64_d_W0.json
+
+== d W1 ==
+step  quantity           f32|fixture|max   f64-vs-f32 max
+   1  logits                  0.000000e+00      6.608639e-06
+   1  z_H                     0.000000e+00      1.072884e-05
+   1  z_L                     0.000000e+00      1.996756e-05
+   1  q_halt_logits           0.000000e+00      1.311302e-06
+   1  q_continue_logits       0.000000e+00      8.970499e-06
+   2  logits                  0.000000e+00      8.665844e-06
+   2  z_H                     0.000000e+00      9.000301e-06
+   2  z_L                     0.000000e+00      1.293421e-05
+   2  q_halt_logits           0.000000e+00      7.629395e-06
+   2  q_continue_logits       0.000000e+00      1.144409e-05
+   3  logits                  0.000000e+00      5.157071e-06
+   3  z_H                     0.000000e+00      3.874302e-06
+   3  z_L                     0.000000e+00      6.005168e-06
+   3  q_halt_logits           0.000000e+00      3.695488e-06
+   3  q_continue_logits       0.000000e+00      2.861023e-06
+  f32 fixture max step1: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step1: logits=6.609e-06 z_H=1.073e-05 z_L=1.997e-05 q_halt_logits=1.311e-06 q_continue_logits=8.970e-06
+  f32 fixture max step2: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step2: logits=8.666e-06 z_H=9.000e-06 z_L=1.293e-05 q_halt_logits=7.629e-06 q_continue_logits=1.144e-05
+  f32 fixture max step3: logits=0.000e+00 z_H=0.000e+00 z_L=0.000e+00 q_halt_logits=0.000e+00 q_continue_logits=0.000e+00
+  f64 vs f32 max step3: logits=5.157e-06 z_H=3.874e-06 z_L=6.005e-06 q_halt_logits=3.695e-06 q_continue_logits=2.861e-06
+wrote diag/py_f64_d_W1.json

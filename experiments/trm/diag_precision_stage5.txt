@@ -1,0 +1,81 @@
+
+const REPORT = IOBuffer()   # results-diag-precision.out（標準出力にも同じものを出す）
+say(io, xs...) = println(io, xs...)
+
+"diag/py_f64_<c>_<W>.json を読む（steps の手ごと・量ごと、形は Julia の配列）。なければ nothing。"
+function load_py64(c, w)
+    path = joinpath(HERE, "diag", string("py_f64_", c, "_", w, ".json"))
+    isfile(path) || return nothing
+    o = JSON.parsefile(path)["steps"]
+    return Dict(k => Dict(q => json_tensor(v) for (q, v) in st) for (k, st) in o)
+end
+"diag/py_f32_<c>_<W>.json（fixtures と同じ重み・入力の Float32 の写し）を読む。なければ nothing。"
+function load_py32(c, w)
+    path = joinpath(HERE, "diag", string("py_f32_", c, "_", w, ".json"))
+    isfile(path) || return nothing
+    return JSON.parsefile(path)
+end
+
+"構成 (c, w) を走らせ、表の行を書き、手ごとの列を返す。"
+function measure(io, c, w)
+    fx = fixture(c, w)
+    st32 = to_type(Float32, fx)
+    # (i) 有効性: f64 の写しに、f32 の重み（diag/py_f32 の写し）と f32 の入力を渡して手 1 を走らせる。
+    o32 = load_py32(c, w)
+    gap_i = NaN
+    if o32 === nothing
+        say(io, "  (i) f64 copy with Float32 weights: diag/py_f32_", c, "_", w, ".json がない（diag_precision.py を先に走らせる）")
+    else
+        s32 = trajectory(P32, fx, st32)
+        s64f32 = trajectory(PT, fx, json_state(o32, fx))
+        gap_i = maximum(maxabs(s64f32[1][q], s32[1][q]) for q in QS)
+        say(io, "  (i) f64 copy with Float32 weights vs f32 port, step 1 max: ", string(gap_i), " ",
+            1e-6 <= gap_i <= 1e-4 ? "(inside 1e-6..1e-4)" : "(outside 1e-6..1e-4)")
+    end
+    s32 = trajectory(P32, fx, st32)
+    s64 = trajectory(PT, fx, to_type(Float64, fx))
+    py = load_py64(c, w)
+    say(io, "")
+    say(io, "== ", c, " ", w, " ==")
+    say(io, "step  quantity           f64-julia|f64-python  f32-julia|fixture  f32-julia|f64-julia  f64-julia|Inf")
+    jf_all = [Dict(q => NaN for q in QS) for _ in 1:3]      # 手 k の量 q の julia f64|python f64
+    cols = Dict(q => Float64[] for q in ACT_Q)              # 手ごとの jf の logits/z_H/z_L の最大
+    fv = Dict(q => Float64[] for q in ACT_Q)                # 同上（julia f32|fixture）
+    fj = Float64[]                                          # 手ごとの julia f32|julia f64 の最大
+    first_gap = String[]
+    for k in 1:3
+        ref = fx.steps[string("step", k)]
+        for q in QS
+            a32 = getproperty(s32[k], q)
+            b64 = getproperty(s64[k], q)
+            r32 = reference(ref[q])
+            jf = py === nothing ? NaN : maxabs(rowmajor(b64), rowmajor(py[string("step", k)][q]))
+            jf_all[k][q] = jf
+            fin = !any(has_inf, b64)
+            if q in ACT_Q
+                push!(fv[q], fin ? maxabs(a32, r32) : NaN)
+                push!(cols[q], jf)
+            end
+            if py !== nothing && jf > 1e-8
+                push!(first_gap, string("step", k, ".", q, " (", jf, ")"))
+            end
+            say(io, lpad(k, 4), "  ", rpad(q, 18), " ", py === nothing ? rpad("(no diag JSON)", 19) :
+                lpad(string(round(jf; sigdigits=4)), 19), "  ",
+                lpad(string(round(maxabs(a32, r32); sigdigits=4)), 16), "  ",
+                lpad(fin ? string(round(maxabs(b64, a32); sigdigits=4)) : "(" * string(Inf) * ")", 16), "  ",
+                lpad(fin ? "no" : "Inf", 9))
+        end
+        fin_all = all(!any(has_inf, getproperty(s64[k], q)) for q in QS)
+        push!(fj, fin_all ? maximum(maxabs(getproperty(s64[k], q), getproperty(s32[k], q)) for q in QS) : NaN)
+    end
+    if py !== nothing && all(!any(has_inf, getproperty(s64[k], q)) for k in 1:3 for q in QS)
+        say(io, "  step1 internals, f64 copy vs f32 port, first where >1e-8: ",
+            step1_first_gap(PT, to_type(Float64, fx), P32, st32, fx))
+    end
+    if py !== nothing
+        say(io, "  julia64|python64 > 1e-8 (all quantities): ", isempty(first_gap) ? "none" : join(first_gap, "; "))
+    end
+    return (gap_i = gap_i, jf = cols, fv = fv, fj = fj, fj_gap = Float64[], jf_all = jf_all,
+            first_gap = first_gap, py = py !== nothing)
+
+end

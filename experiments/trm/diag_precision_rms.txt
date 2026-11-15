@@ -1,0 +1,59 @@
+"""TrmPort.jl の本文の rms_norm を、公式（models/layers.py 163-169）と同じ型の扱いの写しにする。
+公式は入力を Float32 で計算し元の型に戻すので、右辺を Float32 にし、代入の右辺を元の型（Float64）にする。
+戻り値は、写しに差し込む行の Vector{String}（1 行目は def の行）。"""
+function source_lines(s::AbstractString)
+    text = String(s)
+    lines = String[]
+    pos = 1
+    while pos <= lastindex(text)
+        nl = findnext('\n', text, pos)
+        stop = nl === nothing ? lastindex(text) + 1 : first(nl)   # 改行の無い最後の行は text の終りまで
+        push!(lines, String(text[pos:prevind(text, stop)]))
+        stop > lastindex(text) && break                           # 最後の行（改行の無い行）は見てから抜ける
+        pos = nextind(text, stop)
+    end
+    return lines
+end
+
+"""写しに差し込む rms_norm（公式 models/layers.py 163-169 と同じ型の扱い）。公式は入力を Float32 で計算し
+元の型に戻すので、右辺は Float32、代入の右辺は元の型（この写しでは Float64）にする。1 行目は def の行。"""
+RMS_NORM_F64 = [
+    "function rms_norm(hidden_states::AbstractArray{F32}, variance_epsilon::Real)",
+    "    @assert ndims(hidden_states) <= 3",
+    "    b = Array{Float32,3}(hidden_states)",
+    "    v = sum(abs2, b; dims=3) ./ Float32(size(b, 3))",
+    "    return hidden_states .* (Float32(1) ./ sqrt.(v .+ Float32(variance_epsilon)))",
+    "end",
+]
+"""1 行の中の、文字列の外・コメントの外の型トークンだけを置換する（語の境界で）。suffix=true なら
+接尾辞付きのリテラル 1f0 / 1f-5 / 1fp0 を 1.0 にする。文字列（"…"・'…'・`…`）とコメントは置換しない。
+戻り値は (置換後の行, 置換した数)。' は転置や 2 文字の型名の中で単独に出るので、閉じが見つかったときだけ文字列とみなす。"""
+function replace_tokens(line::String; suffix::Bool=true)
+    suffix && (line = replace(line, r"(?<![A-Za-z0-9_.])1f(?=[0-9p])" => "1.0"))
+    out = IOBuffer()
+    k = 0
+    i = firstindex(line)
+    n = lastindex(line)
+    while i <= n
+        c = line[i]
+        if c == '#'
+            print(out, line[i:n]); break                       # コメントは残り全部をそのまま
+        elseif (c == '"' || c == '`' || c == '\'') && findnext(x -> x == c, line, nextind(line, i)) !== nothing
+            j = findnext(x -> x == c, line, nextind(line, i))
+            print(out, line[i:j]); i = nextind(line, j)        # 文字列の中は置換しない
+        elseif c == 'F' && (is_at(line, i, "Float32") || is_at(line, i, "F32"))
+            w = is_at(line, i, "Float32") ? "Float32" : "F32"
+            print(out, "Float64"); k += 1
+            i = nextind(line, i, length(w))
+        else
+            print(out, c); i = nextind(line, i)
+        end
+    end
+    return (String(take!(out)), k)
+end
+"位置 i から語 word が始まり、その終りが語の境界にあるか。"
+is_at(line::String, i::Int, word::String) =
+    startswith(SubString(line, i), word) &&
+    (i == firstindex(line) || !isword(line[prevind(line, i)])) &&
+    (nextind(line, i, length(word)) > lastindex(line) || !isword(line[nextind(line, i, length(word))]))
+isword(c::Char) = isletter(c) || isdigit(c) || c == '_'

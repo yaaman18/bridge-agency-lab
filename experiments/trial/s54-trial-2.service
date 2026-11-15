@@ -1,0 +1,20 @@
+# S54 §4 (discussion/specs/S54-trial-run.md r4): rehearsal life AUE-試-2 (seed 669, L2+SF), production onelife-run (10 s).
+# Written only; not installed by lab-coder. Install: sudo cp s54-trial-2.service /etc/systemd/system/ &&
+#   sudo systemctl daemon-reload && sudo systemctl enable s54-trial-2.service (starts at the next boot; or start it).
+# Remove: sudo systemctl disable --now s54-trial-2.service && sudo rm /etc/systemd/system/s54-trial-2.service &&
+#   sudo systemctl daemon-reload. Restart=no: a stop by an error stays stopped until the next boot.
+[Unit]
+Description=S54 rehearsal life 2 (seed 669, L2+SF)
+After=local-fs.target
+RequiresMountsFor=/home/pi/s54/t2
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/s54/t2
+ExecStart=/bin/sh /home/pi/s54/t2/s54-run.sh /home/pi/s54/t2
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

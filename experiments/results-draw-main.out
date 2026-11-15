@@ -1,0 +1,27 @@
+Decisions accepted by the coordinator (2026-11-15): PA4 state = world (A, B, C, port, counters), pools, circuit state, noise RNG; the draw mechanism and the records are excluded. D5 second stream: a 0 becomes 1 where Mulberry(1000003u+56) < 0.2; D5 judged per law. Bit files are ASCII '0'/'1'. Spec r3 §8: the body has no m0, the candidate set is {m1, m2}, W = 2 (UNI) and 8 (FIXP), so no rejection occurs in a life; the rejection path is exercised only in the unit test D4b.
+tasks 24, done 0, threads 4
+1/24  L2 u674  31.2 s
+2/24  L2 u675  31.2 s
+3/24  L2 u677  44.6 s
+4/24  L2 u676  44.6 s
+5/24  L2 u678  44.7 s
+6/24  L2 u680  57.9 s
+7/24  L2 u682  58.5 s
+8/24  L2 u679  59.1 s
+9/24  L2 u681  72.4 s
+10/24  L2 u684  72.4 s
+11/24  L2 u683  72.5 s
+12/24  L2+SF u675  83.2 s
+13/24  L2 u685  86.6 s
+14/24  L2+SF u674  97.5 s
+15/24  L2+SF u676  97.5 s
+16/24  L2+SF u677  97.5 s
+17/24  L2+SF u680  111.7 s
+18/24  L2+SF u681  111.9 s
+19/24  L2+SF u679  112.0 s
+20/24  L2+SF u678  124.7 s
+21/24  L2+SF u683  124.8 s
+22/24  L2+SF u682  125.9 s
+23/24  L2+SF u684  137.3 s
+24/24  L2+SF u685  139.0 s
+main: wall 139.0 s, threads 4

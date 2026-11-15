@@ -1,0 +1,15 @@
+# S54 freeze 0 (spec r1 and predictions r1, before the S-R; 2026-11-15 08:05)
+217ad3d7a904c667497eb4fc45c6b3e1bdb6bfc893724917e7730baed3f5bbb1  ../discussion/specs/S54-trial-run.md
+99272521c5b39f73b856c1c5039513eb6e9d3221cd7b63223a7a8546495608bf  predictions-trial-run.md
+# S54 freeze 1 (spec r2 and predictions r2 after the S-R, before any code is written; 2026-11-15 08:06)
+31399abd608401e56b072ef16bab159504b4b2973fff317c3f80b878d105a377  ../discussion/specs/S54-trial-run.md
+5a63e9735208aa4a4bb9024133cc5e219d1a7f56920bd8344ba30e901c6ade8d  predictions-trial-run.md
+# S54 freeze 2 (spec r3: S49d build, birth in Julia; predictions unchanged; 2026-11-15 08:14)
+6631ee34a717f13b83c3824cdaf6bec2409555fbc3a849acc1eac6cbb5cf5c3c  ../discussion/specs/S54-trial-run.md
+5a63e9735208aa4a4bb9024133cc5e219d1a7f56920bd8344ba30e901c6ade8d  predictions-trial-run.md
+# S54 freeze 3 (spec r4: power-button stop rehearsal instead of the power-pull rehearsal, C1 on tmpfs; predictions unchanged; 2026-11-16 06:01)
+6d606895e89ce500b9da18e79aba070978f389bbc35953972d001ab0df3ea312  ../discussion/specs/S54-trial-run.md
+5a63e9735208aa4a4bb9024133cc5e219d1a7f56920bd8344ba30e901c6ade8d  predictions-trial-run.md
+# S54 freeze 4 (spec r4 + reading notes for PT1/PT3/PT4 after codex S-R [AUTO D-S54 1]; predictions unchanged; 2026-11-16 06:02)
+21ea47029f4b211296c187b735f2cff404a66b8d90b4d71e01d2466a2f45ad89  ../discussion/specs/S54-trial-run.md
+5a63e9735208aa4a4bb9024133cc5e219d1a7f56920bd8344ba30e901c6ade8d  predictions-trial-run.md

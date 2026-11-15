@@ -1,0 +1,6 @@
+S59 freeze 1 2026-11-16 06:10（codex の再 S-R 待ち）
+bf8ddd9fb0607c8b7552c9b299770488767fc23f34e1e426786b5d3bc7ce6ce6  discussion/specs/S59-bret2-norm.md
+65e545eb7268aba2810e69644fd5d74bb938a6125a06e62320c6f253b6863dc4  experiments/predictions-bret2-norm.md
+S59 freeze 2 2026-11-16 06:11（仕様 r3: codex [AUTO D-MEM 14] の clarify 2・3 を入れた。予測は freeze 1 と同じ。種子 806〜885 は STATE の記録で未使用〈次の新しい種子は 806 だった〉）
+6750594fa908d958acddb4cb1ab491f8166e26678d746563b09ad074f899e9cf  discussion/specs/S59-bret2-norm.md
+65e545eb7268aba2810e69644fd5d74bb938a6125a06e62320c6f253b6863dc4  experiments/predictions-bret2-norm.md

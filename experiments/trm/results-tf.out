@@ -1,0 +1,23 @@
+G a/W0: G-TF=true G-B=true points=84
+G a/W1: G-TF=true G-B=true points=84
+G b/W0: G-TF=true G-B=true points=84
+G b/W1: G-TF=true G-B=true points=84
+G c/W0: G-TF=false G-B=true points=84
+  FAILED c/W0 G-TF step1/round1/z_H
+G c/W1: G-TF=true G-B=true points=84
+G d/W0: G-TF=true G-B=true points=84
+G d/W1: G-TF=true G-B=true points=84
+G e/W0: G-TF=true G-B=true points=84
+G e/W1: G-TF=true G-B=true points=84
+negative control (1) perturbed state: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (2) H_cycles-1: caught by G-B(i):step1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (3) L_cycles-1: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (4) swap_update_order: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (5) q_head_pos=2: caught by G-TF:step1/round3/output/q_halt; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (6) puzzle_identifiers swapped: caught by G-B(ii):step1/puzzle_identifiers; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (7) bad_rope_value: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (8) bad_norm_order: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (9) swap_round_store: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (10) drop_zl_between_steps: caught by G-B(i):step2/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+diagnostic c/W0 step1/round1: L first over tolerance=none (diagnostic only)
+FAILED

@@ -1,0 +1,23 @@
+S58 pilot, windows 726:729 (partners 766:769), tp = [3926, 3927, 3928, 3929]
+p1 A-ret   : alive at tp in 2/4 windows   deaths Union{Nothing, Int64}[nothing, 2990, 2428, nothing]
+p1 AB-free : alive at tp in 4/4 windows   deaths [nothing, nothing, nothing, nothing]
+p1 AB-ret  : alive at tp in 4/4 windows   deaths [nothing, nothing, nothing, nothing]
+p1 B-ret   : alive at tp in 4/4 windows   deaths [nothing, nothing, nothing, nothing]
+p1 B-delay : alive at tp in 4/4 windows   deaths [nothing, nothing, nothing, nothing]
+p1 B-yoke  : alive at tp in 3/4 windows   deaths Union{Nothing, Int64}[2804, nothing, nothing, nothing]
+p1: false
+p2 u726 B-ret T0..tp-1: used 9097, unpaid 0, paid 9097 -> false
+p2 u727 B-ret T0..tp-1: used 7990, unpaid 0, paid 7990 -> false
+p2 u728 B-ret T0..tp-1: used 8472, unpaid 0, paid 8472 -> false
+p2 u729 B-ret T0..tp-1: used 7499, unpaid 0, paid 7499 -> false
+p2: windows meeting 0/4 -> false
+p3 class a: B-ret out of the band in tp..tp+299 in 3/4 windows -> kept
+p3 class b: B-ret out of the band in tp..tp+299 in 3/4 windows -> kept
+p3 class c: B-ret out of the band in tp..tp+299 in 4/4 windows -> kept
+== facts for the next spec (descriptive; B-ret, s_t and KC / |body| over T0..tp-1 alive steps of class 0)
+u726: s_t min/median/max [576.0, 1479.0, 2408.0], max used edges per step 6, KC/|body| min/median/max [0.0001111, 0.0001667, 0.0004], class a: s at tp 555, min s tp..tp+99 555, min s in the 100 steps before death by class a: - b: - c: - 0: -
+u727: s_t min/median/max [401, 1321, 2297], max used edges per step 6, KC/|body| min/median/max [0.0001111, 0.0002, 0.0006667], class a: s at tp 402, min s tp..tp+99 402, min s in the 100 steps before death by class a: - b: - c: 100 0: -
+u728: s_t min/median/max [613.0, 1404.5, 2764.0], max used edges per step 6, KC/|body| min/median/max [0.0001176, 0.0001667, 0.0004], class a: s at tp 609, min s tp..tp+99 601, min s in the 100 steps before death by class a: - b: - c: - 0: -
+u729: s_t min/median/max [331, 1277, 2351], max used edges per step 6, KC/|body| min/median/max [0.0001111, 0.0002, 0.0006667], class a: s at tp 473, min s tp..tp+99 473, min s in the 100 steps before death by class a: - b: - c: - 0: -
+pilot decision: STOP (cannot be measured; the evaluation is not run)
+wall 61.0 s, threads 8

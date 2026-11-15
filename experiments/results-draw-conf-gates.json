@@ -1,0 +1,13 @@
+{
+  "D2": true,
+  "D7": true,
+  "D4b": true,
+  "D6": true,
+  "D3": true,
+  "notes": "S57 on S55's construction. The body has no m0 (S55 spec r3 §8): cs = {m1, m2}. CONF weights 1 + conf[m] (conf = step!'s own local of that step); W need not be a power of 2, so rejections occur in a life. D4b reuses S55's unit file; its W = 10 case is CONF with conf (4, 2, 1) on (m1, m2, m0) -> weights 5:3:2. PB1 groups = (cs, weights / gcd).",
+  "D4": true,
+  "D5": true,
+  "D7 y-d disagreements": 0,
+  "D1": true,
+  "F": true
+}

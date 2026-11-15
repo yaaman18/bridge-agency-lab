@@ -1,0 +1,78 @@
+S56 step 3: recursion and ACT wrapper of TrmPort.jl checked against the fixtures (the official outputs)
+tolerance: max_abs_diff <= 0.0001 for the float quantities; steps (Int) / halted (Bool) / current_data exact with types; keys exact; shape exact; all finite
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config a (W1) ACT column: steps ["step1", "step2", "step3", "step4"] with inputs ["x1", "x2", "x1", "x3"], then mixed_reset
+  ACT column (and mixed_reset): FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config b (W1) ACT column: steps ["step1", "step2", "step3", "step4"] with inputs ["x1", "x2", "x1", "x3"], then mixed_reset
+  ACT column (and mixed_reset): FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config c (W1) ACT column: steps ["step1", "step2", "step3", "step4"] with inputs ["x1", "x2", "x1", "x3"], then mixed_reset
+  ACT column (and mixed_reset): FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config d (W1) ACT column: steps ["step1", "step2", "step3", "step4"] with inputs ["x1", "x2", "x1", "x3"], then mixed_reset
+  ACT column (and mixed_reset): FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config e (W1) ACT column: steps ["step1", "step2", "step3", "step4"] with inputs ["x1", "x2", "x1", "x3"], then mixed_reset
+  ACT column (and mixed_reset): FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config a (W1) h_round_end (first step, from the carried state right after reset)
+  h_round_end: FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config b (W1) h_round_end (first step, from the carried state right after reset)
+  h_round_end: FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config c (W1) h_round_end (first step, from the carried state right after reset)
+  h_round_end: FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config d (W1) h_round_end (first step, from the carried state right after reset)
+  h_round_end: FAIL (threw TrmPort has no CastedEmbedding)
+  fixture: FAIL (threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.)
+
+== config e (W1) h_round_end (first step, from the carried state right after reset)
+  h_round_end: FAIL (threw TrmPort has no CastedEmbedding)
+
+== negative controls
+negative control (i) caught: config a, step1 logits, inner.L_level.layers.0.mlp.down_proj.weight[1,1] + 0.01
+negative control (i) caught FAILED: the usual output for logits is not available (Nothing)
+negative control (ii) caught: config a, step1 logits, H_cycles 3 -> 2
+negative control (ii) caught FAILED: the usual output for logits is not available (Nothing)
+negative control (iii) caught: config e, step1 logits, L_cycles 6 -> 5
+negative control (iii) caught FAILED: the usual output for logits is not available (Nothing)
+negative control (iv) caught: config c, step1 logits, z_L and z_H update order swapped
+negative control (iv) caught FAILED: the usual output for logits is not available (Nothing)
+negative control (v) caught: config a, step1 q_halt_logits, q_head reads position 2 instead of 1
+negative control (v) caught FAILED: the usual output for q_halt_logits is not available (Nothing)
+negative control (vi) caught: config d, mixed_reset step1 logits, x2 identifiers swapped within the batch
+negative control (vi) caught FAILED: the usual output for logits is not available (Nothing)
+negative control (vii) caught: config a, step1 logits, rope applied to the value too
+negative control (vii) caught FAILED: the usual output for logits is not available (Nothing)
+negative control (viii) caught: config c, step1 logits, mlp_t first norm before the transpose
+negative control (viii) caught FAILED: the usual output for logits is not available (Nothing)
+
+== summary
+float quantities: max_abs_diff <= 1e-4 (recursion); steps/halted/current_data exact
+checked: 10 fixtures x (4 ACT steps + mixed_reset); h_round_end for W1 (first step, each H round); failures: 20
+negative controls caught: 0/8
+first mismatch: fixture: threw MethodError: no method matching getindex(::Nothing, ::String)
+The function `getindex` exists, but no method is defined for this combination of argument types.
+FAILED

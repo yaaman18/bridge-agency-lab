@@ -1,0 +1,19 @@
+# S54 rehearsal (discussion/notes/D-POWER.md: the power-button stop and start, not a pull of the plug): life 627-L2-D1
+# of S49 with the PRODUCTION onelife-run (10 s), in /home/pi/s54/rehearsal/ (run, drives.txt = 60480 lines of D1,
+# onelife-run, being-tools, s54-run.sh). Written only; not installed by lab-coder. Install and remove as the
+# s54-trial-*.service files (unit name s54-rehearsal.service). Restart=no.
+[Unit]
+Description=S54 rehearsal life (seed 627, L2, D1; production build)
+After=local-fs.target
+RequiresMountsFor=/home/pi/s54/rehearsal
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/s54/rehearsal
+ExecStart=/bin/sh /home/pi/s54/rehearsal/s54-run.sh /home/pi/s54/rehearsal
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

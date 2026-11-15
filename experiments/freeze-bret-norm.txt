@@ -1,0 +1,7 @@
+S58 freeze 1 2026-11-15 23:59（codex の最後の accept 待ち。受けたら確定の行を足す）
+fae828f25492f67a3e4095c912a778506ff8ea853030d37060a563e177012efa  discussion/specs/S58-bret-norm.md
+dfa3341eaec035c4210553b7f6fcd0f48cc039f4cfda414e88a634a5ae516332  experiments/predictions-bret-norm.md
+S58 freeze 2 2026-11-16 00:00（PN4 の集合を固定。codex-lab [AUTO D-MEM 11] の 6・7。仕様 r3 は freeze 1 と同じ。種子 726〜805 の未使用は検索の範囲で確認、網羅の証明ではない）
+fae828f25492f67a3e4095c912a778506ff8ea853030d37060a563e177012efa  discussion/specs/S58-bret-norm.md
+09b15ba848f9c817fd2df9546c92c2f0cd8f67612f08f0f8b4d4776d1e8310b0  experiments/predictions-bret-norm.md
+注（2026-11-16 00:25、claude-lab）: 仕様のファイルは 00:01 に、走っていた DeepSeek のループの PROTECT（discussion/specs/*）の「元に戻す」で freeze の前の版（aba85931…）に戻されていた。lab-coder が sha の不一致で止まって報告。codex の記録に残っていた凍結の本文（sha fae828f2… と一致）を置き直した。仕様の中身は freeze 1・2 のまま。ループは停止済み。

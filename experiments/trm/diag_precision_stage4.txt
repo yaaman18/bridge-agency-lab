@@ -1,0 +1,30 @@
+
+has_inf(a) = any(isinf, a)   # 0 でない無限大（Inf）があるか
+"手 1 の中の周回（H_cycles × L_cycles）の各の z_L と、各ブロックの最後の値を、2 つの走りで比べて、
+最初に 1e-8 を越えた所の名前を返す（越えなければ none という字）。"
+function step1_first_gap(modA, stA, modB, stB, fx)
+    batch = fx.inputs[PASSED[1]]
+    r = Dict{String,Any}[]
+    for (mod, st) in ((modA, stA), (modB, stB))
+        m = build_model(mod, fx, st)
+        inner = m.inner
+        carry = mod.initial_carry(m, batch)
+        zH, zL = mod.reset_carry(inner, fill(true, size(carry.z_H, 1)), carry.z_H, carry.z_L)
+        emb = Array{mod.F32,3}(mod.input_embeddings(inner, batch["inputs"], batch["puzzle_identifiers"]))
+        push!(r, Dict{String,Any}("emb" => Float64.(emb)))
+        for h in 1:Int(mod._getattr(inner.config, :H_cycles)), l in 1:Int(mod._getattr(inner.config, :L_cycles))
+            zL = inner.L_level(zL, zH .+ emb; cos_sin=m.cos_sin)       # h_round と同じ順
+            push!(r[end], string("h", h, ".l", l, ".z_L") => Float64.(zL))
+            if inner.swap_update_order
+                zH = inner.L_level(zH, zL; cos_sin=m.cos_sin)
+            end
+        end
+        push!(r[end], "final.z_H" => Float64.(zH))
+    end
+    for k in keys(r[1])
+        k == "emb" && continue
+        d = maxabs(r[1][k], r[2][k])
+        d > 1e-8 && return string(k, " (", d, ")")
+    end
+    return "none"
+end

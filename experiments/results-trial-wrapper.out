@@ -1,0 +1,30 @@
+
+S54 wrapper tests on the Mac (/private/tmp/claude-501/-Users-yamaguchimitsuyuki/e2f72f5a-6303-4b2f-8899-2114b5ba9e45/scratchpad/wt.0lWn; Mac fast build), 2026-11-16 06:12:39
+T0 wrapper source: other reads ''; the two expected commands 2 of 2; negative control (cat run added) caught 1 -> true
+T n=0: exit 0; piped lines 60480, byte-identical to drives from line 1 true (first piped line '5 0') -> true
+T n=30240: exit 0; piped lines 30240, byte-identical to drives from line 30241 true (first piped line '0 4') -> true
+T n=60480: exit 0; piped lines 0, byte-identical to drives from line 60481 true (first piped line '') -> true
+T4 real onelife-run from n = 60477: exit 0, n 60480 -> true
+N1.1 malformed onelife-info output: exit 73, piped false (s54-run: n is not a decimal number)
+N1.2 malformed onelife-info output: exit 73, piped false (s54-run: onelife-info output is not one line)
+N1.3 malformed onelife-info output: exit 73, piped false (s54-run: onelife-info output does not start with {"n":)
+N2 n = 60481: exit 74, piped false (s54-run: n = 60481 is outside 0..60480)
+N3 second wrapper: exit 75, piped false (s54-run: /private/tmp/claude-501/-Users-yamaguchimitsuyuki/e2f72f5a-6303-4b2f-8899-2114b5ba9e45/scratchpad/wt.0lWn/n3/s54-run.lock is held by another wrapper); the first wrapper exit 0
+negative controls N1 (3 of 3: 3) N2 N3: true (flock: stand-in)
+wrapper tests: true
+wrapper tests on the Mac: exit 0
+
+S54 wrapper tests on the Pi (pi@bridge-pi.local:/dev/shm/s54-c1/wrapper/w; Pi fast build; pushed files with the same SHA 6 of 6), Mac time 2026-11-16 06:23:03
+T0 wrapper source: other reads ''; the two expected commands 2 of 2; negative control (cat run added) caught 1 -> true
+T n=0: exit 0; piped lines 60480, byte-identical to drives from line 1 true (first piped line '5 0') -> true
+T n=30240: exit 0; piped lines 30240, byte-identical to drives from line 30241 true (first piped line '0 4') -> true
+T n=60480: exit 0; piped lines 0, byte-identical to drives from line 60481 true (first piped line '') -> true
+T4 real onelife-run from n = 60477: exit 0, n 60480 -> true
+N1.1 malformed onelife-info output: exit 73, piped false (s54-run: n is not a decimal number)
+N1.2 malformed onelife-info output: exit 73, piped false (s54-run: onelife-info output is not one line)
+N1.3 malformed onelife-info output: exit 73, piped false (s54-run: onelife-info output does not start with {"n":)
+N2 n = 60481: exit 74, piped false (s54-run: n = 60481 is outside 0..60480)
+N3 second wrapper: exit 75, piped false (s54-run: /dev/shm/s54-c1/wrapper/w/n3/s54-run.lock is held by another wrapper); the first wrapper exit 0
+negative controls N1 (3 of 3: 3) N2 N3: true (flock: /usr/bin/flock)
+wrapper tests: true
+wrapper tests on the Pi: exit 0, pushed 6 of 6

@@ -1,0 +1,51 @@
+"""TrmPort.jl の本文から写し diag/TrmPort_f64.jl を作る（盲目的な文字列置換をしない）。
+- 各の行を replace_tokens で、文字列・コメントの外の語の境界の Float32 / F32（と 1f0 のようなリテラルの接尾辞）だけ置換
+  （「const F32 = Float32」は「const F32 = Float64」になる。名前 F32 はそのまま）。
+- module の名を TrmPortF64 にする。
+- rms_norm の型の字は、公式（models/layers.py 163-169）と同じ型の扱いの写しに替える
+  （入力を Float32 に上げて計算し、元の型（この写しでは Float64）に戻す。@assert などの行は TrmPort.jl のまま）。
+- rope の cos/sin は公式と同じく Float32 の表（RotaryEmbedding に Float32 の字が無く、この置換では変わらない）。
+戻り値は (写しの本文, 外側の置換した数の合計)。"""
+function make_f64_source(src)
+    (orig_rms, f64_rms) = rms_norm_block(src)
+    out = String[]
+    k = 0
+    i = 0                     # いま orig_rms の何行目を見ているか（rms_norm の外は 0）
+    for line in split(src; keepempty=true)
+        if i == 0 && startswith(line, "function rms_norm(")
+            i = 1
+            push!(out, f64_rms[1]); continue
+        elseif i > 0
+            if line == "end" && i == length(orig_rms)
+                i = 0                      # rms_norm の end
+            elseif i < length(orig_rms)
+                i += 1
+                line == orig_rms[i] || error("rms_norm line not aligned: " * line)
+                push!(out, f64_rms[i]); continue
+            else
+                error("rms_norm body differs from the split: " * line)
+            end
+            push!(out, line); continue
+        else
+            (line, c) = replace_tokens(line)
+            k += c
+            push!(out, line)
+        end
+    end
+    i == 0 || error("rms_norm not closed in TrmPort.jl")
+    body = join(out, "\n")
+    body = replace(body, r"(?m)^module TrmPort$" => "module TrmPortF64")
+    occursin("module TrmPortF64", body) || error("module line not found")
+    return (body, k)
+end
+
+"写しを diag/TrmPort_f64.jl に書く。戻り値は外側の置換したトークンの数。"
+function write_f64_port()
+    (body, k) = make_f64_source(read(joinpath(HERE, "TrmPort.jl"), String))
+    mkpath(dirname(F64_PATH))
+    write(F64_PATH, body)
+    return k
+end
+const F64_TOKENS = write_f64_port()
+include(F64_PATH)
+const PT = TrmPortF64

@@ -1,0 +1,93 @@
+{
+  "L2": {
+    "CONFunequal": [
+      1984,
+      2222,
+      513,
+      1758
+    ],
+    "DET": {
+      "drawSteps": [
+        9011,
+        8842,
+        3664,
+        8653
+      ],
+      "meets": true,
+      "alive2000": 4
+    },
+    "UNI": {
+      "drawSteps": [
+        4967,
+        5286,
+        1833,
+        4136
+      ],
+      "meets": true,
+      "alive2000": 4
+    },
+    "admit": true,
+    "CONF": {
+      "drawSteps": [
+        5107,
+        5387,
+        1869,
+        4264
+      ],
+      "meets": true,
+      "alive2000": 4
+    },
+    "PB2admit": true,
+    "agreesWithGrid": true
+  },
+  "admit": {
+    "L2": true,
+    "L2+SF": true
+  },
+  "pb2admit": {
+    "L2": true,
+    "L2+SF": true
+  },
+  "L2+SF": {
+    "CONFunequal": [
+      1422,
+      1754,
+      419,
+      1695
+    ],
+    "DET": {
+      "drawSteps": [
+        3509,
+        6692,
+        2313,
+        5427
+      ],
+      "meets": true,
+      "alive2000": 4
+    },
+    "UNI": {
+      "drawSteps": [
+        4585,
+        3914,
+        1661,
+        3949
+      ],
+      "meets": true,
+      "alive2000": 4
+    },
+    "admit": true,
+    "CONF": {
+      "drawSteps": [
+        4621,
+        4209,
+        1816,
+        3194
+      ],
+      "meets": true,
+      "alive2000": 4
+    },
+    "PB2admit": true,
+    "agreesWithGrid": true
+  },
+  "PB0": true
+}

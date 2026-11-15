@@ -1,0 +1,5 @@
+
+S54 rehearsal check, Mac time 2026-11-16 06:41:03 (epoch 1794778863)
+Pi: 7c24432f-7658-4d6b-b749-e345cd8c91e8 inactive active throttled=0x0 ext4 errors in dmesg 0 Filesystem state: clean;Last mount time: Sun Nov 15 07:58:31 2026;
+run file copy 87d23927d6ec53d5cb626350b9f61e5a59ae2c59ee2bf33622e50e4ec1b4ab17: n 0, payload SHA = reference at n true; audit copy e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855: commits with the reference SHA 0, other 0 (first null), distinct n 0
+audit report {"audit":"present","lines":0,"partial_last_line":false,"chain_ok":true,"chain_failures":0,"first_failure_line":null,"breaks":0,"break_reasons":[],"starts":0,"waits":0,"begins":0,"commits":0,"ends":0,"errors":0,"unfinished_steps":0,"audit_behind":0,"unknown_stops":0,"stops_without_end":0,"starts_below_last_commit":0,"unclassified":0,"open":true,"run":{"n":0,"payload_sha":"aff7fc8cb3f525f1ab351e2aff269e854e10145815364ab9fef81cddc9e02b56"},"last_commit":null,"run_vs_last_commit":"no commit","sequence":[]}

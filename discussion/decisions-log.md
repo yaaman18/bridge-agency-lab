@@ -485,6 +485,26 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 影響したファイル: 上の 3 ファイル、`experiments/onelife_rust_audit_check.sh`、`freeze-rust-onelife-c-code.txt`、`results-rust-onelife-c*.out`、README 項番163、STATE.md、`specs/S54-trial-run.md`（前提の追記）。
 - ユーザー: S49c の着手は依頼の範囲（2026-11-14「1,2,3をまとめてやってから」）。中身の判断は事後承認の対象 → **承認**（2026-11-15 ユーザー「1,2,3は普通にやってくれ」）
 
+
+### #55 S53b の実装上の判断と結果の読み（ORG 対 ORG-FIX、2026-11-15）
+- 種別: 実装と読み。決めたこと: 対照を ORG-FIX にし、問いを「T0 以後の更新を続けることの価値」と読み替える（codex S-R）／適格な窓は四つの走りの共通集合／主の量は G2000、だめなら G500、の順を凍結／生存は 死の歩 > T0＋x。
+- 結果の読み: PF1 外れで主の量は未測定。項番161 の「λ＝2 では L2+SF だけ良い」は法則の差として取り下げる（新しい窓で入れ替わった）。L2+SF の PF2・PF3 の成立は効果の支持と扱わない。
+- 選ばなかった案: 四つのセルをまとめて「λ＝2 では大」と主張する（凍結していない統合）。窓を足して同じ量を測り直す。
+- 合意: 両者合意（S-R → r2、I-R: accept、[AUTO 8/10]）。元に戻す方法: `experiments/stake_fix_grid.jl`・`check_stake_fix.jl`・結果は記録として残す。README 項番164 と項番161 への注記を除けば戻る。
+- ユーザー: 着手は依頼の範囲（2026-11-15「1,2,3は普通にやってくれ」）。中身の判断は事後承認の対象
+
+### #56 TRM の正本と移植の分担（2026-11-15）
+- 種別: 方針（ユーザー決定）と実装上の判断。決めたこと（ユーザー）: TRM は公式の Python 版を Julia に移植して正本にする（#37 の「公式 Python TRM を使う方向」を改める）。移植のコーディングは deepseek-lab の席（2026-11-07 の休止をこの作業について再開）、claude-lab はオーケストレーション、codex-lab がレビュー。
+- 決めたこと（claude-lab と codex-lab）: 第 1 段（S56）は推論だけ、公式の出力との数値の照合（許容差 1e-4、Float32）、置き場は `experiments/trm/`、手は 3 つに割る、公式の側（正解）を先にレビューする。この段の合格は Float64 化・自前の数学関数・縮小・Rust に引き継がない。
+- 送られるもの: 公式のコード（MIT）、移植の仕様とコード、関門の出力が OpenRouter とその ZDR の提供元へ（2026-11-06 のユーザーの了承の範囲）。個体の規則（`core/`・`rust/`）は読ませる必要がないので、手の指示に含めない。
+- 元に戻す方法: `experiments/trm/` を使わない。席の文書と CLAUDE.md の追記を除く。#37 の記述は残る。
+- 合意: 両者合意（S-R: r1 → r2、[AUTO 5/10]）。ユーザー: **決定**（2026-11-15「公式の Python 版を Julia に移植する」「deepseek v4.1 flash 10-17 にコーディングをやらせて codex にレビューさせる」）
+
+### #57 S55（A0）の実装上の判断と結果の読み（2026-11-15）
+- 種別: 実装と読み。決めたこと: 引くのは一歩に一度、候補は（区画、添字）の順、ビットの位置は実行の状態に持つ、下調べで一つの腕でも落ちたら法則ごと走らせない、PA2 は Holm の補正、FIXP の重み 5:3:2（作者の数）。r3: m0 がない事実、D4b（捨てる経路の単体の検査）、D4 の負の対照の直し。
+- 結果の読み: PA1〜PA4 成立。PA2 は「この個体にある唯一の組について」。生存の数は予測のない観察で、適応・優越には一般化しない。記録の不足（key・添字・重み）は限定として書く。
+- 合意: 両者合意（S-R → r2、I-R: accept（限定）、[AUTO 6/10]）。元に戻す方法: `experiments/draw_grid.jl`・`check_draw.jl`・`draw-bits/`・結果は記録として残す。README 項番165 を除けば戻る。`core/` は変えていない。
+- ユーザー: 着手は承認済み（2026-11-15「2 はそれで OK」）。中身の判断は事後承認の対象
 ## 議論より前からの未決（二人で決めてよい）
 - [2026-11-03 項番86] L2 の系に sed_fade と KC 0.0015 を採るか（項番77「L2 は偽で確定」を改めるか）— README.md 未決。
   第1部（要件の厳密化）で読みと要件が定まってから決める。
@@ -507,3 +527,27 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 元に戻す方法: requirements.md を消し、notes/D1.md の状態を「叩き台」に戻す。
 - 影響したファイル: notes/D1.md、requirements.md、inventory.md（点検反映）、STATE.md、backlog.md
 - ユーザー: **承認**（2026-11-10 ユーザー「J1-8 の 7 件: 全て承認する」、作業手順 r3 の判断票 J1-8）
+
+## #58 S58: B-ret を検査 N で測る仕様と、下調べでの「測れない」（2026-11-16）
+- 決めたこと: 検査 N（対照二つ、選別なしの主の量、窓を単位とする判定）と B-ret の細部（費用 KC、全額の判定、歩の頭の在庫で数える、辺の順）を仕様 r3 として凍結して走らせた。結果は下調べで p1・p2 不成立、評価は走らせず「測れない」（README 項番166）。
+- 根拠: ユーザー 2026-11-15「１でいいよ。そして２と３の方も詰めていって」「S58 を書いて」、2026-11-16「S58 のコードを lab-coder に書かせて」。
+- 合意: codex-lab と S-R 4 往復（D-MEM 8〜11）、I-R 1 往復（D-MEM 12）。
+- 元に戻す方法: `experiments/bret_grid.jl`・`check_bret.jl`・`results-bret-*`・`bret-out/` を使わない（`core/` は変えていない）。README 項番166 と D-MEM §9・§10 に「取り下げ」と書く。
+- 影響したファイル: discussion/specs/S58-bret-norm.md、experiments/predictions-bret-norm.md、freeze-bret-norm*.txt、bret_grid.jl、check_bret.jl、results-bret-*、README.md、notes/D-MEM.md、STATE.md
+- ユーザー: 事後承認待ち
+
+## #59 S57（A1）: 確かさから作った確率で引く腕 CONF の結果（2026-11-16）
+- 決めたこと: 仕様 r2 のとおり走らせ、PB0〜PB4 成立として README 項番168 に記録した。実装の席が仕様の範囲で決めた点（PB1 の組の作り方、D4b の重み、評価で 2 度目の走りを省く）を受け入れた。
+- 根拠: ユーザー 2026-11-15「1 の仕様を書き始めて」、2026-11-16「opus5.5 にやらせて」。
+- 合意: codex-lab I-R（D-MEM 15）。accept 6、clarify 2、challenge 2（中央値の呼び方、読みの文の限定）→ 記録に入れた。全面の accept は保留（D7 の直しの独立の確認、全歩の再実行）。
+- 元に戻す方法: `experiments/draw_conf_grid.jl`・`check_draw_conf.jl`・`results-draw-conf-*`・`draw-conf-bits/`・`draw-conf-out/` を使わない（`core/` と S55 のファイルは変えていない）。README 項番168 に「取り下げ」と書く。
+- 影響したファイル: 上記と README.md、STATE.md、freeze-draw-conf-code.txt
+- ユーザー: 事後承認待ち
+
+## #60 S59: S58 のやり直し（減衰のときの支払いつきの作り直し）と、資格が成り立たなかったこと（2026-11-16）
+- 決めたこと: D-MEM §10 のとおり、規則（減衰の判定のときに作り直す、費用 KC×FORGET、存在の閾値より上の余りから払う、乱しの歩を早める）を新しい仕様・新しい種子・新しい予測で凍結して走らせた。結果は README 項番169。
+- 根拠: ユーザー 2026-11-16「D-MEM §10 の内容でやって」「opus5.5 にやらせて」。
+- 合意: codex-lab と S-R 2 往復（D-MEM 13・14）、I-R 1 往復（D-MEM 16）。
+- 元に戻す方法: `experiments/bret2_grid.jl`・`check_bret2.jl`・`results-bret2-*`・`bret2-out/` を使わない（`core/` と S58 のファイルは変えていない）。README 項番169 と D-MEM §11・§12 に「取り下げ」と書く。
+- 影響したファイル: discussion/specs/S59-bret2-norm.md、experiments/predictions-bret2-norm.md、freeze-bret2-norm*.txt、上記のコードと結果、README.md、notes/D-MEM.md、STATE.md
+- ユーザー: 事後承認待ち

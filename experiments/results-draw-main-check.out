@@ -1,0 +1,41 @@
+Decisions accepted by the coordinator (2026-11-15): PA4 state = world (A, B, C, port, counters), pools, circuit state, noise RNG; the draw mechanism and the records are excluded. D5 second stream Mulberry(1000003u+56) < 0.2, judged per law. Bit files ASCII '0'/'1'. Spec r3 §8: no m0; candidate set {m1, m2}; specified probabilities UNI 1/2:1/2, FIXP 5/8:3/8; no rejection occurs in a life (W = 2 and 8).
+==== law L2  (windows 674,675,676,677,678,679,680,681,682,683,684,685, n = 12)
+   DET  alive T0+500 12/12, T0+2000 10/12, horizon 9/12 | death steps: - - 1794 - - - 1546 - 6301 - - -
+        body (countAt T0+500, T0+2000, 9200): 12/11/16 12/13/8 13/0/0 10/12/11 13/13/13 18/16/14 8/0/0 10/16/9 11/5/0 11/10/15 11/9/13 10/11/17
+        answered share of acts from T0: 0.994 0.993 0.999 0.994 0.997 0.994 0.997 0.995 0.994 0.995 0.995 0.995
+        drawing steps: 8769 7206 783 8004 8917 8245 618 8528 4642 8714 8388 8861 | agreement with DET's choice: 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 (mean 1.0) | rejected share of bit groups: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+   UNI  alive T0+500 12/12, T0+2000 12/12, horizon 12/12 | death steps: - - - - - - - - - - - -
+        body (countAt T0+500, T0+2000, 9200): 15/16/17 13/14/17 16/13/18 11/16/16 13/15/16 18/16/17 8/15/18 16/18/12 15/15/17 16/14/14 15/14/18 17/17/17
+        answered share of acts from T0: 0.994 0.994 0.995 0.995 0.995 0.992 0.993 0.995 0.992 0.995 0.995 0.994
+        drawing steps: 4409 3919 4808 4400 5191 4539 5074 5359 4154 6200 4949 4257 | agreement with DET's choice: 0.48 0.491 0.491 0.486 0.503 0.489 0.515 0.501 0.508 0.493 0.503 0.493 (mean 0.496) | rejected share of bit groups: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+   FIXP alive T0+500 12/12, T0+2000 12/12, horizon 12/12 | death steps: - - - - - - - - - - - -
+        body (countAt T0+500, T0+2000, 9200): 16/14/16 12/13/13 18/14/12 13/16/14 15/17/16 18/19/17 8/16/17 18/16/12 14/13/17 14/15/17 12/17/16 17/16/17
+        answered share of acts from T0: 0.994 0.993 0.996 0.995 0.996 0.993 0.994 0.995 0.993 0.995 0.995 0.994
+        drawing steps: 4356 4015 4627 4611 5171 4405 5025 5264 3929 6120 4987 4405 | agreement with DET's choice: 0.49 0.466 0.478 0.533 0.493 0.502 0.52 0.497 0.459 0.473 0.455 0.545 (mean 0.493) | rejected share of bit groups: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+   PA2 UNI set [1, 2]: n 57259, counts [28529, 28730], shares [0.498, 0.502] vs specified [0.5, 0.5], max dev 0.002, chi2 0.706 (df 1), uncorrected p 0.401, Holm reject at 1 %: false, within 0.05: true
+PA2 verdict L2 UNI: holds (1 candidate set(s) judged)
+   PA2 FIXP set [1, 2]: n 56915, counts [35561, 21354], shares [0.625, 0.375] vs specified [0.625, 0.375], max dev 0.0, chi2 0.009 (df 1), uncorrected p 0.925, Holm reject at 1 %: false, within 0.05: true
+PA2 verdict L2 FIXP: holds (1 candidate set(s) judged)
+PA3 verdict L2: holds (records replayed from the bit files: 196941/196941; second run bit-identical at every step for all 36 runs: true)
+PA4 verdict L2 UNI: holds (state at T0+2000 differs from DET in 12/12 windows; predicted >= 10)
+PA4 verdict L2 FIXP: holds (state at T0+2000 differs from DET in 12/12 windows; predicted >= 10)
+==== law L2+SF  (windows 674,675,676,677,678,679,680,681,682,683,684,685, n = 12)
+   DET  alive T0+500 12/12, T0+2000 10/12, horizon 8/12 | death steps: - 3216 1759 - - - 7550 - - - 2351 -
+        body (countAt T0+500, T0+2000, 9200): 10/7/4 11/10/0 9/0/0 12/16/12 8/11/11 17/17/5 8/12/0 10/18/8 12/10/8 13/9/14 10/0/0 11/11/18
+        answered share of acts from T0: 0.992 0.922 0.996 0.992 0.992 0.992 0.99 0.993 0.99 0.995 0.994 0.992
+        drawing steps: 6539 1348 661 6339 6813 6094 4218 7207 5432 7642 1123 6563 | agreement with DET's choice: 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 (mean 1.0) | rejected share of bit groups: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+   UNI  alive T0+500 12/12, T0+2000 11/12, horizon 11/12 | death steps: - 2547 - - - - - - - - - -
+        body (countAt T0+500, T0+2000, 9200): 17/18/12 15/0/0 17/7/20 12/19/11 15/17/5 17/19/17 8/16/18 17/6/14 17/16/17 16/17/6 20/16/15 19/18/16
+        answered share of acts from T0: 0.993 0.968 0.996 0.995 0.995 0.992 0.994 0.993 0.993 0.993 0.996 0.993
+        drawing steps: 4205 658 4625 4142 4820 4002 4658 4058 3607 3950 3869 3783 | agreement with DET's choice: 0.497 0.514 0.498 0.485 0.502 0.489 0.494 0.511 0.508 0.519 0.494 0.495 (mean 0.5) | rejected share of bit groups: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+   FIXP alive T0+500 12/12, T0+2000 10/12, horizon 9/12 | death steps: - 2550 - - - - - - - 2534 7126 -
+        body (countAt T0+500, T0+2000, 9200): 19/16/5 5/0/0 17/7/16 13/17/16 14/16/18 17/17/20 9/17/18 18/5/14 17/17/17 14/0/0 18/18/0 18/18/18
+        answered share of acts from T0: 0.993 0.953 0.995 0.995 0.995 0.991 0.993 0.996 0.992 0.991 0.995 0.994
+        drawing steps: 3305 448 4223 4488 5146 4035 4276 3735 3675 1027 2632 3915 | agreement with DET's choice: 0.513 0.467 0.483 0.521 0.513 0.536 0.506 0.498 0.474 0.5 0.435 0.525 (mean 0.498) | rejected share of bit groups: 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+   PA2 UNI set [1, 2]: n 46377, counts [23069, 23308], shares [0.497, 0.503] vs specified [0.5, 0.5], max dev 0.003, chi2 1.232 (df 1), uncorrected p 0.267, Holm reject at 1 %: false, within 0.05: true
+PA2 verdict L2+SF UNI: holds (1 candidate set(s) judged)
+   PA2 FIXP set [1, 2]: n 40905, counts [25549, 15356], shares [0.625, 0.375] vs specified [0.625, 0.375], max dev 0.0, chi2 0.029 (df 1), uncorrected p 0.865, Holm reject at 1 %: false, within 0.05: true
+PA2 verdict L2+SF FIXP: holds (1 candidate set(s) judged)
+PA3 verdict L2+SF: holds (records replayed from the bit files: 148277/148277; second run bit-identical at every step for all 36 runs: true)
+PA4 verdict L2+SF UNI: holds (state at T0+2000 differs from DET in 12/12 windows; predicted >= 10)
+PA4 verdict L2+SF FIXP: holds (state at T0+2000 differs from DET in 12/12 windows; predicted >= 10)

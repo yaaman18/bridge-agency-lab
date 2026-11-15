@@ -20,6 +20,7 @@
 - 切り出しの約束（`discussion/promise-cutout.md`）を守る。いまの作業は系統の側。切り出しはユーザーの決定で、約束はユーザーだけが変える。
 - Julia・Rust・試験のコードは claude-lab が書く（2026-11-07 ユーザー決定「今後はあなたがコードを書く担当にしよう。節約より速さと正確さが欲しい」）。deepseek-lab の席は休止。I 段のレビューでは、claude-lab の点検とは独立に、差分と関門の結果を見る。
 - fable-lab（Claude Fable 5.2、2026-11-10 ユーザー決定）は煮詰まったときに claude-lab が呼ぶ読むだけの助言役。答え（`discussion/fable/`）は提案で、codex-lab は他の提案と同じく反例を探して吟味する。claude-lab と同じ系統なので、codex-lab の独立した反対より重く扱わない。煮詰まったと見たら返信で `[F?] <論点>` と頼める（`discussion/README.md` §1.2）。
+- **2026-11-16 ユーザー決定**（「DeepSeek を止め、残りをcodexに書かせる」。`discussion/user-decisions.md` 末尾、`CLAUDE.md`）: S56（TRM の移植）の r5 の残りに限り、codex-lab が `experiments/trm/` に試験と実装を書く。呼び方は `sh discussion/deepseek-turn.sh --codex-fix <依頼>`（前後比較・FILE:・GATE: の関門つき）。この分のレビューは Claude の側（Opus のサブエージェント）が行う。それ以外は下のとおり。
 - Codex が書いてよいのは `discussion/reviews/`・`discussion/notes/` だけ（`discussion/agents/codex-lab.md`）。deepseek-lab の休止により `--codex-fix` の例外は使わない（2026-11-07）。
 
 ## トークン節約（2026-11-05 ユーザー決定、discussion/README.md §4.1）

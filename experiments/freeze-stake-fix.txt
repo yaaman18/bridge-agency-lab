@@ -1,0 +1,6 @@
+# S53b freeze 0 (spec r1 and predictions, before the S-R; 2026-11-15 07:38)
+25764f8e6b4b31698bb4f6d7a654326506bb938086ce0b89fb42591eb4f42047  ../discussion/specs/S53b-stake-fix.md
+1a758dbd1a519d5db9e3680839a0ad6bb06589062094cd158b1cebe322ab9483  predictions-stake-fix.md
+# S53b freeze 1 (spec r2 and predictions r2 after the S-R, before any code is written or run; 2026-11-15 07:39)
+8e17777bb94c2068ab9db62265e201df75d56e3c99fad9f269e45953c5b3c7ce  ../discussion/specs/S53b-stake-fix.md
+bebf6931f0b1aaba90db93fac5b085ae01db8b397c6da3e853521776b31e1569  predictions-stake-fix.md

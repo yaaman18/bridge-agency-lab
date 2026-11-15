@@ -1,0 +1,75 @@
+{
+  "J": {
+    "B2-delay": {
+      "class0": {
+        "neg": 3,
+        "zero": 26,
+        "pos": 7,
+        "judge": "not significant",
+        "p": 0.34375
+      },
+      "reserved": false,
+      "win": false,
+      "valid": {
+        "neg": 4,
+        "zero": 27,
+        "pos": 3,
+        "judge": "undetectable",
+        "p": null
+      },
+      "nvalid": 34,
+      "opposite": false,
+      "loss": false,
+      "all": {
+        "neg": 4,
+        "zero": 29,
+        "pos": 3,
+        "judge": "undetectable",
+        "p": null
+      }
+    },
+    "B2-yoke": {
+      "class0": {
+        "neg": 2,
+        "zero": 30,
+        "pos": 4,
+        "judge": "undetectable",
+        "p": null
+      },
+      "reserved": false,
+      "win": false,
+      "valid": {
+        "neg": 8,
+        "zero": 15,
+        "pos": 5,
+        "judge": "not significant",
+        "p": 0.5810546875
+      },
+      "nvalid": 28,
+      "opposite": false,
+      "loss": false,
+      "all": {
+        "neg": 10,
+        "zero": 21,
+        "pos": 5,
+        "judge": "not significant",
+        "p": 0.3017578125
+      }
+    }
+  },
+  "PM": [
+    true,
+    false,
+    false,
+    true,
+    true
+  ],
+  "rate": {
+    "A-ret": 0.12962962962962962,
+    "B2-delay": 0.1111111111111111,
+    "B2-yoke": 0.19444444444444445,
+    "B2-free": 0.16666666666666666,
+    "B2-ret": 0.10185185185185185
+  },
+  "qual": false
+}

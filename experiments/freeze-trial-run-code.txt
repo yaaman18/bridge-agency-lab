@@ -1,0 +1,13 @@
+# S54 code freeze (2026-11-16 08:42, claude-lab; after gates H1-H3, reference gate, wrapper tests, C1, C2 passed; lab-coder Opus 5.5; codex I-R pending)
+0009e0cbeae843e0987d394a400166c0c74ea7dc5a4c9a5976a03f32ec30e2ab  experiments/trial/build_d.sh
+33cc3b5f4cdeb81e4aa9741a01d82d1b516807b9a167a13857a2b60271c50556  experiments/trial/gates_h_d.sh
+b2b07e54ce8812773561b946b7d26c07a05ee126788efbe0e1a740f04007de3b  experiments/trial/gates_h.sh
+8ee7f3bca0559f3a99813bba172c275cf1ce58e747bc38d21af65d11fa6d0018  experiments/trial/make_trial.jl
+ac11beedf10e8fe9fc43642b7db5c2c2e8207c59111de8c4a2c2acc8b4344835  experiments/trial/pi_check.sh
+0de2e5155b26fb94c6ec39ae1e4463b21a2d8effc57bda730f10e0c67f4207b1  experiments/trial/ref_gate.sh
+bfe02e7af8fa503024728c5421ac7ebfa758b5ca9bbfbbd065825e6f26664e08  experiments/trial/s54-rehearsal.service
+cd97173ab2ad7b5077b38291b21cba70d906e92462db17ca5fcf67f2873e8dab  experiments/trial/s54-run.sh
+02dadc827bafe15dc0074f23f12c639b402b8e51ca70b1e00bd1dc83f5c5a0e0  experiments/trial/s54-trial-1.service
+43ddf5e3e05e06a80254a43bb5ad275cee8a7fbf4d0f241ac29e2986a52c0693  experiments/trial/s54-trial-2.service
+9c8dfad4973a9c5961c282edebfd14031e6bc79d7b6db898a73b2fb9faeb41a4  experiments/trial/watch.sh
+15e8240b2b322c5e263a3097579c3a4979123ae9d40b645984f07e36c876f4a7  experiments/trial/wrapper_test.sh

@@ -1,0 +1,92 @@
+== recheck with 1 thread(s): R3 true, R4 true; R3/R4 lines: recheck 45, original 45; identical as sets: true
+R3 u726 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3: steps where the read s differs from the record 0 of 253423   neg: delay reading t - 376, differing steps (must be > 0) 8643 of 9200
+R3: true
+R4 A-ret u726  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.94009; b: kept 9, cut 5 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 A-ret u727  : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 A-ret u728  : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 A-ret u729  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 2.91656; b: kept 9, cut 4 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 AB-free u726: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.75348; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 AB-free u727: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 6, given 1.40835; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 AB-free u728: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 11, given 2.86327; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 AB-free u729: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 9, given 2.05479; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 AB-ret u726 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.59278; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 AB-ret u727 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 4, given 1.12728; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 AB-ret u728 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 13, given 3.06094; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 AB-ret u729 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 7, given 1.95095; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-ret u726  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.4105; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 B-ret u727  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-ret u728  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-ret u729  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-delay u726: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.4105; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 B-delay u727: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-delay u728: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-delay u729: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-yoke u726 : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 B-yoke u727 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-yoke u728 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-yoke u729 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 partner runs: prefix equal and as specified in 16/16
+R4   neg: perturbing at tp - 1, prefix equal to class 0 (must be false) for a, b: Bool[0, 0]
+R4: true
+== recheck with 8 thread(s): R3 true, R4 true; R3/R4 lines: recheck 45, original 45; identical as sets: true
+R3 u726 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u726 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u727 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u728 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 a: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 b: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 c: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3 u729 0: delay 0 = B-ret true, self-yoke = B-ret true   neg: delay 1 = B-ret (must be false) false
+R3: steps where the read s differs from the record 0 of 253423   neg: delay reading t - 376, differing steps (must be > 0) 8643 of 9200
+R3: true
+R4 A-ret u726  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.94009; b: kept 9, cut 5 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 A-ret u727  : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 A-ret u728  : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 A-ret u729  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 2.91656; b: kept 9, cut 4 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 AB-free u726: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.75348; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 AB-free u727: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 6, given 1.40835; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 AB-free u728: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 11, given 2.86327; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 AB-free u729: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 9, given 2.05479; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 AB-ret u726 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.59278; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 AB-ret u727 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 4, given 1.12728; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 AB-ret u728 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 13, given 3.06094; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 AB-ret u729 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 7, given 1.95095; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-ret u726  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.4105; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 B-ret u727  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-ret u728  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-ret u729  : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-delay u726: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 10, given 2.4105; b: kept 11, cut 6 (start 0); c: drive from world time 3126 read 150 ahead; 0: none)
+R4 B-delay u727: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-delay u728: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-delay u729: prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 B-yoke u726 : prefix to the head of tp equal across classes true, perturbations as specified true  (dead at tp; dead at tp; dead at tp; dead at tp)
+R4 B-yoke u727 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 3, given 0.88927; b: kept 12, cut 6 (start 1); c: drive from world time 3127 read 150 ahead; 0: none)
+R4 B-yoke u728 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 12, given 2.79799; b: kept 10, cut 5 (start 0); c: drive from world time 3128 read 150 ahead; 0: none)
+R4 B-yoke u729 : prefix to the head of tp equal across classes true, perturbations as specified true  (a: body places 8, given 1.8484; b: kept 10, cut 5 (start 1); c: drive from world time 3129 read 150 ahead; 0: none)
+R4 partner runs: prefix equal and as specified in 16/16
+R4   neg: perturbing at tp - 1, prefix equal to class 0 (must be false) for a, b: Bool[0, 0]
+R4: true

@@ -1,0 +1,34 @@
+
+fixture(c, w) = P32.load_fixture(joinpath(HERE, "fixtures", string(c, "_", w, ".json")))
+"diag の JSON（行優先の平らな配列＋形）を、形に直した Dict で返す。"
+function json_tensor(d)
+    sh = Int.(d["shape"])
+    v = Float64.(d["data"])
+    return isempty(sh) ? fill(v[1]) : Array(permutedims(reshape(v, reverse(sh)...), length(sh):-1:1))
+end
+maxabs(a, b) = isempty(a) ? 0.0 : maximum(abs.(Float64.(a) .- Float64.(b)))
+"fixtures の参照（test_port.jl と同じく Bool へ戻す。Int はそのまま）。"
+reference(d) = P32.load_tensor(d)
+rowmajor(a) = vec(permutedims(Array(a), ndims(a):-1:1))   # 行優先の平らな配列（Python と同じ順）
+"mod（P32 か PT）の ACTModel を fx から組む。"
+build_model(mod, fx, state) = mod.ACTModel(fx.config, state)
+"state（fixtures の名前 → 配列）の浮動小数を T に写す（整数はそのまま）。"
+to_type(T, fx) = Dict(k => (eltype(v) <: AbstractFloat ? Array{T}(v) : copy(v)) for (k, v) in fx.state)
+"diag の py_f32/py_f64 の JSON の重みを (名前 → 配列) で返す（整数型のものは fixture のまま）。"
+function json_state(o, fx)
+    return Dict(k => (eltype(fx.state[k]) <: AbstractFloat ? json_tensor(v) : copy(fx.state[k]))
+                for (k, v) in o["state_dict"])
+end
+"The ACT の手 1〜3（x1, x2, x1）。各手の出力と carry の z を Float64 にして返す。"
+function trajectory(mod, fx, state)
+    m = build_model(mod, fx, state)
+    carry = mod.initial_carry(m, fx.inputs[PASSED[1]])
+    out_steps = NamedTuple[]
+    for name in PASSED
+        carry, out = mod.act_forward(m, carry, fx.inputs[name])
+        push!(out_steps, (logits=Float64.(out["logits"]), q_halt_logits=Float64.(out["q_halt_logits"]),
+                          q_continue_logits=Float64.(out["q_continue_logits"]),
+                          z_H=Float64.(carry.z_H), z_L=Float64.(carry.z_L)))
+    end
+    return out_steps
+end

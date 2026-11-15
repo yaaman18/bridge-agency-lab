@@ -1,0 +1,17 @@
+{
+  "kept": [
+    "a",
+    "b",
+    "c"
+  ],
+  "p2windows": 0,
+  "stop": true,
+  "p3": {
+    "c": true,
+    "b": true,
+    "a": true
+  },
+  "p2": false,
+  "wall": 60.863128900527954,
+  "p1": false
+}

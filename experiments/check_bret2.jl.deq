@@ -1,0 +1,15 @@
+function deq(a, b)
+    (a isa AbstractDict && b isa AbstractDict) && return Set(keys(a)) == Set(keys(b)) && all(deq(a[k], b[k]) for k in keys(a))
+    typeof(a) == typeof(b) || return false
+    if a isa AbstractArray
+        return size(a) == size(b) && all(deq(a[i], b[i]) for i in eachindex(a))
+    elseif a isa Tuple || a isa NamedTuple
+        return length(a) == length(b) && all(deq(a[i], b[i]) for i in 1:length(a))
+    elseif a === nothing || a isa Number || a isa AbstractString || a isa Symbol || a isa Char || a isa AbstractSet
+        return isequal(a, b)
+    elseif a isa Function
+        return a === b
+    else
+        return all(deq(getfield(a, f), getfield(b, f)) for f in fieldnames(typeof(a)))
+    end
+end

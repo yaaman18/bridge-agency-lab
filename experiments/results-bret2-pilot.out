@@ -1,0 +1,22 @@
+S59 pilot, windows 806:809 (partners 846:849), tp = [2006, 2007, 2008, 2009]
+p1 A-ret   : alive at tp in 4/4 windows   deaths Union{Nothing, Int64}[8468, 5550, nothing, nothing]
+p1 B2-free : alive at tp in 4/4 windows   deaths Union{Nothing, Int64}[nothing, 7801, nothing, nothing]
+p1 B2-ret  : alive at tp in 4/4 windows   deaths [nothing, nothing, nothing, nothing]
+p1 B2-delay: alive at tp in 4/4 windows   deaths [nothing, nothing, nothing, nothing]
+p1 B2-yoke : alive at tp in 3/4 windows   deaths Union{Nothing, Int64}[1512, 3318, nothing, nothing]
+p1: true
+p2 u806 B2-ret T0..tp-1: candidates 36 (steps 32), unpaid 8 (steps 8), paid 28 (steps 24) -> true
+p2 u807 B2-ret T0..tp-1: candidates 27 (steps 18), unpaid 14 (steps 9), paid 13 (steps 11) -> true
+p2 u808 B2-ret T0..tp-1: candidates 21 (steps 17), unpaid 8 (steps 5), paid 13 (steps 13) -> true
+p2 u809 B2-ret T0..tp-1: candidates 30 (steps 24), unpaid 12 (steps 10), paid 18 (steps 16) -> true
+p2: windows meeting 4/4 -> true
+p3 class a: B2-ret out of the band in tp..tp+299 in 3/4 windows -> kept
+p3 class b: B2-ret out of the band in tp..tp+299 in 2/4 windows -> kept
+p3 class c: B2-ret out of the band in tp..tp+299 in 2/4 windows -> kept
+== facts (B2-ret class 0, T0..tp-1 alive steps; descriptive)
+u806: judged 176, s_t min/median/max [0.0, 1.0, 11.0] (steps with s = 0: 467), smallest place remainder B - 0.2 min/median/max [9.237e-6, 0.02775, 0.5863]
+u807: judged 174, s_t min/median/max [0.0, 1.0, 7.0] (steps with s = 0: 453), smallest place remainder B - 0.2 min/median/max [5.504e-6, 0.01881, 0.1949]
+u808: judged 187, s_t min/median/max [0.0, 2.0, 10.0] (steps with s = 0: 305), smallest place remainder B - 0.2 min/median/max [1.025e-5, 0.03327, 0.483]
+u809: judged 174, s_t min/median/max [0.0, 1.0, 8.0] (steps with s = 0: 379), smallest place remainder B - 0.2 min/median/max [1.447e-5, 0.03101, 0.1482]
+pilot decision: go, classes kept a,b,c
+wall 56.0 s, threads 8

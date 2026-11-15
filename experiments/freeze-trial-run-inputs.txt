@@ -1,0 +1,41 @@
+# S54 inputs, references and n = 0 run files (lab-coder, 2026-11-16 08:41; spec r4 / freeze 4). Made by: cd experiments && julia --project=.. trial/make_trial.jl (julia 1.11.6), then sh experiments/trial/ref_gate.sh ~/s54-work/build-d (results-trial-ref.out: reference gate true). Files in experiments/trial-data/ (not tracked).
+# make_trial.json: {"seed":669,"T0":800,"drives":60480,"steps_with_both_yields_0_from_T0":0,"L2":{"dead_at":20515,"death":20514,"errors":0},"L2SF":{"dead_at":11343,"death":11342,"errors":0},"rehearsal_627_L2_D1":{"dead_at":null,"death":null,"errors":0}}
+2898578ff08b874c413b9b14212755b3fe95e2b8723beb1ed3e7282929377057  trial-data/drives-669.txt
+95abfd56511d13846a171ff7fb70a525c51a48af0357e005cfefe8a152aa5678  trial-data/rehearsal-drives-D1.txt
+aff7fc8cb3f525f1ab351e2aff269e854e10145815364ab9fef81cddc9e02b56  trial-data/birth-627-L2-D1.save
+843e304518e69e5f066bf319bae4a7342262ebb9b9a79e89b69d14aecb3b11c5  trial-data/birth-669-L2.save
+029aa56b797590b2aade1235ae1356c8ab3175085d33518cec7085c8063c4742  trial-data/birth-669-L2SF.save
+427896c40e5ef1a3fde9ad5c498959a3d875d81704efccae7066c55de2757f92  trial-data/ref-627-L2-D1.sha
+c871f0d587d6f2dc55985309d0cf0a5fc148418d222088100ea6c756df0e622c  trial-data/ref-669-L2.sha
+a5cd6148ab3842681aca9d1ced6214db30d38db9bad154339d26a8a701e8abd4  trial-data/ref-669-L2SF.sha
+591c68fc801b9b49155f3e73d635472aa4a8c7876d9fedea7d41980ca43c1e19  trial-data/final-627-L2-D1.save
+31f126b62176c52ea4dede716cffeae0f39630f6a4aec82b5aaec798cbf9d8d3  trial-data/final-669-L2.save
+9cda9db99eb03316d75a8baef28f0acadc0078a68bac741604d0051ebcf07ec6  trial-data/final-669-L2SF.save
+95e94b4c90b5c4fc1f766cb5db5fdf339f825467dabb80f669761509cf65599f  trial-data/run0-669-L2
+acd071b95af0791c1fe40b959000b71910100665abb9f98e520a2a6bde1978a5  trial-data/run0-669-L2SF
+87d23927d6ec53d5cb626350b9f61e5a59ae2c59ee2bf33622e50e4ec1b4ab17  trial-data/rehearsal-run0
+52b09bee1f8f764237bc86fcbd40e5059817e61b83cfb3614fb61df3251345ea  trial-data/mac-fast-627-L2-D1.audit
+7ef47a0ceef6308f97a023a31b4a3df672e6b4b6b2612418eb9f5b21188cc051  trial-data/mac-fast-669-L2.audit
+06d332edd0e887009509d5fa292fd0077facdad902c546ef85d24035b36fa760  trial-data/mac-fast-669-L2SF.audit
+9d0949703875500b0dfec9e7d87f0d549d39a51ae32148acf9876d43b5c057a0  trial-data/make_trial.json
+# executables (~/s54-work/build-d, from the S49d sources checked against freeze-rust-onelife-d-code.txt; builds.txt there)
+acc0ae11d246ff470cf0e517766deb2ad571ca12c5c32cbb70177a0a1267c518  build-d/mac-prod/release/onelife-run
+28e012a7fd40bb0a83774d228ac0e56a3290eec90845b7c01cbd5a23df420677  build-d/mac-prod/release/being-tools
+a886b85ae9896559d2298e9510b7549383220cdc4719c498f529f95825bebb6c  build-d/mac-fast/release/onelife-run
+462e5f580e6a8c8e4685b71d45a1ac417f97306eca699040ff0721e9ac5cbef5  build-d/mac-fast/release/being-tools
+2c2272540622558cd572b7982dc5366ffa39f5832c8397850a9451a889c7ef12  build-d/pi-prod/aarch64-unknown-linux-musl/release/onelife-run
+d7241d3225c5bafdd6ad8610aaa0965eba0974b69026afe3e164d311a645d836  build-d/pi-prod/aarch64-unknown-linux-musl/release/being-tools
+41378d1dcc54dd2dfaecd4b2483e6f20dba241768bfad7f8b37044cab361ed29  build-d/pi-fast/aarch64-unknown-linux-musl/release/onelife-run
+e9a091b336c77f36da7a8650f43a73cdee948c8838349262e6624b7c278cb050  build-d/pi-fast/aarch64-unknown-linux-musl/release/being-tools
+# trial scripts at the preparation (not a code freeze; the wrapper is placed on the Pi with this sha)
+cd97173ab2ad7b5077b38291b21cba70d906e92462db17ca5fcf67f2873e8dab  trial/s54-run.sh
+02dadc827bafe15dc0074f23f12c639b402b8e51ca70b1e00bd1dc83f5c5a0e0  trial/s54-trial-1.service
+43ddf5e3e05e06a80254a43bb5ad275cee8a7fbf4d0f241ac29e2986a52c0693  trial/s54-trial-2.service
+bfe02e7af8fa503024728c5421ac7ebfa758b5ca9bbfbbd065825e6f26664e08  trial/s54-rehearsal.service
+8ee7f3bca0559f3a99813bba172c275cf1ce58e747bc38d21af65d11fa6d0018  trial/make_trial.jl
+0de2e5155b26fb94c6ec39ae1e4463b21a2d8effc57bda730f10e0c67f4207b1  trial/ref_gate.sh
+0009e0cbeae843e0987d394a400166c0c74ea7dc5a4c9a5976a03f32ec30e2ab  trial/build_d.sh
+33cc3b5f4cdeb81e4aa9741a01d82d1b516807b9a167a13857a2b60271c50556  trial/gates_h_d.sh
+ac11beedf10e8fe9fc43642b7db5c2c2e8207c59111de8c4a2c2acc8b4344835  trial/pi_check.sh
+15e8240b2b322c5e263a3097579c3a4979123ae9d40b645984f07e36c876f4a7  trial/wrapper_test.sh
+9c8dfad4973a9c5961c282edebfd14031e6bc79d7b6db898a73b2fb9faeb41a4  trial/watch.sh

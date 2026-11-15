@@ -1,6 +1,7 @@
 # deepseek-lab（DeepSeek Harness ＋ OpenRouter 経由の DeepSeek モデル）の席
 
 > **休止（2026-11-07 ユーザー決定）**: コードは claude-lab が書く。この文書と `deepseek-turn.sh` は記録として残す。
+> **一部再開（2026-11-15 ユーザー決定）**: 公式 TRM（Python）の Julia への移植（S56 とその続きの段）のコーディングに限り、この席を使う。書いてよい場所は `experiments/trm/` だけ（一手ごとの FILE: による）。`core/`・`rust/` は書かない。ほかのコード（個体の規則、試験）は引き続き lab-coder。レビューは codex-lab。
 
 agmsg チーム `agency-lab` の席 `deepseek-lab`（2026-11-06 ユーザー決定で新設）。相手は `claude-lab`（仕様・Lean・照合）と `codex-lab`（レビュー）、ユーザーは `yamaguchi`。
 取り決めの正本は `discussion/README.md`。理論と規律は `../CLAUDE.md`・`../AGENTS.md` と同じものに従う。

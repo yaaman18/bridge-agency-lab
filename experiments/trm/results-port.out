@@ -1,0 +1,538 @@
+S56 ACT: max_abs_diff <= 0.0001; shapes/keys exact; finite; integer/bool type+value exact
+a W0 h_round_end: not applicable (no reference in fixture); model's own h_round_ends shape+finite only
+a W0 step1 output_keys PASS
+a W0 step1.logits max_abs_diff=6.686896085739136e-6 PASS
+a W0 step1.q_halt_logits max_abs_diff=0.0 PASS
+a W0 step1.q_continue_logits max_abs_diff=0.0 PASS
+a W0 step1.z_H max_abs_diff=1.049041748046875e-5 PASS
+a W0 step1.z_L max_abs_diff=6.750226020812988e-6 PASS
+a W0 step1.steps max_abs_diff=0.0 exact PASS
+a W0 step1.halted max_abs_diff=0.0 exact PASS
+a W0 step1 current_data_keys PASS
+a W0 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+a W0 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W0 step2 output_keys PASS
+a W0 step2.logits max_abs_diff=1.4916062355041504e-5 PASS
+a W0 step2.q_halt_logits max_abs_diff=0.0 PASS
+a W0 step2.q_continue_logits max_abs_diff=0.0 PASS
+a W0 step2.z_H max_abs_diff=1.996755599975586e-5 PASS
+a W0 step2.z_L max_abs_diff=2.4437904357910156e-5 PASS
+a W0 step2.steps max_abs_diff=0.0 exact PASS
+a W0 step2.halted max_abs_diff=0.0 exact PASS
+a W0 step2 current_data_keys PASS
+a W0 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+a W0 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W0 step3 output_keys PASS
+a W0 step3.logits max_abs_diff=4.604458808898926e-6 PASS
+a W0 step3.q_halt_logits max_abs_diff=0.0 PASS
+a W0 step3.q_continue_logits max_abs_diff=0.0 PASS
+a W0 step3.z_H max_abs_diff=5.21540641784668e-6 PASS
+a W0 step3.z_L max_abs_diff=4.947185516357422e-6 PASS
+a W0 step3.steps max_abs_diff=0.0 exact PASS
+a W0 step3.halted max_abs_diff=0.0 exact PASS
+a W0 step3 current_data_keys PASS
+a W0 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+a W0 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W0 step4 output_keys PASS
+a W0 step4.logits max_abs_diff=2.3245811462402344e-6 PASS
+a W0 step4.q_halt_logits max_abs_diff=0.0 PASS
+a W0 step4.q_continue_logits max_abs_diff=0.0 PASS
+a W0 step4.z_H max_abs_diff=3.0994415283203125e-6 PASS
+a W0 step4.z_L max_abs_diff=4.291534423828125e-6 PASS
+a W0 step4.steps max_abs_diff=0.0 exact PASS
+a W0 step4.halted max_abs_diff=0.0 exact PASS
+a W0 step4 current_data_keys PASS
+a W0 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+a W0 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W0 h_round_end 1.z_H shape+finite PASS
+a W0 h_round_end 1.z_L shape+finite PASS
+a W0 h_round_end 2.z_H shape+finite PASS
+a W0 h_round_end 2.z_L shape+finite PASS
+a W0 h_round_end 3.z_H shape+finite PASS
+a W0 h_round_end 3.z_L shape+finite PASS
+a W1 step1 output_keys PASS
+a W1 step1.logits max_abs_diff=7.420778274536133e-6 PASS
+a W1 step1.q_halt_logits max_abs_diff=2.384185791015625e-6 PASS
+a W1 step1.q_continue_logits max_abs_diff=4.470348358154297e-6 PASS
+a W1 step1.z_H max_abs_diff=8.165836334228516e-6 PASS
+a W1 step1.z_L max_abs_diff=8.463859558105469e-6 PASS
+a W1 step1.steps max_abs_diff=0.0 exact PASS
+a W1 step1.halted max_abs_diff=0.0 exact PASS
+a W1 step1 current_data_keys PASS
+a W1 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+a W1 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W1 step2 output_keys PASS
+a W1 step2.logits max_abs_diff=5.751848220825195e-6 PASS
+a W1 step2.q_halt_logits max_abs_diff=7.152557373046875e-7 PASS
+a W1 step2.q_continue_logits max_abs_diff=5.960464477539062e-7 PASS
+a W1 step2.z_H max_abs_diff=5.595386028289795e-6 PASS
+a W1 step2.z_L max_abs_diff=6.4373016357421875e-6 PASS
+a W1 step2.steps max_abs_diff=0.0 exact PASS
+a W1 step2.halted max_abs_diff=0.0 exact PASS
+a W1 step2 current_data_keys PASS
+a W1 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+a W1 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W1 step3 output_keys PASS
+a W1 step3.logits max_abs_diff=1.0132789611816406e-6 PASS
+a W1 step3.q_halt_logits max_abs_diff=1.5497207641601562e-6 PASS
+a W1 step3.q_continue_logits max_abs_diff=1.430511474609375e-6 PASS
+a W1 step3.z_H max_abs_diff=1.2218952178955078e-6 PASS
+a W1 step3.z_L max_abs_diff=1.3709068298339844e-6 PASS
+a W1 step3.steps max_abs_diff=0.0 exact PASS
+a W1 step3.halted max_abs_diff=0.0 exact PASS
+a W1 step3 current_data_keys PASS
+a W1 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+a W1 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W1 step4 output_keys PASS
+a W1 step4.logits max_abs_diff=1.0311603546142578e-5 PASS
+a W1 step4.q_halt_logits max_abs_diff=1.3828277587890625e-5 PASS
+a W1 step4.q_continue_logits max_abs_diff=1.2159347534179688e-5 PASS
+a W1 step4.z_H max_abs_diff=9.179115295410156e-6 PASS
+a W1 step4.z_L max_abs_diff=1.774728298187256e-5 PASS
+a W1 step4.steps max_abs_diff=0.0 exact PASS
+a W1 step4.halted max_abs_diff=0.0 exact PASS
+a W1 step4 current_data_keys PASS
+a W1 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+a W1 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W1 mixed_reset output_keys PASS
+a W1 mixed_reset.logits max_abs_diff=5.751848220825195e-6 PASS
+a W1 mixed_reset.q_halt_logits max_abs_diff=2.1457672119140625e-6 PASS
+a W1 mixed_reset.q_continue_logits max_abs_diff=8.344650268554688e-7 PASS
+a W1 mixed_reset.z_H max_abs_diff=5.595386028289795e-6 PASS
+a W1 mixed_reset.z_L max_abs_diff=6.4373016357421875e-6 PASS
+a W1 mixed_reset.steps max_abs_diff=0.0 exact PASS
+a W1 mixed_reset.halted max_abs_diff=0.0 exact PASS
+a W1 mixed_reset current_data_keys PASS
+a W1 mixed_reset.current_data.inputs max_abs_diff=0.0 exact PASS
+a W1 mixed_reset.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+a W1 h_round_end 1.z_H max_abs_diff=3.2186508178710938e-6 PASS
+a W1 h_round_end 1.z_L max_abs_diff=2.7120113372802734e-6 PASS
+a W1 h_round_end 2.z_H max_abs_diff=4.589557647705078e-6 PASS
+a W1 h_round_end 2.z_L max_abs_diff=6.183981895446777e-6 PASS
+a W1 h_round_end 3.z_H max_abs_diff=8.165836334228516e-6 PASS
+a W1 h_round_end 3.z_L max_abs_diff=8.463859558105469e-6 PASS
+b W0 h_round_end: not applicable (no reference in fixture); model's own h_round_ends shape+finite only
+b W0 step1 output_keys PASS
+b W0 step1.logits max_abs_diff=1.1920928955078125e-6 PASS
+b W0 step1.q_halt_logits max_abs_diff=0.0 PASS
+b W0 step1.q_continue_logits max_abs_diff=0.0 PASS
+b W0 step1.z_H max_abs_diff=1.6689300537109375e-6 PASS
+b W0 step1.z_L max_abs_diff=2.2649765014648438e-6 PASS
+b W0 step1.steps max_abs_diff=0.0 exact PASS
+b W0 step1.halted max_abs_diff=0.0 exact PASS
+b W0 step1 current_data_keys PASS
+b W0 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+b W0 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W0 step2 output_keys PASS
+b W0 step2.logits max_abs_diff=1.3739452697336674e-5 PASS
+b W0 step2.q_halt_logits max_abs_diff=0.0 PASS
+b W0 step2.q_continue_logits max_abs_diff=0.0 PASS
+b W0 step2.z_H max_abs_diff=2.0623207092285156e-5 PASS
+b W0 step2.z_L max_abs_diff=1.9937753677368164e-5 PASS
+b W0 step2.steps max_abs_diff=0.0 exact PASS
+b W0 step2.halted max_abs_diff=0.0 exact PASS
+b W0 step2 current_data_keys PASS
+b W0 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+b W0 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W0 step3 output_keys PASS
+b W0 step3.logits max_abs_diff=6.794929504394531e-6 PASS
+b W0 step3.q_halt_logits max_abs_diff=0.0 PASS
+b W0 step3.q_continue_logits max_abs_diff=0.0 PASS
+b W0 step3.z_H max_abs_diff=5.9604644775390625e-6 PASS
+b W0 step3.z_L max_abs_diff=7.927417755126953e-6 PASS
+b W0 step3.steps max_abs_diff=0.0 exact PASS
+b W0 step3.halted max_abs_diff=0.0 exact PASS
+b W0 step3 current_data_keys PASS
+b W0 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+b W0 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W0 step4 output_keys PASS
+b W0 step4.logits max_abs_diff=3.0100345611572266e-6 PASS
+b W0 step4.q_halt_logits max_abs_diff=0.0 PASS
+b W0 step4.q_continue_logits max_abs_diff=0.0 PASS
+b W0 step4.z_H max_abs_diff=4.76837158203125e-6 PASS
+b W0 step4.z_L max_abs_diff=5.125999450683594e-6 PASS
+b W0 step4.steps max_abs_diff=0.0 exact PASS
+b W0 step4.halted max_abs_diff=0.0 exact PASS
+b W0 step4 current_data_keys PASS
+b W0 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+b W0 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W0 h_round_end 1.z_H shape+finite PASS
+b W0 h_round_end 1.z_L shape+finite PASS
+b W0 h_round_end 2.z_H shape+finite PASS
+b W0 h_round_end 2.z_L shape+finite PASS
+b W0 h_round_end 3.z_H shape+finite PASS
+b W0 h_round_end 3.z_L shape+finite PASS
+b W1 step1 output_keys PASS
+b W1 step1.logits max_abs_diff=1.2516975402832031e-6 PASS
+b W1 step1.q_halt_logits max_abs_diff=4.76837158203125e-7 PASS
+b W1 step1.q_continue_logits max_abs_diff=1.3113021850585938e-6 PASS
+b W1 step1.z_H max_abs_diff=1.6689300537109375e-6 PASS
+b W1 step1.z_L max_abs_diff=1.1920928955078125e-6 PASS
+b W1 step1.steps max_abs_diff=0.0 exact PASS
+b W1 step1.halted max_abs_diff=0.0 exact PASS
+b W1 step1 current_data_keys PASS
+b W1 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+b W1 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W1 step2 output_keys PASS
+b W1 step2.logits max_abs_diff=1.1920928955078125e-6 PASS
+b W1 step2.q_halt_logits max_abs_diff=6.854534149169922e-7 PASS
+b W1 step2.q_continue_logits max_abs_diff=1.7881393432617188e-7 PASS
+b W1 step2.z_H max_abs_diff=9.5367431640625e-7 PASS
+b W1 step2.z_L max_abs_diff=1.4603137969970703e-6 PASS
+b W1 step2.steps max_abs_diff=0.0 exact PASS
+b W1 step2.halted max_abs_diff=0.0 exact PASS
+b W1 step2 current_data_keys PASS
+b W1 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+b W1 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W1 step3 output_keys PASS
+b W1 step3.logits max_abs_diff=9.5367431640625e-7 PASS
+b W1 step3.q_halt_logits max_abs_diff=1.4901161193847656e-7 PASS
+b W1 step3.q_continue_logits max_abs_diff=7.152557373046875e-7 PASS
+b W1 step3.z_H max_abs_diff=1.3113021850585938e-6 PASS
+b W1 step3.z_L max_abs_diff=1.1920928955078125e-6 PASS
+b W1 step3.steps max_abs_diff=0.0 exact PASS
+b W1 step3.halted max_abs_diff=0.0 exact PASS
+b W1 step3 current_data_keys PASS
+b W1 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+b W1 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W1 step4 output_keys PASS
+b W1 step4.logits max_abs_diff=4.5299530029296875e-6 PASS
+b W1 step4.q_halt_logits max_abs_diff=3.337860107421875e-6 PASS
+b W1 step4.q_continue_logits max_abs_diff=8.106231689453125e-6 PASS
+b W1 step4.z_H max_abs_diff=4.351139068603516e-6 PASS
+b W1 step4.z_L max_abs_diff=4.76837158203125e-6 PASS
+b W1 step4.steps max_abs_diff=0.0 exact PASS
+b W1 step4.halted max_abs_diff=0.0 exact PASS
+b W1 step4 current_data_keys PASS
+b W1 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+b W1 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+b W1 h_round_end 1.z_H max_abs_diff=2.86102294921875e-6 PASS
+b W1 h_round_end 1.z_L max_abs_diff=2.6226043701171875e-6 PASS
+b W1 h_round_end 2.z_H max_abs_diff=2.0489096641540527e-6 PASS
+b W1 h_round_end 2.z_L max_abs_diff=2.384185791015625e-6 PASS
+b W1 h_round_end 3.z_H max_abs_diff=1.6689300537109375e-6 PASS
+b W1 h_round_end 3.z_L max_abs_diff=1.1920928955078125e-6 PASS
+c W0 h_round_end: not applicable (no reference in fixture); model's own h_round_ends shape+finite only
+c W0 step1 output_keys PASS
+c W0 step1.logits max_abs_diff=0.00012347102165222168 FAILED first=CartesianIndex(1, 8, 2) diff=0.00012347102165222168 reference=-0.45905587
+c W0 step1.q_halt_logits max_abs_diff=0.0 PASS
+c W0 step1.q_continue_logits max_abs_diff=0.0 PASS
+c W0 step1.z_H max_abs_diff=0.00015884637832641602 FAILED first=CartesianIndex(1, 1, 28) diff=0.00012242794036865234 reference=-1.0995224
+c W0 step1.z_L max_abs_diff=0.00010263919830322266 FAILED first=CartesianIndex(1, 1, 28) diff=0.00010263919830322266 reference=-0.6159378
+c W0 step1.steps max_abs_diff=0.0 exact PASS
+c W0 step1.halted max_abs_diff=0.0 exact PASS
+c W0 step1 current_data_keys PASS
+c W0 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+c W0 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W0 step2 output_keys PASS
+c W0 step2.logits max_abs_diff=0.007732599973678589 FAILED first=CartesianIndex(1, 1, 1) diff=0.0015633106231689453 reference=0.47095743
+c W0 step2.q_halt_logits max_abs_diff=0.0 PASS
+c W0 step2.q_continue_logits max_abs_diff=0.0 PASS
+c W0 step2.z_H max_abs_diff=0.008019119501113892 FAILED first=CartesianIndex(1, 1, 1) diff=0.0011442899703979492 reference=1.24991
+c W0 step2.z_L max_abs_diff=0.007052779197692871 FAILED first=CartesianIndex(1, 1, 1) diff=0.0004678964614868164 reference=1.055364
+c W0 step2.steps max_abs_diff=0.0 exact PASS
+c W0 step2.halted max_abs_diff=0.0 exact PASS
+c W0 step2 current_data_keys PASS
+c W0 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+c W0 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W0 step3 output_keys PASS
+c W0 step3.logits max_abs_diff=0.9504181444644928 FAILED first=CartesianIndex(1, 1, 1) diff=0.058418869972229004 reference=-0.97320056
+c W0 step3.q_halt_logits max_abs_diff=0.0 PASS
+c W0 step3.q_continue_logits max_abs_diff=0.0 PASS
+c W0 step3.z_H max_abs_diff=1.5549710988998413 FAILED first=CartesianIndex(1, 1, 1) diff=0.24792170524597168 reference=1.2254871
+c W0 step3.z_L max_abs_diff=1.1180596947669983 FAILED first=CartesianIndex(1, 1, 1) diff=0.2499558925628662 reference=1.9565201
+c W0 step3.steps max_abs_diff=0.0 exact PASS
+c W0 step3.halted max_abs_diff=0.0 exact PASS
+c W0 step3 current_data_keys PASS
+c W0 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+c W0 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W0 step4 output_keys PASS
+c W0 step4.logits max_abs_diff=5.626678466796875e-5 PASS
+c W0 step4.q_halt_logits max_abs_diff=0.0 PASS
+c W0 step4.q_continue_logits max_abs_diff=0.0 PASS
+c W0 step4.z_H max_abs_diff=7.25090503692627e-5 PASS
+c W0 step4.z_L max_abs_diff=7.414817810058594e-5 PASS
+c W0 step4.steps max_abs_diff=0.0 exact PASS
+c W0 step4.halted max_abs_diff=0.0 exact PASS
+c W0 step4 current_data_keys PASS
+c W0 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+c W0 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W0 h_round_end 1.z_H shape+finite PASS
+c W0 h_round_end 1.z_L shape+finite PASS
+c W0 h_round_end 2.z_H shape+finite PASS
+c W0 h_round_end 2.z_L shape+finite PASS
+c W0 h_round_end 3.z_H shape+finite PASS
+c W0 h_round_end 3.z_L shape+finite PASS
+c W1 step1 output_keys PASS
+c W1 step1.logits max_abs_diff=9.85860824584961e-5 PASS
+c W1 step1.q_halt_logits max_abs_diff=4.0531158447265625e-5 PASS
+c W1 step1.q_continue_logits max_abs_diff=8.034706115722656e-5 PASS
+c W1 step1.z_H max_abs_diff=0.0001427978277206421 FAILED first=CartesianIndex(2, 2, 2) diff=0.0001112818717956543 reference=-0.6724711
+c W1 step1.z_L max_abs_diff=9.34600830078125e-5 PASS
+c W1 step1.steps max_abs_diff=0.0 exact PASS
+c W1 step1.halted max_abs_diff=0.0 exact PASS
+c W1 step1 current_data_keys PASS
+c W1 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+c W1 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W1 step2 output_keys PASS
+c W1 step2.logits max_abs_diff=0.02171945571899414 FAILED first=CartesianIndex(1, 1, 1) diff=0.0005008578300476074 reference=0.5429439
+c W1 step2.q_halt_logits max_abs_diff=0.016534745693206787 FAILED first=1 diff=0.0003230571746826172 reference=0.76076126
+c W1 step2.q_continue_logits max_abs_diff=0.0165289044380188 FAILED first=1 diff=0.0018008947372436523 reference=0.8094015
+c W1 step2.z_H max_abs_diff=0.0226287841796875 FAILED first=CartesianIndex(1, 1, 1) diff=0.000637352466583252 reference=-0.5381526
+c W1 step2.z_L max_abs_diff=0.05044972896575928 FAILED first=CartesianIndex(1, 1, 1) diff=0.00035196542739868164 reference=0.5724114
+c W1 step2.steps max_abs_diff=0.0 exact PASS
+c W1 step2.halted max_abs_diff=0.0 exact PASS
+c W1 step2 current_data_keys PASS
+c W1 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+c W1 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W1 step3 output_keys PASS
+c W1 step3.logits max_abs_diff=0.35357216000556946 FAILED first=CartesianIndex(1, 1, 1) diff=0.0007616281509399414 reference=-1.4413112
+c W1 step3.q_halt_logits max_abs_diff=0.10033369064331055 FAILED first=1 diff=0.03208625316619873 reference=-0.84650934
+c W1 step3.q_continue_logits max_abs_diff=0.07613509893417358 FAILED first=1 diff=0.04128456115722656 reference=-2.2341793
+c W1 step3.z_H max_abs_diff=0.5059937238693237 FAILED first=CartesianIndex(1, 1, 1) diff=0.02850337326526642 reference=0.12808266
+c W1 step3.z_L max_abs_diff=0.43531574308872223 FAILED first=CartesianIndex(1, 1, 1) diff=0.025966405868530273 reference=1.4644547
+c W1 step3.steps max_abs_diff=0.0 exact PASS
+c W1 step3.halted max_abs_diff=0.0 exact PASS
+c W1 step3 current_data_keys PASS
+c W1 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+c W1 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W1 step4 output_keys PASS
+c W1 step4.logits max_abs_diff=0.00011539459228515625 FAILED first=CartesianIndex(1, 6, 4) diff=0.00011539459228515625 reference=1.1055062
+c W1 step4.q_halt_logits max_abs_diff=4.819035530090332e-5 PASS
+c W1 step4.q_continue_logits max_abs_diff=5.4836273193359375e-5 PASS
+c W1 step4.z_H max_abs_diff=0.0001697242259979248 FAILED first=CartesianIndex(2, 3, 2) diff=0.00013172626495361328 reference=-0.5718055
+c W1 step4.z_L max_abs_diff=0.0001367330551147461 FAILED first=CartesianIndex(2, 6, 6) diff=0.0001367330551147461 reference=-1.5353646
+c W1 step4.steps max_abs_diff=0.0 exact PASS
+c W1 step4.halted max_abs_diff=0.0 exact PASS
+c W1 step4 current_data_keys PASS
+c W1 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+c W1 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+c W1 h_round_end 1.z_H max_abs_diff=7.912516593933105e-6 PASS
+c W1 h_round_end 1.z_L max_abs_diff=6.258487701416016e-6 PASS
+c W1 h_round_end 2.z_H max_abs_diff=2.9921531677246094e-5 PASS
+c W1 h_round_end 2.z_L max_abs_diff=2.0325183868408203e-5 PASS
+c W1 h_round_end 3.z_H max_abs_diff=0.0001427978277206421 FAILED first=CartesianIndex(2, 2, 2) diff=0.0001112818717956543 reference=-0.6724711
+c W1 h_round_end 3.z_L max_abs_diff=9.34600830078125e-5 PASS
+d W0 h_round_end: not applicable (no reference in fixture); model's own h_round_ends shape+finite only
+d W0 step1 output_keys PASS
+d W0 step1.logits max_abs_diff=7.316470146179199e-6 PASS
+d W0 step1.q_halt_logits max_abs_diff=0.0 PASS
+d W0 step1.q_continue_logits max_abs_diff=0.0 PASS
+d W0 step1.z_H max_abs_diff=5.125999450683594e-6 PASS
+d W0 step1.z_L max_abs_diff=5.4836273193359375e-6 PASS
+d W0 step1.steps max_abs_diff=0.0 exact PASS
+d W0 step1.halted max_abs_diff=0.0 exact PASS
+d W0 step1 current_data_keys PASS
+d W0 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+d W0 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W0 step2 output_keys PASS
+d W0 step2.logits max_abs_diff=2.086162567138672e-5 PASS
+d W0 step2.q_halt_logits max_abs_diff=0.0 PASS
+d W0 step2.q_continue_logits max_abs_diff=0.0 PASS
+d W0 step2.z_H max_abs_diff=2.863258123397827e-5 PASS
+d W0 step2.z_L max_abs_diff=2.372264862060547e-5 PASS
+d W0 step2.steps max_abs_diff=0.0 exact PASS
+d W0 step2.halted max_abs_diff=0.0 exact PASS
+d W0 step2 current_data_keys PASS
+d W0 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+d W0 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W0 step3 output_keys PASS
+d W0 step3.logits max_abs_diff=0.0001971721649169922 FAILED first=CartesianIndex(2, 5, 11) diff=0.0001971721649169922 reference=-0.6340117
+d W0 step3.q_halt_logits max_abs_diff=0.0 PASS
+d W0 step3.q_continue_logits max_abs_diff=0.0 PASS
+d W0 step3.z_H max_abs_diff=0.0002105236053466797 FAILED first=CartesianIndex(2, 7, 7) diff=0.0001068115234375 reference=-1.4768996
+d W0 step3.z_L max_abs_diff=0.00019739754498004913 FAILED first=CartesianIndex(2, 5, 7) diff=0.0001304149627685547 reference=-2.259203
+d W0 step3.steps max_abs_diff=0.0 exact PASS
+d W0 step3.halted max_abs_diff=0.0 exact PASS
+d W0 step3 current_data_keys PASS
+d W0 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+d W0 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W0 step4 output_keys PASS
+d W0 step4.logits max_abs_diff=2.9802322387695312e-6 PASS
+d W0 step4.q_halt_logits max_abs_diff=0.0 PASS
+d W0 step4.q_continue_logits max_abs_diff=0.0 PASS
+d W0 step4.z_H max_abs_diff=2.771615982055664e-6 PASS
+d W0 step4.z_L max_abs_diff=4.5299530029296875e-6 PASS
+d W0 step4.steps max_abs_diff=0.0 exact PASS
+d W0 step4.halted max_abs_diff=0.0 exact PASS
+d W0 step4 current_data_keys PASS
+d W0 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+d W0 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W0 h_round_end 1.z_H shape+finite PASS
+d W0 h_round_end 1.z_L shape+finite PASS
+d W0 h_round_end 2.z_H shape+finite PASS
+d W0 h_round_end 2.z_L shape+finite PASS
+d W0 h_round_end 3.z_H shape+finite PASS
+d W0 h_round_end 3.z_L shape+finite PASS
+d W1 step1 output_keys PASS
+d W1 step1.logits max_abs_diff=4.5299530029296875e-6 PASS
+d W1 step1.q_halt_logits max_abs_diff=2.384185791015625e-6 PASS
+d W1 step1.q_continue_logits max_abs_diff=2.130866050720215e-6 PASS
+d W1 step1.z_H max_abs_diff=5.841255187988281e-6 PASS
+d W1 step1.z_L max_abs_diff=5.9604644775390625e-6 PASS
+d W1 step1.steps max_abs_diff=0.0 exact PASS
+d W1 step1.halted max_abs_diff=0.0 exact PASS
+d W1 step1 current_data_keys PASS
+d W1 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+d W1 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W1 step2 output_keys PASS
+d W1 step2.logits max_abs_diff=3.039836883544922e-6 PASS
+d W1 step2.q_halt_logits max_abs_diff=4.5299530029296875e-6 PASS
+d W1 step2.q_continue_logits max_abs_diff=3.0994415283203125e-6 PASS
+d W1 step2.z_H max_abs_diff=5.841255187988281e-6 PASS
+d W1 step2.z_L max_abs_diff=8.285045623779297e-6 PASS
+d W1 step2.steps max_abs_diff=0.0 exact PASS
+d W1 step2.halted max_abs_diff=0.0 exact PASS
+d W1 step2 current_data_keys PASS
+d W1 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+d W1 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W1 step3 output_keys PASS
+d W1 step3.logits max_abs_diff=2.384185791015625e-6 PASS
+d W1 step3.q_halt_logits max_abs_diff=7.152557373046875e-7 PASS
+d W1 step3.q_continue_logits max_abs_diff=2.384185791015625e-6 PASS
+d W1 step3.z_H max_abs_diff=3.6954879760742188e-6 PASS
+d W1 step3.z_L max_abs_diff=6.616115570068359e-6 PASS
+d W1 step3.steps max_abs_diff=0.0 exact PASS
+d W1 step3.halted max_abs_diff=0.0 exact PASS
+d W1 step3 current_data_keys PASS
+d W1 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+d W1 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W1 step4 output_keys PASS
+d W1 step4.logits max_abs_diff=6.318092346191406e-6 PASS
+d W1 step4.q_halt_logits max_abs_diff=1.5497207641601562e-6 PASS
+d W1 step4.q_continue_logits max_abs_diff=8.344650268554688e-6 PASS
+d W1 step4.z_H max_abs_diff=1.2874603271484375e-5 PASS
+d W1 step4.z_L max_abs_diff=1.2516975402832031e-5 PASS
+d W1 step4.steps max_abs_diff=0.0 exact PASS
+d W1 step4.halted max_abs_diff=0.0 exact PASS
+d W1 step4 current_data_keys PASS
+d W1 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+d W1 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W1 mixed_reset output_keys PASS
+d W1 mixed_reset.logits max_abs_diff=5.185604095458984e-6 PASS
+d W1 mixed_reset.q_halt_logits max_abs_diff=4.5299530029296875e-6 PASS
+d W1 mixed_reset.q_continue_logits max_abs_diff=5.9604644775390625e-6 PASS
+d W1 mixed_reset.z_H max_abs_diff=4.887580871582031e-6 PASS
+d W1 mixed_reset.z_L max_abs_diff=2.7418136596679688e-6 PASS
+d W1 mixed_reset.steps max_abs_diff=0.0 exact PASS
+d W1 mixed_reset.halted max_abs_diff=0.0 exact PASS
+d W1 mixed_reset current_data_keys PASS
+d W1 mixed_reset.current_data.inputs max_abs_diff=0.0 exact PASS
+d W1 mixed_reset.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+d W1 h_round_end 1.z_H max_abs_diff=7.092952728271484e-6 PASS
+d W1 h_round_end 1.z_L max_abs_diff=6.854534149169922e-6 PASS
+d W1 h_round_end 2.z_H max_abs_diff=5.185604095458984e-6 PASS
+d W1 h_round_end 2.z_L max_abs_diff=4.470348358154297e-6 PASS
+d W1 h_round_end 3.z_H max_abs_diff=5.841255187988281e-6 PASS
+d W1 h_round_end 3.z_L max_abs_diff=5.9604644775390625e-6 PASS
+e W0 h_round_end: not applicable (no reference in fixture); model's own h_round_ends shape+finite only
+e W0 step1 output_keys PASS
+e W0 step1.logits max_abs_diff=4.351139068603516e-6 PASS
+e W0 step1.q_halt_logits max_abs_diff=0.0 PASS
+e W0 step1.q_continue_logits max_abs_diff=0.0 PASS
+e W0 step1.z_H max_abs_diff=7.033348083496094e-6 PASS
+e W0 step1.z_L max_abs_diff=7.3909759521484375e-6 PASS
+e W0 step1.steps max_abs_diff=0.0 exact PASS
+e W0 step1.halted max_abs_diff=0.0 exact PASS
+e W0 step1 current_data_keys PASS
+e W0 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+e W0 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W0 step2 output_keys PASS
+e W0 step2.logits max_abs_diff=1.704692840576172e-5 PASS
+e W0 step2.q_halt_logits max_abs_diff=0.0 PASS
+e W0 step2.q_continue_logits max_abs_diff=0.0 PASS
+e W0 step2.z_H max_abs_diff=2.1070241928100586e-5 PASS
+e W0 step2.z_L max_abs_diff=2.5391578674316406e-5 PASS
+e W0 step2.steps max_abs_diff=0.0 exact PASS
+e W0 step2.halted max_abs_diff=0.0 exact PASS
+e W0 step2 current_data_keys PASS
+e W0 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+e W0 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W0 step3 output_keys PASS
+e W0 step3.logits max_abs_diff=7.510185241699219e-5 PASS
+e W0 step3.q_halt_logits max_abs_diff=0.0 PASS
+e W0 step3.q_continue_logits max_abs_diff=0.0 PASS
+e W0 step3.z_H max_abs_diff=7.775425910949707e-5 PASS
+e W0 step3.z_L max_abs_diff=7.891654968261719e-5 PASS
+e W0 step3.steps max_abs_diff=0.0 exact PASS
+e W0 step3.halted max_abs_diff=0.0 exact PASS
+e W0 step3 current_data_keys PASS
+e W0 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+e W0 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W0 step4 output_keys PASS
+e W0 step4.logits max_abs_diff=3.814697265625e-6 PASS
+e W0 step4.q_halt_logits max_abs_diff=0.0 PASS
+e W0 step4.q_continue_logits max_abs_diff=0.0 PASS
+e W0 step4.z_H max_abs_diff=4.827976226806641e-6 PASS
+e W0 step4.z_L max_abs_diff=6.198883056640625e-6 PASS
+e W0 step4.steps max_abs_diff=0.0 exact PASS
+e W0 step4.halted max_abs_diff=0.0 exact PASS
+e W0 step4 current_data_keys PASS
+e W0 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+e W0 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W0 h_round_end 1.z_H shape+finite PASS
+e W0 h_round_end 1.z_L shape+finite PASS
+e W0 h_round_end 2.z_H shape+finite PASS
+e W0 h_round_end 2.z_L shape+finite PASS
+e W0 h_round_end 3.z_H shape+finite PASS
+e W0 h_round_end 3.z_L shape+finite PASS
+e W1 step1 output_keys PASS
+e W1 step1.logits max_abs_diff=6.16908073425293e-6 PASS
+e W1 step1.q_halt_logits max_abs_diff=1.3113021850585938e-5 PASS
+e W1 step1.q_continue_logits max_abs_diff=5.4836273193359375e-6 PASS
+e W1 step1.z_H max_abs_diff=1.11311674118042e-5 PASS
+e W1 step1.z_L max_abs_diff=9.179115295410156e-6 PASS
+e W1 step1.steps max_abs_diff=0.0 exact PASS
+e W1 step1.halted max_abs_diff=0.0 exact PASS
+e W1 step1 current_data_keys PASS
+e W1 step1.current_data.inputs max_abs_diff=0.0 exact PASS
+e W1 step1.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W1 step2 output_keys PASS
+e W1 step2.logits max_abs_diff=8.881092071533203e-6 PASS
+e W1 step2.q_halt_logits max_abs_diff=1.5974044799804688e-5 PASS
+e W1 step2.q_continue_logits max_abs_diff=6.67572021484375e-6 PASS
+e W1 step2.z_H max_abs_diff=1.1444091796875e-5 PASS
+e W1 step2.z_L max_abs_diff=1.138448715209961e-5 PASS
+e W1 step2.steps max_abs_diff=0.0 exact PASS
+e W1 step2.halted max_abs_diff=0.0 exact PASS
+e W1 step2 current_data_keys PASS
+e W1 step2.current_data.inputs max_abs_diff=0.0 exact PASS
+e W1 step2.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W1 step3 output_keys PASS
+e W1 step3.logits max_abs_diff=8.106231689453125e-6 PASS
+e W1 step3.q_halt_logits max_abs_diff=1.4543533325195312e-5 PASS
+e W1 step3.q_continue_logits max_abs_diff=1.1682510375976562e-5 PASS
+e W1 step3.z_H max_abs_diff=1.1533498764038086e-5 PASS
+e W1 step3.z_L max_abs_diff=1.2993812561035156e-5 PASS
+e W1 step3.steps max_abs_diff=0.0 exact PASS
+e W1 step3.halted max_abs_diff=0.0 exact PASS
+e W1 step3 current_data_keys PASS
+e W1 step3.current_data.inputs max_abs_diff=0.0 exact PASS
+e W1 step3.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W1 step4 output_keys PASS
+e W1 step4.logits max_abs_diff=3.4570693969726562e-6 PASS
+e W1 step4.q_halt_logits max_abs_diff=2.8759241104125977e-6 PASS
+e W1 step4.q_continue_logits max_abs_diff=4.5299530029296875e-6 PASS
+e W1 step4.z_H max_abs_diff=4.500150680541992e-6 PASS
+e W1 step4.z_L max_abs_diff=5.9604644775390625e-6 PASS
+e W1 step4.steps max_abs_diff=0.0 exact PASS
+e W1 step4.halted max_abs_diff=0.0 exact PASS
+e W1 step4 current_data_keys PASS
+e W1 step4.current_data.inputs max_abs_diff=0.0 exact PASS
+e W1 step4.current_data.puzzle_identifiers max_abs_diff=0.0 exact PASS
+e W1 h_round_end 1.z_H max_abs_diff=3.814697265625e-6 PASS
+e W1 h_round_end 1.z_L max_abs_diff=3.337860107421875e-6 PASS
+e W1 h_round_end 2.z_H max_abs_diff=4.827976226806641e-6 PASS
+e W1 h_round_end 2.z_L max_abs_diff=5.334615707397461e-6 PASS
+e W1 h_round_end 3.z_H max_abs_diff=1.11311674118042e-5 PASS
+e W1 h_round_end 3.z_L max_abs_diff=9.179115295410156e-6 PASS
+negative control (i) caught: a W1 step4 logits max_abs_diff=0.012402772903442383 first=CartesianIndex(1, 1, 1) diff=0.0024471059441566467 reference=-0.11379435
+negative control (ii) caught: a W1 step4 logits max_abs_diff=2.4995299875736237 first=CartesianIndex(1, 1, 1) diff=1.0596375241875648 reference=-0.11379435
+negative control (iii) caught: a W1 step4 logits max_abs_diff=1.356467366218567 first=CartesianIndex(1, 1, 1) diff=0.3313114866614342 reference=-0.11379435
+negative control (iv) caught: a W1 step1 logits max_abs_diff=3.653153419494629 first=CartesianIndex(1, 1, 1) diff=0.853382408618927 reference=-0.8804365
+negative control (v) caught: a W1 step1 q_halt_logits max_abs_diff=1.956952154636383 first=1 diff=0.5970944911241531 reference=0.54178846; q_continue_logits max_abs_diff=1.0583741664886475 first=1 diff=0.02332782745361328 reference=0.34316194
+negative control (vi) caught: d W1 step1 logits max_abs_diff=2.7461557388305664 first=CartesianIndex(1, 1, 1) diff=1.2169626131653786 reference=-1.0962691
+negative control (vii) caught: a W1 step4 logits max_abs_diff=3.2821776270866394 first=CartesianIndex(1, 1, 1) diff=0.48892977088689804 reference=-0.11379435
+negative control (viii) caught: c W1 step1 logits max_abs_diff=3.861585855484009 first=CartesianIndex(1, 1, 1) diff=1.4664347767829895 reference=-0.75080365
+negative controls caught: 8/8
+FAILED

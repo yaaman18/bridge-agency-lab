@@ -1,0 +1,82 @@
+{
+  "L2": {
+    "DET": {
+      "drawSteps": [
+        9004,
+        9026,
+        4761,
+        7719
+      ],
+      "minDrawSteps": 4761,
+      "meets": true,
+      "alive2000": 4
+    },
+    "UNI": {
+      "drawSteps": [
+        4967,
+        4853,
+        3977,
+        3859
+      ],
+      "minDrawSteps": 3859,
+      "meets": true,
+      "alive2000": 4
+    },
+    "admit": true,
+    "FIXP": {
+      "drawSteps": [
+        4784,
+        4838,
+        4027,
+        3609
+      ],
+      "minDrawSteps": 3609,
+      "meets": true,
+      "alive2000": 4
+    },
+    "agreesWithGrid": true
+  },
+  "PA1": true,
+  "admit": {
+    "L2": true,
+    "L2+SF": true
+  },
+  "notes": "Decisions accepted by the coordinator (2026-11-15): PA4 state = world (A, B, C, port, counters), pools, circuit state, noise RNG; the draw mechanism and the records are excluded. D5 second stream Mulberry(1000003u+56) < 0.2, judged per law. Bit files ASCII '0'/'1'. Spec r3 §8: no m0; candidate set {m1, m2}; specified probabilities UNI 1/2:1/2, FIXP 5/8:3/8; no rejection occurs in a life (W = 2 and 8).",
+  "L2+SF": {
+    "DET": {
+      "drawSteps": [
+        6257,
+        1468,
+        2941,
+        6256
+      ],
+      "minDrawSteps": 1468,
+      "meets": true,
+      "alive2000": 4
+    },
+    "UNI": {
+      "drawSteps": [
+        4452,
+        4119,
+        3937,
+        3456
+      ],
+      "minDrawSteps": 3456,
+      "meets": true,
+      "alive2000": 4
+    },
+    "admit": true,
+    "FIXP": {
+      "drawSteps": [
+        3639,
+        2897,
+        3769,
+        3352
+      ],
+      "minDrawSteps": 2897,
+      "meets": true,
+      "alive2000": 4
+    },
+    "agreesWithGrid": true
+  }
+}

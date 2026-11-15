@@ -1,0 +1,70 @@
+F: spec and predictions equal freeze 1 of freeze-stake-fix.txt: true  Dict("../discussion/specs/S53b-stake-fix.md" => "8e17777bb94c2068ab9db62265e201df75d56e3c99fad9f269e45953c5b3c7ce", "predictions-stake-fix.md" => "bebf6931f0b1aaba90db93fac5b085ae01db8b397c6da3e853521776b31e1569")
+L2 ORG u643 s3 lam2 K2 max|body drop - port rise| = 1.7763568394002505e-15, max|change of body+port+pools| = 2.8421709430404007e-13, taken 2.688 of requested 2.688
+L2 ORG u643 s3 lam8 K2 max|body drop - port rise| = 2.6645352591003757e-15, max|change of body+port+pools| = 2.2737367544323206e-13, taken 4.848000000000001 of requested 4.847999999999999
+L2 ORG u643 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 24.960000000000015, state at T0 = no levy: false
+L2 ORG u644 s3 lam2 K2 max|body drop - port rise| = 1.7763568394002505e-15, max|change of body+port+pools| = 2.8421709430404007e-13, taken 5.351999999999998 of requested 5.351999999999998
+L2 ORG u644 s3 lam8 K2 max|body drop - port rise| = 2.6645352591003757e-15, max|change of body+port+pools| = 2.2737367544323206e-13, taken 8.639999999999999 of requested 8.639999999999999
+L2 ORG u644 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 25.584000000000017, state at T0 = no levy: false
+L2 ORG-FIX u643 s3 lam2 K2 max|body drop - port rise| = 1.7763568394002505e-15, max|change of body+port+pools| = 2.8421709430404007e-13, taken 2.724 of requested 2.724
+L2 ORG-FIX u643 s3 lam8 K2 max|body drop - port rise| = 2.6645352591003757e-15, max|change of body+port+pools| = 2.2737367544323206e-13, taken 6.0 of requested 6.0
+L2 ORG-FIX u643 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 24.960000000000015, state at T0 = no levy: false
+L2 ORG-FIX u644 s3 lam2 K2 max|body drop - port rise| = 1.7763568394002505e-15, max|change of body+port+pools| = 2.2737367544323206e-13, taken 5.4599999999999955 of requested 5.4599999999999955
+L2 ORG-FIX u644 s3 lam8 K2 max|body drop - port rise| = 2.6645352591003757e-15, max|change of body+port+pools| = 1.7053025658242404e-13, taken 8.543999999999999 of requested 8.543999999999999
+L2 ORG-FIX u644 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 25.584000000000017, state at T0 = no levy: false
+L2+SF ORG u643 s3 lam2 K2 max|body drop - port rise| = 3.552713678800501e-15, max|change of body+port+pools| = 3.410605131648481e-13, taken 22.90799999999999 of requested 22.90799999999999
+L2+SF ORG u643 s3 lam8 K2 max|body drop - port rise| = 3.552713678800501e-15, max|change of body+port+pools| = 3.410605131648481e-13, taken 12.096000000000004 of requested 12.096000000000002
+L2+SF ORG u643 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 26.92800000000002, state at T0 = no levy: false
+L2+SF ORG u644 s3 lam2 K2 max|body drop - port rise| = 1.7763568394002505e-15, max|change of body+port+pools| = 2.8421709430404007e-13, taken 17.675999999999995 of requested 17.675999999999995
+L2+SF ORG u644 s3 lam8 K2 max|body drop - port rise| = 3.552713678800501e-15, max|change of body+port+pools| = 2.2737367544323206e-13, taken 11.136000000000003 of requested 11.136000000000001
+L2+SF ORG u644 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 28.65600000000002, state at T0 = no levy: false
+L2+SF ORG-FIX u643 s3 lam2 K2 max|body drop - port rise| = 3.552713678800501e-15, max|change of body+port+pools| = 3.410605131648481e-13, taken 50.07599999999999 of requested 50.075999999999986
+L2+SF ORG-FIX u643 s3 lam8 K2 max|body drop - port rise| = 3.552713678800501e-15, max|change of body+port+pools| = 3.410605131648481e-13, taken 50.208 of requested 50.208
+L2+SF ORG-FIX u643 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 26.92800000000002, state at T0 = no levy: false
+L2+SF ORG-FIX u644 s3 lam2 K2 max|body drop - port rise| = 1.7763568394002505e-15, max|change of body+port+pools| = 1.7053025658242404e-13, taken 6.503999999999996 of requested 6.503999999999996
+L2+SF ORG-FIX u644 s3 lam8 K2 max|body drop - port rise| = 3.552713678800501e-15, max|change of body+port+pools| = 2.2737367544323206e-13, taken 10.896000000000003 of requested 10.896
+L2+SF ORG-FIX u644 K3 taken before T0 = 0.0, state at T0 = no levy: true   neg (levy from 0): taken before T0 = 28.65600000000002, state at T0 = no levy: false
+K1 zero levy = body_org_run (40 runs): true   neg: s1 lam2 = no levy (must be false): Bool[0, 0, 0, 0, 0, 0, 0, 0]
+K2 balance <= 1e-12 (16 runs): true   neg: half to the port passes (must be false): Bool[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+K3 (8 runs): true   neg: levy from 0 passes (must be false): Bool[0, 0, 0, 0, 0, 0, 0, 0]
+K4 s0 lam0 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s0 lam0 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s0 lam0 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s0 lam0 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam0 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam0 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam0 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam0 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam2 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam2 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam2 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam2 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam8 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam8 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam8 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s1 lam8 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam0 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam0 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam0 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam0 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam2 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam2 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam2 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam2 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam8 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam8 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam8 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s2 lam8 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam0 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam0 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam0 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam0 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam2 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam2 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam2 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam2 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam8 L2 u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam8 L2 u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam8 L2+SF u643: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 s3 lam8 L2+SF u644: FIX state at T0 = ORG: true, FIX state = saved and kept constant after T0: true   neg: ORG departs from saved (must be true): true, G2 on ORG (must be false): false, kept altered (must be false): false
+K4 (40 pairs): true   negative controls behave: true
+== summary {"K3":true,"K4":true,"K2":true,"body_org.jl sha":"022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942","F":true,"K1":true}

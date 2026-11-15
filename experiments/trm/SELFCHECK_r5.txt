@@ -1,0 +1,57 @@
+PASS module_calls_equal_forward_a_W0 bad=[]
+PASS PT5-0_old_fixtures_bitequal_a_W0 bad=[]
+PASS chain_a_W0 H=3 L=6 bad=[]
+PASS readback_a_W0 bad=[]
+INFO file a_W0 a_W0.json
+PASS module_calls_equal_forward_a_W1 bad=[]
+PASS PT5-0_old_fixtures_bitequal_a_W1 bad=[]
+PASS chain_a_W1 H=3 L=6 bad=[]
+PASS readback_a_W1 bad=[]
+INFO file a_W1 a_W1.json
+PASS module_calls_equal_forward_b_W0 bad=[]
+PASS PT5-0_old_fixtures_bitequal_b_W0 bad=[]
+PASS chain_b_W0 H=3 L=6 bad=[]
+PASS readback_b_W0 bad=[]
+INFO file b_W0 b_W0.json
+PASS module_calls_equal_forward_b_W1 bad=[]
+PASS PT5-0_old_fixtures_bitequal_b_W1 bad=[]
+PASS chain_b_W1 H=3 L=6 bad=[]
+PASS readback_b_W1 bad=[]
+INFO file b_W1 b_W1.json
+PASS module_calls_equal_forward_c_W0 bad=[]
+PASS PT5-0_old_fixtures_bitequal_c_W0 bad=[]
+PASS chain_c_W0 H=3 L=6 bad=[]
+PASS readback_c_W0 bad=[]
+INFO file c_W0 c_W0.json
+PASS module_calls_equal_forward_c_W1 bad=[]
+PASS PT5-0_old_fixtures_bitequal_c_W1 bad=[]
+PASS chain_c_W1 H=3 L=6 bad=[]
+PASS readback_c_W1 bad=[]
+INFO file c_W1 c_W1.json
+PASS module_calls_equal_forward_d_W0 bad=[]
+PASS PT5-0_old_fixtures_bitequal_d_W0 bad=[]
+PASS chain_d_W0 H=3 L=6 bad=[]
+PASS readback_d_W0 bad=[]
+INFO file d_W0 d_W0.json
+PASS module_calls_equal_forward_d_W1 bad=[]
+PASS PT5-0_old_fixtures_bitequal_d_W1 bad=[]
+PASS chain_d_W1 H=3 L=6 bad=[]
+PASS readback_d_W1 bad=[]
+INFO file d_W1 d_W1.json
+PASS module_calls_equal_forward_e_W0 bad=[]
+PASS PT5-0_old_fixtures_bitequal_e_W0 bad=[]
+PASS chain_e_W0 H=3 L=6 bad=[]
+PASS readback_e_W0 bad=[]
+INFO file e_W0 e_W0.json
+PASS module_calls_equal_forward_e_W1 bad=[]
+PASS PT5-0_old_fixtures_bitequal_e_W1 bad=[]
+PASS chain_e_W1 H=3 L=6 bad=[]
+PASS readback_e_W1 bad=[]
+INFO file e_W1 e_W1.json
+PASS bitequal_rejects_signed_zero torch.equal=True, tensor_eq=False
+PASS bitequal_accepts_identical 
+PASS chain_rejects_missing_round bad=['rounds2!=3', 'carry']
+PASS chain_accepts_recorded bad=[]
+PASS upstream_sha_trm_py 3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c
+files 10
+ALL PASS

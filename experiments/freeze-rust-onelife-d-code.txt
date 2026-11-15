@@ -1,0 +1,22 @@
+# S49d code freeze (lab-coder, 2026-11-15 08:51; after gates F, I0 (with core/check/run.sh), I1 (H2 form), I2, I3 and a smoke run with the r3 judging of PD1 on 627-L2-D1, N = 40; before the one main run)
+# execution: sh experiments/onelife_rust_partial_check.sh (full mode, once, no selective re-run); Mac 26.7.3 x86_64, cargo 1.99.0 (5f94df478 2026-08-27), julia version 1.11.6; results experiments/results-rust-onelife-d.out
+# S49c build for the comparisons: git archive 46680d1 rust (inside the script's work dir); the d5a7f6d build for PI1 as in S49c; PD5 uses hdiutil 2 MB HFS+ images
+# PD1 is judged in its r3 form (predictions r3, freeze 3), written after the first smoke; r2's PD1 is a miss
+# changed file
+b5b0e2acb95dd4b2e023af7af1ffc742bb493652bb583f4d7fb447d6f5f4305c  ../rust/being-tools/src/bin/onelife-run.rs
+# new files
+4eb42dd82ce51ae4e6f768db003d43d74f111b1fff357f0b7d56a94598f545ab  onelife_rust_partial_check.sh
+# spec r3 and predictions r3 (freeze 3)
+a1e5376af84ef7c6f8061c8d396b1f47b86820bd09427fba6974d2bb167a0ac6  ../discussion/specs/S49d-partial-line.md
+a0b35253848a5e8c0a407cd9538c48a4816c1d3209de434ef7cd3376e347ebf5  predictions-rust-onelife-d.md
+# reference (not changed)
+fa138f31c5cbbd4336acd90e463c8e135f1b49e820e860c347418f24a126eaeb  ../rust/being-tools/src/main.rs
+36975eec83f44188db51806e8b560023ba54d2d7d9146854d5170e0a6d4a4afc  ../rust/being-tools/Cargo.toml
+9710a8bf3b9c4bc3162cd6aed8e9e8bf2ec930ba3a3a9127fd98de933f84e75a  ../rust/Cargo.lock
+689487e58047c0edec618ddc927a8fd998fe4ffdb23310fc2a9c09d12c0a0d70  ../rust/being-core/src/onelife.rs
+e8026d8df92747728db5b1094ca5917c6f9cceed283dde6db9306e79047d7faa  ../rust/being-core/src/matter.rs
+a759621541673a8e4c4a00790af18dccbb93632131713b3b13ce675a4c37f3ae  ../rust/being-core/src/fdexp.rs
+a86d61a15fd896a5b5fd42b2ce7e9d7f8e0993ec676fe19d4fa49f2dabb1d533  ../rust/being-core/src/sha256.rs
+6aaa0cc107df2e26ef2d86bdbe218e2a24b067c1a8c0b8c0d45796835027457c  onelife_rust_audit_check.sh
+b2b07e54ce8812773561b946b7d26c07a05ee126788efbe0e1a740f04007de3b  trial/gates_h.sh
+1e127ae7d61061fa27682372a3b0deb6160d8b91f6a89ad864e4e9ce1ea840d4  ../core/check/onelife_scenarios.jl

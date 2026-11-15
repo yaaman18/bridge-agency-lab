@@ -1,0 +1,9 @@
+ERROR: LoadError: first line is not 'module TrmPort'
+Stacktrace:
+ [1] make_f64_source(src::String)
+   @ Main ~/bridge-agency-lab/experiments/trm/diag_precision.jl:42
+ [2] write_f64_port()
+   @ Main ~/bridge-agency-lab/experiments/trm/diag_precision.jl:52
+ [3] top-level scope
+   @ ~/bridge-agency-lab/experiments/trm/diag_precision.jl:57
+in expression starting at /Users/yamaguchimitsuyuki/bridge-agency-lab/experiments/trm/diag_precision.jl:57

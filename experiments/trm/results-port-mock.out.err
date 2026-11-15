@@ -1,0 +1,25 @@
+KeyError: key "shape" not found
+
+Stacktrace:
+  [1] (::JSON.var"#7#8"{String})()
+    @ JSON ~/.julia/packages/JSON/eypqd/src/object.jl:142
+  [2] get
+    @ ~/.julia/packages/JSON/eypqd/src/object.jl:137 [inlined]
+  [3] getindex
+    @ ~/.julia/packages/JSON/eypqd/src/object.jl:142 [inlined]
+  [4] load_tensor(d::JSON.Object{String, Any})
+    @ Main.MockPort ~/bridge-agency-lab/experiments/trm/selftest_port_mock.jl:47
+  [5] (::Main.MockPort.var"#12#14")(::Pair{String, Any})
+    @ Main.MockPort ./none:0
+  [6] iterate
+    @ ./generator.jl:48 [inlined]
+  [7] Dict{String, Any}(kv::Base.Generator{Base.Iterators.Filter{Main.MockPort.var"#13#15", JSON.Object{String, Any}}, Main.MockPort.var"#12#14"})
+    @ Base ./dict.jl:95
+  [8] act_forward(m::Main.MockPort.MockModel, carry::Main.MockPort.MockCarry, batch::Dict{String, Any})
+    @ Main.MockPort ~/bridge-agency-lab/experiments/trm/selftest_port_mock.jl:123
+  [9] run_driver(corrupt::Symbol; injected::Bool)
+    @ Main ~/bridge-agency-lab/experiments/trm/selftest_port_mock.jl:194
+ [10] run_driver
+    @ ~/bridge-agency-lab/experiments/trm/selftest_port_mock.jl:187 [inlined]
+ [11] top-level scope
+    @ ~/bridge-agency-lab/experiments/trm/selftest_port_mock.jl:256

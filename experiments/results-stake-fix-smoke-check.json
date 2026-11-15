@@ -1,0 +1,612 @@
+{
+  "L2": {
+    "s3 lam2": {
+      "agree": [
+        0.988804347826087,
+        0.9764130434782609
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.5542934782608695,
+        "ORG": 2.5542934782608695
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 8.183999999999996,
+        "ORG": 8.039999999999997
+      },
+      "levyTaken": {
+        "ORG-FIX": 8.183999999999996,
+        "ORG": 8.039999999999997
+      },
+      "agreeAlive": [
+        0.5535714285714286,
+        0.5246636771300448
+      ]
+    },
+    "s1 lam0": {
+      "agree": [
+        0.8939130434782608,
+        0.3634782608695652
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.8598369565217392,
+        "ORG": 1.8598369565217392
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.7692307692307693,
+        0.6782675947409126
+      ]
+    },
+    "PF2": {
+      "neg": 0,
+      "predicted": "larger",
+      "bothAlive": {
+        "neg": 0,
+        "pos": 1,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "nBothAlive": 1,
+      "pos": 1,
+      "judge": "検出不能",
+      "dir": "undetectable",
+      "holds": false
+    },
+    "s3 lam8": {
+      "agree": [
+        0.9922826086956522,
+        0.9983695652173913
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.5542934782608695,
+        "ORG": 2.5542934782608695
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 14.543999999999999,
+        "ORG": 13.487999999999998
+      },
+      "levyTaken": {
+        "ORG-FIX": 14.543999999999999,
+        "ORG": 13.488
+      },
+      "agreeAlive": [
+        0.5346534653465347,
+        0.9269662921348315
+      ]
+    },
+    "s1 lam8": {
+      "agree": [
+        0.991195652173913,
+        0.9855434782608695
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.8598369565217392,
+        "ORG": 1.8598369565217392
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 7.840000000000003,
+        "ORG": 7.536000000000003
+      },
+      "levyTaken": {
+        "ORG-FIX": 7.840000000000003,
+        "ORG": 7.536000000000003
+      },
+      "agreeAlive": [
+        0.9135802469135802,
+        0.6900826446280992
+      ]
+    },
+    "PF3": {
+      "lam2": {
+        "reason": "not eligible (common set < 8 at T0+2000 and at T0+500)",
+        "dir": "undetectable"
+      },
+      "lam0": {
+        "reason": "not eligible (common set < 8 at T0+2000 and at T0+500)",
+        "dir": "undetectable"
+      },
+      "lam8": {
+        "reason": "not eligible (common set < 8 at T0+2000 and at T0+500)",
+        "dir": "undetectable"
+      },
+      "holds": false
+    },
+    "s1 lam2": {
+      "agree": [
+        0.8960869565217391,
+        0.33
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.8598369565217392,
+        "ORG": 1.8598369565217392
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 37.61600000000003,
+        "ORG": 18.240000000000013
+      },
+      "levyTaken": {
+        "ORG-FIX": 37.61600000000003,
+        "ORG": 18.240000000000013
+      },
+      "agreeAlive": [
+        0.7843137254901961,
+        0.6608594657375145
+      ]
+    },
+    "PF4": {
+      "lam2": {
+        "neg": 1,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable",
+        "holds": false
+      },
+      "lam8": {
+        "neg": 1,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable",
+        "holds": true
+      },
+      "holds": false
+    },
+    "PF1": {
+      "primary": {
+        "0": {
+          "nCommon2000": 0,
+          "nCommon500": 1,
+          "x": null,
+          "windows": [],
+          "quantity": "undetectable"
+        },
+        "2": {
+          "nCommon2000": 0,
+          "nCommon500": 0,
+          "x": null,
+          "windows": [],
+          "quantity": "undetectable"
+        },
+        "8": {
+          "nCommon2000": 0,
+          "nCommon500": 0,
+          "x": null,
+          "windows": [],
+          "quantity": "undetectable"
+        }
+      },
+      "holds": false
+    },
+    "s3 lam0": {
+      "agree": [
+        0.5640217391304347,
+        0.03391304347826087
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.5542934782608695,
+        "ORG": 2.5542934782608695
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.5539568345323741,
+        0.4394366197183099
+      ]
+    },
+    "s2 lam0": {
+      "agree": [
+        0.5703260869565218,
+        0.4391304347826087
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.1971739130434784,
+        "ORG": 2.1971739130434784
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.7245762711864406,
+        0.6039174641148325
+      ]
+    },
+    "s2 lam8": {
+      "agree": [
+        0.9968478260869565,
+        0.9933695652173913
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.1971739130434784,
+        "ORG": 2.1971739130434784
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 11.712000000000003,
+        "ORG": 12.512000000000004
+      },
+      "levyTaken": {
+        "ORG-FIX": 11.712000000000003,
+        "ORG": 12.512000000000004
+      },
+      "agreeAlive": [
+        0.9130434782608695,
+        0.7675438596491229
+      ]
+    },
+    "s0 lam0": {
+      "agree": [
+        0.8970652173913043,
+        0.8933695652173913
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.5349184782608694,
+        "ORG": 1.5349184782608694
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.8397790055248618,
+        0.7466110531803962
+      ]
+    },
+    "s2 lam2": {
+      "agree": [
+        0.8919565217391304,
+        0.8318478260869565
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.1971739130434784,
+        "ORG": 2.1971739130434784
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 5.096000000000003,
+        "ORG": 23.256000000000014
+      },
+      "levyTaken": {
+        "ORG-FIX": 5.096000000000003,
+        "ORG": 23.256000000000014
+      },
+      "agreeAlive": [
+        0.7674418604651163,
+        0.47393364928909953
+      ]
+    }
+  },
+  "L2+SF": {
+    "s3 lam2": {
+      "agree": [
+        0.702391304347826,
+        0.873804347826087
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.5542934782608695,
+        "ORG": 2.5542934782608695
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 56.579999999999984,
+        "ORG": 40.58399999999999
+      },
+      "levyTaken": {
+        "ORG-FIX": 56.57999999999999,
+        "ORG": 40.58399999999999
+      },
+      "agreeAlive": [
+        0.7218438973284442,
+        0.511070110701107
+      ]
+    },
+    "s1 lam0": {
+      "agree": [
+        0.8797826086956522,
+        0.21532608695652175
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.8598369565217392,
+        "ORG": 1.8598369565217392
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.7155509247199792,
+        0.6612999403697079
+      ]
+    },
+    "PF2": {
+      "neg": 0,
+      "predicted": "undetectable",
+      "bothAlive": {
+        "neg": 0,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable"
+      },
+      "nBothAlive": 0,
+      "pos": 1,
+      "judge": "検出不能",
+      "dir": "undetectable",
+      "holds": true
+    },
+    "s3 lam8": {
+      "agree": [
+        0.9069565217391304,
+        0.9942391304347826
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.5542934782608695,
+        "ORG": 2.5542934782608695
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 61.104,
+        "ORG": 23.232000000000003
+      },
+      "levyTaken": {
+        "ORG-FIX": 61.104,
+        "ORG": 23.232000000000006
+      },
+      "agreeAlive": [
+        0.753968253968254,
+        0.788546255506608
+      ]
+    },
+    "s1 lam8": {
+      "agree": [
+        0.9368478260869565,
+        0.9836956521739131
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.8598369565217392,
+        "ORG": 1.8598369565217392
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 23.05600000000002,
+        "ORG": 16.704000000000008
+      },
+      "levyTaken": {
+        "ORG-FIX": 23.05600000000002,
+        "ORG": 16.704000000000008
+      },
+      "agreeAlive": [
+        0.7191358024691358,
+        0.6759259259259259
+      ]
+    },
+    "PF3": {
+      "lam2": {
+        "reason": "not eligible (common set < 8 at T0+2000 and at T0+500)",
+        "dir": "undetectable"
+      },
+      "lam0": {
+        "reason": "not eligible (common set < 8 at T0+2000 and at T0+500)",
+        "dir": "undetectable"
+      },
+      "lam8": {
+        "reason": "not eligible (common set < 8 at T0+2000 and at T0+500)",
+        "dir": "undetectable"
+      },
+      "holds": true
+    },
+    "s1 lam2": {
+      "agree": [
+        0.9326086956521739,
+        0.9826086956521739
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.8598369565217392,
+        "ORG": 1.8598369565217392
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 6.660000000000004,
+        "ORG": 5.124000000000002
+      },
+      "levyTaken": {
+        "ORG-FIX": 6.660000000000004,
+        "ORG": 5.124000000000002
+      },
+      "agreeAlive": [
+        0.6822840409956076,
+        0.7341772151898734
+      ]
+    },
+    "PF4": {
+      "lam2": {
+        "neg": 1,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable",
+        "holds": false
+      },
+      "lam8": {
+        "neg": 1,
+        "pos": 0,
+        "judge": "検出不能",
+        "dir": "undetectable",
+        "holds": true
+      },
+      "holds": false
+    },
+    "PF1": {
+      "primary": {
+        "0": {
+          "nCommon2000": 0,
+          "nCommon500": 2,
+          "x": null,
+          "windows": [],
+          "quantity": "undetectable"
+        },
+        "2": {
+          "nCommon2000": 0,
+          "nCommon500": 2,
+          "x": null,
+          "windows": [],
+          "quantity": "undetectable"
+        },
+        "8": {
+          "nCommon2000": 0,
+          "nCommon500": 0,
+          "x": null,
+          "windows": [],
+          "quantity": "undetectable"
+        }
+      },
+      "holds": false
+    },
+    "s3 lam0": {
+      "agree": [
+        0.6129347826086956,
+        0.5103260869565217
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.5542934782608695,
+        "ORG": 2.5542934782608695
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.6577627434970256,
+        0.5103260869565217
+      ]
+    },
+    "s2 lam0": {
+      "agree": [
+        0.7618478260869566,
+        0.49467391304347824
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.1971739130434784,
+        "ORG": 2.1971739130434784
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.592317624273725,
+        0.49467391304347824
+      ]
+    },
+    "s2 lam8": {
+      "agree": [
+        0.945,
+        0.981304347826087
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.1971739130434784,
+        "ORG": 2.1971739130434784
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 43.20000000000003,
+        "ORG": 35.04000000000002
+      },
+      "levyTaken": {
+        "ORG-FIX": 43.20000000000003,
+        "ORG": 35.04000000000002
+      },
+      "agreeAlive": [
+        0.7520325203252033,
+        0.6902985074626866
+      ]
+    },
+    "s0 lam0": {
+      "agree": [
+        0.9744565217391304,
+        0.7551086956521739
+      ],
+      "yieldMean": {
+        "ORG-FIX": 1.5349184782608694,
+        "ORG": 1.5349184782608694
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "levyTaken": {
+        "ORG-FIX": 0.0,
+        "ORG": 0.0
+      },
+      "agreeAlive": [
+        0.7920353982300885,
+        0.506108202443281
+      ]
+    },
+    "s2 lam2": {
+      "agree": [
+        0.7067391304347826,
+        0.23967391304347826
+      ],
+      "yieldMean": {
+        "ORG-FIX": 2.1971739130434784,
+        "ORG": 2.1971739130434784
+      },
+      "keptConst": 2,
+      "levyReq": {
+        "ORG-FIX": 36.816000000000024,
+        "ORG": 74.51200000000004
+      },
+      "levyTaken": {
+        "ORG-FIX": 36.816000000000024,
+        "ORG": 74.51200000000004
+      },
+      "agreeAlive": [
+        0.7168774051676745,
+        0.46548323471400394
+      ]
+    }
+  }
+}

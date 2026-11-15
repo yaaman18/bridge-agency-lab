@@ -12,7 +12,8 @@
 //! drive; it never reads the time (only Duration and thread::sleep). The test build (feature fastinterval) has 0.
 //! The audit (S49c §2): "<name>.audit" beside the run file, append only, one chained line per record (start, wait,
 //! begin, commit, end, error, break). Its tail is read only to chain the next line; it never reaches the state, n or
-//! the run file. If the audit cannot be written, the run stops (exit 10) before stepping.
+//! the run file. If the audit cannot be written, the run stops (exit 10) before stepping. An audit whose last line has
+//! no newline (S49d) gets one newline before its break line, so the break stands on a line of its own.
 use being_core::{onelife, sha256::sha256};
 use std::io::{BufRead, Write};
 use std::os::unix::io::AsRawFd;
@@ -231,17 +232,24 @@ impl Audit {
     /// that starts a new chain from GENESIS.
     fn open(path: &Path) -> Result<Audit, String> {
         let ap = beside(path, ".audit");
-        let (tail, brk) = match std::fs::read(&ap) {
-            Ok(b) => match chain_tail(&b) {
-                Some(t) => (t, None),
-                None => (GENESIS.to_string(), Some("mismatch")),
-            },
-            Err(e) if e.kind() == std::io::ErrorKind::NotFound => (GENESIS.to_string(), Some("missing")),
-            Err(_) => (GENESIS.to_string(), Some("unreadable")),
+        let (tail, brk, nl) = match std::fs::read(&ap) {
+            Ok(b) => {
+                // S49d: a partial last line is closed by one newline before the break
+                let nl = b.last().map_or(false, |&x| x != b'\n');
+                match chain_tail(&b) {
+                    Some(t) => (t, None, false),
+                    None => (GENESIS.to_string(), Some("mismatch"), nl),
+                }
+            }
+            Err(e) if e.kind() == std::io::ErrorKind::NotFound => (GENESIS.to_string(), Some("missing"), false),
+            Err(_) => (GENESIS.to_string(), Some("unreadable"), false),
         };
         let f = std::fs::OpenOptions::new().append(true).create(true).open(&ap).map_err(|e| format!("cannot open the audit {}: {}", ap.display(), e))?;
         let mut a = Audit { f, tail };
         if let Some(r) = brk {
+            if nl {
+                a.f.write_all(b"\n").map_err(|e| format!("writing the audit: {}", e))?;
+            }
             a.log(&format!("break {}", r))?;
         }
         Ok(a)

@@ -1,0 +1,12 @@
+# S49d freeze 0 (spec r1 and predictions r1, before the S-R; 2026-11-15 08:13)
+5421ff6f67562bc7118758fc5531516b4fe9ed64d42dd6ac4780ec2bc394415b  ../discussion/specs/S49d-partial-line.md
+a748821bb4f88f5380a20dfa60aebecd3e5802bffaec42b2ba4cae9280ef7971  predictions-rust-onelife-d.md
+# S49d freeze 1 (spec r2 and predictions r2 after the S-R, before any code change; 2026-11-15 08:14)
+84ebe951d8f4d3e8c4699beaca93c50214a64e8e390ce70a20aa5b9639b49dcf  ../discussion/specs/S49d-partial-line.md
+5723ab0f3d2ed641bb71781f648d5b24177c6ee7e4959215f20cf57b4d9c5d75  predictions-rust-onelife-d.md
+# S49d freeze 2 (predictions r3: PD1 corrected after the smoke, r2's PD1 recorded as a miss; spec unchanged; before the code freeze and the one main run; 2026-11-15 08:43)
+84ebe951d8f4d3e8c4699beaca93c50214a64e8e390ce70a20aa5b9639b49dcf  ../discussion/specs/S49d-partial-line.md
+a0b35253848a5e8c0a407cd9538c48a4816c1d3209de434ef7cd3376e347ebf5  predictions-rust-onelife-d.md
+# S49d freeze 3 (spec r3: the boundary of a record stated; predictions r3 as in freeze 2; before the code freeze and the one main run; 2026-11-15 08:43)
+a1e5376af84ef7c6f8061c8d396b1f47b86820bd09427fba6974d2bb167a0ac6  ../discussion/specs/S49d-partial-line.md
+a0b35253848a5e8c0a407cd9538c48a4816c1d3209de434ef7cd3376e347ebf5  predictions-rust-onelife-d.md

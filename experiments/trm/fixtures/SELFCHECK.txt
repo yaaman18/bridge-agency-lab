@@ -1,0 +1,145 @@
+S56 手 1 oracle_export.py 自己検査
+upstream: /Users/yamaguchimitsuyuki/trm_test/TinyRecursiveModels commit 7de0d20 (git rev-parse --short HEAD)
+env: {"python": "3.11.13", "torch": "2.2.2", "einops": "0.8.1", "pydantic": "2.11.7", "numpy": "1.26.4", "platform": "x86_64", "upstream_commit": "7de0d20", "upstream_files": {"models/common.py": "fa749ad9b68ac0852f9cda157baa3a9c2ff8abaee973751b32b7cd010a4cf859", "models/layers.py": "519d38a4668c343868bf31a5853cab7f455f9dcac0cbcc36e02f95dce9fb01e7", "models/recursive_reasoning/trm.py": "3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c", "models/sparse_embedding.py": "9429742ce022918751331acf92c1a9b8d0f2f364e9acef5d71fb81b886c7a2d0"}, "nn_buffer_shim": {"used": true, "description": "torch.nn.Buffer shim: Buffer(data, persistent=..) returns a _BufferValue holder; patched nn.Module.__setattr__ sees it, calls nn.Module.register_buffer(name, data, persistent=persistent) and rebinds the name to self._buffers[name]. Not a plain tensor assignment.", "patcher": "oracle_export.py BUFFER_SHIM_SRC", "source_sha256": "c2dfefa11b095d81052a00ef38aa0b69b95868bf162f31af4fe7bcfbd3696416"}}
+upstream_env_sha fa749ad9b68ac0852f9cda157baa3a9c2ff8abaee973751b32b7cd010a4cf859  models/common.py
+upstream_env_sha 519d38a4668c343868bf31a5853cab7f455f9dcac0cbcc36e02f95dce9fb01e7  models/layers.py
+upstream_env_sha 3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c  models/recursive_reasoning/trm.py
+upstream_env_sha 9429742ce022918751331acf92c1a9b8d0f2f364e9acef5d71fb81b886c7a2d0  models/sparse_embedding.py
+PASS upstream_commit 7de0d20 (starts with 7de0d20: True)
+PASS upstream_sha models/sparse_embedding.py  9429742ce022918751331acf92c1a9b8d0f2f364e9acef5d71fb81b886c7a2d0
+PASS upstream_sha models/common.py  fa749ad9b68ac0852f9cda157baa3a9c2ff8abaee973751b32b7cd010a4cf859
+PASS upstream_sha models/layers.py  519d38a4668c343868bf31a5853cab7f455f9dcac0cbcc36e02f95dce9fb01e7
+PASS upstream_sha models/recursive_reasoning/trm.py  3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c
+PASS buffer_shim register_buffer+rebind=True persistent=[p]=True dtype_move=True
+PASS H_init_L_init_in_state_dict_a_W0 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_a_W0 found=[]
+PASS load_state_dict_roundtrip_identical_a_W0 max|d|=0.0
+PASS all_floats_finite_a_W0 nonfinite=[]
+PASS json_keys_match_state_dict_a_W0 missing=[] extra=[]
+PASS json_shapes_match_a_W0 bad=[]
+PASS json_roundtrip_a_W0 bad=[]
+INFO buffers a_W0 [('inner.H_init', (32,)), ('inner.L_init', (32,)), ('inner.rotary_emb.cos_cached', (8, 16)), ('inner.rotary_emb.sin_cached', (8, 16))]
+PASS H_init_L_init_in_state_dict_a_W1 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_a_W1 found=[]
+PASS load_state_dict_roundtrip_identical_a_W1 max|d|=0.0
+PASS all_floats_finite_a_W1 nonfinite=[]
+PASS h_round_end_count_a_W1 n=3 H_cycles=3
+PASS json_keys_match_state_dict_a_W1 missing=[] extra=[]
+PASS json_shapes_match_a_W1 bad=[]
+PASS first_block_matches_real_forward_a_W1 h_eq=True n2_eq=True wrapped_logits_eq=True wrong_differs=True max_abs_h_diff=0.0 max_abs_n2_diff=0.0
+PASS json_roundtrip_a_W1 bad=[]
+PASS W1_q_halt_differs_in_batch_a q_halt=[0.5417884588241577, 1.5973403453826904]
+INFO buffers a_W1 [('inner.H_init', (32,)), ('inner.L_init', (32,)), ('inner.rotary_emb.cos_cached', (8, 16)), ('inner.rotary_emb.sin_cached', (8, 16))]
+PASS H_init_L_init_in_state_dict_b_W0 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_b_W0 found=[]
+PASS load_state_dict_roundtrip_identical_b_W0 max|d|=0.0
+PASS all_floats_finite_b_W0 nonfinite=[]
+PASS json_keys_match_state_dict_b_W0 missing=[] extra=[]
+PASS json_shapes_match_b_W0 bad=[]
+PASS json_roundtrip_b_W0 bad=[]
+INFO buffers b_W0 [('inner.H_init', (32,)), ('inner.L_init', (32,))]
+PASS H_init_L_init_in_state_dict_b_W1 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_b_W1 found=[]
+PASS load_state_dict_roundtrip_identical_b_W1 max|d|=0.0
+PASS all_floats_finite_b_W1 nonfinite=[]
+PASS h_round_end_count_b_W1 n=3 H_cycles=3
+PASS json_keys_match_state_dict_b_W1 missing=[] extra=[]
+PASS json_shapes_match_b_W1 bad=[]
+PASS first_block_matches_real_forward_b_W1 h_eq=True n2_eq=True wrapped_logits_eq=True wrong_differs=True max_abs_h_diff=0.0 max_abs_n2_diff=0.0
+PASS json_roundtrip_b_W1 bad=[]
+PASS W1_q_halt_differs_in_batch_b q_halt=[-0.9854482412338257, -0.7390533685684204]
+INFO buffers b_W1 [('inner.H_init', (32,)), ('inner.L_init', (32,))]
+PASS H_init_L_init_in_state_dict_c_W0 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_c_W0 found=[]
+PASS load_state_dict_roundtrip_identical_c_W0 max|d|=0.0
+PASS all_floats_finite_c_W0 nonfinite=[]
+PASS json_keys_match_state_dict_c_W0 missing=[] extra=[]
+PASS json_shapes_match_c_W0 bad=[]
+PASS json_roundtrip_c_W0 bad=[]
+INFO buffers c_W0 [('inner.H_init', (32,)), ('inner.L_init', (32,))]
+PASS H_init_L_init_in_state_dict_c_W1 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_c_W1 found=[]
+PASS load_state_dict_roundtrip_identical_c_W1 max|d|=0.0
+PASS all_floats_finite_c_W1 nonfinite=[]
+PASS h_round_end_count_c_W1 n=3 H_cycles=3
+PASS json_keys_match_state_dict_c_W1 missing=[] extra=[]
+PASS json_shapes_match_c_W1 bad=[]
+PASS first_block_matches_real_forward_c_W1 h_eq=True n2_eq=True wrapped_logits_eq=True wrong_differs=True max_abs_h_diff=0.0 max_abs_n2_diff=0.0
+PASS json_roundtrip_c_W1 bad=[]
+PASS W1_q_halt_differs_in_batch_c q_halt=[-2.344381093978882, 1.0403616428375244]
+INFO buffers c_W1 [('inner.H_init', (32,)), ('inner.L_init', (32,))]
+PASS H_init_L_init_in_state_dict_d_W0 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_d_W0 found=[]
+PASS load_state_dict_roundtrip_identical_d_W0 max|d|=0.0
+PASS all_floats_finite_d_W0 nonfinite=[]
+PASS json_keys_match_state_dict_d_W0 missing=[] extra=[]
+PASS json_shapes_match_d_W0 bad=[]
+PASS json_roundtrip_d_W0 bad=[]
+INFO buffers d_W0 [('inner.H_init', (32,)), ('inner.L_init', (32,)), ('inner.puzzle_emb.weights', (5, 32)), ('inner.puzzle_emb.local_weights', (2, 32)), ('inner.puzzle_emb.local_ids', (2,)), ('inner.rotary_emb.cos_cached', (10, 16)), ('inner.rotary_emb.sin_cached', (10, 16))]
+PASS H_init_L_init_in_state_dict_d_W1 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_d_W1 found=[]
+PASS load_state_dict_roundtrip_identical_d_W1 max|d|=0.0
+PASS all_floats_finite_d_W1 nonfinite=[]
+PASS h_round_end_count_d_W1 n=3 H_cycles=3
+PASS json_keys_match_state_dict_d_W1 missing=[] extra=[]
+PASS json_shapes_match_d_W1 bad=[]
+PASS first_block_matches_real_forward_d_W1 h_eq=True n2_eq=True wrapped_logits_eq=True wrong_differs=True max_abs_h_diff=0.0 max_abs_n2_diff=0.0
+PASS json_roundtrip_d_W1 bad=[]
+PASS W1_q_halt_differs_in_batch_d q_halt=[-1.4692788124084473, -0.49031826853752136]
+INFO buffers d_W1 [('inner.H_init', (32,)), ('inner.L_init', (32,)), ('inner.puzzle_emb.weights', (5, 32)), ('inner.puzzle_emb.local_weights', (2, 32)), ('inner.puzzle_emb.local_ids', (2,)), ('inner.rotary_emb.cos_cached', (10, 16)), ('inner.rotary_emb.sin_cached', (10, 16))]
+PASS H_init_L_init_in_state_dict_e_W0 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_e_W0 found=[]
+PASS load_state_dict_roundtrip_identical_e_W0 max|d|=0.0
+PASS all_floats_finite_e_W0 nonfinite=[]
+PASS json_keys_match_state_dict_e_W0 missing=[] extra=[]
+PASS json_shapes_match_e_W0 bad=[]
+PASS json_roundtrip_e_W0 bad=[]
+INFO buffers e_W0 [('inner.H_init', (128,)), ('inner.L_init', (128,)), ('inner.rotary_emb.cos_cached', (8, 32)), ('inner.rotary_emb.sin_cached', (8, 32))]
+PASS H_init_L_init_in_state_dict_e_W1 inner.H_init=True inner.L_init=True
+PASS cos_sin_not_in_state_dict_e_W1 found=[]
+PASS load_state_dict_roundtrip_identical_e_W1 max|d|=0.0
+PASS all_floats_finite_e_W1 nonfinite=[]
+PASS h_round_end_count_e_W1 n=3 H_cycles=3
+PASS json_keys_match_state_dict_e_W1 missing=[] extra=[]
+PASS json_shapes_match_e_W1 bad=[]
+PASS first_block_matches_real_forward_e_W1 h_eq=True n2_eq=True wrapped_logits_eq=True wrong_differs=True max_abs_h_diff=0.0 max_abs_n2_diff=0.0
+PASS json_roundtrip_e_W1 bad=[]
+PASS W1_q_halt_differs_in_batch_e q_halt=[4.175061225891113, 2.720700263977051]
+INFO buffers e_W1 [('inner.H_init', (128,)), ('inner.L_init', (128,)), ('inner.rotary_emb.cos_cached', (8, 32)), ('inner.rotary_emb.sin_cached', (8, 32))]
+PASS swiglu_gate_up_shape_a_W0 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_a_W0 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_a_W1 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_a_W1 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_b_W0 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_b_W0 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_b_W1 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_b_W1 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_c_W0 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_c_W0 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_c_W1 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_c_W1 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_d_W0 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_d_W0 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_d_W1 got=(512, 32) formula=(512, 32)
+PASS swiglu_down_shape_d_W1 got=(32, 256) formula=(32, 256)
+PASS swiglu_gate_up_shape_e_W0 got=(1024, 128) formula=(1024, 128)
+PASS swiglu_down_shape_e_W0 got=(128, 512) formula=(128, 512)
+PASS swiglu_gate_up_shape_e_W1 got=(1024, 128) formula=(1024, 128)
+PASS swiglu_down_shape_e_W1 got=(128, 512) formula=(128, 512)
+PASS swiglu_inter_width_a inter=256 want=256
+PASS swiglu_inter_width_b inter=256 want=256
+PASS swiglu_inter_width_c inter=256 want=256
+PASS swiglu_inter_width_d inter=256 want=256
+PASS swiglu_inter_width_e inter=512 want=512
+PASS same seed twice gives identical sha256 for all 10 files
+file_sha 6089790fc18cabe1fa49ef1fa251d973bcd936cbf1ece46f742bc9a746fb9433  a_W0.json
+file_sha 274f9e8b91360d78c56719b209d4424f0ef3b30292e2cd0338d38f27122e1f1e  a_W1.json
+file_sha 6f80cb6947186c4f87b870a50072c2761d96fe14714bff03ef9f689ff53ee0a5  b_W0.json
+file_sha 807ab3b130fe1639f1e9e2fb77ef22bff0788c9c70e680bd32b860104347db9d  b_W1.json
+file_sha e99ef10dfc3ba61a595bc9bd080abebe133c4a223a6b31a03c164a3892fc54e6  c_W0.json
+file_sha 6c97a876288742a3f662898ea19074ad2ba4de34a5b18b679bacc6c814199771  c_W1.json
+file_sha d81c2f114a31d14e13f6815623139e454b1c4718086819eb4e0336eb8e98f9c5  d_W0.json
+file_sha cc963dc7ad5000e8225929c00b94b11de393f9a7c06c59b6a435175a359221b6  d_W1.json
+file_sha 9b88214c99657de74acbb8be96f11daaf616f363a25a55dac9031593ec7b40d9  e_W0.json
+file_sha ad03855294b9724d2783d7e3cf74f60b8dffd0f89f366145a451107d89c894d6  e_W1.json
+ALL PASS

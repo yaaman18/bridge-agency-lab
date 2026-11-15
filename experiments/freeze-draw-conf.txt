@@ -1,0 +1,6 @@
+# S57 freeze 0 (spec r1 and predictions r1, before the S-R; 2026-11-15 12:58)
+08e1079e6e37e20c9d100d7eacc93a16ae50908a98aa593971cb4116a8914527  ../discussion/specs/S57-draw-conf.md
+63c2e871b5cc6ae3c0c1ccfb13042749b28efa27e3d2450d85f941f8ca747740  predictions-draw-conf.md
+# S57 freeze 1 (spec r2 and predictions r2 after the S-R, before any code is written or run; 2026-11-15 13:00)
+88a95b6dc07109ae0ee3dc567ac761596d1286784faefd752a834a48b2a84adc  ../discussion/specs/S57-draw-conf.md
+4663acf6d61ab2ca4e7c033e31fe60f6fc685ce9c648960b8fe5bcfad94a6981  predictions-draw-conf.md

@@ -1,0 +1,94 @@
+Decisions accepted by the coordinator (2026-11-15): PA4 state = world (A, B, C, port, counters), pools, circuit state, noise RNG; the draw mechanism and the records are excluded. D5 second stream: a 0 becomes 1 where Mulberry(1000003u+56) < 0.2; D5 judged per law. Bit files are ASCII '0'/'1'. Spec r3 §8: the body has no m0, the candidate set is {m1, m2}, W = 2 (UNI) and 8 (FIXP), so no rejection occurs in a life; the rejection path is exercised only in the unit test D4b.
+D4b unit bit file written
+bit files present in /Users/yamaguchimitsuyuki/bridge-agency-lab/experiments/draw-bits
+F: spec and predictions equal freeze 2 of freeze-draw.txt: true  Dict("predictions-draw.md" => "0a66bbc46561a7096579d1e8b52a4d87a7ad33b665b70b2e9e8f80e041a65dac", "../discussion/specs/S55-draw.md" => "5bb56246fc69440b9c0731300c6da62238289a8dce3d49a2ef4f8bd0433af037")
+F: bit files equal the rule and SHA256SUMS: true   neg: a flipped bit equals the rule (must be false): false   chi-square p self-test: Bool[1, 1, 1, 1]
+F: D4b unit bit file equals its rule and SHA256SUMS-d4b: true
+D1 L2 u670: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 9004)   neg: UNI = body_org_run (must be false): false
+D1 L2 u671: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 9026)   neg: UNI = body_org_run (must be false): false
+D1 L2 u672: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 4761)   neg: UNI = body_org_run (must be false): false
+D1 L2 u673: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 7719)   neg: UNI = body_org_run (must be false): false
+D1 L2+SF u670: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 6257)   neg: UNI = body_org_run (must be false): false
+D1 L2+SF u671: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 1468)   neg: UNI = body_org_run (must be false): false
+D1 L2+SF u672: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 2941)   neg: UNI = body_org_run (must be false): false
+D1 L2+SF u673: DET copy = body_org_run at every step: true (steps with two or more in the choosing set: 6256)   neg: UNI = body_org_run (must be false): false
+D1: true
+D2a L2 UNI u670: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 UNI u671: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 UNI u672: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 UNI u673: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 FIXP u670: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 FIXP u671: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 FIXP u672: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2 FIXP u673: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF UNI u670: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF UNI u671: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF UNI u672: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF UNI u673: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF FIXP u670: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF FIXP u671: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF FIXP u672: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2a L2+SF FIXP u673: run state at T0 = DET (bits used before T0: 0): true   neg: drawing from step 0 equal (must be false): false
+D2b L2 UNI u670: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 24 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 UNI u671: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 18 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 UNI u672: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 24 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 UNI u673: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 20 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 FIXP u670: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 26 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 FIXP u671: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 30 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 FIXP u672: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 25 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2 FIXP u673: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 23 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF UNI u670: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 23 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF UNI u671: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 24 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF UNI u672: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 27 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF UNI u673: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 29 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF FIXP u670: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 29 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF FIXP u671: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 25 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF FIXP u672: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 19 steps: true)   neg: input y1 altered equal (must be false): false
+D2b L2+SF FIXP u673: 50 steps with one candidate or none: output and next state equal step!: true | 50 steps with two or more: candidates, keys, DET's choice equal step!: true (and full equality where the draw chose DET's motor, 28 steps: true)   neg: input y1 altered equal (must be false): false
+D2: true
+D3 L2 UNI u670: rerun bit-identical: true, resume from the run state at 1800 (bit position 493, alive true) = uninterrupted: true, records replayed from the bit file: 4985 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 2424
+D4 L2 UNI u670: bits used 4967 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 UNI u671: rerun bit-identical: true, resume from the run state at 1800 (bit position 722, alive true) = uninterrupted: true, records replayed from the bit file: 4873 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 2456
+D4 L2 UNI u671: bits used 4853 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 UNI u672: rerun bit-identical: true, resume from the run state at 1800 (bit position 534, alive true) = uninterrupted: true, records replayed from the bit file: 4004 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 2015
+D4 L2 UNI u672: bits used 3977 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 UNI u673: rerun bit-identical: true, resume from the run state at 1800 (bit position 340, alive true) = uninterrupted: true, records replayed from the bit file: 3891 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1935
+D4 L2 UNI u673: bits used 3859 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 FIXP u670: rerun bit-identical: true, resume from the run state at 1800 (bit position 1389, alive true) = uninterrupted: true, records replayed from the bit file: 4802 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1756
+D4 L2 FIXP u670: bits used 14352 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 FIXP u671: rerun bit-identical: true, resume from the run state at 1800 (bit position 2091, alive true) = uninterrupted: true, records replayed from the bit file: 4858 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1789
+D4 L2 FIXP u671: bits used 14514 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 FIXP u672: rerun bit-identical: true, resume from the run state at 1800 (bit position 1701, alive true) = uninterrupted: true, records replayed from the bit file: 4057 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1495
+D4 L2 FIXP u672: bits used 12081 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2 FIXP u673: rerun bit-identical: true, resume from the run state at 1800 (bit position 936, alive true) = uninterrupted: true, records replayed from the bit file: 3642 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1354
+D4 L2 FIXP u673: bits used 10827 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF UNI u670: rerun bit-identical: true, resume from the run state at 1800 (bit position 317, alive true) = uninterrupted: true, records replayed from the bit file: 4468 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 2178
+D4 L2+SF UNI u670: bits used 4452 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF UNI u671: rerun bit-identical: true, resume from the run state at 1800 (bit position 343, alive true) = uninterrupted: true, records replayed from the bit file: 4138 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 2090
+D4 L2+SF UNI u671: bits used 4119 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF UNI u672: rerun bit-identical: true, resume from the run state at 1800 (bit position 529, alive true) = uninterrupted: true, records replayed from the bit file: 3964 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1993
+D4 L2+SF UNI u672: bits used 3937 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF UNI u673: rerun bit-identical: true, resume from the run state at 1800 (bit position 275, alive true) = uninterrupted: true, records replayed from the bit file: 3487 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1730
+D4 L2+SF UNI u673: bits used 3456 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF FIXP u670: rerun bit-identical: true, resume from the run state at 1800 (bit position 900, alive true) = uninterrupted: true, records replayed from the bit file: 3657 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1319
+D4 L2+SF FIXP u670: bits used 10917 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF FIXP u671: rerun bit-identical: true, resume from the run state at 1800 (bit position 969, alive true) = uninterrupted: true, records replayed from the bit file: 2916 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1076
+D4 L2+SF FIXP u671: bits used 8691 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF FIXP u672: rerun bit-identical: true, resume from the run state at 1800 (bit position 1257, alive true) = uninterrupted: true, records replayed from the bit file: 3793 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1406
+D4 L2+SF FIXP u672: bits used 11307 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D3 L2+SF FIXP u673: rerun bit-identical: true, resume from the run state at 1800 (bit position 699, alive true) = uninterrupted: true, records replayed from the bit file: 3385 ok / 0 not   neg: resume without the bit position equal (must be false): false, positions shifted by 1, not reproduced: 1262
+D4 L2+SF FIXP u673: bits used 10056 = sum b (1 + rejections) and positions contiguous: true (rejections 0)   neg: one rejection added balances (must be false): false
+D4 exhaustion L2 UNI u670 (20-bit file): stopped with an error: true  (draw: the bit file is exhausted at position 20)
+D4 exhaustion L2 FIXP u670 (20-bit file): stopped with an error: true  (draw: the bit file is exhausted at position 18)
+D4 exhaustion L2+SF UNI u670 (20-bit file): stopped with an error: true  (draw: the bit file is exhausted at position 20)
+D4 exhaustion L2+SF FIXP u670 (20-bit file): stopped with an error: true  (draw: the bit file is exhausted at position 18)
+D4b UNI W = 3: draws 100000, rejections 33415, shares [0.3354, 0.3329, 0.3317] vs [0.3333, 0.3333, 0.3333], p 0.3536, PA2 rule: holds, bits 266830 = sum b (1 + rej), contiguous: true, replayed 100000 ok / 0   neg: one rejection added balances (must be false): false, judged against the other arm's weights (must be miss): miss
+D4b FIXP W = 10: draws 100000, rejections 60344, shares [0.4984, 0.3007, 0.201] vs [0.5, 0.3, 0.2], p 0.559, PA2 rule: holds, bits 641376 = sum b (1 + rej), contiguous: true, replayed 100000 ok / 0   neg: one rejection added balances (must be false): false, judged against the other arm's weights (must be miss): miss
+D4b: this path (W not a power of 2, rejections) is exercised only in this unit test; no life in S55 has three candidates.
+D3: true   D4: true
+D5 L2 biased UNI set [1, 2]: n 17800, shares [0.398, 0.602], p 9.060281991043565e-162, judged true, Holm reject true, within 0.05 false
+D5 L2: judged sets 1, not matching 1 -> true
+D5 L2+SF biased UNI set [1, 2]: n 14712, shares [0.4, 0.6], p 5.812072319103959e-130, judged true, Holm reject true, within 0.05 false
+D5 L2+SF: judged sets 1, not matching 1 -> true
+D5: true
+== summary {"D2":true,"D3":true,"D4b":true,"D4":true,"D5":true,"D1":true,"F":true}

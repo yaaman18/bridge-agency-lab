@@ -1,0 +1,21 @@
+tasks 20, done 0, threads 4
+1/20  s0 lam0 | L2  36.9 s
+2/20  s0 lam0 | L2+SF  37.0 s
+3/20  s1 lam0 | L2  38.3 s
+4/20  s1 lam0 | L2+SF  39.9 s
+5/20  s1 lam8 | L2  61.1 s
+6/20  s1 lam2 | L2  61.4 s
+7/20  s1 lam2 | L2+SF  62.8 s
+8/20  s1 lam8 | L2+SF  62.8 s
+9/20  s2 lam2 | L2  88.7 s
+10/20  s2 lam2 | L2+SF  89.5 s
+11/20  s2 lam0 | L2  89.9 s
+12/20  s2 lam0 | L2+SF  90.9 s
+13/20  s2 lam8 | L2  111.8 s
+14/20  s2 lam8 | L2+SF  112.8 s
+15/20  s3 lam0 | L2  121.2 s
+16/20  s3 lam0 | L2+SF  122.6 s
+17/20  s3 lam2 | L2  137.3 s
+18/20  s3 lam2 | L2+SF  139.5 s
+19/20  s3 lam8 | L2  143.5 s
+20/20  s3 lam8 | L2+SF  145.1 s

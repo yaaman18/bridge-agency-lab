@@ -1,0 +1,18 @@
+C1 pushed to pi@bridge-pi.local:/dev/shm/s54-c1 (wrapper, Pi fast build, drives, wrapped birth run files, c1.sh): same SHA 11 of 11 (2026-11-16 06:26:24)
+C1 t1 started
+C1 t2 started
+# note (lab-coder, 2026-11-16 06:33): the C1 start above was lost before its verdict: /dev/shm/s54-c1 was found removed at 06:32 (Pi up 22:32, no reboot; /dev/shm mtime 06:30, no onelife-run running). Inferred cause: systemd-logind RemoveIPC (default yes) removes the files of user pi in /dev/shm when pi's last login session ends. No verdict from that start. C1 is run again below with one ssh session held open for its whole run and its verification.
+C1 pushed to pi@bridge-pi.local:/dev/shm/s54-c1 (wrapper, Pi fast build, drives, wrapped birth run files, c1.sh): same SHA 11 of 11 (2026-11-16 06:33:51)
+C1 t1 started
+C1 t2 started
+C1 t1 (L2): wrapper exit 0; copied back with the same SHA true true; n 60480; commits with the reference SHA 60480, other 0 (first null), distinct n 60480 of 60480; final run file = Julia's final save wrapped true; audit 7ef47a0ceef6308f97a023a31b4a3df672e6b4b6b2612418eb9f5b21188cc051 {"audit":"present","lines":181443,"partial_last_line":false,"chain_ok":true,"chain_failures":0,"first_failure_line":null,"breaks":0,"break_reasons":[],"starts":1,"waits":60481,"begins":60480,"commits":60480,"ends":1,"errors":0,"unfinished_steps":0,"audit_behin -> true
+C1 t2 (L2SF): wrapper exit 0; copied back with the same SHA true true; n 60480; commits with the reference SHA 60480, other 0 (first null), distinct n 60480 of 60480; final run file = Julia's final save wrapped true; audit 06d332edd0e887009509d5fa292fd0077facdad902c546ef85d24035b36fa760 {"audit":"present","lines":181443,"partial_last_line":false,"chain_ok":true,"chain_failures":0,"first_failure_line":null,"breaks":0,"break_reasons":[],"starts":1,"waits":60481,"begins":60480,"commits":60480,"ends":1,"errors":0,"unfinished_steps":0,"audit_behin -> true
+C1: true (negative control: one changed commit caught true) 2026-11-16 06:38:02
+place t1: pushed with the same SHA 5 of 5 (run from run0-669-L2, drives drives-669.txt); empty run.audit
+place t2: pushed with the same SHA 5 of 5 (run from run0-669-L2SF, drives drives-669.txt); empty run.audit
+place rehearsal: pushed with the same SHA 5 of 5 (run from rehearsal-run0, drives rehearsal-drives-D1.txt); empty run.audit
+place units (only placed in /home/pi/s54/units): same SHA 3 of 3
+place: true 2026-11-16 06:38:30
+C2 production build on the Pi, 12 drives through the wrapper: pushed 5 of 5; exit 0; wall time on the Mac 120.442 s (>= 110 1); commits with the reference SHA 12, other 0, distinct n 12; n 12 -> true
+C2 negative control, the fast build the same way: exit 0; wall time on the Mac .376 s (< 110 1); commits with the reference SHA 12, other 0 -> true
+C2: true 2026-11-16 06:40:18

@@ -1,0 +1,12 @@
+S59 code freeze 2026-11-16 (lab-coder). Gates F, R1-R5 true (results-bret2-gates.out), windows 726-729 of S58.
+da3187ea220721cd080c8dd30beafecc58fa697b1d704fda3c69962b24bd3861  experiments/bret2_grid.jl
+0644aeafce50a5c44eaeee75f7b5cf7b8be2a0b51ac7f002ae8700bd7b9909cd  experiments/check_bret2.jl
+1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37  experiments/synth_world.jl
+2a687291b52d9d158bdb971e4feb333377fb4a918937bfe67b9d5d0748ade21c  core/LabCore.jl
+65cc0230ada6e88d91a527d30dc9660fb6da265cd4e3cd7bc0e7aebb109090b1  core/jsmath.jl
+295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473  core/circuit.jl
+b2673155459badb225c5e8666a95f223bb00ca47c3b5fa4e934de95e64037011  core/life.jl
+00e14d20a41e9d647ec5901b0cc4ae4f9fd8d7276d7013efdc5a76ad3c9c73ca  core/matter.jl
+f0f1fbd98c00218e5d4acb0f4d80ebe0db94caef67cdde3d4f7ab5dc58360e38  core/evo.jl
+022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942  core/body_org.jl
+05eb8b60c1640f87fe65172f5630945166bc1760a782a66a14e298b16af946a0  core/dc.jl

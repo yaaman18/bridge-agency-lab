@@ -1,0 +1,22 @@
+# S56 freeze 0 (spec r1, before the S-R; 2026-11-15 12:24)
+1b1bd1dd861a51f8eb766ac2c40ff93d6330a326c7307b70fdb6c8fb37208b72  ../discussion/specs/S56-trm-port.md
+3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c  upstream:models/recursive_reasoning/trm.py
+519d38a4668c343868bf31a5853cab7f455f9dcac0cbcc36e02f95dce9fb01e7  upstream:models/layers.py
+fa749ad9b68ac0852f9cda157baa3a9c2ff8abaee973751b32b7cd010a4cf859  upstream:models/common.py
+d0f3040c4aa4468bf36b4e19de1bf039bd0d691703966689487bf1b42b700e6a  upstream:LICENSE
+# S56 freeze 1 (spec r2 after the S-R, before any code is written; 2026-11-15 12:27)
+873424595a96f29d99f35971770d71910a20a4d88a23ee74006826f67ade598d  ../discussion/specs/S56-trm-port.md
+9429742ce022918751331acf92c1a9b8d0f2f364e9acef5d71fb81b886c7a2d0  upstream:models/sparse_embedding.py
+# oracle env: python 3.11.13 torch 2.2.2 einops 0.8.1 pydantic 2.11.7 numpy 1.26.4
+# S56 freeze 2 (spec r3: config (e) hidden 128; found before any Julia code; 2026-11-15 12:33)
+c9d0052f8d7a3719d5fbc72ef57149da6a3b1e88a9e1363128a7179114224c2b  ../discussion/specs/S56-trm-port.md
+# S56 freeze 3 (spec r4: tolerances for the first block, truth side frozen; before any Julia code; 2026-11-15 12:44)
+375bf91dec9a0423a69d98ed6add7b58d6afe057d78aadda590adf95ba513b8c  ../discussion/specs/S56-trm-port.md
+7b4735a0b0c069d080207b37ec334f895d1498a209971701451f603bfeea5c02  trm/oracle_export.py
+0d588056aa89cfcba0103c530a3a0f10d42c4f00cfddb7db44c048b980f0171d  trm/oracle_work.py
+cfec0da816761ed886b272f1e64d1e5f35209a7ea1430705eb715786c1069bf1  trm/fixtures/SHA256SUMS
+46a341df444ec35e1d3aab00adbed4ca6ab7925c7a2c99327e795a6726525b67  trm/fixtures/SELFCHECK.txt
+2956132912248775330c86abcb365a712192ac412563224db257ef4b4b867231  trm/LICENSE-upstream-MIT.txt
+freeze 4 (r5) 2026-11-15 23:17
+185c6bebc01e1aed60b714e35a38fd69349fe866c0438062a6dd2ee0c66a9531  discussion/specs/S56-trm-port.md
+b17f3056a359c0db2501a18a8d2769d803843d2e913ff1c1cfc3a8c3eefdbee3  experiments/predictions-trm-port.md

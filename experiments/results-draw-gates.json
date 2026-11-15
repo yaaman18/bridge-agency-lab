@@ -1,0 +1,89 @@
+{
+  "shas": {
+    "synth_world.jl": "1800778dbbf0264e99f272fb1d30e48a2634910c5ae08d75d9077a6ce5598e37",
+    "core/circuit.jl": "295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473",
+    "core/body_org.jl": "022e3699e91b19eea24d93d94df061036b1bc4f50a07aeec90ab0bb7e595e942"
+  },
+  "D2": true,
+  "D5 L2": {
+    "nJudged": 1,
+    "rows": [
+      {
+        "counts": [
+          7092,
+          10708
+        ],
+        "cs": [
+          1,
+          2
+        ],
+        "chi2": 734.5761797752809,
+        "holmReject": true,
+        "share": [
+          0.3984269662921348,
+          0.6015730337078652
+        ],
+        "maxDev": 0.10157303370786519,
+        "matches": false,
+        "spec": [
+          0.5,
+          0.5
+        ],
+        "withinBand": false,
+        "holmThreshold": 0.01,
+        "judged": true,
+        "df": 1,
+        "p": 9.060281991043565e-162,
+        "n": 17800
+      }
+    ],
+    "alpha": 0.01,
+    "verdict": "miss",
+    "minn": 100,
+    "band": 0.05
+  },
+  "D4b": true,
+  "D5 L2+SF": {
+    "nJudged": 1,
+    "rows": [
+      {
+        "counts": [
+          5885,
+          8827
+        ],
+        "cs": [
+          1,
+          2
+        ],
+        "chi2": 588.3200108754758,
+        "holmReject": true,
+        "share": [
+          0.4000135943447526,
+          0.5999864056552474
+        ],
+        "maxDev": 0.09998640565524741,
+        "matches": false,
+        "spec": [
+          0.5,
+          0.5
+        ],
+        "withinBand": false,
+        "holmThreshold": 0.01,
+        "judged": true,
+        "df": 1,
+        "p": 5.812072319103959e-130,
+        "n": 14712
+      }
+    ],
+    "alpha": 0.01,
+    "verdict": "miss",
+    "minn": 100,
+    "band": 0.05
+  },
+  "D3": true,
+  "notes": "Decisions accepted by the coordinator (2026-11-15): PA4 state = world (A, B, C, port, counters), pools, circuit state, noise RNG; the draw mechanism and the records are excluded. D5 second stream: a 0 becomes 1 where Mulberry(1000003u+56) < 0.2; D5 judged per law. Bit files are ASCII '0'/'1'. Spec r3 §8: the body has no m0, the candidate set is {m1, m2}, W = 2 (UNI) and 8 (FIXP), so no rejection occurs in a life; the rejection path is exercised only in the unit test D4b.",
+  "D4": true,
+  "D5": true,
+  "D1": true,
+  "F": true
+}

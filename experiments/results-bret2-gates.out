@@ -1,0 +1,41 @@
+F: spec and predictions equal freeze 2 of freeze-bret2-norm.txt: true  Dict("discussion/specs/S59-bret2-norm.md" => "6750594fa908d958acddb4cb1ab491f8166e26678d746563b09ad074f899e9cf", "experiments/predictions-bret2-norm.md" => "65e545eb7268aba2810e69644fd5d74bb938a6125a06e62320c6f253b6863dc4")
+R1(i) u726 PER=none : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 320, steps with the last sg removed 15, capacity steps 0   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u726 PER=1    : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 25, steps with the last sg removed 4, capacity steps 14   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u727 PER=none : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 326, steps with the last sg removed 20, capacity steps 0   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u727 PER=1    : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 30, steps with the last sg removed 5, capacity steps 112   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u728 PER=none : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 315, steps with the last sg removed 15, capacity steps 0   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u728 PER=1    : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 15, steps with the last sg removed 2, capacity steps 103   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u729 PER=none : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 294, steps with the last sg removed 21, capacity steps 0   neg: B2-free with uses = core L2+SF (must be false) false
+R1(i) u729 PER=1    : A-ret = core L2+SF true, B2-free without uses = A-ret true, B2-ret without uses = A-ret true | B2-free candidates 35, steps with the last sg removed 3, capacity steps 424   neg: B2-free with uses = core L2+SF (must be false) false
+R1(ii) hand: A-ret none: true
+R1(ii) hand: age 99, 101, 150 not judged; 200 judged: true
+R1(ii) hand: confirmed edge: not judged, no candidate: true
+R1(ii) hand: next judgment exactly F later: true
+R1(ii) hand: s larger than candidates (t = 502: start 502 mod 3 = 1): true
+R1(ii) hand: sg 0 out, sg 1 in: true
+R1(ii) hand: two candidates B2-free both: true
+R1(ii) hand: two candidates s=1 (t even -> first): true
+R1(ii) hand: two candidates s=1 (t odd -> second): true
+R1(ii) hand: window: t-F in, t-F-1 out, t-only out: true
+R1(ii) neg: window [t-F-1, t) passes the window case (must be false): false
+R1(ii) hand: an edge used at t is not a candidate at t and its use is recorded at t: true
+R1(ii) circuit step on a made state (two sg=1 core edges judged, used 50 steps before): B2-ret s=1 t=199 restores the second [2] sg [0, 1], t=200 the first [1] sg [1, 0], B2-free both sg [1, 1], A-ret none sg [0, 0] -> true
+R1(ii) replay from the logged uses over 108 runs: judgments 135796, restored 14925, steps disagreeing 0
+R1(ii) capacity right after a paid restoration removes the edge: events 4, levy kept (not cancelled) in all: true
+R1: true
+R2: runs 108, steps failing (balance or a place newly below the threshold) 0, max |levied (+ shortfall) - KC F x restored| 4.996003610813204e-16; control shortfall 10609.922 KC in 1173 steps (of which without the forced yoke 7552.707 KC)
+R2   neg: B2-ret levying one more, failing steps (must be > 0) 152; forced yoke with S58's levy to 0, places newly below the threshold (must be > 0) 80
+R2: true
+R3: delay 0 = B2-ret in 16/16, self-yoke = B2-ret in 16/16 (restorations in these B2-ret runs 2851)   neg: delay 1 = B2-ret (must be 0) in 0/16
+R3: steps where the read s differs from the record 0 of 245114   neg: delay reading t - 376, differing steps (must be > 0) 428 of 2798
+R3: true
+R4: prefix to the head of tp equal across classes in 24/24, perturbations as specified in 24/24 (dead at tp: partner u726)
+R4   neg: perturbing at tp - 1, prefix equal to class 0 (must be false) for a, b: Bool[0, 0]
+R4: true
+R5: steps where B or the body changed between the head and the levy 0 of 1080000 (108 runs)   neg: class-a cut moved between the head and the levy, changed steps (must be > 0) 1
+R5: true
+note u726 (S58 window, gate only): tp 1926, B2-ret T0..tp-1 candidates 29, paid 22, unpaid 7
+note u727 (S58 window, gate only): tp 1927, B2-ret T0..tp-1 candidates 37, paid 27, unpaid 10
+note u728 (S58 window, gate only): tp 1928, B2-ret T0..tp-1 candidates 16, paid 10, unpaid 6
+note u729 (S58 window, gate only): tp 1929, B2-ret T0..tp-1 candidates 12, paid 10, unpaid 2
+== summary {"R4":true,"R3":true,"R1":true,"R5":true,"R2":true,"F":true}

@@ -1,0 +1,10 @@
+Decisions accepted by the coordinator (2026-11-15): PA4 state = world (A, B, C, port, counters), pools, circuit state, noise RNG; the draw mechanism and the records are excluded. D5 second stream: a 0 becomes 1 where Mulberry(1000003u+56) < 0.2; D5 judged per law. Bit files are ASCII '0'/'1'. Spec r3 §8: the body has no m0, the candidate set is {m1, m2}, W = 2 (UNI) and 8 (FIXP), so no rejection occurs in a life; the rejection path is exercised only in the unit test D4b.
+pilot L2 DET : alive at T0+2000 4/4, drawing steps per window 9004 9026 4761 7719 (min 4761) | death - - 5806 - -> meets
+pilot L2 UNI : alive at T0+2000 4/4, drawing steps per window 4967 4853 3977 3859 (min 3859) | death - - - - -> meets
+pilot L2 FIXP: alive at T0+2000 4/4, drawing steps per window 4784 4838 4027 3609 (min 3609) | death - - - - -> meets
+pilot decision L2: admit (all three arms to the evaluation windows)
+pilot L2+SF DET : alive at T0+2000 4/4, drawing steps per window 6257 1468 2941 6256 (min 1468) | death - 3117 5479 - -> meets
+pilot L2+SF UNI : alive at T0+2000 4/4, drawing steps per window 4452 4119 3937 3456 (min 3456) | death - - - - -> meets
+pilot L2+SF FIXP: alive at T0+2000 4/4, drawing steps per window 3639 2897 3769 3352 (min 2897) | death - - - - -> meets
+pilot decision L2+SF: admit (all three arms to the evaluation windows)
+wall 30.4 s, threads 4

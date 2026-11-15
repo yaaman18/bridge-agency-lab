@@ -1,0 +1,11 @@
+§3 L2 DET : alive at T0+2000 4/4, drawing steps per window 9011 8842 3664 8653 (min 3664) -> meets
+§3 L2 UNI : alive at T0+2000 4/4, drawing steps per window 4967 5286 1833 4136 (min 1833) -> meets
+§3 L2 CONF: alive at T0+2000 4/4, drawing steps per window 5107 5387 1869 4264 (min 1869) -> meets
+§3 L2 CONF drawing steps with unequal weights per window 1984 2222 513 1758 -> meets (>= 100 in all 4)
+§3 decision L2: admit (three arms to the evaluation windows); PB2 admissible; grid decision agrees: true
+§3 L2+SF DET : alive at T0+2000 4/4, drawing steps per window 3509 6692 2313 5427 (min 2313) -> meets
+§3 L2+SF UNI : alive at T0+2000 4/4, drawing steps per window 4585 3914 1661 3949 (min 1661) -> meets
+§3 L2+SF CONF: alive at T0+2000 4/4, drawing steps per window 4621 4209 1816 3194 (min 1816) -> meets
+§3 L2+SF CONF drawing steps with unequal weights per window 1422 1754 419 1695 -> meets (>= 100 in all 4)
+§3 decision L2+SF: admit (three arms to the evaluation windows); PB2 admissible; grid decision agrees: true
+PB0 verdict: holds

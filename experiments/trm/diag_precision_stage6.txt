@@ -1,0 +1,78 @@
+
+"results-diag-precision.out の中身を書く。戻り値は 0（完走）か 1（無効として止まる）。有効性 (i)(ii) の両方が
+成り立つときだけ c・d の表を読む。判定はしない（材料だけを書く）。"
+function main(io)
+    say(io, "S56 diag precision (measurement only; no tolerance is changed here)")
+    say(io, "Julia ", VERSION, "; sequence x1,x2,x1; z after the step; all numbers are max abs diffs")
+    say(io, "f64 copy: diag/TrmPort_f64.jl, generated from TrmPort.jl with word-level type tokens only")
+    say(io, "  (Float32->Float64, const F32 = Float32 -> Float64, 1f-literal suffixes; never inside strings/comments).")
+    say(io, "  rms_norm as in the official model (input cast to float32, computed, cast back to float64); rope tables float32.")
+    say(io, "  tokens replaced outside rms_norm: ", F64_TOKENS, "; rms_norm of the copy:")
+    for line in rms_norm_block(read(joinpath(HERE, "TrmPort.jl"), String))[2]
+        say(io, "    ", line)
+    end
+    say(io, "columns: jf = f64-julia|f64-python (row-major); fv = f32-julia|fixture; fj = f32-julia|f64-julia;")
+    say(io, "  Inf = the julia f64 run has Inf (fv is then NaN, i.e. no finite distance to the fixture)")
+    R = Dict{Tuple{String,String},Any}()
+    for c in ("a", "c", "d"), w in WEIGHTS
+        R[(c, w)] = measure(io, c, w)
+        if R[(c, w)].py === nothing
+            say(io, newline, "diag/py_f64_", c, "_", w, ".json がない: diag_precision.py を先に（QUICK の順で）走らせる。")
+            return 1
+        end
+    end
+    # (i) 構成 c・d の f64 の写しに f32 の重み・入力を渡した走り 対 f32 の移植（手 1 の全量の最大）
+    say(io, "")
+    say(io, "== validity (checked before reading the c/d table) ==")
+    ok_i = true
+    for c in ("c", "d"), w in WEIGHTS
+        g = R[(c, w)].gap_i
+        say(io, "  (i) ", c, " ", w, " f64 copy with Float32 weights vs f32 port (step 1): ", g,
+            " [", 1e-6 <= g <= 1e-4 ? "ok" : "OUTSIDE 1e-6..1e-4", "]")
+        ok_i &= !isnan(g) && 1e-6 <= g <= 1e-4
+    end
+    worst_ii, wrt_ii = 0.0, "none"
+    for w in WEIGHTS, k in 1:3, q in QS
+        v = R[("a", w)].jf_all[k][q]
+        v > worst_ii && (worst_ii, wrt_ii = v, string(w, " step", k, ".", q))
+    end
+    ok_ii = worst_ii <= 1e-9
+    say(io, "  (ii) a: julia f64|python f64 over all steps and quantities: max ", worst_ii, " at ", wrt_ii,
+        ok_ii ? " <= 1e-9" : " > 1e-9")
+    if !(ok_i && ok_ii)
+        say(io, "  => INVALID: the f64 copy (or the f64 columns) cannot be read; the c/d table below is not read.")
+        return 1
+    end
+    say(io, "  => valid: both (i) and (ii) hold; the c/d table below can be read.")
+    say(io, "")
+    say(io, "== verdict material (columns only; the judgement is claude-lab's) ==")
+    say(io, "per step: max over logits/z_H/z_L; (a) official float32 vs float64, (b) julia f32|fixture,")
+    say(io, "  (c) julia f64|python f64; perstep = [step1 value step2 value step3 value]")
+    perstep(v) = "[" * join([string(k, ":") * string(round(v[k]; sigdigits=4)) for k in 1:3], " ") * "]"
+    for c in ("c", "d"), w in WEIGHTS
+        r = R[(c, w)]
+        say(io, "(c) ", c, " ", w, " julia f64|python f64 per step: ",
+            perstep([maximum(r.jf_all[k][q] for q in ACT_Q) for k in 1:3]))
+        say(io, "(b) ", c, " ", w, " julia f32|fixture per step:    ",
+            perstep([maximum(r.fv[q][k] for q in ACT_Q) for k in 1:3]))
+        say(io, "    ", c, " ", w, " julia f32|f64 per step:        ",
+            isempty(r.fj) ? "(-) julia f64 has Inf" : perstep(r.fj),
+            "  first step-quantity >1e-8: ", isempty(r.first_gap) ? "none" : join(r.first_gap, "; "))
+    end
+    say(io, "  (a) is the python f32|f64 per-step column in the Python section below.")
+    say(io, "")
+    say(io, "== Python measurements (diag_precision.py standard output, same steps and fixtures) ==")
+    return print_py_report(io) ? 0 : 1
+end
+"diag/py_report.txt（diag_precision.py の直前の標準出力）を写す。なければ false。"
+function print_py_report(io)
+    path = joinpath(HERE, "diag", "py_report.txt")
+    isfile(path) || return false
+    write(io, read(path, String))
+    return true
+end
+open(joinpath(HERE, "results-diag-precision.out"), "w") do io
+    global RESULT_OK = main(io)
+end
+show(stdout, String(take!(REPORT)))
+ok = RESULT_OK

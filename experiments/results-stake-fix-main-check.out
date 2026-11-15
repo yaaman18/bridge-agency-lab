@@ -1,0 +1,108 @@
+==== law L2  (windows 657,658,659,660,661,662,663,664,665,666,667,668, n = 12)
+s0 lam0 M=1.0 levy/step=0.0  realized yield mean (from T0): ORG 1.437, ORG-FIX 1.437  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.722 0.528 0.998 0.826 0.853 0.997 0.992 0.811 0.846 0.977 0.689 0.996 | while both alive: 0.045 0.792 0.986 0.789 0.044 0.965 0.86 0.043 0.05 0.482 0.743 0.779 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 10 3 0 7 11 4 0 8 4 0 11 0 | S@T0+2000: 8 8 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2572 4505 443 1997 1354 524 376 1750 1427 396 1917 182
+   ORG-FIX  S@T0+500: 0 3 0 0 0 2 0 0 0 0 11 0 | S@T0+2000: 0 8 0 0 0 0 0 0 0 0 5 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 89 8329 428 455 91 510 351 94 101 407 4497 172
+s1 lam0 M=1.5 levy/step=0.0  realized yield mean (from T0): ORG 1.773, ORG-FIX 1.773  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.709 0.775 0.509 0.818 0.487 0.986 0.993 0.743 0.686 0.875 0.567 0.997 | while both alive: 0.045 0.756 0.893 0.786 0.38 0.917 0.913 0.116 0.05 0.801 0.713 0.838 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 18 7 5 10 11 7 0 10 8 4 13 0 | S@T0+2000: 10 11 0 5 13 0 0 8 10 11 8 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2680 8344 1028 2044 4784 643 479 2378 2896 3890 7039 206
+   ORG-FIX  S@T0+500: 0 9 5 0 0 5 0 0 0 4 12 0 | S@T0+2000: 0 8 5 0 0 0 0 0 0 7 4 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 10 0 | deathW: 89 8384 5872 468 142 563 458 112 101 4324 9201 197
+s1 lam2 M=1.5 levy/step=0.004  realized yield mean (from T0): ORG 1.773, ORG-FIX 1.773  levy requested / taken: ORG 112.816 / 112.816, ORG-FIX 50.38 / 50.38
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.715 0.832 0.987 0.821 0.526 0.988 0.995 0.808 0.688 0.956 0.633 0.998 | while both alive: 0.048 0.756 0.896 0.81 0.429 0.941 0.902 0.04 0.054 0.732 0.614 0.892 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 16 6 3 8 10 5 0 10 8 4 13 0 | S@T0+2000: 8 9 0 2 9 0 0 0 10 0 8 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2630 6302 1025 2013 4425 617 394 1776 2875 1463 4495 189
+   ORG-FIX  S@T0+500: 0 6 3 0 0 4 0 0 0 4 11 0 | S@T0+2000: 0 6 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 83 6291 1041 453 126 541 386 99 93 1475 1822 185
+s1 lam8 M=1.5 levy/step=0.016  realized yield mean (from T0): ORG 1.773, ORG-FIX 1.773  levy requested / taken: ORG 154.272 / 154.272, ORG-FIX 53.088 / 53.088
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.873 0.999 1.0 0.826 0.865 0.996 0.995 0.813 0.971 0.966 0.932 1.0 | while both alive: 0.058 0.978 0.992 0.857 0.568 0.938 0.889 0.054 0.066 0.441 0.723 1.0 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 11 0 0 6 7 0 0 7 0 0 9 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 1172 314 379 1968 1308 490 345 1722 272 411 1107 154
+   ORG-FIX  S@T0+500: 0 0 0 0 0 0 0 0 0 0 8 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 69 318 378 428 95 487 341 74 76 229 669 154
+s2 lam0 M=2.0 levy/step=0.0  realized yield mean (from T0): ORG 2.134, ORG-FIX 2.134  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.705 0.681 0.787 0.453 0.059 0.052 0.034 0.252 0.422 0.603 0.669 0.996 | while both alive: 0.045 0.681 0.674 0.728 0.593 0.787 0.775 0.696 0.05 0.544 0.669 0.874 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 17 9 8 11 14 8 0 10 3 6 15 0 | S@T0+2000: 12 13 8 6 15 12 0 11 9 9 13 0 | S@9200: 0 11 0 0 15 8 0 0 0 0 13 0 | deathW: 2715 9201 5878 5396 9201 9201 342 7449 5327 4374 9201 257
+   ORG-FIX  S@T0+500: 0 8 7 0 18 8 7 9 0 7 13 0 | S@T0+2000: 0 8 5 0 0 0 14 0 0 0 6 0 | S@9200: 0 6 0 0 0 0 0 0 0 0 13 0 | deathW: 89 9201 5921 492 865 588 9155 805 101 1287 9201 238
+s2 lam2 M=2.0 levy/step=0.008  realized yield mean (from T0): ORG 2.134, ORG-FIX 2.134  levy requested / taken: ORG 323.544 / 323.544, ORG-FIX 151.464 / 151.464
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.708 0.407 0.541 0.454 0.728 0.972 0.038 0.211 0.95 0.848 0.556 1.0 | while both alive: 0.051 0.682 0.79 0.773 0.45 0.809 0.779 0.462 0.057 0.585 0.551 0.995 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 17 9 7 10 13 6 0 8 0 6 12 0 | S@T0+2000: 9 12 5 4 11 0 0 10 0 8 9 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2688 8352 5839 5390 2561 712 326 7326 466 2069 4515 199
+   ORG-FIX  S@T0+500: 0 8 7 0 0 5 4 0 0 4 12 0 | S@T0+2000: 0 6 4 0 0 0 11 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 78 4233 2042 463 120 565 9112 117 87 1144 773 199
+s2 lam8 M=2.0 levy/step=0.032  realized yield mean (from T0): ORG 2.134, ORG-FIX 2.134  levy requested / taken: ORG 177.664 / 177.664, ORG-FIX 94.144 / 94.144
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.968 1.0 0.999 0.826 0.918 0.959 0.986 0.992 0.974 0.967 0.971 1.0 | while both alive: 0.071 1.0 0.975 0.912 0.75 0.529 0.849 0.73 0.082 0.399 0.618 1.0 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 0 0 0 3 8 0 0 0 0 0 7 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 302 242 358 1958 811 102 258 132 241 367 642 139
+   ORG-FIX  S@T0+500: 0 0 0 0 0 0 0 0 0 0 6 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 56 242 356 387 72 430 355 74 61 163 607 139
+s3 lam0 M=2.5 levy/step=0.0  realized yield mean (from T0): ORG 2.505, ORG-FIX 2.505  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.001 0.653 0.788 0.038 0.046 0.046 0.684 0.057 0.001 0.254 0.609 0.032 | while both alive: 0.045 0.653 0.677 0.661 0.46 0.666 0.684 0.636 0.05 0.524 0.609 0.722 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 18 11 9 8 15 12 8 15 10 9 13 0 | S@T0+2000: 14 5 8 5 16 14 14 13 6 10 8 0 | S@9200: 13 13 0 10 16 11 2 7 15 0 14 0 | deathW: 9201 9201 5924 9201 9201 9201 9201 9201 9201 2498 9201 395
+   ORG-FIX  S@T0+500: 0 12 8 4 16 9 11 13 0 7 18 14 | S@T0+2000: 0 7 8 0 0 0 15 0 0 11 8 15 | S@9200: 0 8 0 0 0 0 0 0 0 4 13 13 | deathW: 89 9201 5960 519 908 632 9192 822 101 9201 9201 9201
+s3 lam2 M=2.5 levy/step=0.012  realized yield mean (from T0): ORG 2.505, ORG-FIX 2.505  levy requested / taken: ORG 464.592 / 464.592, ORG-FIX 200.28 / 200.28
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.71 0.95 0.535 0.982 0.219 0.268 0.079 0.695 0.423 0.812 0.816 0.995 | while both alive: 0.055 0.778 0.78 0.681 0.457 0.69 0.773 0.383 0.061 0.557 0.408 0.868 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 11 6 6 0 13 8 6 10 8 8 8 0 | S@T0+2000: 10 0 7 0 13 12 0 9 2 7 3 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2668 1291 5866 495 7574 7133 878 2864 5318 2376 2025 228
+   ORG-FIX  S@T0+500: 0 9 5 0 12 6 6 0 0 4 14 0 | S@T0+2000: 0 0 5 0 0 0 14 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 73 1068 2031 477 857 584 9154 141 82 1160 823 240
+s3 lam8 M=2.5 levy/step=0.048  realized yield mean (from T0): ORG 2.505, ORG-FIX 2.505  levy requested / taken: ORG 118.416 / 118.416, ORG-FIX 106.896 / 106.896
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.975 1.0 1.0 0.989 0.984 0.994 0.992 0.998 0.978 0.982 0.956 1.0 | while both alive: 0.064 1.0 1.0 0.741 0.72 0.557 0.837 0.915 0.08 0.381 0.706 1.0 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 233 237 254 340 201 97 273 74 209 213 211 125
+   ORG-FIX  S@T0+500: 0 0 0 0 0 0 0 0 0 0 5 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 47 237 254 350 75 112 239 59 50 126 553 125
+PF1 lam0: common set alive at T0+2000: 1 ["658"]  at T0+500: 3  -> primary quantity undetectable
+PF1 lam2: common set alive at T0+2000: 0 String[]  at T0+500: 3  -> primary quantity undetectable
+PF1 lam8: common set alive at T0+2000: 0 String[]  at T0+500: 0  -> primary quantity undetectable
+PF1 verdict L2: miss  (predicted: lam0 and lam2 >= 8 at T0+2000, lam8 < 8; got 1, 0, 0)
+PF2 verdict L2: miss  s0 S_ORG vs S_FIX at T0+2000: undetectable (predicted larger)  Dict{String, Any}("neg" => 1, "pos" => 1, "judge" => "検出不能", "dir" => "undetectable")   beside, both alive (1): Dict{String, Any}("neg" => 0, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")
+Reading limit (frozen): G is the body gap on windows where all four runs are alive; it is not the total worth of updating including death, and survivor selection depends on arm, s and lambda.
+PF3 lam0: undetectable (not eligible)
+PF3 lam2: undetectable (not eligible)
+PF3 lam8: undetectable (not eligible)
+PF3 verdict L2: miss  (predicted: larger at lam2; lam0 and lam8 reported; got lam0 undetectable, lam2 undetectable, lam8 undetectable)
+PF4 lam2: more windows larger than smaller (direction only, predicted): true  windows larger 8, smaller 1   sign test beside: Dict{String, Any}("neg" => 1, "pos" => 8, "judge" => "上積みあり", "p" => 0.0390625, "dir" => "larger")
+PF4 lam8: more windows smaller than larger (direction only, predicted): true  windows larger 0, smaller 2   sign test beside: Dict{String, Any}("neg" => 2, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")
+PF4 verdict L2: holds  (lam2 holds, lam8 holds)
+==== law L2+SF  (windows 657,658,659,660,661,662,663,664,665,666,667,668, n = 12)
+s0 lam0 M=1.0 levy/step=0.0  realized yield mean (from T0): ORG 1.437, ORG-FIX 1.437  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.768 0.449 0.9 0.97 0.519 0.97 0.802 0.843 0.746 0.916 0.779 0.988 | while both alive: 0.397 0.359 0.264 0.864 0.175 0.532 0.814 0.615 0.774 0.519 0.516 0.057 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 6 5 1 6 13 2 0 0 0 1 12 0 | S@T0+2000: 0 0 0 4 11 0 0 0 0 0 6 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 902 605 1023 2028 4796 561 424 361 446 1450 2539 205
+   ORG-FIX  S@T0+500: 5 7 0 8 0 5 2 7 6 4 10 0 | S@T0+2000: 8 5 0 4 0 0 9 0 7 0 4 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2622 8247 383 2027 120 539 2279 1783 2842 1283 3812 106
+s1 lam0 M=1.5 levy/step=0.0  realized yield mean (from T0): ORG 1.773, ORG-FIX 1.773  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.827 0.29 0.73 0.206 0.806 0.053 0.555 0.247 0.658 0.689 0.718 0.986 | while both alive: 0.502 0.454 0.527 0.693 0.547 0.574 0.665 0.457 0.718 0.601 0.528 0.057 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 8 10 5 7 15 1 3 0 8 6 14 0 | S@T0+2000: 4 10 3 7 13 0 15 0 10 12 8 0 | S@9200: 0 13 0 0 0 0 0 0 0 0 0 0 | deathW: 2140 9201 3279 2153 2381 524 7561 442 2959 4325 2626 245
+   ORG-FIX  S@T0+500: 6 9 3 9 17 6 5 11 10 6 13 0 | S@T0+2000: 10 8 0 7 0 9 13 10 13 9 6 0 | S@9200: 0 0 0 8 0 4 0 0 0 0 0 0 | deathW: 2696 5334 1267 9201 863 9201 9154 7365 5315 2322 4734 106
+s1 lam2 M=1.5 levy/step=0.004  realized yield mean (from T0): ORG 1.773, ORG-FIX 1.773  levy requested / taken: ORG 121.296 / 121.296, ORG-FIX 138.732 / 138.732
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.829 0.076 0.668 0.597 0.807 0.961 0.052 0.245 0.912 0.635 0.777 0.986 | while both alive: 0.509 0.228 0.274 0.713 0.553 0.588 0.712 0.501 0.723 0.581 0.526 0.051 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 7 9 4 5 13 0 1 0 4 5 11 0 | S@T0+2000: 4 8 2 6 13 0 0 0 9 11 8 0 | S@9200: 0 12 0 0 0 0 0 0 0 0 0 0 | deathW: 2111 9201 3263 2094 2362 413 503 373 2866 4303 2605 231
+   ORG-FIX  S@T0+500: 5 0 0 9 15 6 4 9 10 4 11 0 | S@T0+2000: 9 0 0 5 0 0 12 9 10 0 4 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 2679 267 329 5385 854 634 9139 7354 2896 1275 3773 98
+s1 lam8 M=1.5 levy/step=0.016  realized yield mean (from T0): ORG 1.773, ORG-FIX 1.773  levy requested / taken: ORG 125.984 / 125.984, ORG-FIX 112.768 / 112.768
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.848 0.968 0.96 0.808 0.766 0.971 0.991 0.834 0.999 0.971 0.979 0.987 | while both alive: 0.598 0.225 0.308 0.637 0.707 0.691 0.784 0.565 0.99 0.489 0.723 0.059 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 4 0 0 0 9 0 0 0 0 0 11 0 | S@T0+2000: 0 0 0 0 8 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 1906 330 430 350 2287 304 379 285 296 470 656 181
+   ORG-FIX  S@T0+500: 0 0 0 6 0 2 0 6 0 0 9 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 468 160 201 1996 123 520 383 1754 291 352 715 85
+s2 lam0 M=2.0 levy/step=0.0  realized yield mean (from T0): ORG 2.134, ORG-FIX 2.134  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.167 0.16 0.67 0.718 0.764 0.118 0.038 0.039 0.463 0.662 0.429 0.776 | while both alive: 0.518 0.415 0.487 0.718 0.491 0.572 0.612 0.538 0.636 0.424 0.454 0.057 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 3 12 9 8 16 3 1 0 6 9 11 9 | S@T0+2000: 14 6 8 8 16 0 0 0 0 6 11 12 | S@9200: 0 16 0 14 0 0 0 0 0 0 0 0 | deathW: 2724 9201 5917 9201 2918 1768 503 444 616 4399 7660 2588
+   ORG-FIX  S@T0+500: 7 11 4 16 17 9 8 14 16 8 16 0 | S@T0+2000: 13 8 7 9 0 14 17 13 17 10 8 0 | S@9200: 8 0 0 12 0 8 0 14 0 0 0 0 | deathW: 9201 2386 5946 9201 909 9201 9185 9201 5381 5363 4905 106
+s2 lam2 M=2.0 levy/step=0.008  realized yield mean (from T0): ORG 2.134, ORG-FIX 2.134  levy requested / taken: ORG 147.048 / 147.048, ORG-FIX 396.608 / 396.608
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.735 0.867 0.527 0.308 0.764 0.034 0.036 0.226 0.463 0.917 0.75 0.984 | while both alive: 0.562 0.238 0.283 0.715 0.513 0.587 0.699 0.607 0.733 0.466 0.458 0.056 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 0 8 6 7 13 0 0 0 0 8 8 0 | S@T0+2000: 0 0 7 7 12 0 0 0 0 0 9 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 482 1398 4713 3816 2894 385 395 366 495 716 2488 233
+   ORG-FIX  S@T0+500: 5 0 0 11 16 8 7 10 15 5 12 0 | S@T0+2000: 11 0 0 6 0 9 14 11 14 0 6 0 | S@9200: 0 0 0 8 0 7 0 0 0 0 0 0 | deathW: 2721 231 265 9201 868 9201 9176 7462 5327 1266 3770 90
+s2 lam8 M=2.0 levy/step=0.032  realized yield mean (from T0): ORG 2.134, ORG-FIX 2.134  levy requested / taken: ORG 113.024 / 113.024, ORG-FIX 208.256 / 208.256
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.987 0.971 0.965 0.805 0.968 0.969 0.982 0.836 0.999 0.961 0.947 0.987 | while both alive: 0.816 0.241 0.304 0.7 0.875 0.743 0.801 0.754 0.989 0.435 0.62 0.075 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 331 292 385 270 369 265 281 268 268 450 187 166
+   ORG-FIX  S@T0+500: 0 0 0 8 0 0 0 7 0 0 8 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 392 108 125 1982 88 492 409 1741 263 191 650 67
+s3 lam0 M=2.5 levy/step=0.0  realized yield mean (from T0): ORG 2.505, ORG-FIX 2.505  levy requested / taken: ORG 0.0 / 0.0, ORG-FIX 0.0 / 0.0
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.462 0.574 0.64 0.126 0.129 0.621 0.338 0.369 0.635 0.588 0.352 0.77 | while both alive: 0.522 0.422 0.459 0.645 0.481 0.621 0.542 0.73 0.635 0.397 0.398 0.057 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 8 11 10 8 11 6 9 16 6 8 9 10 | S@T0+2000: 14 10 11 0 14 16 5 15 8 9 8 8 | S@9200: 0 0 0 0 7 13 0 0 17 0 0 0 | deathW: 8110 5332 5997 1772 9201 9201 5732 4622 9201 4672 6323 2597
+   ORG-FIX  S@T0+500: 8 12 8 17 19 13 9 17 17 8 19 0 | S@T0+2000: 17 8 8 12 0 16 18 17 17 13 8 0 | S@9200: 13 0 0 12 0 13 5 17 18 0 15 0 | deathW: 9201 2341 6208 9201 938 9201 9201 9201 9201 6260 9201 106
+s3 lam2 M=2.5 levy/step=0.012  realized yield mean (from T0): ORG 2.505, ORG-FIX 2.505  levy requested / taken: ORG 221.136 / 221.136, ORG-FIX 661.824 / 661.824
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.735 0.949 0.953 0.123 0.913 0.038 0.142 0.365 0.04 0.894 0.721 0.775 | while both alive: 0.553 0.229 0.303 0.683 0.503 0.633 0.64 0.752 0.695 0.476 0.444 0.06 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 7 8 8 4 8 2 7 13 1 7 5 7 | S@T0+2000: 0 0 0 0 0 0 1 12 0 0 6 4 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 582 593 576 1627 1362 556 2026 4432 501 1662 2093 2418
+   ORG-FIX  S@T0+500: 6 0 0 13 13 11 8 14 15 5 16 0 | S@T0+2000: 13 0 0 9 0 14 15 15 15 0 7 0 | S@9200: 0 0 0 10 0 10 0 14 14 0 0 0 | deathW: 2761 188 234 9201 897 9201 9187 9201 9201 1246 3755 84
+s3 lam8 M=2.5 levy/step=0.048  realized yield mean (from T0): ORG 2.505, ORG-FIX 2.505  levy requested / taken: ORG 154.8 / 154.8, ORG-FIX 295.68 / 295.68
+   act alike ORG vs ORG-FIX (share of steps T0..end): 0.986 0.972 0.969 0.82 0.997 0.974 0.989 0.837 0.999 0.98 0.948 0.987 | while both alive: 0.797 0.232 0.304 0.781 0.891 0.842 0.76 0.764 0.988 0.35 0.623 0.089 | ORG-FIX kept constant after T0: 12/12
+   ORG      S@T0+500: 0 0 0 0 0 0 0 0 0 0 0 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 452 272 319 360 112 303 363 259 252 233 162 138
+   ORG-FIX  S@T0+500: 0 0 0 4 0 0 0 4 0 0 5 0 | S@T0+2000: 0 0 0 0 0 0 0 0 0 0 0 0 | S@9200: 0 0 0 0 0 0 0 0 0 0 0 0 | deathW: 369 82 92 1934 92 490 375 1698 248 143 581 56
+PF1 lam0: common set alive at T0+2000: 1 ["667"]  at T0+500: 6  -> primary quantity undetectable
+PF1 lam2: common set alive at T0+2000: 1 ["667"]  at T0+500: 5  -> primary quantity undetectable
+PF1 lam8: common set alive at T0+2000: 0 String[]  at T0+500: 0  -> primary quantity undetectable
+PF1 verdict L2+SF: miss  (predicted: lam0 and lam2 >= 8 at T0+2000, lam8 < 8; got 1, 1, 0)
+PF2 verdict L2+SF: holds  s0 S_ORG vs S_FIX at T0+2000: undetectable (predicted undetectable)  Dict{String, Any}("neg" => 4, "pos" => 2, "judge" => "検出不能", "dir" => "undetectable")   beside, both alive (2): Dict{String, Any}("neg" => 0, "pos" => 1, "judge" => "検出不能", "dir" => "undetectable")
+Reading limit (frozen): G is the body gap on windows where all four runs are alive; it is not the total worth of updating including death, and survivor selection depends on arm, s and lambda.
+PF3 lam0: undetectable (not eligible)
+PF3 lam2: undetectable (not eligible)
+PF3 lam8: undetectable (not eligible)
+PF3 verdict L2+SF: holds  (predicted: undetectable for every lambda; got lam0 undetectable, lam2 undetectable, lam8 undetectable)
+PF4 lam2: ORG S(s3) larger than S(s0) by the sign test (predicted): false  Dict{String, Any}("neg" => 2, "pos" => 3, "judge" => "検出不能", "dir" => "undetectable")
+PF4 lam8: more windows smaller than larger (direction only, predicted): true  windows larger 0, smaller 3   sign test beside: Dict{String, Any}("neg" => 3, "pos" => 0, "judge" => "検出不能", "dir" => "undetectable")
+PF4 verdict L2+SF: miss  (lam2 miss, lam8 holds)
