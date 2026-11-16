@@ -1,0 +1,7 @@
+a_W0.jl.bin vs a_W0.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+a_W1.jl.bin vs a_W1.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W0.jl.bin vs b_W0.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W1.jl.bin vs b_W1.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W0.jl.bin vs e_W0.rs.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W1.jl.bin vs e_W1.rs.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+compared pairs 6 passed 6 elements 67980 differing 0 ALL IDENTICAL

@@ -1,0 +1,7 @@
+a_W0.rs.bin vs a_W0.pi.bin FAILED: SystemError: opening file "pi/run-20261116-190815-85548/a_W0.pi.bin": No such file or directory
+a_W1.rs.bin vs a_W1.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W0.rs.bin vs b_W0.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W1.rs.bin vs b_W1.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W0.rs.bin vs e_W0.pi.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W1.rs.bin vs e_W1.pi.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+compared pairs 6 passed 5 elements 61770 differing 0 NOT IDENTICAL

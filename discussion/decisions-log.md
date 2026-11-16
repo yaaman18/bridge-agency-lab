@@ -491,7 +491,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 結果の読み: PF1 外れで主の量は未測定。項番161 の「λ＝2 では L2+SF だけ良い」は法則の差として取り下げる（新しい窓で入れ替わった）。L2+SF の PF2・PF3 の成立は効果の支持と扱わない。
 - 選ばなかった案: 四つのセルをまとめて「λ＝2 では大」と主張する（凍結していない統合）。窓を足して同じ量を測り直す。
 - 合意: 両者合意（S-R → r2、I-R: accept、[AUTO 8/10]）。元に戻す方法: `experiments/stake_fix_grid.jl`・`check_stake_fix.jl`・結果は記録として残す。README 項番164 と項番161 への注記を除けば戻る。
-- ユーザー: 着手は依頼の範囲（2026-11-15「1,2,3は普通にやってくれ」）。中身の判断は事後承認の対象
+- ユーザー: 着手は依頼の範囲（2026-11-15「1,2,3は普通にやってくれ」）。中身の判断は事後承認の対象 → **承認**（2026-11-16 ユーザー「１から４まではok」）
 
 ### #56 TRM の正本と移植の分担（2026-11-15）
 - 種別: 方針（ユーザー決定）と実装上の判断。決めたこと（ユーザー）: TRM は公式の Python 版を Julia に移植して正本にする（#37 の「公式 Python TRM を使う方向」を改める）。移植のコーディングは deepseek-lab の席（2026-11-07 の休止をこの作業について再開）、claude-lab はオーケストレーション、codex-lab がレビュー。
@@ -504,7 +504,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 種別: 実装と読み。決めたこと: 引くのは一歩に一度、候補は（区画、添字）の順、ビットの位置は実行の状態に持つ、下調べで一つの腕でも落ちたら法則ごと走らせない、PA2 は Holm の補正、FIXP の重み 5:3:2（作者の数）。r3: m0 がない事実、D4b（捨てる経路の単体の検査）、D4 の負の対照の直し。
 - 結果の読み: PA1〜PA4 成立。PA2 は「この個体にある唯一の組について」。生存の数は予測のない観察で、適応・優越には一般化しない。記録の不足（key・添字・重み）は限定として書く。
 - 合意: 両者合意（S-R → r2、I-R: accept（限定）、[AUTO 6/10]）。元に戻す方法: `experiments/draw_grid.jl`・`check_draw.jl`・`draw-bits/`・結果は記録として残す。README 項番165 を除けば戻る。`core/` は変えていない。
-- ユーザー: 着手は承認済み（2026-11-15「2 はそれで OK」）。中身の判断は事後承認の対象
+- ユーザー: 着手は承認済み（2026-11-15「2 はそれで OK」）。中身の判断は事後承認の対象 → **承認**（2026-11-16 ユーザー「１から４まではok」）
 ## 議論より前からの未決（二人で決めてよい）
 - [2026-11-03 項番86] L2 の系に sed_fade と KC 0.0015 を採るか（項番77「L2 は偽で確定」を改めるか）— README.md 未決。
   第1部（要件の厳密化）で読みと要件が定まってから決める。
@@ -534,7 +534,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 合意: codex-lab と S-R 4 往復（D-MEM 8〜11）、I-R 1 往復（D-MEM 12）。
 - 元に戻す方法: `experiments/bret_grid.jl`・`check_bret.jl`・`results-bret-*`・`bret-out/` を使わない（`core/` は変えていない）。README 項番166 と D-MEM §9・§10 に「取り下げ」と書く。
 - 影響したファイル: discussion/specs/S58-bret-norm.md、experiments/predictions-bret-norm.md、freeze-bret-norm*.txt、bret_grid.jl、check_bret.jl、results-bret-*、README.md、notes/D-MEM.md、STATE.md
-- ユーザー: 事後承認待ち
+- ユーザー: **承認**（2026-11-16 ユーザー「１から４まではok」）
 
 ## #59 S57（A1）: 確かさから作った確率で引く腕 CONF の結果（2026-11-16）
 - 決めたこと: 仕様 r2 のとおり走らせ、PB0〜PB4 成立として README 項番168 に記録した。実装の席が仕様の範囲で決めた点（PB1 の組の作り方、D4b の重み、評価で 2 度目の走りを省く）を受け入れた。
@@ -542,7 +542,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 合意: codex-lab I-R（D-MEM 15）。accept 6、clarify 2、challenge 2（中央値の呼び方、読みの文の限定）→ 記録に入れた。全面の accept は保留（D7 の直しの独立の確認、全歩の再実行）。
 - 元に戻す方法: `experiments/draw_conf_grid.jl`・`check_draw_conf.jl`・`results-draw-conf-*`・`draw-conf-bits/`・`draw-conf-out/` を使わない（`core/` と S55 のファイルは変えていない）。README 項番168 に「取り下げ」と書く。
 - 影響したファイル: 上記と README.md、STATE.md、freeze-draw-conf-code.txt
-- ユーザー: 事後承認待ち
+- ユーザー: **承認**（2026-11-16 ユーザー「１から４まではok」）
 
 ## #60 S59: S58 のやり直し（減衰のときの支払いつきの作り直し）と、資格が成り立たなかったこと（2026-11-16）
 - 決めたこと: D-MEM §10 のとおり、規則（減衰の判定のときに作り直す、費用 KC×FORGET、存在の閾値より上の余りから払う、乱しの歩を早める）を新しい仕様・新しい種子・新しい予測で凍結して走らせた。結果は README 項番169。
@@ -550,4 +550,20 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 合意: codex-lab と S-R 2 往復（D-MEM 13・14）、I-R 1 往復（D-MEM 16）。
 - 元に戻す方法: `experiments/bret2_grid.jl`・`check_bret2.jl`・`results-bret2-*`・`bret2-out/` を使わない（`core/` と S58 のファイルは変えていない）。README 項番169 と D-MEM §11・§12 に「取り下げ」と書く。
 - 影響したファイル: discussion/specs/S59-bret2-norm.md、experiments/predictions-bret2-norm.md、freeze-bret2-norm*.txt、上記のコードと結果、README.md、notes/D-MEM.md、STATE.md
-- ユーザー: 事後承認待ち
+- ユーザー: **承認**（2026-11-16 ユーザー「１から４まではok」）
+
+## #61 S49d: 監査の書きかけの最後の行の扱い（2026-11-15 実装、2026-11-16 記録）
+- 決めたこと: `Audit::open` で、末尾が改行で終わらない監査に改行を補い break を足して続ける。r2 の PD1 を外れとして残し、r3 で書き直した。結果は README 項番171。
+- 根拠: S54 r2 の関門 H1 の不合格（S49c の版）。ユーザー 2026-11-16「１から４まではok」（記録を片付ける）。
+- 合意: codex-lab S-R（r3 まで）、I-R（D-S49d 1: accept 4、challenge 1〈終了コード〉、clarify 1、defer 1）。
+- 元に戻す方法: `rust/being-tools/src/bin/onelife-run.rs` を commit 46680d1 の版に戻す（S54 は S49d の版を前提にしているので、戻すなら S54 も止める）。
+- 影響したファイル: onelife-run.rs、S49d の仕様・予測・凍結・関門・結果、README.md
+- ユーザー: 記録は承認済み（2026-11-16）。中身の判断は事後承認の対象
+
+## #62 S60: TRM の決定的な推論（Julia 正本＋Rust 写し、Mac と Pi 5 のビット一致）（2026-11-16）
+- 決めたこと: 仕様 r3 のとおり、演算の順を固定した Julia の推論と同じ演算列の Rust（`rust/trm-det`、独立の workspace、依存なし）を作り、関門 G-i・G-ii・G-iii を走らせた。結果は README 項番172（全部合格、予測は全部成立）。実装の席が決めた点: rope の cos/sin は公式の表をデータとして使う、exp は Cody–Waite＋7 次 Horner、束と出力の独自の二進の形式。
+- 根拠: ユーザー 2026-11-16「TRM を Pi で動かせる状態まで持っていける作業を優先」「設定 c（mlp_t）は使わない」、claude-lab の割り付け（Opus に仕様から記録まで）。
+- 合意: codex-lab S-R 3 往復（[AUTO D-S60 1〜3]、challenge 5・clarify 4 → 全部採り accept）、I-R 1 往復（[AUTO D-S60 4]: accept 3、challenge 2〈関門のスクリプトの終了コード〉→ 直して全関門を走らせ直し、clarify 1〈E の区間外の件数〉→ 記録に書いた、defer 1）。直しの再レビューは未。
+- 元に戻す方法: `experiments/trm/det/` と `rust/trm-det/` を使わない（既存の `experiments/trm/`・`core/`・`rust/being-*`・`rust/Cargo.*` は変えていない）。Pi の `/home/pi/s60/` は照合の置き場だけ。README 項番172 に「取り下げ」と書く。
+- 影響したファイル: discussion/specs/S60-trm-det.md、experiments/predictions-trm-det.md、freeze-trm-det.txt、freeze-trm-det-code.txt、experiments/trm/det/*、rust/trm-det/*、results-trm-det-*、README.md、STATE.md
+- ユーザー: **承認**（2026-11-16 ユーザー「decisions-log #62（S60）の事後承認は承認する」）

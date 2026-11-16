@@ -11,3 +11,21 @@ cd97173ab2ad7b5077b38291b21cba70d906e92462db17ca5fcf67f2873e8dab  experiments/tr
 43ddf5e3e05e06a80254a43bb5ad275cee8a7fbf4d0f241ac29e2986a52c0693  experiments/trial/s54-trial-2.service
 9c8dfad4973a9c5961c282edebfd14031e6bc79d7b6db898a73b2fb9faeb41a4  experiments/trial/watch.sh
 15e8240b2b322c5e263a3097579c3a4979123ae9d40b645984f07e36c876f4a7  experiments/trial/wrapper_test.sh
+# freeze 2 (2026-11-16 19:32, lab-coder Opus 5.5; codex I-R points 2-5 of 19:25: watch.sh tabs via $TAB and ERR for unread dmesg/tune2fs; pi_check.sh place only on an explicit 'absent', stops with exit 3 otherwise, rehearsal-check ERR; new end_check.sh, scripts_test_r2.sh; experiments/results-trial-scripts-r2.out ALL PASS)
+593c4d281e8b8a844dfa35f30250b23627bca676d305f5c80d957a0a9cfc1adc  experiments/trial/watch.sh
+5dbf0f276141c16f8bbfc0700c59fe2adede0e3b76a5706422f32a6f61956366  experiments/trial/pi_check.sh
+7f708b1b6793289efaffb3ae0e6334398469a70a86bc7c923abce6c4515bcb63  experiments/trial/end_check.sh
+15079e42d103dfc495f611463c026f886221ecce72a61ca0c12cda3e584a30b0  experiments/trial/scripts_test_r2.sh
+c25ccf6bda4546293f5ab9646101a01fde82e1a6376e691050e6b631836a759c  experiments/results-trial-scripts-r2.out
+# freeze 2, second set (2026-11-16 19:35, after codex [AUTO D-S54 3] 19:33: end_check.sh header defines BOOTS and commit-beyond-run-n; EC8 added; pi_check.sh comment on the units re-pushed; results ALL PASS 23 checks). Replaces the five lines above for these files.
+593c4d281e8b8a844dfa35f30250b23627bca676d305f5c80d957a0a9cfc1adc  experiments/trial/watch.sh
+080922f2eb9b6d6dedad04ee4aa5620919fbd00208deae5c46c929c127eb7c92  experiments/trial/pi_check.sh
+67859c7023dd1d67a9bfc2235c2f28d1274952899002130f1f562264076dc1cd  experiments/trial/end_check.sh
+63bf92de09c1f659aeb9b69c9536804b4505b460b4f48192d7f9e5d33347baaf  experiments/trial/scripts_test_r2.sh
+e8ca90f46e498c2ca3c5caa97ca54dd80fcc682780f95532ebc92e2417e5e97a  experiments/results-trial-scripts-r2.out
+# freeze 2, third set (2026-11-16 19:37, after codex [AUTO D-S54 4] 19:35: end_check.sh header limits BOOTS to the total; results ALL PASS 22 checks, run again). Replaces the second set for these files.
+593c4d281e8b8a844dfa35f30250b23627bca676d305f5c80d957a0a9cfc1adc  experiments/trial/watch.sh
+080922f2eb9b6d6dedad04ee4aa5620919fbd00208deae5c46c929c127eb7c92  experiments/trial/pi_check.sh
+6cbc762eea4d310cab3f52fb710219bead3806097da756aab3ac61d9706c188a  experiments/trial/end_check.sh
+63bf92de09c1f659aeb9b69c9536804b4505b460b4f48192d7f9e5d33347baaf  experiments/trial/scripts_test_r2.sh
+e392f529338ce451669193628193965408ade90291c275d962afd171b1a69621  experiments/results-trial-scripts-r2.out

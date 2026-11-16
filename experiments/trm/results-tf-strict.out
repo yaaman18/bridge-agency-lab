@@ -1,0 +1,29 @@
+sha256 test_tf.jl f5cfa9510cc28175bde0de763c5a26ad9b68395188fabb54a4c44382229526be (loaded without its final main() call)
+S a/W0: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S a/W1: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S b/W0: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S b/W1: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S c/W0: G-TF=false G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=FAILED
+  FAILED c/W0 G-TF step1/round1/z_H
+S c/W1: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S d/W0: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S d/W1: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S e/W0: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+S e/W1: G-TF=true G-B=true empty_compares=0 structure=ok H=3 L=6 points=84 row=PASS
+negative control (1) perturbed state: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (2) H_cycles-1: caught by G-B(i):step1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (3) L_cycles-1: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (4) swap_update_order: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (5) q_head_pos=2: caught by G-TF:step1/round3/output/q_halt; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (6) puzzle_identifiers swapped: caught by G-B(ii):step1/puzzle_identifiers; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (7) bad_rope_value: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (8) bad_norm_order: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (9) swap_round_store: caught by G-TF:step1/round1/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+negative control (10) drop_zl_between_steps: caught by G-B(i):step2/z_H; mutation active in gated span=true; normal PASS -> mutant FAIL=true; required gate=true; PASS
+strict negative (N1) empty array mixed in: near=true exact=true strict row ok=false empties=1; PASS
+strict negative (N2) step2 missing its first round: original G-TF=true strict row ok=false structure=step2 rounds=2!=H_cycles=3; step2 l_iters total=12!=L*H=18; step2 G-TF z_H points=2!=H_cycles=3; PASS
+strict negative (N3) step1/round1 missing one L record: structure=step1 l_iters total=17!=L*H=18; step1 l_iters per round!=L_cycles=6; PASS
+strict negative (N4) exit code: fail->1 pass->0; PASS
+OVERALL incl c (a,b,c,d,e): rows=false controls=true strict_negatives=true -> FAILED
+EXCLUDING c (a,b,d,e rows; controls as above, control 8 uses the c fixture): rows=true controls=true strict_negatives=true -> PASS
+FAILED

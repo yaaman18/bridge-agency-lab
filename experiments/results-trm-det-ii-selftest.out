@@ -1,0 +1,41 @@
+S60 G-ii r2: Julia det vs Rust (Mac x86_64), byte and element identity; run dir out/run-20261116-190715-85022; selftest 1; 2026-11-16 19:07:15
+rust build warnings 0; binary sha 7b8fcb2219d61624bd5519e22efcceeedb07248d0a723e8e4555acd6f75cba28
+julia a_W0.bin 0.139 s (5 ACT steps, incl. compile on first)
+julia a_W1.bin 0.133 s (5 ACT steps, incl. compile on first)
+julia b_W0.bin 0.127 s (5 ACT steps, incl. compile on first)
+julia b_W1.bin 0.128 s (5 ACT steps, incl. compile on first)
+julia e_W0.bin 1.272 s (5 ACT steps, incl. compile on first)
+julia e_W1.bin 1.222 s (5 ACT steps, incl. compile on first)
+rust mac a_W0: step1 0.032807 s step2 0.032763 s step3 0.032715 s step4 0.032725 s mixed 0.032719 s total 0.165016 s 
+rust mac a_W1: step1 0.032795 s step2 0.032735 s step3 0.032739 s step4 0.032739 s mixed 0.032736 s total 0.164988 s 
+rust mac b_W0: step1 0.032661 s step2 0.032593 s step3 0.032567 s step4 0.032583 s mixed 0.032583 s total 0.164246 s 
+rust mac b_W1: step1 0.032665 s step2 0.032608 s step3 0.032593 s step4 0.032751 s mixed 0.032591 s total 0.164436 s 
+rust mac e_W0: step1 0.288335 s step2 0.287996 s step3 0.288387 s step4 0.291518 s mixed 0.294293 s total 1.455609 s 
+rust mac e_W1: step1 0.288392 s step2 0.295426 s step3 0.293793 s step4 0.288267 s mixed 0.296930 s total 1.468063 s 
+a_W0.jl.bin vs a_W0.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+a_W1.jl.bin vs a_W1.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W0.jl.bin vs b_W0.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W1.jl.bin vs b_W1.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W0.jl.bin vs e_W0.rs.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W1.jl.bin vs e_W1.rs.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+compared pairs 6 passed 6 elements 67980 differing 0 ALL IDENTICAL
+sha256 a_W0 jl a2549e1c1e365afc754160533b6b457197402e311964b0605c03c80ec27dfd18 rs a2549e1c1e365afc754160533b6b457197402e311964b0605c03c80ec27dfd18
+sha256 a_W1 jl 13c96494e49af8b6f30eb2854394306d39a5451cf5dc7c48ff642abe822cacec rs 13c96494e49af8b6f30eb2854394306d39a5451cf5dc7c48ff642abe822cacec
+sha256 b_W0 jl 99aa40903d19af42fef313f559e47abee302618fd1b49ce4eb45fae703c9c925 rs 99aa40903d19af42fef313f559e47abee302618fd1b49ce4eb45fae703c9c925
+sha256 b_W1 jl 3e81b5885c9347a7073336c6cc80f19b6bd9c956ad1e0532f8eb6f296cf461ea rs 3e81b5885c9347a7073336c6cc80f19b6bd9c956ad1e0532f8eb6f296cf461ea
+sha256 e_W0 jl 8f5d35684d7cafe074f3d348962dc563041b9fc096158fe5a9b466f77ab088e5 rs 8f5d35684d7cafe074f3d348962dc563041b9fc096158fe5a9b466f77ab088e5
+sha256 e_W1 jl de210ba13480276459e348a6e0f0ac83ab036f7394529f7c28e9709e9c9b85b2 rs de210ba13480276459e348a6e0f0ac83ab036f7394529f7c28e9709e9c9b85b2
+m1 linear_rev (a_W1) generation FAILED (rc 2): not counted
+m2 softmax_rev (a_W1): a_W1.jl.bin vs m2.rs.bin records 45 elements 6210 differing 5856 max_abs 1.872330904006958e-5 bytes_identical false FAILED first step1.logits[0] -0.8804356 vs -0.88043493
+m2 softmax_rev (a_W1) caught
+m3: rope.cos[16] 0.5403023 -> 0.54030234
+m3 rope.cos[1,0] +1ulp (a_W1): a_W1.jl.bin vs m3.rs.bin records 45 elements 6210 differing 5925 max_abs 3.707408905029297e-5 bytes_identical false FAILED first step1.logits[0] -0.8804356 vs -0.8804337
+m3 rope.cos[1,0] +1ulp (a_W1) caught
+m4: inner.embed_tokens.embedding_weight[352] 0.21865226 -> 0.21865228
+m4 embed_tokens[t,0] +1ulp (b_W1): b_W1.jl.bin vs m4.rs.bin records 45 elements 6210 differing 2836 max_abs 3.069639205932617e-6 bytes_identical false FAILED first step1.logits[96] -1.853407 vs -1.8534081
+m4 embed_tokens[t,0] +1ulp (b_W1) caught
+negative controls caught: 3/4
+settag: step1.logits tag f32 -> i32
+a_W1.jl.bin vs a_W1.settag.bin FAILED structure B: record type of step1.logits 2 != 1
+type-tag control caught
+FAILED

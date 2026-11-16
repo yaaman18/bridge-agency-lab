@@ -21,3 +21,10 @@ PT5-2 の外れの中身（事実。codex と Opus が別々に測って一致�
 - codex の手では、依頼の GATE 行の書き方の誤り（claude-lab）でスクリプトの関門が走らなかった。関門は claude-lab が手で走らせた。
 
 言えること: 凍結した基準の軌道の上で、設定 a・b・d・e と c/W1 の全検査点、c/W0 の 1 点を除く全検査点で、H の一巡の出力と受け渡しが許容内。c・d の通しの一致は主張しない。
+strict 層（2026-11-16 lab-coder、test_tf_strict.jl sha 60a17270…、test_tf.jl は末尾の main() だけ除いて読み込み・不変）: 空の比較の拒否、各歩の巡の数＝H_cycles・L の記録＝L×H、不合格で終了コード 1 を足した。results-tf-strict.out: c/W0 step1/round1/z_H だけ不合格（PT5-2 のまま）、全体（c を含む）FAILED、c を除く a・b・d・e の行 PASS、負の対照 1〜10 PASS、終了コード 1。
+strict 層の負の対照: 空の配列（旧 near・exact は真）→落ちる、step2 の巡 1 を除く（旧 G-TF は真）→落ちる、L の記録を 1 つ除く→落ちる、exitcode の子プロセス 1/0。
+限界: N2 の合格条件に「旧 G-TF が真」を足した最終版（60a17270）は走らせていない（直前の版 06a5f49a で旧 G-TF=true を観測）。N4 は exitcode 関数だけ。走る前の sha 凍結はしていない（逸脱）。
+oracle_r5.py の恒真の検査（in・inprev・out・carry_in_H）と効いている検査の区別は oracle_r5_selfcheck_note.md（基準は作り直していない）。
+codex-lab [AUTO D-S56 6・7]: 実装と範囲は accept、N2 の実行確認は defer、凍結の欠落と「全関門検証済みとは言わない」の 2 点は challenge のまま（記録の要件）。
+
+- 2026-11-16 claude-lab: 最終版 test_tf_strict.jl（sha 60a17270…）を走らせた。N2 は旧 G-TF＝true のまま strict で落ちる（新しい条件で PASS）。終了コード 1、最後の行 FAILED（c/W0 の一点、PT5-2 のまま）。走る前の sha の凍結はしていない（逸脱）。

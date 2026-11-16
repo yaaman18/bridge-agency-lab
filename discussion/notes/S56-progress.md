@@ -65,3 +65,7 @@ Julia API required of TrmPort.jl:
 - DeepSeek の席は停止（ユーザー決定）。codex-lab が `--codex-fix` の経路で TrmPort.jl（8e2f97c0…）と test_tf.jl（f5cfa951…）を書いた。関門は claude-lab が手で走らせた。
 - PT5-0・1・3・4 成立、**PT5-2 外れ**（c/W0 step1/round1/z_H、比 1.165、2/512 要素）。詳細・逸脱・限界は `experiments/trm/results-r5-summary.txt`。
 - 残り: test_tf.jl の弱い所（空の配列、巡の数、終了コード）と oracle_r5 の恒真の検査の直し、A2 の再レビュー。移植を「使える」とするかの判断（c の型〈mlp_t〉を使わないなら a・b・d・e の一致で足りる）。
+
+## 2026-11-16 ユーザー決定: 設定 c（mlp_t）は使わない
+- c の外れは外れのまま記録に残す。許容差・仕様・結果は変えない。予測器に使うのは注意機構の型。通しの一致の根拠は設定 a・b・e（r4）と、a・b・d・e の一巡ごとの一致（r5）。
+- 設定 d は r4 の通しで外れ（歩 3 で約 2e-4）、r5 の一巡ごとでは合格。d の構成を使うかどうかは、予測器の構成を決めるときに確かめる（未決）。

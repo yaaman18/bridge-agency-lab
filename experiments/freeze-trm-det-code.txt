@@ -1,0 +1,34 @@
+# S60 freeze 2 (code, bundles, executables; before the main run; 2026-11-16 19:00). Trial runs before this: a_W0 Julia vs Rust (identical), E grid.
+c9f716e968d6d0892838ec774cdb6e31c019d9733284771a6f26542bb7135eb4  experiments/trm/det/TrmDet.jl
+27b7fa771837acb516563961c2bb7f7a7a1898908e567cb8409c8b3c8874cf8b  experiments/trm/det/export_bundle.jl
+55b51b94a4937d87a97e3974b26c6d91637ef6caef54d2ca5f83ab3ba0f40326  experiments/trm/det/run_det.jl
+66a98cf9d314e86dbf99129916928882924c976b97084bf13bcb2fd4938c4224  experiments/trm/det/compare_bin.jl
+bcc22b407f929fe0d3851b81a52defc9938ea2c88c9f9306409fa516d155a4c3  experiments/trm/det/mutate_bin.jl
+a297206ced8b8a9c3ec8210f910e2a6eecb550b9ffa4b3c4d6bbebb9f694fae6  experiments/trm/det/gate_i.jl
+c588009944dcf3e7d60f2e59b6ab007d5ce61051b87d9c6b47af77b0aab3682a  experiments/trm/det/exp_check.jl
+534fd3bd40d2a43be4d18150a3c318c5d8441d4d0137bc650d20a861b38e0dd9  experiments/trm/det/gate_ii.sh
+4904e1f871f17d60186492b3e7c870c388d2ae01849dfc190eef4c2860b22d25  experiments/trm/det/gate_iii.sh
+ff2f00c2e22ed89bfcee6535d57f73b8289c48e6367b0159c134ed1277e83724  rust/trm-det/Cargo.toml
+cd808cc37d1b5b71b8686e08628bab94a508526afdbc81f5bc3eb95cb03a9089  rust/trm-det/Cargo.lock
+072c3f5d1231614e28c3e786605a211fbf1a74fec55f8c422938a8f5445b7941  rust/trm-det/src/main.rs
+b096e6b2bcbcd5c24db32a0911e7b116fa41bb360ea117cea2b3f79d866c7400  experiments/trm/det/bundles/SHA256SUMS
+236f95a2e01353ec1353f663c502b7ccea44b2cc775572cfda80cacf92d691cf  experiments/trm/det/bundles/a_W0.bin
+07a9c76b635e826e07d7ffda8e47ecc439b3f4cffdb8ab2911f00f5c6cee4433  experiments/trm/det/bundles/a_W1.bin
+333f505d4c612fbbdd66c569087169f3b77a63f0764b24c9f47270f01dffe57c  experiments/trm/det/bundles/b_W0.bin
+d6ef7e7a5ddfffba3440adf787137379ec3382334d678133d0846d1df1fad2e3  experiments/trm/det/bundles/b_W1.bin
+93b07afba70926330484591ffb783877d1a66d36cffc26235de8c09649a963e3  experiments/trm/det/bundles/e_W0.bin
+f34aa260065779b003c117d3fe8831c9c6c53f599e4dbe89fe18decf176b540f  experiments/trm/det/bundles/e_W1.bin
+7b8fcb2219d61624bd5519e22efcceeedb07248d0a723e8e4555acd6f75cba28  rust/trm-det/target/release/trm-det
+8d37b96ad09dd32d83ff47135f69dcbae32174dbdd6d76500792f08b1eea2183  rust/trm-det/target/aarch64-unknown-linux-musl/release/trm-det
+# toolchain: rustc 1.99.0 (b940084d7 2026-09-28); julia version 1.11.6; Mac x86_64
+# S60 freeze 3 (code r2 after codex I-R [AUTO D-S60 4] challenges 4,5: gate_ii.sh and gate_iii.sh only; r1 results kept as results-trm-det-*-r1.out; 2026-11-16 19:05)
+c9f716e968d6d0892838ec774cdb6e31c019d9733284771a6f26542bb7135eb4  experiments/trm/det/TrmDet.jl
+55b51b94a4937d87a97e3974b26c6d91637ef6caef54d2ca5f83ab3ba0f40326  experiments/trm/det/run_det.jl
+66a98cf9d314e86dbf99129916928882924c976b97084bf13bcb2fd4938c4224  experiments/trm/det/compare_bin.jl
+bcc22b407f929fe0d3851b81a52defc9938ea2c88c9f9306409fa516d155a4c3  experiments/trm/det/mutate_bin.jl
+a297206ced8b8a9c3ec8210f910e2a6eecb550b9ffa4b3c4d6bbebb9f694fae6  experiments/trm/det/gate_i.jl
+c588009944dcf3e7d60f2e59b6ab007d5ce61051b87d9c6b47af77b0aab3682a  experiments/trm/det/exp_check.jl
+db7b16bd7b8c19bd7eeaa73d14d296045cb71924685b30a6a6ac10818fef27c6  experiments/trm/det/gate_ii.sh
+a9ff3cbca9856d7669619d3b07c634321a9200d369e815dbdc29b36eefa36e13  experiments/trm/det/gate_iii.sh
+072c3f5d1231614e28c3e786605a211fbf1a74fec55f8c422938a8f5445b7941  rust/trm-det/src/main.rs
+b096e6b2bcbcd5c24db32a0911e7b116fa41bb360ea117cea2b3f79d866c7400  experiments/trm/det/bundles/SHA256SUMS

@@ -34,3 +34,5 @@ experiments/draw-conf-out/
 # S56 diagnostics: output dumps (regenerable: experiments/trm/diag_precision.py) and the stopped DeepSeek seat's probe scratch (kept on disk, not tracked)
 experiments/trm/diag/*.json
 experiments/trm/diag/probe/
+# S60: build output of the separate workspace
+rust/trm-det/target/

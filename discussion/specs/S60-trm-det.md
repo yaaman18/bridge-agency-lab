@@ -1,0 +1,46 @@
+# S60 TRM の決定的な推論: Julia の正本と Rust の写しを、Mac と Pi 5 でビット単位に一致させる（r3、2026-11-16、lab-coder。codex-lab S-R [AUTO D-S60 1]: challenge 4・clarify 2・accept 1 → 全部採った。[AUTO D-S60 2]: accept 1・challenge 1・clarify 2 → 全部採った〈r3 の印〉）
+
+- 出どころ: ユーザー 2026-11-16「TRM を Pi で動かせる状態まで持っていける作業を優先」「設定 c（mlp_t）は使わない」。S56 §2.3「自前の数学関数・演算の順の固定・Rust への写しは別の仕様で、それぞれ別に照合する」の続き。
+- 分担: 仕様の下書き・実装・関門・Pi での照合＝lab-coder（Opus 5.5）。レビュー＝codex-lab（S-R と I-R）。記録の点検＝claude-lab。
+- 範囲: 推論（評価モードの ACT の前向きの計算）だけ。学習、mlp_t（設定 c）、puzzle の埋め込み（設定 d）は対象外。対象は S56 の設定 **a・b・e**、重み **W0・W1**。
+- 変えないもの: `experiments/trm/` の既存のファイル（`TrmPort.jl`、`test_*.jl`、`fixtures/`、`fixtures_r5/`、`oracle_*.py`、`results-*`）、`core/`、`rust/being-core`、`rust/being-tools`、`rust/Cargo.toml`・`rust/Cargo.lock`、許容差（S56 r4 のまま）。新しいファイルは `experiments/trm/det/` と `rust/trm-det/`（独立の workspace、依存 crate なし、std）だけ。
+
+## 1. 決定的な推論の定義（Julia の正本 `experiments/trm/det/TrmDet.jl`、Rust の写し `rust/trm-det/`）
+両方の実装は、同じ IEEE 754 binary32 の演算の列を同じ順に実行する。使う演算は四則・`sqrt`（どちらも正しく丸められる）・比較・整数と f32 の変換（正確）・ビットからの f32 の組み立てだけ。BLAS・SIMD による和の並べ替え・fma（積和の縮約）・`@fastmath`・`@simd`・libm を使わない（Julia は `muladd` を書かない、Rust は `mul_add` を書かない。どちらの処理系も既定では積和を縮約しない）。
+- 配列は公式と同じ行優先（最後の添字が最も速い）の平たい f32 の列。添字は内部で 0 始まり。重みは公式の形 (out, in)。
+- **和（行列の積・内積・二乗和・softmax の分母）**: 累積は `+0.0f0` から始め、添字の小さい方から一つずつ `acc = acc + a*b`（積を丸めてから和を丸める）。
+- `linear(x, W, b)`: 各行 r・各出力 o で `y = Σ_i x[r,i]*W[o,i]`（上の順）、バイアスがあれば最後に `y + b[o]`。
+- `rms_norm(x)`: 各行で `s = Σ_k x_k*x_k`、`v = s / f32(H)`、`inv = 1 / sqrt(v + eps)`（eps は f32 の 1e-5）、`y_k = x_k * inv`。
+- 注意機構（因果なし、頭の数 nh、頭の幅 hd = H/nh）: `qkv = linear(h, W_qkv)`、特徴 f = slice*hd + d（q は slice 0..nh−1、k は nh..2nh−1、v は 2nh..3nh−1）。rope（設定 a・e）: `qe = q*cos[i,d] + rot(q)[i,d]*sin[i,d]`（積・積・和の順）、`rot(q)[d] = −q[d+hd/2]`（d < hd/2）・`q[d−hd/2]`（それ以外）。k も同じ。**cos・sin の表は fixtures の `rope.cos_cached`・`sin_cached`（公式の PyTorch が作った値）をデータとして使う**（自前で三角関数を計算しない）。scale = `1 / sqrt(f32(hd))`。`s_ij = (Σ_d qe_id*ke_jd) * scale`。各行 i で `m = s_i0`、j = 1.. で `s_ij > m` なら置き換え。`e_ij = exp_det(s_ij − m)`、`z = Σ_j e_ij`、`p_ij = e_ij / z`、`o_id = Σ_j p_ij*v_jd`。頭の出力は f = head*hd + d に並べ、`linear(·, W_o)`。
+- SwiGLU: `g = linear(x, W_gate_up)`、gate = g[0:I]、up = g[I:2I]、`a = silu(gate) * up`、`linear(a, W_down)`。`silu(x) = x * (1 / (1 + exp_det(−x)))`。
+- Block: `hs = rms_norm(h + attn(h))`、`out = rms_norm(hs + mlp(hs))`。ReasoningModule: `h = z + injection`、層を順に。
+- 埋め込み: `e = embed_tokens[tok]`。learned の位置（設定 b）: `e = c707 * (e + pos[s])`（c707 は f32 の 0.707106781）。最後に `e = embed_scale * e`（embed_scale = `sqrt(f32(H))`）。
+- 一巡: L_cycles 回 `z_L = L_level(z_L, z_H + emb)`、その後 `z_H = L_level(z_H, z_L)`。一歩: H_cycles 巡。出力: `logits = linear(z_H, W_lm)`（puzzle_emb_len = 0）、`q = linear(z_H[:,0], W_q, b_q)`、q_halt = q[0]、q_continue = q[1]。
+- ACT（評価モード、S56 と同じ）: halted の行の z を H_init・L_init に、steps を 0 に、current_data をその歩の入力に置き換え、一歩進め、steps += 1、halted = steps ≥ halt_max_steps。初期の持ち越しは z = 0、steps = 0、halted = 全部真、current_data = 0。
+- **`exp_det(x)`**（f32）: x が NaN なら x。x > 88 なら +Inf、x < −87 なら +0。それ以外は `t = x * LOG2E`、`k = floor(t + 0.5)`（floor は整数への切り捨てと補正で書く: `i = trunc(y)`、`f32(i) > y` なら i −= 1）、`r = (x − k*LN2_HI) − k*LN2_LO`、`p = C7`、j = 6..0 で `p = p*r`・`p = p + C_j`（Horner、積と和を別に丸める）、`2^k` を指数のビット (k+127)<<23 から組み立て、`p * 2^k`。定数はビットの値で両側に書く: LOG2E 0x3fb8aa3b、LN2_HI 0x3f317200、LN2_LO 0x35bfbe8e、C0 = C1 = 0x3f800000、C2 0x3f000000、C3 0x3e2aaaab、C4 0x3d2aaaab、C5 0x3c088889、C6 0x3ab60b61、C7 0x39500d01（1/j! の f32）。
+- f32 の定数（eps、c707、embed_scale）は文字列の解釈に頼らず、束（§2）にビットで入れて両側が読む。
+- **丸めと範囲（r2、codex 1）**: 丸めは最近接・偶数（IEEE の既定）。subnormal は保つ（FTZ・DAZ を有効にしない。Julia・Rust の既定、x86_64 の SSE と aarch64 Linux の FPCR の既定のまま。どちらの側でも浮動小数点の環境を変える呼び出しをしない）。整数への変換は exp_det の floor の中だけで、引数は |y| ≤ 128（x ∈ [−87, 88] なので y = t + 0.5 ∈ [−125.1, 127.5]）、0 への切り捨て。整数と f32 の間の変換は、exp_det の i・k と H・hd を含め、絶対値が 2^24 未満の整数（負を含む）だけで、どれも正確（r3、codex 4）。束の f32 の値（重み・表・定数・入力の埋め込みのもと）は読み込みの時に全部有限であることを検査し、有限でなければ走らせずに終了コード 2。exp_det の NaN の枝は定義として置くだけ。
+
+## 2. 束と出力の形式（両側で同じ）
+- **バイトの形式（r2、codex 2）**: ファイル = 魔法の語 8 バイト（束は ASCII `TRMDET1\n`、出力は `TRMOUT1\n`）＋ 記録の数 N（u32）＋ N 個の記録。記録 = 名前の長さ L（u16）＋ 名前（ASCII、L バイト）＋ 型（u8: 1 = f32、2 = i32）＋ 次元の数 D（u8）＋ D 個の大きさ（u32）＋ 要素（大きさの積の個数、各 4 バイト）。整数・f32 は全部リトルエンディアン。0 次元はない（スカラーは形 (1)）。
+- 束（`det/bundles/<設定>_<重み>.bin`）: `det/export_bundle.jl` が fixtures の JSON（公式の値）から作る。記録の順と名前: `cfg`（i32 の 13 個: batch、seq_len、vocab、hidden、heads、inter、H_cycles、L_cycles、L_layers、halt_max_steps、pos〈1 = rope、2 = learned〉、puzzle_emb_len〈0〉、n_steps〈4〉）、`const`（f32 の 3 個: eps、c707、embed_scale）、重み（公式の `state_dict` の名前、`inner.` を含む、形は公式のまま）を名前の辞書順、rope の設定だけ `rope.cos`・`rope.sin`（形 (S, hd)）、learned だけ `inner.embed_pos.embedding_weight`（重みの中）、`x1.inputs`・`x1.pid`・`x2.*`・`x3.*`（i32、形 (B,S)・(B)）、`steps.input`（i32 の 4 個、x1..x3 を 1..3 で）、`mixed.input`（i32 の 1 個）、`mixed.start_halted`（i32、形 (B)、0/1）。読む側は名前で引き、要る名前がなければ終了コード 2。束の sha は凍結の後の最初の作成時に記録する（fixtures の SHA256SUMS は S56 の凍結のまま）。
+- 走り: 歩 1〜4（入力は fixtures の `passed_input`、x1・x2・x1・x3）を初期の持ち越しから。そのあと mixed_reset（歩 1 の後の持ち越しの halted を start_halted に置き換え、指定の入力で 1 歩）。全 6 束に mixed_reset がある。
+- 出力（`.out.bin`）: 記録はちょうど 45 個、この順: 場合 `step1`・`step2`・`step3`・`step4`・`mixed` のそれぞれについて `<場合>.logits` (B,S,V)・`.q_halt` (B)・`.q_continue` (B)・`.z_H` (B,S,H)・`.z_L` (B,S,H)（f32）、`.steps` (B)・`.halted` (B、0/1)・`.cd_inputs` (B,S)・`.cd_pid` (B)（i32）。Julia の正本と Rust が同じ形式で書く。時間の計測は出力に入れない（標準エラーへ）。
+
+## 3. 関門（すべて走らせた要素の数・最大の差・不合格の数を書き、不合格なら終了コード 1）
+- **E（exp_det の精度。診断であり、合格の条件ではない）**: [−87, 88] の 2^20 点と、softmax・silu の実際の引数の全部で、`Float64` の exp を f32 に丸めた値との ulp の差の最大と分布を記録する。
+- **G-i（Julia の決定的な推論の妥当性）**: `det/gate_i.jl`。設定 a・b・e、W0・W1、歩 1〜4 と mixed_reset の全部の出力・持ち越し（logits、q_halt、q_continue、z_H、z_L）を、(1) 既存の `TrmPort.jl`（`ACTModel`・`act_forward` を同じ入力で）と、(2) fixtures（公式 Python）と比べ、最大の絶対差 ≤ 1e-4。steps・halted・current_data は完全一致。W1 は加えて、第一ブロックの中間の量（input_embeddings、reset_z_H・z_L、block_input_h、block_first_op_out、block_norm1_out、block_mlp_out、block_norm2_out）を fixtures と要素ごとに |d| ≤ 1e-5 + 1e-5·|ref|、各 H 周回の終わり（h_round_end）を ≤ 1e-4。形・有限は先に検査。fixtures の mixed_reset の照合は、S56 の test_port と同じく a/W1 では fixtures に対しても行い、ほかの束も fixtures の mixed_reset に対して行う。
+  - 空でないこと（r2、codex 3）: 期待する検査の集合を前もって列挙し、その集合と実際に比べた項目が一致しなければ不合格（欠け・重複・余り）。集合 = 6 束 × 5 場合 × 9 量（f32 の 5 量は対 TrmPort と対 fixtures の二通り、整数の 4 量は完全一致）＋ W1 の 3 束 × 第一ブロックの 8 量 ＋ W1 の 3 束 × h_round_end 3 巡 × 2 量。各項目の形は束の cfg から決まる形と一致し、要素の数 > 0。全体の要素の数と項目の数を出す。`exp_det` が `Base.exp` と違う値を返す点の数と、Julia の決定的な推論と TrmPort がビットで違う要素の数を**束ごとに**出し、どれか一つの束でも 0 なら「TrmPort をそのまま呼んでいる疑い」として不合格（r3、codex 2）。
+  - 負の対照（G-i が落ちること）: (n1) z_L と z_H の更新の順を入れ替える（a/W1、logits の歩 1）、(n2) `L_level.layers.0.mlp.down_proj.weight[0,0]` に +0.01（a/W1、歩 4）、(n3) exp_det の多項式を 1 次で打ち切る（e/W1、歩 1）。
+- **G-ii（Mac の上の Julia と Rust のビット一致）**: `det/gate_ii.sh`。6 束それぞれで Julia の正本と Rust（Mac、x86_64-apple-darwin、release）の `.out.bin` をバイトで比べ、`det/compare_bin.jl` で記録の名前・形・要素ごとのビットを比べる（比べた要素の数、ビットの違う要素の数、最大の絶対差）。compare_bin.jl は両方のファイルが §2 の 45 個の名前を順にちょうど持ち、型（f32 の 5 量・i32 の 4 量）と形が束の cfg から決まるものであることを先に検査する（欠け・重複・余り・型の違い・形の違いは不合格。r3、codex 3）。合格: 6 束ともバイト一致かつ違う要素 0、6 束の全部が比べられたこと（束の数を出す）。
+  - 負の対照（G-ii が落ちること）: (m1) Rust の `--mutate linear_rev`（第 0 層の qkv の linear の和を逆順に）、(m2) `--mutate softmax_rev`（softmax の分母の和を逆順に）、(m3) a/W1 の束の `rope.cos[1, 0]`（0 始まり。位置 1 は全部の q・k の位置 1 で毎回使われる）を 1 ulp 上げた写し、(m4) b/W1 の束の `inner.embed_tokens.embedding_weight[t, 0]`（t は x1 の batch 0・位置 0 の token。歩 1 で必ず読まれる）を 1 ulp 上げた写し。m3・m4 は Rust を写しで走らせ、もとの束の Julia の出力と比べる（r2、codex 4: 位置・適用の側・比べる相手をここで固定）。それぞれ違う要素 > 0 で捕まること。1 ulp が後の丸めで消えて捕まらなければ PD-6 の外れとして残す（関門を直さない）。
+- **G-iii（Pi 5 と Mac の Rust のビット一致）**: `det/gate_iii.sh`。Rust を Mac の上で `aarch64-unknown-linux-musl`（静的、リンカ rust-lld、release）にビルドし（Pi の上でコンパイルしない）、実行物と 6 束を `/home/pi/s60/` に写し、両側で sha を確かめ、Pi で走らせ、Pi で出力の SHA-256 を取り、Mac の Rust の出力の SHA-256 と比べる。さらに Pi の出力を Mac に持ち帰り `compare_bin.jl` で要素ごとに比べる。合格: 6 束とも SHA-256 が一致し違う要素 0。
+  - 負の対照: (p1) Pi の上で `--mutate softmax_rev` で a/W1 を走らせた出力の SHA-256 が Mac の正常の出力と違うこと、(p2) 持ち帰った a/W1 の Pi の出力の写しで、記録 `step4.logits` の要素 0 の最下位のバイト（ヘッダではなく数値の中身）の 1 ビットを反転したものを `compare_bin.jl` が「違う要素 1」と報告し終了コード 1 を返すこと。
+  - 所要: Pi の上で束ごとの全体の時間と、ACT の 1 歩（一回の推論）の時間（Rust が標準エラーに書く）を記録する。
+  - Pi の安全: 走らせる前に `vcgencmd get_throttled` が 0x0 で、`pgrep onelife-run` が空であること（どちらかが外れたら走らせずに止める）。書くのは `/home/pi/s60/` だけ。sudo・apt・再起動・電源の操作・Pi の上のコンパイルをしない。`s52-ambient-log`・`/home/pi/s52/`・`/home/pi/s54/` に触らない。
+- **凍結と試し（r2、codex 6）**: 二段。凍結 1（`experiments/freeze-trm-det.txt`）= この仕様と予測の sha。コードを書く前。凍結 1 の後は仕様・予測を変えない（予測はこの版のまま残す）。開発中の試しで走らせてよいのは、a/W0 の束での Julia と Rust の比べと、E の格子の部分だけ（TrmPort・fixtures との照合、ほかの束、負の対照、E の実際の引数の収集、Pi は走らせない。束の作成は 6 束とも行ってよい〈中身を照合に使わない〉）。凍結 2（`experiments/freeze-trm-det-code.txt`）= 凍結したコードの全部（Julia・Rust・スクリプト）、束の sha、Mac と Pi の実行物の sha。本走りは凍結 2 の後に G-i・G-ii・G-iii・E を各 1 回。結果を見て関門・許容差を直さない（直しが要るなら止めて報告）。I-R の指摘で直すときはコードの凍結を足して（版を上げて）関門を全部走らせ直し、前の結果も残す。
+
+## 4. 言えること・言えないこと
+- 言える: この Mac（x86_64）とこの Pi 5（aarch64、Mac でクロスビルドした特定の静的 ELF）で、設定 a・b・e・W0・W1 の凍結した入力の全歩について、Julia の決定的な推論と Rust が出力・持ち越しのビットで一致する／しない。Julia の決定的な推論が S56 の移植と公式の値に許容内で一致する／しない。
+- 言えない: ほかの機械・ほかのコンパイラの版・ほかの最適化の段での一致、no_std での一致（まだ std）、Julia を Pi で走らせた場合、設定 c・d、学習、大きな模型での速さ、決定的な推論が公式より正確であること。
+- 設定 d: puzzle の埋め込みの連結を足せば同じ方法でビット一致の照合はできる見込みだが、d は S56 r4 の通しで公式と 1e-4 を外れているので、G-i(2) は d では落ちうる。この段では足さない。

@@ -52,5 +52,6 @@
   新しい Lean は切り出しの臨界経路に要る statement に限る（`discussion/dev-guidelines.md` §3、2026-11-10 ユーザー決定「r3でやって」）。
 - 監査: アプリの db の存在を ArtifactData で読むだけにして `audit/in/state-v<版>.json` に置き、`sh audit/run.sh <file>`（`audit/README.md`）。db には書かない。
 - 報告は日本語で、作業の途中報告を挟まず最後に一回だけ返す。
+- **/compact と /clear の通知**（2026-11-16 ユーザー決定）: 主の会話は、作業の一区切りが済んで次が関係ない話に移るとき「/clear してよい区切り」、同じ作業の途中で会話が長くなったとき「/compact してよい」、1 時間を超えて間があきそうで続きを使わないとき「休む前に /clear を」と、返事の最後に一行でユーザーに伝える。lab-coder の報告の最後の行の「通知:」も読んで伝える（`.claude/agents/lab-coder.md`）。/clear の前に `discussion/STATE.md` に続きの入口を書く。
 - 結果は README.md の「実験の経緯」「確認した事実」「未決」を更新して残す。項番は段の区切りで足す（`discussion/dev-guidelines.md` §5）。
 - 作業の正本の手順は `discussion/procedure-cutout.md`（切り出しまで、r3）、指針は `discussion/dev-guidelines.md`。

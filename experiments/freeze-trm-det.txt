@@ -1,0 +1,6 @@
+# S60 freeze 1 (spec r3 + predictions r3, after codex S-R accept [AUTO D-S60 3]; before any code; 2026-11-16 18:53)
+f2550632bf7892d725e913c1346b6aa67b0f776f50a5b73f862611d39481e5de  discussion/specs/S60-trm-det.md
+29d418befdc987aff62e3044784485722a632ba9207ffa46072c6bf3d523edf9  experiments/predictions-trm-det.md
+8e2f97c0c63d2c634383aef99361dd46dc675412727b8150218213f75b96f40e  experiments/trm/TrmPort.jl
+cfec0da816761ed886b272f1e64d1e5f35209a7ea1430705eb715786c1069bf1  experiments/trm/fixtures/SHA256SUMS
+# codex S-R replies: discussion/.codex-turns/20261116-185003-medium.jsonl.last, 20261116-185205-medium.jsonl.last, 20261116-185308-medium.jsonl.last

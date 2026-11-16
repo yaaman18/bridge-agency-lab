@@ -52,3 +52,15 @@
 - 07:00 S58 の R3・R4 の再確認: もとの記録と一致（README 項番169 の I-R の行に記録）。残り: Pi の準備 → commit。
 
 - S54 の準備: 全部合格（README 項番170）。試運転と稽古は未開始。次はユーザーの稽古（`discussion/notes/S54-start-procedure.md`）。
+
+- S56: ユーザー決定「c は使わない」を記録（user-decisions、S56-progress、README 項番167）。78f2e73 の後の未 commit の変更はこの記録だけ。
+
+- 18:45 S54 の止めて入れ直す稽古（ユーザーが電源ボタンで止めて起動）: 合格。boot id が変わり（7c24432f… → 83c87cfb…）、人手なしで再開（監査の列 start 0, start 18）、n は 18 → 34 → 36 → と進み、毎回 payload SHA＝基準、commit の他 0、break 0、audit_behind 0、end のない停止 1、S52 active、throttled 0x0、dmesg の ext4 の誤り 0、ファイル系 clean。稽古の常駐は外した（走りのファイルと監査は残した）。記録 `experiments/results-trial-rehearsal.out`、`experiments/s54-watch*.tsv`。上流の写しの `__pycache__` 2 つはユーザーの指示で消した。
+
+- 18:55 割り付け: S60（決定的な TRM の推論、Julia＋Rust、Pi で照合。仕様から記録まで Opus 一人）と D-PRED（予測器の設計を codex と詰めて `discussion/notes/D-PRED.md` に。Opus）。claude-lab は確認だけ。78f2e73（push 済み）の後の未 commit: README 項番171、#61、承認の記入、user-decisions、STATE、pi-rebuild の写しの記録、results-trial-rehearsal.out、watch の tsv。**2026-11-17 昼に Fable の利用が終わる。次の会話は STATE のこの行から読む。**
+
+- 18:57 D-PRED（予測器〈TRM〉の設計）: Opus の作業役が codex-lab と 6 往復（[AUTO D-PRED 1〜6]）。`discussion/notes/D-PRED.md` の第二部（§0〜§5。第一部〈2026-11-09〉は残した）。段の順 C0（読むだけ）→ C1（凍結した重みで閉ループ）→ C2（頭だけ個体の中で学ぶ）に合意。§4 にユーザーに決めてほしい 5 点（U1 学ぶ場所、U2 段 B を独立に走らせない、U3 費用、U4 ê の使い方と写像、U5 試運転の個体の記録を学習に使うか〈codex は保留〉）。仕様・コード・予測は書いていない。**ユーザーの返事待ち。**
+
+- 19:15 S60（決定的な TRM の推論）: lab-coder（Opus）。仕様 r3（codex S-R 3 往復）→凍結→実装→G-i・G-ii・G-iii 全部合格、予測全部成立。Pi 5 で Mac の Rust と 6 束とも SHA-256 一致、1 歩 a・b 約 20 ms、e 約 159 ms。I-R の challenge 2（関門の終了コード）は直して走らせ直した（再レビュー未）。README 項番172、#62（事後承認待ち）。未 commit。
+
+- 19:40 S54 のスクリプトの直し（codex D-S54 3〜5）: 検査 22 項目 ALL PASS、third set を codex が確認、**技術の上では開始可、開始はユーザーの一言**。Pi の実物での n＝60480 の確認は入力が尽きる前に（`discussion/notes/S54-start-procedure.md` (f)）。S56: test_tf_strict.jl で空の比較・巡の数・終了コードを塞いだ（c を除く a・b・d・e は PASS）。#62 承認。D-PRED の U1〜U5 は Fable の回へ。

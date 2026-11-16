@@ -160,10 +160,18 @@ place)
   # the lives of the trial (t1 = 669-L2, t2 = 669-L2SF) and of the stop-and-start rehearsal (rehearsal = 627-L2-D1):
   # the wrapper, the Pi production build, the drives, the wrapped birth run file (n = 0), an empty audit; the units
   # in units/ (only placed; not installed, not enabled, not started). Nothing is run there. Refuses a dir with a run.
+  # The units are pushed again on every place (same content, SHA compared), also when every life was refused.
   ok=true
   for t in t1 t2 rehearsal; do
     P=$BASE/$t
-    if pis "test -e $P/run"; then say "place: $P/run exists; nothing placed there"; ok=false; continue; fi
+    # placed only when the Pi answers that neither run nor run.audit is there; any other answer (ssh failed, no or
+    # unexpected output) stops the whole place with exit 3 before anything more is written
+    st=$(pis "if test -e $P/run || test -e $P/run.audit; then echo present; else echo absent; fi" 2> /dev/null) || st="ssh-failed:$?"
+    case $st in
+      absent) ;;
+      present) say "place: $P/run or $P/run.audit exists; nothing placed there"; ok=false; continue ;;
+      *) say "place: could not tell whether $P/run exists (answer '$st'); place stopped"; exit 3 ;;
+    esac
     case $t in t1) r=$D/run0-669-L2; dr=$D/drives-669.txt ;; t2) r=$D/run0-669-L2SF; dr=$D/drives-669.txt ;; rehearsal) r=$D/rehearsal-run0; dr=$D/rehearsal-drives-D1.txt ;; esac
     pis "mkdir -p $P"
     np=0
@@ -185,10 +193,11 @@ place)
 rehearsal-check)
   # S54 §5, read only on the Pi: one copy each of the rehearsal's run file and audit; n and payload SHA against the
   # reference 627-L2-D1; every commit line against the reference; the audit report (breaks, audit behind, starts);
-  # boot id, the unit, S52's unit (is-active only), throttled, ext4 errors in the kernel log that remains, tune2fs.
+  # boot id, the unit, S52's unit (is-active only), throttled, ext4 errors in the kernel log that remains, tune2fs
+  # (ERR when sudo or the command failed, never counted as 0).
   R=experiments/results-trial-rehearsal.out; P=$BASE/rehearsal; ref=$D/ref-627-L2-D1.sha
   pis "cat $P/run" > "$W/r"; pis "cat $P/run.audit" > "$W/r.audit"
-  sys=$(pis 'cat /proc/sys/kernel/random/boot_id; systemctl is-active s54-rehearsal 2> /dev/null || true; systemctl is-active s52-ambient-log 2> /dev/null || true; vcgencmd get_throttled; echo "ext4 errors in dmesg $(sudo -n dmesg 2> /dev/null | grep -ci "ext4-fs error" || true)"; sudo -n tune2fs -l /dev/mmcblk0p2 2> /dev/null | grep -E "^(Filesystem state|FS Error count|Last mount time)" | tr -s " " | tr "\n" ";"')
+  sys=$(pis 'cat /proc/sys/kernel/random/boot_id; systemctl is-active s54-rehearsal 2> /dev/null || true; systemctl is-active s52-ambient-log 2> /dev/null || true; vcgencmd get_throttled; if d=$(sudo -n dmesg 2> /dev/null); then echo "ext4 errors in dmesg $(printf "%s\n" "$d" | grep -ci "ext4-fs error" || true)"; else echo "ext4 errors in dmesg ERR"; fi; if f=$(sudo -n tune2fs -l /dev/mmcblk0p2 2> /dev/null); then printf "%s\n" "$f" | grep -E "^(Filesystem state|FS Error count|Last mount time)" | tr -s " " | tr "\n" ";"; else echo "tune2fs ERR"; fi')
   i=$("$MBT" onelife-info "$W/r"); n=$(echo "$i" | sed -n 's/^{"n":\([0-9]*\),.*/\1/p'); s=$(echo "$i" | sed -n 's/.*"payload_sha":"\([0-9a-f]*\)".*/\1/p')
   m=false; [ -n "$n" ] && [ "$s" = "$(awk -v n="$n" '$1 == n { print $2 }' "$ref")" ] && m=true
   set -- $(commits "$ref" "$W/r.audit")

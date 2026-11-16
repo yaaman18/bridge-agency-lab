@@ -1,0 +1,44 @@
+S54 scripts r2 tests, Mac time 2026-11-16 19:36:21; temp /var/folders/82/qvmvqs01469ck832bd6f4k280000gn/T//s54-r2.uRXA6q
+W1 sudo ok: columns per line 17 17 ; ext4 2 fs clean 0; t1 n 0 match true; t2 n 0 match true
+PASS W1 header and row 17 columns, ext4 2, clean, 0, both lives match
+W2 sudo refused: columns 17 17 ; ext4 ERR fs ERR ERR
+PASS W2 negative control: sudo refused -> ERR ERR ERR, 17 columns
+W2-old (freeze 1 watch.sh, sudo refused): columns 17 17 ; ext4 0 fs '?' ?
+PASS W2-old control: the old script reports the refused dmesg as 0
+W3 ssh fails: columns 17 17 ; boot unreachable; t1 unit unreachable n - match -
+PASS W3 ssh fails -> unreachable, 17 columns, no match claimed
+PASS W4 rehearsal mode: header and 2 rows 12 columns (12 12 12 )
+RC sudo ok: Pi: active active throttled=0x0 ext4 errors in dmesg 2 Filesystem state: clean;Last mount time: Mon Nov 16 10:00:00 2026;
+RC sudo refuse: Pi: active active throttled=0x0 ext4 errors in dmesg ERR tune2fs ERR
+PASS RC sudo ok: ext4 count 2 and tune2fs read
+PASS RC negative control: sudo refused -> dmesg ERR, tune2fs ERR
+P1 ssh fails, empty Pi: exit 3; ssh/scp calls 1, writing calls 0; place: could not tell whether /home/pi/s54/t1/run exists (answer 'ssh-failed:255'); place stopped
+PASS P1 negative control: ssh fails -> non-zero exit, no writing call, nothing on the Pi
+P2 ssh fails only on the existence test, lives in place: exit 3; writing calls 0; t1 audit kept true
+PASS P2 flaky ssh: non-zero exit, no writing call, run and audit unchanged
+P2-old (freeze 1 pi_check.sh, same flaky ssh): exit 0; writing calls 25; t1 audit size now 0
+PASS P2-old control: the old script overwrites the existing life (audit emptied)
+PASS P3 unexpected answer (exit 3): non-zero exit, no writing call
+P4 empty fake Pi, ssh works: exit 0; 3 lives 5 of 5; place units (only placed in /home/pi/s54/units): same SHA 3 of 3
+PASS P4 positive: exit 0, three lives 5 of 5, units 3 of 3
+PASS P5 placed again on the placed lives: exit 1 (non-zero), 3 refused, files unchanged
+E1 wrapper (fake flock) at n 60480, drives exhausted: exit 0; run file unchanged true; stdout 0 B, stderr 0 B; audit +3 lines: start 60480 ; wait 60481 ; end 60480 eof; 
+E2 onelife-run again with /dev/null: exit 0; run unchanged true; audit +3 lines; onelife-audit: chain_ok true starts 3 ends 3 commits 60480 breaks 0 audit_behind 0 errors 0 run_vs_last_commit "match"
+PASS E at n 60480: exit 0 twice, run file unchanged, 3 audit lines each (start, wait, end eof), no commit added
+EC1 exit 0:  run SHA = reference true; audit lines 181443; commits with the reference SHA 60480, other 0 (first null), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok true; starts 1 (boots 0, <= boots+1 true); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC1 the reference run 60480 and its audit: PASS, missing 0, starts 1 <= boots 0 + 1
+EC2 exit 0:  run SHA = reference true; audit lines 181449; commits with the reference SHA 60480, other 0 (first null), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok true; starts 3 (boots 2, <= boots+1 true); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC2 after the two empty feeds, given as if each were a boot (starts 3, BOOTS 2; two process starts in one OS boot, no real boot shown): PASS
+EC3 exit 1:  run SHA = reference true; audit lines 181443; commits with the reference SHA 60479, other 1 (first 30000), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok false; starts 1 (boots -, <= boots+1 -); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC3 negative control: one commit SHA changed -> FAIL, first n 30000
+EC4 exit 1:  run SHA = reference true; audit lines 0; commits with the reference SHA 0, other 0 (first null), distinct n 0, missing in 1..60480 60480, beyond n 0; chain_ok true; starts 0 (boots -, <= boots+1 -); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC4 negative control: empty audit -> FAIL
+EC5 exit 0:  run SHA = reference true; audit lines 181000; commits with the reference SHA 60333, other 0 (first null), distinct n 60333, missing in 1..60480 147, beyond n 0; chain_ok true; starts 1 (boots -, <= boots+1 -); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC5 audit tail lost (first 181000 lines kept): commit lines missing counted, not a miss -> PASS
+EC6 exit 1:  run SHA = reference false; audit lines 181443; commits with the reference SHA 0, other 60480 (first 1), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok true; starts 1 (boots -, <= boots+1 -); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC6 negative control: the L2SF reference for the L2 life -> FAIL
+EC7 exit 1:  run SHA = reference true; audit lines 181449; commits with the reference SHA 60480, other 0 (first null), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok true; starts 3 (boots 0, <= boots+1 false); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+EC8 exit 1:  run SHA = reference true; audit lines 181443; commits with the reference SHA 60479, other 1 (first 60481), distinct n 60480, missing in 1..60480 1, beyond n 1; chain_ok false; starts 1 (boots -, <= boots+1 -); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0  
+PASS EC8 negative control: a commit line with n beyond the run's n -> FAIL
+PASS EC7 negative control: the same audit with BOOTS 0 (two starts within one boot) -> FAIL
+ALL PASS

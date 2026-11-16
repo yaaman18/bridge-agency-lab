@@ -1,0 +1,43 @@
+S60 G-iii r2: Pi 5 Rust vs Mac Rust, SHA-256 and element identity; run dirs pi/run-20261116-190756-85296 and /home/pi/s60/run-20261116-190756-85296; selftest 0; 2026-11-16 19:07:56
+build warnings 0; mac sha 7b8fcb2219d61624bd5519e22efcceeedb07248d0a723e8e4555acd6f75cba28; pi elf sha 8d37b96ad09dd32d83ff47135f69dcbae32174dbdd6d76500792f08b1eea2183; ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, not stripped
+pi before: throttled=0x0; pgrep onelife-run: ''
+copies with the Mac sha on the Pi: 7 of 7
+Linux bridge-pi 6.18.50+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.18.50-1+rpt1 (2026-09-11) aarch64 GNU/Linux
+run a_W0 rc=0 wall_start=1794823662.044634652 wall_end=1794823662.144659985 step1 0.019772 s step2 0.019884 s step3 0.019437 s step4 0.019521 s mixed 0.019560 s total 0.098661 s 
+run a_W1 rc=0 wall_start=1794823662.146189189 wall_end=1794823662.245968707 step1 0.019736 s step2 0.019845 s step3 0.019432 s step4 0.019508 s mixed 0.019524 s total 0.098515 s 
+run b_W0 rc=0 wall_start=1794823662.247513004 wall_end=1794823662.346982948 step1 0.019705 s step2 0.019790 s step3 0.019265 s step4 0.019355 s mixed 0.019566 s total 0.098147 s 
+run b_W1 rc=0 wall_start=1794823662.348686874 wall_end=1794823662.448150244 step1 0.019678 s step2 0.019785 s step3 0.019270 s step4 0.019357 s mixed 0.019572 s total 0.098138 s 
+run e_W0 rc=0 wall_start=1794823662.449787263 wall_end=1794823663.249386096 step1 0.159329 s step2 0.159271 s step3 0.158975 s step4 0.158891 s mixed 0.158968 s total 0.798184 s 
+run e_W1 rc=0 wall_start=1794823663.250915781 wall_end=1794823664.049238873 step1 0.159128 s step2 0.158968 s step3 0.158737 s step4 0.158653 s mixed 0.158749 s total 0.796935 s 
+p1rc=0
+a2549e1c1e365afc754160533b6b457197402e311964b0605c03c80ec27dfd18  a_W0.pi.bin
+13c96494e49af8b6f30eb2854394306d39a5451cf5dc7c48ff642abe822cacec  a_W1.pi.bin
+99aa40903d19af42fef313f559e47abee302618fd1b49ce4eb45fae703c9c925  b_W0.pi.bin
+3e81b5885c9347a7073336c6cc80f19b6bd9c956ad1e0532f8eb6f296cf461ea  b_W1.pi.bin
+8f5d35684d7cafe074f3d348962dc563041b9fc096158fe5a9b466f77ab088e5  e_W0.pi.bin
+de210ba13480276459e348a6e0f0ac83ab036f7394529f7c28e9709e9c9b85b2  e_W1.pi.bin
+6988a064bde00f5c07408ceb1a1e3f39c438eac541eebb8ca3c2c34ef8cc89dd  p1.pi.bin
+remote runs with rc=0: 6 of 6
+sha256 a_W0 mac a2549e1c1e365afc754160533b6b457197402e311964b0605c03c80ec27dfd18 pi a2549e1c1e365afc754160533b6b457197402e311964b0605c03c80ec27dfd18 SAME
+sha256 a_W1 mac 13c96494e49af8b6f30eb2854394306d39a5451cf5dc7c48ff642abe822cacec pi 13c96494e49af8b6f30eb2854394306d39a5451cf5dc7c48ff642abe822cacec SAME
+sha256 b_W0 mac 99aa40903d19af42fef313f559e47abee302618fd1b49ce4eb45fae703c9c925 pi 99aa40903d19af42fef313f559e47abee302618fd1b49ce4eb45fae703c9c925 SAME
+sha256 b_W1 mac 3e81b5885c9347a7073336c6cc80f19b6bd9c956ad1e0532f8eb6f296cf461ea pi 3e81b5885c9347a7073336c6cc80f19b6bd9c956ad1e0532f8eb6f296cf461ea SAME
+sha256 e_W0 mac 8f5d35684d7cafe074f3d348962dc563041b9fc096158fe5a9b466f77ab088e5 pi 8f5d35684d7cafe074f3d348962dc563041b9fc096158fe5a9b466f77ab088e5 SAME
+sha256 e_W1 mac de210ba13480276459e348a6e0f0ac83ab036f7394529f7c28e9709e9c9b85b2 pi de210ba13480276459e348a6e0f0ac83ab036f7394529f7c28e9709e9c9b85b2 SAME
+SHA-256 identical: 6 of 6
+fetched 7 of 7
+a_W0.rs.bin vs a_W0.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+a_W1.rs.bin vs a_W1.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W0.rs.bin vs b_W0.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+b_W1.rs.bin vs b_W1.pi.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W0.rs.bin vs e_W0.pi.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+e_W1.rs.bin vs e_W1.pi.bin records 45 elements 21570 differing 0 max_abs 0.0 bytes_identical true PASS
+compared pairs 6 passed 6 elements 67980 differing 0 ALL IDENTICAL
+p1: a_W1.rs.bin vs p1.pi.bin records 45 elements 6210 differing 5856 max_abs 1.872330904006958e-5 bytes_identical false FAILED first step1.logits[0] -0.8804356 vs -0.88043493
+p1 softmax_rev on the Pi: sha 6988a064bde00f5c07408ceb1a1e3f39c438eac541eebb8ca3c2c34ef8cc89dd != mac 13c96494e49af8b6f30eb2854394306d39a5451cf5dc7c48ff642abe822cacec caught
+flipbit: step4.logits[0] bit 0 -0.11378932 -> -0.11378933
+a_W1.rs.bin vs a_W1.pi.flip.bin records 45 elements 6210 differing 1 max_abs 7.450580596923828e-9 bytes_identical false FAILED first step4.logits[0] -0.11378932 vs -0.11378933
+p2 caught
+negative controls caught: 2/2
+pi after: throttled=0x0
+ALL PASS

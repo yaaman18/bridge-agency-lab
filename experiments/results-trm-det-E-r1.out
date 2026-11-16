@@ -1,0 +1,8 @@
+S60 E (diagnostic): exp_det vs Float32(exp(Float64(x))), ulp distance
+E grid: points 1048576 in [-87,88] 1048576 outside 0 max_ulp 1 at x=-86.998665 histogram 0ulp:941811 1ulp:106765
+E args a_W0: points 913920 in [-87,88] 913920 outside 0 max_ulp 1 at x=-2.5944006 histogram 0ulp:826486 1ulp:87434
+E args a_W1: points 913920 in [-87,88] 913920 outside 0 max_ulp 1 at x=-2.4595149 histogram 0ulp:826275 1ulp:87645
+E args b_W0: points 913920 in [-87,88] 913920 outside 0 max_ulp 1 at x=-1.1394873 histogram 0ulp:826699 1ulp:87221
+E args b_W1: points 913920 in [-87,88] 913920 outside 0 max_ulp 1 at x=-1.873752 histogram 0ulp:826379 1ulp:87541
+E args e_W0: points 1827840 in [-87,88] 1827840 outside 0 max_ulp 1 at x=-2.503045 histogram 0ulp:1652383 1ulp:175457
+E args e_W1: points 1827840 in [-87,88] 1827840 outside 0 max_ulp 1 at x=-2.4924672 histogram 0ulp:1652569 1ulp:175271

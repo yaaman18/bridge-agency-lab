@@ -12,7 +12,8 @@
 #   rehearsal: the life in /home/pi/s54/rehearsal (unit s54-rehearsal, reference 627-L2-D1);
 #     OUT default experiments/s54-rehearsal-watch.tsv
 # Columns: mac_time mac_epoch boot_id throttled ext4_errors fs_state fs_errors, then per life:
-#   unit n payload_sha ref_match copy_sha256
+#   unit n payload_sha ref_match copy_sha256 (17 columns in trial mode, 12 in rehearsal mode, tab separated).
+#   ext4_errors, fs_state, fs_errors are ERR when the Pi answered but the value could not be read (e.g. sudo refused).
 set -eu
 cd "$(dirname "$0")/../.."
 [ $# -ge 1 ] || { echo "usage: watch.sh BEING_TOOLS [trial|rehearsal [OUT]]"; exit 2; }
@@ -28,16 +29,22 @@ D=experiments/trial-data
 W=$(mktemp -d "${TMPDIR:-/tmp}/s54-watch.XXXXXX")
 pis() { ssh -o BatchMode=yes -o ConnectTimeout=20 "$HOST" "$@"; }
 fsha() { shasum -a 256 "$1" | awk '{print $1}'; }
+TAB=$(printf '\t')
 if [ ! -s "$OUT" ]; then
-  h='mac_time\tmac_epoch\tboot_id\tthrottled\text4_errors\tfs_state\tfs_errors'
-  for l in $LIVES; do t=${l%%:*}; h="$h\t${t}_unit\t${t}_n\t${t}_sha\t${t}_ref_match\t${t}_copy_sha256"; done
-  printf "$h\n" >> "$OUT"
+  h="mac_time${TAB}mac_epoch${TAB}boot_id${TAB}throttled${TAB}ext4_errors${TAB}fs_state${TAB}fs_errors"
+  for l in $LIVES; do t=${l%%:*}; h="$h${TAB}${t}_unit${TAB}${t}_n${TAB}${t}_sha${TAB}${t}_ref_match${TAB}${t}_copy_sha256"; done
+  printf '%s\n' "$h" >> "$OUT"
 fi
 mt=$(date '+%Y-%m-%dT%H:%M:%S%z'); me=$(date +%s)
-sys=$(pis 'cat /proc/sys/kernel/random/boot_id; vcgencmd get_throttled | sed "s/^throttled=//"; sudo -n dmesg 2> /dev/null | grep -ci "ext4-fs error" || true; sudo -n tune2fs -l /dev/mmcblk0p2 2> /dev/null | sed -n "s/^Filesystem state: *//p"; sudo -n tune2fs -l /dev/mmcblk0p2 2> /dev/null | sed -n "s/^FS Error count: *//p" | grep . || echo 0' 2> /dev/null || echo "unreachable")
+# one line each: boot id, throttled, ext4 errors in dmesg, fs state, fs error count; a value that could not be read
+# (sudo refused, command missing) is ERR, never 0; no answer from the Pi at all is "unreachable" in boot_id
+sys=$(pis 'b=$(cat /proc/sys/kernel/random/boot_id 2> /dev/null); echo "${b:-ERR}"
+t=$(vcgencmd get_throttled 2> /dev/null | sed "s/^throttled=//"); echo "${t:-ERR}"
+if d=$(sudo -n dmesg 2> /dev/null); then printf "%s\n" "$d" | grep -ci "ext4-fs error" || true; else echo ERR; fi
+if f=$(sudo -n tune2fs -l /dev/mmcblk0p2 2> /dev/null); then s=$(printf "%s\n" "$f" | sed -n "s/^Filesystem state: *//p"); e=$(printf "%s\n" "$f" | sed -n "s/^FS Error count: *//p"); echo "${s:-ERR}"; echo "${e:-0}"; else echo ERR; echo ERR; fi' 2> /dev/null || echo "unreachable")
 boot=$(echo "$sys" | sed -n 1p); thr=$(echo "$sys" | sed -n 2p); ext=$(echo "$sys" | sed -n 3p)
 fst=$(echo "$sys" | sed -n 4p | tr ' ' '_'); fer=$(echo "$sys" | sed -n 5p)
-row="$mt	$me	$boot	${thr:-?}	${ext:-?}	${fst:-?}	${fer:-?}"
+row="$mt${TAB}$me${TAB}$boot${TAB}${thr:-?}${TAB}${ext:-?}${TAB}${fst:-?}${TAB}${fer:-?}"
 for l in $LIVES; do
   t=${l%%:*}; r=${l#*:}; unit=${r%%:*}; ref=${r#*:}
   u=$(pis "systemctl is-active $unit 2> /dev/null || true" 2> /dev/null || echo unreachable)
@@ -50,7 +57,7 @@ for l in $LIVES; do
     rs=$(awk -v n="$n" '$1 == n { print $2 }' "$D/ref-$ref.sha")
     m=false; [ -n "$n" ] && [ -n "$s" ] && [ "$s" = "$rs" ] && m=true
   fi
-  row="$row	$u	${n:--}	${s:--}	$m	$cs"
+  row="$row${TAB}$u${TAB}${n:--}${TAB}${s:--}${TAB}$m${TAB}$cs"
 done
 printf '%s\n' "$row" >> "$OUT"
 printf '%s\n' "$row"

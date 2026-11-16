@@ -2016,6 +2016,8 @@ include("../core/LabCore.jl"); using .LabCore
     - **予測**: r4 の関門は c・d で外れ。PT5-0・1・3・4 成立、PT5-2 外れ。許容差は変えていない。
     - **推論**: c・d の差は f32 の丸めが再帰で膨らんだものと整合する（証明ではない。Julia f64 対 Python f64 の検査は妥当性の関門に落ちた）。経路の違いを示す証拠は見つかっていない。
     - **限界**: 試験と基準の自己検査に弱い所が残る（要約の「逸脱・限界」）。c・d の通しの一致は主張しない。
+    - **試験の強化（2026-11-16）**: `experiments/trm/test_tf_strict.jl`（受け入れ済みの test_tf.jl は変えずに、空の比較を不合格・巡の数と L の記録の長さの検査・不合格で終了コード 1 を足した。負の対照 4 つ合格）。全体は FAILED（c/W0 の一点のまま）、c を除く a・b・d・e は PASS（`results-tf-strict.out`）。走る前の sha の凍結はしていない（逸脱）。基準の自己検査の恒真の比較は `experiments/trm/oracle_r5_selfcheck_note.md`。codex I-R は accept。
+    - **ユーザー決定（2026-11-16）**: 設定 c（mlp_t）は使わない。c の外れは外れのまま残し、許容差は変えない。設定 d（r4 の通しで外れ）の構成を使うかは未決。
     - **経緯**: DeepSeek の席は空の合格・配線の誤り・壊れた写しを繰り返し、2026-11-16 ユーザー決定で停止。上流の写しの中に追跡外の `__pycache__` ができた（消していない）。
 
 168. S57（A1）回路の確かさから作った確率で引く: 確かさの大きい候補のほうが応えられやすく、L2 では引く腕が DET より遅く死ぬ（2026-11-16。仕様 `discussion/specs/S57-draw-conf.md` r2、予測 `experiments/predictions-draw-conf.md` r2、凍結 `experiments/freeze-draw-conf.txt` freeze 1・`freeze-draw-conf-code.txt`、decisions-log #59。実装は lab-coder〈Opus 5.5〉、I-R は codex-lab）。
@@ -2023,7 +2025,7 @@ include("../core/LabCore.jl"); using .LabCore
     - PB2（重みの違う引いた歩、N≥100 の窓に限る。その歩の確率で割って均した差）: L2 は 36 窓で D>0 が 29・D<0 が 7（p≈2e-5）、L2+SF は 35 窓で 24 対 11（p=0.041、5% の際）。差の下側中央値は 0.030／0.028（結果ファイルの「median」は偶数個のとき中央の二つを平均せず下側を採っている。符号検定には影響しない）。応えられた割合はどの腕も約 0.99 で、天井の近くの差。
     - PB3・PB4（死の歩。共通の地平で打ち切り。同点には地平まで生きた窓が含まれ、地平の後の寿命の差は分からない）: L2 で UNI 対 DET 9 勝 0 敗 27 同点、CONF 対 DET 9 勝 0 敗 27 同点（どちらも p=0.004）。CONF 対 UNI は 0 勝 2 敗 34 同点で検出不能（「同じ」とは読まない）。L2+SF は予測なしで、CONF 対 UNI 8-8、CONF 対 DET 13-7、UNI 対 DET 15-9（有意でない）。
     - **言えること**: この世界・この窓で、CONF の腕が訪れた状態に限り、確かさの大きい候補のほうが応えられやすい。L2 では引く腕は DET より遅く死ぬ窓があり、早く死ぬ窓はなかった。**確かさで重みを付けることが均等に引くことより生存に良いとは示されていない。** 因果・仕組みは言わない。
-    - **I-R の保留**: D7 の直しが `local` だけであることの独立の確認、評価での全歩の再実行（下調べでは S55 の D3 を満たした）は未了。
+    - **I-R の保留**: 評価での全歩の再実行（下調べでは S55 の D3 を満たした）は未了。**D7 の再レビュー（2026-11-16、codex D-S60 6）**: `local` で外の変数の共有は断たれ、合否の条件に問題なし（accept）。ただし `all(…, D7)` は D7 が空なら真になる形（challenge）。今回の走りでは D7 の行が結果に出ており空ではない（`results-draw-conf-gates.out`）。
 
 169. S59 減衰のときの支払いつきの作り直し（B2-ret）を検査 N で測る: **規範の資格は成り立たなかった**（2026-11-16。S58 のやり直し。仕様 `discussion/specs/S59-bret2-norm.md` r3、予測 `experiments/predictions-bret2-norm.md`、凍結 `experiments/freeze-bret2-norm.txt` freeze 2・`freeze-bret2-norm-code.txt`、設計 `discussion/notes/D-MEM.md` §9〜§11、decisions-log #60。実装は lab-coder〈Opus 5.5〉、I-R は codex-lab）。
     - **確認した事実**: 関門 F・R1〜R5 は真（手計算の列、対照の不足が実際に起こる走り、支払った直後に上限で辺が消える例を含む。関門の走りは S58 の窓 726〜729）。下調べ（806〜809）で p1・p2・p3 真（候補 21〜36、支払えなかった延べ 8〜14、支払えた延べ 13〜28）。評価（810〜845、相手 850〜885）:
@@ -2042,7 +2044,20 @@ include("../core/LabCore.jl"); using .LabCore
     - **Pi に置いたもの**: `/home/pi/s54/t1`・`t2`・`rehearsal`（包み、製品の実行物、入力、n＝0 の走りのファイル、空の監査）と `units/`（unit 3 つ。置いただけで、入れていない・有効にしていない・始めていない）。
     - **基準から分かったこと（予測していない）**: 試-1（L2）は 20515 歩め、試-2（L2+SF）は 11343 歩めに死ぬ。稽古の体は 60480 歩まで死なない。
     - **逸脱**: C1 の置き場 `/dev/shm/s54-c1` は、ssh の会話が全部閉じると消える（推論: systemd-logind の RemoveIPC）。1 回めの C1 は判定の前に消え、会話を開けたまま走らせ直した。OS の設定は変えていない。
-    - **残り**: ユーザーの手による止めて入れ直す稽古（電源ボタン）。包みと見張りの差分の codex の I-R。本番が終わったときに監査を照らすスクリプト。`watch.sh` の負の対照。n＝60480 の後の起動のふるまい。
+    - **稽古（2026-11-16 18:38、ユーザーが電源ボタンで止めて起動）: 合格**。boot id が変わり、人手なしで再開（監査の列 start 0・start 18）、確かめた 3 回とも状態は基準と一致、commit の他 0、break 0、audit_behind 0、ファイル系 clean、ext4 の誤り 0（`experiments/results-trial-rehearsal.out`）。
+    - **スクリプトの直し（codex I-R D-S54 2〜5）**: 置く処理は Pi が「ない」と答えたときだけ置き、接続の失敗では止まる（前の版は同じ条件で既存の走りのファイルを上書きし監査を空にした）。dmesg・tune2fs が読めないときは 0 でなく ERR。終わりの照合 `experiments/trial/end_check.sh` を足した。検査 22 項目 ALL PASS（`experiments/results-trial-scripts-r2.out`）。n＝60480 で起動したときは、Mac の短い間隔のビルドで exit 0・走りのファイル不変・監査に start/wait/end eof の 3 行（Pi の実物では未確認。入力が尽きる前に別の写しで確かめる）。運用の決まり: 本番のあいだ unit を手で start・restart しない（`discussion/notes/S54-start-procedure.md` (b)・(f)）。codex は技術の上で開始を可とした。
+
+171. S49d 監査の書きかけの最後の行: 改行を補い break を足して続ける（2026-11-15 実装・本走り、2026-11-16 I-R と記録。仕様 `discussion/specs/S49d-partial-line.md` r3、予測 `experiments/predictions-rust-onelife-d.md` r3、凍結 `experiments/freeze-rust-onelife-d.txt` freeze 3・`freeze-rust-onelife-d-code.txt`、関門 `experiments/onelife_rust_partial_check.sh`、decisions-log #61。変更は `rust/being-tools/src/bin/onelife-run.rs` の `Audit::open` だけ〈sha b5b0e2ac…〉。実装は lab-coder〈Opus 5.5〉、I-R は codex-lab）。
+    - **確認した事実**: PD1〜PD5 は全部真（`experiments/results-rust-onelife-d.out`）。監査の末尾が改行で終わらないとき、改行を補い、独立した `break` の行を足して続ける。再開の後の終わりの走りのファイルは、中断なしとバイト一致（PD1 が直接に確かめたのはここまで。再開の途中の全部の状態の列は比べていない）。
+    - **予測**: r2 の PD1 は**外れ**（改行の直前で切ると、形の崩れた行は 0 で、行は有効になる）。r3 で書き直して凍結した。
+    - **限界**: 監査の末尾の行の削除は捕えられない。監査は fsync しない。関門のスクリプトは PD が偽でも終了コード 0 で終わる（「終了 0＝合格」とは扱わない。判定は結果ファイルの行で読む）。旧版との差分とファイルの sha の独立の再検証は I-R では未了。
+    - **別の実績（S49d の本走りとは分けて記録）**: S54 の準備（項番170）で、この版が関門 H1 に合格し、Pi 5 の上で二体の全 60480 歩が基準と一致した。
+172. S60 TRM の決定的な推論: Julia の正本と Rust の写しが、Mac と Pi 5 でビット単位に一致（2026-11-16。仕様 `discussion/specs/S60-trm-det.md` r3、予測 `experiments/predictions-trm-det.md` r3、凍結 `experiments/freeze-trm-det.txt`・`freeze-trm-det-code.txt`〈freeze 2・3〉、コード `experiments/trm/det/`・`rust/trm-det/`〈独立の workspace、依存なし、std〉、結果 `experiments/results-trm-det-{i,ii,iii,E}.out`〈r1 の走りは `-r1.out`〉、decisions-log #62。仕様から Pi まで lab-coder〈Opus 5.5〉、S-R 3 往復・I-R 1 往復は codex-lab）。
+    - **確認した事実**: 対象は S56 の設定 a・b・e × W0・W1（c は不使用の決定、d は対象外）、ACT の歩 1〜4 と mixed_reset。演算は f32 の四則・sqrt・比較・正確な整数変換だけ、和は +0 から添字順、exp は自前（Cody–Waite＋7 次 Horner、定数はビット）、rope の表は公式の値をデータとして使う。G-i: 決定的な推論は TrmPort.jl と公式の fixtures に S56 r4 の許容で一致（項目 462/462、要素 178308、最大の差 対 TrmPort 4.11e-5・対公式 3.90e-5〈e_W0 歩 3 z_L〉、第一ブロックの最大比 0.102）。TrmPort とビットで違う要素は各束 93〜98%（そのまま呼んでいない）。G-ii: Mac で Julia と Rust が 6 束ともバイト一致（要素 67980、違い 0）。G-iii: Mac でクロスビルドした aarch64 の静的 ELF（sha 8d37b96a…）が Pi 5 で 6 束とも Mac の Rust と SHA-256 一致、持ち帰って要素 67980 違い 0。負の対照は n1〜n3・m1〜m4・型タグ・p1・p2 の全部が捕まった（1 ulp の変異 m3・m4 も 2836〜5925 要素に届いた）。E（診断）: exp_det の誤差は格子と実際の引数約 730 万点の全部で最大 1 ulp（区間外の引数は 0）。Pi の 1 歩（一回の推論）は a・b 約 19.6 ms、e 約 159 ms（Mac の Rust は 33 ms・290 ms）。6 束の全部で Pi の上は約 2 秒。Pi は前後とも throttled=0x0、試運転は走っていなかった。
+    - **予測**: PD-E・PD-1〜PD-7 は全部成立（PD-7 の所要の範囲の中）。
+    - **I-R（codex）**: 演算列・G-i・比較器は accept。gate_ii.sh・gate_iii.sh が対照の生成と Pi の上の実行の終了コードを判定していない（古い出力が残れば空の捕捉になりうる）と challenge → 新しい走りの置き場と終了コードの検査を足し（freeze 3）、全関門を走らせ直して同じ数を得た。生成をわざと失敗させる自己検査で両方とも FAILED・終了 1 になることを確かめた（`results-trm-det-{ii,iii}-selftest.out`）。直しの再レビューは受けていない。
+    - **I-R の再レビュー（2026-11-16、codex D-S60 5）**: 二つの直しは指摘を解いた、新しい空の合格の経路はない（accept）。自己検査の終了 1 は、記録とコードが整合することまでで、実行時の終了値は独立に取っていない。
+    - **限界**: この Mac（x86_64）とこの Pi 5、この ELF、6 束の凍結した入力だけ。no_std・ほかのコンパイラの版・最適化の段・設定 c・d・大きな模型・学習は確かめていない。Julia は Pi で走らせていない。決定的な推論が公式より正確だとは言えない。設定 d は puzzle の埋め込みの連結を足せば同じ照合ができる見込みだが、公式との許容内の一致（G-i(2)）は r4 の通しと同じく落ちうる。
 
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 

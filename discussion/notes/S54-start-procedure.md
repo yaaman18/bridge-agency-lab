@@ -34,7 +34,8 @@
 1. `sh experiments/trial/pi_check.sh $B list` → t1・t2 の sha が (e) と同じ、n＝0、監査 0 バイト。
 2. `ssh $PI 'sudo cp /home/pi/s54/units/s54-trial-1.service /home/pi/s54/units/s54-trial-2.service /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl enable --now s54-trial-1.service s54-trial-2.service'`
 3. すぐに `sh experiments/trial/watch.sh $BT` を 1 回（始めの行。Mac の時刻が PT2 の起点）。以後は (d)。
-- 常駐は起動時に始まる（`WantedBy=multi-user.target`）、`Restart=no`（誤りで止まったら次の起動まで止まったまま）。止め方は (a) の 5・6 と同じ（ボタンを押してから抜く）。
+- 常駐は起動時に始まる（`WantedBy=multi-user.target`）、`Restart=no`（誤りで止まったら次の起動まで止まったまま）。
+- **運用の決まり（2026-11-16、codex D-S54 3・4 の指摘から）**: 本番のあいだ、誰も unit を手で `start`・`restart` しない（裁量のない再開は「起動したら続きから」だけ。手で始めるのは介入〈D-TIME の H5〉。**禁止する。終わりの照合の総数の検査だけでは、この違反を見分けきれない**〈起動しても start がなかった回と相殺されうる。codex D-S54 5〉）。誤りで止まった個体は、次の起動まで止まったままにして報告する。unit を enable した時刻と、そのときの boot id を `experiments/s54-watch.tsv` の最初の行の前に注として記録する。終わったときの照合は `sh experiments/trial/end_check.sh <being-tools> <run> <audit> <基準> <起動の数>`（起動の数の上限を総数で見るだけ。ある起動の中の余分な start は見分けない）。止め方は (a) の 5・6 と同じ（ボタンを押してから抜く）。
 
 ## (c) 外す
 - 一体ずつ: `ssh $PI 'sudo systemctl disable --now s54-trial-1.service && sudo rm /etc/systemd/system/s54-trial-1.service && sudo systemctl daemon-reload'`（2 も同じ）。走りのファイル・監査・入力は `/home/pi/s54/t1`・`t2` に残る。外した後に包みを手で走らせない。
@@ -56,3 +57,8 @@
 - `/home/pi/s54/units/`: `s54-trial-1.service` 02dadc827bafe15dc0074f23f12c639b402b8e51ca70b1e00bd1dc83f5c5a0e0、`s54-trial-2.service` 43ddf5e3e05e06a80254a43bb5ad275cee8a7fbf4d0f241ac29e2986a52c0693、`s54-rehearsal.service` bfe02e7af8fa503024728c5421ac7ebfa758b5ca9bbfbbd065825e6f26664e08
 - `/home/pi/s54/c2/`（C2 の製品 12 歩、n＝12）と `c2/neg/`（負の対照、短い間隔、n＝12）。本番には使わない。
 - `/dev/shm/s54-c1/`（C1 と包みの検査。RAM、会話が全部閉じるか再起動で消える）。
+
+## (f) 開始の判定（2026-11-16、codex D-S54 5）
+- 技術のレビューの上では開始してよい（third set の sha 一致、検査 22 項目 ALL PASS、運用の決まりつき）。**開始はユーザーの一言で。**
+- 入力が尽きた後の起動（n＝60480）: Mac の短い間隔のビルドでは確かめた（空の入力で exit 0、走りのファイルは不変、監査に start・wait・end eof の 3 行、commit は増えない、chain ok）。**Pi の実物・本物の flock では未確認。** 開始の前の条件にはしない。入力が尽きる前に、本番の個体には触らず、別の写し・Pi の製品のビルド・本物の flock で確かめる。終了コードが 0 でない、走りのファイルが変わる、commit が増える、chain が崩れる、のどれかが出たら、終わりの安全性の判断を取り下げて報告する。
+- 終わりの照合のスクリプト `experiments/trial/end_check.sh` は実装済み（検査 EC1〜EC8）。EC8（走りの n を超える commit）は、ほかの失敗の条件と同時に起こる形でしか確かめていない。

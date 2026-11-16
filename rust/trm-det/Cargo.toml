@@ -1,0 +1,16 @@
+# S60 (discussion/specs/S60-trm-det.md): Rust copy of the canonical Julia experiments/trm/det/TrmDet.jl.
+# Deterministic TRM inference (eval-mode ACT forward). Own workspace: not a member of rust/Cargo.toml. No dependencies.
+[package]
+name = "trm-det"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+
+[workspace]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+panic = "abort"
