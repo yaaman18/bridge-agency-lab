@@ -1,0 +1,136 @@
+# Analyze a recording of ringing church bells into a table for the S54 garden bell voice.
+# usage: python -I analyze_bell.py <clip.wav (16-bit mono)> <out_json> <out_header>
+# Source used on 2026-11-17: "Italian Church Bells Ringing | Stress Relief | Sounds of Earth" (YouTube q0Zn66gvp1w,
+# church bells in Naples), 5:00-10:00, mono 44.1 kHz. The bells ring without pause and overlap, so:
+#  - strikes are found by spectral flux; the bell analyzed ("bell A") is the one whose strikes add most to the
+#    strongest partial of the average strike spectrum (its nominal);
+#  - partial frequencies come from the 5-minute average spectrum, strengths from what bell A's strikes add;
+#  - a decay is measured only where a strike lifts the partial clearly (>= 6 dB) above the ringing already there;
+#    the other partials keep a null decay and the synth uses provisional values.
+import sys, json, wave
+import numpy as np
+
+WAV, OUTJ, OUTH = sys.argv[1], sys.argv[2], sys.argv[3]
+w = wave.open(WAV)
+sr = w.getframerate()
+x = np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype(np.float64) / 32768.0
+if w.getnchannels() > 1:
+    x = x.reshape(-1, w.getnchannels()).mean(1)
+
+
+def peak_interp(mag, k):
+    a, b, c = np.log(mag[k - 1] + 1e-12), np.log(mag[k] + 1e-12), np.log(mag[k + 1] + 1e-12)
+    p = 0.5 * (a - c) / (a - 2 * b + c + 1e-12)
+    return k + p
+
+
+# short-time spectra
+N, hop = 8192, 512
+df = sr / N
+fr = np.lib.stride_tricks.sliding_window_view(x, N)[::hop]
+S = np.abs(np.fft.rfft(fr * np.hanning(N), axis=1)).astype(np.float32)
+P2 = S.astype(np.float64) ** 2
+f = np.arange(S.shape[1]) * df
+L = np.log(S + 1e-6)
+flux = np.r_[0, np.maximum(0, L[1:] - L[:-1])[:, (f > 100) & (f < 8000)].sum(1)]
+thr = np.median(flux) + 4 * np.median(np.abs(flux - np.median(flux)))
+ons, last = [], -99
+for i in range(8, len(flux) - 12):
+    if flux[i] > thr and flux[i] == flux[i - 2:i + 3].max() and i - last > int(0.25 * sr / hop):
+        ons.append(i)
+        last = i
+ons = np.array(ons)
+added = np.array([np.maximum(P2[i + 2:i + 8].mean(0) - P2[i - 8:i - 2].mean(0), 0) for i in ons])
+
+
+def band(M, fc, wdt=1):
+    k = int(round(fc / df))
+    return M[..., k - wdt:k + wdt + 1].sum(-1)
+
+
+audible = (f > 80) & (f < 4000)
+mean_added = added.mean(0)
+nominal0 = f[audible][np.argmax(mean_added[audible])]
+share = band(added, nominal0) / added[:, audible].sum(1)
+isA = share > np.percentile(share, 70)
+A = ons[isA]
+prof = added[isA].mean(0)
+db = 10 * np.log10(prof + 1e-30)
+cand = [k for k in np.where(audible | ((f >= 4000) & (f < 6000)))[0] if 3 <= k < len(db) - 3 and db[k] == db[k - 3:k + 4].max()]
+ref = db[cand].max()
+cand = sorted([k for k in cand if db[k] - ref > -26], key=lambda k: -db[k])[:20]
+
+# frequencies from the long average spectrum (65536 points, 0.67 Hz bins)
+NL = 65536
+avg = np.mean([np.abs(np.fft.rfft(np.hanning(NL) * x[i:i + NL])) ** 2 for i in range(0, len(x) - NL, NL // 2)], 0)
+dfl = sr / NL
+
+
+def refine(fc):
+    k = int(round(fc / dfl))
+    lo, hi = k - int(4 / dfl), k + int(4 / dfl) + 1
+    kp = lo + int(np.argmax(avg[lo:hi]))
+    return peak_interp(np.sqrt(avg), kp) * dfl
+
+
+parts = []
+nxt = np.r_[A[1:], len(S)]
+long = [(a, b) for a, b in zip(A, nxt) if (b - a) * hop / sr > 2.2]
+for k in sorted(cand):
+    fc = refine(f[k])
+    jumps, curves = [], []
+    ts = np.arange(0.03, 0.6, 0.03)
+    for a, b in long:
+        pre = band(P2[a - 8:a - 3], fc).mean()
+        e = np.array([band(P2[a + int(t * sr / hop)], fc) for t in ts]) - pre
+        if e[0] <= 0:
+            continue
+        jumps.append(10 * np.log10((e[0] + pre) / pre))
+        curves.append(e / e[0])
+    jump = float(np.median(jumps)) if jumps else 0.0
+    tau = None
+    if jump >= 6 and len(curves) >= 8:
+        c = np.median(np.array(curves), 0)
+        m = c > 10 ** (-2.5)  # fit down to -25 dB
+        if m.sum() >= 4:
+            s = np.polyfit(ts[m], 10 * np.log10(c[m]), 1)[0]
+            if s < 0:
+                tau = float(8.686 / -s)
+    parts.append({"freq": float(fc), "amp_db": float(db[k] - ref), "strike_jump_db": jump, "tau": tau})
+
+nominal = max(parts, key=lambda p: p["amp_db"])["freq"]
+pr = [p for p in parts if 0.45 * nominal < p["freq"] < 0.56 * nominal]
+prime = max(pr, key=lambda p: p["amp_db"])["freq"] if pr else nominal / 2
+for p in parts:
+    p["ratio"] = p["freq"] / prime
+
+# clapper: energy added above 4 kHz in the strike frame relative to the partials' added energy
+hi = (f > 4000) & (f < 12000)
+cl = []
+for i in A:
+    d = np.maximum(P2[i + 1] - P2[i - 6:i - 2].mean(0), 0)
+    cl.append(d[hi].sum() / max(1e-12, sum(band(d, p["freq"]) for p in parts)))
+clapper_db = float(10 * np.log10(np.median(cl) + 1e-12))
+gaps = np.diff(A) * hop / sr
+
+res = {"source": "YouTube q0Zn66gvp1w, 5:00-10:00", "strikes": int(len(ons)), "bellA_strikes": int(isA.sum()),
+       "bellA_gap_median_s": float(np.median(gaps)), "prime": prime, "nominal": nominal,
+       "clapper_db": clapper_db, "partials": parts}
+json.dump(res, open(OUTJ, "w"), indent=1)
+
+H = ["// generated by analyze_bell.py from church bells ringing in Naples (YouTube q0Zn66gvp1w, 5:00-10:00).",
+     "// The recording's terms of use are not known to be free; only these numbers are kept, not the sound.",
+     "// Ratios are to the prime; amp in dB to the strongest partial (the nominal); tau < 0 = not measurable",
+     "// (the bells overlap), the synth then uses a provisional decay. jumpDb: how far a strike lifts the partial above\n// the ringing already there (the part that does not decay fast).",
+     "#pragma once", "namespace bell {",
+     f"static const int P = {len(parts)};",
+     "static const double ratio[P] = {" + ", ".join(f"{p['ratio']:.5f}" for p in parts) + "};",
+     "static const double ampDb[P] = {" + ", ".join(f"{p['amp_db']:.2f}" for p in parts) + "};",
+     "static const double tau[P] = {" + ", ".join(f"{(p['tau'] if p['tau'] else -1):.3f}" for p in parts) + "};",
+     "static const double jumpDb[P] = {" + ", ".join(f"{p['strike_jump_db']:.2f}" for p in parts) + "};",
+     f"static const double clapperDb = {clapper_db:.2f};",
+     "}"]
+open(OUTH, "w").write("\n".join(H) + "\n")
+print(f"strikes {len(ons)}, bell A {isA.sum()}, A gap median {np.median(gaps):.2f} s, prime {prime:.1f} Hz, nominal {nominal:.1f} Hz, clapper {clapper_db:.1f} dB")
+for p in parts:
+    print(f"  {p['freq']:8.1f} Hz  ratio {p['ratio']:6.3f}  {p['amp_db']:6.1f} dB  jump {p['strike_jump_db']:5.1f}  tau {p['tau']}")

@@ -1,0 +1,6 @@
+g3_next_audit (supplementary; G3 as frozen: B1's p at the next example of the same action changes, no clip exception)
+flips 100 (EVAL[1:4] = [52101, 52102, 52103, 52104])
+p changed 100, p unchanged 0 (at clip 0, not at clip 0), no next 0
+raw trace m_a at the next example changed (before the clip): 100 of 100
+c0.jl's criterion (changed or at clip; no-next skipped) recomputed: 100 of 100
+strict reading (every flip has a next example and its p changes): true

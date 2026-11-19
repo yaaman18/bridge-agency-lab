@@ -1,0 +1,6 @@
+julia a_W0.bin 0.168 s (5 ACT steps, incl. compile on first)
+julia a_W1.bin 0.137 s (5 ACT steps, incl. compile on first)
+julia b_W0.bin 0.129 s (5 ACT steps, incl. compile on first)
+julia b_W1.bin 0.128 s (5 ACT steps, incl. compile on first)
+julia e_W0.bin 1.408 s (5 ACT steps, incl. compile on first)
+julia e_W1.bin 1.309 s (5 ACT steps, incl. compile on first)

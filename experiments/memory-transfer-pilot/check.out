@@ -1,0 +1,52 @@
+FILE: predictions.toml sha256 d674f98a1e79bc6d3bb08e11f32fc82110b5319bfc3b5e603c522608fba8569a
+GATE: freeze PASS
+== results: /Users/yamaguchimitsuyuki/bridge-agency-lab/experiments/memory-transfer-pilot/results.tsv
+  ok   prediction ADD H4 SX tie,tie,tie,tie
+  ok   prediction ADD H4 SY tie,tie,tie,tie
+  ok   prediction ADD O8 SX tie,tie,tie,tie
+  ok   prediction ADD O8 SY tie,tie,tie,tie
+  ok   prediction P H4 SX X,X,Y,Y
+  ok   prediction P H4 SY Y,Y,X,X
+  ok   prediction P O8 SX X,X,Y,Y
+  ok   prediction P O8 SY Y,Y,X,X
+  ok   prediction LP H4 SX X,X,Y,Y
+  ok   prediction LP H4 SY Y,Y,X,X
+  ok   prediction LP O8 SX X,X,tie,tie
+  ok   prediction LP O8 SY Y,Y,tie,tie
+  ok   ADD H4 train all ties
+  ok   ADD O8 train all ties
+  ok   control INIT ADD H4 all ties and assignment-independent
+  ok   control FROZEN ADD H4 all ties and assignment-independent
+  ok   control SELF == TRANS ADD H4 SX
+  ok   control SELF == TRANS ADD H4 SY
+  ok   label inversion ADD H4
+  ok   control INIT ADD O8 all ties and assignment-independent
+  ok   control FROZEN ADD O8 all ties and assignment-independent
+  ok   control SELF == TRANS ADD O8 SX
+  ok   control SELF == TRANS ADD O8 SY
+  ok   label inversion ADD O8
+  ok   control INIT P H4 all ties and assignment-independent
+  ok   control FROZEN P H4 all ties and assignment-independent
+  ok   control SELF == TRANS P H4 SX
+  ok   control SELF == TRANS P H4 SY
+  ok   label inversion P H4
+  ok   control INIT P O8 all ties and assignment-independent
+  ok   control FROZEN P O8 all ties and assignment-independent
+  ok   control SELF == TRANS P O8 SX
+  ok   control SELF == TRANS P O8 SY
+  ok   label inversion P O8
+  ok   control INIT LP H4 all ties and assignment-independent
+  ok   control FROZEN LP H4 all ties and assignment-independent
+  ok   control SELF == TRANS LP H4 SX
+  ok   control SELF == TRANS LP H4 SY
+  ok   label inversion LP H4
+  ok   control INIT LP O8 all ties and assignment-independent
+  ok   control FROZEN LP O8 all ties and assignment-independent
+  ok   control SELF == TRANS LP O8 SX
+  ok   control SELF == TRANS LP O8 SY
+  ok   label inversion LP O8
+GATE: predictions and controls PASS
+GATE: C/D discriminated by features (H4, without X/Y) PASS
+GATE: C/D discriminated by features (O8, without X/Y) PASS
+GATE: negative control N1 (planted leak) rejected PASS  (18 checks fail: control FROZEN ADD H4 all ties and assignment-independent; control SELF == TRANS ADD H4 SX ...)
+GATE: negative control N2 (one flipped answer) rejected PASS  (prediction LP H4 SY Y,Y,Y,X; label inversion LP H4)

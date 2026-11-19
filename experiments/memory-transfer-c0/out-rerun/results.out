@@ -1,0 +1,34 @@
+memory-transfer-c0, threads 1, out memory-transfer-c0/out-rerun
+G7 predictions.toml = freeze: true   G0 S57 code = freeze-draw-conf-code.txt: true
+G5 seed sets disjoint and outside 1..885: true
+G1 u686 L2 UNI = S57's pilot record (4983 draws): true   neg: = u687's record (must be false): false
+G2 examples: acts = [a] and Y = y[a] > 0 at every example: true (examples 207302, mismatches 0, neg shifted by one step mismatches 103894)
+train: examples 52830, per action [26537, 26293], answered [26313, 26082], answer share 0.9918, deaths 0/12
+RATE [0.9915219111496288, 0.9919376307282753]   LP w [1.0704, 2.1471, 1.9471, -0.0549, 2.2888, -2.229]   LP0 w [4.7917, 0.0, 0.0, -0.0255, 0.0, 0.0]
+G4 transfer: untransferred trainer state perturbed, predictions equal: true   neg: w[2] sign flipped, predictions differ: true
+G3 leak: p_u unchanged by flipping Y_u at 100 examples: true, B1's next p of the action changed (or clipped): true   neg: LEAK changed (must be true): true
+eval: seeds 24, excluded 1 (52106), examples 104294, unanswered 789, deaths 2
+  RATE  mean seed score 0.04501
+  B1    mean seed score 0.04126
+  LP    mean seed score 0.03963
+  LP0   mean seed score 0.04501
+  INIT  mean seed score 0.69315
+ood: seeds 12, excluded 0 (), examples 50178, unanswered 518, deaths 1
+  RATE  mean seed score 0.06513
+  B1    mean seed score 0.05734
+  LP    mean seed score 0.05681
+  LP0   mean seed score 0.06515
+  INIT  mean seed score 0.69315
+cmp eval B1 vs RATE: wins 19 losses 4 ties 0 (seeds 23), p 0.002599 -> superior, score diff median -0.00226 [-0.01439, 0.00136]
+cmp eval LP vs RATE: wins 23 losses 0 ties 0 (seeds 23), p 2.384e-07 -> superior, score diff median -0.00426 [-0.01239, -0.00246]
+cmp eval LP vs B1: wins 18 losses 5 ties 0 (seeds 23), p 0.01062 -> superior, score diff median -0.00201 [-0.00382, 0.00200]
+cmp eval LP vs LP0: wins 23 losses 0 ties 0 (seeds 23), p 2.384e-07 -> superior, score diff median -0.00425 [-0.01241, -0.00245]
+cmp eval INIT vs RATE: wins 0 losses 23 ties 0 (seeds 23), p 2.384e-07 -> inferior, score diff median 0.64800 [0.62831, 0.66276]
+cmp ood B1 vs RATE: wins 11 losses 1 ties 0 (seeds 12), p 0.006348 -> superior, score diff median -0.00604 [-0.03059, 0.00118]
+cmp ood LP vs RATE: wins 12 losses 0 ties 0 (seeds 12), p 0.0004883 -> superior, score diff median -0.00659 [-0.02778, -0.00204]
+cmp ood LP vs B1: wins 9 losses 3 ties 0 (seeds 12), p 0.146 -> not superior, score diff median -0.00076 [-0.00322, 0.00281]
+cmp ood LP vs LP0: wins 12 losses 0 ties 0 (seeds 12), p 0.0004883 -> superior, score diff median -0.00661 [-0.02788, -0.00204]
+cmp ood INIT vs RATE: wins 0 losses 12 ties 0 (seeds 12), p 0.0004883 -> inferior, score diff median 0.63445 [0.54497, 0.65151]
+gates {"G3":true,"G5":true,"G4":true,"G1":true,"G2":true,"G0":true,"G7":true}
+predictions (P7 needs G6 = the rerun) {"P5":true,"P2":true,"P1":true,"P4":true,"P3":true,"P6":true,"V1":true}
+results.tsv sha256 738961f59a329164f38c50ecc8dedda1f7fcec0f08ea071fe86c574726a4d7ad

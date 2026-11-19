@@ -1,0 +1,81 @@
+# 未知記号への転移の予備実験（memory-transfer-pilot）— 予測（実行前に凍結、2026-11-18、claude-lab）
+# 根拠: discussion/notes/memory-transfer-roadmap.md、discussion/reviews/memory-transfer-design.md、
+#       discussion/notes/D-memory-transfer-codex.md。既存個体・アプリの db・~/bridge-protocol は使わない。
+# 凍結: shasum -a 256 を experiments/freeze-memory-transfer-pilot.txt に記録。結果を見たあとでこのファイルを書き換えない。
+
+[task]
+symbols = ["A", "B", "C", "D"]            # A・B は訓練、C・D は未知（訓練に一度も出ない）
+train = ["AA", "BB", "AB", "BA"]          # 二条件で記号・順序・回数を共通にする
+test = ["CC", "DD", "CD", "DC"]           # 四問。各問を移植後の同じ状態の複製から一回ずつ、正解提示なしで読む
+assignment_same_X = { same = "X", diff = "Y" }   # 割当て SX
+assignment_same_Y = { same = "Y", diff = "X" }   # 割当て SY（ラベル反転。教師信号の符号だけが逆）
+# 入力: 左右に別のポート。各試行は常に二件（左に一記号、右に一記号）。記号 ID・重複数・正解は読み出しに渡さない
+#       （比較器を設計で与える陽性対照 P だけが ID の一致を読む。それが P の定義）。
+# 出力: スコア s。s > 0 → X、s < 0 → Y、s == 0 は同点で不正解。
+# 演算: 有理数（Rational{BigInt}）の厳密計算。乱数なし。初期結合は 0。
+# 更新: 一括の LMS（4 訓練対の誤差 (t - s) と入力の積の和）、学習率 1/16、200 周。
+#       t は割当てで +1（X）/ -1（Y）。更新するのは列挙した結合だけ。
+# 移植: 訓練後、列挙した結合（readout の重み w とバイアス b）だけを、同じ初期状態の新しい個体へ写す。
+#       残りの状態（直前の入力、教師信号の控え、更新の回数、誤差の跡）は初期化する。
+
+[coding]
+# 記号の特徴: 左右のポートで共有する ±1 の特徴チャネル。
+# H4: 4 チャネルのアダマール行。A=(1,1,1,1) B=(1,1,-1,-1) C=(1,-1,1,-1) D=(1,-1,-1,1)。C⊙D = A⊙B（設計上の共有）。
+# O8: 8 チャネルのアダマール行 r0..r7 から A=r0 B=r1 C=r2 D=r2⊙r4（A⊙B=r1、C⊙D=r4 で 1 とも A⊙B とも直交）。
+H4 = "C⊙D == A⊙B"
+O8 = "C⊙D ⊥ A⊙B, C⊙D ⊥ 1"
+
+[models]
+# ADD: 加算読み出し s = u·f(L) + v·f(R) + b（u, v, b を学習）。
+# P:   陽性対照。設計で与えた比較器 c = (L と R の記号 ID が同じなら +1、違えば -1)、s = w·c + b。比較機能の由来 = 設計。
+# LP:  共有特徴チャネルの局所積 h_k = f_k(L)·f_k(R) と結合学習 s = w·h + b（w と b を同時に学習）。
+#      積の演算子は設計で固定。同異はチャネルごとの一致（積 = +1）から生じ、どのチャネルをどの符号で読むかを学習する。
+#      比較機能の由来 = 設計（チャネル単位の積）＋ 特徴符号の共有（どの未知対に効くかは符号が決める）。
+# 対照: INIT = 初期結合（0）を移植、FROZEN = 学習率 0 で訓練して移植、SELF = 移植せず訓練後の個体そのものから読む（移植で崩れないかの比較）。
+
+# 予測（各モデル・各符号・各割当て。正解数/4、四問の応答）
+[prediction.ADD]
+# Lean（formal/MemoryTransfer.lean）: どんな u, v, b でも CC・DD・CD・DC の四問を同時に正解できない（上限 3）。
+# さらに目標 (+1,+1,-1,-1) は加算の張る空間に直交するので、0 からの LMS では勾配が 0 のまま。全問同点。
+SX = { correct = 0, responses = ["tie", "tie", "tie", "tie"] }
+SY = { correct = 0, responses = ["tie", "tie", "tie", "tie"] }
+train_fit = "訓練対も全部同点（0/4）"
+both_codings = true   # H4・O8 とも同じ
+
+[prediction.P]
+SX = { correct = 4, responses = ["X", "X", "Y", "Y"] }
+SY = { correct = 4, responses = ["Y", "Y", "X", "X"] }
+note = "合格で支持できるのは「移した結合が結果ラベルとの対応を運ぶ」まで。比較機能の獲得ではない。"
+
+[prediction.LP_H4]
+SX = { correct = 4, responses = ["X", "X", "Y", "Y"] }
+SY = { correct = 4, responses = ["Y", "Y", "X", "X"] }
+note = "C⊙D == A⊙B なので CD・DC は訓練の AB・BA と同じ h を持つ。転移は符号の共有が運ぶ。"
+
+[prediction.LP_O8]
+# 同じ対の h は全チャネル +1（訓練の AA と同じ）なので CC・DD は正解。CD・DC の h は 1 とも A⊙B とも直交し、
+# 0 からの一括 LMS では w ∈ span{1, A⊙B}、対称性で b = 0（厳密）なので s = 0、同点。
+SX = { correct = 2, responses = ["X", "X", "tie", "tie"] }
+SY = { correct = 2, responses = ["Y", "Y", "tie", "tie"] }
+
+[prediction.controls]
+INIT = "全モデル・両割当てで全問同点（0/4）、応答は割当てに依存しない"
+FROZEN = "INIT と同じ（全問同点、両割当てで同一）"
+SELF = "各モデルで移植後と同じ応答（移植で崩れない）"
+label_inversion = "P・LP の非同点の応答はすべて SX と SY で反転する"
+CD_discrimination = "f(C) != f(D)（H4・O8 とも。X/Y を使わず特徴で確認）"
+reproduce = "別プロセスで再実行した結果ファイルの SHA-256 が一致する"
+
+[falsification]
+# 次のどれかが観測されたら、その予測は外れとして報告する。
+F1 = "ADD が一つの割当てで四問すべて正解（Lean の命題と矛盾。実装の誤り）"
+F2 = "P か LP_H4 が、どちらかの割当てで一問でも外す（移植した結合だけで訓練の効果を再現できない）"
+F3 = "LP_O8 の CD・DC が同点でない（予測した対称性・張る空間の読みが外れ）"
+F4 = "INIT・FROZEN の応答が割当てで変わる（試験時に訓練の外の何かが漏れている）"
+F5 = "SELF と移植後の応答が違う（列挙した結合の外の状態が応答に効いている）"
+F6 = "再実行で結果のハッシュが変わる"
+
+[scope]
+# 解釈の限界: 合格で言えるのは「列挙した結合が、この符号のもとで未知の四対への応答を運ぶ」まで。
+# 比較機能の獲得（P は設計、LP は積の演算子が設計）や、未知の記号対一般への転移は主張しない。
+# 失敗（LP_O8）から局所更新一般の不可能性も導かない。phenomenal_claim には触れない。

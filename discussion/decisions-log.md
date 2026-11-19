@@ -539,7 +539,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 ## #59 S57（A1）: 確かさから作った確率で引く腕 CONF の結果（2026-11-16）
 - 決めたこと: 仕様 r2 のとおり走らせ、PB0〜PB4 成立として README 項番168 に記録した。実装の席が仕様の範囲で決めた点（PB1 の組の作り方、D4b の重み、評価で 2 度目の走りを省く）を受け入れた。
 - 根拠: ユーザー 2026-11-15「1 の仕様を書き始めて」、2026-11-16「opus5.5 にやらせて」。
-- 合意: codex-lab I-R（D-MEM 15）。accept 6、clarify 2、challenge 2（中央値の呼び方、読みの文の限定）→ 記録に入れた。全面の accept は保留（D7 の直しの独立の確認、全歩の再実行）。
+- 合意: codex-lab I-R（D-MEM 15）。accept 6、clarify 2、challenge 2（中央値の呼び方、読みの文の限定）→ 記録に入れた。全面の accept は保留（D7 の直しの独立の確認、全歩の再実行）→ 2026-11-16 夜に全歩の再実行が一致し閉じた（D-MEM 17、D7 は空の配列の限界を記録）。
 - 元に戻す方法: `experiments/draw_conf_grid.jl`・`check_draw_conf.jl`・`results-draw-conf-*`・`draw-conf-bits/`・`draw-conf-out/` を使わない（`core/` と S55 のファイルは変えていない）。README 項番168 に「取り下げ」と書く。
 - 影響したファイル: 上記と README.md、STATE.md、freeze-draw-conf-code.txt
 - ユーザー: **承認**（2026-11-16 ユーザー「１から４まではok」）
@@ -555,7 +555,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 ## #61 S49d: 監査の書きかけの最後の行の扱い（2026-11-15 実装、2026-11-16 記録）
 - 決めたこと: `Audit::open` で、末尾が改行で終わらない監査に改行を補い break を足して続ける。r2 の PD1 を外れとして残し、r3 で書き直した。結果は README 項番171。
 - 根拠: S54 r2 の関門 H1 の不合格（S49c の版）。ユーザー 2026-11-16「１から４まではok」（記録を片付ける）。
-- 合意: codex-lab S-R（r3 まで）、I-R（D-S49d 1: accept 4、challenge 1〈終了コード〉、clarify 1、defer 1）。
+- 合意: codex-lab S-R（r3 まで）、I-R（D-S49d 1: accept 4、challenge 1〈終了コード〉、clarify 1、defer 1）。差分と sha の独立の再検証は 2026-11-16 夜に accept（D-S49d 2、改行だけ欠けた監査の限界を記録）。
 - 元に戻す方法: `rust/being-tools/src/bin/onelife-run.rs` を commit 46680d1 の版に戻す（S54 は S49d の版を前提にしているので、戻すなら S54 も止める）。
 - 影響したファイル: onelife-run.rs、S49d の仕様・予測・凍結・関門・結果、README.md
 - ユーザー: 記録は承認済み（2026-11-16）。中身の判断は事後承認の対象
@@ -563,7 +563,7 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 ## #62 S60: TRM の決定的な推論（Julia 正本＋Rust 写し、Mac と Pi 5 のビット一致）（2026-11-16）
 - 決めたこと: 仕様 r3 のとおり、演算の順を固定した Julia の推論と同じ演算列の Rust（`rust/trm-det`、独立の workspace、依存なし）を作り、関門 G-i・G-ii・G-iii を走らせた。結果は README 項番172（全部合格、予測は全部成立）。実装の席が決めた点: rope の cos/sin は公式の表をデータとして使う、exp は Cody–Waite＋7 次 Horner、束と出力の独自の二進の形式。
 - 根拠: ユーザー 2026-11-16「TRM を Pi で動かせる状態まで持っていける作業を優先」「設定 c（mlp_t）は使わない」、claude-lab の割り付け（Opus に仕様から記録まで）。
-- 合意: codex-lab S-R 3 往復（[AUTO D-S60 1〜3]、challenge 5・clarify 4 → 全部採り accept）、I-R 1 往復（[AUTO D-S60 4]: accept 3、challenge 2〈関門のスクリプトの終了コード〉→ 直して全関門を走らせ直し、clarify 1〈E の区間外の件数〉→ 記録に書いた、defer 1）。直しの再レビューは未。
+- 合意: codex-lab S-R 3 往復（[AUTO D-S60 1〜3]、challenge 5・clarify 4 → 全部採り accept）、I-R 1 往復（[AUTO D-S60 4]: accept 3、challenge 2〈関門のスクリプトの終了コード〉→ 直して全関門を走らせ直し、clarify 1〈E の区間外の件数〉→ 記録に書いた、defer 1）。直しの再レビューは 2026-11-16 夜に accept（D-S60 7・8。gate_iii の自己検査の終了コードは未確認のまま）。
 - 元に戻す方法: `experiments/trm/det/` と `rust/trm-det/` を使わない（既存の `experiments/trm/`・`core/`・`rust/being-*`・`rust/Cargo.*` は変えていない）。Pi の `/home/pi/s60/` は照合の置き場だけ。README 項番172 に「取り下げ」と書く。
 - 影響したファイル: discussion/specs/S60-trm-det.md、experiments/predictions-trm-det.md、freeze-trm-det.txt、freeze-trm-det-code.txt、experiments/trm/det/*、rust/trm-det/*、results-trm-det-*、README.md、STATE.md
 - ユーザー: **承認**（2026-11-16 ユーザー「decisions-log #62（S60）の事後承認は承認する」）

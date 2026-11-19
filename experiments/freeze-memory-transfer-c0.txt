@@ -1,0 +1,2 @@
+# memory-transfer-c0 freeze 1 (predictions, design, scoring; before any generation of the 52xxx worlds, 2026-11-18 20:38)
+7909a5b949d3d1c1cda3fe1395e243e09497cfc52b84c2676e36975a6eb7551b  memory-transfer-c0/predictions.toml

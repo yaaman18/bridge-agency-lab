@@ -1,0 +1,1 @@
+2026-11-16 20:34:28 GATE_SELFTEST=1 bash experiments/trm/det/gate_ii.sh exit=1 (claude-lab, codex D-S60 7 clarify 4)

@@ -1,0 +1,40 @@
+export gate 2026-11-17 21:41:05 tmp /var/folders/82/qvmvqs01469ck832bd6f4k280000gn/T/tmp.LQJipLqstT
+ok L2 frames 9 dead_at nothing last_n 50 maxAB 0.7767050291603949 time 8.1 s
+ok L2SF frames 9 dead_at nothing last_n 50 maxAB 0.7767050291603949 time 0.9 s
+export ok
+E3 ok L2 frames 9 compared_with_recompute 9 last_n 50 dead_at nothing
+E3 ok L2SF frames 9 compared_with_recompute 9 last_n 50 dead_at nothing
+short positive run (max-steps 50): exit 0
+FAIL: E1 L2: sha mismatch at n 20
+N1 changed bytes 1, export exit 1, files left 0: ok
+FAIL: E3 L2: frame n 6 differs from the recomputed state
+N2 C byte at offset 3372 0 -> 1, read exit 1: ok
+FAIL: E3 L2: size 28934 != 9 * 3215
+N3 size 28935 -> 28934, read exit 1: ok
+ok L2 frames 8 dead_at nothing last_n 44 maxAB 0.7767050291603949 time 8.2 s
+ok L2SF frames 8 dead_at nothing last_n 44 maxAB 0.7767050291603949 time 0.9 s
+FAIL: injected failure at publish_json (placed: body-669-L2.bin)
+N4 export exit 1, old pair unchanged yes, other entries left 0: ok
+ok L2 frames 8 dead_at nothing last_n 44 maxAB 0.7767050291603949 time 9.4 s
+ok L2SF frames 8 dead_at nothing last_n 44 maxAB 0.7767050291603949 time 1.0 s
+could not take back body-669-L2.bin: injected failure at restore_placed
+FAIL: injected failure at publish_json (placed: body-669-L2.bin)
+N5 export exit 1, old pair restored yes: ok
+ok L2 frames 3421 dead_at 20515 last_n 20515 maxAB 1.0 time 70.0 s
+ok L2SF frames 1892 dead_at 11343 last_n 11343 maxAB 1.0 time 35.9 s
+export ok
+E1/E2 full export: exit 0 (112 s)
+E3 ok L2 frames 3421 compared_with_recompute 51 last_n 20515 dead_at 20515
+E3 ok L2SF frames 1892 compared_with_recompute 51 last_n 11343 dead_at 11343
+E3 read-back: exit 0 (14 s)
+--- summary
+short positive run: ok
+E1 sha every step, E2 dead_at: ok
+E3 read-back: ok
+N1 ok, N2 ok, N3 ok, N4 ok, N5 ok
+body-669-L2.bin 10998515 bytes sha256 b2b389c41dd9982a60c0549413610fa29a58a1a0be2c8f3bbfefc1068f47ba03
+body-669-L2SF.bin 6082780 bytes sha256 77a438a0a1c497127e701157de1ae9be798de25c7b07c56c7498c799d620698a
+body-669-L2.json 3108 bytes sha256 7f448198f6a0047860f16bb25e667a9f47de1aafeae4fa96f0a73636e5c06582
+body-669-L2SF.json 3114 bytes sha256 22fefca51c349a61145a6d9de299cdb4110369da603761734b3b00ab3caee1db
+total 220 s
+GATE PASS

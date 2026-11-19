@@ -64,3 +64,27 @@
 - 19:15 S60（決定的な TRM の推論）: lab-coder（Opus）。仕様 r3（codex S-R 3 往復）→凍結→実装→G-i・G-ii・G-iii 全部合格、予測全部成立。Pi 5 で Mac の Rust と 6 束とも SHA-256 一致、1 歩 a・b 約 20 ms、e 約 159 ms。I-R の challenge 2（関門の終了コード）は直して走らせ直した（再レビュー未）。README 項番172、#62（事後承認待ち）。未 commit。
 
 - 19:40 S54 のスクリプトの直し（codex D-S54 3〜5）: 検査 22 項目 ALL PASS、third set を codex が確認、**技術の上では開始可、開始はユーザーの一言**。Pi の実物での n＝60480 の確認は入力が尽きる前に（`discussion/notes/S54-start-procedure.md` (f)）。S56: test_tf_strict.jl で空の比較・巡の数・終了コードを塞いだ（c を除く a・b・d・e は PASS）。#62 承認。D-PRED の U1〜U5 は Fable の回へ。
+
+- 20:22 **S54 試運転を開始**（ユーザー「試運転を開始して」）: s54-trial-1・2 を enable --now（Mac 20:21:25、boot id 83c87cfb…）。最初の見張りの行は n 3・3、状態は基準と一致、throttled 0x0、ext4 0、clean。commit 7329135（push していない）。1 時間ごとの見張りは Mac の `experiments/trial/watch_loop.sh`（nohup、pid は `experiments/trial/watch_loop.pid`、最大 8 日、Mac の再起動で止まる。止めるときは kill）。本番のあいだ unit を手で start・restart しない。入力が尽きる前に、Pi の実物での n＝60480 の確認（別の写し）。基準: 試-1 は 20515 歩め、試-2 は 11343 歩めに死ぬ。
+
+- 2026-11-16 夜 **Fable 5.2 のクレジットが尽きた**。claude-lab は Opus 5.5。理論は Opus と codex の議論で続け、結論は〔暫定〕で Fable の見直しまで仕様・コードの根拠にしない（`README.md` §1.3、`notes/OPUS-PERIOD.md`、基点 7329135）。
+
+- 2026-11-16 21 時前 （Opus）: B のレビューの残りを閉じた（S60 D-S60 7・8／S49d D-S49d 2／S57 全歩の再実行 216 一致 D-MEM 17。README 項番172・171・168 の I-R の行と decisions-log #59・#61・#62 に追記）。gate_iii の自己検査の終了コードは S54 の後に。A-1 退屈: `notes/D-BORE.md`〔暫定〕、codex と 6 往復で紙の定義に合意（〔判断点〕O1〜O11）、ユーザーへの問い B1〜B3。次は A-2（H3 か H1 かのユーザーの返事待ち）。
+
+- 2026-11-16 21 時 **今日はここまで**（ユーザー）。再開はこの行から。走っているもの: S54 試運転（Pi、見張り `experiments/trial/watch_loop.sh`）。ユーザーの返事待ち: D-BORE §4 B1〜B3、A-2 を H3 にするか H1 にするか、D-PRED U1〜U5、#61 の中身。未 commit: 7329135 の後の全部。
+- ユーザーの見立て（2026-11-16）: 「一番最初の問いの作り方が最重要なので、最初のそこだけは Fable を使わないとどうにもならない」→ Fable が使えるときは、各議題の §0 問いの作り直しと最後の見直しに絞って使う案（claude-lab の提案、未決）。D-BORE の §0 は Opus が書いたもので、Fable に作り直させる対象。
+- 2026-11-16 夜: S54 の見張りの絵と音 `viewer/s54-of/`（openFrameworks、読むだけ、Pi に触れない）をユーザーの依頼で作った。`open viewer/s54-of/bin/s54Garden.app`。
+- 2026-11-17 未明: 見張りの音をピアノとバイオリンに（MIS の音源を解析した表で合成、`viewer/s54-of/tools/`）。
+- 2026-11-17 朝: バイオリンを VSCO-2 CE（CC0）のビブラートありの録音で解析し直し、音量の釣り合いを測って合わせた（violinGain 6.5）。
+- 2026-11-17 06:09: 見張りのループが止まっていた（最後の行 11-16 21:22。Mac のスリープの間にプロセスが終わった）。読むだけの見張りを一回走らせ（n 3521・3521、基準と一致、throttled 0x0、ext4 0、clean、boot id 不変）、`caffeinate -i` を付けて掛け直した（pid は watch_loop.pid）。21:22〜06:09 の行は欠けている。
+- 2026-11-17: AUE の観察のインターフェースの実装メモ `discussion/notes/UI-AUE.md`（S54 garden の構成・守っている線・楽器の解析・試験の仕組み・次の候補）。**/clear の後はここと STATE のこの行から**。
+- 2026-11-17 22:40 **S54 garden の区切り（/clear の前）**。続きは `discussion/notes/UI-AUE.md` の末尾（鐘・一式の保存・体の値の書き出し・調整パネル）から読む。
+  - 済み: 音（ピアノ＋鐘〈ナポリの録音を解析〉、Freeverb、簡易バイノーラル、ユーザーが耳で確認）。一式の保存 `viewer/s54-of/tools/preset.sh`（v1-2026-11-17-piano-bell〈前の一式〉、v2-2026-11-17-panel〈いま〉。restore は先にいまの一式を `_before-restore-*` に保存。v1↔v2 の差し替えを一時コピーで確認）。体と回路の値の書き出し `viewer/s54-of/data/body-669-{L2,L2SF}.{json,bin}`（Julia、lab-coder が書き Codex が 2 往復レビュー、GATE PASS、6 歩ごと＋死の歩）。調整パネル（ofxImGui＋FreeType、Retina を有効化、見せ方 5 つ、`g`・`1`〜`5`、形の保存 `bin/data/looks/`）。
+  - 未確認: パネルの実際の操作（クリック・保存・読み込み）はユーザーがまだ触っていない。鐘の倍音の揺れ（0.68/0.32）の録り直し測定。書き出しの最後の小さな直しへの Codex の再レビュー。
+  - 次の候補（ユーザーが決める）: パネルを触った感想で形と UI を直す、ofxFlowTools や ofxPd を使う見せ方・音、切り出した個体向けの版。
+  - 走っているもの: S54 試運転（Pi）と見張り（`experiments/trial/watch_loop.sh`、caffeinate 付き）。基準の死は試-1 20515 歩め・試-2 11343 歩め（11-17 22 時に n 約 9300）。viewer/s54-of は git 未追跡、commit していない。
+- 2026-11-17 23 時: S54 garden に暗い・明るいの画面（`l`、パネルの「画面」、Mac に合わせるも可）と見せ方 6「流れ（流体、ofxFlowTools）」を足した。一式 `presets/v3-2026-11-17-theme-flow`。詳しくは `discussion/notes/UI-AUE.md` の末尾。ユーザーが触って好みを言う段。ofxPd（音）はまだ。
+
+- 2026-11-18 夜: 独立予備実験 memory-transfer-c0（局所積の記憶候補を合成世界で読むだけ、C0 相当、TRM なし）を完了。凍結 freeze-memory-transfer-c0.txt、関門 G0〜G7 合格、予測 V1・P1〜P7 成立（族の外の LP vs B1 は有意でない）。種子は独立の区画 52001〜52212（主の列の次は 886 のまま）。結果 `experiments/memory-transfer-c0/README.md`。codex の I-R と README 項番は未。
+
+- 2026-11-19: README に項番173（記憶の移し pilot）・174（c0、codex I-R 済み）・175（S54 garden）と「未決」に返事待ちの一覧を足し、7329135 の後の全部を commit・push（ユーザー「README を更新してから git push して」）。根に残る `results-port*.out`・`results-tf.out`・`results-port-mock.err`（S56 の走りの控え）は追跡に入れていない。

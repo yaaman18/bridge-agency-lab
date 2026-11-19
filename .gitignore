@@ -36,3 +36,11 @@ experiments/trm/diag/*.json
 experiments/trm/diag/probe/
 # S60: build output of the separate workspace
 rust/trm-det/target/
+
+# S54 garden (openFrameworks viewer) build output
+viewer/s54-of/obj/
+viewer/s54-of/bin/*.app
+viewer/s54-of/presets/*/bin/*.app
+# S54 watch loop runtime files
+experiments/trial/watch_loop.pid
+experiments/trial/watch_loop.log

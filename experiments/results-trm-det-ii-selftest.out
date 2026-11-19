@@ -1,17 +1,17 @@
-S60 G-ii r2: Julia det vs Rust (Mac x86_64), byte and element identity; run dir out/run-20261116-190715-85022; selftest 1; 2026-11-16 19:07:15
+S60 G-ii r2: Julia det vs Rust (Mac x86_64), byte and element identity; run dir out/run-20261116-203357-24077; selftest 1; 2026-11-16 20:33:57
 rust build warnings 0; binary sha 7b8fcb2219d61624bd5519e22efcceeedb07248d0a723e8e4555acd6f75cba28
-julia a_W0.bin 0.139 s (5 ACT steps, incl. compile on first)
-julia a_W1.bin 0.133 s (5 ACT steps, incl. compile on first)
-julia b_W0.bin 0.127 s (5 ACT steps, incl. compile on first)
+julia a_W0.bin 0.168 s (5 ACT steps, incl. compile on first)
+julia a_W1.bin 0.137 s (5 ACT steps, incl. compile on first)
+julia b_W0.bin 0.129 s (5 ACT steps, incl. compile on first)
 julia b_W1.bin 0.128 s (5 ACT steps, incl. compile on first)
-julia e_W0.bin 1.272 s (5 ACT steps, incl. compile on first)
-julia e_W1.bin 1.222 s (5 ACT steps, incl. compile on first)
-rust mac a_W0: step1 0.032807 s step2 0.032763 s step3 0.032715 s step4 0.032725 s mixed 0.032719 s total 0.165016 s 
-rust mac a_W1: step1 0.032795 s step2 0.032735 s step3 0.032739 s step4 0.032739 s mixed 0.032736 s total 0.164988 s 
-rust mac b_W0: step1 0.032661 s step2 0.032593 s step3 0.032567 s step4 0.032583 s mixed 0.032583 s total 0.164246 s 
-rust mac b_W1: step1 0.032665 s step2 0.032608 s step3 0.032593 s step4 0.032751 s mixed 0.032591 s total 0.164436 s 
-rust mac e_W0: step1 0.288335 s step2 0.287996 s step3 0.288387 s step4 0.291518 s mixed 0.294293 s total 1.455609 s 
-rust mac e_W1: step1 0.288392 s step2 0.295426 s step3 0.293793 s step4 0.288267 s mixed 0.296930 s total 1.468063 s 
+julia e_W0.bin 1.408 s (5 ACT steps, incl. compile on first)
+julia e_W1.bin 1.309 s (5 ACT steps, incl. compile on first)
+rust mac a_W0: step1 0.033212 s step2 0.033327 s step3 0.033436 s step4 0.033226 s mixed 0.033365 s total 0.168038 s 
+rust mac a_W1: step1 0.033350 s step2 0.032960 s step3 0.032906 s step4 0.032919 s mixed 0.032765 s total 0.166312 s 
+rust mac b_W0: step1 0.032664 s step2 0.032602 s step3 0.032704 s step4 0.032714 s mixed 0.032839 s total 0.164875 s 
+rust mac b_W1: step1 0.032839 s step2 0.032821 s step3 0.033259 s step4 0.032580 s mixed 0.032868 s total 0.165847 s 
+rust mac e_W0: step1 0.288840 s step2 0.297152 s step3 0.289549 s step4 0.289825 s mixed 0.289495 s total 1.477958 s 
+rust mac e_W1: step1 0.289411 s step2 0.289442 s step3 0.309427 s step4 0.289830 s mixed 0.291119 s total 1.474896 s 
 a_W0.jl.bin vs a_W0.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
 a_W1.jl.bin vs a_W1.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
 b_W0.jl.bin vs b_W0.rs.bin records 45 elements 6210 differing 0 max_abs 0.0 bytes_identical true PASS
