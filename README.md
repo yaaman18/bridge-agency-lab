@@ -2112,6 +2112,27 @@ include("../core/LabCore.jl"); using .LabCore
     - **I-R（codex-lab、2026-11-22）**: 初回で `run_gates.jl` の `git` 呼び出しと出力上書きを指摘（BLOCK）→ `claude-lab` が `--readonly` モードと純 Julia `core/*.jl` SHA-256 照合へ最小修正 → `codex-lab` が `--readonly` 独立再実行で exit 1・出力バイト一致・P-S62-2/4 外れ記録を確認し **APPROVE**。
     - **言えないこと**: `phenomenal_claim = :not_certified`、事前宣言摂動族の外への一般 CI 昇格、飽和同一視対およびポート最小性の未検証（別仕様 S62b の対象）。
 
+179. S61c 個体内増殖＋コアなし CPC の飢饉耐性（M1 負債駆動の内生的剪定・自食回収）（2026-11-22。S61b［項番177］の P-S61b-2 外れを受けた独立改訂仕様。仕様 `discussion/specs/S61c-nesting-cpc-pruning.md` r2、予測 `experiments/predictions-nesting-cpc-c.md` r2、凍結 `experiments/freeze-nesting-cpc-c.txt`、Julia `experiments/nesting_cpc_c/{NestingCPCC.jl,run_gates.jl}`、結果 `experiments/results-nesting-cpc-c.out`、decisions-log #66。既存 S61/S61b・`formal/NestingLineage.lean`・`core/`・`rust/`・`~/bridge-protocol` は未変更）。
+    - **構成**: 開発種子 `958..961`・評価種子 `962..981`（20 種子、既存評価種子と完全分離）。S61b に step 6 `(ii.b)` 内生的剪定 1 規則（`alive && config != :Runaway && D > 0.0 && |M_after_(i)(ii)| >= 4`、`!(id in touched)` 最小 `(u, id)` へ標準 `Event(:death, [v.id], Int[])` を発行し独立局所在庫 `v.u` の `0.5 * max(v.u, 0)` を負債優先返済→残余残高、同歩 `!pruned` で分裂抑止）のみを追加（新規定数は $\alpha_{\mathrm{rec}}=0.5$ のみ、$N_{\max}$・`Φ_rich`・時計非参照、`Runaway-Cancer` は S61 r3 と 100% 同一）。
+    - **確認した事実（G0〜G5 全合格・P-S61c-1〜5 全的中）**:
+      - **G0（Lean 無変更照合）**: `sh formal/check.sh` 終了 0・エラー 0・sorry 0・標準公理のみ。
+      - **G1（Stage 0/1・R2 整形式＋負試験 2 件）**: **合格**。7 構成×2400 遷移（CPC 剪定死 89 件・Hidden 106 件を含む）で R2 違反 0 件、負試験 2 件とも 20/20 検出。
+      - **G2（E1 暴走分離）**: **合格**。(pre) `Runaway-Cancer` は親 S61 r3 `NestingCPC` と同一評価テープ 20 種子×120 歩で共有状態・事象列完全一致 20/20（負対照 `CPC-Prolif` は 20/20 差異検出）。(a) 生存 **`CPC-Prolif` 20/20** vs **`Runaway-Cancer` 1/20**（`{964}`、厳密包含）。(b) 平均最大負債 **`CPC-Prolif` 0.0587**（自食回収前 `D_pre_prune` 平均最大 **1.893**）$<$ **`Runaway-Cancer` 11.820**。(c) `var(birth_t)=0.060775 > 0`, `var(deficit_t)=0.057663 > 0`, 同歩 $r = -0.041014 < 0$（ラグ相関 $k=1..12$ もすべて $-0.0414$〜$-0.0450$）。剪定総計 89 回（3〜6 回/種子）、`min|M_t|` 3〜4、`max|M_t|` 7〜9、**飢饉後（$k>65$）の再増殖 20/20**。
+      - **G3（E2 非干渉＋時間シフト）・G4（E3′ 厳格分離・共有規則診断 20/20 `core_present`）・G5（決定性・凍結 SHA・親 3 ファイル SHA・`--readonly` バイト一致）**: すべて**合格**。
+    - **限界と注記**: `claude-lab`・`codex-lab` 双方の指摘どおり、同歩 $r < 0$ は `deficit > 0`→`D > 0`→剪定＋`pruned == 0` ガードによる同歩排他から両分散正のもとで構造的に出る。動力学の本質的証拠は 20/20 対 1/20 の生存優越、回収前最大負債 1.893 対 11.792、および飢饉後再増殖 20/20 である。`phenomenal_claim = :not_certified`。
+    - **I-R（codex-lab、2026-11-22）**: **APPROVE**（凍結 SHA・新 3 ファイル SHA 一致、`--readonly` 独立再実行で終了 0・保存出力と差分 0、親 `Runaway-Cancer` 照合と負対照を確認）。
+
+180. S62b AUE 外世界との境界検証（2 サブフィクスチャ前提修正＋全関門再検証）（2026-11-22。S62［項番178］の P-S62-2/4 外れを受けた独立改訂仕様。仕様 `discussion/specs/S62b-aue-boundary-audit.md` r2、予測 `experiments/predictions-boundary-audit-b.md` r2、凍結 `experiments/freeze-boundary-audit-b.txt`、Julia `experiments/boundary_audit_b/{BoundaryAuditB.jl,run_gates.jl}`、結果 `experiments/results-boundary-audit-b.out`、decisions-log #67。`core/`・`rust/`・`formal/`・親 `experiments/boundary_audit/`・`~/bridge-protocol` は未変更。開発種子 `982..985`、評価種子 `986..1005`、**次の未使用主列種子 `1006`**）。
+    - **構成**: 親 `BoundaryAudit.jl` を無変更で `include` し、`core/circuit.jl`・`core/one_life.jl` の厳密算術境界（`paid_all <= 0.052`, `P_CAPACITY = 5`, `reservoir_40 >= 292.0`）に基づき 2 サブフィクスチャのみ再設計：(1) GB2(5) ポート最小性を `pool=[0,0]`, `g=(5,5)`, `reservoir=0.00 vs 0.25` へ、(2) GB4c 飽和同一視対を `pool=[0.40,0.40]`, `g_t=(4,4) vs (5,5)`, `g_{t+1}=g_sched(41)` へ改訂し、GB4b に符号付き Live 優位（`Δ_taken`・`Δ_B` 双方で `wins > losses`）を明示関門化。
+    - **確認した事実（GB1〜GB5 全合格・P-S62b-1〜5 全的中）**:
+      - **GB1（有限表 6 ケース、lab 側補助検証）**: **合格（6/6）**。
+      - **GB2（双方向 D-BaSS＋群最小性＋2 歩履歴）**: **合格**。`s_40` 生存 20/20、`b_naive` 漏れ 20/20 に対し `b_shell`（`halo1` 半径 6+port）内向き `far1`・外向き `far1`・2 歩 `far2`（40×40・24×24 双方）漏れすべて **0/20**（宣言摂動族の範囲、P-11）。群最小性は `ring1` 20/20・`mid1` 20/20・**改訂ポート除去 20/20**（実測最大 `paid_all = 0.020 <= 0.052`、最小 `pool_41` 差 `0.100`）。
+      - **GB3（読み書き・RNG 分離監査）**: **合格**（400 歩で未申告書込・読取専用書込・入力破壊すべて 0、`noise^1` 遠方漏れ 0/20）。
+      - **GB4（3 分離介入対照・恒等ラッパ一致）**: **合格**。恒等ラッパ 20/20×20 歩バイト一致。(4a) P-04 運動消費端遮断で外向き差 **20/20**。(4b) RNG **400/400 一致**、Live が逆位相 Yoke に **`Δ_taken` 20/0/0（中央値 +0.500）・`Δ_B` 20/0/0（中央値 +0.3257）** で符号付き勝利。(4c) 低プール区別対 3 条件 **20/20**、**改訂飽和同一視対 6 条件すべて 20/20**（`y_{t+1}=[5,5]`・`out_{t+1}`・`circuit_{t+2}` ビット一致、`pool_{t+1}`・`pool_{t+2}`・$\mu_{t+2}$ 不一致、`s_40` 最小貯留槽 `292.742 >= 292.0`）。
+      - **GB5（決定性・凍結 SHA・`core/*.jl` 9 ファイル＆親 S62 2 ファイル純 Julia SHA 照合・`--readonly` バイト一致）**: **合格**。
+    - **I-R（codex-lab、2026-11-22）**: **APPROVE**（評価種子 `986..1005` で `--readonly` 独立再実行が終了 0・保存出力と差分 0、GB1〜GB5 全 PASS・P-S62b-1〜5 全 `held`・凍結および `core` 9 件＋親 S62 2 件の照合を確認）。
+    - **言えないこと**: `phenomenal_claim = :not_certified`、事前宣言摂動族の外への一般 CI 昇格、GB1 の BP 側正本化（BP7/BP9 案件）。
+
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
 ### 統合度 Φ（定義のみ。計算しない：ユーザー決定 2026-10-31）
@@ -2253,7 +2274,7 @@ include("../core/LabCore.jl"); using .LabCore
 
 ## 未決（ユーザー判断）
 
-- **2026-11-22 時点の返事待ち**（新しいものから）: #63（S61、項番176）・#64（S61b、項番177）・#65（S62、項番178）の事後承認と次手（S61c 剪定機構 / S62b フィクスチャ2点修正）。S54 試運転の Pi 再接続後の `experiments/trial/eof_check_pi.sh` 実行（11-23 20:40 ごろ入力終了前、14:13 時点 `unreachable`）。BP 正本側ラインへの引き継ぎ一括（`discussion/bp-proposals.md` BP7〜BP9：G1-A `RedundantRecovery`・G2-A `criteria.jl`・BP7/BP8・U-NC1(c)/Stage 1 $L_t$）。D-BORE（退屈）§4 の B1〜B3（`discussion/notes/D-BORE.md`、判断点 O1〜O11）。A-2 を H3 にするか H1 にするか。D-PRED の U1〜U5。#61 の中身の事後承認。記憶の移しの予備実験（項番173・174）の次の段に進むか。S54 garden のパネルの感想。
+- **2026-11-22 時点の返事待ち**（新しいものから）: #63（S61、項番176）・#64（S61b、項番177）・#65（S62、項番178）・#66（S61c、項番179、G0〜G5 全 PASS）・#67（S62b、項番180、GB1〜GB5 全 PASS）の事後承認と次手（BP9 の別セッション実行 / S54 Pi 再接続後の `experiments/trial/eof_check_pi.sh` 実行［11-23 20:40 ごろ入力終了前、14:13 時点 `unreachable`］ / 2026 年末メディアアート制作）。BP 正本側ラインへの引き継ぎ一括（`discussion/bp-proposals.md` BP7〜BP9：G1-A `RedundantRecovery`・G2-A `criteria.jl`・BP7/BP8・U-NC1(c)/Stage 1 $L_t$）。D-BORE（退屈）§4 の B1〜B3（`discussion/notes/D-BORE.md`、判断点 O1〜O11）。A-2 を H3 にするか H1 にするか。D-PRED の U1〜U5。#61 の中身の事後承認。記憶の移しの予備実験（項番173・174）の次の段に進むか。S54 garden のパネルの感想。
   - **2026-11-20〜22 に解決・決定済み**: Neon オーケストレーター体制（§1.4）＋D 段完全並列 `[FMT:SYM]`（§4.2）、運用ライン切り分け（§1.5：`bridge-protocol` 正本ライン vs `bridge-agency-lab` 実験ライン）、U-BL1 確認待ち A 5 件＋`10-09-4`（暫定名「構造的主体性」）＋`10-24-5`（案 G1-A）＋`10-09-6` Julia/Lean 非比較性（案 G2-A）の BP 台帳反映と `pending_A = 0` 解消確認、合法 OA 論文 11 本（P155〜P168）取得と一次照合（`notes/D-BOUNDARY-OA-SYNTHESIS.md`）、案 A（Fable 必須関門解除・3 系統合意正本化）、U-NC1〜U-NC3（身体＝不可逆性と共通維持費の器、回転独占仲介棄却、L3 Stage 1 先行）。
 
 - 項番81（自己維持の段階1）を受けて: 身体で育てると価値で分かれない（推論1）、乏しい世界で回路の維持費が身体を殺す（推論2）、容量は下り坂を作る（推論3）。

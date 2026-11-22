@@ -1,0 +1,89 @@
+# S61c r2 gates G1–G5 (spec discussion/specs/S61c-nesting-cpc-pruning.md, predictions experiments/predictions-nesting-cpc-c.md)
+# seeds 962..981 (evaluation); phenomenal_claim = :not_certified
+# G0 is sh formal/check.sh (formal/NestingLineage.lean) and is not run by this script
+G1 (R1, R2 and the negative tests)
+  H_persist: stage0(t0)=(parts = 2, irreducible = true, cls = :individual) stage0(t1)=(parts = 2, irreducible = true, cls = :individual) isomorphic=true wf_violations=0 invariant=([(1, "persist"), (1, "persist"), (1, "persist")], 0, 0)
+  H_replace: stage0(t0)=(parts = 2, irreducible = true, cls = :individual) stage0(t1)=(parts = 2, irreducible = true, cls = :individual) isomorphic=true wf_violations=0 invariant=([(0, ""), (0, ""), (1, "persist")], 2, 2)
+  H_shifting: stage0(t0)=(parts = 2, irreducible = true, cls = :individual) stage0(t1)=(parts = 2, irreducible = true, cls = :individual) isomorphic=true wf_violations=0 invariant=([(0, ""), (1, "persist"), (2, "split+split")], 1, 0)
+  separated(H_persist, H_replace) = true
+  separated(H_persist, H_shifting) = true
+  separated(H_replace, H_shifting) = true
+  R2 CPC-Prolif                   transitions=2400 violations=0 pruning_deaths=89 
+  R2 Runaway-Cancer               transitions=2400 violations=0 pruning_deaths=0 
+  R2 Fixed-Core                   transitions=2400 violations=0 pruning_deaths=89 
+  R2 Rotating-Mediator-Failover   transitions=2400 violations=0 pruning_deaths=89 
+  R2 Rotating-Mediator-Redundant  transitions=2400 violations=0 pruning_deaths=89 
+  R2 Hidden-Age-Control           transitions=2400 violations=0 pruning_deaths=106 
+  R2 Omitted-Cache-Control        transitions=2400 violations=0 pruning_deaths=89 
+  negative (deepcopy second continuant): detected 20/20
+  negative (slot reuse after parent destroyed): detected 20/20
+  G1: PASS (witnesses true, R2 true, negatives true)
+G2 (E1)
+  (pre) Runaway-Cancer identical to S61 r3 NestingCPC (shared state + events, 120 steps): 20/20 
+  [diagnostic] comparator negative control: CPC-Prolif differs from S61 r3 in 20/20 (first differing step [4, 5, 5, 5, 4, 4, 5, 7, 7, 5, 6, 5, 7, 5, 5, 7, 7, 5, 7, 5])
+  survivors CPC-Prolif 20/20 {962,963,964,965,966,967,968,969,970,971,972,973,974,975,976,977,978,979,980,981}
+  survivors Runaway-Cancer 1/20 {964}
+  death step (0 = survived) CPC-Prolif [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  death step (0 = survived) Runaway-Cancer [13, 13, 0, 37, 13, 13, 61, 53, 109, 45, 53, 13, 62, 49, 53, 37, 49, 13, 41, 61]
+  (a) strict superset of survivors: true
+  (b) mean max debt (StepRec.D) CPC-Prolif 0.058718 < Runaway-Cancer 11.820236: true
+  (c) pooled live steps n=2400 births_sum=156 deficit_steps=89 var(birth_t)=0.060775 var(deficit_t)=0.057663 pearson r(birth_t, deficit_t)=-0.041014 both var > 0 and r<0: true
+  [diagnostic] mean max D_pre_prune CPC-Prolif 1.892638 Runaway-Cancer 11.791539
+  [diagnostic] max debt per seed CPC-Prolif ["0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "0.000000", "1.174357"]
+  [diagnostic] max debt per seed Runaway-Cancer ["14.056891", "14.451607", "11.244600", "17.743108", "14.013176", "13.967760", "10.532652", "4.774358", "15.383928", "12.532167", "10.421724", "15.614918", "3.214925", "7.577924", "6.320447", "16.357521", "10.436009", "15.513097", "15.981150", "6.266765"]
+  [diagnostic] max D_pre_prune per seed CPC-Prolif ["1.043168", "0.756729", "1.699622", "1.190067", "2.626588", "1.571875", "2.478906", "2.921752", "2.050815", "0.907107", "1.156250", "1.426376", "1.449744", "2.490994", "1.240625", "2.900000", "1.775000", "2.010669", "2.400000", "3.756475"]
+  [diagnostic] CPC-Prolif prunings total 89 per seed [4, 4, 4, 4, 4, 3, 4, 6, 5, 5, 4, 4, 4, 5, 4, 4, 5, 4, 6, 6]
+  [diagnostic] max_t |M_t| per seed CPC-Prolif [8, 8, 8, 8, 8, 7, 9, 9, 8, 8, 8, 8, 8, 8, 8, 8, 8, 7, 9, 9] (distribution 7:2 8:14 9:4)
+  [diagnostic] min_t |M_t| per seed CPC-Prolif [4, 3, 4, 4, 4, 4, 3, 3, 4, 3, 4, 4, 4, 3, 4, 4, 3, 3, 3, 3]
+  [diagnostic] live steps with D > 0 per seed CPC-Prolif [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2] (total 2)
+  [diagnostic] max_t |M_t| per seed Runaway-Cancer [23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23] (distribution 23:20)
+  [diagnostic] min_t |M_t| per seed Runaway-Cancer [4, 4, 1, 1, 4, 4, 1, 2, 1, 3, 1, 4, 1, 2, 2, 3, 1, 4, 2, 1]
+  [diagnostic] live steps with D > 0 per seed Runaway-Cancer [2, 3, 28, 8, 2, 2, 18, 15, 26, 12, 14, 2, 20, 15, 14, 9, 12, 2, 7, 18] (total 229)
+  [diagnostic] CPC-Prolif seeds with a split birth in a live step t > 65: 20/20 {962,963,964,965,966,967,968,969,970,971,972,973,974,975,976,977,978,979,980,981}
+  [diagnostic] CPC-Prolif lag r(birth_t, deficit_{t+k}) k=1:-0.041375(n=2380) k=2:-0.041598(n=2360) k=3:-0.041971(n=2340) k=4:-0.042204(n=2320) k=5:-0.042589(n=2300) k=6:-0.042980(n=2280) k=7:-0.042924(n=2260) k=8:-0.043326(n=2240) k=9:-0.041696(n=2220) k=10:-0.044154(n=2200) k=11:-0.042146(n=2180) k=12:-0.045013(n=2160)
+  G2: PASS
+G3 (E2)
+  CPC-Prolif forbidden inputs (phi_rich, interpreter text) bit-identical: 20/20
+  CPC-Prolif time shift t_start 0 vs 20 bit-identical: 20/20
+  Hidden-Age-Control time shift L_t mismatch detected: 20/20 (first differing step [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15])
+  G3: PASS
+G4 (E3′, priority unresolved > core_present > no_core_witnessed)
+  CPC-Prolif                   verdicts: no_core_witnessed=20 (expected no_core_witnessed 20/20: true)
+    t* per seed [5, 4, 4, 4, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 962): ablation_stops=missing bypass_all=true calib=0.0 core_bulk=Tuple{Symbol, Int64, Int64}[] core_inter=Tuple{Symbol, Int64, Int64}[] hostcut_ge2=true nrules=26 omitted=Symbol[] phases_post=Int64[] phases_pre=Int64[] prop_post=true prop_pre=true residual=false restored=true rulecut_ge2=true unexplained=false
+  Fixed-Core                   verdicts: core_present=20 (expected core_present 20/20: true)
+    t* per seed [5, 4, 4, 4, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 962): ablation_stops=true bypass_all=false calib=0.0 core_bulk=[(:R_fixed, 0, 0)] core_inter=[(:R_fixed, 0, 0)] hostcut_ge2=false nrules=1 omitted=Symbol[] phases_post=[1] phases_pre=[1] prop_post=true prop_pre=true residual=false restored=true rulecut_ge2=false unexplained=false
+  Rotating-Mediator-Failover   verdicts: core_present=20 (expected core_present 20/20: true)
+    t* per seed [5, 4, 4, 4, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 962): ablation_stops=true bypass_all=false calib=0.0 core_bulk=[(:R_rot_fo, 0, 0)] core_inter=[(:R_rot_fo, 0, 0)] hostcut_ge2=true nrules=1 omitted=Symbol[] phases_post=[1, 2] phases_pre=[2, 3, 4] prop_post=true prop_pre=true residual=false restored=true rulecut_ge2=false unexplained=false
+  Rotating-Mediator-Redundant  verdicts: core_present=20 (expected core_present 20/20: true)
+    t* per seed [5, 4, 4, 4, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 962): ablation_stops=false bypass_all=false calib=0.0 core_bulk=[(:R_rot_red, 0, 0)] core_inter=[(:R_rot_red, 0, 0)] hostcut_ge2=true nrules=1 omitted=Symbol[] phases_post=[1, 2, 3] phases_pre=[1, 2, 3, 4] prop_post=true prop_pre=true residual=true restored=true rulecut_ge2=false unexplained=false
+  Omitted-Cache-Control        verdicts: unresolved=20 (expected unresolved 20/20: true)
+    t* per seed [5, 4, 4, 4, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 962): calib=0.0 omitted=[:grant_cache] phases_post=[1, 2, 3] phases_pre=[1, 2, 3, 4] prop_post=true prop_pre=true residual=true unexplained=true
+  [diagnostic] CPC-Prolif with every local_link as one shared rule: core_present=20
+  G4: PASS
+G5 (determinism, the freeze and the unchanged parents)
+  run 1 digest f65dd64d51f390a9e05b13df3caa93a22b512eff536beb017bdc8fea42613928
+  run 2 digest f65dd64d51f390a9e05b13df3caa93a22b512eff536beb017bdc8fea42613928
+  bit-identical: true
+  freeze ../discussion/specs/S61c-nesting-cpc-pruning.md: match
+  freeze predictions-nesting-cpc-c.md: match
+  parent formal/NestingLineage.lean: match
+  parent experiments/nesting_cpc/NestingCPC.jl: match
+  parent experiments/nesting_cpc_b/NestingCPCB.jl: match
+  G5: PASS
+Summary (Julia side; P-S61c-1 also needs G0)
+  G1 PASS
+  G2 PASS
+  G3 PASS
+  G4 PASS
+  G5 PASS
+  P-S61c-1 (Julia part): held
+  P-S61c-2: held
+  P-S61c-3: held
+  P-S61c-4: held
+  P-S61c-5: held
+  all gates: PASS

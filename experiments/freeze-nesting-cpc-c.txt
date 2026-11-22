@@ -1,0 +1,2 @@
+1f7dcd390a615928fc8c8d325e1f40ba4888d2e202b68929db8ceaa4b0a3cfb7  ../discussion/specs/S61c-nesting-cpc-pruning.md
+bc7cea790def6d9361d6ed23b563510ab7e5d5dc041a149265fa43f6f24c8ea5  predictions-nesting-cpc-c.md

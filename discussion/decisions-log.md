@@ -596,3 +596,21 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 元に戻す方法: `experiments/boundary_audit/`・S62 関連文書を使わない。README 項番178 に「取り下げ」と書く。
 - 影響したファイル: `discussion/specs/S62-aue-boundary-audit.md`、`experiments/predictions-boundary-audit.md`、`experiments/freeze-boundary-audit.txt`、`experiments/boundary_audit/{BoundaryAudit.jl,run_gates.jl}`、`experiments/results-boundary-audit.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
 - ユーザー: 着手指示済み（2026-11-22）。結果の読みと次手（S62b フィクスチャ修正等）は事後承認・判断待ち。
+
+## #66 S61c: 個体内増殖＋コアなし CPC の飢饉耐性（M1 負債駆動の内生的剪定・自食回収）（2026-11-22）
+- 種別: 実装（`experiments/nesting_cpc_c/` 独立探索、S61/S61b・`formal/`・`core/`・`rust/`・`~/bridge-protocol` 非変更）と結果の読み。
+- 決めたこと: S61b の不作期死に対し、許可された M1 負債 $D > 0$ のみを契機とする内生的剪定・自食回収（step 6 `(ii.b)`、`(i)(ii)` 後の $|M| \ge 4$、`!(id in touched)` 最小 `(u, id)` に標準 `:death` 事象、独立在庫 `v.u` の `0.5 * max(v.u, 0)` を負債優先返済→残余残高、同歩 `!pruned` で分裂抑止）のみを追加。`Runaway-Cancer` は親 S61 r3 と同一テープ 20 種子×120 歩で完全一致照合をゲート化。仕様 r2・予測 r2 を凍結（`experiments/freeze-nesting-cpc-c.txt`、開発種子 `958..961`、評価種子 `962..981`）。
+- 結果の読み（README 項番179）: **G0〜G5 全合格・P-S61c-1〜5 全的中**。`CPC-Prolif` 生存 **20/20** vs `Runaway-Cancer` **1/20**（厳密包含）、平均最大負債 **0.0587**（回収前 `D_pre_prune` **1.893**）$<$ **11.820**、両分散正かつ $r = -0.0410 < 0$（ラグ $k=1..12$ すべて負）、剪定 89 回、飢饉後再増殖 **20/20**。同歩 $r < 0$ は排他ガード由来の構造的帰結である旨を正直に併記。
+- 合意: 3 系統合意（S-R 2 往復で両者 APPROVE、I-R で `codex-lab` が `--readonly` 独立再実行・終了 0・出力差分 0・SHA 照合の上で APPROVE）。
+- 元に戻す方法: `experiments/nesting_cpc_c/`・S61c 関連文書を使わない。README 項番179 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S61c-nesting-cpc-pruning.md`、`experiments/predictions-nesting-cpc-c.md`、`experiments/freeze-nesting-cpc-c.txt`、`experiments/nesting_cpc_c/{NestingCPCC.jl,run_gates.jl}`、`experiments/results-nesting-cpc-c.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 着手指示済み（2026-11-22）。結果の読みは事後承認待ち。
+
+## #67 S62b: AUE 外世界との境界検証（2 サブフィクスチャ前提修正＋全関門再検証）（2026-11-22）
+- 種別: 実装（`experiments/boundary_audit_b/` 読み取り専用監査、`core/`・`rust/`・`formal/`・親 `experiments/boundary_audit/`・`~/bridge-protocol` 非変更）と結果の読み。
+- 決めたこと: S62 で外れたテスト側 2 サブフィクスチャのみを `core/circuit.jl`・`core/one_life.jl` の厳密算術境界に基づき再設計（GB2(5) ポート最小性：`pool=[0,0]`, `g=(5,5)`, `reservoir=0.00 vs 0.25`；GB4c 飽和同一視対：`pool=[0.40,0.40]`, `g_t=(4,4) vs (5,5)`, `g_{t+1}=g_sched(41)`）、GB4b に符号付き Live 優位（`Δ_taken`・`Δ_B` 双方で `wins > losses`）を関門追加。仕様 r2・予測 r2 を凍結（`experiments/freeze-boundary-audit-b.txt`、開発種子 `982..985`、評価種子 `986..1005`、次の未使用主列種子 `1006`）。
+- 結果の読み（README 項番180）: **GB1〜GB5 全合格・P-S62b-1〜5 全的中**。`b_naive` 漏れ 20/20 vs `b_shell`（半径 6+port）内向き・外向き・2 歩 `far2` 漏れすべて 0/20（P-11 宣言摂動族の範囲）、群最小性 3 群（改訂ポート除去含む）すべて 20/20、GB3 書込・RNG 監査 0 件、恒等ラッパ 400/400 一致、P-04 外向き差 20/20、Yoke 400/400 RNG 一致で Live **20/0/0** 勝利（$\Delta_{\mathrm{taken}}$ +0.500・$\Delta_B$ +0.3257）、区別対 20/20・改訂飽和同一視対 6 条件すべて 20/20（`s_40` 最小貯留槽 `292.742 >= 292.0`）。
+- 合意: 3 系統合意（S-R 2 往復で両者 APPROVE、I-R で `codex-lab` が `--readonly` 独立再実行・終了 0・出力差分 0・SHA 照合の上で APPROVE）。
+- 元に戻す方法: `experiments/boundary_audit_b/`・S62b 関連文書を使わない。README 項番180 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S62b-aue-boundary-audit.md`、`experiments/predictions-boundary-audit-b.md`、`experiments/freeze-boundary-audit-b.txt`、`experiments/boundary_audit_b/{BoundaryAuditB.jl,run_gates.jl}`、`experiments/results-boundary-audit-b.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 着手指示済み（2026-11-22）。結果の読みは事後承認待ち。
