@@ -80,6 +80,14 @@
 - neon-lab の席の指針は `agents/neon-lab.md`、入口は `../GEMINI.md`。
 - **起動**: `~/bin/lab` で tmux のセッション `lab` に窓 neon（agy）・claude（Opus 5.5、`/agmsg actas claude-lab`）・codex（`codex-view.sh`、codex-lab の手の答えを表示するだけ）・shell を並べる。あればつなぎ直す。
 
+### 1.5 `bridge-protocol` と `bridge-agency-lab` の運用ライン切り分け（2026-11-22 ユーザー決定）
+二つのリポジトリの責務混線を防ぐため、以後は次の 2 系統の運用ラインを厳格に分離する：
+- **`~/bridge-protocol` ライン（理論・述語・台帳の正本）**:
+  - M1〜M4、DC・DC2、`AGENCY-001` の述語実装・呼称（G1-A `RedundantRecovery`・G2-A `criteria.jl`）、判断原則台帳（`specs/decision-principles.md`）、一般の有限表境界判定（`blanket_table.jl`）、圏論的足場の正本（`MetaSelection.lean`）の変更は、すべて `~/bridge-protocol` 側セッションのみで行う。
+- **`~/bridge-agency-lab` ライン（個体／系統 AUE の実験・監査・探索）**:
+  - 本リポジトリでは `core/`・`rust/`・`formal/`（ラボ側形式化）・`experiments/`・S54 実機試運転に集中する。
+  - BP の正本変更を要する論点が見つかった場合、本リポジトリでやることの上限は **`discussion/bp-proposals.md` への起票と仮定 `H<番号>` の明記、および必要最小限の読み取り専用試算（正本扱いしない）まで**とし、BP 側の編集・台帳実反映・述語改修は BP 側ラインへ引き継ぐ（2026-11-22 時点の一括引き継ぎ口：`discussion/bp-proposals.md` BP7〜BP9）。
+
 ## 2. 作業の流れ
 
 ```

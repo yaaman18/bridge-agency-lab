@@ -1,0 +1,3 @@
+# S62 freeze 1 (spec r2 and predictions r2 after S-R APPROVE by claude-lab and codex-lab, before any code is written or run; 2026-11-22 14:22)
+8f4ac20c7b45422fa9a068b1238a30c7c7a83d77096f3bc24f59327b474d6cb2  ../discussion/specs/S62-aue-boundary-audit.md
+7d44e38468973bd0897a35a25e144b05d4a2ef6d44f447ccdadadc7b89ee3d36  predictions-boundary-audit.md

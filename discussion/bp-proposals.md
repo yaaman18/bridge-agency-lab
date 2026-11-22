@@ -132,6 +132,22 @@ bridge-protocol の理論そのもの（M1〜M4、DC・DC2 の定義、AGENCY-00
 - 案: (a) 同時点の条件付き独立とは別に、離散力学系の時間差・履歴条件付き独立（因果的ブランケット / PALO 型）を別命題として定義する／(b) 境界状態 `b` に保持バッファを含めた拡張状態空間上で同時点命題へ還元する（ただし拡張で自明複写が混入しない条件が要る）／(c) 同時点命題は静的モデルのみに限定し、AUE の一歩内経路は別の検証契約で扱う。
 - 二人の立場（3者合意）: (a) または (c) として同時点命題と明確に区別すべき（混同しない）。ラボでは当面、時間差境界を同時点命題の代用にしないという仮定 H6 を置く。
 - ラボで置く仮定: H6 — AUE の一歩内経路（時間差 `(η_t, b_t, μ_{t+1})`）は `bridge-protocol` 草案の同時点条件付き独立の代用とせず、別の検証対象として切り分けて扱う。
-- 仮定に依っている仕様・実装: まだない（`AUE-外世界との境界.md` の次段検討の前提）
+- 仮定に依っている仕様・実装: S62（`experiments/boundary_audit/`、GB1 は BP7 提案のラボ側裏付け試算にとどめ、一般有限表の正本は BP 側に置く）。
 - ユーザー: （承認 / 差し戻し / 保留）
+
+---
+
+### BP9 2026-11-21〜22 確定事項の `bridge-protocol` 正本側引き継ぎ一覧（G1-A・G2-A・U-NC1(c)・Stage 1 系譜スパン）
+- 作成: 2026-11-22（運用ライン切り分けによる BP 側引き継ぎ口の一本化。`~/bridge-protocol` 自体はラボから変更しない）
+- **すでに BP 側へ反映済み（確認した事実）**:
+  - `~/bridge-protocol/specs/decision-principles.md` §4・§4.1 に確認待ち A 5 件・`10-09-4`（暫定名「構造的主体性」）・`10-24-5`（案 G1-A）・`10-09-6`（案 G2-A）を追記済み、`julia tools/verify/decision_gate.jl status` で `pending_A = 0, warning = false, hard_stop = false` 確認済み（2026-11-22 10:54）。
+- **これから `~/bridge-protocol` 側セッションで処理する正本タスク（4 件）**:
+  1. **G1-A（`10-24-5` ユーザー承認済み）**: `specs/packets/AGENCY-001.md` および `logs/gates/AGENCY-001/`・`tools/AgencySubstrate/` の文書・ラベル上で、現行固定辺基体の `self_repairing` を「L3 の深化（組織の自己修復）」から独立ラベル **`RedundantRecovery`（既知辺の再強化能力）** へ降格・並記する（DC2 の非冗長規則・P-03・P-06・P-07 は不変）。
+  2. **G2-A（`10-09-6` ユーザー承認済み）**: `tools/AgencySubstrate/src/criteria.jl:77` の `self_producing` 停止側を `p` から `pc` へ統一し、同一条件族 $Q_{\mathrm{endo}}$ 上で Lean `SelfProducing` の厳密インスタンス化を行う（死は吸収状態⇒スキップ最大 1 回ゆえ後方互換側条件 `⌊horizon / decay_period⌋ - 1 ≥ strength0 ∨ ¬maintain` を明記、`AGENCY-001/README.md:158` の記述を訂正）。
+  3. **BP7・BP8（ユーザー判断・正本採否待ち）**: `specs/drafts/markov-blanket-boundary.md` および `tools/verify/blanket_table.jl` に対する関数従属フィルタ（と 3 限界の明記）、マルコフ同値類＋方向別介入（外向き P-04 vs 内向き軛）、および同時点 CI とは別命題としての離散時間 D-BaSS／因果ブランケット命題の採否（裏付け：`discussion/notes/D-BOUNDARY-OA-SYNTHESIS.md`、S62 GB1・GB2 試算）。
+  4. **U-NC1(c)（身体包含）＋ Stage 1 隣接時点系譜スパン $L_t$（研究提案・採否待ち）**:
+     - U-NC1(c) の正本表現「`bridge-protocol` においては身体をコアに含めることも包含する」の理論側位置づけ。
+     - `START_HERE.md:123`・`category/erie_c_axiom_categorical_memo.md:237-238`・`formal/ERIEC/MetaSelection.lean:347-353` の未確定「入れ子の圏論的足場」に対し、ラボ側 `formal/NestingLineage.lean`（5 定理証明済み・`sorry` 0）および S61/S61b を踏まえ、Stage 1 整形式隣接時点系譜スパン $L_t$ を BP 正本へ昇格させるか（Stage 2 fibration／operad は再開放条件まで保留）。
+- ラボで置く仮定: ラボ側では U-NC1(c) の後半（「`bridge-agency-lab` においてはその条件の一要素として個体同一性・系譜において身体をコアに含める」）および仮定 H6 を明示して実験を継続し、BP 正本への反映は BP 側セッションの責務に完全分離する。
+- ユーザー: （1・2 は 2026-11-22 承認済み・BP 側反映待ち／3・4 は BP 側セッションで採否判断）
 

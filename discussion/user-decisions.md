@@ -239,3 +239,6 @@
 - 2026-11-22「じゃあそれらもやっといて」（U-G2＝案 G2-A 採用＋S61 自動実装〜README・開発ログ更新・`git push` の承認。ただし `~/bridge-protocol` の直接編集は `GEMINI.md`/`CLAUDE.md`/`AGENTS.md` の必須規律で禁止のため不可）:
   - **U-G2（`10-09-6` Julia/Lean L3 非比較性）**: **案 G2-A 採用**（停止側も `pc` に揃え、`⌊horizon / decay_period⌋ - 1 ≥ strength0 ∨ ¬maintain` の側条件明記つきで同一条件族 $Q_{\mathrm{endo}}$ 上の Lean `SelfProducing` 厳密インスタンスに接続）。`notes/BP-PENDING-A-AUDIT.md` §5 の BP 反映ブロックへ統合済み。
   - **実装予定順**: `~/bridge-protocol` 側で §5 反映＋`pending_A = 0` が確認され次第（またはユーザーから U-BL1 例外許可が出次第）、**S61（個体内増殖＋コアなし CPC：Lean `formal/NestingLineage.lean`＋Julia `experiments/nesting_cpc/`＋E1/E2/E3′）** → 関門試験 → `codex-lab` 独立 I レビュー → `README.md`・`decisions-log.md`・`STATE.md` 更新 → `git commit` & `git push` を自動完走する。
+- 2026-11-22「じゃあ1,2,3をやっておいて」「じゃあ今のタスクが済んだら運用ラインの切り分けをして」:
+  - **(1) S61b（M1 限界維持費フィードバック、評価種子 `914..933`）**・**(2) S62（AUE 境界監査 B-Test 1〜4、評価種子 `938..957`）**・**(3) S54 Pi `n=60480` 確認準備（`experiments/trial/eof_check_pi.sh`；14:13 時点 Pi は `unreachable`）** を実施。
+  - **運用ライン切り分け（`discussion/README.md` §1.5・`discussion/bp-proposals.md` BP9）**: `~/bridge-protocol` 正本ライン（理論・述語・台帳・一般有限表）と `~/bridge-agency-lab` 実験ライン（AUE 実験・監査・探索、BP 案件は `bp-proposals.md` 起票＋仮定 H＋最小試算まで）を厳格分離し、2026-11-21〜22 の BP 側未実施タスク 4 件（G1-A `RedundantRecovery`・G2-A `criteria.jl`・BP7/BP8・U-NC1(c)/Stage 1 $L_t$）を BP9 へ一本化。

@@ -578,3 +578,21 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 元に戻す方法: `formal/NestingLineage.lean`・`experiments/nesting_cpc/`・S61 関連文書を使わない（既存 `core/`・`rust/`・S54 に影響 0）。README 項番176 に「取り下げ」と書く。
 - 影響したファイル: `formal/NestingLineage.lean`、`experiments/nesting_cpc/{NestingCPC.jl,run_gates.jl}`、`discussion/specs/S61-nesting-cpc.md`、`experiments/predictions-nesting-cpc.md`、`experiments/freeze-nesting-cpc.txt`、`experiments/results-nesting-cpc.out`、`discussion/claude-code-turn.sh`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
 - ユーザー: 着手・記録・push は指示済み（2026-11-22）。結果の読みと次手（S61b 等）は事後承認・判断待ち。
+
+## #64 S61b: 個体内増殖＋コアなし CPC の M1 限界維持費フィードバック検証（2026-11-22）
+- 種別: 実装（`experiments/nesting_cpc_b/` 独立探索、S61・`formal/`・`core/`・`rust/`・`~/bridge-protocol` 非変更）と結果の読み。
+- 決めたこと: S61 のオーバーシュートに対し、許可された M1 状態に収穫 EMA $\bar{h}_t$ を加え、通常分裂を限界維持費カバー＋体サイズ比例準備金で抑制（`Runaway-Cancer` は S61 と同一据え置き）。仕様 r2・予測 r2 を凍結（`experiments/freeze-nesting-cpc-b.txt`、開発種子 `910..913`、評価種子 `914..933`）。
+- 結果の読み（README 項番177）: G0・G1・G3・G4・G5 合格、**G2（E1）のみ不合格・P-S61b-2 外れ**。最大モジュール数は 12〜14 → 7〜9 へ抑制されたが、不作期（$k \in [45,65]$）での剪定が間に合わず `CPC-Prolif` 生存 0/20（歩 49〜58、平均最大負債 13.296）vs `Runaway-Cancer` 生存 3/20（10.627）。共有規則診断は 20/20 `core_present` を数値確認。誕生抑制だけでは不作期を越えられず内生的剪定（pruning）が要るという知見をそのまま記録。
+- 合意: 3 系統合意（S-R 2 往復で両者 APPROVE、I-R で `codex-lab` 独立再実行・出力 7,315 バイト一致・SHA 照合の上で APPROVE）。
+- 元に戻す方法: `experiments/nesting_cpc_b/`・S61b 関連文書を使わない。README 項番177 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S61b-nesting-cpc-bounded.md`、`experiments/predictions-nesting-cpc-b.md`、`experiments/freeze-nesting-cpc-b.txt`、`experiments/nesting_cpc_b/{NestingCPCB.jl,run_gates.jl}`、`experiments/results-nesting-cpc-b.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 着手指示済み（2026-11-22「じゃあ1,2,3をやっておいて」）。結果の読みと次手（S61c 剪定等）は事後承認・判断待ち。
+
+## #65 S62: AUE 外世界との境界の最小検証（B-Test 1〜4）（2026-11-22）
+- 種別: 実装（`experiments/boundary_audit/` 読み取り専用監査、`core/`・`rust/`・`formal/`・`~/bridge-protocol` 非変更）と結果の読み。
+- 決めたこと: `notes/D-BOUNDARY-OA-SYNTHESIS.md` に基づき、正本 AUE（`core/one_life.jl` `LawL2`・`core/matter.jl`）上で GB1（有限表 6 ケース、BP7 裏付け試算）・GB2（厳密 1 歩後方閉包 `halo1` 半径 6・2 歩履歴・群最小性）・GB3（読み書き・RNG 分離監査）・GB4（恒等ラッパ一致＋P-04 消費端遮断＋乱数一致軛再生＋内向き 2 対照）・GB5（決定性・純 Julia `core/*.jl` SHA-256 照合）を仕様 r2・予測 r2 で凍結（`experiments/freeze-boundary-audit.txt`、開発種子 `934..937`、評価種子 `938..957`、次の未使用主列種子 `958`）。
+- 結果の読み（README 項番178）: GB1（6/6）・GB3（400 歩書込監査 0 件）・GB5 合格。**GB2（P-S62-2 外れ）・GB4（P-S62-4 外れ）は仕様フィクスチャの前提外れ 2 点のみ不合格**（GB2 低貯留ポート 0/20：飽和 `pool[1]=1.0` と先行返却でクランプ不発；GB4c 飽和同一視対 0/20：歩 $t$ 取り込み `0.06` で `y=[5,4]` vs `[5,5]`）。一方、核心構造はすべて確認：`b_naive` 漏れ 20/20 vs `b_shell` 内向き・外向き・2 歩 `far2`（40×40・24×24 双方）漏れ 0/20、`ring1`/`mid1` 除去漏れ各 20/20、恒等ラッパ 400/400 バイト一致、P-04 外向き差 20/20、**乱数 400/400 一致下の軛対照で Live が 20/0/0 勝利（$\Delta_{\mathrm{taken}}$ 中央値 +0.500、$\Delta_B$ +0.323）**、低プール区別対 20/20。
+- 合意: 3 系統合意（S-R 2 往復で両者 APPROVE；I-R 初回 BLOCK［`git` 呼び出し・出力上書き］→ `claude-lab` が `--readonly`＋純 Julia SHA-256 照合へ最小修正 → `codex-lab` 独立再実行で exit 1・出力バイト一致を確認し APPROVE）。
+- 元に戻す方法: `experiments/boundary_audit/`・S62 関連文書を使わない。README 項番178 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S62-aue-boundary-audit.md`、`experiments/predictions-boundary-audit.md`、`experiments/freeze-boundary-audit.txt`、`experiments/boundary_audit/{BoundaryAudit.jl,run_gates.jl}`、`experiments/results-boundary-audit.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 着手指示済み（2026-11-22）。結果の読みと次手（S62b フィクスチャ修正等）は事後承認・判断待ち。

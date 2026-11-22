@@ -1,0 +1,88 @@
+# S62 r2 gates GB1–GB5 (spec discussion/specs/S62-aue-boundary-audit.md, predictions experiments/predictions-boundary-audit.md)
+# seeds 938..957 (evaluation); phenomenal_claim = :not_certified
+# start s_40: onelife_birth(seed, LawL2), 40 steps of g_t = ((t ÷ 10) % 2 == 0 ? (5,1) : (1,5)); the step to s_41 uses g_40 = (5,1)
+# no Lean statement in S62 (formal/ is outside FILE:); sh formal/check.sh was run unchanged before this script
+GB1 (B-Test 1, six finite tables)
+  case | CI dep bij_excluded exact_copy screen | H(mu|b) H(eta|b) | expected | match
+  1 noisy chain | true true false false true | 0.811278 0.811278 | true true false false true | true (own bijection reading agrees: true)
+  2 bijection | true true true true false | 0.000000 0.000000 | true true true true false | true (own bijection reading agrees: true)
+  3 BP7 b=(mu,z) | true true false true true | 0.000000 0.811278 | true true false true true | true (own bijection reading agrees: true)
+  4 near copy | true true false false true | 0.811278 0.811278 | true true false false true | true (own bijection reading agrees: true)
+  5 shared coordinate | true true false false true | 1.000000 1.000000 | true true false false true | true (own bijection reading agrees: true)
+  6 deterministic readout | true true false true true | 0.000000 0.811278 | true true false true true | true (own bijection reading agrees: true)
+  matched 6/6 (screen = passes_statistical_screen is a necessary-condition diagnostic only, not a boundary certificate)
+  GB1: PASS
+GB2 (B-Test 2, two-way D-BaSS, minimality, two-step history)
+  sizes 24x24 |C40|=13 |halo1|=128 (ring1 12, mid1 116) |far1|=435 | |C39|=13 |halo2|=382 |far2|=181  (2 distinct line(s) over the seeds)
+  sizes 24x24 |C40|=9 |halo1|=120 (ring1 12, mid1 108) |far1|=447 | |C39|=9 |halo2|=376 |far2|=191  (2 distinct line(s) over the seeds)
+  sizes 40x40 |C40|=13 |halo1|=128 (ring1 12, mid1 116) |far1|=1459 | |C39|=13 |halo2|=392 |far2|=1195  (2 distinct line(s) over the seeds)
+  sizes 40x40 |C40|=9 |halo1|=120 (ring1 12, mid1 108) |far1|=1471 | |C39|=9 |halo2|=376 |far2|=1215  (2 distinct line(s) over the seeds)
+  s_40 alive with a non-empty body: 20/20
+  1. 24x24 |far1| > 0: 20/20; b_naive (ring1+port), mid1 perturbed set-wise: leak 20/20
+  2. 24x24 b_shell (halo1+port), far1 perturbed set-wise and cell-wise, 3 dA: inward leak 0/20; port-take mismatch 0/20
+  3. 24x24 two steps 39->41: |far2| > 0 in 20/20 (not saturated on 24x24); far2 leak 0/20 (reported, not gated)
+     40x40 two steps 39->41: |far2| > 0 20/20; far2 perturbed set-wise and cell-wise, 3 dA: leak 0/20
+     (the port reservoir at s_40 differs after far2 +0.45 in 20/20 seeds: erosion of the added mass; the port is not clamped at 300)
+  4. outward: internal perturbations (noise^1, circuit q=sg=0, pool+5U) reach far1 at t+1: 0/20; they change mu_41 in 20, 20, 20 of 20 seeds (non-vacuity)
+  5. minimality: ring1 removed leak 20/20; mid1 removed (= b_naive) leak 20/20; port removed (reservoir 0.02 vs 0.08) pool differs 0/20, pool and mu_41 differ 0/20
+     seed 938: pool_40 ["1.000000", "0.100000"]; pool_41 ["1.000000", "0.020000"] vs ["1.000000", "0.020000"]; reservoir_41 0.055615 vs 0.115615
+     (0/20 leaks are claimed for the declared perturbation family only, P-11)
+  GB2: FAIL
+GB3 (B-Test 3, read/write table and the separation of the random source)
+  rw | 1 y = quantize(pool) | R pool | W (local y) | rng: -
+  rw | 2 body = {i | C[i] != 0} | R w.C | W (local body) | rng: -
+  rw | 3 circuit step! | R circuit, b, y, noise | W circuit, noise | rng: noise (Mulberry): receptor feature "noise" only
+  rw | 4 upkeep KC*nk | R circuit.q, circuit.sg, w.B[body] | W w.B[body], w.port.reservoir/outflow | rng: -
+  rw | 5 motor take (acting, d) | R acting, d, pool | W pool, w.A[body] | rng: -
+  rw | 6 motor cost MCOST | R acting, w.B[body] | W w.B[body], w.port.reservoir/outflow | rng: -
+  rw | 7 drive g: port_take!, overflow | R g, w.port.reservoir, pool | W pool, w.port.reservoir/inflow/outflow | rng: -
+  rw | 8 matter step!(w, ()) | R w.A, w.B, w.C, w.kIdx, w.kW, w.nb4, w.p | W w.A, w.B, w.C, w.P, w.out, w.scl, w.pi, w.pj, w.pf, w.port.reservoir/outflow, w.t, w.born, w.died | rng: none
+  rw | 9 t + 1 | R t | W t | rng: -
+  source scan: random sources in core/matter.jl 0; lines of one_life.jl _live with noise 3 (Mulberry(c.noise) / step!(...; noise) / state_int32(noise)): true
+  dynamic read/write audit, 400 canonical steps from s_40: undeclared writes 0, read-only fields written 0, fields not in the table 0, input mutated 0
+  noise-only perturbation (noise^1): far1 next state differs 0/20; port takes of the drive g differ 0/20; mu_41 differs 20/20 (non-vacuity)
+  E[xi_t] = 0 (auxiliary): 3 replicate steps from s_40 byte-identical 20/20 (the step is deterministic given the state; xi = 0 holds trivially, as S62 B-Test 3 notes)
+  GB3: PASS
+GB4 (B-Test 4, three separated interventions)
+  identity wrapper = onelife_step, 20 steps of drive_A from s_40, byte for byte: 20/20
+  4a P-04 block of m1, m2 at the consumer: outward difference (pool, paid sum, body B sum) 20/20; the normal arm acted at least once in 20/20
+  4b noise after each step, Yoke = Live: 400/400 steps; Donor = Live: 400/400 steps
+     d_taken = taken_live - taken_yoke: win/draw/lose 20/0/0, median 0.500000
+     d_B = B_live - B_yoke: win/draw/lose 20/0/0, median 0.323445
+     seeds with d_taken != 0 or d_B != 0: 20/20 (P-S62-4 needs >= 11/20)
+     d_taken per seed: 0.300000 0.400000 0.500000 0.500000 0.500000 0.200000 0.500000 0.180000 0.400000 0.600000 0.500000 0.400000 0.200000 0.200000 0.300000 0.600000 0.500000 0.500000 0.500000 0.500000
+     d_B per seed: 0.209778 0.270747 0.318305 0.381225 0.362126 0.192249 0.385014 0.210283 0.299215 0.401595 0.363888 0.304560 0.192327 0.191512 0.275743 0.401778 0.363693 0.362327 0.328585 0.362769
+  4c distinguished pair (pool 0, (5,0) vs (0,5)): y_t+1 differs and mu_t+2 differs 20/20; circuit state at t+2 differs 20/20
+  4c identified pair (pool 3U, (4,4) vs (5,5)): y_t+1 = [5,5] in both 0/20; circuit output at t+1 identical 0/20; raw pool at t+1 differs 20/20; all three 0/20; circuit state at t+2 identical 0/20
+     the circuit took from the pool at step t (before the y_t+1 read) in 20/20; seed 938: take at t 0.060000, pool_t+1 ["0.140000", "0.080000"] vs ["0.160000", "0.100000"], y_t+1 [5.0, 4.0] vs [5.0, 5.0]
+  GB4: FAIL
+GB5 (determinism, the freeze, core/ unchanged)
+  run 1 digest 1373665ec478bd1ae80c1bd64588d1b52168c745fc5dff5f618b7b00d93afb01
+  run 2 digest 1373665ec478bd1ae80c1bd64588d1b52168c745fc5dff5f618b7b00d93afb01
+  bit-identical: true
+  freeze ../discussion/specs/S62-aue-boundary-audit.md: match
+  freeze predictions-boundary-audit.md: match
+  core/LabCore.jl: match
+  core/body_org.jl: match
+  core/circuit.jl: match
+  core/dc.jl: match
+  core/evo.jl: match
+  core/jsmath.jl: match
+  core/life.jl: match
+  core/matter.jl: match
+  core/one_life.jl: match
+  extra core/*.jl files: none
+  GB5: PASS
+Summary
+  GB1 PASS
+  GB2 FAIL
+  GB3 PASS
+  GB4 FAIL
+  GB5 PASS
+  P-S62-1: held
+  P-S62-2: FAILED
+  P-S62-3: held
+  P-S62-4: FAILED
+  P-S62-5: held
+  (P-S62-4 = GB4 and the 4b count >= 11/20; GB4 itself gates the identity wrapper, 4a, the 4b noise audit and 4c)
+  all gates: FAIL
