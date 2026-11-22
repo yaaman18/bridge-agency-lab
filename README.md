@@ -2078,6 +2078,21 @@ include("../core/LabCore.jl"); using .LabCore
 
 175. 観察の画面 S54 garden（`viewer/s54-of/`、openFrameworks、2026-11-16〜17。実験ではない）: S54 試運転の見張りの記録を読むだけで絵と音にする（Pi・個体・db に触れない）。音はピアノ・バイオリン（VSCO-2 CE、CC0）・鐘の録音を解析した表で合成、調整パネル（ofxImGui）、暗い・明るいの画面、流体の見せ方（ofxFlowTools）。体と回路の値の書き出し `viewer/s54-of/data/body-669-{L2,L2SF}.{json,bin}`（Julia、lab-coder が書き codex が 2 往復レビュー）。一式の保存は `viewer/s54-of/tools/preset.sh`（ビルド物 `.app` は git に入れない）。実装メモ `discussion/notes/UI-AUE.md`。パネルの実際の操作はユーザーの確認待ち。
 
+176. S61 個体内増殖＋コアなし集合的予測符号化（CPC）の Stage 1 系譜スパン・判別器検証（2026-11-22。Neon オーケストレーター＋Opus 5.5 コーダー＋Codex レビュアーの 3 系統正本体制［案 A］での初実装。BP `decision_gate.jl status` の `pending_A = 0` 確認後に凍結・実行。仕様 `discussion/specs/S61-nesting-cpc.md` r3、予測 `experiments/predictions-nesting-cpc.md` r3、凍結 `experiments/freeze-nesting-cpc.txt`、Lean `formal/NestingLineage.lean`、Julia `experiments/nesting_cpc/{NestingCPC.jl,run_gates.jl}`、結果 `experiments/results-nesting-cpc.out`、decisions-log #63。既存の `core/`・`rust/`・`~/bridge-protocol` は未変更）。
+    - **構成**: 着地方針 L3（`discussion/notes/D-NESTING-CPC.md`, `notes/L3-STAGE0-WITNESS-AND-EXPLORATION.md`、ユーザー決定 U-NC1〜U-NC3）に基づき、互いに素な担体上の Stage 0 型レベル破綻証人（`H_persist` vs `H_replace`）と Stage 1 整形式隣接時点系譜スパン $L_t$（1 分裂最大 1 継続出力・merge 吸収/融合区別・身体不可逆性）を Lean で形式化し、Julia 独立探索上で 6 系＋抜落キャッシュ負試験（計 7 構成、開発種子 `886..889`、評価種子 `890..909` の 20 種子、次の未使用主列種子 `910`）を検証した。
+    - **確認した事実**:
+      - **G0（Lean `sh formal/check.sh`）**: 合格（エラー 0、`sorry` 0、標準公理 `propext`・`Classical.choice`・`Quot.sound` のみ、`stage0_isomorphic`・`stage1_separates_persist_and_replace`・`split_continuant_unique`・`merge_fusion_no_continuant`・`body_death_irreversible` を証明；`claude-lab` 実行、`codex-lab` 証明文・定理範囲精査）。
+      - **G1（Stage 0/1 分離・R2 整形式＋負試験）**: 合格（3 証人分離、7 構成×2400 遷移で R2 違反 0 件、`deepcopy` 2 継続出力・スロット再利用コピーの 2 負試験を各 20/20 検出）。
+      - **G2（E1 暴走対照との分離）**: **不合格（P-S61-2 外れ）**。`CPC-Prolif` 生存 0/20（平均最大負債 13.84、34〜52 歩で死）、`Runaway-Cancer` 生存 5/20（平均最大負債 10.11）。同歩誕生数と維持費赤字の相関 $r = -0.164$（866 生存歩、非ゼロ分散）のみ成立。`run_gates.jl` 終了コード 1。
+      - **G3（E2 非干渉＋絶対時計時間シフト）**: 合格（`CPC-Prolif` 外部禁止入力・時間シフトとも 20/20 ビット一致、`Hidden-Age-Control` 20/20 検出［すべて歩 15］）。
+      - **G4（E3′ 身体隔離・規則一括無効化・交換試験・迂回証人・独立目録監査）**: 合格（適格交代歩 $t^*$ 20/20、偽摂動 $\delta=0$ 差分 `0.0`、`CPC-Prolif` 20/20 `no_core_witnessed`、`Fixed-Core`・`Rotating-Mediator-Failover`・`Rotating-Mediator-Redundant`［キャッシュ記載正対照］各 20/20 `core_present`、`Omitted-Cache-Control` 20/20 `unresolved`）。
+      - **G5（決定性・凍結 SHA-256）**: 合格（2 回独立実行ビット一致、凍結 2 ファイルとも SHA-256 一致）。
+    - **予測の成否**: P-S61-1・P-S61-3・P-S61-4・P-S61-5 成立、**P-S61-2 外れ（反証条件 2 に該当。予測は書き換えずそのまま記録）**。
+    - **推論（P-S61-2 外れの原因）**: 実装の不具合ではなく、凍結パラメータ（`R>14, D=0, u>5.5`）下で `CPC-Prolif` が摂動前に 12〜14 モジュールへ過剰増殖（オーバーシュート、請求額 6.60〜7.70/歩）し、直前記号のみの文脈による予測限界と相まって負債 $D > 12$ に到達したため。
+    - **I-R（codex-lab、2026-11-22）**: **APPROVE**（凍結 SHA-256 一致、Julia 独立再実行で exit 1・出力バイト一致、オーバーシュートが `step!` 仕様通りであることを確認）。限界として、(1) G4 の `no_core_witnessed` は仕様どおり各辺 `local_link(k→i)` を個別規則として数えた粒度に依存すること（全辺を単一共有規則とみなせば無効化で全交差項が消える）、(2) Lean G0 の実行は `claude-lab` 側であり `codex-lab` は定理範囲と証明文の精査にとどまることを明記。
+    - **言えないこと**: `phenomenal_claim = :not_certified`、一般の自律性・創発（Stage 0 証人は型レベル破綻証人のみ）、現行パラメータでの有界増殖の成立（P-S61-2 外れ）。
+    - **次の候補（未実施）**: 分裂余剰条件や維持費フィードバックを改訂した別仕様 **S61b**（新しい種子 910〜・新予測凍結）でのオーバーシュート解消検証、および `discussion/notes/D-BOUNDARY-OA-SYNTHESIS.md`（B-Test 1〜4）の実装検証。
+
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
 ### 統合度 Φ（定義のみ。計算しない：ユーザー決定 2026-10-31）
@@ -2219,7 +2234,8 @@ include("../core/LabCore.jl"); using .LabCore
 
 ## 未決（ユーザー判断）
 
-- **2026-11-19 時点の返事待ち**（新しいものから）: D-BORE（退屈）§4 の B1〜B3（`discussion/notes/D-BORE.md`〔暫定〕、codex と紙の定義に合意、判断点 O1〜O11）。A-2 を H3 にするか H1 にするか。D-PRED の U1〜U5（Fable の回へ）。#61 の中身の事後承認。記憶の移しの予備実験（項番173・174）の次の段に進むか。S54 garden のパネルの感想。
+- **2026-11-22 時点の返事待ち**（新しいものから）: #63（S61、項番176）の事後承認と次手（S61b オーバーシュート修正か AUE 境界 B-Test 1〜4 か）。BP7・BP8（`discussion/bp-proposals.md`）の採否。D-BORE（退屈）§4 の B1〜B3（`discussion/notes/D-BORE.md`、判断点 O1〜O11）。A-2 を H3 にするか H1 にするか。D-PRED の U1〜U5。#61 の中身の事後承認。記憶の移しの予備実験（項番173・174）の次の段に進むか。S54 garden のパネルの感想。S54 試運転の入力終了前（11-23 20:40 ごろまで）の Pi `n=60480` 確認。
+  - **2026-11-20〜22 に解決・決定済み**: Neon オーケストレーター体制（§1.4）＋D 段完全並列 `[FMT:SYM]`（§4.2）、U-BL1 確認待ち A 5 件＋`10-09-4`（暫定名「構造的主体性」）＋`10-24-5`（案 G1-A）＋`10-09-6` Julia/Lean 非比較性（案 G2-A）の BP 台帳反映と `pending_A = 0` 解消確認、合法 OA 論文 11 本（P155〜P168）取得と一次照合（`notes/D-BOUNDARY-OA-SYNTHESIS.md`）、案 A（Fable 必須関門解除・3 系統合意正本化）、U-NC1〜U-NC3（身体＝不可逆性と共通維持費の器、回転独占仲介棄却、L3 Stage 1 先行）。
 
 - 項番81（自己維持の段階1）を受けて: 身体で育てると価値で分かれない（推論1）、乏しい世界で回路の維持費が身体を殺す（推論2）、容量は下り坂を作る（推論3）。
   次の手（育ち方の見直し、保つ結びつきを減らす規則、容量の規則の作り直し、段階2 へ進む）はユーザー判断。

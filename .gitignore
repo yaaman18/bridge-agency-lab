@@ -10,6 +10,7 @@ papers/text/
 discussion/.codex-turns/
 discussion/.deepseek-turns/
 discussion/.fable-turns/
+discussion/.claude-turns/
 
 # secrets (API keys etc.; never commit)
 .env

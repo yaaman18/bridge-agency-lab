@@ -1,7 +1,7 @@
 # AGENTS.md — bridge-agency-lab（Codex 向け作業指針）
 
 `~/bridge-protocol` の AGENCY-001 試作基体を使う実験場。経緯と現況は `README.md`（長いので「未決」と必要な項番から）。
-理論と規律の正本は `~/bridge-protocol/CLAUDE.md`・`~/bridge-protocol/START_HERE.md`（読むだけ）。Claude 向けの同じ規律は `CLAUDE.md`。
+理論と規律の正本は `~/bridge-protocol/CLAUDE.md`・`~/bridge-protocol/START_HERE.md`（読むだけ）。Claude 向けの同じ規律は `CLAUDE.md`、Antigravity（neon-lab）向けは `GEMINI.md`。
 
 このリポジトリでの Codex の席は **agmsg チーム `agency-lab` の `codex-lab`**。役目は `discussion/agents/codex-lab.md`、
 共同作業の取り決めは `discussion/README.md`、いまの作業は `discussion/STATE.md`。
@@ -21,6 +21,8 @@
 - Julia・Rust・試験のコードは claude-lab が書く（2026-11-07 ユーザー決定「今後はあなたがコードを書く担当にしよう。節約より速さと正確さが欲しい」）。deepseek-lab の席は休止。I 段のレビューでは、claude-lab の点検とは独立に、差分と関門の結果を見る。
 - fable-lab（Claude Fable 5.2、2026-11-10 ユーザー決定）は煮詰まったときに claude-lab が呼ぶ読むだけの助言役。答え（`discussion/fable/`）は提案で、codex-lab は他の提案と同じく反例を探して吟味する。claude-lab と同じ系統なので、codex-lab の独立した反対より重く扱わない。煮詰まったと見たら返信で `[F?] <論点>` と頼める（`discussion/README.md` §1.2）。
 - **2026-11-16 ユーザー決定**（「DeepSeek を止め、残りをcodexに書かせる」。`discussion/user-decisions.md` 末尾、`CLAUDE.md`）: S56（TRM の移植）の r5 の残りに限り、codex-lab が `experiments/trm/` に試験と実装を書く。呼び方は `sh discussion/deepseek-turn.sh --codex-fix <依頼>`（前後比較・FILE:・GATE: の関門つき）。この分のレビューは Claude の側（Opus のサブエージェント）が行う。それ以外は下のとおり。
+- **2026-11-20 ユーザー決定**（Neon オーケストレーター体制、`discussion/README.md` §1.4）: 仕切り役は `neon-lab`（Gemini 4 Neon、入口は `GEMINI.md`）、コーダーは `claude-lab`（Opus 5.5）、レビュアーはこの席。
+  S 仕様は neon-lab が起草し、S レビューと D 段の返信は neon-lab へ（`codex-turn.sh` の2つめの引数で宛先が決まる）。D 段の合意は3者。
 - Codex が書いてよいのは `discussion/reviews/`・`discussion/notes/` だけ（`discussion/agents/codex-lab.md`）。deepseek-lab の休止により `--codex-fix` の例外は使わない（2026-11-07）。
 
 ## トークン節約（2026-11-05 ユーザー決定、discussion/README.md §4.1）

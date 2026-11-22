@@ -1,0 +1,38 @@
+# S54 interim read after both reference deaths (2026-11-19 21:23 JST, Opus claude-lab). Read only: one cat of each run, audit and S52 log from the Pi; copies in the scratchpad.
+# copy sha256:
+28f1b811d6c1de2061ffed5a61b741bce42e82616c2205e839be55d29ddb29ff  t1.run
+4d538a7d27a0995b29c8cced2a1b6f2bef652ae10e1544774c284270db2135b8  t1.audit
+8db75fa86cd10662bdaf3f5979ed76dff1c1b6c45e5d580b89eb27fe0736ccea  t2.run
+b2929bc945fe9ba9e28f8b526199e2d2254790f399ce83f41c11637443755ca0  t2.audit
+ffde436321116d5733f029c6d51c0a59a902773cf6a33e9758765b837f8efc07  ambient.tsv
+# end_check (BOOTS=1: boot ids 83c87cfb at start, 851197f9 from Pi 2026-11-19 21:20:50):
+end_check run 28f1b811d6c1de2061ffed5a61b741bce42e82616c2205e839be55d29ddb29ff audit 4d538a7d27a0995b29c8cced2a1b6f2bef652ae10e1544774c284270db2135b8: n 26234, run SHA = reference true; audit lines 78704; commits with the reference SHA 26234, other 0 (first null), distinct n 26234, missing in 1..26234 0, beyond n 0; chain_ok true; starts 2 (boots 1, <= boots+1 true); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0
+end_check: PASS
+end_check run 8db75fa86cd10662bdaf3f5979ed76dff1c1b6c45e5d580b89eb27fe0736ccea audit b2929bc945fe9ba9e28f8b526199e2d2254790f399ce83f41c11637443755ca0: n 26234, run SHA = reference true; audit lines 78704; commits with the reference SHA 26234, other 0 (first null), distinct n 26234, missing in 1..26234 0, beyond n 0; chain_ok true; starts 2 (boots 1, <= boots+1 true); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0
+end_check: PASS
+# onelife-info:
+{"n":26234,"payload_sha":"31f126b62176c52ea4dede716cffeae0f39630f6a4aec82b5aaec798cbf9d8d3","law":"L2","t":20514,"dead":true,"death":20514}
+
+{"n":26234,"payload_sha":"9cda9db99eb03316d75a8baef28f0acadc0078a68bac741604d0051ebcf07ec6","law":"L2+SF","t":11342,"dead":true,"death":11342}
+
+# body export frames (viewer/s54-of/data, every 6 steps) vs Pi audit commit SHAs:
+L2 frames 3421 n range 0 20515 sha match Pi audit 3420 mismatch 0
+L2SF frames 1892 n range 0 11343 sha match Pi audit 1891 mismatch 0
+# trajectory:
+sec per step (fit over watch rows) 10.0226 rows 21
+== L2 death n 20515 ≈ 11-19 05:28 (estimated from fit)
+ episodes body<=3: [(20508, 20515, 0, True)]
+ last n with body>=10: 20286 (229 steps = 0.6 h before death)
+ last n with body>=8: 20346 (169 steps = 0.5 h before death)
+ last n with body>=6: 20370 (145 steps = 0.4 h before death)
+ last n with body>=5: 20412 (103 steps = 0.3 h before death)
+ body size distribution (% of frames): {0: 0.1, 3: 0.0, 4: 1.7, 5: 1.2, 6: 1.8, 7: 2.5, 8: 7.2, 9: 8.9, 10: 9.1, 11: 9.3, 12: 10.9, 13: 14.0, 14: 9.3, 15: 9.3, 16: 9.7, 17: 4.0, 18: 1.1, 19: 0.1}
+ last 30 body sizes (every 6 steps): [8, 7, 6, 6, 6, 5, 5, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 0, 0]
+== L2SF death n 11343 ≈ 11-18 03:56 (estimated from fit)
+ episodes body<=3: [(4302, 4458, 2, False), (11064, 11343, 0, True)]
+ last n with body>=10: 10686 (657 steps = 1.8 h before death)
+ last n with body>=8: 10788 (555 steps = 1.5 h before death)
+ last n with body>=6: 10836 (507 steps = 1.4 h before death)
+ last n with body>=5: 11028 (315 steps = 0.9 h before death)
+ body size distribution (% of frames): {0: 0.1, 1: 0.1, 2: 2.5, 3: 1.3, 4: 2.6, 5: 4.1, 6: 2.1, 7: 1.8, 8: 8.0, 9: 8.7, 10: 11.7, 11: 8.1, 12: 8.7, 13: 8.6, 14: 6.3, 15: 5.6, 16: 4.8, 17: 5.3, 18: 6.3, 19: 2.3, 20: 1.0}
+ last 30 body sizes (every 6 steps): [3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 0]

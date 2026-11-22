@@ -41,6 +41,10 @@
 - **Fable のいない間の理論作業**（2026-11-16 ユーザー決定）: 理論は Opus 5.5 と codex-lab の議論で続ける。結論は〔暫定〕、Fable の見直しまで仕様・コードの根拠にしない。§0 問いの分離・基点 7329135 の固定・〔判断点 O<番号>〕の印・用語の取り決めの先読み（正本は `discussion/README.md` §1.3、一覧は `discussion/notes/OPUS-PERIOD.md`）。
 - **fable-lab**（2026-11-10 ユーザー決定）: Claude Fable 5.2 は「煮詰まったときの啓示」と「ユーザーの任意の確認」にだけ使う、読むだけ・議決権なしの助言役。
   呼び方は `discussion/fable-turn.sh`（Pro のサブスクの範囲、2026-11-16 まで）、指針は `discussion/agents/fable-lab.md`、取り決めは `discussion/README.md` §1.2。
+- **Neon オーケストレーター体制**（2026-11-20 ユーザー決定「Neon がオーケストレーターで ClaudeCode がコーダー、codex がレビュワー」。上の lab-coder と claude-lab の仕切りの分担を改める）:
+  仕切り役は agmsg の席 `neon-lab`（Antigravity CLI の Gemini 4 Neon、指針は `discussion/agents/neon-lab.md`・`GEMINI.md`）。claude-lab は**コーダー**で、Opus 5.5 で起動し、
+  Lean・Julia・Rust・試験を自分で書く（lab-coder は起こさない）。レビューは codex-lab。概念設計は当分ユーザーと neon-lab の壁打ちで、課題は3者で議論する。上の「両者の合意」は3者の合意と読む。
+  Fable と lab-coder の形（2026-11-13）と fable-lab は休止として残し、Fable を再び使うときに戻す（`discussion/README.md` §1.4）。
 - **切り出しの約束**（2026-11-05、`discussion/promise-cutout.md`）: いまの作業はすべて「系統」の側（個体は試作）。系統から一体を切り出して
   法則を凍結するのはユーザーの決定で、切り出した個体の法則・db には誰も触れず、救わない。約束を変えるのはユーザーだけ。
 - 委任しないもの: `~/bridge-protocol` への書き込み、アプリの db への書き込みと artifact の公開、git の commit / push、ファイルの削除、

@@ -1,0 +1,70 @@
+# S61 r3 gates G1–G5 (spec discussion/specs/S61-nesting-cpc.md, predictions experiments/predictions-nesting-cpc.md)
+# seeds 890..909 (evaluation); phenomenal_claim = :not_certified
+# G0 is sh formal/check.sh (formal/NestingLineage.lean) and is not run by this script
+G1 (R1, R2 and the negative tests)
+  H_persist: stage0(t0)=(parts = 2, irreducible = true, cls = :individual) stage0(t1)=(parts = 2, irreducible = true, cls = :individual) isomorphic=true wf_violations=0 invariant=([(1, "persist"), (1, "persist"), (1, "persist")], 0, 0)
+  H_replace: stage0(t0)=(parts = 2, irreducible = true, cls = :individual) stage0(t1)=(parts = 2, irreducible = true, cls = :individual) isomorphic=true wf_violations=0 invariant=([(0, ""), (0, ""), (1, "persist")], 2, 2)
+  H_shifting: stage0(t0)=(parts = 2, irreducible = true, cls = :individual) stage0(t1)=(parts = 2, irreducible = true, cls = :individual) isomorphic=true wf_violations=0 invariant=([(0, ""), (1, "persist"), (2, "split+split")], 1, 0)
+  separated(H_persist, H_replace) = true
+  separated(H_persist, H_shifting) = true
+  separated(H_replace, H_shifting) = true
+  R2 CPC-Prolif                   transitions=2400 violations=0 
+  R2 Runaway-Cancer               transitions=2400 violations=0 
+  R2 Fixed-Core                   transitions=2400 violations=0 
+  R2 Rotating-Mediator-Failover   transitions=2400 violations=0 
+  R2 Rotating-Mediator-Redundant  transitions=2400 violations=0 
+  R2 Hidden-Age-Control           transitions=2400 violations=0 
+  R2 Omitted-Cache-Control        transitions=2400 violations=0 
+  negative (deepcopy second continuant): detected 20/20
+  negative (slot reuse after parent destroyed): detected 20/20
+  G1: PASS (witnesses true, R2 true, negatives true)
+G2 (E1)
+  survivors CPC-Prolif 0/20 {}
+  survivors Runaway-Cancer 5/20 {894,899,902,906,909}
+  death step (0 = survived) CPC-Prolif [45, 40, 50, 46, 37, 34, 43, 49, 41, 37, 45, 36, 34, 52, 52, 40, 45, 51, 52, 37]
+  death step (0 = survived) Runaway-Cancer [53, 49, 12, 65, 0, 46, 37, 41, 53, 0, 53, 37, 0, 49, 53, 61, 0, 12, 12, 0]
+  (a) strict superset of survivors: false
+  (b) mean max debt CPC-Prolif 13.842926 < Runaway-Cancer 10.114908: false
+  (c) pooled live steps n=866 births_sum=150 deficit_steps=136 pearson r(birth_t, deficit_t)=-0.163960 r<0: true
+  G2: FAIL
+G3 (E2)
+  CPC-Prolif forbidden inputs (phi_rich, interpreter text) bit-identical: 20/20
+  CPC-Prolif time shift t_start 0 vs 20 bit-identical: 20/20
+  Hidden-Age-Control time shift L_t mismatch detected: 20/20 (first differing step [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15])
+  G3: PASS
+G4 (E3′, priority unresolved > core_present > no_core_witnessed)
+  CPC-Prolif                   verdicts: no_core_witnessed=20 (expected no_core_witnessed 20/20: true)
+    t* per seed [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 890): ablation_stops=missing bypass_all=true calib=0.0 core_bulk=Tuple{Symbol, Int64, Int64}[] core_inter=Tuple{Symbol, Int64, Int64}[] hostcut_ge2=true nrules=36 omitted=Symbol[] phases_post=Int64[] phases_pre=Int64[] prop_post=true prop_pre=true residual=false restored=true rulecut_ge2=true unexplained=false
+  Fixed-Core                   verdicts: core_present=20 (expected core_present 20/20: true)
+    t* per seed [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 890): ablation_stops=true bypass_all=false calib=0.0 core_bulk=[(:R_fixed, 0, 0)] core_inter=[(:R_fixed, 0, 0)] hostcut_ge2=false nrules=1 omitted=Symbol[] phases_post=[1] phases_pre=[1] prop_post=true prop_pre=true residual=false restored=true rulecut_ge2=false unexplained=false
+  Rotating-Mediator-Failover   verdicts: core_present=20 (expected core_present 20/20: true)
+    t* per seed [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 890): ablation_stops=true bypass_all=false calib=0.0 core_bulk=[(:R_rot_fo, 0, 0)] core_inter=[(:R_rot_fo, 0, 0)] hostcut_ge2=true nrules=1 omitted=Symbol[] phases_post=[5, 6, 7] phases_pre=[1, 2, 3] prop_post=true prop_pre=true residual=false restored=true rulecut_ge2=false unexplained=false
+  Rotating-Mediator-Redundant  verdicts: core_present=20 (expected core_present 20/20: true)
+    t* per seed [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 890): ablation_stops=false bypass_all=false calib=0.0 core_bulk=[(:R_rot_red, 0, 0)] core_inter=[(:R_rot_red, 0, 0)] hostcut_ge2=true nrules=1 omitted=Symbol[] phases_post=[1, 5, 6, 7] phases_pre=[1, 2, 3, 4] prop_post=true prop_pre=true residual=true restored=true rulecut_ge2=false unexplained=false
+  Omitted-Cache-Control        verdicts: unresolved=20 (expected unresolved 20/20: true)
+    t* per seed [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]; calibration max|Δp̂| at δ=0: 0.0
+    evidence (seed 890): calib=0.0 omitted=[:grant_cache] phases_post=[1, 5, 6, 7] phases_pre=[1, 2, 3, 4] prop_post=true prop_pre=true residual=true unexplained=true
+  G4: PASS
+G5 (determinism and the freeze)
+  run 1 digest 1c314f2854d4c1d910a8b7abdf65a2f11147eba4c486f6e4d9c11ef3ae1c19b2
+  run 2 digest 1c314f2854d4c1d910a8b7abdf65a2f11147eba4c486f6e4d9c11ef3ae1c19b2
+  bit-identical: true
+  freeze ../discussion/specs/S61-nesting-cpc.md: match
+  freeze predictions-nesting-cpc.md: match
+  G5: PASS
+Summary (Julia side; P-S61-1 also needs G0)
+  G1 PASS
+  G2 FAIL
+  G3 PASS
+  G4 PASS
+  G5 PASS
+  P-S61-1 (Julia part): held
+  P-S61-2: FAILED
+  P-S61-3: held
+  P-S61-4: held
+  P-S61-5: held
+  all gates: FAIL

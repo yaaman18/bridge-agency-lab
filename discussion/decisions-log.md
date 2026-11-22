@@ -567,3 +567,14 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 元に戻す方法: `experiments/trm/det/` と `rust/trm-det/` を使わない（既存の `experiments/trm/`・`core/`・`rust/being-*`・`rust/Cargo.*` は変えていない）。Pi の `/home/pi/s60/` は照合の置き場だけ。README 項番172 に「取り下げ」と書く。
 - 影響したファイル: discussion/specs/S60-trm-det.md、experiments/predictions-trm-det.md、freeze-trm-det.txt、freeze-trm-det-code.txt、experiments/trm/det/*、rust/trm-det/*、results-trm-det-*、README.md、STATE.md
 - ユーザー: **承認**（2026-11-16 ユーザー「decisions-log #62（S60）の事後承認は承認する」）
+
+## #63 S61: 個体内増殖＋コアなし CPC の Stage 1 系譜スパン・判別器検証（2026-11-22）
+- 種別: 実装（Lean `formal/NestingLineage.lean`＋Julia `experiments/nesting_cpc/` 独立探索、既存 `core/`・`rust/`・`~/bridge-protocol` 非変更）と結果の読み。
+- 決めたこと: 3 系統体制（2026-11-21 案 A 正本化）および BP `decision_gate.jl status` の `pending_A = 0` 確認のうえで、仕様 S61 r3・予測 r3 を凍結（`experiments/freeze-nesting-cpc.txt`、評価種子 `890..909`、開発種子 `886..889`、次の未使用主列種子 `910`）して実装・実行。実装の席（`claude-lab` Opus 5.5）が仕様の範囲で決めた細部（周期 12 入力列 `111222333444`、乱数列割当、1-起算添字、合流時の θ 継承/平均、Runaway 分裂費の u 優先払い、辺単位の `local_link(k→i)` 規則粒度）を記録。
+- 結果の読み（README 項番176）: G0（Lean）・G1（Stage 0/1 分離・R2 整形式＋負試験 2 件）・G3（E2 非干渉＋時間シフト）・G4（E3′ 厳格分離・`Omitted-Cache-Control` 20/20 `unresolved`）・G5（決定性・凍結 SHA）はすべて合格、P-S61-1・P-S61-3・P-S61-4・P-S61-5 成立。**G2（E1）は不合格、P-S61-2 外れ**（`CPC-Prolif` 0/20 生存・平均最大負債 13.84 vs `Runaway-Cancer` 5/20・10.11；同歩相関 $r = -0.164$ のみ成立。原因は摂動前の 12〜14 モジュールへの過剰増殖オーバーシュートであり、実装バグではない）。予測は書き換えず外れとして記録。
+- 限界として記録（`claude-lab`・`codex-lab`）: (1) G4 の `no_core_witnessed` は各辺 `local_link(k→i)` を個別規則とした宣言粒度に依存（全辺を単一共有規則とすれば無効化で全交差項が消える）、(2) G0 の実行は `claude-lab` 側、`codex-lab` は定理範囲と証明文の精査、(3) `phenomenal_claim = :not_certified`。
+- 根拠: ユーザー決定 2026-11-21（U-NC1〜U-NC3、案 A）、2026-11-22（G1-A、G2-A、BP `pending_A = 0` 反映、S61 実装〜README・開発ログ更新・`git push` 承認）。
+- 合意: 3 系統合意（S-R 3 往復で `claude-lab`・`codex-lab` 両者 APPROVE、I-R 1 往復で `codex-lab` 独立再実行・SHA 照合の上で APPROVE）。
+- 元に戻す方法: `formal/NestingLineage.lean`・`experiments/nesting_cpc/`・S61 関連文書を使わない（既存 `core/`・`rust/`・S54 に影響 0）。README 項番176 に「取り下げ」と書く。
+- 影響したファイル: `formal/NestingLineage.lean`、`experiments/nesting_cpc/{NestingCPC.jl,run_gates.jl}`、`discussion/specs/S61-nesting-cpc.md`、`experiments/predictions-nesting-cpc.md`、`experiments/freeze-nesting-cpc.txt`、`experiments/results-nesting-cpc.out`、`discussion/claude-code-turn.sh`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 着手・記録・push は指示済み（2026-11-22）。結果の読みと次手（S61b 等）は事後承認・判断待ち。

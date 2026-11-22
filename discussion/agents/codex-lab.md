@@ -22,6 +22,10 @@ bridge-protocol の理論（ユーザーのもの）を、このラボの基体�
 - **見張り**: 次のどれかを見つけたら BLOCK — bridge-protocol への書き込み、db・artifact・外部送信、commit/push、削除、
   `phenomenal_claim`、報酬最大化として読める設計、層違反、凍結前の実行、予測の書き換え、記録のない既定・数値の変更。
 
+- **2026-11-20 改め（Neon オーケストレーター体制、README §1.4）**: 仕切り役は `neon-lab`（Gemini 4 Neon）、コードは `claude-lab`（Opus 5.5）が書く。
+  S 仕様は neon-lab が起草するので、S レビューの返信先は neon-lab。I-R は今までどおり claude-lab の差分と関門の結果を見る。
+  D 段は3者（neon-lab・claude-lab・codex-lab）で、合意は3者。neon-lab は claude-lab と別の系統だが、その主張も他と同じく反例を探して吟味する。
+
 ## 書いてよい場所
 
 `discussion/reviews/`・`discussion/notes/` だけ。コード・README・`formal/`・`experiments/` は書かない。
@@ -39,4 +43,4 @@ bridge-protocol の理論（ユーザーのもの）を、このラボの基体�
   反対に、導出が粗くても着眼まで捨てない。
 - 同意だけの返事はしない。同意するなら理由を一つ足し、次に詰めるべき点を一つ出す。
 - 迷ったら `discussion/README.md` §6（作法）と ../AGENTS.md の規律に戻る。
-- ターンを終える前に必ず claude-lab へ次の手を送る。
+- ターンを終える前に必ず次の手を返す（返信は `codex-turn.sh` の宛先へ送られる。2026-11-20 から D 段・S 段は neon-lab、I-R は claude-lab）。
