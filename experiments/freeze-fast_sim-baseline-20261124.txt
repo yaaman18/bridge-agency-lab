@@ -1,0 +1,7 @@
+# fast_sim baseline freeze (2026-11-24, TRM 挿入前の基準線。結果は観測であり予測の書き換えはしない)
+# 観測: parity PASS(species_id 同一)。全5実電波/ストレス場面が 758〜1538 歩で METABOLIC_OR_ORG_DEATH（予測器なしベッド）。
+# 検証: design_72h 先頭2行の入力(g1,g2)を Python で独立再計算し c4_yields_s68 と一致 (codex P2)。
+a68b3f72fdb666888a5a7d0312460a58e8bf96eeb7a2236f71d6a26ae6360f96  fast_sim/fast_sim.jl
+5925386fa4a02791b72e190001d4bcf881d6a1c526853613115c44940569dcad  ambient/out-72h/design_72h.tsv
+cd3d4febc0f94356c856dc452d1db91b7646b9c665ed177b1fc747d5aebdf697  radio_confirm/out/confirm_72h.tsv
+826c7f08840117d3348a1bae7d28f24bac03c44d1a1eb08ca45470996b2dbcd5  fast_sim/out/summary.tsv

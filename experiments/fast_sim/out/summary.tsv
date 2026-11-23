@@ -1,0 +1,8 @@
+scenario	steps_completed	steps_requested	sim_realtime_days	wall_sec	steps_per_sec	realtime_speedup	termination	death_step	min_const	mean_const	final_const	stale_steps	chain_ok	replay_ok	final_digest
+parity_fast_200	200	200	0.0231	0.6298	317.56	3175.61	RUNNING	none	9	10.020	13	0	true	true	6b9cc3e812214c791ba17fca3a54b9b7241cc5a56a744d2d73e527bd575a0e8c
+parity_paced_200	200	200	0.0231	1.4076	142.08	1420.85	RUNNING	none	9	10.020	13	0	true	true	6b9cc3e812214c791ba17fca3a54b9b7241cc5a56a744d2d73e527bd575a0e8c
+radio_design_72h	1136	25929	0.1315	0.6945	1635.70	16357.00	METABOLIC_OR_ORG_DEATH	1135	0	7.955	0	0	true	true	5595f871b432425dbc2e73c981da996946d4c6310e1b7415c6a06aa842985825
+radio_confirm_72h	758	25923	0.0877	0.2569	2950.01	29500.13	METABOLIC_OR_ORG_DEATH	757	0	6.500	0	0	true	true	0a57bbcee93e2dc6ed28ecba93dde9568d6a9713fe64bd1ef56f3ed005e6317f
+radio_full_144h	1136	51852	0.1315	0.7473	1520.16	15201.64	METABOLIC_OR_ORG_DEATH	1135	0	7.955	0	0	true	true	5595f871b432425dbc2e73c981da996946d4c6310e1b7415c6a06aa842985825
+stress_stale_24h	758	17280	0.0877	0.3537	2143.00	21430.05	METABOLIC_OR_ORG_DEATH	757	0	6.500	0	8640	true	true	0a57bbcee93e2dc6ed28ecba93dde9568d6a9713fe64bd1ef56f3ed005e6317f
+stress_rev_ood	1538	17280	0.1780	0.8389	1833.34	18333.40	METABOLIC_OR_ORG_DEATH	1537	0	7.686	0	0	true	true	690f99dad99f44e8b6b838a144589b24380d24f2b9e9b416bc13fff436d7c449
