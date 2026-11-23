@@ -33,7 +33,7 @@
 2. Mac で `TrmDet.jl` 対 `rust/trm-det` のビット一致（G1）。Pi で `trm-det` の P2-BIT（1 ulp 負対照つき）と P2-TIME（100 歩、最大 1 歩 <= 3.0 秒）。
 3. 通らなければ H_max を下げて再凍結。10 秒締切を破る配備はしない。
 
-### 段 D: `onelife-trm` の run サブコマンドを実装（Julia 先、Rust は照合）
+### 段 D: 〔着手 2026-11-24。仕様は `specs/S69-onestep-contract-julia.md`、freeze は `experiments/freeze-onestep.txt`〕`onelife-trm` の run サブコマンドを実装（Julia 先、Rust は照合）
 1. 先に Julia の正本で 1 歩契約（PLAN §3 Phase 3 の毎歩順）を `core/` の外（実験側）で書き、予測を凍結。
 2. Rust `rust/onelife-trm` に `run` を足し、Julia と全歩ビット一致（`G-C2-BIT`、1000 歩）。`sh core/check/run.sh` と `sh rust/build.sh` は既存を壊さないことの確認のみ。
 3. 実装は claude-lab（Opus）、レビューは codex-lab。依頼は Neon 仕切りの体制に従う。
@@ -43,7 +43,7 @@
 - **判定**: AUE が累積時間 `c > 518,400 s`（144 時間）の行を読んで `g1,g2` に換算した時点で、G-BLIND の「開封」に当たる（判定は稽古の開始時刻でなく、入力元の行の `c`）。したがって **稽古でも 144h 超の行は使わない**。
 - **採る形（i）**: 既開封の `design_72h.tsv` ＋ `confirm_72h.tsv` から作った再生用ファイル（`ambient.tsv` と同じ列）を Pi に置き、ライブ入力アダプタの「末尾有効行を読む・120 秒停止で stale・30 秒＝3 歩保持」の経路をそこに向けて試す。
 - 照合は二つ別に行う: (1) 記録済み `input` 行から Julia 正本で個体を再生して監査鎖・最終 `run` の SHA が一致（個体の再生監査）。(2) 既開封の元行から求めた期待値と記録済み `g1,g2` の一致（入力の選択・換算の照合。(1) の範囲外）。
-- **保留**: 実際の `/home/pi/s52/ambient.tsv` へのライブ接続。「機械処理の例外が換算と、結果を監査鎖・run に残す経路まで許すか」が未確認のため、ユーザー判断まで行わない（codex P3）。
+- **保留（ユーザー決定 2026-11-24: Pi の中の AUE が仕様どおりに動くと確定するまで保留）**: 実際の `/home/pi/s52/ambient.tsv` へのライブ接続。「機械処理の例外が換算と、結果を監査鎖・run に残す経路まで許すか」が未確認のため、ユーザー判断まで行わない（codex P3）。
 - 24 時間（8,640 歩）の再生リハーサルを流し、最終 `run` の SHA が 1 ビットも違わないこと。
 
 ### 段 F: 電源ボタン停止→再起動の稽古（PLAN Phase 5）

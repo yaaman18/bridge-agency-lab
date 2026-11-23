@@ -1,0 +1,2 @@
+# S69 freeze 1 (2026-11-24, claude-lab; codex S-R r1 P1-P6 反映後。予測は P-S69-1..4、走らせる前)
+24e13a65edb4aeec4fba49a1a9e7f62edbcc290ea72e2a52ef0dc621f077deb3  ../discussion/specs/S69-onestep-contract-julia.md
