@@ -1,0 +1,12 @@
+U1    PASS  2 laws x 2 seeds x 2000 steps bit-identical to onelife_step: true; negative control (cost x (1+2^-20)) caught: true 
+U2    PASS  25/25 examples drew; p,pi,a identical under the flipped drive: 25/25; next state differs (test is sensitive): 25/25; LEAK control caught: 25/25
+U3    PASS  replay of 2000 steps from the text reproduces every line and the final state: true; doctored input 1000 (g1+1 mod 6): first differing commit is the #1000 one (commit 1000)
+U4    PASS  k=0:true k=1:true k=777:true k=1999:true
+U6    PASS  input state not mutated: true; core/rust frozen dirs clean: true; core/check exit 0: true; bridge-protocol tracked diff empty: true; its HEAD and git status identical before and after this run: true
+U8    PASS  20 fixtures where the draw differs from DET: body acts on the drawn patch only 20/20; misrouted control caught 20/20; (next-state bytes are not hand-computed: limit)
+U10   PASS  starved life (drive 0,0): death detected at call 134 (t=133); commits up to and including the detection: 134; call after death with an invalid drive: not read, no error, no commit, state unchanged: true
+U11   PASS  stale rows give the z=0 yields over 3000 steps: true; differs from a fresh row on 3000 steps; the variant ignoring stale differs on 3000 steps (caught). Scope: the predictor does not read the radio, so the window/head are untouched by stale in this stage
+U5    PASS  digests (1 thread, 8 threads, 1 thread; separate processes): fb2c6f125dde fb2c6f125dde fb2c6f125dde
+U7    FAIL  NOT RUN: the TRM predictor and B_max are not in this stage (S69 H-S69-2)
+U9    FAIL  NOT RUN: the C2 head update and its accounting order are not in this stage
+done
