@@ -2,19 +2,21 @@
   "all_pass": true,
   "gates": {
     "GS1_two_species_bed_invariance": {
-      "aue_a_det_and_replay": true,
+      "aue_a_det_and_text_replay": true,
       "aue_a_final_constituents": 13,
-      "aue_a_final_digest": "6acaaf67873050a09c42ae6464891c930699f9453528fc621e79612df96baca6",
-      "aue_a_ref_match": true,
+      "aue_a_final_digest": "50df031460d0ae2b1b450cbe8ba83c18a17ee3e55b10de6e2810e0dec1dcedbc",
+      "aue_a_per_step_300_exact_match": true,
       "aue_b_alive": true,
-      "aue_b_det_and_replay": true,
-      "aue_b_final_digest": "28bfeb9ab3397dd7723348d28294218fab0a45b04bbba5607b06d47287fd9fa3",
+      "aue_b_det_and_text_replay": true,
+      "aue_b_final_digest": "c7212da920e564e6b4a5c8a5dd77c36b688bac14cbba91c6053a99fd75f3d0a3",
       "aue_b_n_mods": 8,
-      "aue_b_ref_match": true,
+      "aue_b_per_step_120_full_theta_exact_match": true,
       "bed_species_free": true,
       "header_stamps_ok": true,
       "leaked_tokens": [],
-      "pass": true
+      "pass": true,
+      "tamper_msg": "ChainIntegrityError(\"reference audit chain invalid\")",
+      "tampered_audit_text_rejected": true
     },
     "GS2_port_species_budget_dormancy_guards": {
       "allowed_organ_variant_passed": true,
@@ -25,43 +27,51 @@
         "in_port": "PortViolation(\"undeclared input port \\\"hidden_cheat\\\" for species AUE-A-OneLife-L2\")",
         "organ": "SpeciesBoundaryViolation(\"organ_type \\\"unauthorized_llm_controller\\\" outside allowed_organ_types [\\\"L2_circuit_bin3\\\", \\\"L2_circuit_bin3_trm_c1\\\"] for species AUE-A-OneLife-L2\")",
         "out_port": "PortViolation(\"undeclared output port \\\"secret_sidechannel\\\" for species AUE-A-OneLife-L2\")",
+        "roll_window": "BudgetViolation(\"rolling 3600s window ops=400 exceeds cap 360 at t=4000.0s\")",
         "step_budget": "BudgetViolation(\"ops_used=10001 outside [0, 10000]\")",
-        "wall_budget": "BudgetViolation(\"wall-clock ops/hour=4.608e7 exceeds cap 100000\")"
+        "wall_rate": "BudgetViolation(\"wall-clock ops/hour=4.608e7 exceeds cap 100000\")"
       },
       "pass": true,
+      "rolling_1h_window_before_boundary_passed": true,
+      "rolling_1h_window_crossing_caught": true,
       "step_budget_overflow_caught": true,
       "undeclared_in_port_caught": true,
       "undeclared_out_port_caught": true,
-      "wall_clock_budget_overflow_caught": true
+      "wall_clock_rate_overflow_caught": true
     },
     "GS3_termination_3way_and_predeath_spore": {
-      "late_inloop_spore_rejected": true,
+      "death_step_spore_rejected": true,
+      "external_post_death_spore_rejected": true,
       "messages": {
-        "late_spore": "ProhibitedRescueError(\"spore late-spore requested at/after death (step 15): prohibited rescue\")",
-        "post_spore": "ProhibitedRescueError(\"post-death spore illegal-rescue-spore rejected after death at step 13\")"
+        "deathstep_spore": "ProhibitedRescueError(\"spore death-step-spore requested at/after death (step 13): prohibited rescue\")",
+        "post_spore": "ProhibitedRescueError(\"external post-termination spore illegal-rescue-spore rejected (termination=METABOLIC_OR_ORG_DEATH, death_step=13)\")"
       },
       "metabolic_death_confirmed": true,
+      "metabolic_death_replay_ok": true,
       "metabolic_death_step": 13,
       "non_metabolic_empty_evidence_rejected": true,
-      "non_metabolic_verified_ok": true,
+      "non_metabolic_verified_and_replay_ok": true,
       "pass": true,
-      "post_death_spore_rejected": true,
       "pre_death_spore_lineage_child": true,
       "three_way_distinct": true,
-      "unexplained_truncation_ok": true
+      "unexplained_truncation_and_replay_ok": true,
+      "zero_commits_after_death": true
     },
     "GS4_shared_medium_event_ref_doublespend": {
       "double_spend_caught": true,
       "double_spend_msg": "DoubleSpendViolation(\"double-spend detected on event_ref=ev-ds-0: claimed=6.0 > medium_decrement=5.0\")",
       "pass": true,
+      "strip_tamper_msg": "ChainIntegrityError(\"individual audit chain invalid: ind-ds-2\")",
+      "stripped_ref_tamper_caught": true,
       "valid_split_passed": true
     }
   },
   "hashes": {
-    "bed_jl_sha256": "af55031fea0384121e7e6e9467b3938b9f442952a6b84fc7896072ee97bed0cc",
+    "bed_jl_sha256": "f677de286f3d3c1799354ae7392faf72e34ccd8873ee8ce3789d13897d5e43ea",
     "species_aue_a_toml_sha256": "b21bc008fb3bd3021059aed58c375df04d942ac8f07272556400e4900a89c1e8",
     "species_aue_b_toml_sha256": "815ea90809794528a6950b38f59f63095a7cbf0939ebd5f0772f1dc6792b2c84"
   },
   "phenomenal_claim": "not_certified",
+  "revision": "r2",
   "scope": "julia_specification_seam_only_rust_generality_deferred_to_phase6"
 }

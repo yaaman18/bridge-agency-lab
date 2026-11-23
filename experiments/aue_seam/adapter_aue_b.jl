@@ -1,4 +1,5 @@
-# AUE-B adapter: wraps unmodified experiments/nesting_cpc_c/NestingCPCC.jl (S61c CPC pruning) into AUESeamBed.
+# AUE-B adapter: wraps unmodified experiments/nesting_cpc_c/NestingCPCC.jl (S61c CPC pruning) into AUESeamBed (r2).
+# Canonical little-endian (`htol`) row-major serialization (including full theta matrices) for cross-language parity.
 # NestingCPCC.jl and bed.jl are both strictly unmodified.
 
 module AdapterAUEB
@@ -7,7 +8,7 @@ using SHA
 using ..AUESeamBed
 using ..NestingCPCC
 
-export AUEBAdapter, AUEBState, make_aue_b_initial_state, make_aue_b_inputs
+export AUEBAdapter, AUEBState, make_aue_b_initial_state, make_aue_b_inputs, canonical_aue_b_digest
 
 mutable struct AUEBState
     sys::NestingCPCC.System
@@ -59,15 +60,36 @@ function make_aue_b_inputs(tape::Vector{NestingCPCC.TapeStep})::Vector{StampedIn
     out
 end
 
-function AUESeamBed.state_digest(::AUEBAdapter, st::AUEBState)::String
-    s = st.sys
+function _write_le(io::IO, x::Float64)
+    write(io, htol(reinterpret(UInt64, x)))
+end
+function _write_le(io::IO, x::Int)
+    write(io, htol(Int64(x)))
+end
+
+# Canonical little-endian row-major digest covering ALL fields including every module's 4x4 theta matrix & grant_cache
+function canonical_aue_b_digest(s::NestingCPCC.System)::String
     io = IOBuffer()
-    write(io, UInt8(s.alive ? 1 : 0), s.R, s.D, s.h_ema, Int64(s.next_id), Int64(s.ctx), Int64(s.step), Int64(length(s.mods)))
+    write(io, UInt8(s.alive ? 1 : 0))
+    _write_le(io, s.R); _write_le(io, s.D); _write_le(io, s.h_ema)
+    _write_le(io, s.next_id); _write_le(io, s.ctx); _write_le(io, s.step)
+    _write_le(io, length(s.mods))
     for m in s.mods
-        write(io, Int64(m.id), m.u, Int64(m.born))
-        write(io, m.theta)
+        _write_le(io, m.id); _write_le(io, m.u); _write_le(io, m.born)
+        # Explicit row-major order (r = 1..4, c = 1..4) for Rust compatibility
+        for r in 1:size(m.theta, 1), c in 1:size(m.theta, 2)
+            _write_le(io, m.theta[r, c])
+        end
+    end
+    _write_le(io, length(s.grant_cache))
+    for v in s.grant_cache
+        _write_le(io, v)
     end
     bytes2hex(sha256(take!(io)))
+end
+
+function AUESeamBed.state_digest(::AUEBAdapter, st::AUEBState)::String
+    canonical_aue_b_digest(st.sys)
 end
 
 function AUESeamBed.step_species(a::AUEBAdapter, st::AUEBState, si::StampedInput, ::Budget)

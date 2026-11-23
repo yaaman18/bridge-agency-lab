@@ -1,14 +1,14 @@
-# AUE-A adapter: wraps unmodified core/LabCore.jl (OneLife L2) into AUESeamBed.
+# AUE-A adapter: wraps unmodified core/LabCore.jl (OneLife L2) into AUESeamBed (r2).
+# Canonical little-endian (`htol`) field serialization for Rust Phase 3 parity.
 # core/ is strictly read-only.
 
 module AdapterAUEA
 
 using SHA
-using Printf
 using ..AUESeamBed
 using ..LabCore
 
-export AUEAAdapter, AUEAState, make_aue_a_initial_state, make_aue_a_inputs
+export AUEAAdapter, AUEAState, make_aue_a_initial_state, make_aue_a_inputs, canonical_aue_a_digest
 
 mutable struct AUEAState
     w::LabCore.World
@@ -87,18 +87,33 @@ function make_aue_a_inputs(steps::Int; schedule_fn = LabCore.bo_season, event_re
     out
 end
 
-function AUESeamBed.state_digest(::AUEAAdapter, st::AUEAState)::String
+# Canonical little-endian byte order & fixed field sequence for cross-language (Rust) parity
+function _write_le(io::IO, x::Float64)
+    write(io, htol(reinterpret(UInt64, x)))
+end
+function _write_le(io::IO, x::Int)
+    write(io, htol(Int64(x)))
+end
+function _write_le(io::IO, x::UInt32)
+    write(io, htol(x))
+end
+
+function canonical_aue_a_digest(w::LabCore.World, pool::Vector{Float64}, circuit::LabCore.CState, noise::LabCore.Mulberry)::String
     io = IOBuffer()
-    write(io, Int64(st.t), UInt8(st.alive ? 1 : 0))
-    write(io, st.pool[1], st.pool[2], st.w.port.reservoir, st.w.port.inflow, st.w.port.outflow)
-    write(io, st.w.A)
-    write(io, st.w.B)
-    write(io, st.w.C)
-    write(io, st.circuit.q)
-    write(io, st.circuit.sg)
-    write(io, st.circuit.h)
-    write(io, st.noise.s)
+    _write_le(io, pool[1]); _write_le(io, pool[2])
+    _write_le(io, w.port.reservoir); _write_le(io, w.port.inflow); _write_le(io, w.port.outflow)
+    for v in w.A; _write_le(io, v); end
+    for v in w.B; _write_le(io, v); end
+    write(io, w.C)   # UInt8 vector (endian-invariant)
+    for v in circuit.q; _write_le(io, v); end
+    for v in circuit.sg; _write_le(io, v); end
+    for v in circuit.h; _write_le(io, v); end
+    _write_le(io, noise.s)
     bytes2hex(sha256(take!(io)))
+end
+
+function AUESeamBed.state_digest(::AUEAAdapter, st::AUEAState)::String
+    canonical_aue_a_digest(st.w, st.pool, st.circuit, st.noise)
 end
 
 function AUESeamBed.step_species(a::AUEAAdapter, st::AUEAState, si::StampedInput, ::Budget)
@@ -181,7 +196,6 @@ function AUESeamBed.step_species(a::AUEAAdapter, st::AUEAState, si::StampedInput
     LabCore.step!(w, ())
 
     nconst = LabCore.nconstituents(w)
-    # Check death status cleanly on current body before incrementing step
     alive_post = st.alive && nconst > 0
 
     spore_req = (st.emit_spore_at !== nothing && si.step == st.emit_spore_at) ? st.spore_id : nothing

@@ -1,0 +1,19 @@
+# Phase 3 minimal 4-seam bed skeleton for `rust/onelife-trm` (standalone workspace, zero dependencies).
+# Does NOT modify rust/Cargo.toml, rust/being-core, rust/being-tools, rust/trm-det, core/, or ~/bridge-protocol.
+# Scope: bed/seam skeleton, spec parser, audit chain, S68 C4 radio parser/stale logic, and musl cross-build.
+# Rust multi-species generality remains unasserted until Phase 6 passes a 2nd real species through this unmodified bed.
+
+[package]
+name = "onelife-trm"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+
+[workspace]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+panic = "abort"

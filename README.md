@@ -2188,8 +2188,9 @@ include("../core/LabCore.jl"); using .LabCore
       - **GS2（ポート・種境界・予算・休眠会計の負対照）**: 未申告入出力ポート、許可集合外の器官型（`unauthorized_llm_controller`）、1 歩予算超過（`10001 > 10000`）、歩粒度微細化による壁時計時間予算超過（`4.608e7 > 100000 ops/h`）、無料休眠記憶（`dormancy_upkeep_paid=0 < 0.001`）をすべて検知拒絶。許可集合内の変種器官型（`L2_circuit_bin3_trm_c1`）は通過。
       - **GS3（終了 3 区分分離・死前内発胞子）**: `AUE-B` `:Runaway` の代謝死（`death_step=13`、`METABOLIC_OR_ORG_DEATH`）・外部 OS 証跡つき非代謝終了（`NON_METABOLIC_TERMINATION_VERIFIED`、空証跡は拒絶）・原因未確定途絶（`UNEXPLAINED_TRUNCATION`）を 3 区分で厳密分離。死前（`step 5 < 13`）内発胞子は系譜上の子（`same_individual=false, lineage_child=true`）として受理し、死後・死後ループ内胞子生成は `ProhibitedRescueError` で拒絶。
       - **GS4（共有媒体二重鎖・`event_ref` 二重取得）**: 2 個体による単一資源減分（`5.0`）の整合分配（`3.0+2.0`）は通過し、二重取得（`3.0+3.0=6.0 > 5.0`）は `DoubleSpendViolation` で検知。
+      - **r2 改修・独立 I レビュー（2026-11-23、`codex-lab` I-R APPROVE）**: r1 レビュー指摘を受け、影の配列 `stamped_inputs` を撤去し再生・共有媒体照合を監査テキスト単一正本化、代謝死即時停止（死後 `commit` 0 件）、3,600 秒スライディング窓予算、リトルエンディアン `htol`・行優先全歩照合（`AUE-A` 300 歩・`AUE-B` 120 歩全モジュール `theta` 込み）、改ざん負対照を追加。`codex-lab` が一時複製＋正本参照で独立実行し **GS1〜GS4 全 PASS・SHA `f6094b9e...ac650` 一致・対象 3 ディレクトリ `git diff` 0 で APPROVE**。併せて `rust/onelife-trm/`（独立 Cargo ワークスペース・依存ゼロ）へ同 4 継ぎ目床スケルトン＋S68 r2 C4 換算／`stale` を実装し、単体テスト 5/5 PASS（Julia `species_aue_{a,b}.toml` SHA 完全一致）と Pi 5 向け `aarch64-unknown-linux-musl` 静的クロスビルド（623 KB ELF, SHA `846614aa...4bed`）を確認。Pi 5 実機 `/home/pi/s66-cal/` へ `onelife-trm`・S60 `trm-det`（`8d37b96a...183`）・2 種 TOML を配置し、実機 ARM64 上で SHA 完全一致と `onelife-trm verify-spec` 両種 OK を確認（同作業で完走済み `s54-trial-1/2.service` を `S54-start-procedure.md` §(c) に従い取り外し、`/home/pi/s54/t1,t2` と `s52-ambient-log` 保全・`throttled=0x0`・`clean` 確認）。
       - **整合性**: `core/check/run.sh` PASS、`~/bridge-protocol` 追跡差分 0。
-    - **言えないこと（厳密限定）**: 本試作が裏づけるのは **「Julia 上の仕様としての継ぎ目の妥当性」のみ**。**Rust 床（`rust/onelife-trm`）の汎用性は未主張（保留）** であり、Phase 6 で第 2 種が同じ Rust 床を無変更で通るまで主張しない。`phenomenal_claim = :not_certified`。
+    - **言えないこと（厳密限定）**: 本試作および Rust 床スケルトンが裏づけるのは **「Julia 仕様継ぎ目と Rust 単体ビルド／床不変条件の成立」まで**。**Rust 床の多型汎用性は Phase 6 で第 2 種（実種）が同じ Rust 床を無変更で通るまで未主張（保留）**。`phenomenal_claim = :not_certified`。
 
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
