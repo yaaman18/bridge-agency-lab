@@ -1,0 +1,7 @@
+G-DET confirm_72h.tsv: out cd3d4febc0f94356 out-rerun cd3d4febc0f94356 same
+G-DET summary.json: out c1d206659a47a8dc out-rerun c1d206659a47a8dc same
+G-DET results.out: out e75889e3bba38c37 out-rerun e75889e3bba38c37 same
+G-DET PASS
+G-CORE: core/check/run.sh exit 0 true; bridge-protocol status+diff+HEAD sha 4c3d50bd7ee3ae94 before 4c3d50bd7ee3ae94 same true
+G-CORE PASS
+all 7 gates: PASS -> P-S65-2..5 decided by out/summary.json verdicts_if_det_core_pass

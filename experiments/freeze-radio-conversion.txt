@@ -1,0 +1,2 @@
+b7a62f6b7ed0fd254ca0d4d61bf7b3b3a18d5b1250e5534e838566e78e794ce4  ../discussion/specs/S65-radio-conversion-confirm.md
+9f6606b7f6aea71dea18d1b96252d284718fb4f56d5e486d39361cb58dd22296  radio_confirm/predictions.toml

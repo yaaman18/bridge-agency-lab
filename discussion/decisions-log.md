@@ -640,3 +640,20 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 結果の読み（README 項番183）: `t1`（L2）・`t2`（L2+SF）ともに `n = 60,480 / 60,480` に到達し `end 60480 eof` で正常終了（`inactive`）。`end_check.sh`（`BOOTS = 1`）両体 **`PASS`**（60,480/60,480 全 commit 行が基準 SHA と一致、`other=0`, `missing=0`, `beyond=0`, `chain_ok=true`, `starts=2<=2`, `breaks=0`, `audit_behind=0`, `errors=0`, `unfinished=0`, `unknown=0`）。凍結予測 **PT1〜PT4 全成立**（見張り 23/23 到達行 `ref_match=true`・`throttled=0x0`・`ext4=0`・`clean`・`fs_errors=0`、PT2 同一起動 193 対違反 0 件）。S52 は boot 列のみ参照し 72h 超の電波・温度列は未開封維持。
 - 影響したファイル: `experiments/s54-watch.tsv`、`experiments/results-trial-final.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
 - ユーザー: 完走確認指示済み（2026-11-23 21:46 JST）。完走済み unit の Pi からの取り外し（`S54-start-procedure.md` §(c)）および追加 commit/push はユーザー指示待ち。
+
+## #71 S65: S52 実電波換算（C4 型）の凍結と 72 時間確かめの期間検証（2026-11-23）
+- 種別: 仕様・予測凍結＋確認検証実装（`experiments/radio_confirm/` 新規、`experiments/ambient/`・`core/`・`rust/`・`~/bridge-protocol` 非変更）。
+- 決めたこと: S52 72h 設計期間（`out-72h/design_72h.tsv`, 8,643 行）のみから標準化定数（`w_sum: 297.201/39.799`, `b_n: 2.992/0.813`）と C4 換算式を凍結し、仕様 r3（行ペア同一置換対照 `C4_zshuf`・4 ブロック長 `L ∈ {120,240,360,720}` 保守最小 CI 下限・144h 超未開封）を `experiments/freeze-radio-conversion.txt` へ凍結した上で、未開封の 72h 確かめの期間（`259,200 s < cum <= 518,400 s`）を初開封・再適合なし検証した。
+- 結果の読み（README 項番184）: 全 7 関門 PASS、**P-S65-1〜5 全成立**（8,641 行・除外 0%・最大間隔 30.01 s）。`b_n` が `−1.91 SD` ドリフトした環境下でも `C4_full` 応答率 `[0.860, 0.523]`・両区画 6 値全出現・`radio_flip_rate = [0.165, 0.327]` を維持し、周辺結合分布同一の無記憶シャッフル電波に対する時間構造利得 `D_shuf = +0.0935 nat`（保守最小 95% CI 下限 `+0.0420 > 0`）および `TAB4 > B1`（`+0.0504 nat`）を確認した。
+- 合意: 3 系統合意（S-R r3 で両者 APPROVE。I-R は G-CORE クリーン再実行後に `codex-lab` **r2 APPROVE**）。
+- 元に戻す方法: `experiments/radio_confirm/`・S65 関連文書を使わない。README 項番184 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S65-radio-conversion-confirm.md`、`experiments/freeze-radio-conversion.txt`、`experiments/radio_confirm/{predictions.toml,confirm_c4.jl,README.md,out/,out-rerun/}`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 指示済み（2026-11-23 21:57 JST）。
+
+## #72 多型 AUE 最小 4 継ぎ目・Julia 仕様試作（`experiments/aue_seam/`）および Bool 監査・Pi 5 計画・付則整備（2026-11-23）
+- 種別: 設計合意（`D-BOOL-MAPPING.md`・`D-C2-HEAD-LEARN.md`・`ROADMAP-FIRST-AUE-CUTOUT.md`・`PLAN-PI5-TRM-DEPLOY.md`・`D-AUE-SPECIES-AND-GAPS.md`・`S66-draft-c1-closedloop.md` r3・`promise-cutout.md` §7 付則・BP11 起票）＋監査＆仕様試作実装（`audit/dc_mapping_audit.jl`・`experiments/aue_seam/`；`core/`・`experiments/nesting_cpc_c/`・`formal/`・`rust/`・`~/bridge-protocol` 無変更）。
+- 決めたこと: ユーザー承認（2026-11-23 22:50 JST：`U-SP1a`・`U-SP1b (BP11/H8)`・`U-SP2`）を受け、`D-AUE-SPECIES-AND-GAPS.md` O30〜O32 の最小 4 継ぎ目（`species_spec.toml`・`Port`・`Ledger`・1 歩契約 `step_species`）を種非依存の Julia 床 `experiments/aue_seam/bed.jl` として実装し、正本 `core/LabCore.jl`（`AUE-A`）と正本 `experiments/nesting_cpc_c/NestingCPCC.jl`（`AUE-B`）の 2 種を同一床無変更で通す検証（GS1〜GS4）を実施した。
+- 結果の読み（README 項番185）: **GS1〜GS4 全 PASS**・2 回実行決定性 SHA 一致（`3b751842...6ac58`）。両種とも正本直接実行と一致し、`input` 行のみからの監査鎖再生で全 `commit` ハッシュ一致。負対照 8 件（未申告入出力ポート、許可集合外器官型、1 歩／壁時計予算超過、無料休眠記憶、死後・死後ループ内胞子救済、空証跡非代謝終了、共有媒体 `event_ref` 二重取得）をすべて検知拒絶。**範囲限定**: Julia 仕様試作の合格は仕様継ぎ目の妥当性のみを裏づけ、Rust 床の汎用性は Phase 6 まで未主張。
+- 元に戻す方法: `experiments/aue_seam/` を使わない。README 項番185 に「取り下げ」と書く。
+- 影響したファイル: `experiments/aue_seam/{bed.jl,species_aue_a.toml,adapter_aue_a.jl,species_aue_b.toml,adapter_aue_b.jl,run_seam_gates.jl,README.md,results-seam-gates.json}`、`audit/{dc_mapping_audit.jl,results-dc-mapping-audit.json}`、`discussion/notes/{D-BOOL-MAPPING.md,D-C2-HEAD-LEARN.md,ROADMAP-FIRST-AUE-CUTOUT.md,PLAN-PI5-TRM-DEPLOY.md,D-AUE-SPECIES-AND-GAPS.md}`、`discussion/specs/S66-draft-c1-closedloop.md`、`discussion/{bp-proposals.md,user-decisions.md,promise-cutout.md,STATE.md,decisions-log.md}`、`README.md`。
+- ユーザー: 実施およびバッチ `git commit` 指示済み（2026-11-23 22:56 JST）。`experiments/c0_trm/`（実行中）は commit 対象外。

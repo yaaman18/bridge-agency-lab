@@ -1,0 +1,72 @@
+# S65 S52 実電波換算（C4 型）凍結定数・事前予測（2026-11-23）
+# 仕様: discussion/specs/S65-radio-conversion-confirm.md (r3, 3 系統 APPROVE)
+# 凍結ファイル: experiments/freeze-radio-conversion.txt
+# 本ファイル凍結前に確かめの期間（cum_uptime > 259200.0 s）の電波・温度値は一切開封していない。
+# 結果を見た後にこのファイルを書き換えてはならない。外れた予測は外れたまま報告する。
+
+[meta]
+experiment = "S65-radio-conversion-confirm"
+spec = "discussion/specs/S65-radio-conversion-confirm.md"
+spec_rev = "r3"
+date = "2026-11-23"
+assumption = "H7"
+phenomenal_claim = "not_certified"
+
+[source]
+raw_copy = "experiments/ambient/copies/ambient-20261123.tsv"
+raw_copy_sha256 = "47a5084dc943e46cff33d712d5359ce057ace094fcd4d375e16e4dfb0b759c7a"
+design_tsv = "experiments/ambient/out-72h/design_72h.tsv"
+design_tsv_sha256 = "5925386fa4a02791b72e190001d4bcf881d6a1c526853613115c44940569dcad"
+design_limit_s = 259200.0
+confirm_limit_s = 518400.0
+
+[conversion_c4]
+# 設計期間 design_72h.tsv（有効 8,643 行、fail=0）のみから算出した固定標準化定数
+mu_w = 297.20108758532916
+sd_w = 39.79874519579147
+mu_b = 2.9924794631493694
+sd_b = 0.8134565410732445
+base_M = 2.5
+amp_A = 2.5
+period_P = 1000
+steps_per_row = 3
+sigma = 1.0
+phi_1 = 0.0
+phi_2 = 3.141592653589793
+yield_min = 0.0
+yield_max = 5.0
+
+[rng_seeds]
+# 5 つの RNG 種子はすべて互いに異なり重ならない（主列未使用種子 1110 は消費しない）
+action_design = 650000
+action_confirm = 650001
+block_bootstrap = 650002
+zshuf_design = 650003
+zshuf_confirm = 650004
+
+[evaluation]
+clip_lo = 0.005
+clip_hi = 0.995
+b1_decay_k = 8
+tab4_window = 4
+tab4_alpha = 1.0
+leak_tol = 1.0e-9
+flip_check_rows = 50
+block_lengths = [120, 240, 360, 720]
+primary_block_length = 720
+bootstrap_B = 5000
+min_valid_rows = 7000
+max_excl_frac = 0.02
+max_gap_s = 120.0
+rate_lo = 0.15
+rate_hi = 0.90
+min_distinct_yields = 4
+min_radio_flip_rate = 0.05
+min_delta_full_ci_lo = 0.05
+
+[predictions]
+P_S65_1 = "全 7 関門（G-F, G-A0, G-BLIND, G-DESIGN, G-LEAK, G-DET, G-CORE）が合格し、確かめの期間の有効行 >= 7,000・除外率 < 2%・同一起動内最大間隔（全行および有効行の双方）<= 120 s である。関門失敗時は即停止し P-S65-2..5 は未判定。全 7 関門合格かつ品質条件のみ不成立時は P-S65-1 外れ、P-S65-2..5 は参考記述のみ。"
+P_S65_2 = "確かめの期間の C4_full で両区画とも 0.15 <= P(Y_a=1) <= 0.90 かつ 6 値収量 g in {0..5} が各区画 4 値以上出現する。"
+P_S65_3 = "C4_full と C4_noradio の応答不一致率 radio_flip_rate が両区画とも >= 0.05（5% 以上）である。"
+P_S65_4 = "4 ブロック長 L in {120, 240, 360, 720} の最小 95% CI 下限（保守判定）で、(a) C4_full の Δ = L(RATE)-L(B1) 下限 > 0.05 nat、(b) C4_radio_only の Δ 下限 > 0、(c) 対比較 D_shuf = Δ(C4_full) - Δ(C4_zshuf) 下限 > 0 の 3 条件すべてが成立する。"
+P_S65_5 = "C4_full において設計期間学習済み TAB4 の点推定損失が B1 を下回る（L(B1) - L(TAB4) > 0；< 0 は外れ、== 0 は引き分け）。"

@@ -168,3 +168,18 @@ bridge-protocol の理論そのもの（M1〜M4、DC・DC2 の定義、AGENCY-00
 - 仮定に依っている仕様・実装: S63（余地の監査、起草中）、今後の C0〜C2 仕様。
 - ユーザー: （承認 / 差し戻し / 保留 — BP 側セッションで判断）
 
+---
+
+### BP11 `ERIEC.DC` 具体実装の意味論マッピング版ハッシュ帯同と自己改変系の不可変の床（2026-11-23）
+- bridge-protocol のどこ: `formal/ERIEC/DC.lean`（抽象 `DC` 構造体）、`specs/decision-principles.md`（具体実装・認証表現の統治規律）
+- 何が問題か / 論点（命題として）:
+  1. **意味論ドリフトの不可視性**: `ERIEC.DC` は関係 $(\alpha, \sigma, \pi, \rho)$ と集合 $(\kappa, \varepsilon, \mathrm{boundary})$ を外から受け取る抽象構造体であり、具体系側の受容器特徴・閾値・反転（`perm`）・帰属規則が変わっても同一スキーマのまま Lean 証明が通る（`~/bridge-protocol/aue-bool-mapping-vulnerability.md` §4.1, §4.5）。
+  2. **自己認証詐欺の防止（将来の進化・器官獲得系）**: 系自身が Bool 定義や受容器特徴を変更できる設計へ進むと、$\kappa$ や $\alpha$ を緩めて DC を自明に真にする「自己認証の詐欺」が可能になる（同 §5 クリティカル条件 #3）。
+- 根拠: `~/bridge-protocol/aue-bool-mapping-vulnerability.md`、`discussion/notes/D-BOOL-MAPPING.md`、`audit/dc_mapping_audit.jl`。
+- 案:
+  - (a) `ERIEC.DC` の型定義自体は抽象のまま維持しつつ、`decision-principles.md`（および将来の具体実装テンプレート）に次の 3 原則を追加する：(i) 具体実装の DC 証明書・監査出力には外部マッピング定義ハッシュ（`mapping_spec_hash`）および特徴割当（`perm` 境界有無）を帯同させ、さらに動的介入 `α` 照合が登録済み `α` と食い違った版では意味対応の判定を保留する、(ii) 複数タイプの AUE（多型種）を跨いでも AGENCY-001 述語と吸収死の定義を不変に保ち、ハード故障（外部証跡あり）と原因未確定途絶を代謝死の述語から分離する、(iii) 系自身に定義変更権・器官交代権を与える設計では、死・維持費会計・ポート境界・監査鎖を書換不能の「床」としてユーザー事前承認のもとで凍結し、許可器官集合内の改変を系譜スパンおよび外部監査鎖に刻む。
+  - (b) `ERIEC.DC` 自体に `mappingHash` フィールドを追加する（既存 Lean 証明・互換性への影響大）。
+- 立場: (a) を推奨（既存の証明済み Lean・`DC.lean` を壊さず統治・監査層で実効担保できる）。
+- ラボで置く仮定: **H8** — Lab 側の DC 監査・意味論検証および多型 AUE 設計（`D-BOOL-MAPPING.md`・`D-AUE-SPECIES-AND-GAPS.md`・`PLAN-PI5-TRM-DEPLOY.md`）では、`core/` を無変更のまま読み取り専用監査 `audit/dc_mapping_audit.jl` で `mapping_spec_hash`・`perm` 窓跨ぎ・`α` 介入整合・`length(onpatch) <= 1` を検証し、第一号 AUE（固定法則）では定義変更権を系に与えない。将来種への床凍結はユーザー事前承認（U-SP1b）を条件とする。
+- ユーザー: **2026-11-23 承認（U-SP1b）** — Lab 側では仮定 H8 として適用開始、BP 正本への反映は BP ラインの次セッションで実施。
+

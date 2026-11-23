@@ -1,0 +1,12 @@
+# G-CORE detail (2026-11-23, after the second final run)
+baseline sha (status --porcelain + diff + HEAD, taken 22:13:39 before any run): 3dad0b9ce132eca9f80a802ec8fff9ef5a3d853899a0f289d1ce78cb9be7ffb6
+HEAD now: 669107b0efadeca44e88d4c1466fecd6602148f7
+tracked diff lines now: 0
+staged diff lines now: 0
+untracked now:
+?? "11\346\234\21023\346\227\245\343\201\256\343\203\241\343\203\242.md"
+?? aue-bool-mapping-vulnerability.md
+?? logs/category-pipeline/G1-impacted-bindings-16699393640396-36179-jl_iQG2V1.log
+?? logs/category-pipeline/reports/
+?? "\346\230\216\346\227\245\343\201\256\347\231\272\350\241\250\347\224\250.md"
+new untracked since baseline: 11月23日のメモ.md, mtime Nov 23 22:24:57 2026, not written by confirm_c4.jl or core/check/run.sh

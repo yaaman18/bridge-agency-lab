@@ -2172,6 +2172,25 @@ include("../core/LabCore.jl"); using .LabCore
       - **予測なし報告**: 死の歩 `t1 = 20514`（20515 歩め）・`t2 = 11342`（11343 歩め、基準どおり）、`breaks = 0`, `audit_behind = 0`。
     - **言えないこと**: 他機種・実入力経路・より長い期間・切り出し済み個体への一般化、`phenomenal_claim = :not_certified`。
 
+184. S65 S52 実電波換算（C4 型：合成周期＋実電波摂動）の凍結と 72 時間確かめの期間での初開封検証（2026-11-23。仕様 `discussion/specs/S65-radio-conversion-confirm.md` r3［3 系統 APPROVE］、予測 `experiments/radio_confirm/predictions.toml`、凍結 `experiments/freeze-radio-conversion.txt`、コード `experiments/radio_confirm/confirm_c4.jl`、記録 `experiments/radio_confirm/README.md`、出力 `experiments/radio_confirm/{out,out-rerun}/`、decisions-log #71。主列未使用種子 `1110` 非消費、144 時間超は未開封温存、`core/`・`rust/`・`~/bridge-protocol` 無変更）。
+    - **確認した事実（全 7 関門 PASS・P-S65-1〜5 全成立）**:
+      - **関門**: G-F・G-A0（`A0 PASS (8641 rows)`）・G-BLIND（設計スライス `design_72h.tsv` SHA 一致、破棄境界行 `(83c87cfb, 104054.55, 259213.39)` が先頭行に一致、最終行 `518,396.9 s <= 518,400 s`、重複 0、144h 超未開封）・G-DESIGN（再計算差 `<= 3.3e-16`）・G-LEAK（`5.2e-18 <= 1e-9`、50/50 反転ビット一致）・G-DET（`out` 対 `out-rerun` 3 ファイル SHA 一致）・G-CORE（クリーン再実行で `core/check/run.sh` exit 0 かつ `~/bridge-protocol` 前後 SHA 一致、`all 7 gates: PASS`）。
+      - **データ品質・ドリフト（P-S65-1 成立）**: 有効 `8,641 / 8,641` 行（除外 `0%`）、同一起動内最大間隔 `30.01 s <= 120 s`（2 起動 `83c87cfb`・`851197f9`）。設計期間→確かめの期間で `w_sum` 平均 `297.20 → 316.24`（`+0.48 SD`）、`b_n` 平均 `2.99 → 1.44`（**`−1.91 SD`**）の大幅ドリフトが発生。
+      - **非飽和・実質寄与（P-S65-2・P-S65-3 成立）**: `b_n` の `−1.91 SD` ドリフト下でも `C4_full` 応答率は **`[0.860, 0.523]`**（両区画とも `[0.15, 0.90]` 内）かつ両区画とも 6 値収量 `0..5` が全出現。`C4_noradio` との応答反転率 `radio_flip_rate = [0.165, 0.327]`（両区画 `>= 0.05`）。
+      - **実電波時間構造と `B1` 追従（P-S65-4 全 3 条件成立）**: 4 ブロック長 `L ∈ {120, 240, 360, 720}` の保守最小 95% CI 下限で、(a) `C4_full` $\Delta = L(\mathrm{RATE})-L(\mathrm{B1}) = +0.4166$（最小下限 `+0.3549 > 0.05`）、(b) `C4_radio_only` $\Delta = +0.9766$（最小下限 `+0.8263 > 0`）、(c) 行ペア同一置換対照 `C4_zshuf` との対比較 **`D_shuf = Δ(C4_full) - Δ(C4_zshuf) = +0.0935 nat`（最小下限 `+0.0420 > 0`、`L_B1(zshuf) - L_B1(full) = +0.1051`［最小下限 `+0.085`］）** がすべて成立（`C4_noradio` $\Delta = +0.3241$）。
+      - **`TAB4` 対 `B1`（P-S65-5 成立）**: `C4_full` 点推定 `L(B1) - L(TAB4) = +0.0504 nat`（最小下限 `+0.034`；ただし `zshuf = -0.0184`, `radio_only = -0.0449`）。
+    - **I-R（codex-lab、2026-11-23）**: r1 で G-CORE 外生未追跡メモ増による `final.out` 不一致を指摘 → スクリプト無変更でクリーン再実行（全 7 関門 PASS・3 出力 SHA 不変）後に **r2 APPROVE**。
+    - **言えないこと**: 144h 超未開封、他場所・季節への一般化、C4 最適性、`L=720` の約 12 ブロック粗さ、`phenomenal_claim = :not_certified`。
+
+185. 多型 AUE 最小 4 継ぎ目の Julia 仕様試作・検証（2026-11-23。設計合意 `discussion/notes/D-AUE-SPECIES-AND-GAPS.md`［3 系統 O30〜O32・ユーザー承認 U-SP1a/U-SP1b/U-SP2］、`discussion/notes/PLAN-PI5-TRM-DEPLOY.md` §1.3、コード `experiments/aue_seam/{bed.jl,species_aue_a.toml,adapter_aue_a.jl,species_aue_b.toml,adapter_aue_b.jl,run_seam_gates.jl,README.md}`、出力 `experiments/aue_seam/results-seam-gates.json`、decisions-log #72。主列未使用種子 `1110` 非消費、`core/`・`experiments/nesting_cpc_c/`・`formal/`・`rust/`・`~/bridge-protocol` 無変更）。
+    - **確認した事実（全 4 関門 GS1〜GS4 PASS・2 回実行決定性 SHA 完全一致 `3b751842...6ac58`）**:
+      - **GS1（2 種同一床不変性・正本一致・再生監査）**: 種非依存の床 `bed.jl`（`AUE-A`・`AUE-B`・`LabCore`・`NestingCPCC` 等への言及 0 件、SHA `af55031f...d0cc`）を一切変えず、第 1 種 `AUE-A`（正本 `core/LabCore.jl` OneLife L2、300 歩、最終構成要素 `13`）と第 2 種 `AUE-B`（正本 `experiments/nesting_cpc_c/NestingCPCC.jl` S61c `:CPC`、120 歩、生存・最終モジュール数 `8`）の双方を実行。両種とも正本直接実行と一致、監査鎖ヘッダへの `species_spec.toml` SHA・`mapping_spec_hash`・`phenomenal_claim=not_certified` 刻印確認、監査鎖 `input` 行のみからの完全再生で全 `commit` ハッシュ・最終状態ダイジェスト一致。
+      - **GS2（ポート・種境界・予算・休眠会計の負対照）**: 未申告入出力ポート、許可集合外の器官型（`unauthorized_llm_controller`）、1 歩予算超過（`10001 > 10000`）、歩粒度微細化による壁時計時間予算超過（`4.608e7 > 100000 ops/h`）、無料休眠記憶（`dormancy_upkeep_paid=0 < 0.001`）をすべて検知拒絶。許可集合内の変種器官型（`L2_circuit_bin3_trm_c1`）は通過。
+      - **GS3（終了 3 区分分離・死前内発胞子）**: `AUE-B` `:Runaway` の代謝死（`death_step=13`、`METABOLIC_OR_ORG_DEATH`）・外部 OS 証跡つき非代謝終了（`NON_METABOLIC_TERMINATION_VERIFIED`、空証跡は拒絶）・原因未確定途絶（`UNEXPLAINED_TRUNCATION`）を 3 区分で厳密分離。死前（`step 5 < 13`）内発胞子は系譜上の子（`same_individual=false, lineage_child=true`）として受理し、死後・死後ループ内胞子生成は `ProhibitedRescueError` で拒絶。
+      - **GS4（共有媒体二重鎖・`event_ref` 二重取得）**: 2 個体による単一資源減分（`5.0`）の整合分配（`3.0+2.0`）は通過し、二重取得（`3.0+3.0=6.0 > 5.0`）は `DoubleSpendViolation` で検知。
+      - **整合性**: `core/check/run.sh` PASS、`~/bridge-protocol` 追跡差分 0。
+    - **言えないこと（厳密限定）**: 本試作が裏づけるのは **「Julia 上の仕様としての継ぎ目の妥当性」のみ**。**Rust 床（`rust/onelife-trm`）の汎用性は未主張（保留）** であり、Phase 6 で第 2 種が同じ Rust 床を無変更で通るまで主張しない。`phenomenal_claim = :not_certified`。
+
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
 ### 統合度 Φ（定義のみ。計算しない：ユーザー決定 2026-10-31）

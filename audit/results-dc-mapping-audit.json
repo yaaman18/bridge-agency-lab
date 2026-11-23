@@ -1,0 +1,252 @@
+{
+  "phenomenal_claim": "not_certified",
+  "date": "2026-11-23",
+  "hashes": {
+    "formal_labcircuit_sha256": "fd40717258d52eba8cc7a7933013521c66ac75ccfdf92700b2985565dc651e3d",
+    "core_dc_sha256": "05eb8b60c1640f87fe65172f5630945166bc1760a782a66a14e298b16af946a0",
+    "mapping_spec_hash": "f69709ffc7722385b183fbadf6ab52466af64b002210e6d245068cb08d9fd61c",
+    "core_circuit_sha256": "295a6e17b4d99f90a67961187911ca36270d199b5806a9acbe4be4d8a20d1473"
+  },
+  "trajectory_audit": {
+    "steps": 3000,
+    "onpatch_le_1_pass": true,
+    "cross_vgfp_all_receptor_diffs": 156,
+    "via_uncoupled_r5r6_nonzero_windows": 2200,
+    "via_coupled_vgfp_diffs_after_filter": 0,
+    "via_world_windows": 2200,
+    "cross_vgfp_coupled_receptor_diffs": 84,
+    "cross_dc_verdict_diffs": 0,
+    "max_onpatch_per_step": 1,
+    "cross_vgfp_max_abs_diff": 8,
+    "revr": 2000,
+    "cross_straddle_windows": 31,
+    "via_coupled_rank_diffs_after_filter": 0,
+    "cross_clause_diffs": {
+      "act": 0,
+      "smc": 0,
+      "self": 21,
+      "bound": 0
+    }
+  },
+  "alpha_intervention_audit": {
+    "n_cases": 16,
+    "neg_control_caught": true,
+    "all_match": false,
+    "cases": [
+      {
+        "in_world": true,
+        "empirical": [
+          1,
+          3,
+          7,
+          8
+        ],
+        "ypos": [
+          true,
+          true
+        ],
+        "declared": [
+          1,
+          3,
+          7,
+          8
+        ],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": true,
+        "empirical": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "ypos": [
+          true,
+          true
+        ],
+        "declared": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "match": true,
+        "motor": "m2"
+      },
+      {
+        "in_world": true,
+        "empirical": [
+          1,
+          3,
+          7
+        ],
+        "ypos": [
+          true,
+          false
+        ],
+        "declared": [
+          1,
+          3,
+          7,
+          8
+        ],
+        "match": false,
+        "motor": "m1"
+      },
+      {
+        "in_world": true,
+        "empirical": [],
+        "ypos": [
+          true,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m2"
+      },
+      {
+        "in_world": true,
+        "empirical": [],
+        "ypos": [
+          false,
+          true
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": true,
+        "empirical": [
+          2,
+          4,
+          8
+        ],
+        "ypos": [
+          false,
+          true
+        ],
+        "declared": [
+          2,
+          4,
+          7,
+          8
+        ],
+        "match": false,
+        "motor": "m2"
+      },
+      {
+        "in_world": true,
+        "empirical": [],
+        "ypos": [
+          false,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": true,
+        "empirical": [],
+        "ypos": [
+          false,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m2"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          true,
+          true
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          true,
+          true
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m2"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          true,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          true,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m2"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          false,
+          true
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          false,
+          true
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m2"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          false,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m1"
+      },
+      {
+        "in_world": false,
+        "empirical": [],
+        "ypos": [
+          false,
+          false
+        ],
+        "declared": [],
+        "match": true,
+        "motor": "m2"
+      }
+    ]
+  }
+}

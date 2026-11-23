@@ -1,0 +1,20 @@
+species_id = "AUE-B-Nesting-CPC"
+spec_version = "0.1.0"
+substrate = "module_pool_R_D_hema"
+individual_boundary = "system_pool_and_modules_s61c"
+allowed_organ_types = ["cpc_local_link_pruning", "cpc_runaway_control"]
+mapping_spec_hash = "9cf7993b34c4c2feeb4e2c04689af06d431fbc70610f0092d761f31313fd6795"
+phenomenal_claim = "not_certified"
+
+[ports]
+inputs = ["x", "h", "r", "t_abs"]
+outputs = ["n_mods", "alive", "pruned", "births", "deficit"]
+
+[budget]
+step_granularity_sec = 1.0
+ops_per_step = 5000
+ops_per_hour = 18000000
+
+[dormancy]
+upkeep_rate_per_slot = 0.01
+max_slots = 2

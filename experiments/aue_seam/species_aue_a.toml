@@ -1,0 +1,20 @@
+species_id = "AUE-A-OneLife-L2"
+spec_version = "0.1.0"
+substrate = "torus_lenia_matter_24x24"
+individual_boundary = "b_shell_radius6_plus_port"
+allowed_organ_types = ["L2_circuit_bin3", "L2_circuit_bin3_trm_c1"]
+mapping_spec_hash = "f69709ffc7722385b183fbadf6ab52466af64b002210e6d245068cb08d9fd61c"
+phenomenal_claim = "not_certified"
+
+[ports]
+inputs = ["g1", "g2"]
+outputs = ["act_patch_1", "act_patch_2", "alive", "constituents"]
+
+[budget]
+step_granularity_sec = 10.0
+ops_per_step = 10000
+ops_per_hour = 3600000
+
+[dormancy]
+upkeep_rate_per_slot = 0.001
+max_slots = 4

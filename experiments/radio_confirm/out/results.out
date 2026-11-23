@@ -1,0 +1,79 @@
+S65 C4 confirmation period (259200 s < summed uptime <= 518400 s), no refit
+G-F ../discussion/specs/S65-radio-conversion-confirm.md: frozen b7a62f6b7ed0 now b7a62f6b7ed0 ok
+G-F radio_confirm/predictions.toml: frozen 9f6606b7f6ae now 9f6606b7f6ae ok
+G-F (S52 freeze 1) ../discussion/specs/S52-ambient-log.md: frozen fdb95150edee now fdb95150edee ok
+G-F (S52 freeze 1) predictions-ambient-log.md: frozen 7444812c02db now 7444812c02db ok
+scanner: design-slice rows 8643 sha 5925386fa4a0 (design_72h.tsv frozen 5925386fa4a0, file now 5925386fa4a0)
+scanner: confirmation rows written 8641, summed uptime at the last written row 518396.9 s, uptime reversals within a boot 0, stopped at the first line beyond 518400.0 s: true
+scanner: first line beyond 259200.0 s (discarded by analyze_72h.jl): boot 83c87cfb uptime_s 104054.55 cum 259213.39
+G-A0: A0 PASS (8641 rows)
+G-BLIND (1) reversals 0: true; (2) design slice sha == design_72h.tsv, 8643 rows, fail==0 8643/8643, boundary line == first confirmation row (boot, uptime_s, cum 259213.39): true; (3) last cum 518396.9 <= 518400.0, all confirmation cum > 259200.0, shared (boot, uptime_s) with the design 0, nothing beyond 518400.0 written: true
+G-DESIGN: recomputed mu_w 297.20108758532916 sd_w 39.79874519579147 mu_b 2.9924794631493694 sd_b 0.8134565410732448; max |recomputed - frozen| 3.3306690738754696e-16 (<= 1e-12)
+train C4_full       (design, 8643 rows, action seed 650000): examples [4337, 4306], answered [3492, 3413], RATE ["0.805024199", "0.792479109"], TAB4 keys seen 258/1250
+train C4_noradio    (design, 8643 rows, action seed 650000): examples [4337, 4306], answered [3423, 3429], RATE ["0.789121917", "0.796193129"], TAB4 keys seen 182/1250
+train C4_zshuf      (design, 8643 rows, action seed 650000): examples [4337, 4306], answered [3560, 3449], RATE ["0.820696013", "0.800835655"], TAB4 keys seen 313/1250
+train C4_radio_only (design, 8643 rows, action seed 650000): examples [4337, 4306], answered [2351, 3837], RATE ["0.542060383", "0.89090065"], TAB4 keys seen 279/1250
+G-LEAK C4_full      : L(LEAK) 0.0050125418235442915 |-(-log 0.995)| 5.204170427930421e-18 (<= 1e-9) true, lowest true; flip 50 rows: p_k unchanged (RATE B1 TAB4, bitwise) 50, B1 next state moved 50 -> true
+G-LEAK C4_noradio   : L(LEAK) 0.0050125418235442915 |-(-log 0.995)| 5.204170427930421e-18 (<= 1e-9) true, lowest true; flip 50 rows: p_k unchanged (RATE B1 TAB4, bitwise) 50, B1 next state moved 50 -> true
+G-LEAK C4_zshuf     : L(LEAK) 0.0050125418235442915 |-(-log 0.995)| 5.204170427930421e-18 (<= 1e-9) true, lowest true; flip 50 rows: p_k unchanged (RATE B1 TAB4, bitwise) 50, B1 next state moved 50 -> true
+G-LEAK C4_radio_only: L(LEAK) 0.0050125418235442915 |-(-log 0.995)| 5.204170427930421e-18 (<= 1e-9) true, lowest true; flip 50 rows: p_k unchanged (RATE B1 TAB4, bitwise) 50, B1 next state moved 50 -> true
+confirmation: rows 8641, valid 8641, excluded 0 = 0.0 % (by fail mark Pair{String, Int64}[])
+confirmation: max interval within a boot, all rows 30.01 s, valid rows 30.01 s
+boots of the confirmation period: boot rows valid up_first up_last cum_first cum_last
+  83c87cfb 5496 5496 104054.55 268913.44 259213.39 424072.28
+  851197f9 3145 3145 7.99 94332.61 424072.28 518396.9
+shift w_sum: design mean 297.201088 sd 39.798745 | confirmation mean 316.23701 sd 45.693788 | mean shift 0.478305 design sd
+shift b_n: design mean 2.992479 sd 0.813457 | confirmation mean 1.437797 sd 0.993778 | mean shift -1.911206 design sd
+response rate P(Y_a=1) over valid rows C4_full      : ["0.860201", "0.523319"] (design ["0.809325", "0.789772"])
+response rate P(Y_a=1) over valid rows C4_noradio   : ["0.794353", "0.794468"] (design ["0.7944", "0.794516"])
+response rate P(Y_a=1) over valid rows C4_zshuf     : ["0.852332", "0.519037"] (design ["0.825176", "0.797524"])
+response rate P(Y_a=1) over valid rows C4_radio_only: ["0.538248", "0.1273"] (design ["0.546454", "0.886613"])
+C4_full yields g = 0..5 counts: compartment 1 [1208, 983, 1615, 1166, 1476, 2193], compartment 2 [4119, 1212, 1956, 740, 236, 378]; distinct [6, 6]
+radio_flip_rate (C4_full vs C4_noradio) ["0.165374", "0.327161"]; mean|g_full - g_noradio| ["0.860549", "1.549126"]
+losses on the confirmation period (nat, mean over the two actions; actions 4234/4407, seed 650001): series RATE B1 TAB4 LEAK | RATE-B1 B1-TAB4
+  C4_full       0.647240007 0.230651107 0.18022669 0.005012542 | 0.4165889 0.050424417
+  C4_noradio    0.510028511 0.185897017 0.083709021 0.005012542 | 0.324131494 0.102187996
+  C4_zshuf      0.658862468 0.335749667 0.354100436 0.005012542 | 0.323112801 -0.018350769
+  C4_radio_only 1.325185024 0.348617034 0.393480145 0.005012542 | 0.976567989 -0.04486311
+point: D_shuf 0.093476099, L_B1(zshuf) - L_B1(full) 0.10509856
+block bootstrap (B 5000, seed 650002 fresh for every L, indices shared by all series; 95 % CI type 7): L blocks dropped | stat [lo, hi]
+  L 120: 72 blocks, 1 rows dropped
+      B1_minus_TAB4_full   [0.033519395, 0.066702441]
+      B1_zshuf_minus_full  [0.085132027, 0.124964402]
+      D_full               [0.354920429, 0.481806251]
+      D_noradio            [0.299221058, 0.347789025]
+      D_radio_only         [0.900099044, 1.047642016]
+      D_shuf               [0.054399779, 0.131464524]
+      D_zshuf              [0.280160871, 0.367096243]
+  L 240: 36 blocks, 1 rows dropped
+      B1_minus_TAB4_full   [0.038290426, 0.062823246]
+      B1_zshuf_minus_full  [0.088657994, 0.121549071]
+      D_full               [0.365659814, 0.465761691]
+      D_noradio            [0.306503365, 0.3429252]
+      D_radio_only         [0.877263083, 1.062079755]
+      D_shuf               [0.054136507, 0.128757787]
+      D_zshuf              [0.292686536, 0.352034734]
+  L 360: 24 blocks, 1 rows dropped
+      B1_minus_TAB4_full   [0.04072998, 0.059768101]
+      B1_zshuf_minus_full  [0.094294488, 0.115611016]
+      D_full               [0.373253416, 0.45329329]
+      D_noradio            [0.309908765, 0.339566025]
+      D_radio_only         [0.867870238, 1.069863258]
+      D_shuf               [0.049216829, 0.130109449]
+      D_zshuf              [0.308727315, 0.338263757]
+  L 720: 12 blocks, 1 rows dropped
+      B1_minus_TAB4_full   [0.042841423, 0.057111817]
+      B1_zshuf_minus_full  [0.093877993, 0.11629686]
+      D_full               [0.362669114, 0.460021365]
+      D_noradio            [0.314372469, 0.335180413]
+      D_radio_only         [0.826258233, 1.113891464]
+      D_shuf               [0.041978478, 0.134816568]
+      D_zshuf              [0.306504377, 0.337929514]
+P-S65-1 quality: valid 8641 (>= 7000) true, excluded 0.0 % (< 2 %) true, max interval all/valid 30.01/30.01 s (<= 120) true
+P-S65-2: C4_full rates ["0.860201", "0.523319"] in [0.15, 0.90], distinct yields [6, 6] (>= 4): holds
+P-S65-3: radio_flip_rate ["0.165374", "0.327161"] (>= 0.05 both): holds
+P-S65-4: min over L of CI lo: (a) D_full 0.354920429 (> 0.05) holds; (b) D_radio_only 0.826258233 (> 0) holds; (c) D_shuf 0.041978478 (> 0) holds -> holds
+    alongside: min CI lo D_noradio 0.299221058, L_B1(zshuf)-L_B1(full) 0.085132027
+P-S65-5: L(B1) - L(TAB4) on C4_full (point) 0.050424417: holds
+gates in this run: G-A0 PASS, G-BLIND PASS, G-DESIGN PASS, G-F PASS, G-LEAK PASS (G-DET and G-CORE: confirm_c4.jl final)
+confirm_72h.tsv sha cd3d4febc0f94356c856dc452d1db91b7646b9c665ed177b1fc747d5aebdf697; summary.json sha c1d206659a47a8dcd04b68d20ecfaec962115523c1a2ee737d3ead18c6dc7cec

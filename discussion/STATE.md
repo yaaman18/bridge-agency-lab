@@ -132,3 +132,11 @@
   - `38c446b` で S63・S52 72h・S64 C0 凍結を commit 済み（push 未）。その後、Pi で最終 `watch.sh` と写し上の `end_check.sh`（`BOOTS = 1`）を実施。
   - `t1`（L2）・`t2`（L2+SF）とも **`n = 60,480 / 60,480`** 完走、`end 60480 eof` 正常終了（`inactive`）、両体 60,480/60,480 全 commit 行基準 SHA 一致・`chain_ok = true`・`breaks/behind/errors/unfinished/unknown = 0`・`throttled = 0x0`・`clean`、**PT1〜PT4 全成立**（記録 `experiments/results-trial-final.out`、未 commit）。`s52-ambient-log` は `active` 継続、Pi 上の完走済み unit は未取り外し。
   - **次の候補**: (1) S54 完走記録の commit（必要なら `s54-trial-1/2` unit 取り外し・`git push`）、(2) **S64 C0 の純 Julia I 段実装・実行**、(3) **S52 換算規則の仕様化・凍結→72h 超検証**。
+- **2026-11-23 深夜 S65（72h 確かめの期間検証）全 7 関門 PASS・P-S65-1〜5 全成立・`codex-lab` I-R r2 APPROVE（項番184、#71）＋S66 C1 ドラフト r3 3 系統 APPROVE＋Bool マッピング監査＋Pi 5 TRM 実装計画書完了**:
+  - **S54 完走記録**: `502cb23` で commit 済み（Pi 一時応答なしのため `s54-trial-1/2` unit 取り外しは再接続時に実施；両 unit `inactive` 済み）。
+  - **S65（項番184、#71、`codex-lab` I-R r2 APPROVE）**: 未開封 72h 確かめの期間（`259,213..518,397 s`, 8,641 行、144h 超未開封維持）で全 7 関門 PASS・**P-S65-1〜5 全成立**（`b_n` `−1.91 SD` ドリフト下でも `C4_full` 非飽和 `[0.860, 0.523]`・6 値全出現・`radio_flip_rate [16.5%, 32.7%]`・対シャッフル時間構造利得 `D_shuf = +0.0935 nat`［最小 95% CI 下限 `+0.0420 > 0`］・`TAB4 > B1 +0.0504`）。
+  - **S66（C1 閉ループドラフト r3）**: `discussion/specs/S66-draft-c1-closedloop.md` が両者 APPROVE（S64 C0 合格まで未凍結維持）。C2 数理設計メモ `discussion/notes/D-C2-HEAD-LEARN.md`・統合工程表 `ROADMAP-FIRST-AUE-CUTOUT.md`・Pi 5 実装計画書 `PLAN-PI5-TRM-DEPLOY.md` 整備済み。
+  - **Bool マッピング脆弱性監査**: `discussion/notes/D-BOOL-MAPPING.md`・BP11（仮定 H8）・`audit/dc_mapping_audit.jl`（読取専用、`core/` 無変更）で `mapping_spec_hash` 確定、`cross!` 31 窓差（`elem_self` 21/31・結合 `value_gfp` 84 件）および `core/dc.jl` の `α` 比較特徴 7/8 過剰宣言 2 件を検出。
+  - **実行中**: S64 C0（`experiments/c0_trm/`）I 段実装・評価（`claude-lab`）。
+  - **完了（3 系統 r3 AGREE＋ユーザー承認済み 2026-11-23 22:51 JST）**: `D-AUE-SPECIES`（`discussion/notes/D-AUE-SPECIES-AND-GAPS.md` O30〜O33・`PLAN-PI5-TRM-DEPLOY.md` 最小 4 継ぎ目反映・BP11 拡充）。**U-SP1a・U-SP1b（BP11/H8）・U-SP2 すべて承認済み**（`user-decisions.md`・`promise-cutout.md` §7 付則へ反映済み）。
+  - **完了（項番185、#72、2026-11-23 23:09 JST）**: 多型 AUE 最小 4 継ぎ目 Julia 仕様試作 `experiments/aue_seam/`。種非依存の同一床 `bed.jl` 無変更で `AUE-A`（`core/LabCore.jl`）・`AUE-B`（`NestingCPCC.jl`）双方を通過（GS1〜GS4 全 PASS・2 回実行 SHA `3b751842...6ac58` 一致・負対照 8 件全検知・`core/check/run.sh` PASS；Rust 床汎用性は Phase 6 まで未主張）。完了バッチを `git commit`（実行中の `experiments/c0_trm/` は除外、push 未）。
