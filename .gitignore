@@ -39,6 +39,8 @@ experiments/trm/diag/probe/
 rust/trm-det/target/
 # Phase 3: build output of the separate onelife-trm workspace
 rust/onelife-trm/target/
+# Phase 2 dry-run binary bundles/outputs (regenerable by experiments/pi5_p2_dryrun/make_and_check_s47.jl)
+experiments/pi5_p2_dryrun/out/
 
 # S54 garden (openFrameworks viewer) build output
 viewer/s54-of/obj/

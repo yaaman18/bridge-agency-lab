@@ -6,14 +6,21 @@
 
 mod bed;
 mod c4_radio;
+mod head_c2;
+mod recovery;
 mod sha256;
+mod sin_table;
 mod spec;
+mod trm_infer;
 
 use std::env;
+use std::fs;
 use std::path::Path;
 use std::process;
 
+use crate::sin_table::{verify_sin_table_sha256, SIN_TABLE_SHA256};
 use crate::spec::SpeciesSpec;
+use crate::trm_infer::run_trm_bundle;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -36,8 +43,43 @@ fn main() {
                 }
             }
         }
+        Some("verify-sin") => {
+            let got = verify_sin_table_sha256();
+            if got == SIN_TABLE_SHA256 {
+                println!("OK sin_table_sha256={got}");
+            } else {
+                eprintln!("ERR sin_table_sha256 mismatch: got={got} expected={SIN_TABLE_SHA256}");
+                process::exit(1);
+            }
+        }
+        Some("run-trm") => {
+            let (Some(bundle_path), Some(out_path)) = (args.get(2), args.get(3)) else {
+                eprintln!("usage: onelife-trm run-trm <bundle.bin> <out.bin>");
+                process::exit(2);
+            };
+            let bytes = match fs::read(bundle_path) {
+                Ok(b) => b,
+                Err(e) => {
+                    eprintln!("read {bundle_path}: {e}");
+                    process::exit(2);
+                }
+            };
+            match run_trm_bundle(&bytes) {
+                Ok(out) => {
+                    if let Err(e) = fs::write(out_path, &out) {
+                        eprintln!("write {out_path}: {e}");
+                        process::exit(1);
+                    }
+                    println!("OK trm_out_sha256={}", sha256::sha256_hex(&out));
+                }
+                Err(e) => {
+                    eprintln!("ERR {e}");
+                    process::exit(2);
+                }
+            }
+        }
         Some("version") | None => {
-            println!("onelife-trm 0.1.0 (phase3-bed-skeleton; phenomenal_claim=not_certified)");
+            println!("onelife-trm 0.1.0 (phase3-bed+trm+c2+s68; phenomenal_claim=not_certified)");
         }
         Some(other) => {
             eprintln!("unknown subcommand: {other}");
@@ -490,5 +532,204 @@ mod tests {
         sin_tbl[500] = 0.0;
         let (g1_sym, g2_sym) = compute_c4_yields(&sin_tbl, 0, 999.0, 999.0, true);
         assert_eq!((g1_sym, g2_sym), (2.0, 2.0));
+    }
+
+    #[test]
+    fn test_s67_head_c2_grad_boundaries_and_accounting() {
+        use crate::head_c2::*;
+
+        // G-C2-GRAD: 49 grid points (l8, l7) x Y in {0, 1} = 98 points vs Float64 central diff (h_fd = 1e-6)
+        let grid: [f64; 7] = [-10.0, -1.0, -1e-4, 0.0, 1e-4, 1.0, 10.0];
+        let h_fd = 1e-6f64;
+        let s64 = |x: f64| if x >= 0.0 { x + 1.0 } else { 1.0 / (1.0 - x) };
+        let loss64 = |l8: f64, l7: f64, y: f64| {
+            let p = s64(l8) / (s64(l8) + s64(l7));
+            -y * p.ln() - (1.0 - y) * (1.0 - p).ln()
+        };
+        let mut max_err = 0.0f64;
+        for &l8 in &grid {
+            for &l7 in &grid {
+                for &y in &[0.0f64, 1.0f64] {
+                    let p = s64(l8) / (s64(l8) + s64(l7));
+                    let gl8 = (p - y) / (1.0 + l8.abs());
+                    let gl7 = (y - p) / (1.0 + l7.abs());
+                    let num8 = (loss64(l8 + h_fd, l7, y) - loss64(l8 - h_fd, l7, y)) / (2.0 * h_fd);
+                    let num7 = (loss64(l8, l7 + h_fd, y) - loss64(l8, l7 - h_fd, y)) / (2.0 * h_fd);
+                    let e8 = (gl8 - num8).abs();
+                    let e7 = (gl7 - num7).abs();
+                    if e8 > max_err { max_err = e8; }
+                    if e7 > max_err { max_err = e7; }
+                }
+            }
+        }
+        assert!(max_err <= 1e-6, "G-C2-GRAD max_err={max_err} > 1e-6");
+
+        // G-C2-ACCOUNT: (a) normal update, (b) upkeep shortfall -> 0.875 fade, (c) budget skip -> no fade, (d) death -> frozen
+        let w0 = HeadWeights {
+            w8: [0.25f32; HIDDEN],
+            w7: [-0.25f32; HIDDEN],
+            we: [0.125f32; HIDDEN],
+            be: 0.0f32,
+        };
+        let h = [0.5f32; HIDDEN];
+        let mut head = HeadC2::new(w0.clone(), 0.03125f32).unwrap();
+        let pred = head.predict(&h);
+        assert!(pred.p > 0.0 && pred.p < 1.0 && pred.e > 0.0 && pred.e < 1.0);
+
+        // Updated step changes weights
+        let act_u = head.post_step_update(true, true, true, &h, pred, false).unwrap();
+        assert_eq!(act_u, HeadStepAction::Updated);
+        assert_ne!(head.w.to_le_bytes(), w0.to_le_bytes());
+
+        // Budget skip does NOT change weights (no fade)
+        let snap_after_u = head.w.to_le_bytes();
+        let act_b = head.post_step_update(true, true, false, &h, pred, false).unwrap();
+        assert_eq!(act_b, HeadStepAction::SkippedOnBudget);
+        assert_eq!(head.w.to_le_bytes(), snap_after_u);
+
+        // Death freezes weights completely (even if upkeep_paid_full=false)
+        let act_d = head.post_step_update(false, false, false, &h, pred, false).unwrap();
+        assert_eq!(act_d, HeadStepAction::FrozenOnDeath);
+        assert_eq!(head.w.to_le_bytes(), snap_after_u);
+
+        // Upkeep shortfall fades toward w0 by exact 0.875f32
+        let before_fade_w8_0 = head.w.w8[0];
+        let act_f = head.post_step_update(true, false, true, &h, pred, false).unwrap();
+        assert_eq!(act_f, HeadStepAction::FadedOnUpkeepShortfall);
+        let expected_w8_0 = w0.w8[0] + 0.875f32 * (before_fade_w8_0 - w0.w8[0]);
+        assert_eq!(head.w.w8[0].to_bits(), expected_w8_0.to_bits());
+
+        // NaN injection is never masked by clamp -> NonFiniteWeightError
+        let mut h_nan = [0.5f32; HIDDEN];
+        h_nan[3] = f32::NAN;
+        let res_nan = head.post_step_update(true, true, true, &h_nan, pred, true);
+        assert!(res_nan.is_err(), "NaN must trigger NonFiniteWeightError");
+    }
+
+    #[test]
+    fn test_s68_power_loss_recovery_cases_a_to_d() {
+        use crate::recovery::*;
+
+        let hdr = "1|header|0|id=a|0000\n";
+        let in0 = "2|input|0|g1=f64:3|aaaa\n";
+        let cm0 = "3|commit|0|state_sha=bbbb|cccc\n";
+        let in1 = "4|input|1|g1=f64:4|dddd\n";
+
+        // Case A: input(1) fsynced, run still at step 1 -> execute step 1 once with stamped input
+        let audit_a = format!("{hdr}{in0}{cm0}{in1}");
+        assert_eq!(
+            plan_recovery(1, audit_a.as_bytes()).unwrap(),
+            RecoveryAction::ExecuteStampedInputOnce {
+                step: 1,
+                raw_line: in1.trim_end().to_string()
+            }
+        );
+
+        // Case B: run already atomic-renamed to step 2, commit(1) missing -> emit commit(1) then proceed to 2
+        assert_eq!(
+            plan_recovery(2, audit_a.as_bytes()).unwrap(),
+            RecoveryAction::EmitMissingCommitFromRun {
+                step: 1,
+                next_step: 2
+            }
+        );
+
+        // Case C: commit(0) fsynced, run at step 1 -> resume cleanly at step 1
+        let audit_c = format!("{hdr}{in0}{cm0}");
+        assert_eq!(
+            plan_recovery(1, audit_c.as_bytes()).unwrap(),
+            RecoveryAction::ResumeClean { next_step: 1 }
+        );
+
+        // Case D: partial non-LF fragment -> truncate partial & acquire run_step
+        let audit_d = format!("{hdr}{in0}{cm0}4|input|1|g1=f64:");
+        assert_eq!(
+            plan_recovery(1, audit_d.as_bytes()).unwrap(),
+            RecoveryAction::TruncatePartialAndAcquire {
+                next_step: 1,
+                fragment_len: "4|input|1|g1=f64:".len()
+            }
+        );
+    }
+
+    #[test]
+    fn test_s68_sin_table_sha256_parity_with_julia() {
+        use crate::sin_table::*;
+        let got = verify_sin_table_sha256();
+        assert_eq!(got, SIN_TABLE_SHA256);
+        assert_eq!(
+            got,
+            "170c65dfadc4e2c345cff8e1bd5a5d34f191e844a55f0c158492251febecc58a"
+        );
+        let tbl = sin_table_1000();
+        assert_eq!(tbl[0].to_bits(), 0x0000000000000000);
+        assert_eq!(tbl[250].to_bits(), 0x3ff0000000000000);
+        assert_eq!(tbl[500].to_bits(), 0x3ca1a62633145c07);
+        assert_eq!(tbl[750].to_bits(), 0xbff0000000000000);
+        // Frozen table integrates cleanly with compute_c4_yields
+        let (g1, g2) = compute_c4_yields(&tbl, 0, 999.0, 999.0, true);
+        assert_eq!((g1, g2), (2.0, 3.0));
+    }
+
+    #[test]
+    fn test_trm_infer_bit_exact_with_julia_and_0cycle_fallback() {
+        use crate::head_c2::{HeadC2, HeadWeights, HIDDEN};
+        use crate::trm_infer::*;
+
+        let dryrun_dir = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+            .join("..")
+            .join("..")
+            .join("experiments")
+            .join("pi5_p2_dryrun")
+            .join("out");
+        let b_ok = dryrun_dir.join("s47_dryrun.bin");
+        let b_1ulp = dryrun_dir.join("s47_dryrun_1ulp.bin");
+        if !b_ok.exists() || !b_1ulp.exists() {
+            return; // skip only if regenerable dryrun bundle is absent
+        }
+
+        let bytes_ok = std::fs::read(&b_ok).unwrap();
+        let out_ok = run_trm_bundle(&bytes_ok).unwrap();
+        assert_eq!(
+            sha256_hex(&out_ok),
+            "7486cd15cd1eb8f00f696c2f77cd34f06dbd198bb4c7618c1ca07c6b62963e41",
+            "onelife-trm internal TRM inference must match Julia TrmDet.jl bit-for-bit!"
+        );
+
+        let bytes_1ulp = std::fs::read(&b_1ulp).unwrap();
+        let out_1ulp = run_trm_bundle(&bytes_1ulp).unwrap();
+        assert_eq!(
+            sha256_hex(&out_1ulp),
+            "812c5934eea0cf5fc0d104d9784725915cfed95b490e6885393917c0a1cb24ca"
+        );
+
+        // Verify budgeted forward pass: 0-cycle fallback returns exact H_init; 3-cycle feeds HeadC2 cleanly
+        let model = TrmModel::from_bundle_bytes(&bytes_ok).unwrap();
+        let toks = vec![0i32; 47];
+        let o0 = model.forward_budgeted(&toks, 0).unwrap();
+        assert_eq!(o0.h_cycles_completed, 0);
+        assert_eq!(o0.ops_used, OPS_FIXED);
+        assert_eq!(&o0.h_pos45[..], &model.hinit[..HIDDEN]);
+        assert_eq!(&o0.h_pos46[..], &model.hinit[..HIDDEN]);
+
+        let o3 = model.forward_budgeted(&toks, 3).unwrap();
+        assert_eq!(o3.h_cycles_completed, 3);
+        assert_eq!(o3.ops_used, OPS_FIXED + 3 * OPS_PER_H_CYCLE);
+        assert_ne!(o3.h_pos45, o0.h_pos45);
+
+        // End-to-end TRM -> HeadC2 predict -> post_step_update
+        let head = HeadC2::new(
+            HeadWeights {
+                w8: [0.1f32; HIDDEN],
+                w7: [-0.1f32; HIDDEN],
+                we: [0.05f32; HIDDEN],
+                be: 0.0f32,
+            },
+            0.03125f32,
+        )
+        .unwrap();
+        let p1 = head.predict(&o3.h_pos45);
+        let p2 = head.predict(&o3.h_pos46);
+        assert!(p1.p.is_finite() && p2.p.is_finite() && p1.e.is_finite() && p2.e.is_finite());
     }
 }

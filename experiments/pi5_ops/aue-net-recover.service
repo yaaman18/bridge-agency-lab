@@ -1,0 +1,7 @@
+[Unit]
+Description=AUE Pi 5 Network & mDNS Self-Recovery (Infrastructure Only; Never Touches AUE/S52)
+After=network.target NetworkManager.service avahi-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/aue-net-recover.sh
