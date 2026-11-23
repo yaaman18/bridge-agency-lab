@@ -634,3 +634,9 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 元に戻す方法: `experiments/ambient/{analyze_72h.jl,README-72h.md,out-72h/}` および S64 関連ファイルを使わない。README 項番182 に「取り下げ」と書く。
 - 影響したファイル: `discussion/specs/S64-c0-trm-openloop.md`、`experiments/c0_trm/predictions.toml`、`experiments/freeze-c0-trm.txt`、`experiments/ambient/{analyze_72h.jl,README-72h.md,out-72h/}`、`discussion/notes/pi-rebuild.md`、`.gitignore`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
 - ユーザー: 案 A・B 両方実施と末尾 `git commit` を指示済み（2026-11-23）。S64 実装着手・S52 換算凍結・`git push` は次段で確認。
+
+## #70 S54 Raspberry Pi 5 実機 7 日間試運転（二体×60,480 歩）完走確認（2026-11-23 21:48 JST）
+- 種別: 読み取り専用完走照合（Pi の本番ファイル・systemd unit 非変更、`experiments/results-trial-final.out` 記録）。
+- 結果の読み（README 項番183）: `t1`（L2）・`t2`（L2+SF）ともに `n = 60,480 / 60,480` に到達し `end 60480 eof` で正常終了（`inactive`）。`end_check.sh`（`BOOTS = 1`）両体 **`PASS`**（60,480/60,480 全 commit 行が基準 SHA と一致、`other=0`, `missing=0`, `beyond=0`, `chain_ok=true`, `starts=2<=2`, `breaks=0`, `audit_behind=0`, `errors=0`, `unfinished=0`, `unknown=0`）。凍結予測 **PT1〜PT4 全成立**（見張り 23/23 到達行 `ref_match=true`・`throttled=0x0`・`ext4=0`・`clean`・`fs_errors=0`、PT2 同一起動 193 対違反 0 件）。S52 は boot 列のみ参照し 72h 超の電波・温度列は未開封維持。
+- 影響したファイル: `experiments/s54-watch.tsv`、`experiments/results-trial-final.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 完走確認指示済み（2026-11-23 21:46 JST）。完走済み unit の Pi からの取り外し（`S54-start-procedure.md` §(c)）および追加 commit/push はユーザー指示待ち。

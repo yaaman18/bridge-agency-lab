@@ -2162,6 +2162,16 @@ include("../core/LabCore.jl"); using .LabCore
     - **I-R（codex-lab、2026-11-23）**: r1 で REVISE（P5 行数 2/3 分割と累積稼働秒の照合明記、P3 実装追加点検の明記、P6 C3 境界 3 対・C4 連続周期の注記）→ `README-72h.md` 反映後に **r2 APPROVE**。
     - **言えないこと**: 確かめの期間（72 時間より後）は未開封であり換算の良し悪しは未検証（S52 §3）、他場所・季節への一般化、個体による使用、`phenomenal_claim = :not_certified`。
 
+183. S54 Raspberry Pi 5 実機 7 日間試運転（二体×60,480 歩）完走確認（2026-11-23 21:48 JST。2026-11-16 20:21 JST 開始、仕様 `discussion/specs/S54-trial-run.md` r4・凍結予測 `experiments/predictions-trial-run.md` r2・`experiments/s54-watch.tsv`・結果 `experiments/results-trial-final.out`、decisions-log #70。Pi 本番ファイル・systemd unit は一切変更・停止していない）。
+    - **確認した事実（PT1〜PT4 全成立・両体 `end_check: PASS`）**:
+      - **完走**: `t1`（`s54-trial-1`, L2）・`t2`（`s54-trial-2`, L2+SF）ともに **`n = 60,480 / 60,480`** に到達し、監査末尾 `wait 60481` → `end 60480 eof` で正常終了（unit `inactive`）。`s52-ambient-log.service` は `active` 継続。
+      - **PT1（一致）**: **成立**。到達可能な全 23/23 見張り行で `ref_match = true`。最終 `end_check.sh`（`BOOTS = 1`）で両体とも **`run SHA = reference true`**、監査全 **60,480/60,480** 件の `commit` 行が Julia 基準 SHA と一致（`other = 0`, `missing = 0`, `beyond = 0`、監査行数 `181,444`、`chain_ok = true`）。
+      - **PT2（間隔）**: **成立**。同一起動内かつ 30 分以上離れた全 193 組の見張り行対で違反 `0` 件（$\max(\Delta n - (\Delta t_{\mathrm{Mac}}/10 + 1)) = -1.200$）。
+      - **PT3（停止・再開）**: **成立**。期間中の起動識別子は `83c87cfb`（開始時）と `851197f9`（11-19 再起動後）の 2 種（`BOOTS = 1`、S52 の boot 列のみ参照し電波・温度列は未開封維持）。再起動後に人手なしで自動再開、`n` 減少 `0`、両体とも `starts = 2 <= BOOTS + 1 (2)`、`unfinished = 0`, `unknown stops = 0`。
+      - **PT4（機械健全性）**: **成立**。全 23/23 到達行で `throttled = 0x0`, `ext4_errors = 0`, `fs_state = clean`, `fs_errors = 0`、両監査 `errors = 0`。
+      - **予測なし報告**: 死の歩 `t1 = 20514`（20515 歩め）・`t2 = 11342`（11343 歩め、基準どおり）、`breaks = 0`, `audit_behind = 0`。
+    - **言えないこと**: 他機種・実入力経路・より長い期間・切り出し済み個体への一般化、`phenomenal_claim = :not_certified`。
+
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
 ### 統合度 Φ（定義のみ。計算しない：ユーザー決定 2026-10-31）

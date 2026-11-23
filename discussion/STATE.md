@@ -128,3 +128,7 @@
   - **案 A（S64 C0 仕様化）**: `discussion/specs/S64-c0-trm-openloop.md` r3 が並列 S-R 3 往復で両者 **APPROVE**。`experiments/c0_trm/predictions.toml` とともに `experiments/freeze-c0-trm.txt` へ SHA-256 凍結済み（種子 `1046..1109`、次 `1110`）。実装未着手。
   - **案 B（S52 72h 設計期間解析）**: Pi から `ambient-20261123.tsv` を読み取り専用複製（`.gitignore` 隔離、72h 超は完全未開封）、`analyze_72h.jl` で 8,643 行（`259,183.39 s <= 259,200 s`）のみ解析。全 4 関門 PASS、**PS1/PS2/PS4後半/PS5 成立・PS3 `not testable`・PS4前半外れ（`0.862`）**、`codex-lab` I-R **r2 APPROVE**。換算探索では C4（合成周期＋実電波摂動）が非飽和かつ `RATE-B1 +0.3737`, `B1-TAB4 +0.0056`（探索材料のみ、確かめの期間未開封）。
   - **次の候補**: (1) **S54 7 日試運転の完走確認**（20:40 JST ごろ `n=60480` 予定を過ぎているため、Pi で最終 `watch.sh`＋`end_check.sh`）、(2) **S64 C0 の純 Julia I 段実装・実行**（凍結済み `freeze-c0-trm.txt` から開始）、(3) **S52 換算規則の仕様化・凍結**（凍結後に初めて 72h 超の確かめの期間で検証）。
+- **2026-11-23 21:48 JST S54 Pi 7 日試運転 完走確認（項番183、#70、PT1〜PT4 全成立・両体 `end_check: PASS`）**:
+  - `38c446b` で S63・S52 72h・S64 C0 凍結を commit 済み（push 未）。その後、Pi で最終 `watch.sh` と写し上の `end_check.sh`（`BOOTS = 1`）を実施。
+  - `t1`（L2）・`t2`（L2+SF）とも **`n = 60,480 / 60,480`** 完走、`end 60480 eof` 正常終了（`inactive`）、両体 60,480/60,480 全 commit 行基準 SHA 一致・`chain_ok = true`・`breaks/behind/errors/unfinished/unknown = 0`・`throttled = 0x0`・`clean`、**PT1〜PT4 全成立**（記録 `experiments/results-trial-final.out`、未 commit）。`s52-ambient-log` は `active` 継続、Pi 上の完走済み unit は未取り外し。
+  - **次の候補**: (1) S54 完走記録の commit（必要なら `s54-trial-1/2` unit 取り外し・`git push`）、(2) **S64 C0 の純 Julia I 段実装・実行**、(3) **S52 換算規則の仕様化・凍結→72h 超検証**。

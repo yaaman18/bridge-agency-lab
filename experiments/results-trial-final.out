@@ -1,0 +1,46 @@
+# S54 7-day Pi trial final completion check (2026-11-23 21:48 JST, neon-lab).
+# Read-only on Pi: one final watch.sh row + one cat each of t1/t2 run and run.audit (copies in scratch),
+# plus boot-id-only column from /home/pi/s52/ambient.tsv (pi_s >= 1794828000; radio/temp columns untouched for S52 blinding).
+# Live Pi files and systemd units were NOT modified or disabled.
+
+# Final watch row (appended to experiments/s54-watch.tsv):
+2026-11-23T21:47:59+0900	1795438079	851197f9-76e5-41b0-8f9a-71308c96efb1	0x0	0	clean	0	inactive	60480	31f126b62176c52ea4dede716cffeae0f39630f6a4aec82b5aaec798cbf9d8d3	true	ed94af93f489440e0f7b3470c9cac816f4c05c09d7cf3ebfa2078c28e0ded683	inactive	60480	9cda9db99eb03316d75a8baef28f0acadc0078a68bac741604d0051ebcf07ec6	true	e96599b0ec100aa9356c82ff8d9498b7df90046a981bbf8857b2d2396b56b9e4
+
+# Units on Pi at 21:48 JST:
+s54-trial-1: inactive
+s54-trial-2: inactive
+s52-ambient-log: active
+
+# Canonical BOOTS count (distinct boot ids in s54-watch.tsv and S52 log boot column since trial start):
+boots: 83c87cfb-c8d0-44d6-a1b1-44c3acbdbb68 (start), 851197f9-76e5-41b0-8f9a-71308c96efb1 (2026-11-19 reboot)
+BOOTS = 1
+
+# end_check (Mac product binary ~/s54-work/build-d/mac-prod/release/being-tools, BOOTS=1):
+== t1 (L2, ref-669-L2.sha) ==
+end_check run ed94af93f489440e0f7b3470c9cac816f4c05c09d7cf3ebfa2078c28e0ded683 audit cd0453fda1086ea7ec3222bec88f7313f01a100808e064f1ec3bebd735d7bc22: n 60480, run SHA = reference true; audit lines 181444; commits with the reference SHA 60480, other 0 (first null), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok true; starts 2 (boots 1, <= boots+1 true); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0
+end_check: PASS
+onelife-info: {"n":60480,"payload_sha":"31f126b62176c52ea4dede716cffeae0f39630f6a4aec82b5aaec798cbf9d8d3","law":"L2","t":20514,"dead":true,"death":20514}
+audit tail:
+wait 60480 daaae3bfec27de4bf3592186c8dfeff29ee82d835050a43c3d079a478084a8cd 0242ac8c47cc34a46548e4d0da7102290640a2cb577a4aac9171fa5979f85b74
+begin 60480 0242ac8c47cc34a46548e4d0da7102290640a2cb577a4aac9171fa5979f85b74 7f135995266627ecfa3d7bcafd446e73156c86143e70b363136c6ae2f3bded23
+commit 60480 31f126b62176c52ea4dede716cffeae0f39630f6a4aec82b5aaec798cbf9d8d3 7f135995266627ecfa3d7bcafd446e73156c86143e70b363136c6ae2f3bded23 1ab003601914228650bd1d791b4675f4fc5f117bc1f94784ada0846e760d41fb
+wait 60481 1ab003601914228650bd1d791b4675f4fc5f117bc1f94784ada0846e760d41fb 6d4785873552260af56853a0bf4e204cda462adefc24a731f4328d2a19465c16
+end 60480 eof 6d4785873552260af56853a0bf4e204cda462adefc24a731f4328d2a19465c16 dc0e0fb15f497a747e85422de4db9ba339d58f52a2f9144fdea1033468ad228d
+
+== t2 (L2+SF, ref-669-L2SF.sha) ==
+end_check run e96599b0ec100aa9356c82ff8d9498b7df90046a981bbf8857b2d2396b56b9e4 audit 04f1a01901548d772e76c6c7f0168f1e4f7b6e830185e7014a3d1d3ebbc184b2: n 60480, run SHA = reference true; audit lines 181444; commits with the reference SHA 60480, other 0 (first null), distinct n 60480, missing in 1..60480 0, beyond n 0; chain_ok true; starts 2 (boots 1, <= boots+1 true); breaks 0; audit_behind 0; errors 0; unfinished 0; unknown stops 0
+end_check: PASS
+onelife-info: {"n":60480,"payload_sha":"9cda9db99eb03316d75a8baef28f0acadc0078a68bac741604d0051ebcf07ec6","law":"L2+SF","t":11342,"dead":true,"death":11342}
+audit tail:
+wait 60480 97ed5e74be48350fa02c19e6979aff1f71347adca3b0250706e15e72dc71eba1 dacbcc1ccb408b819913606a11644aa980208597334384e908498a5f1f687206
+begin 60480 dacbcc1ccb408b819913606a11644aa980208597334384e908498a5f1f687206 018ffa633bb7128b1e5833e97363a6b1821e2ca687ce15172260ceb10772beba
+commit 60480 9cda9db99eb03316d75a8baef28f0acadc0078a68bac741604d0051ebcf07ec6 018ffa633bb7128b1e5833e97363a6b1821e2ca687ce15172260ceb10772beba b819c2d463861264db6f3c08646aea28b267d6844a7c691861588350ea6d7c8a
+wait 60481 b819c2d463861264db6f3c08646aea28b267d6844a7c691861588350ea6d7c8a b4637272f200bf2916c40026e1dcacd7c7c4b665b287c47827dc31b0020f0c1d
+end 60480 eof b4637272f200bf2916c40026e1dcacd7c7c4b665b287c47827dc31b0020f0c1d 22599ee3a31ce3c95a658960b3424e2e2af5da36f71b5ba1eab03add10b0a191
+
+# Frozen predictions PT1-PT4 (experiments/predictions-trial-run.md r2):
+- PT1 (agreement): HELD (23/23 reachable watch rows ref_match=true; 60480/60480 audit commits match reference SHA, other=0, missing=0, beyond=0 for both t1 and t2)
+- PT2 (interval): HELD (193 same-boot watch pairs >=30 min, 0 violations, max(dn - (dt/10 + 1)) = -1.200)
+- PT3 (stops/restarts): HELD (BOOTS=1; resumed automatically after 2026-11-19 reboot; n never decreased; starts=2 <= BOOTS+1=2; unfinished=0, unknown_stops=0)
+- PT4 (machine): HELD (throttled=0x0, ext4_errors=0, fs_state=clean, fs_errors=0 on 23/23 reachable watch rows; audit errors=0 for both lives)
+- Reported without prediction: death steps t1=20514 (20515th step), t2=11342 (11343th step), breaks=0, audit_behind=0.
