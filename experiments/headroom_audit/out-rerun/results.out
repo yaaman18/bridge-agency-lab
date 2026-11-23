@@ -1,0 +1,76 @@
+S63 headroom audit, threads 1, out headroom_audit/out-rerun
+G7 spec and predictions.toml = freeze-headroom-audit.txt: true   G0 S57 code = freeze-draw-conf-code.txt: true
+G5 dev/train/eval disjoint, outside 1..1005 and 52xxx: true
+G1 u686 L2 UNI stat = S57's pilot record (4983 draws): true   neg: = u687's record (must be false): false
+thresholds c over the full world: [-4.500000, 0.500000], max |Φ - Simpson| at 41 points 4.92e-14
+G4 stat u1006 (b_rev 19, Y=0 18/104): max |closed - brute| mid-block 5.34e-14, block 6 3.94e-14, block 24 4.32e-14, all steps 5.34e-14; max |Σw - 1| 2.22e-16
+G4 rev u1006 (b_rev 19, Y=0 15/104): max |closed - brute| mid-block 5.41e-14, block 6 4.02e-14, block 24 1.53e-14, all steps 5.41e-14; max |Σw - 1| 2.22e-16   neg: constant hazard 1/19, max |diff| (must be > 1e-5) 0.134
+G4 stat u1007 (b_rev 7, Y=0 15/104): max |closed - brute| mid-block 4.32e-14, block 6 4.32e-14, block 24 4.32e-14, all steps 4.32e-14; max |Σw - 1| 2.22e-16
+G4 rev u1007 (b_rev 7, Y=0 14/104): max |closed - brute| mid-block 4.4e-14, block 6 4.4e-14, block 24 1.54e-14, all steps 4.4e-14; max |Σw - 1| 2.22e-16   neg: constant hazard 1/19, max |diff| (must be > 1e-5) 0.0101
+G4 stat u1008 (b_rev 12, Y=0 16/104): max |closed - brute| mid-block 4.32e-14, block 6 4.32e-14, block 24 1.51e-14, all steps 4.32e-14; max |Σw - 1| 0
+G4 rev u1008 (b_rev 12, Y=0 14/104): max |closed - brute| mid-block 7.86e-14, block 6 4.32e-14, block 24 4.33e-14, all steps 7.86e-14; max |Σw - 1| 1.11e-16   neg: constant hazard 1/19, max |diff| (must be > 1e-5) 0.0756
+G4 stat u1009 (b_rev 16, Y=0 15/104): max |closed - brute| mid-block 4.32e-14, block 6 4.11e-14, block 24 1.52e-14, all steps 4.32e-14; max |Σw - 1| 2.22e-16
+G4 rev u1009 (b_rev 16, Y=0 17/104): max |closed - brute| mid-block 4.56e-14, block 6 4.1e-14, block 24 4.34e-14, all steps 4.56e-14; max |Σw - 1| 2.22e-16   neg: constant hazard 1/19, max |diff| (must be > 1e-5) 0.0852
+G4 closed form = brute force within 1e-5 in all three phases, weights sum 1 ± 1e-12: true
+G2 obs: update steps from T0 710358, max acts per step 1, examples 344540, mismatches 0, neg shifted by one step mismatches 251038; rev = stat before s_rev and swapped from s_rev (and differs): true -> true
+   deaths obs: stat 3, rev 2 of 40 each
+   obs stat: update steps where Y = y[a] > 0 (the body's pool) differs from g[s, a] > 0 (the table): 1177 of 353739
+   obs rev: update steps where Y = y[a] > 0 (the body's pool) differs from g[s, a] > 0 (the table): 1293 of 356619
+train exo stat: examples [55381, 55019], answered [44536, 43987], RATE [0.804164, 0.799477], TAB4 keys seen 277/1250
+train exo rev: examples [55381, 55019], answered [44202, 44145], RATE [0.798133, 0.802348], TAB4 keys seen 287/1250
+train obs stat: examples [23656, 23634], answered [23478, 23449], RATE [0.992434, 0.992131], TAB4 keys seen 221/1250
+train obs rev: examples [23795, 23759], answered [23616, 23562], RATE [0.992436, 0.991667], TAB4 keys seen 221/1250
+G3 exo stat: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 100/100 where defined (undefined at t: 0); B1 state at the next step changed 100/100 (diagnostic: at the next example of the action 100/100, at some later example 100/100)   neg: LEAK changed 100/100
+   BAYES later (j > t): (a) comparable (finite in both) 40/100, finite p changed 40/40; (b) exit from the domain (finite -> NaN, zero mass under every hypothesis) 96 (finite change before the exit 36, exit only 60); (c) no comparable later example, finite change UNVERIFIED 60; NaN -> finite 0; flipped history with zero mass somewhere 96
+   per seed (seed: comparable/changed/exit/exit_only/unverified): u1006 8/8/25/17/17  u1007 8/8/24/17/17  u1008 11/11/23/14/14  u1009 13/13/24/12/12
+G3 exo rev: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 100/100 where defined (undefined at t: 0); B1 state at the next step changed 100/100 (diagnostic: at the next example of the action 100/100, at some later example 100/100)   neg: LEAK changed 100/100
+   BAYES later (j > t): (a) comparable (finite in both) 55/100, finite p changed 55/55; (b) exit from the domain (finite -> NaN, zero mass under every hypothesis) 96 (finite change before the exit 51, exit only 45); (c) no comparable later example, finite change UNVERIFIED 45; NaN -> finite 0; flipped history with zero mass somewhere 96
+   per seed (seed: comparable/changed/exit/exit_only/unverified): u1006 10/10/25/15/15  u1007 12/12/24/13/13  u1008 17/17/23/8/8  u1009 16/16/24/9/9
+G3 obs stat: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 33/33 where defined (undefined at t: 67); B1 state at the next step changed 100/100 (diagnostic: at the next example of the action 100/100, at some later example 100/100)   neg: LEAK changed 100/100
+   BAYES later (j > t): (a) comparable (finite in both) 20/100, finite p changed 20/20; (b) exit from the domain (finite -> NaN, zero mass under every hypothesis) 31 (finite change before the exit 18, exit only 13); (c) no comparable later example, finite change UNVERIFIED 80; NaN -> finite 0; flipped history with zero mass somewhere 100
+   per seed (seed: comparable/changed/exit/exit_only/unverified): u1006 6/6/14/8/19  u1007 4/4/3/0/21  u1008 2/2/3/1/23  u1009 8/8/11/4/17
+G3 obs rev: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 33/33 where defined (undefined at t: 67); B1 state at the next step changed 100/100 (diagnostic: at the next example of the action 99/100, at some later example 99/100)   neg: LEAK changed 100/100
+   BAYES later (j > t): (a) comparable (finite in both) 19/100, finite p changed 19/19; (b) exit from the domain (finite -> NaN, zero mass under every hypothesis) 31 (finite change before the exit 17, exit only 14); (c) no comparable later example, finite change UNVERIFIED 81; NaN -> finite 0; flipped history with zero mass somewhere 100
+   per seed (seed: comparable/changed/exit/exit_only/unverified): u1006 7/7/13/6/18  u1007 3/3/3/1/22  u1008 1/1/3/2/24  u1009 8/8/12/5/17
+   P3 B1 diagnostic miss u1009: flipped s = 3603, next example of the action s = 3885 (non-example updates of the action between: 275); B1_raw differs at some later example (of 2259): false; the trace equals the original's after 248 later updates of the action (s = 3856, state 0.9999999999999996, last difference -1.1102230246251565e-16) of 3225
+G3: true
+gates before the evaluation: G0 G1 G2 G3 G4 G5 G7 all true (G6 = the rerun, G8 = core/check and bridge-protocol, outside this run)
+eval: max |Σw - 1| over all BAYES runs (defined steps) 5.77e-15
+eval exo stat: BAYES with zero mass under every hypothesis in 0/24 seeds
+eval exo rev: BAYES with zero mass under every hypothesis in 0/24 seeds
+eval obs stat: BAYES with zero mass under every hypothesis in 24/24 seeds, first such step s: 4103 470 6001 307 1189 1965 3234 4455 541 583 2604 597 1055 2665 4396 1784 1601 6103 494 2408 533 2546 3233 1429
+eval obs rev: BAYES with zero mass under every hypothesis in 24/24 seeds, first such step s: 3566 470 6002 307 1189 1965 3250 3089 541 583 2604 597 1055 2665 4396 1784 1601 6002 494 2421 533 2619 3233 1429
+== exo (excluded stat_all Int64[], rev Int64[], stat_pseudo Int64[])
+   means stat_all  RATE 0.499873 B1 0.062998 B1_raw 0.114345 TAB4 0.050885 BAYES_raw 0.015299 BAYES_clip 0.019025  frac_outside_clip 0.8470
+   means rev_all   RATE 0.500689 B1 0.063718 B1_raw 0.114800 TAB4 0.050320 BAYES_raw 0.015382 BAYES_clip 0.019011  frac_outside_clip 0.8476
+   means rev_wtrue RATE 0.525342 B1 0.099480 B1_raw 0.152054 TAB4 0.057152 BAYES_raw 0.018553 BAYES_clip 0.021120  frac_outside_clip 0.8702
+   means rev_wshuf RATE 0.597729 B1 0.075887 B1_raw 0.143589 TAB4 0.061483 BAYES_raw 0.018344 BAYES_clip 0.022150  frac_outside_clip 0.8306
+   stat_all             n 24 mean +0.047699 CI95 [+0.045750, +0.049720] CI99.17 [+0.045164, +0.050491] wins 24 losses 0 ties 0 p 1.192e-07
+   rev_all              n 24 mean +0.048336 CI95 [+0.046188, +0.050611] CI99.17 [+0.045528, +0.051467] wins 24 losses 0 ties 0 p 1.192e-07
+   rev_win_spec         n 24 mean +0.023384 CI95 [-0.001270, +0.050322] CI99.17 [-0.008571, +0.059574] wins 13 losses 11 ties 0 p 0.8388
+   rev_win_true         n 24 mean +0.080927 CI95 [+0.057140, +0.106695] CI99.17 [+0.050008, +0.117089] wins 21 losses 3 ties 0 p 0.0002772
+   rev_win_shuf         n 24 mean +0.057542 CI95 [+0.044046, +0.070547] CI99.17 [+0.039935, +0.075350] wins 22 losses 2 ties 0 p 3.588e-05
+   shuf_reset_diag      n 24 mean +0.009206 CI95 [-0.004573, +0.022463] CI99.17 [-0.008688, +0.027200] wins 17 losses 7 ties 0 p 0.06391
+   stat_pseudo          n 24 mean -0.005307 CI95 [-0.025646, +0.015266] CI99.17 [-0.031264, +0.022615] wins 13 losses 11 ties 0 p 0.8388
+   B1_vs_RATE_stat_all  n 24 mean +0.436876 CI95 [+0.422223, +0.451165] CI99.17 [+0.417405, +0.455596] wins 24 losses 0 ties 0 p 1.192e-07
+   B1_vs_RATE_rev_all   n 24 mean +0.436971 CI95 [+0.422923, +0.451104] CI99.17 [+0.418341, +0.455357] wins 24 losses 0 ties 0 p 1.192e-07
+   STAT_PSEUDO pass (CI95 lo < delta_win): true
+== obs (excluded stat_all Int64[], rev [1025, 1026, 1028, 1029, 1032, 1034, 1035, 1037, 1039, 1040, 1044, 1045], stat_pseudo [1025, 1026, 1028, 1029, 1032, 1034, 1035, 1037, 1039, 1040, 1044, 1045])
+   means stat_all  RATE 0.049760 B1 0.045137 B1_raw 0.116458 TAB4 0.034923 BAYES_raw NaN BAYES_clip NaN  frac_outside_clip 0.8577
+   means rev_all   RATE 0.049193 B1 0.042990 B1_raw 0.108425 TAB4 0.034725 BAYES_raw NaN BAYES_clip NaN  frac_outside_clip 0.8596
+   means rev_wtrue RATE 0.139854 B1 0.083168 B1_raw 0.176682 TAB4 0.080019 BAYES_raw NaN BAYES_clip NaN  frac_outside_clip 0.9053
+   means rev_wshuf RATE 0.061687 B1 0.050047 B1_raw 0.126134 TAB4 0.038038 BAYES_raw NaN BAYES_clip NaN  frac_outside_clip 0.8851
+   stat_all             n 24 UNDEFINED (BAYES zero mass in 24 seeds)
+   rev_all              n 12 UNDEFINED (BAYES zero mass in 12 seeds)
+   rev_win_spec         n 12 UNDEFINED (BAYES zero mass in 12 seeds)
+   rev_win_true         n 12 UNDEFINED (BAYES zero mass in 10 seeds)
+   rev_win_shuf         n 12 UNDEFINED (BAYES zero mass in 11 seeds)
+   shuf_reset_diag      n 12 UNDEFINED (BAYES zero mass in 12 seeds)
+   stat_pseudo          n 12 UNDEFINED (BAYES zero mass in 12 seeds)
+   B1_vs_RATE_stat_all  n 24 mean +0.004622 CI95 [+0.003495, +0.005789] CI99.17 [+0.003166, +0.006187] wins 24 losses 0 ties 0 p 1.192e-07
+   B1_vs_RATE_rev_all   n 12 mean +0.006202 CI95 [+0.004730, +0.007654] CI99.17 [+0.004129, +0.008167] wins 12 losses 0 ties 0 p 0.0004883
+   STAT_PSEUDO pass (CI95 lo < delta_win): undefined
+decision {"exo_only":"PROCEED","obs_only":"UNDECIDED","overall":"PROCEED","axes":{"obs rev_all":{"defined":false,"proceed_ok":false,"stop_ok":false},"obs rev_win_spec":{"defined":false,"proceed_ok":false,"stop_ok":false},"exo stat_all":{"defined":true,"proceed_ok":true,"stop_ok":false},"exo rev_win_spec":{"defined":true,"proceed_ok":false,"stop_ok":false},"exo rev_all":{"defined":true,"proceed_ok":true,"stop_ok":false},"obs stat_all":{"defined":false,"proceed_ok":false,"stop_ok":false}}}
+predictions (P-S63-1 needs G6 and G8 as well) {"P_S63_2 obs":true,"P_S63_5":"undefined","P_S63_4_rev_spec_positive_mean exo":true,"P_S63_5 exo":true,"P_S63_4_rev_spec_positive_mean":"undefined","P_S63_4_stat_small":false,"P_S63_4_rev_spec_positive_mean obs":"undefined","P_S63_2":true,"P_S63_2 exo":true,"P_S63_3 exo":true,"P_S63_4_stat_small exo":false,"P_S63_4_stat_small obs":"undefined","P_S63_3 obs":"undefined","P_S63_5 obs":"undefined","P_S63_3":"undefined"}
+results.tsv sha256 ff7e278d540cd05b01d9c4afd24d0feac9211947235463925a8f1a36fb2564ba   summary.json sha256 1695723443ddace4e6e0bb9b67149577f19029c0baad537018a169010e0b2fe9
+G6 results.tsv and summary.json = headroom_audit/out's: true

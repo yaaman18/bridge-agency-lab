@@ -1,33 +1,81 @@
 #!/usr/bin/env bash
 # fable-lab（Claude Fable 5.2）に1回だけ問う。読むだけの助言役（2026-11-10 ユーザー決定、discussion/agents/fable-lab.md）。
 # 使い方:
-#   bash discussion/fable-turn.sh stuck <依頼ファイル> [high|xhigh]   claude-lab が煮詰まったとき（依頼ファイルの形は agents/fable-lab.md）
-#   bash discussion/fable-turn.sh user "<質問>" [high|xhigh]          ユーザーの任意の確認（ターミナルから `! bash discussion/fable-turn.sh user "…"`）
-#   bash discussion/fable-turn.sh review <依頼ファイル> [high|xhigh]  ユーザーが頼んだ文書の良否の判定（依頼ファイルに対象・観点を書く）
-#   --dry を最後に付けると、Fable を呼ばずに指示文だけを出す。
+#   bash discussion/fable-turn.sh stuck <依頼ファイル> [low|medium|high|xhigh] [--api] [--max-budget-usd N] [--no-tools] [--dry]
+#   bash discussion/fable-turn.sh user "<質問>" [low|medium|high|xhigh] [--api] [--max-budget-usd N] [--no-tools] [--dry]
+#   bash discussion/fable-turn.sh review <依頼ファイル> [low|medium|high|xhigh] [--api] [--max-budget-usd N] [--no-tools] [--dry]
+#   --api（または FABLE_USE_API=1）: 明示的に Anthropic API クレジット（ANTHROPIC_API_KEY）で実行する。
+#     未指定時は既定どおり ANTHROPIC_API_KEY を外し claude.ai サブスクのみで実行（誤課金防止）。
+#     --api 時に環境変数 ANTHROPIC_API_KEY が未設定なら、リポジトリ外の
+#     "$HOME/.config/anthropic/fable.env"（chmod 600 必須）から ANTHROPIC_API_KEY のみ読み込む。
+#   --max-budget-usd <金額>: --api 時の 1 回あたりの上限（既定 FABLE_MAX_BUDGET_USD=1.5）。
+#   --no-tools: ツール読込を無効化して 1 手完結にする（抜粋を依頼文へ同梱済みの場合、大幅節約）。
+#   --dry: Fable を呼ばずに指示文と実行設定だけを出す。
 # 守り:
-#  1. Pro のサブスクの範囲で走らせる: ANTHROPIC_API_KEY・ANTHROPIC_AUTH_TOKEN を外し、`claude auth status` が claude.ai のログインでなければ走らせない。
+#  1. 既定は Pro のサブスクの範囲で走らせる: ANTHROPIC_API_KEY・ANTHROPIC_AUTH_TOKEN を外し、`claude auth status` が claude.ai のログインでなければ走らせない。
 #     2026-11-16 を過ぎたら止まる（ユーザー「11月16日まで pro プランならサブスクの範囲内」）。続けるときは FABLE_OK_AFTER=1（ユーザーが確かめてから）。
-#  2. 道具は Read・Grep・Glob だけ（--tools）。書けない・コマンドを走らせない・ネットに出ない。答えはこのスクリプトが discussion/fable/ に保存する。
+#     --api 指定時のみ Anthropic API クレジット（上限 --max-budget-usd つき）を許可する。
+#  2. 道具は Read・Grep・Glob だけ（--tools。--no-tools 時は空）。書けない・コマンドを走らせない・ネットに出ない。答えはこのスクリプトが discussion/fable/ に保存する。
 #     MCP（claude.ai のコネクタを含む）は読み込まない（下の claude -p の前の注記）。
 #  3. ローカル・ユーザーの設定を読まない（--setting-sources project）: agmsg のフックで新しい席が立つのを防ぐ。
 #  4. 前後でラボと ~/bridge-protocol の状態を比べ、discussion/fable/ 以外の変化があれば報告して終了コード 2。
 set -euo pipefail
 LAB="$HOME/bridge-agency-lab"
-MODE="${1:-}"; ARG="${2:-}"; EFFORT="high"; DRY=0
-for a in "${@:3}"; do case "$a" in high|xhigh) EFFORT="$a" ;; --dry) DRY=1 ;; *) echo "不明な引数: $a" >&2; exit 1 ;; esac; done
+MODE="${1:-}"; ARG="${2:-}"; EFFORT="${FABLE_EFFORT:-medium}"; DRY=0
+USE_API="${FABLE_USE_API:-0}"
+MAX_BUDGET_USD="${FABLE_MAX_BUDGET_USD:-1.5}"
+MODEL="${FABLE_MODEL:-claude-fable-5-2}"
+KEY_FILE="${FABLE_API_KEY_FILE:-$HOME/.config/anthropic/fable.env}"
+TOOLS="Read,Grep,Glob"
+shift 2 || true
+while [ $# -gt 0 ]; do
+  case "$1" in
+    low|medium|high|xhigh) EFFORT="$1"; shift ;;
+    --api) USE_API=1; shift ;;
+    --no-tools) TOOLS=""; shift ;;
+    --max-budget-usd)
+      [ $# -ge 2 ] || { echo "--max-budget-usd の値がありません" >&2; exit 1; }
+      MAX_BUDGET_USD="$2"; shift 2 ;;
+    --dry) DRY=1; shift ;;
+    *) echo "不明な引数: $1" >&2; exit 1 ;;
+  esac
+done
 case "$MODE" in
   stuck|review) [ -f "$ARG" ] || { echo "依頼ファイルがない: $ARG" >&2; exit 1; } ;;
   user)  [ -n "$ARG" ] || { echo '質問が空' >&2; exit 1; } ;;
-  *) echo 'usage: bash discussion/fable-turn.sh stuck|review <依頼ファイル> | user "<質問>"  [high|xhigh] [--dry]' >&2; exit 1 ;;
+  *) echo 'usage: bash discussion/fable-turn.sh stuck|review <依頼ファイル> | user "<質問>"  [low|medium|high|xhigh] [--api] [--max-budget-usd N] [--no-tools] [--dry]' >&2; exit 1 ;;
 esac
 
-if [ "$(date +%Y%m%d)" -gt 20261116 ] && [ "${FABLE_OK_AFTER:-0}" != 1 ]; then
-  echo "2026-11-16 を過ぎた。Pro の範囲で使えるかをユーザーが確かめてから FABLE_OK_AFTER=1 で走らせる。" >&2; exit 1
+API_EXTRA_ARGS=()
+if [ "$USE_API" = 1 ]; then
+  unset ANTHROPIC_AUTH_TOKEN CLAUDE_CODE_USE_BEDROCK CLAUDE_CODE_USE_VERTEX CLAUDE_CODE_USE_FOUNDRY
+  if [ -z "${ANTHROPIC_API_KEY:-}" ] && [ -f "$KEY_FILE" ]; then
+    PERM="$(stat -f '%Lp' "$KEY_FILE" 2>/dev/null || stat -c '%a' "$KEY_FILE" 2>/dev/null || echo 777)"
+    case "$PERM" in
+      600|400) ;;
+      *) echo "キーファイルの権限が広すぎます（chmod 600 必須）: $KEY_FILE (mode=$PERM)" >&2; exit 1 ;;
+    esac
+    KEY_LINE="$(grep -E '^(export[[:space:]]+)?ANTHROPIC_API_KEY=' "$KEY_FILE" | tail -n 1 || true)"
+    KEY_VAL="${KEY_LINE#*=}"
+    KEY_VAL="${KEY_VAL%\"}" ; KEY_VAL="${KEY_VAL#\"}"
+    KEY_VAL="${KEY_VAL%\'}" ; KEY_VAL="${KEY_VAL#\'}"
+    if [ -n "$KEY_VAL" ]; then
+      export ANTHROPIC_API_KEY="$KEY_VAL"
+    fi
+  fi
+  if [ "$DRY" != 1 ] && [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+    echo "ANTHROPIC_API_KEY が未設定です。環境変数で渡すか、リポジトリ外の $KEY_FILE（chmod 600）に ANTHROPIC_API_KEY=... を保存してください。" >&2
+    exit 1
+  fi
+  API_EXTRA_ARGS=(--max-budget-usd "$MAX_BUDGET_USD")
+else
+  if [ "$(date +%Y%m%d)" -gt 20261116 ] && [ "${FABLE_OK_AFTER:-0}" != 1 ]; then
+    echo "2026-11-16 を過ぎた。Pro の範囲で使えるかをユーザーが確かめてから FABLE_OK_AFTER=1 で走らせる（API クレジット使用時は --api）。" >&2; exit 1
+  fi
+  unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN ANTHROPIC_BASE_URL CLAUDE_CODE_USE_BEDROCK CLAUDE_CODE_USE_VERTEX CLAUDE_CODE_USE_FOUNDRY
+  claude auth status 2>/dev/null | grep -q '"authMethod": *"claude.ai"' \
+    || { echo "claude.ai のサブスクでログインしていない（API の課金で走るおそれ）。走らせない。" >&2; exit 1; }
 fi
-unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN ANTHROPIC_BASE_URL CLAUDE_CODE_USE_BEDROCK CLAUDE_CODE_USE_VERTEX CLAUDE_CODE_USE_FOUNDRY
-claude auth status 2>/dev/null | grep -q '"authMethod": *"claude.ai"' \
-  || { echo "claude.ai のサブスクでログインしていない（API の課金で走るおそれ）。走らせない。" >&2; exit 1; }
 
 OUTDIR="$LAB/discussion/fable"; LOG="$LAB/discussion/.fable-turns"; mkdir -p "$OUTDIR" "$LOG"
 TS="$(date +%Y%m%d-%H%M%S)"; JSON="$LOG/$TS-$MODE.json"; ANS="$OUTDIR/$TS-$MODE.md"
@@ -38,12 +86,13 @@ snap() { (cd "$LAB" && find . -path ./discussion/fable -prune -o -path ./discuss
           [ -d "$HOME/bridge-protocol/.git" ] && (cd "$HOME/bridge-protocol" && git status --porcelain=v1 -uall | sed 's/^/BP /')) | sort; }
 
 COMMON=$(cat <<'P'
-あなたは bridge-agency-lab の fable-lab（Claude Fable 5.2）。この呼び出しは1回きりで、前の記憶はない。作業ディレクトリはラボの根。
-役目は読むだけの助言役。議決権はなく、あなたの答えは claude-lab と codex-lab（またはユーザー）が吟味する「提案」として扱われる。
-最初に discussion/agents/fable-lab.md を読む。規律の正本は CLAUDE.md、理論の正本は ~/bridge-protocol（読むだけ）。
-道具は読むことだけ。必要なら README.md・discussion/decisions-log.md・notes・~/bridge-protocol の該当箇所を広く読んでよい（この席は通読してよい）。
-確かめたこと（ファイル:行を付ける）・推論・提案を分ける。提案には反証条件を付ける。phenomenal_claim に触れない。
-有限の不在を一般の不可能に昇格しない。答えは日本語で、指示された形で。
+あなたは bridge-agency-lab の fable-lab（Claude Fable 5.2）。この呼び出しは1回きりで前の記憶はない。作業ディレクトリはラボの根。
+役目は読むだけの助言役（議決権なし、提案は claude-lab・codex-lab が吟味し §3 で決定）。理論正本は ~/bridge-protocol（読むだけ）。
+【コスト節約の必須規律】
+- 依頼文の抜粋・指定箇所を主根拠とし、ファイルを通読しない。
+- 追加の Read/Grep/Glob は「未確認の重要事実」に限って範囲指定（offset/limit）で行い、目安 3〜4 回以内に収める（`agents/fable-lab.md` の読込は不要）。
+- 思考も出力も冗長にせず、枠の外の盲点・定義の滑り・反証条件だけに集中する。
+確かめたこと（ファイル:行）・推論・提案（反証条件つき）を分ける。phenomenal_claim に触れない。有限の不在を一般の不可能に昇格しない。日本語で指定形式厳守。
 P
 )
 if [ "$MODE" = stuck ]; then
@@ -84,24 +133,29 @@ PROMPT="$COMMON
 
 $TASK"
 
-if [ $DRY -eq 1 ]; then printf '%s\n' "$PROMPT"; echo "--- (dry: Fable は呼ばない。effort=$EFFORT)"; exit 0; fi
+if [ $DRY -eq 1 ]; then
+  printf '%s\n' "$PROMPT"
+  echo "--- (dry: Fable は呼ばない。mode=$MODE effort=$EFFORT model=$MODEL tools='${TOOLS}' use_api=$USE_API max_budget_usd=$MAX_BUDGET_USD)"
+  exit 0
+fi
 
 snap > "$LOG/$TS.before"
 TO=""; command -v timeout >/dev/null && TO="timeout ${FABLE_TURN_SECONDS:-1800}"
 set +e
 # MCP を切る（2026-11-10 の最初の試し走りで、--tools で絞っても claude.ai のコネクタ〈Claude Docs の作成・削除など〉が見えていたと fable-lab 自身が指摘）:
 # claude.ai のコネクタを読み込まない環境変数・空の MCP 設定だけを使う・mcp__ の道具を拒否、の三重。
-printf '%s' "$PROMPT" | (cd "$LAB" && ENABLE_CLAUDEAI_MCP_SERVERS=false $TO claude -p --model claude-fable-5-2 --effort "$EFFORT" \
-  --tools Read,Grep,Glob --permission-mode dontAsk --setting-sources project --no-session-persistence \
+printf '%s' "$PROMPT" | (cd "$LAB" && ENABLE_CLAUDEAI_MCP_SERVERS=false $TO claude -p --model "$MODEL" --effort "$EFFORT" \
+  ${API_EXTRA_ARGS[@]+"${API_EXTRA_ARGS[@]}"} \
+  --tools "$TOOLS" --permission-mode dontAsk --setting-sources project --no-session-persistence \
   --strict-mcp-config --mcp-config '{"mcpServers":{}}' --disallowedTools 'mcp__*' \
   --add-dir "$HOME/bridge-protocol" --output-format json) > "$JSON" 2> "$LOG/$TS.err"
 RC=$?
 set -e
 snap > "$LOG/$TS.after"
 
-python3 - "$JSON" "$ANS" "$MODE" "$EFFORT" "$RC" "${ARG#$LAB/}" <<'PY'
+python3 - "$JSON" "$ANS" "$MODE" "$EFFORT" "$RC" "${ARG#$LAB/}" "$USE_API" <<'PY'
 import json, sys
-js, ans, mode, effort, rc, arg = sys.argv[1:]
+js, ans, mode, effort, rc, arg, use_api = sys.argv[1:]
 try: d = json.load(open(js))
 except Exception as e:
     print(f"fable-lab の手は失敗（終了コード {rc}、出力を読めない: {e}）。ログ {js}"); sys.exit(1)
@@ -110,8 +164,10 @@ if d.get("is_error") or not d.get("result"):
 head = f"# fable-lab {mode}（effort {effort}）\n\n- 問い: {arg if mode in ('stuck','review') else arg[:200]}\n- 扱い: 提案（議決権なし）。吟味は claude-lab・codex-lab、決めるのは §3 の手続き\n\n"
 open(ans, "w").write(head + d["result"].strip() + "\n")
 u = d.get("usage", {})
+cost = d.get("total_cost_usd", 0.0) or 0.0
+billing = f"API クレジット課金 ${cost:.3f}" if use_api == "1" else "サブスクの範囲、金額の表示は参考値"
 print(d["result"].strip())
-print(f"\n--- fable-lab: 保存 {ans}  手数 {d.get('num_turns')}  入力 {u.get('input_tokens',0):,}+キャッシュ {u.get('cache_read_input_tokens',0):,}  出力 {u.get('output_tokens',0):,}  {d.get('duration_ms',0)//1000} 秒（サブスクの範囲、金額の表示は参考値）")
+print(f"\n--- fable-lab: 保存 {ans}  手数 {d.get('num_turns')}  入力 {u.get('input_tokens',0):,}+キャッシュ {u.get('cache_read_input_tokens',0):,}  出力 {u.get('output_tokens',0):,}  {d.get('duration_ms',0)//1000} 秒（{billing}）")
 PY
 PYRC=$?
 

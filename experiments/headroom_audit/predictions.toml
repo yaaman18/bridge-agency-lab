@@ -1,0 +1,68 @@
+# S63 余地の監査（C0 第 0 手）事前予測・凍結定数（2026-11-23）
+# 仕様: discussion/specs/S63-headroom-audit.md (r3, 3 系統 APPROVE)
+# 凍結ファイル: experiments/freeze-headroom-audit.txt
+# 結果を見た後にこのファイルを書き換えてはならない。外れた予測は外れたまま報告する。
+
+[meta]
+experiment = "S63-headroom-audit"
+spec = "discussion/specs/S63-headroom-audit.md"
+spec_rev = "r3"
+date = "2026-11-23"
+assumption = "H7"
+phenomenal_claim = "not_certified"
+
+[seeds]
+dev = [1006, 1007, 1008, 1009]
+train_start = 1010
+train_end = 1021
+eval_start = 1022
+eval_end = 1045
+next_unused_main_seed = 1046
+
+[world]
+law = "L2"
+arm = "UNI"
+T0 = 800
+STEPS = 10000
+P = 1000
+sigma = 1.0
+L = 300
+M = 2.5
+rev_block_min = 6
+rev_block_max = 24
+rev_seed_mul = 1000003
+rev_seed_add = 63
+
+[predictors]
+clip_lo = 0.005
+clip_hi = 0.995
+bayes_raw_eps = 1.0e-12
+b1_decay_k = 8
+tab4_window = 4
+tab4_alpha = 1.0
+
+[evaluation]
+delta_all = 0.002
+delta_win = 0.010
+win_k = 200
+shuf_block_shift = 9
+min_obs_all_per_action = 30
+min_obs_win_per_action = 15
+min_eligible_seeds = 16
+bootstrap_B = 5000
+bootstrap_seed = 630001
+stop_ci_level = 0.95
+proceed_ci_level = 0.9916666666666667
+proceed_sign_alpha = 0.008333333333333333
+
+[predictions]
+P_S63_1 = "G0..G8 の全 9 関門が合格する（G0 S57 6 ファイル SHA 一致、G1 種子 686 一致、G2 全更新歩 length(acts)<=1・例一致・1歩シフト不一致・rev反転一致、G3 Y_t 反転で 100 例ビット一致＋LEAK負対照変化、G4 実 synth_table 縮小版の 3 局面で数値積分と 1e-5 以内一致、G5 種子素集合、G6 -t 8 と -t 1 再実行 SHA 完全一致、G7 凍結 SHA 一致、G8 core/check 合格・BP 無変更）。"
+P_S63_2 = "obs・exo 両トラックの stat all・rev all で B1 が RATE に優越する（両側符号検定 p < 0.05、勝ち過半）。"
+P_S63_3 = "obs・exo 両トラックの stat all・rev all で BAYES_raw が B1 以上の精度（平均 Δ = L(B1) - L(BAYES_raw) >= 0）を示す。負になった場合は実装バグまたは仮定破れとして報告する。"
+P_S63_4 = "stat all の余地は小さい（平均 Δ_all <= 0.01 nat）。rev win_spec（逆転特異窓 k=200）では BAYES_raw が反転検知により B1 に対し正の特異利得を示す見込み（外れた場合はそのまま報告し、事前凍結 STOP / PROCEED / UNDECIDED 規則で機械判定する）。"
+P_S63_5 = "監査器負対照 STAT_PSEUDO（反転なし stat 上の偽特異差）は exo・obs 両トラックで 95% CI 下限 < delta_win (0.010 nat) に収まる。"
+
+[falsification]
+stop_rule = "exo・obs 両トラックの全 6 軸すべてで 95% CI 上限 < delta が成立した場合、(a,Y) 履歴のみを入力とする seq_len=47 TRM 移植・学習（C0）を停止する。"
+proceed_rule = "全 6 軸のいずれかで Bonferroni 99.17% CI 下限 > delta かつ両側符号検定 p < 0.05/6（勝ち過半）かつ当該トラックの STAT_PSEUDO 通過のとき、余地ありとして C0 へ進む。"
+undecided_rule = "上記いずれにも該当しない場合は未判定として誤停止せず報告する。"

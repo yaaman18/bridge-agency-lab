@@ -1,0 +1,87 @@
+S52 72h design-period analysis
+G-F ../discussion/specs/S52-ambient-log.md: frozen fdb95150edee now fdb95150edee ok
+G-F predictions-ambient-log.md: frozen 7444812c02db now 7444812c02db ok
+s52-moves.txt sha 935cbc2665e4: 3 entries, 2 say the place was not changed, recorded changes of place 0
+slicer: kept 8643 rows, summed uptime at the last kept row 259183.39 s, stopped at the boundary: true
+G-A0: A0 PASS (8643 rows)
+G-BLIND: design rows 8643, summed uptime at the last row 259183.39 s (<= 259200.0): true
+boot table (pi_s raw; corr = correction from s52-moves.txt; back = clock earlier than the previous row; lag = the clock advanced less than the new boot's uptime since the previous row, i.e. it must be behind; jump = max |dpi_s - duptime| within the boot):
+  boot      rows  valid  pi_first    pi_last     up_first   up_last     sum_start   sum_end     dpi_prev  back  lag   record      jump_raw  jump_corr  time_used
+  6fdcb2c4  1009   1009  1794666527  1794696768  10425.67   40667.07    0.0         30241.4     -         false false -           0.99      0.99       true
+  9d4d0aea    10     10  1794696811  1794697081  7.33       277.35      30241.4     30511.42    43        false false -           0.01      0.01       true
+  7c24432f  4156   4156  1794697116  1794821893  7.56       124663.85   30511.42    155167.71   35        false false +122(<=42.97) 120.99    1.01       true
+  83c87cfb  3468   3468  1794821935  1794925951  8.87       104024.55   155167.71   259183.39   42        false false -           1.0       1.0        true
+PS1: distinct w_sum 150 (>= 5), distinct b_n 7 (>= 3): holds
+PS2 days (JST of the corrected clock; rows of boots with time_used, spec section 2 rule):
+  day 2026-11-14: n(01-05) 0, n(19-23) 0, not usable
+  day 2026-11-15: n(01-05) 480, n(19-23) 480, usable: median b_n 3.0 vs 3.0 (false), median w_n 4.0 vs 4.0 (true)
+  day 2026-11-16: n(01-05) 480, n(19-23) 480, usable: median b_n 3.0 vs 4.0 (true), median w_n 4.0 vs 4.0 (true)
+  day 2026-11-17: n(01-05) 480, n(19-23) 480, usable: median b_n 1.0 vs 4.0 (true), median w_n 4.0 vs 4.0 (true)
+PS2: usable days 3; Bluetooth half holds (2 days); Wi-Fi half holds (3 days)
+PS2 days (sensitivity: only boots whose clock is backed by a record):
+  day 2026-11-14: n(01-05) 0, n(19-23) 0, not usable
+  day 2026-11-15: n(01-05) 480, n(19-23) 480, usable: median b_n 3.0 vs 3.0 (false), median w_n 4.0 vs 4.0 (true)
+  day 2026-11-16: n(01-05) 480, n(19-23) 0, not usable
+PS2 sensitivity (diagnostic): usable days 1; Bluetooth not testable (0 days); Wi-Fi not testable (1 days); boots without a record: 83c87cfb
+PS3: recorded changes of place in the design period 0 (< 2 qualifying moves): not testable
+PS4: lag-1 autocorrelation of t_mc 0.862274 over 8639 pairs (> 0.9): miss; corr(t_mc, w_sum) 0.017254 ([-0.3, 0.3]): holds
+PS5: failed rows 0/8643 = 0.0 % (< 2 %): true; max gap within a boot 30.01 s (<= 120): true -> holds
+  failed rows by mark: Dict{String, Int64}()
+distribution over valid rows (min q25 median q75 max distinct n):
+  w_n    0.0 3.0 4.0 4.0 4.0  distinct 4  n 8643
+  w_max  74.0 90.0 94.0 97.0 100.0  distinct 17  n 8640
+  w_sum  0.0 259.0 312.0 336.0 358.0  distinct 150  n 8643
+  w_24   0.0 2.0 2.0 2.0 2.0  distinct 3  n 8643
+  w_5    0.0 1.0 2.0 2.0 2.0  distinct 3  n 8643
+  b_n    1.0 3.0 3.0 3.0 7.0  distinct 7  n 8643
+  b_max  -79.0 -54.0 -52.0 -50.0 -24.0  distinct 48  n 8643
+  b_r    1.0 3.0 3.0 3.0 7.0  distinct 7  n 8643
+  t_mc   44650.0 47400.0 48500.0 49600.0 65550.0  distinct 26  n 8643
+median by JST hour (time_used valid rows): hour n w_sum w_n b_n t_mc
+  00   360 310.0 4.0 3.0 49050.0
+  01   360 274.0 3.0 3.0 49050.0
+  02   360 274.0 3.0 3.0 48500.0
+  03   360 314.0 4.0 3.0 47950.0
+  04   360 316.0 4.0 3.0 47400.0
+  05   360 314.0 4.0 3.0 47400.0
+  06   360 310.0 4.0 3.0 48500.0
+  07   356 309.0 4.0 3.0 47950.0
+  08   359 317.0 4.0 3.0 47950.0
+  09   360 305.5 4.0 3.0 47950.0
+  10   360 315.5 4.0 3.0 47400.0
+  11   360 312.0 4.0 3.0 47950.0
+  12   360 313.0 4.0 3.0 47400.0
+  13   360 310.0 4.0 3.0 47950.0
+  14   360 311.5 4.0 3.0 48500.0
+  15   360 317.0 4.0 3.0 49050.0
+  16   360 314.0 4.0 3.0 50150.0
+  17   360 317.0 4.0 3.0 50150.0
+  18   359 315.0 4.0 3.0 49600.0
+  19   360 313.5 4.0 3.0 50700.0
+  20   360 299.5 4.0 3.0 50700.0
+  21   360 314.0 4.0 4.0 50700.0
+  22   360 274.0 3.0 3.0 50150.0
+  23   369 274.0 3.0 3.0 49050.0
+autocorrelation within one boot at a lag of k rows (both rows valid): k w_sum w_n b_n t_mc (pairs)
+     1 0.702044 0.689544 0.950118 0.862274 (8639 pairs, median span 30.0 s)
+     2 0.476535 0.436385 0.943593 0.840468 (8635 pairs, median span 60.0 s)
+    10 0.171044 0.091643 0.914973 0.717742 (8603 pairs, median span 300.01 s)
+    30 -0.129301 -0.249738 0.850058 0.663745 (8543 pairs, median span 900.05 s)
+   120 0.110322 0.032033 0.634942 0.556587 (8273 pairs, median span 3600.19 s)
+   720 0.094898 0.020627 -0.016755 -0.00684 (6473 pairs, median span 21601.13 s)
+  1440 0.031008 -0.03765 0.074056 -0.145676 (4744 pairs, median span 43202.25 s)
+  2880 -0.008021 -0.071076 0.104192 0.223821 (1864 pairs, median span 86404.4 s)
+w_max / w_sum: 0.251701 0.285714 0.297468 0.364372 0.601351 (n 8640)
+corr(w_24, w_5) 0.013361; corr(w_sum, b_n) -0.001826
+explore: stream 8642 valid rows (first valid row dropped for C3), train 5761, design-val 2881 (train summed-uptime share ~2/3 by row count; thresholds from train only)
+explore (design-val log loss, nat, mean over the two actions; exploration only, no claim): cand  P(Y1) P(Y2) train | val  P(Y obs) val  RATE  B1  TAB4  LEAK  RATE-B1  B1-TAB4
+  C1: w_24 >= 2.0, w_5 >= 2.0 (train medians)
+      train ["0.989585", "0.557889"] | val ["0.983339", "0.551198"]  obs 0.76883  0.388135 0.374568 0.277518 0.005013  0.013566 0.09705  (val n by action [1465, 1416], action-1 share 0.50162)
+  C2: w_sum > 316.0, b_n > 3.0 (train medians)
+      train ["0.487415", "0.209339"] | val ["0.302326", "0.192989"]  obs 0.248178  0.588393 0.349516 0.359066 0.005013  0.238877 -0.009549  (val n by action [1465, 1416], action-1 share 0.50162)
+  C3: w_sum(t) >= w_sum(t-1), b_n(t) >= b_n(t-1) (previous valid row)
+      train ["0.609964", "0.979691"] | val ["0.596668", "0.984728"]  obs 0.77369  0.386731 0.411447 0.39386 0.005013  -0.024717 0.017588  (val n by action [1465, 1416], action-1 share 0.50162)
+  C4: 2.5+2.5 sin(2pi*3row/1000 + (0,pi)) + 1.0*z > 0.5, z from train mean 302.281201/sd 39.84832 (w_sum), 3.163687/0.560977 (b_n)
+      train ["0.816698", "0.763236"] | val ["0.746269", "0.650816"]  obs 0.699063  0.631629 0.257908 0.252272 0.005013  0.373721 0.005636  (val n by action [1465, 1416], action-1 share 0.50162)
+gates: G-A0 PASS, G-BLIND PASS, G-F PASS (G-DET is checked by running twice)
+summary.json sha f89a435691eca3b197d397ea82c36da4acdfce2b01feb65d728cbd807f4ec5bb; design_72h.tsv sha 5925386fa4a02791b72e190001d4bcf881d6a1c526853613115c44940569dcad

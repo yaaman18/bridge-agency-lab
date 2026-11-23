@@ -1,0 +1,2 @@
+0850ef5c6822d813fcc876c8c616061f14fd3d16d9ecaca24baab94cf8168d25  ../discussion/specs/S64-c0-trm-openloop.md
+5ee6674da2745afa0727a3feb101fdea7a2c2bcd6e4c749dcaa6ef3653ecf798  c0_trm/predictions.toml

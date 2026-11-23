@@ -614,3 +614,23 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
 - 元に戻す方法: `experiments/boundary_audit_b/`・S62b 関連文書を使わない。README 項番180 に「取り下げ」と書く。
 - 影響したファイル: `discussion/specs/S62b-aue-boundary-audit.md`、`experiments/predictions-boundary-audit-b.md`、`experiments/freeze-boundary-audit-b.txt`、`experiments/boundary_audit_b/{BoundaryAuditB.jl,run_gates.jl}`、`experiments/results-boundary-audit-b.out`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
 - ユーザー: 着手指示済み（2026-11-22）。結果の読みは事後承認待ち。
+
+## #68 S63: 余地の監査（C0 第 0 手：UNI 全歩記録上の予測余地と厳密逐次ベイズ上限照合）（2026-11-23）
+- 種別: 実装（`experiments/headroom_audit/` 新規独立監査、S57 凍結 6 本・`core/`・`rust/`・`formal/`・`~/bridge-protocol` 非変更）と結果の読み。
+- 決めたこと: D-PRED-ARCH（3 系統合意 O27〜O29・U2=`(ア)`・U4=`(ア)`・U5=`(ア)`・第一号切り出しは予測器系列込み）を受け、C0（`seq_len=47` TRM 移植・学習）の前に合成世界 2 族（`stat`・`rev`）× 2 トラック（外生行動 `exo`・正本 `L2 UNI` 軌道 `obs`）上で `RATE`・`B1`・`TAB4`・`BAYES_raw` を比較。仕様 r3・予測 `predictions.toml` を凍結（`experiments/freeze-headroom-audit.txt`、開発 `1006..1009`・学習 `1010..1021`・評価 `1022..1045`、次の未使用主列種子 `1046`）。
+- 結果の読み（README 項番181）: G0〜G8 全合格（G6 `-t 8` vs `-t 1` SHA 完全一致）。`exo` で `stat all` $\Delta = +0.04770$（99.17% CI `[+0.04516, +0.05049]`、24/0 勝）、`rev all` $\Delta = +0.04834$（24/0 勝）、`STAT_PSEUDO` 通過により凍結規則の機械判定は **`overall = PROCEED`**（**P-S63-4「`stat all` $\Delta \le 0.01$」は外れ**、余地は見込みの 4.8 倍で主に定常周期＋ブロック雑音由来）。一方 `obs` は `core/body_org.jl:107` の池バッファにより $Y=(y[a]>0)$ と $g[s,a]>0$ が乖離し、r3 無雑音ベイズが評価 24/24 全種子で途中から尤度 0・未定義（`obs_only = UNDECIDED`）。ただし `obs` でも `TAB4`（`0.03492`）が `B1`（`0.04514`）を `+0.0102 nat` 上回った。
+- 合意: 3 系統合意（S-R r3 で両者 APPROVE。I-R は `codex-lab` r1 REVISE の P2・P3・P5 を `claude-lab` が修正・再照合し、r2 で `codex-lab` **APPROVE**）。
+- 元に戻す方法: `experiments/headroom_audit/`・S63 関連文書を使わない。README 項番181 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S63-headroom-audit.md`、`experiments/freeze-headroom-audit.txt`、`experiments/headroom_audit/{predictions.toml,audit.jl,README.md,out/,out-rerun/}`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 3 系統合意案開始を承認済み（2026-11-23）。結果の読みと次手（C0＋TAB4 対照 vs S63 r4 池モデル／S52 72h 電波換算）は確認待ち。
+
+## #69 S52 実電波 72 時間設計期間の厳密解析＋S64 C0 仕様 r3・予測凍結（2026-11-23）
+- 種別: 解析実装（S52 72h：`experiments/ambient/analyze_72h.jl` 等、既存凍結コード非変更）＋仕様・予測凍結（S64 C0：`discussion/specs/S64-c0-trm-openloop.md` r3・`experiments/c0_trm/predictions.toml`・`experiments/freeze-c0-trm.txt`）。
+- 決めたこと:
+  1. **S52 72h 解析（案 B）**: Pi から `/home/pi/s52/ambient.tsv` を読み取り専用複製（SHA を `discussion/notes/pi-rebuild.md` に記録、生複製は `.gitignore` 隔離）し、累積稼働 259,200 s（72.0 h）で即時停止・境界行破棄するスライサーで 8,643 行（`259,183.39 s`）のみ抽出。72h 超の確かめの期間を完全未開封のまま凍結予測 PS1〜PS5 を判定し、設計期間内の行数 2/3 分割で換算候補 C1〜C4 を探索比較した。
+  2. **S64 C0 仕様化・凍結（案 A）**: `core/circuit.jl:119-139, 178` の一次確認で当歩受容器 `nw[1..8]` が未来漏れになる点を防ぎ、完了済み 4 暦歩 `j=s-4..s-1`（`s=0` 全枠 PAD、`L2` 8 受容器＋`rb` 予約 PAD＋行為＋応え）の `seq_len=47, vocab=12` 仕様を策定。C1 進行条件を主トラック `obs-full` 両族の 5 基準（`RATE`・`B1`・`TAB4`・`TAB_R1`・`TRM-1x1`）全優越に一本化、`val`/`cal` 種子分離、AdamATan2・初期化・`S_train=800`・`G-TIME`（3h 上限）・`ê_cal` 対称副基準・OOD 単一判定（`wins <= losses`）を凍結（種子 `1046..1109`、次の未使用主列種子 `1110`）。
+- 結果の読み（README 項番182）: S52 は G-F/G-A0/G-BLIND/G-DET 全 PASS。PS1 成立・PS2 Bluetooth/Wi-Fi 成立（`83c87cfb` 除外感度では `not testable`）・PS3 `not testable`・**PS4 前半外れ（`0.862 <= 0.9`）**／後半成立（`0.017`）・PS5 成立（失敗 `0%`、最大間隔 `30.01 s`）。換算探索では C4（合成周期＋実電波 `w_sum`/`b_n` 標準化摂動）が非飽和かつ `RATE-B1 +0.3737`, `B1-TAB4 +0.0056`（探索材料のみ、確かめの期間未検証）。
+- 合意: 3 系統合意（S64 C0 仕様は並列 S-R 3 往復で両者 **r3 APPROVE**。S52 72h 解析は `codex-lab` I-R r1 の P3/P5/P6 を `README-72h.md` へ反映し **r2 APPROVE**）。
+- 元に戻す方法: `experiments/ambient/{analyze_72h.jl,README-72h.md,out-72h/}` および S64 関連ファイルを使わない。README 項番182 に「取り下げ」と書く。
+- 影響したファイル: `discussion/specs/S64-c0-trm-openloop.md`、`experiments/c0_trm/predictions.toml`、`experiments/freeze-c0-trm.txt`、`experiments/ambient/{analyze_72h.jl,README-72h.md,out-72h/}`、`discussion/notes/pi-rebuild.md`、`.gitignore`、`README.md`、`discussion/STATE.md`、`discussion/decisions-log.md`。
+- ユーザー: 案 A・B 両方実施と末尾 `git commit` を指示済み（2026-11-23）。S64 実装着手・S52 換算凍結・`git push` は次段で確認。

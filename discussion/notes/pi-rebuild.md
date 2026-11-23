@@ -15,3 +15,4 @@
 ## 写しの記録（S52 の記録を Mac に写したとき、ここに時刻と sha を足す。中身は換算の凍結まで見ない）
 
 - 写しの記録 2026-11-16 18:35（稽古の前、claude-lab。中身は見ていない）: b61ade543a750b86ddb628bab9499faa70a8eeb903550a160ceed4a047889192  /Users/yamaguchimitsuyuki/s52-copies/ambient-20261116T183548.tsv  446167 バイト
+- 写しの記録 2026-11-23 17:41（S52 72 時間設計期間の解析用、neon-lab。72 時間より後の行は見ていない・解析しない）: 47a5084dc943e46cff33d712d5359ce057ace094fcd4d375e16e4dfb0b759c7a  experiments/ambient/copies/ambient-20261123.tsv  2192588 バイト（25219 行、.gitignore 対象）

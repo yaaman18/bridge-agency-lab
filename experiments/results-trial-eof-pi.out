@@ -1,0 +1,12 @@
+=== S54 (f) Pi separate-copy n=60480 EOF check (2026-11-23T08:56:58+0900) ===
+exit_code=0
+pre_sha=ed94af93f489440e0f7b3470c9cac816f4c05c09d7cf3ebfa2078c28e0ded683
+post_sha=ed94af93f489440e0f7b3470c9cac816f4c05c09d7cf3ebfa2078c28e0ded683
+run_unchanged=true
+commits_added=0
+audit_lines:
+start 60480 0000000000000000000000000000000000000000000000000000000000000000 3cff5f934981928accc7875dc48a8730b8dd46c453933264613c22408e089797
+wait 60481 3cff5f934981928accc7875dc48a8730b8dd46c453933264613c22408e089797 bbef6597fe630062cec61175b0057c14dca0a60f43459c6a7633ea2035358f61
+end 60480 eof bbef6597fe630062cec61175b0057c14dca0a60f43459c6a7633ea2035358f61 b6e186990655bb5ad4f4c641a16bd2f6ecda7242b2b5d28cd6b8c9f7912cd3ea
+audit_check: {"audit":"present","lines":3,"partial_last_line":false,"chain_ok":true,"chain_failures":0,"first_failure_line":null,"breaks":0,"break_reasons":[],"starts":1,"waits":1,"begins":0,"commits":0,"ends":1,"errors":0,"unfinished_steps":0,"audit_behind":0,"unknown_stops":0,"stops_without_end":0,"starts_below_last_commit":0,"unclassified":0,"open":false,"run":{"n":60480,"payload_sha":"31f126b62176c52ea4dede716cffeae0f39630f6a4aec82b5aaec798cbf9d8d3"},"last_commit":null,"run_vs_last_commit":"no commit","sequence":["start 60480","end 60480"]}
+VERDICT: PASS

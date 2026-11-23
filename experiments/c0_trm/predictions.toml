@@ -1,0 +1,128 @@
+# S64 C0 予測器（seq_len = 47 TRM 開ループ検証）事前予測・凍結定数（2026-11-23）
+# 仕様: discussion/specs/S64-c0-trm-openloop.md (r3, 3 系統 APPROVE)
+# 凍結ファイル: experiments/freeze-c0-trm.txt
+# 結果を見た後にこのファイルを書き換えてはならない。外れた予測は外れたまま報告する。
+
+[meta]
+experiment = "S64-c0-trm-openloop"
+spec = "discussion/specs/S64-c0-trm-openloop.md"
+spec_rev = "r3"
+date = "2026-11-23"
+assumption = "H7"
+phenomenal_claim = "not_certified"
+
+[seeds]
+dev = [1046, 1047, 1048, 1049]
+train_start = 1050
+train_end = 1061
+val_start = 1062
+val_end = 1067
+cal_start = 1068
+cal_end = 1073
+eval_start = 1074
+eval_end = 1097
+ood_start = 1098
+ood_end = 1109
+next_unused_main_seed = 1110
+
+[world]
+law = "L2"
+arm = "UNI"
+T0 = 800
+STEPS = 10000
+P = 1000
+sigma = 1.0
+L = 300
+M = 2.5
+rev_block_min = 6
+rev_block_max = 24
+rev_seed_mul = 1000003
+rev_seed_add = 63
+ood_P = 700
+ood_sigma = 1.0
+ood_L = 250
+ood_M = 2.5
+ood_rev_block_min = 7
+ood_rev_block_max = 28
+ood_rev_seed_mul = 1000003
+ood_rev_seed_add = 64
+
+[input]
+W = 4
+seq_len = 47
+vocab = 12
+n_receptors_L2 = 8
+rb_slot_pad = true
+pad_before_T0 = true
+bos_token = 0
+pad_token = 0
+r_off_token = 1
+r_on_token = 2
+act_none_token = 3
+act_1_token = 4
+act_2_token = 5
+y_none_token = 6
+y_0_token = 7
+y_1_token = 8
+q1_token = 9
+q2_token = 10
+
+[model]
+hidden = 32
+heads = 4
+inter = 256
+L_layers = 2
+trm_H_cycles = 3
+trm_L_cycles = 6
+trm_halt_max_steps = 3
+ctrl_H_cycles = 1
+ctrl_L_cycles = 1
+ctrl_halt_max_steps = 1
+rope_base = 10000.0
+rms_norm_eps = 1.0e-5
+puzzle_emb_len = 0
+
+[training]
+optimizer = "AdamATan2"
+beta1 = 0.9
+beta2 = 0.95
+opt_a = 1.27
+opt_b = 1.0
+warmup_steps = 50
+batch_size = 64
+S_train = 800
+init_seed = 640001
+batch_seed_base = 640100
+ecal_seed = 640200
+ecal_lr = 1.0e-3
+ecal_wd = 0.0
+ecal_steps = 200
+grid_lr = [3.0e-4, 3.0e-4, 1.0e-3, 1.0e-3]
+grid_wd = [0.0, 1.0e-2, 0.0, 1.0e-2]
+max_wall_time_sec = 10800
+
+[evaluation]
+clip_lo = 0.005
+clip_hi = 0.995
+raw_eps = 1.0e-12
+b1_decay_k = 8
+tab4_window = 4
+tab4_alpha = 1.0
+tab_r1_alpha = 1.0
+min_obs_per_action = 30
+min_non_tie_seeds = 16
+min_err_per_seed = 10
+sign_alpha = 0.05
+bootstrap_B = 5000
+bootstrap_seed = 640002
+
+[predictions]
+P_S64_1 = "G0..G8 および G-TIME の全関門が合格する（G0 凍結コード不変・全更新歩単一行為、G1 seq_len=47 で TrmPort <=1e-4・TrmDet/rust ビット一致、G2 detach/教師固定 Float64 中心差分 <=1e-4・stop-gradient ビット一致・AdamATan2 単体検査、G3 y[t]->nw 再計算で 47 トークン符号化入力・(p_t,e_t) ビット一致と LEAK_R/LEAK_Y 入力差、G4 stablemax 照合、G5 種子素集合・s=0 全PAD、G-TIME 総推計 <=3h、G6 2 プロセス決定性 SHA 一致、G7 凍結 SHA 一致、G8 core/check 合格・BP 無変更）。"
+P_S64_2 = "診断トラック exo（stat・rev）で TRM が RATE・B1・TAB4 に有意優越する（両側符号検定 p < 0.05、勝ち過半）。"
+P_S64_3 = "主トラック obs-full（stat・rev 両族）で TRM が RATE・B1・TAB4・TAB_R1・TRM-1x1 の 5 基準すべてに有意優越する（両側符号検定 p < 0.05、勝ち過半、非同点 >= 16）。1 つでも外れれば C0 不合格のまま報告し C1 へ進まない。"
+P_S64_4 = "判定可能種子（n_err >= 10）上で ê は単調 PAV 較正対照 p_cal に対して O1^cal > 0 を安定して超えられないか微差にとどまる見込み（cal 再適合の対称副基準 ê_cal との差も併記）。"
+P_S64_5 = "周期変更 OOD 12 種子（P=700, L=250）上で、rev 学習済み obs-full TRM は B1 に対し wins <= losses となる見込み（反証条件: wins > losses なら本予測は外れ）。"
+
+[falsification]
+c0_pass_rule = "主トラック obs-full の stat・rev 両族すべてで、TRM が RATE・B1・TAB4・TAB_R1・TRM-1x1 の 5 基準すべてに対し両側 5% 符号検定 p < 0.05 かつ wins > losses かつ非同点 >= 16 を満たしたときのみ C0 合格（C1 進行可）。"
+ood_fail_rule = "ood 12 種子（1098..1109）で rev 学習済み obs-full TRM 対 B1 が wins <= losses のとき、合成学習分布外（周期変更）への一般化失敗と判定する。"

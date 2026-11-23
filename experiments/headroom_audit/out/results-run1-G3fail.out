@@ -1,0 +1,27 @@
+S63 headroom audit, threads 8, out headroom_audit/out
+G7 spec and predictions.toml = freeze-headroom-audit.txt: true   G0 S57 code = freeze-draw-conf-code.txt: true
+G5 dev/train/eval disjoint, outside 1..1005 and 52xxx: true
+G1 u686 L2 UNI stat = S57's pilot record (4983 draws): true   neg: = u687's record (must be false): false
+thresholds c over the full world: [-4.500000, 0.500000], max |Φ - Simpson| at 41 points 4.92e-14
+G4 stat u1006 (b_rev 19, Y=0 18/104): max |closed - brute| mid-block 5.34e-14, block 6 3.94e-14, block 24 4.32e-14, all steps 5.34e-14; max |Σw - 1| 2.22e-16
+G4 rev u1006 (b_rev 19, Y=0 15/104): max |closed - brute| mid-block 5.41e-14, block 6 4.02e-14, block 24 1.53e-14, all steps 5.41e-14; max |Σw - 1| 2.22e-16
+G4 stat u1007 (b_rev 7, Y=0 15/104): max |closed - brute| mid-block 4.32e-14, block 6 4.32e-14, block 24 4.32e-14, all steps 4.32e-14; max |Σw - 1| 2.22e-16
+G4 rev u1007 (b_rev 7, Y=0 14/104): max |closed - brute| mid-block 4.4e-14, block 6 4.4e-14, block 24 1.54e-14, all steps 4.4e-14; max |Σw - 1| 2.22e-16
+G4 stat u1008 (b_rev 12, Y=0 16/104): max |closed - brute| mid-block 4.32e-14, block 6 4.32e-14, block 24 1.51e-14, all steps 4.32e-14; max |Σw - 1| 0
+G4 rev u1008 (b_rev 12, Y=0 14/104): max |closed - brute| mid-block 7.86e-14, block 6 4.32e-14, block 24 4.33e-14, all steps 7.86e-14; max |Σw - 1| 1.11e-16
+G4 stat u1009 (b_rev 16, Y=0 15/104): max |closed - brute| mid-block 4.32e-14, block 6 4.11e-14, block 24 1.52e-14, all steps 4.32e-14; max |Σw - 1| 2.22e-16
+G4 rev u1009 (b_rev 16, Y=0 17/104): max |closed - brute| mid-block 4.56e-14, block 6 4.1e-14, block 24 4.34e-14, all steps 4.56e-14; max |Σw - 1| 2.22e-16
+G4 closed form = brute force within 1e-5 in all three phases, weights sum 1 ± 1e-12: true
+G2 obs: update steps from T0 710358, max acts per step 1, examples 344540, mismatches 0, neg shifted by one step mismatches 251038; rev = stat before s_rev and swapped from s_rev (and differs): true -> true
+   deaths obs: stat 3, rev 2 of 40 each
+   obs stat: update steps where Y = y[a] > 0 (the body's pool) differs from g[s, a] > 0 (the table): 1177 of 353739
+   obs rev: update steps where Y = y[a] > 0 (the body's pool) differs from g[s, a] > 0 (the table): 1293 of 356619
+train exo stat: examples [55381, 55019], answered [44536, 43987], RATE [0.804164, 0.799477], TAB4 keys seen 277/1250
+train exo rev: examples [55381, 55019], answered [44202, 44145], RATE [0.798133, 0.802348], TAB4 keys seen 287/1250
+train obs stat: examples [23656, 23634], answered [23478, 23449], RATE [0.992434, 0.992131], TAB4 keys seen 221/1250
+train obs rev: examples [23795, 23759], answered [23616, 23562], RATE [0.992436, 0.991667], TAB4 keys seen 221/1250
+G3 exo stat: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 100/100 where defined (undefined at t: 0); B1 next p of the action changed 100/100; BAYES later defined p changed 100/100 (flipped history with zero mass under every hypothesis: 96)   neg: LEAK changed 100/100
+G3 exo rev: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 100/100 where defined (undefined at t: 0); B1 next p of the action changed 100/100; BAYES later defined p changed 100/100 (flipped history with zero mass under every hypothesis: 96)   neg: LEAK changed 100/100
+G3 obs stat: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 33/33 where defined (undefined at t: 67); B1 next p of the action changed 100/100; BAYES later defined p changed 33/33 (flipped history with zero mass under every hypothesis: 33)   neg: LEAK changed 100/100
+G3 obs rev: p_t unchanged (RATE B1 B1_raw TAB4, bitwise) 100/100; BAYES_raw BAYES_clip p_t unchanged 33/33 where defined (undefined at t: 67); B1 next p of the action changed 99/100; BAYES later defined p changed 33/33 (flipped history with zero mass under every hypothesis: 33)   neg: LEAK changed 100/100
+G3: false

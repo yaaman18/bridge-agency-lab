@@ -2133,6 +2133,35 @@ include("../core/LabCore.jl"); using .LabCore
     - **I-R（codex-lab、2026-11-22）**: **APPROVE**（評価種子 `986..1005` で `--readonly` 独立再実行が終了 0・保存出力と差分 0、GB1〜GB5 全 PASS・P-S62b-1〜5 全 `held`・凍結および `core` 9 件＋親 S62 2 件の照合を確認）。
     - **言えないこと**: `phenomenal_claim = :not_certified`、事前宣言摂動族の外への一般 CI 昇格、GB1 の BP 側正本化（BP7/BP9 案件）。
 
+181. S63 余地の監査（C0 の第 0 手：UNI 全歩記録上の予測余地とベイズ上限照合）（2026-11-23。仕様 `discussion/specs/S63-headroom-audit.md` r3、予測 `experiments/headroom_audit/predictions.toml`、凍結 `experiments/freeze-headroom-audit.txt`、Julia `experiments/headroom_audit/audit.jl`、記録 `experiments/headroom_audit/README.md`、出力 `experiments/headroom_audit/{out,out-rerun}/`、decisions-log #68。S57 凍結 6 本・`core/`・`rust/`・`formal/`・`~/bridge-protocol` は未変更。開発種子 `1006..1009`、学習種子 `1010..1021`、評価種子 `1022..1045`、**次の未使用主列種子 `1046`**）。
+    - **構成**: 合成世界 2 族（`stat` 定常・`rev` ブロック境界 $b_{\mathrm{rev}} \in 6..24$ 反転）× 2 トラック（外生行動 `exo`［厳密ベイズ上限］・正本 `L2 UNI` 身体軌道 `obs`）上で、`RATE`・`B1`（`P_DECAY=8`）・`TAB4`（`W=4`）・`BAYES_raw`（厳密逐次ベイズ）の対数損失を比較し、$\Delta = L(\mathrm{B1}) - L(\mathrm{BAYES\_raw})$ を事前凍結規則（$\delta_{\mathrm{all}}=0.002$, $\delta_{\mathrm{win}}=0.010$ nat）で判定。
+    - **確認した事実（G0〜G8 全合格、`exo` PROCEED / `obs` UNDECIDED）**:
+      - **`exo` トラック（厳密上限）**: `stat all` で `RATE=0.49987`, `B1=0.06300`, `TAB4=0.05089`, `BAYES_raw=0.01530`（`BAYES_clip=0.01903`、クリップ外 84.7%）。$\Delta_{\mathrm{stat,all}} = \mathbf{+0.04770\ \mathrm{nat}}$（99.17% CI `[+0.04516, +0.05049]`、24/0 勝、$p=1.2\times 10^{-7}$）、$\Delta_{\mathrm{rev,all}} = \mathbf{+0.04834\ \mathrm{nat}}$（99.17% CI `[+0.04553, +0.05147]`、24/0 勝、$p=1.2\times 10^{-7}$）、`STAT_PSEUDO` `-0.00531`（95% CI `[-0.02565, +0.01527]`、通過）。`rev win_spec` は `+0.02338`（95% CI `[-0.00127, +0.05032]`、13/11、$p=0.84$）。凍結規則の機械判定は **`overall = PROCEED`**（`exo_only = PROCEED`、`obs_only = UNDECIDED`）。
+      - **重大発見（`obs` トラックの仕様前提の欠け）**: `core/body_org.jl:107` の観測 `y = min(5, floor(pool/U + 1e-9))` が区画の池（上限 `50U`）経由のため、`obs` の $Y=(y[a]>0)$ は表 $g[s,a]>0$ と不一致（`stat` 1177/353739、`rev` 1293/356619、応答率 0.992）。r3 §2 の無雑音尤度 $Y=1 \Leftrightarrow z>c$ は `obs` 評価 `stat` 24/24・`rev` 24/24 全種子で途中から全仮説尤度 0 となり未定義（`undefined`/`null`）。一方 `RATE`/`B1`/`TAB4` は定義済みで、`obs stat all` は `RATE=0.04976`, `B1=0.04514`, **`TAB4=0.03492`**（`B1 > RATE` 24/0 勝、`TAB4` は `B1` をさらに `+0.0102 nat` 上回る）。
+      - **予測との照合**: P-S63-1（G0〜G8 合格・G6 `-t 8` vs `-t 1` SHA 一致：`results.tsv` `ff7e278d…64ba`, `summary.json` `16957234…2fe9`）成立、P-S63-2（`B1 > RATE`）両トラック成立、P-S63-3（$\Delta \ge 0$）`exo` 成立・`obs` 未定義、**P-S63-4（「`stat all` 余地 $\le 0.01$」）は `exo` で外れ**（実測 `+0.04770` で見込みの 4.8 倍；`rev win_spec` も 95% CI が 0 を跨ぐ）、P-S63-5（`STAT_PSEUDO`）`exo` 成立・`obs` 未定義。
+      - **関門 G3・G4・G8**: G4 縮小版 3 局面最大差 `7.9e-14 ≤ 1e-5`（一定ハザード負対照 `0.010..0.134`）。G3 は比較可能な両有限後続例 `134/134` 全件で有限変化（未検証 266 件は除外）、B1 更新直後状態差 `400/400`（`obs rev` 種子 1009 `s=3603` の 1 件は 248 回目の同行為更新 `s=3856` で浮動小数飽和し後続例 2259 件の `B1_raw` 差は 0）、`obs` BAYES 同時刻不変性は定義域内 `66/66`。G8 `sh core/check/run.sh` exit 0、`~/bridge-protocol` 差分 0。
+    - **I-R（codex-lab、2026-11-23）**: r1 で REVISE（P2 G3 有限後続変化と離脱の分離、P3 B1 `99/100` 1 件の実予測列確認、P5 TSV 先頭列名 `record_type` 統一）→ `claude-lab` 修正・再照合後に **r2 APPROVE**。
+    - **言えないこと**: `obs` 身体軌道上の厳密ベイズ上限（池ダイナミクス込み r4 が別途必要）、`(a,Y)` のみ入力の `seq_len=47` TRM がこの余地を実際に取れるか（C0 で検証）、閉ループ（C1）、S52 実電波換算、`phenomenal_claim = :not_certified`。
+
+182. S52 実電波 72 時間設計期間の厳密解析（PS1〜PS5 判定＋換算候補の探索比較）および S64 C0 仕様凍結（2026-11-23。S52 仕様 `discussion/specs/S52-ambient-log.md` r2・凍結予測 `experiments/predictions-ambient-log.md` r2・`experiments/freeze-ambient-log.txt` freeze 1。解析コード `experiments/ambient/analyze_72h.jl`、記録 `experiments/ambient/README-72h.md`、出力 `experiments/ambient/out-72h/`。あわせて次段 C0 仕様 `discussion/specs/S64-c0-trm-openloop.md` r3・予測 `experiments/c0_trm/predictions.toml`・凍結 `experiments/freeze-c0-trm.txt` を 3 系統 APPROVE で凍結［dev `1046..1049` / train `1050..1061` / val `1062..1067` / cal `1068..1073` / eval `1074..1097` / ood `1098..1109`、**次の未使用主列種子 `1110`**］。decisions-log #69。既存の `ambient-log.sh`・`core/`・`rust/`・`~/bridge-protocol` は未変更）。
+    - **確認した事実（S52 72 時間設計期間：全 4 関門 PASS、72 時間超は未開封）**:
+      - **関門**: G-F（freeze 1 一致）・G-A0（`A0 PASS (8643 rows)`、`neg` PASS、SSID/BSSID/MAC 0 件）・G-BLIND（先頭から 1 行ずつ読込、8,643 行・累積稼働 `259,183.39 s <= 259,200 s` で即停止し境界 1 行は破棄、72 時間より後の確かめの期間は完全未開封）・G-DET（2 回実行で `design_72h.tsv` `5925386f…69dcad`・`summary.json` `f89a4356…4ec5bb` SHA 完全一致）。`sh core/check/run.sh` exit 0、`~/bridge-protocol` 差分 0。
+      - **起動と時計補正（4 起動）**: `6fdcb2c4`（1009 行）・`9d4d0aea`（10 行）・`7c24432f`（4156 行、`s52-moves.txt` に従い `uptime_s <= 42.97` の 2 行へ `+122 s` 補正）・`83c87cfb`（3468 行、時計確認記録なしだが前行比 `+42 s` で戻り・跳びなし）。仕様 §2 の除外条件（時計戻り未補正）に該当する起動なし。実装側点検条件 `lag`・`jump_corr <= 2.0` も全起動通過。
+      - **凍結予測 PS1〜PS5 の判定（検定なし）**:
+        - **PS1（変動）**: **成立**（`w_sum` 異なる値 150 `>= 5`、`b_n` 異なる値 7 `>= 3`）。
+        - **PS2（日内リズム）**: 仕様 §2 規則で usable 3 日（11-15/16/17）：**Bluetooth 成立**（夜 01–05 時 `<` 夕 19–23 時がちょうど 2 日：3対3、3対4、1対4）、**Wi-Fi 成立**（3 日とも `w_n` 中央値 4 対 4）。※感度診断：時計記録のない `83c87cfb` を除くと usable 1 日となり両半身 `not testable`。
+        - **PS3（移動）**: **`not testable`**（`s52-moves.txt` 3 件はいずれも「場所は変えていない」）。
+        - **PS4（温度の緩慢さ・独立性）**: **前半外れ**（`t_mc` lag-1 自己相関 **`0.862`** vs 基準 `> 0.9`；約 550 m°C 刻みの量子化揺れが推論候補）、**後半成立**（`corr(t_mc, w_sum) = 0.017 ∈ [-0.3, 0.3]`）。
+        - **PS5（信頼性）**: **成立**（失敗行 `0/8643 = 0% < 2%`、同一起動内最大間隔 `30.01 s <= 120 s`）。
+      - **換算候補の探索比較（設計期間内の行数ベース 2/3 分割：train 5,761 行［末行累積 `172,748.61 s` = `47.9857 h`］／design-val 2,881 行［先頭累積 `172,778.61 s` = `47.9941 h`］、探索のみ・主張なし）**:
+        - C1（`w_24>=2, w_5>=2`）: `RATE-B1 +0.0136`, `B1-TAB4 +0.0971`（区画 1 応答率 `0.990` 飽和）。
+        - C2（`w_sum>316, b_n>3`）: `RATE-B1 +0.2389`, `B1-TAB4 -0.0095`。
+        - C3（差分 `>=`、再起動境界 3 対含む）: `RATE-B1 -0.0247`, `B1-TAB4 +0.0176`。
+        - **C4（合成周期＋実電波 `w_sum`/`b_n` 標準化摂動、`iv.-1` 連続）**: **`RATE-B1 +0.3737`, `B1-TAB4 +0.0056`**（応答率 `0.746 / 0.651` 非飽和）。
+        - 負対照 `LEAK` は全候補 `0.0050` で最小（集計器正常）。
+    - **I-R（codex-lab、2026-11-23）**: r1 で REVISE（P5 行数 2/3 分割と累積稼働秒の照合明記、P3 実装追加点検の明記、P6 C3 境界 3 対・C4 連続周期の注記）→ `README-72h.md` 反映後に **r2 APPROVE**。
+    - **言えないこと**: 確かめの期間（72 時間より後）は未開封であり換算の良し悪しは未検証（S52 §3）、他場所・季節への一般化、個体による使用、`phenomenal_claim = :not_certified`。
+
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
 ### 統合度 Φ（定義のみ。計算しない：ユーザー決定 2026-10-31）

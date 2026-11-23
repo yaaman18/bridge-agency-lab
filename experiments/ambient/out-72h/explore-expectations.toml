@@ -1,0 +1,29 @@
+# S52 72h design-period exploration (section 4 of the neon-lab request, 2026-11-23): expectations written by claude-lab
+# BEFORE the slicer was run and before any row of the design period beyond the first 6 rows (already shown by the header
+# check) was seen. Exploration only: these are not predictions of S52 (PS1-PS5 are frozen in predictions-ambient-log.md)
+# and nothing here is used to call a conversion "good". Recorded here (out-72h/) because experiments/freeze-*.txt is
+# outside the FILE: range of this request. sha in out-72h/freeze-explore.txt.
+
+[E1]
+label = "LEAK is the lowest val loss on every candidate (aggregator sanity)"
+expect = true
+
+[E2]
+label = "C1: w_24 / w_5 vary little at one place (first rows: 2 and 2); a band is constant in train -> fallback used"
+expect = "uncertain (about even)"
+
+[E3]
+label = "C2/C1 level streams are slow (radio persists): L(RATE) - L(B1) > 0 on C1 and C2 (B1 tracks persistence)"
+expect = true
+
+[E4]
+label = "C3 (rise-or-hold indicators): mostly near-iid; |L(RATE) - L(B1)| < 0.02 nat"
+expect = true
+
+[E5]
+label = "C4 (synthetic sine + standardized radio, sigma 1): L(RATE) - L(B1) > 0 (sine period 1000 steps ~ 333 rows is slow)"
+expect = true
+
+[E6]
+label = "TAB4 vs B1: L(B1) - L(TAB4) > 0 on C3 at least (short history helps the difference stream)"
+expect = "uncertain"

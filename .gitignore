@@ -45,3 +45,6 @@ viewer/s54-of/presets/*/bin/*.app
 # S54 watch loop runtime files
 experiments/trial/watch_loop.pid
 experiments/trial/watch_loop.log
+
+# S52 raw Pi copies (contain post-72h confirmation rows; kept unopened & untracked)
+experiments/ambient/copies/
