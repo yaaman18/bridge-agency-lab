@@ -1,0 +1,8 @@
+# S77 part 1 predictions (discussion/specs/S77-draft-trace1-reread.md §1), frozen before s77.jl is written. codex 10:14:58Z P1-P7.
+[B1]
+claim = "C6 (w=500, theta=0.02), S72 stage-1 L-FGT: each of the 3 missed selected switches has a formation-window max of (1-q)*Delta1 below the median over the detected selected switches"
+miss = "any missed switch at or above that median"
+[B2]
+claim = "L=500: none of C0 (w=500), C6 (w=500), C4 (delta 0.005 or 0.01, h scanned 1..60 by 0.25) has a value passing all 4 dev lives (max_l R_l >= min_l F_l for C0, C6)"
+[B3]
+claim = "L=1000 or L=1500: at least one of C0, C6, C4 has a value passing all 4 dev lives"

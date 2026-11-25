@@ -1,0 +1,11 @@
+# S76 predictions frozen before implementation (2026-11-25T10:05:22Z); codex 10:04:56Z P1-P5
+0243c60e2b5d62446bcaf7864757d71c3494f47c437f91416ac51ceaa6c6a0e3  experiments/s76_strat/predictions.toml
+bce54d07b887d01c06c9985f177189403ba230b13f21cf582b25820c07960db0  discussion/specs/S76-draft-stratified-selfclock-dev.md
+# S76 code before codex I-R (2026-11-25T10:06:13Z)
+7ea6fb4cd2417d3e7f80f6c18d961664425c5decfb55c59f3323914475d91fb3  experiments/s76_strat/s76.jl
+# S76 code after codex I-R 10:06Z P1 (base-empty in part 1) P2 (per-point strata log) (2026-11-25T10:07:13Z)
+b6b74561bc0afe37da452ac1b732018ab49351d57759a92a40b907c8c38fddcb  experiments/s76_strat/s76.jl
+# S76 output (2026-11-25T10:08:41Z): A1 holds, A2 miss, A3 not evaluated (seeds 1600-1617 still unused)
+4f4ba7658a1875b44af9ef733b8493452d70a921e05201a2290f5ecddf38b6d2  experiments/s76_strat/out/s76.out
+# S76 spec after results and codex read 10:10Z (2026-11-25T10:10:49Z)
+cf47744bb48a47152299e4e9b77d739995793679281fc950b3d3c3276b238aa8  discussion/specs/S76-draft-stratified-selfclock-dev.md

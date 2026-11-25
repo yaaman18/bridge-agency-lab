@@ -1,0 +1,9 @@
+# S79 §8 predictions (contract r2 final: LR+ >= 10, LR- <= 0.1, one-sided 97.5% CP each), frozen before s79b.jl is written. codex 11:24:55Z.
+[H1]
+claim = "smallest n on {4,...,80} (K = alternating 4,3 per life, W = 15n) with P_pass(G=(0.97,0.03)) >= 0.8 is > 28 and <= 48"
+[H2]
+claim = "max over the n grid of P_pass(B''=(10/11,1/11)) <= 0.025 (numerical, grid only)"
+[H3]
+claim = "stage-2 application: O-win at L=1000 with theta re-selected on stage 1 by the new criterion is 'undecided'"
+[check]
+claim = "formula fact: P_pass of a d=f clock (0.5,0.5) is 0"

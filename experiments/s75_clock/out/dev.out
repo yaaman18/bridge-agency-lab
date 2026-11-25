@@ -1,0 +1,407 @@
+gates: slim main run == S72 r4 saved FGT (P, Y, lref, probes at T_i, selected sets; 4 lives, bitwise); C0 at T_i+500 == S73 quantity (16)
+selected switches (eps=0.0025): FGT life 1 [1, 3, 4]; FGT life 2 [1, 2, 3, 4]; FGT life 3 [1, 2, 3, 4]; FGT life 4 [1, 2, 3, 4]
+== C0 w=500
+  FGT th=0.005 life 1 false=0.5333 det_all=0.7500 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  FGT th=0.005 life 2 false=0.4667 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  FGT th=0.005 life 3 false=0.4000 det_all=1.0000 det_sel=4/4 delay=137.5000 undet=0 ok=false
+  FGT th=0.005 life 4 false=0.4667 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false
+  [desc] CUM th=0.005 life 1 false=0.5333 det_all=0.5000 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=0.005 life 2 false=0.4667 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] CUM th=0.005 life 3 false=0.4000 det_all=1.0000 det_sel=4/4 delay=137.5000 undet=0 ok=false
+  [desc] CUM th=0.005 life 4 false=0.4667 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=0.005 life 1 false=0.4000 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  [desc] WIN th=0.005 life 2 false=0.5333 det_all=1.0000 det_sel=4/4 delay=212.5000 undet=0 ok=false
+  [desc] WIN th=0.005 life 3 false=0.4000 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] WIN th=0.005 life 4 false=0.7333 det_all=1.0000 det_sel=4/4 delay=112.5000 undet=0 ok=false
+  grid C0 w=500 th=0.005: FGT lives ok 0/4
+  FGT th=0.01 life 1 false=0.2000 det_all=0.7500 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  FGT th=0.01 life 2 false=0.4667 det_all=1.0000 det_sel=4/4 delay=250.0000 undet=0 ok=false
+  FGT th=0.01 life 3 false=0.2000 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  FGT th=0.01 life 4 false=0.4000 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] CUM th=0.01 life 1 false=0.2000 det_all=0.5000 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=0.01 life 2 false=0.4667 det_all=1.0000 det_sel=4/4 delay=237.5000 undet=0 ok=false
+  [desc] CUM th=0.01 life 3 false=0.2667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=0.01 life 4 false=0.4000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=0.01 life 1 false=0.3333 det_all=0.5000 det_sel=2/3 delay=316.6667 undet=1 ok=false
+  [desc] WIN th=0.01 life 2 false=0.3333 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false
+  [desc] WIN th=0.01 life 3 false=0.2667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] WIN th=0.01 life 4 false=0.5333 det_all=1.0000 det_sel=4/4 delay=137.5000 undet=0 ok=false
+  grid C0 w=500 th=0.01: FGT lives ok 0/4
+  FGT th=0.02 life 1 false=0.0667 det_all=0.5000 det_sel=2/3 delay=350.0000 undet=1 ok=false
+  FGT th=0.02 life 2 false=0.2667 det_all=0.7500 det_sel=3/4 delay=412.5000 undet=1 ok=false
+  FGT th=0.02 life 3 false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true
+  FGT th=0.02 life 4 false=0.2000 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false
+  [desc] CUM th=0.02 life 1 false=0.0667 det_all=0.2500 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=0.02 life 2 false=0.3333 det_all=0.7500 det_sel=3/4 delay=400.0000 undet=1 ok=false
+  [desc] CUM th=0.02 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=0.02 life 4 false=0.3333 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=0.02 life 1 false=0.0667 det_all=0.5000 det_sel=2/3 delay=350.0000 undet=1 ok=false
+  [desc] WIN th=0.02 life 2 false=0.1333 det_all=0.7500 det_sel=3/4 delay=412.5000 undet=1 ok=false
+  [desc] WIN th=0.02 life 3 false=0.2000 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] WIN th=0.02 life 4 false=0.2667 det_all=0.7500 det_sel=3/4 delay=325.0000 undet=1 ok=false
+  grid C0 w=500 th=0.02: FGT lives ok 1/4
+  FGT th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.04 life 2 false=0.0667 det_all=0.5000 det_sel=2/4 delay=450.0000 undet=2 ok=false
+  FGT th=0.04 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  FGT th=0.04 life 4 false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false
+  [desc] CUM th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.04 life 2 false=0.0667 det_all=0.5000 det_sel=2/4 delay=425.0000 undet=2 ok=false
+  [desc] CUM th=0.04 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] CUM th=0.04 life 4 false=0.1333 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] WIN th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.04 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.04 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=0.04 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=425.0000 undet=3 ok=false
+  grid C0 w=500 th=0.04: FGT lives ok 0/4
+  SELECTED C0 w=500: none (no threshold passes all 4 lives)
+== C1 w=1000
+  FGT th=0.005 life 1 false=0.2000 det_all=0.5000 det_sel=2/3 delay=400.0000 undet=1 ok=false
+  FGT th=0.005 life 2 false=0.4667 det_all=0.7500 det_sel=3/4 delay=287.5000 undet=1 ok=false
+  FGT th=0.005 life 3 false=0.3333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  FGT th=0.005 life 4 false=0.4667 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false
+  [desc] CUM th=0.005 life 1 false=0.1333 det_all=0.5000 det_sel=1/2 delay=325.0000 undet=1 ok=false
+  [desc] CUM th=0.005 life 2 false=0.4667 det_all=0.7500 det_sel=3/4 delay=287.5000 undet=1 ok=false
+  [desc] CUM th=0.005 life 3 false=0.3333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=0.005 life 4 false=0.5333 det_all=0.7500 det_sel=3/4 delay=262.5000 undet=1 ok=false
+  [desc] WIN th=0.005 life 1 false=0.3333 det_all=0.5000 det_sel=1/3 delay=416.6667 undet=2 ok=false
+  [desc] WIN th=0.005 life 2 false=0.4667 det_all=0.7500 det_sel=3/4 delay=387.5000 undet=1 ok=false
+  [desc] WIN th=0.005 life 3 false=0.5333 det_all=1.0000 det_sel=4/4 delay=212.5000 undet=0 ok=false
+  [desc] WIN th=0.005 life 4 false=0.6000 det_all=1.0000 det_sel=4/4 delay=275.0000 undet=0 ok=false
+  grid C1 w=1000 th=0.005: FGT lives ok 0/4
+  FGT th=0.01 life 1 false=0.0667 det_all=0.2500 det_sel=1/3 delay=416.6667 undet=2 ok=false
+  FGT th=0.01 life 2 false=0.4000 det_all=0.7500 det_sel=3/4 delay=375.0000 undet=1 ok=false
+  FGT th=0.01 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  FGT th=0.01 life 4 false=0.4000 det_all=1.0000 det_sel=4/4 delay=275.0000 undet=0 ok=false
+  [desc] CUM th=0.01 life 1 false=0.0667 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.01 life 2 false=0.4667 det_all=0.7500 det_sel=3/4 delay=287.5000 undet=1 ok=false
+  [desc] CUM th=0.01 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=0.01 life 4 false=0.4000 det_all=0.7500 det_sel=3/4 delay=325.0000 undet=1 ok=false
+  [desc] WIN th=0.01 life 1 false=0.1333 det_all=0.2500 det_sel=1/3 delay=416.6667 undet=2 ok=false
+  [desc] WIN th=0.01 life 2 false=0.4000 det_all=0.7500 det_sel=3/4 delay=400.0000 undet=1 ok=false
+  [desc] WIN th=0.01 life 3 false=0.2667 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=0.01 life 4 false=0.6000 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  grid C1 w=1000 th=0.01: FGT lives ok 0/4
+  FGT th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.02 life 2 false=0.1333 det_all=0.7500 det_sel=3/4 delay=412.5000 undet=1 ok=false
+  FGT th=0.02 life 3 false=0.0667 det_all=0.7500 det_sel=3/4 delay=262.5000 undet=1 ok=false
+  FGT th=0.02 life 4 false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false
+  [desc] CUM th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.02 life 2 false=0.4000 det_all=0.7500 det_sel=3/4 delay=400.0000 undet=1 ok=false
+  [desc] CUM th=0.02 life 3 false=0.0667 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] CUM th=0.02 life 4 false=0.2667 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] WIN th=0.02 life 1 false=0.0667 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.02 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.02 life 3 false=0.1333 det_all=0.7500 det_sel=3/4 delay=325.0000 undet=1 ok=false
+  [desc] WIN th=0.02 life 4 false=0.0667 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false
+  grid C1 w=1000 th=0.02: FGT lives ok 0/4
+  FGT th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.04 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false
+  FGT th=0.04 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.04 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  [desc] CUM th=0.04 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=400.0000 undet=1 ok=false
+  [desc] CUM th=0.04 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=462.5000 undet=3 ok=false
+  [desc] WIN th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.04 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  [desc] WIN th=0.04 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  grid C1 w=1000 th=0.04: FGT lives ok 0/4
+  SELECTED C1 w=1000: none (no threshold passes all 4 lives)
+== C1 w=2000
+  FGT th=0.005 life 1 false=0.2000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.005 life 2 false=0.5333 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  FGT th=0.005 life 3 false=0.2667 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false
+  FGT th=0.005 life 4 false=0.4667 det_all=0.7500 det_sel=3/4 delay=237.5000 undet=1 ok=false
+  [desc] CUM th=0.005 life 1 false=0.2000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.005 life 2 false=0.5333 det_all=0.7500 det_sel=3/4 delay=187.5000 undet=1 ok=false
+  [desc] CUM th=0.005 life 3 false=0.3333 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false
+  [desc] CUM th=0.005 life 4 false=0.4667 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] WIN th=0.005 life 1 false=0.2667 det_all=0.2500 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.005 life 2 false=0.4667 det_all=0.5000 det_sel=2/4 delay=300.0000 undet=2 ok=false
+  [desc] WIN th=0.005 life 3 false=0.4000 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  [desc] WIN th=0.005 life 4 false=0.6667 det_all=1.0000 det_sel=4/4 delay=112.5000 undet=0 ok=false
+  grid C1 w=2000 th=0.005: FGT lives ok 0/4
+  FGT th=0.01 life 1 false=0.0667 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.01 life 2 false=0.2000 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  FGT th=0.01 life 3 false=0.2667 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  FGT th=0.01 life 4 false=0.2000 det_all=0.7500 det_sel=3/4 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=0.01 life 1 false=0.0667 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.01 life 2 false=0.4000 det_all=0.5000 det_sel=2/4 delay=312.5000 undet=2 ok=false
+  [desc] CUM th=0.01 life 3 false=0.2667 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] CUM th=0.01 life 4 false=0.2000 det_all=0.7500 det_sel=3/4 delay=262.5000 undet=1 ok=false
+  [desc] WIN th=0.01 life 1 false=0.2000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.01 life 2 false=0.1333 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  [desc] WIN th=0.01 life 3 false=0.3333 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  [desc] WIN th=0.01 life 4 false=0.2000 det_all=1.0000 det_sel=4/4 delay=300.0000 undet=0 ok=false
+  grid C1 w=2000 th=0.01: FGT lives ok 0/4
+  FGT th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.02 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.02 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false
+  FGT th=0.02 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.02 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=412.5000 undet=2 ok=false
+  [desc] CUM th=0.02 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false
+  [desc] CUM th=0.02 life 4 false=0.1333 det_all=0.5000 det_sel=2/4 delay=425.0000 undet=2 ok=false
+  [desc] WIN th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.02 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.02 life 3 false=0.0667 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.02 life 4 false=0.0667 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  grid C1 w=2000 th=0.02: FGT lives ok 0/4
+  FGT th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.04 life 3 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.04 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.04 life 3 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.04 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.04 life 3 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.04 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  grid C1 w=2000 th=0.04: FGT lives ok 0/4
+  SELECTED C1 w=2000: none (no threshold passes all 4 lives)
+== C2 w=500
+  FGT th=2.0 life 1 false=0.0000 det_all=0.2500 det_sel=1/3 delay=350.0000 undet=2 ok=false
+  FGT th=2.0 life 2 false=0.2667 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false
+  FGT th=2.0 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  FGT th=2.0 life 4 false=0.3333 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] CUM th=2.0 life 1 false=0.0667 det_all=0.5000 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=2.0 life 2 false=0.3333 det_all=1.0000 det_sel=4/4 delay=337.5000 undet=0 ok=false
+  [desc] CUM th=2.0 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=2.0 life 4 false=0.4000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=2.0 life 1 false=0.1333 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=2.0 life 2 false=0.1333 det_all=0.7500 det_sel=3/4 delay=387.5000 undet=1 ok=false
+  [desc] WIN th=2.0 life 3 false=0.2000 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] WIN th=2.0 life 4 false=0.2667 det_all=0.7500 det_sel=3/4 delay=325.0000 undet=1 ok=false
+  grid C2 w=500 th=2.0: FGT lives ok 0/4
+  FGT th=3.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=3.0 life 2 false=0.2667 det_all=0.5000 det_sel=2/4 delay=425.0000 undet=2 ok=false
+  FGT th=3.0 life 3 false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true
+  FGT th=3.0 life 4 false=0.1333 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] CUM th=3.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=3.0 life 2 false=0.2667 det_all=0.5000 det_sel=2/4 delay=412.5000 undet=2 ok=false
+  [desc] CUM th=3.0 life 3 false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true
+  [desc] CUM th=3.0 life 4 false=0.2000 det_all=0.7500 det_sel=3/4 delay=262.5000 undet=1 ok=false
+  [desc] WIN th=3.0 life 1 false=0.0667 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=3.0 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  [desc] WIN th=3.0 life 3 false=0.1333 det_all=0.7500 det_sel=3/4 delay=237.5000 undet=1 ok=false
+  [desc] WIN th=3.0 life 4 false=0.1333 det_all=0.5000 det_sel=2/4 delay=375.0000 undet=2 ok=false
+  grid C2 w=500 th=3.0: FGT lives ok 1/4
+  FGT th=4.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=4.0 life 2 false=0.2667 det_all=0.5000 det_sel=2/4 delay=437.5000 undet=2 ok=false
+  FGT th=4.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=237.5000 undet=1 ok=false
+  FGT th=4.0 life 4 false=0.0667 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] CUM th=4.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=4.0 life 2 false=0.2667 det_all=0.5000 det_sel=2/4 delay=412.5000 undet=2 ok=false
+  [desc] CUM th=4.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=212.5000 undet=1 ok=false
+  [desc] CUM th=4.0 life 4 false=0.1333 det_all=0.7500 det_sel=3/4 delay=262.5000 undet=1 ok=false
+  [desc] WIN th=4.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=4.0 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  [desc] WIN th=4.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=4.0 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  grid C2 w=500 th=4.0: FGT lives ok 0/4
+  FGT th=6.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=6.0 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  FGT th=6.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  FGT th=6.0 life 4 false=0.0667 det_all=0.7500 det_sel=3/4 delay=387.5000 undet=1 ok=false
+  [desc] CUM th=6.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=6.0 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=437.5000 undet=2 ok=false
+  [desc] CUM th=6.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] CUM th=6.0 life 4 false=0.0667 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] WIN th=6.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=6.0 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=6.0 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=375.0000 undet=2 ok=false
+  [desc] WIN th=6.0 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  grid C2 w=500 th=6.0: FGT lives ok 0/4
+  SELECTED C2 w=500: none (no threshold passes all 4 lives)
+== C3 w=500
+  FGT th=0.005 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.005 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  FGT th=0.005 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  FGT th=0.005 life 4 false=0.0000 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] CUM th=0.005 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.005 life 2 false=0.2000 det_all=0.5000 det_sel=2/4 delay=412.5000 undet=2 ok=false
+  [desc] CUM th=0.005 life 3 false=0.1333 det_all=0.7500 det_sel=3/4 delay=212.5000 undet=1 ok=false
+  [desc] CUM th=0.005 life 4 false=0.2667 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  [desc] WIN th=0.005 life 1 false=0.0667 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.005 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  [desc] WIN th=0.005 life 3 false=0.0667 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  [desc] WIN th=0.005 life 4 false=0.0667 det_all=0.7500 det_sel=3/4 delay=312.5000 undet=1 ok=false
+  grid C3 w=500 th=0.005: FGT lives ok 0/4
+  FGT th=0.01 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.01 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  FGT th=0.01 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  FGT th=0.01 life 4 false=0.0000 det_all=0.7500 det_sel=3/4 delay=350.0000 undet=1 ok=false
+  [desc] CUM th=0.01 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.01 life 2 false=0.2000 det_all=0.5000 det_sel=2/4 delay=412.5000 undet=2 ok=false
+  [desc] CUM th=0.01 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] CUM th=0.01 life 4 false=0.2667 det_all=1.0000 det_sel=4/4 delay=337.5000 undet=0 ok=false
+  [desc] WIN th=0.01 life 1 false=0.0667 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.01 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=487.5000 undet=3 ok=false
+  [desc] WIN th=0.01 life 3 false=0.0667 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  [desc] WIN th=0.01 life 4 false=0.0000 det_all=0.5000 det_sel=2/4 delay=362.5000 undet=2 ok=false
+  grid C3 w=500 th=0.01: FGT lives ok 0/4
+  FGT th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.02 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  FGT th=0.02 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  FGT th=0.02 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  [desc] CUM th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.02 life 2 false=0.0667 det_all=0.5000 det_sel=2/4 delay=437.5000 undet=2 ok=false
+  [desc] CUM th=0.02 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=237.5000 undet=1 ok=false
+  [desc] CUM th=0.02 life 4 false=0.2000 det_all=0.5000 det_sel=2/4 delay=387.5000 undet=2 ok=false
+  [desc] WIN th=0.02 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.02 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.02 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=325.0000 undet=2 ok=false
+  [desc] WIN th=0.02 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=425.0000 undet=3 ok=false
+  grid C3 w=500 th=0.02: FGT lives ok 0/4
+  FGT th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.04 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  FGT th=0.04 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=0.04 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  [desc] CUM th=0.04 life 4 false=0.0667 det_all=0.5000 det_sel=2/4 delay=425.0000 undet=2 ok=false
+  [desc] WIN th=0.04 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=0.04 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=0.04 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  [desc] WIN th=0.04 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  grid C3 w=500 th=0.04: FGT lives ok 0/4
+  SELECTED C3 w=500: none (no threshold passes all 4 lives)
+== C4 delta=0.005
+  FGT th=5.0 life 1 false=0.3333 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  FGT th=5.0 life 2 false=0.2000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  FGT th=5.0 life 3 false=0.2667 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false
+  FGT th=5.0 life 4 false=0.3333 det_all=1.0000 det_sel=4/4 delay=212.5000 undet=0 ok=false
+  [desc] CUM th=5.0 life 1 false=0.2667 det_all=0.5000 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=5.0 life 2 false=0.4000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  [desc] CUM th=5.0 life 3 false=0.3333 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false
+  [desc] CUM th=5.0 life 4 false=0.4000 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false
+  [desc] WIN th=5.0 life 1 false=0.4000 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  [desc] WIN th=5.0 life 2 false=0.2000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  [desc] WIN th=5.0 life 3 false=0.4000 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false
+  [desc] WIN th=5.0 life 4 false=0.5333 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false
+  grid C4 delta=0.005 th=5.0: FGT lives ok 0/4
+  FGT th=10.0 life 1 false=0.0667 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  FGT th=10.0 life 2 false=0.1333 det_all=1.0000 det_sel=4/4 delay=337.5000 undet=0 ok=false
+  FGT th=10.0 life 3 false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true
+  FGT th=10.0 life 4 false=0.1333 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false
+  [desc] CUM th=10.0 life 1 false=0.0667 det_all=0.2500 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=10.0 life 2 false=0.2000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  [desc] CUM th=10.0 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=10.0 life 4 false=0.2000 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] WIN th=10.0 life 1 false=0.0667 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  [desc] WIN th=10.0 life 2 false=0.2000 det_all=1.0000 det_sel=4/4 delay=337.5000 undet=0 ok=false
+  [desc] WIN th=10.0 life 3 false=0.2000 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] WIN th=10.0 life 4 false=0.2667 det_all=1.0000 det_sel=4/4 delay=275.0000 undet=0 ok=false
+  grid C4 delta=0.005 th=10.0: FGT lives ok 1/4
+  FGT th=20.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=20.0 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=450.0000 undet=2 ok=false
+  FGT th=20.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  FGT th=20.0 life 4 false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false
+  [desc] CUM th=20.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=20.0 life 2 false=0.0667 det_all=0.5000 det_sel=2/4 delay=425.0000 undet=2 ok=false
+  [desc] CUM th=20.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] CUM th=20.0 life 4 false=0.0667 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] WIN th=20.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=20.0 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=450.0000 undet=2 ok=false
+  [desc] WIN th=20.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=20.0 life 4 false=0.0667 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false
+  grid C4 delta=0.005 th=20.0: FGT lives ok 0/4
+  FGT th=40.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=40.0 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=40.0 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false
+  FGT th=40.0 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=40.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=40.0 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  [desc] CUM th=40.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=337.5000 undet=1 ok=false
+  [desc] CUM th=40.0 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=462.5000 undet=3 ok=false
+  [desc] WIN th=40.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=40.0 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=40.0 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=375.0000 undet=2 ok=false
+  [desc] WIN th=40.0 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  grid C4 delta=0.005 th=40.0: FGT lives ok 0/4
+  SELECTED C4 delta=0.005: none (no threshold passes all 4 lives)
+== C4 delta=0.01
+  FGT th=5.0 life 1 false=0.2667 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  FGT th=5.0 life 2 false=0.2000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  FGT th=5.0 life 3 false=0.2667 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false
+  FGT th=5.0 life 4 false=0.3333 det_all=1.0000 det_sel=4/4 delay=212.5000 undet=0 ok=false
+  [desc] CUM th=5.0 life 1 false=0.2000 det_all=0.5000 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=5.0 life 2 false=0.4000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  [desc] CUM th=5.0 life 3 false=0.2667 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false
+  [desc] CUM th=5.0 life 4 false=0.4000 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false
+  [desc] WIN th=5.0 life 1 false=0.3333 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  [desc] WIN th=5.0 life 2 false=0.2000 det_all=1.0000 det_sel=4/4 delay=325.0000 undet=0 ok=false
+  [desc] WIN th=5.0 life 3 false=0.3333 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false
+  [desc] WIN th=5.0 life 4 false=0.5333 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false
+  grid C4 delta=0.01 th=5.0: FGT lives ok 0/4
+  FGT th=10.0 life 1 false=0.0000 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  FGT th=10.0 life 2 false=0.1333 det_all=1.0000 det_sel=4/4 delay=337.5000 undet=0 ok=false
+  FGT th=10.0 life 3 false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true
+  FGT th=10.0 life 4 false=0.0667 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=true
+  [desc] CUM th=10.0 life 1 false=0.0000 det_all=0.2500 det_sel=1/2 delay=275.0000 undet=1 ok=false
+  [desc] CUM th=10.0 life 2 false=0.1333 det_all=0.7500 det_sel=3/4 delay=350.0000 undet=1 ok=false
+  [desc] CUM th=10.0 life 3 false=0.1333 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false
+  [desc] CUM th=10.0 life 4 false=0.1333 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] WIN th=10.0 life 1 false=0.0667 det_all=0.5000 det_sel=2/3 delay=266.6667 undet=1 ok=false
+  [desc] WIN th=10.0 life 2 false=0.1333 det_all=1.0000 det_sel=4/4 delay=337.5000 undet=0 ok=false
+  [desc] WIN th=10.0 life 3 false=0.2000 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false
+  [desc] WIN th=10.0 life 4 false=0.2667 det_all=1.0000 det_sel=4/4 delay=275.0000 undet=0 ok=false
+  grid C4 delta=0.01 th=10.0: FGT lives ok 2/4
+  FGT th=20.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=20.0 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=450.0000 undet=2 ok=false
+  FGT th=20.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  FGT th=20.0 life 4 false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false
+  [desc] CUM th=20.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=20.0 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=425.0000 undet=2 ok=false
+  [desc] CUM th=20.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=225.0000 undet=1 ok=false
+  [desc] CUM th=20.0 life 4 false=0.0667 det_all=0.7500 det_sel=3/4 delay=350.0000 undet=1 ok=false
+  [desc] WIN th=20.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=20.0 life 2 false=0.0000 det_all=0.5000 det_sel=2/4 delay=450.0000 undet=2 ok=false
+  [desc] WIN th=20.0 life 3 false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false
+  [desc] WIN th=20.0 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=437.5000 undet=3 ok=false
+  grid C4 delta=0.01 th=20.0: FGT lives ok 0/4
+  FGT th=40.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=40.0 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=40.0 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false
+  FGT th=40.0 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] CUM th=40.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/2 delay=500.0000 undet=2 ok=false
+  [desc] CUM th=40.0 life 2 false=0.0000 det_all=0.2500 det_sel=1/4 delay=450.0000 undet=3 ok=false
+  [desc] CUM th=40.0 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=337.5000 undet=2 ok=false
+  [desc] CUM th=40.0 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=462.5000 undet=3 ok=false
+  [desc] WIN th=40.0 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  [desc] WIN th=40.0 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  [desc] WIN th=40.0 life 3 false=0.0000 det_all=0.5000 det_sel=2/4 delay=375.0000 undet=2 ok=false
+  [desc] WIN th=40.0 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  grid C4 delta=0.01 th=40.0: FGT lives ok 0/4
+  SELECTED C4 delta=0.01: none (no threshold passes all 4 lives)
+== C5 w=500
+  FGT th=0.05 life 1 false=0.2667 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.05 life 2 false=0.2000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false
+  FGT th=0.05 life 3 false=0.1333 det_all=0.5000 det_sel=2/4 delay=312.5000 undet=2 ok=false
+  FGT th=0.05 life 4 false=0.6667 det_all=0.2500 det_sel=1/4 delay=387.5000 undet=3 ok=false
+  grid C5 w=500 th=0.05: FGT lives ok 0/4
+  FGT th=0.1 life 1 false=0.1333 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.1 life 2 false=0.0667 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  FGT th=0.1 life 3 false=0.1333 det_all=0.5000 det_sel=2/4 delay=362.5000 undet=2 ok=false
+  FGT th=0.1 life 4 false=0.2000 det_all=0.2500 det_sel=1/4 delay=387.5000 undet=3 ok=false
+  grid C5 w=500 th=0.1: FGT lives ok 0/4
+  FGT th=0.2 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.2 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.2 life 3 false=0.0000 det_all=0.2500 det_sel=1/4 delay=500.0000 undet=3 ok=false
+  FGT th=0.2 life 4 false=0.0000 det_all=0.2500 det_sel=1/4 delay=412.5000 undet=3 ok=false
+  grid C5 w=500 th=0.2: FGT lives ok 0/4
+  FGT th=0.4 life 1 false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false
+  FGT th=0.4 life 2 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.4 life 3 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  FGT th=0.4 life 4 false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false
+  grid C5 w=500 th=0.4: FGT lives ok 0/4
+  SELECTED C5 w=500: none (no threshold passes all 4 lives)
+RANKING: none
+WINNER: none
+S75-Q1: miss
+S75-Q2: miss
+S75-Q3: undecided (confirmation not run)

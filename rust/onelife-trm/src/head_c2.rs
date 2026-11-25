@@ -76,19 +76,10 @@ pub struct HeadWeights {
 
 impl HeadWeights {
     pub fn check_finite(&self) -> Result<(), NonFiniteWeightError> {
-        for (i, &v) in self.w8.iter().enumerate() {
-            if !v.is_finite() {
-                return Err(NonFiniteWeightError(format!("w8[{i}] non-finite: {v}")));
-            }
-        }
-        for (i, &v) in self.w7.iter().enumerate() {
-            if !v.is_finite() {
-                return Err(NonFiniteWeightError(format!("w7[{i}] non-finite: {v}")));
-            }
-        }
-        for (i, &v) in self.we.iter().enumerate() {
-            if !v.is_finite() {
-                return Err(NonFiniteWeightError(format!("we[{i}] non-finite: {v}")));
+        // checked in the order w8, w7, we, be; the error names the first non-finite entry
+        for (name, arr) in [("w8", &self.w8), ("w7", &self.w7), ("we", &self.we)] {
+            if let Some((i, &v)) = arr.iter().enumerate().find(|(_, v)| !v.is_finite()) {
+                return Err(NonFiniteWeightError(format!("{name}[{i}] non-finite: {v}")));
             }
         }
         if !self.be.is_finite() {
@@ -99,20 +90,10 @@ impl HeadWeights {
 
     pub fn to_le_bytes(&self) -> [u8; 97 * 4] {
         let mut out = [0u8; 97 * 4];
-        let mut off = 0;
-        for &v in &self.w8 {
-            out[off..off + 4].copy_from_slice(&v.to_le_bytes());
-            off += 4;
+        let vals = self.w8.iter().chain(&self.w7).chain(&self.we).chain(std::iter::once(&self.be));
+        for (chunk, v) in out.chunks_exact_mut(4).zip(vals) {
+            chunk.copy_from_slice(&v.to_le_bytes());
         }
-        for &v in &self.w7 {
-            out[off..off + 4].copy_from_slice(&v.to_le_bytes());
-            off += 4;
-        }
-        for &v in &self.we {
-            out[off..off + 4].copy_from_slice(&v.to_le_bytes());
-            off += 4;
-        }
-        out[off..off + 4].copy_from_slice(&self.be.to_le_bytes());
         out
     }
 }
@@ -211,28 +192,13 @@ impl HeadC2 {
             return Ok(HeadStepAction::FrozenOnDeath);
         }
         if !upkeep_paid_full {
+            let fade = |w: f32, w0: f32| clamp_f32(w0 + FADE_KEEP * (w - w0), -WEIGHT_BOUND, WEIGHT_BOUND);
             for k in 0..HIDDEN {
-                self.w.w8[k] = clamp_f32(
-                    self.w0.w8[k] + FADE_KEEP * (self.w.w8[k] - self.w0.w8[k]),
-                    -WEIGHT_BOUND,
-                    WEIGHT_BOUND,
-                );
-                self.w.w7[k] = clamp_f32(
-                    self.w0.w7[k] + FADE_KEEP * (self.w.w7[k] - self.w0.w7[k]),
-                    -WEIGHT_BOUND,
-                    WEIGHT_BOUND,
-                );
-                self.w.we[k] = clamp_f32(
-                    self.w0.we[k] + FADE_KEEP * (self.w.we[k] - self.w0.we[k]),
-                    -WEIGHT_BOUND,
-                    WEIGHT_BOUND,
-                );
+                self.w.w8[k] = fade(self.w.w8[k], self.w0.w8[k]);
+                self.w.w7[k] = fade(self.w.w7[k], self.w0.w7[k]);
+                self.w.we[k] = fade(self.w.we[k], self.w0.we[k]);
             }
-            self.w.be = clamp_f32(
-                self.w0.be + FADE_KEEP * (self.w.be - self.w0.be),
-                -WEIGHT_BOUND,
-                WEIGHT_BOUND,
-            );
+            self.w.be = fade(self.w.be, self.w0.be);
             self.w.check_finite()?;
             return Ok(HeadStepAction::FadedOnUpkeepShortfall);
         }

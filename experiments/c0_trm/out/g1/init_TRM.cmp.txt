@@ -1,0 +1,2 @@
+init_TRM.jl.bin vs init_TRM.rs.bin records 45 elements 144960 differing 0 max_abs 0.0 bytes_identical true PASS
+compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL

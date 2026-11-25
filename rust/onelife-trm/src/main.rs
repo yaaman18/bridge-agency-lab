@@ -607,6 +607,51 @@ mod tests {
     }
 
     #[test]
+    fn test_head_c2_refactor_layout_fade_and_error_order() {
+        use crate::head_c2::*;
+        let mk = |s: f32| {
+            let mut w = HeadWeights { w8: [0.0; HIDDEN], w7: [0.0; HIDDEN], we: [0.0; HIDDEN], be: 0.37 * s };
+            for k in 0..HIDDEN {
+                w.w8[k] = s * (k as f32 * 0.11 - 1.3);
+                w.w7[k] = s * (0.7 - k as f32 * 0.05);
+                w.we[k] = s * ((k * k) as f32 * 0.003 - 0.4);
+            }
+            w
+        };
+        let (w0, w) = (mk(1.0), mk(-2.5));
+        // to_le_bytes: w8[0..32], w7[0..32], we[0..32], be, each little-endian (the layout before the refactor)
+        let mut want = Vec::new();
+        for v in w.w8.iter().chain(w.w7.iter()).chain(w.we.iter()) {
+            want.extend_from_slice(&v.to_le_bytes());
+        }
+        want.extend_from_slice(&w.be.to_le_bytes());
+        assert_eq!(w.to_le_bytes().to_vec(), want);
+        // fade: all 97 entries bit-identical to w0 + 0.875 * (w - w0), clamped to +-16
+        let mut head = HeadC2::new(w0.clone(), 0.01).unwrap();
+        head.w = w.clone();
+        let h = [0.0f32; HIDDEN];
+        let pred = head.predict(&h);
+        assert_eq!(head.post_step_update(true, false, true, &h, pred, true).unwrap(), HeadStepAction::FadedOnUpkeepShortfall);
+        let f = |a: f32, b: f32| (b + 0.875f32 * (a - b)).clamp(-16.0, 16.0);
+        for k in 0..HIDDEN {
+            assert_eq!(head.w.w8[k].to_bits(), f(w.w8[k], w0.w8[k]).to_bits());
+            assert_eq!(head.w.w7[k].to_bits(), f(w.w7[k], w0.w7[k]).to_bits());
+            assert_eq!(head.w.we[k].to_bits(), f(w.we[k], w0.we[k]).to_bits());
+        }
+        assert_eq!(head.w.be.to_bits(), f(w.be, w0.be).to_bits());
+        // check_finite: the first non-finite entry in the order w8, w7, we, be is named
+        let mut bad = w0.clone();
+        bad.we[3] = f32::NAN;
+        bad.w7[5] = f32::INFINITY;
+        assert_eq!(bad.check_finite().unwrap_err().0, "w7[5] non-finite: inf");
+        bad.w7[5] = 0.0;
+        assert_eq!(bad.check_finite().unwrap_err().0, "we[3] non-finite: NaN");
+        bad.we[3] = 0.0;
+        bad.be = f32::NEG_INFINITY;
+        assert_eq!(bad.check_finite().unwrap_err().0, "be non-finite: -inf");
+    }
+
+    #[test]
     fn test_s68_power_loss_recovery_cases_a_to_d() {
         use crate::recovery::*;
 
@@ -650,6 +695,62 @@ mod tests {
                 fragment_len: "4|input|1|g1=f64:".len()
             }
         );
+
+        // R1: a complete (LF-terminated) line that is not header/input/commit is an error, not a fragment
+        let audit_bad = format!("{hdr}{in0}{cm0}4|garbage\n");
+        assert!(plan_recovery(1, audit_bad.as_bytes()).is_err());
+        // R9 (codex): a malformed complete line followed by an unterminated fragment is also an error,
+        // and planning never changes the bytes it was given
+        let audit_bad_frag = format!("{hdr}{in0}{cm0}4|garbage\n5|commit|1|st");
+        let before = audit_bad_frag.clone().into_bytes();
+        assert!(plan_recovery(1, &before).is_err());
+        assert_eq!(before, audit_bad_frag.as_bytes());
+
+        // R2: the fragment length counts raw bytes (a lone 0xff is 1 byte, 3 bytes after lossy UTF-8)
+        let mut audit_ff = format!("{hdr}{in0}{cm0}").into_bytes();
+        audit_ff.push(0xff);
+        assert_eq!(
+            plan_recovery(1, &audit_ff).unwrap(),
+            RecoveryAction::TruncatePartialAndAcquire {
+                next_step: 1,
+                fragment_len: 1
+            }
+        );
+
+        // R3: input(1) complete, a partial commit(1) after it, run still at 1 -> discard the fragment, then Case A
+        // with the stamped input(1) (no second input(1) is acquired)
+        let audit_ad = format!("{hdr}{in0}{cm0}{in1}5|commit|1|st");
+        assert_eq!(
+            plan_recovery(1, audit_ad.as_bytes()).unwrap(),
+            RecoveryAction::TruncatePartialThen {
+                fragment_len: "5|commit|1|st".len(),
+                then: Box::new(RecoveryAction::ExecuteStampedInputOnce {
+                    step: 1,
+                    raw_line: in1.trim_end().to_string()
+                })
+            }
+        );
+        // ... and with run already at 2 -> discard, then Case B
+        assert_eq!(
+            plan_recovery(2, audit_ad.as_bytes()).unwrap(),
+            RecoveryAction::TruncatePartialThen {
+                fragment_len: "5|commit|1|st".len(),
+                then: Box::new(RecoveryAction::EmitMissingCommitFromRun {
+                    step: 1,
+                    next_step: 2
+                })
+            }
+        );
+        // a fragment after commit(0) with an inconsistent run step is an error (it used to be acquired blindly)
+        assert!(plan_recovery(5, audit_d.as_bytes()).is_err());
+        // codex I-R P1: step u64::MAX must not wrap to 0 (input and commit, with and without a fragment)
+        let mx = u64::MAX;
+        let audit_cmax = format!("{hdr}9|commit|{mx}|st|h\n");
+        assert!(plan_recovery(0, audit_cmax.as_bytes()).is_err());
+        assert!(plan_recovery(0, format!("{audit_cmax}x").as_bytes()).is_err());
+        let audit_imax = format!("{hdr}9|input|{mx}|g1=f64:1|h\n");
+        assert!(plan_recovery(0, audit_imax.as_bytes()).is_err());
+        assert!(plan_recovery(0, format!("{audit_imax}x").as_bytes()).is_err());
     }
 
     #[test]

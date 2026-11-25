@@ -1,0 +1,10 @@
+# S74 predictions frozen before implementation (2026-11-24T14:34:49Z); codex S-R 14:34Z P1-P4
+c4473fa089ea8664694370bda5ba59901a355f98b673e63b5b2477fdee419ba1  experiments/s74_index/predictions.toml
+128e30cfbbc47b65afe8828c10acf702f34916456e5e7d0c06fc04eeaf2bf61e  discussion/specs/S74-draft-context-index-dev.md
+# S74 code before codex I-R (2026-11-24T14:36:03Z)
+5f53817718f6479f757337dd29a98edbd087a9a34e2331eee25685733eeed34a  experiments/s74_index/s74.jl
+# S74 code after codex I-R 14:36Z P1 P4 P5 fixed (2026-11-24T14:36:47Z)
+57fb46def74f1458306b637a4f1dfe26ae32885a29b0cb9639e209cc3c84e08e  experiments/s74_index/s74.jl
+# S74 outputs (2026-11-24T14:38:19Z): Q1 holds (eta 0.01), Q2 miss 3/4, Q3 miss 2/4, Q4 miss
+97d84ac9f2e20cb692b36763ef51bddd8321af1bfb1773618dc17794254d56d0  experiments/s74_index/out/s74.out
+8d215215eed6a67273cd4ecf8bee7a64ab66d3096887245a861ff086c5d28fb2  discussion/specs/S74-draft-context-index-dev.md

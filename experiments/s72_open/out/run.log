@@ -1,0 +1,14 @@
+done CUM 4 sec 6.0
+done CUM 1 sec 10.0
+done CUM 2 sec 10.0
+done CUM 3 sec 6.0
+done FGT 4 sec 0.0
+done FGT 3 sec 0.0
+done FGT 1 sec 0.0
+done FGT 2 sec 0.0
+done TRM 4 sec 3841.0
+done TRM 3 sec 3875.0
+done TRM 2 sec 3878.0
+done TRM 1 sec 3900.0
+┌ Warning: Assignment to `us` in soft scope is ambiguous because a global variable by the same name exists: `us` will be treated as a new local. Disambiguate by using `local us` to suppress this warning or `global us` to assign to the existing global variable.
+└ @ ~/bridge-agency-lab/experiments/check_draw.jl:211

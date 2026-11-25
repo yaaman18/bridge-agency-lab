@@ -1,0 +1,5 @@
+# selected in stage 1 by the §8.6 / §9.3 / §10.3 rules (L-FGT only)
+w0 = 0.008098476009916873
+eps = 0.0025
+delta = 0.1
+theta = 0.04

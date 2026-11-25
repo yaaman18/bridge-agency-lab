@@ -1,0 +1,8 @@
+# S81 pair predictions frozen before running (seen 48 lives only, 2026-11-25T13:36:02Z); user 2026-11-25 「じゃあ進めて」; codex S-R 12:34Z P1-P5
+560563db4d7075bef934cf7c76ffb7c0535593fd0dce552dceaa8bcc8caca5ac  experiments/s81_pair/predictions.toml
+# S81 pair code before codex I-R (2026-11-25T13:37:08Z)
+e674c2c1cfd51d45ab2423d1b136e6c1e46ab519a5b3018071a5b22706417253  experiments/s81_pair/s81.jl
+# S81 pair code after codex I-R 12:37Z P3 (O post part limited to the actual window) P4 (routine O-free and row counts per group) (2026-11-25T13:37:50Z)
+8e2f5065faa104ed7fc837fa5a11de9256a84848f374802d9650027343c990e2  experiments/s81_pair/s81.jl
+# S81 pair output (2026-11-25T13:39:17Z): F1 hit (median n0 O only 5 < both 9), F2 hit (K=54 D=54); pairs both 125, O only 54, C4 only 0, neither 4; routine C4 only 24; seen 48 lives only, no new seeds
+5b4d8f76f00f972ce966d08a43589878fb8132f7bbc090aee83c0a330e641a59  experiments/s81_pair/out/s81.out

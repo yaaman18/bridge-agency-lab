@@ -1,0 +1,12 @@
+# S75 predictions (discussion/specs/S75-draft-clock-candidates-dev.md §7), frozen BEFORE s75.jl is written and before any candidate clock value is computed.
+# User approval 2026-11-25 ("S75 の承認をする。作業を続行して"). codex 09:49Z P1-P6, S-R 09:51Z P1-P6.
+# Dev: S72 stage-1 lives (seeds 1050-1067, seen), L-FGT. Confirmation: new seeds 1600-1617 (ledger checked unused 2026-11-25), winner only, no fall-back.
+[Q1]
+claim = "dev: at least one candidate configuration (C0-C5) passes TRACE-1 (false-fire <= 0.10, selected-switch detection >= 0.90) in all 4 dev lives for L-FGT at some threshold of its grid"
+miss = "no configuration passes all 4 dev lives (no winner; Q2 miss; Q3 undecided, confirmation not run)"
+[Q2]
+claim = "dev: the winner (rank: max false-fire rate, mean-of-life-means delay with undetected = 500, candidate number, grid position) is C4 (Page-Hinkley) or C5 (slow internal twin)"
+basis = "hypothesis: the weakness is the rare Y = 0 jump; C4 accumulates sustained increase, C5 does not read outcome noise directly; that C4 suppresses single jumps is not derivable"
+[Q3]
+claim = "confirmation: the winner, at its selected threshold, passes TRACE-1 in all 4 confirmation lives (seeds 1600-1617)"
+scoring = "a life with 0 selected switches is not computable: Q3 undecided if no other life fails, miss if another life fails"

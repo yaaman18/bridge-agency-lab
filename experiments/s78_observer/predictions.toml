@@ -1,0 +1,7 @@
+# S78 predictions (discussion/specs/S78-draft-ideal-observer.md §5), frozen before s78.jl is written. codex 10:32:47Z P1-P7.
+[E1]
+claim = "O-win (500-window mean of u = l_L - l_Lc) has no theta common to all 8 seen lives at L=500; O-cusum (delta in {0,0.005,0.01}, h in 0.25..60) passes all 8 lives at no (delta, h)"
+[E2]
+claim = "at L=500, F_l - R_l of O-win exceeds that of REF-win (500-window mean of l_L - l_ref) in at least 6 of 8 lives (ties are not improvements)"
+[E3]
+claim = "binomial model max over theta of the 4-life pass probability is below 0.5 for both stage 1 and stage 2"

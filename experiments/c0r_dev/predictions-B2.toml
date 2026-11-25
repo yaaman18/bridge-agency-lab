@@ -1,0 +1,41 @@
+# r2 after codex S-R (2026-11-24 00:52Z, P1-P5). S71 dev B2: the receptor-path experiment again with lr 1e-3 (S71 r1 §2.5, codex S-R P8). Written and frozen BEFORE the runs.
+# The first B (lr 3e-3) collapsed to RATE in all 4 runs and is not used. lr 1e-3 and 3200 updates are chosen from dev A
+# (A_full_1e-3_3200: val 0.01185 = TAB_R1). Everything else as dev A: obs-full stat, model 1x1, wd 0, TRAIN 1050..1061 train,
+# VAL 1062..1067 score, INITSEED 640001, BATCHSEED 640100, batch 64. Results go to c0r_dev/out/results.tsv (tags B2_*).
+# Do not edit after the runs; a missed prediction is reported as missed.
+
+[runs]
+masks = ["ay", "r1", "r8", "rall", "full"]   # "full" = a second process of A_full_1e-3_3200 (reproducibility control)
+extra_800 = ["ay", "r1"]   # codex S-R P3: the same masks at 800 updates, to see the contribution of the update count (descriptive)
+lr = 1e-3
+wd = 0.0
+nsteps = 3200
+
+[reference]   # observed before this freeze (same VAL seeds)
+RATE = 0.04388
+TAB_R1 = 0.01185
+A_full_1e-3_3200 = 0.01185
+
+[predictions]
+# P-B2-1: the 1x1 reads the receptors when only they are visible: val(r1) <= TAB_R1 + 0.002
+P_B2_1 = "val(r1) <= 0.01385"
+# P-B2-2: more receptors do not hurt much; scored separately for r8 and rall (codex P1), r1's own verdict reported with them
+P_B2_2a = "val(r8) <= val(r1) + 0.002"
+P_B2_2b = "val(rall) <= val(r1) + 0.002"
+# P-B2-3: without receptors the signal is mostly gone: val(ay) >= 0.030 (S64 obs-ay 1x1 val was 0.0358 at 800 updates)
+P_B2_3 = "val(ay) >= 0.030"
+# P-B2-4: the full rerun in a second process gives the same val as A_full_1e-3_3200 to all printed digits (0.01185)
+P_B2_4 = "val(full rerun) == 0.01185"
+# P-B2-5 (codex P2): a separate condition for "ay is close to full"; predicted NOT to hold
+P_B2_5 = "abs(val(ay) - val(full)) <= 0.002  (predicted false)"
+
+[reading]   # how the results are read (fixed before the runs)
+# P-B2-1 and P-B2-3 hold -> the receptors carry the signal and the model can read them; S64's failure is consistent with too few updates.
+# P-B2-1 fails -> the 1x1 cannot reach TAB_R1 from the six receptors alone: look at the encoding/training before S71's main run.
+# P-B2-5 holds (ay within 0.002 of full) -> the action/answer history carries most of the signal; the receptor reading of S71 §1 is wrong.
+# P-B2-3 fails but P-B2-5 does not hold -> ay is in between: the receptors carry part of the signal (no stronger reading).
+# 0.030 is about 57% of the way from full (0.01185) to RATE (0.04388) (codex P3).
+# What P-B2-1 and 3 holding shows is limited to this training condition: r1 suffices and ay is worse. The 800-update runs only describe
+# how much the update count contributes. A shuffle control of the six r1 values across examples is a separate experiment (codex P4).
+# One fixed seed set: the report is limited to these seeds and VAL (codex P5).
+# Any of these is a dev observation, not a C0 verdict.

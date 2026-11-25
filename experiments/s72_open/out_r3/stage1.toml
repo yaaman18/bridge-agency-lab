@@ -1,0 +1,5 @@
+# selected in stage 1 by the §8.6 / §9.3 rules (L-FGT only)
+w0 = 0.008098476009916873
+eps = "not separable in stage 1"
+kappa = "not separable in stage 1"
+theta = "held: eps not selected"

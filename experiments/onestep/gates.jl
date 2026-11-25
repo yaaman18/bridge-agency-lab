@@ -19,10 +19,12 @@ function splitmix(seed::UInt64, n::Int)
 end
 drive_inputs(n; seed = 1) = (r = splitmix(UInt64(seed), n); [AueInput(ol_drive("D1", t)..., r[t+1]) for t in 0:n-1])
 
-results = Tuple{String,Bool,String}[]
-function gate(name, ok, note = "")
-    push!(results, (name, ok, note)); println(rpad(name, 6), ok ? "PASS" : "FAIL", "  ", note)
+results = Tuple{String,String,String}[]   # (name, "PASS" | "FAIL" | "NOT_RUN", note)
+function record(name, status, note)
+    push!(results, (name, status, note)); println(rpad(name, 6), rpad(status, 8), note)
 end
+gate(name, ok::Bool, note = "") = record(name, ok ? "PASS" : "FAIL", note)
+not_run(name, note) = record(name, "NOT_RUN", note)
 
 if MODE == "digest"   # U5 (called in separate processes with -t 1 and -t 8)
     s = aue_birth(SEEDS[1], LawL2, TracePred()); r = run_audited(s, drive_inputs(2000; seed = 5))
@@ -180,11 +182,11 @@ if MODE == "all"
     jl = Base.julia_cmd()
     outs = [strip(read(`$jl --project=$(OS_LAB) -t $th $(@__FILE__) digest`, String)) for th in (1, 8, 1)]
     gate("U5", length(unique(outs)) == 1, "digests (1 thread, 8 threads, 1 thread; separate processes): " * join((o[1:12] for o in outs), " "))
-    gate("U7", false, "NOT RUN: the TRM predictor and B_max are not in this stage (S69 H-S69-2)")
-    gate("U9", false, "NOT RUN: the C2 head update and its accounting order are not in this stage")
+    not_run("U7", "NOT RUN: the TRM predictor and B_max are not in this stage (S69 H-S69-2)")
+    not_run("U9", "NOT RUN: the C2 head update and its accounting order are not in this stage")
     open(joinpath(OUT, "gates.out"), "w") do io
-        for (n, ok, note) in sort(results; by = x -> parse(Int, x[1][2:end]))
-            println(io, n, "\t", ok ? "PASS" : (startswith(note, "NOT RUN") ? "NOT_RUN" : "FAIL"), "\t", note)
+        for (n, status, note) in sort(results; by = x -> parse(Int, x[1][2:end]))
+            println(io, n, "\t", status, "\t", note)
         end
     end
 end

@@ -1,0 +1,163 @@
+== CUM life 1: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01666 b=0.01162 early=0.05829 measurable=true recovered=true s=260 s_fresh=288 s/s_fresh=0.90278 keych=1.00000
+  OPEN-1 i=2 a=0.01162 b=0.01582 early=0.00508 measurable=false recovered=true s=250 s_fresh=257 s/s_fresh=0.97276 keych=0.85100
+  OPEN-1 i=3 a=0.01582 b=0.01728 early=0.02732 measurable=false recovered=true s=489 s_fresh=722 s/s_fresh=0.67729 keych=1.00000
+  OPEN-1 i=4 a=0.01728 b=0.01103 early=0.00519 measurable=false recovered=true s=250 s_fresh=253 s/s_fresh=0.98814 keych=0.99967
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.02249/0.02249 loss_D A/B=0.01607/0.01607
+  OPEN-2 i=2 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.01613/0.04891 loss_D A/B=0.00540/0.00540
+  OPEN-2 i=3 delta=0.00029 delta_preD=0.00031 selfcheck=0.0 loss_branch A/B=0.01740/0.03400 loss_D A/B=0.01076/0.01110
+  OPEN-2 i=4 delta=0.00173 delta_preD=0.00174 selfcheck=0.0 loss_branch A/B=0.01769/0.11085 loss_D A/B=0.00521/0.00528
+  TRACE-1 i=1 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=2 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=3 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=4 F=0.00000 R=0.00000 ok=false
+== CUM life 2: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01440 b=0.01908 early=0.18033 measurable=true recovered=true s=530 s_fresh=535 s/s_fresh=0.99065 keych=1.00000
+  OPEN-1 i=2 a=0.01908 b=0.01086 early=0.00509 measurable=false recovered=true s=250 s_fresh=255 s/s_fresh=0.98039 keych=0.99967
+  OPEN-1 i=3 a=0.01086 b=0.02116 early=0.00516 measurable=false recovered=false s=250 s_fresh=252 s/s_fresh=0.99206 keych=0.89833
+  OPEN-1 i=4 a=0.02116 b=0.03024 early=0.01170 measurable=false recovered=true s=250 s_fresh=257 s/s_fresh=0.97276 keych=1.00000
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.05204/0.05204 loss_D A/B=0.02207/0.02207
+  OPEN-2 i=2 delta=0.00182 delta_preD=0.00240 selfcheck=0.0 loss_branch A/B=0.03838/0.04031 loss_D A/B=0.02589/0.02737
+  OPEN-2 i=3 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.03259/0.03339 loss_D A/B=0.03445/0.03445
+  OPEN-2 i=4 delta=0.00001 delta_preD=0.00001 selfcheck=0.0 loss_branch A/B=0.03883/0.04684 loss_D A/B=0.02347/0.02319
+  TRACE-1 i=1 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=2 F=5.24232 R=0.00000 ok=true
+  TRACE-1 i=3 F=2.23920 R=1.50037 ok=false
+  TRACE-1 i=4 F=0.13126 R=0.00000 ok=false
+== CUM life 3: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01090 b=0.01829 early=0.02626 measurable=true recovered=true s=349 s_fresh=264 s/s_fresh=1.32197 keych=0.99967
+  OPEN-1 i=2 a=0.01829 b=0.02382 early=0.19286 measurable=true recovered=true s=651 s_fresh=643 s/s_fresh=1.01244 keych=0.99967
+  OPEN-1 i=3 a=0.02382 b=0.00909 early=0.15544 measurable=true recovered=true s=347 s_fresh=347 s/s_fresh=1.00000 keych=0.87333
+  OPEN-1 i=4 a=0.00909 b=0.02268 early=0.17077 measurable=true recovered=false s=377 s_fresh=402 s/s_fresh=0.93781 keych=1.00000
+  OPEN-2 i=1 delta=0.00271 delta_preD=0.00310 selfcheck=0.0 loss_branch A/B=0.02350/0.03696 loss_D A/B=0.01367/0.01405
+  OPEN-2 i=2 delta=0.00013 delta_preD=0.00009 selfcheck=0.0 loss_branch A/B=0.07497/0.04032 loss_D A/B=0.01566/0.01534
+  OPEN-2 i=3 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.04664/0.12135 loss_D A/B=0.00510/0.00510
+  OPEN-2 i=4 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.05890/0.02467 loss_D A/B=0.01614/0.01614
+  TRACE-1 i=1 F=0.23233 R=0.00000 ok=false
+  TRACE-1 i=2 F=17.28189 R=0.82419 ok=true
+  TRACE-1 i=3 F=3.59853 R=0.00000 ok=true
+  TRACE-1 i=4 F=2.43766 R=0.00000 ok=true
+== CUM life 4: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01526 b=0.01215 early=0.13514 measurable=true recovered=true s=823 s_fresh=478 s/s_fresh=1.72176 keych=0.99967
+  OPEN-1 i=2 a=0.01215 b=0.01774 early=0.02194 measurable=false recovered=true s=250 s_fresh=254 s/s_fresh=0.98425 keych=0.99967
+  OPEN-1 i=3 a=0.01774 b=0.04548 early=0.06984 measurable=true recovered=false s=265 s_fresh=265 s/s_fresh=1.00000 keych=1.00000
+  OPEN-1 i=4 a=0.04548 b=0.03398 early=0.04982 measurable=false recovered=true s=512 s_fresh=512 s/s_fresh=1.00000 keych=1.00000
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.03507/0.03507 loss_D A/B=0.00568/0.00568
+  OPEN-2 i=2 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.08468/0.01816 loss_D A/B=0.01631/0.01563
+  OPEN-2 i=3 delta=0.00246 delta_preD=0.00254 selfcheck=0.0 loss_branch A/B=0.07867/0.12385 loss_D A/B=0.02889/0.03263
+  OPEN-2 i=4 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.05029/0.02529 loss_D A/B=0.01271/0.01271
+  TRACE-1 i=1 F=1.31338 R=0.00000 ok=false
+  TRACE-1 i=2 F=8.23358 R=0.00000 ok=true
+  TRACE-1 i=3 F=3.09280 R=2.66947 ok=false
+  TRACE-1 i=4 F=0.62916 R=1.30458 ok=false
+== FGT life 1: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01724 b=0.01205 early=0.05583 measurable=true recovered=true s=260 s_fresh=288 s/s_fresh=0.90278 keych=1.00000
+  OPEN-1 i=2 a=0.01205 b=0.01708 early=0.00505 measurable=false recovered=true s=250 s_fresh=257 s/s_fresh=0.97276 keych=0.85100
+  OPEN-1 i=3 a=0.01708 b=0.01702 early=0.04922 measurable=true recovered=true s=722 s_fresh=722 s/s_fresh=1.00000 keych=1.00000
+  OPEN-1 i=4 a=0.01702 b=0.01103 early=0.00525 measurable=false recovered=true s=250 s_fresh=253 s/s_fresh=0.98814 keych=0.99967
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.02213/0.02213 loss_D A/B=0.01818/0.01818
+  OPEN-2 i=2 delta=0.00028 delta_preD=0.00181 selfcheck=0.0 loss_branch A/B=0.01850/0.04336 loss_D A/B=0.01092/0.01109
+  OPEN-2 i=3 delta=0.00494 delta_preD=0.03975 selfcheck=0.0 loss_branch A/B=0.02648/0.02648 loss_D A/B=0.01175/0.03057
+  OPEN-2 i=4 delta=0.00177 delta_preD=0.00320 selfcheck=0.0 loss_branch A/B=0.01804/0.03771 loss_D A/B=0.00554/0.00556
+  TRACE-1 i=1 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=2 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=3 F=0.01350 R=0.00000 ok=false
+  TRACE-1 i=4 F=0.00000 R=0.00000 ok=false
+== FGT life 2: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01607 b=0.01645 early=0.09436 measurable=true recovered=true s=535 s_fresh=535 s/s_fresh=1.00000 keych=1.00000
+  OPEN-1 i=2 a=0.01645 b=0.00776 early=0.00516 measurable=false recovered=true s=250 s_fresh=254 s/s_fresh=0.98425 keych=0.99967
+  OPEN-1 i=3 a=0.00776 b=0.01581 early=0.00515 measurable=false recovered=true s=250 s_fresh=252 s/s_fresh=0.99206 keych=0.89833
+  OPEN-1 i=4 a=0.01581 b=0.01701 early=0.00528 measurable=false recovered=true s=250 s_fresh=257 s/s_fresh=0.97276 keych=1.00000
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.02761/0.02761 loss_D A/B=0.02466/0.02466
+  OPEN-2 i=2 delta=0.00602 delta_preD=0.13403 selfcheck=0.0 loss_branch A/B=0.03042/0.01889 loss_D A/B=0.04766/0.06901
+  OPEN-2 i=3 delta=0.00010 delta_preD=0.00658 selfcheck=0.0 loss_branch A/B=0.03320/0.03427 loss_D A/B=0.02340/0.02164
+  OPEN-2 i=4 delta=0.00157 delta_preD=0.00001 selfcheck=0.0 loss_branch A/B=0.02906/0.02916 loss_D A/B=0.03246/0.02888
+  TRACE-1 i=1 F=0.00000 R=0.00000 ok=false
+  TRACE-1 i=2 F=0.90265 R=0.00000 ok=false
+  TRACE-1 i=3 F=2.38703 R=0.00000 ok=true
+  TRACE-1 i=4 F=0.00000 R=0.00000 ok=false
+== FGT life 3: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01137 b=0.01964 early=0.02624 measurable=false recovered=true s=349 s_fresh=263 s/s_fresh=1.32700 keych=0.99967
+  OPEN-1 i=2 a=0.01964 b=0.01428 early=0.17530 measurable=true recovered=true s=651 s_fresh=643 s/s_fresh=1.01244 keych=0.99967
+  OPEN-1 i=3 a=0.01428 b=0.01003 early=0.12686 measurable=true recovered=true s=347 s_fresh=347 s/s_fresh=1.00000 keych=0.87333
+  OPEN-1 i=4 a=0.01003 b=0.01664 early=0.11891 measurable=true recovered=true s=399 s_fresh=402 s/s_fresh=0.99254 keych=1.00000
+  OPEN-2 i=1 delta=0.00499 delta_preD=0.00755 selfcheck=0.0 loss_branch A/B=0.02385/0.02785 loss_D A/B=0.01314/0.01831
+  OPEN-2 i=2 delta=0.00253 delta_preD=0.00263 selfcheck=0.0 loss_branch A/B=0.06067/0.03943 loss_D A/B=0.03344/0.03367
+  OPEN-2 i=3 delta=0.00000 delta_preD=0.00204 selfcheck=0.0 loss_branch A/B=0.04184/0.05060 loss_D A/B=0.00932/0.00935
+  OPEN-2 i=4 delta=0.00032 delta_preD=0.00044 selfcheck=0.0 loss_branch A/B=0.03472/0.01879 loss_D A/B=0.02988/0.03017
+  TRACE-1 i=1 F=0.34256 R=0.00000 ok=false
+  TRACE-1 i=2 F=10.69222 R=0.00000 ok=true
+  TRACE-1 i=3 F=2.87611 R=0.00000 ok=true
+  TRACE-1 i=4 F=0.00000 R=0.00000 ok=false
+== FGT life 4: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.01599 b=0.01344 early=0.12931 measurable=true recovered=true s=823 s_fresh=478 s/s_fresh=1.72176 keych=0.99967
+  OPEN-1 i=2 a=0.01344 b=0.00725 early=0.01508 measurable=false recovered=true s=593 s_fresh=253 s/s_fresh=2.34387 keych=0.99967
+  OPEN-1 i=3 a=0.00725 b=0.02080 early=0.02625 measurable=true recovered=false s=265 s_fresh=265 s/s_fresh=1.00000 keych=1.00000
+  OPEN-1 i=4 a=0.02080 b=0.01614 early=0.04730 measurable=true recovered=true s=513 s_fresh=512 s/s_fresh=1.00195 keych=1.00000
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.03409/0.03409 loss_D A/B=0.00779/0.00779
+  OPEN-2 i=2 delta=0.00003 delta_preD=0.00752 selfcheck=0.0 loss_branch A/B=0.03783/0.01814 loss_D A/B=0.03067/0.02737
+  OPEN-2 i=3 delta=0.00463 delta_preD=0.05766 selfcheck=0.0 loss_branch A/B=0.03456/0.04167 loss_D A/B=0.05484/0.04576
+  OPEN-2 i=4 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.03249/0.02565 loss_D A/B=0.02369/0.02369
+  TRACE-1 i=1 F=0.81477 R=0.00000 ok=false
+  TRACE-1 i=2 F=0.94107 R=0.00000 ok=false
+  TRACE-1 i=3 F=2.90963 R=0.00000 ok=true
+  TRACE-1 i=4 F=0.47711 R=0.00000 ok=false
+== TRM life 1: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.05252 b=0.03394 early=0.04660 measurable=false recovered=true s=256 s_fresh=2312 s/s_fresh=0.11073 keych=1.00000
+  OPEN-1 i=2 a=0.03394 b=0.06746 early=0.00477 measurable=false recovered=false s=250 s_fresh=1804 s/s_fresh=0.13858 keych=0.85100
+  OPEN-1 i=3 a=0.06746 b=0.04998 early=0.07772 measurable=false recovered=true s=490 s_fresh=1879 s/s_fresh=0.26078 keych=1.00000
+  OPEN-1 i=4 a=0.04998 b=0.03139 early=0.00417 measurable=false recovered=true s=250 s_fresh=1725 s/s_fresh=0.14493 keych=0.99967
+  OPEN-2 i=1 delta=0.00003 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.02257/0.02257 loss_D A/B=0.04900/0.04900
+  OPEN-2 i=2 delta=0.00121 delta_preD=0.00352 selfcheck=0.0 loss_branch A/B=0.07483/0.07336 loss_D A/B=0.02765/0.02706
+  OPEN-2 i=3 delta=0.00319 delta_preD=0.01200 selfcheck=0.0 loss_branch A/B=0.06228/0.05658 loss_D A/B=0.05755/0.04448
+  OPEN-2 i=4 delta=0.00003 delta_preD=0.00178 selfcheck=0.0 loss_branch A/B=0.02654/0.02660 loss_D A/B=0.00934/0.00942
+  TRACE-1 i=1 F=0.55723 R=7.83660 ok=false
+  TRACE-1 i=2 F=15.31417 R=8.49039 ok=false
+  TRACE-1 i=3 F=16.74951 R=0.00000 ok=true
+  TRACE-1 i=4 F=1.95574 R=5.71463 ok=false
+== TRM life 2: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.05954 b=0.04610 early=0.02639 measurable=false recovered=true s=250 s_fresh=2188 s/s_fresh=0.11426 keych=1.00000
+  OPEN-1 i=2 a=0.04610 b=0.02284 early=0.00403 measurable=false recovered=true s=250 s_fresh=1439 s/s_fresh=0.17373 keych=0.99967
+  OPEN-1 i=3 a=0.02284 b=0.05183 early=0.10596 measurable=true recovered=false s=282 s_fresh=1482 s/s_fresh=0.19028 keych=0.89833
+  OPEN-1 i=4 a=0.05183 b=0.04946 early=0.01314 measurable=false recovered=true s=250 s_fresh=1869 s/s_fresh=0.13376 keych=1.00000
+  OPEN-2 i=1 delta=0.00000 delta_preD=0.00000 selfcheck=0.0 loss_branch A/B=0.01555/0.01555 loss_D A/B=0.03319/0.03318
+  OPEN-2 i=2 delta=0.00202 delta_preD=0.00468 selfcheck=0.0 loss_branch A/B=0.05764/0.04199 loss_D A/B=0.05938/0.06547
+  OPEN-2 i=3 delta=0.00133 delta_preD=0.92432 selfcheck=0.0 loss_branch A/B=0.06896/0.09672 loss_D A/B=0.05665/0.11786
+  OPEN-2 i=4 delta=0.00022 delta_preD=0.01242 selfcheck=0.0 loss_branch A/B=0.05604/0.05212 loss_D A/B=0.03425/0.02195
+  TRACE-1 i=1 F=0.00000 R=9.37940 ok=false
+  TRACE-1 i=2 F=13.25253 R=0.00000 ok=true
+  TRACE-1 i=3 F=19.06917 R=18.27057 ok=false
+  TRACE-1 i=4 F=13.06810 R=0.00000 ok=true
+== TRM life 3: OPEN-1 true  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.02287 b=0.02740 early=0.06387 measurable=true recovered=true s=267 s_fresh=1819 s/s_fresh=0.14678 keych=0.99967
+  OPEN-1 i=2 a=0.02740 b=0.03183 early=0.27269 measurable=true recovered=true s=646 s_fresh=1773 s/s_fresh=0.36435 keych=0.99967
+  OPEN-1 i=3 a=0.03183 b=0.03057 early=0.21639 measurable=true recovered=true s=330 s_fresh=1587 s/s_fresh=0.20794 keych=0.87333
+  OPEN-1 i=4 a=0.03057 b=0.03030 early=0.32735 measurable=true recovered=true s=399 s_fresh=1557 s/s_fresh=0.25626 keych=1.00000
+  OPEN-2 i=1 delta=0.00200 delta_preD=0.69910 selfcheck=0.0 loss_branch A/B=0.03985/0.03635 loss_D A/B=0.02889/0.06426
+  OPEN-2 i=2 delta=0.01735 delta_preD=0.03893 selfcheck=0.0 loss_branch A/B=0.07462/0.07477 loss_D A/B=0.03430/0.04571
+  OPEN-2 i=3 delta=0.00024 delta_preD=0.00442 selfcheck=0.0 loss_branch A/B=0.06938/0.11667 loss_D A/B=0.00954/0.00864
+  OPEN-2 i=4 delta=0.03410 delta_preD=0.00002 selfcheck=0.0 loss_branch A/B=0.06243/0.01991 loss_D A/B=0.04579/0.06569
+  TRACE-1 i=1 F=5.24073 R=0.00000 ok=true
+  TRACE-1 i=2 F=12.33894 R=8.22540 ok=false
+  TRACE-1 i=3 F=13.59924 R=25.44250 ok=false
+  TRACE-1 i=4 F=28.77399 R=3.72321 ok=false
+== TRM life 4: OPEN-1 false  OPEN-2 false  TRACE-1 false
+  OPEN-1 i=1 a=0.05543 b=0.03851 early=0.54481 measurable=true recovered=true s=478 s_fresh=1439 s/s_fresh=0.33218 keych=0.99967
+  OPEN-1 i=2 a=0.03851 b=0.01913 early=0.21519 measurable=true recovered=true s=282 s_fresh=1388 s/s_fresh=0.20317 keych=0.99967
+  OPEN-1 i=3 a=0.01913 b=0.04645 early=0.04041 measurable=true recovered=false s=250 s_fresh=1629 s/s_fresh=0.15347 keych=1.00000
+  OPEN-1 i=4 a=0.04645 b=0.03469 early=0.08771 measurable=true recovered=true s=512 s_fresh=1539 s/s_fresh=0.33268 keych=1.00000
+  OPEN-2 i=1 delta=0.00984 delta_preD=0.00033 selfcheck=0.0 loss_branch A/B=0.10886/0.10591 loss_D A/B=0.08050/0.07979
+  OPEN-2 i=2 delta=0.00056 delta_preD=0.00050 selfcheck=0.0 loss_branch A/B=0.06575/0.07544 loss_D A/B=0.04841/0.04977
+  OPEN-2 i=3 delta=0.00351 delta_preD=0.00401 selfcheck=0.0 loss_branch A/B=0.06943/0.06926 loss_D A/B=0.04121/0.03479
+  OPEN-2 i=4 delta=0.00002 delta_preD=0.03396 selfcheck=0.0 loss_branch A/B=0.05742/0.08485 loss_D A/B=0.01060/0.00884
+  TRACE-1 i=1 F=27.26513 R=2.87147 ok=false
+  TRACE-1 i=2 F=14.26145 R=0.82470 ok=true
+  TRACE-1 i=3 F=5.87860 R=2.73445 ok=false
+  TRACE-1 i=4 F=5.25732 R=7.97053 ok=false
+OPEN-1 summary CUM: switches 16, unmeasurable 8, measurable 8, recovered 6/8, reached 8/8 (cap 6000, right-censored), not-recovered 2, not-reached 0, lives with non-inferiority violation 0/4
+VERDICT CUM: OPEN-1 false  OPEN-2 false  TRACE-1 false
+OPEN-1 summary FGT: switches 16, unmeasurable 7, measurable 9, recovered 8/9, reached 9/9 (cap 6000, right-censored), not-recovered 1, not-reached 0, lives with non-inferiority violation 1/4
+VERDICT FGT: OPEN-1 false  OPEN-2 false  TRACE-1 false
+OPEN-1 summary TRM: switches 16, unmeasurable 7, measurable 9, recovered 7/9, reached 9/9 (cap 6000, right-censored), not-recovered 2, not-reached 0, lives with non-inferiority violation 0/4
+VERDICT TRM: OPEN-1 false  OPEN-2 false  TRACE-1 false
+negative clocks: constant F=30 R=30 ok=false; zero F=0 R=0 ok=false

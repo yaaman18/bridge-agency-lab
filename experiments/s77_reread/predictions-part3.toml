@@ -1,0 +1,10 @@
+# S77 part 3 predictions (discussion/specs/S77-draft-trace1-reread.md §3), frozen before part 3 is implemented and before e* or any part-3 value is computed.
+# codex 10:19Z P1-P6 (reading), 10:20Z P1-P5 (S-R). Seeds 1600-1617 never computed before (S75/S76 confirmation not run).
+[D1]
+claim = "dev: some configuration (C0 w=500, C4 delta 0.005/0.01, C6 w=500; S75/S76 grids) passes the sub-criterion (f <= 0.10 over 15 routine windows; detection >= 0.90 on target switches d_i >= 3 eps and e_i > e*) in all 4 dev lives"
+miss = "none passes, or a dev life has 0 targets: D2, D3 not evaluated"
+[D2]
+claim = "the winner passes the sub-criterion in all 4 confirmation lives (seeds 1600-1617), e* fixed from dev"
+scoring = "a life with 0 targets is not computable: undecided if no other life fails, miss if another fails"
+[D3]
+claim = "the winner does NOT pass the main criterion (all selected switches) in all 4 confirmation lives"

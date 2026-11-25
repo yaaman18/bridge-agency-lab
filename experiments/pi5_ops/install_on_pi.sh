@@ -7,7 +7,16 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 PI_CONN="${DIR}/pi-connect.sh"
 
 TARGET="$(sh "$PI_CONN" --probe-only | awk '{for(i=1;i<=NF;i++) if($i ~ /^target=/){sub("^target=","",$i); print $i}}')"
+if [ -z "$TARGET" ]; then
+    echo "ERROR: could not resolve the Pi target (pi-connect.sh --probe-only gave no target=); nothing was copied" >&2
+    exit 1
+fi
 echo "Resolved Pi target: ${TARGET}"
+# scp needs an IPv6 address (fe80::...%enX) in brackets; ssh takes it bare
+case "$TARGET" in
+    *:*) SCP_HOST="[${TARGET}]" ;;
+    *) SCP_HOST="$TARGET" ;;
+esac
 
 SSH_OPTS="-o BatchMode=yes -o ConnectTimeout=5 -o HostKeyAlias=bridge-pi.local"
 
@@ -21,7 +30,7 @@ scp $SSH_OPTS \
     "${DIR}/aue-net-recover.timer" \
     "${DIR}/99-aue-watchdog.conf" \
     "${DIR}/99-aue-panic.conf" \
-    "pi@${TARGET}:/tmp/aue-pi5-ops/"
+    "pi@${SCP_HOST}:/tmp/aue-pi5-ops/"
 
 # shellcheck disable=SC2086
 ssh $SSH_OPTS "pi@${TARGET}" 'set -eu

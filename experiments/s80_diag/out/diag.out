@@ -1,0 +1,35 @@
+gate: rebuilt lives (make_life2) have the saved N and Y (8 lives)
+h* = 7.5: X/K = 27/30, Z/W = 31/120
+  [curve] h=1.0 X/K=30/30 Z/W=94/120
+  [curve] h=2.0 X/K=30/30 Z/W=94/120
+  [curve] h=3.0 X/K=30/30 Z/W=94/120
+  [curve] h=5.0 X/K=27/30 Z/W=70/120
+  [curve] h=10.0 X/K=26/30 Z/W=16/120
+  [curve] h=19.0 X/K=17/30 Z/W=0/120
+gate: false fires == Z at h*, W == 120
+false fires 31 | base decision points 2400
+  near boundary (<= 1000): false 0.2258 vs base 0.1787 (ratio 1.2633)
+  Y=0 in previous 500: base median 3.0; false fires above it 0.9355; false-fire Y0 counts [3, 3, 5, 5, 5, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9, 9, 9, 10, 11, 11, 11, 11, 11, 12, 12, 13]
+  base Y0 quantiles 0.5/0.75/0.9/0.99: 3.0/6.0/8.0/14.0
+  false-fire distances: [13, 14, 306, 306, 471, 698, 912, 1162, 1456, 1516, 1698, 1757, 1764, 1804, 1883, 1885, 2354, 2405, 2446, 2518, 2687, 3348, 3378, 3478, 3580, 3644, 3883, 3885, 4021, 4105, 4503]
+  false fires per life: 3 5 3 4 4 4 2 6
+  [missed h=7.5] st1 life 1 i=4 Y0 in [T+1,T+1000] = 1 dist(T)=1533
+  [missed h=7.5] st2 life 1 i=4 Y0 in [T+1,T+1000] = 1 dist(T)=3154
+  [missed h=7.5] st2 life 4 i=1 Y0 in [T+1,T+1000] = 2 dist(T)=3548
+  [missed h=19.0] st1 life 1 i=1 Y0 in [T+1,T+1000] = 4 dist(T)=3348
+  [missed h=19.0] st1 life 1 i=3 Y0 in [T+1,T+1000] = 10 dist(T)=3353
+  [missed h=19.0] st1 life 1 i=4 Y0 in [T+1,T+1000] = 1 dist(T)=1533
+  [missed h=19.0] st1 life 2 i=2 Y0 in [T+1,T+1000] = 10 dist(T)=333
+  [missed h=19.0] st1 life 2 i=4 Y0 in [T+1,T+1000] = 6 dist(T)=1606
+  [missed h=19.0] st1 life 3 i=1 Y0 in [T+1,T+1000] = 5 dist(T)=2937
+  [missed h=19.0] st2 life 1 i=1 Y0 in [T+1,T+1000] = 4 dist(T)=2996
+  [missed h=19.0] st2 life 1 i=4 Y0 in [T+1,T+1000] = 1 dist(T)=3154
+  [missed h=19.0] st2 life 2 i=1 Y0 in [T+1,T+1000] = 7 dist(T)=3900
+  [missed h=19.0] st2 life 2 i=4 Y0 in [T+1,T+1000] = 3 dist(T)=363
+  [missed h=19.0] st2 life 3 i=3 Y0 in [T+1,T+1000] = 9 dist(T)=256
+  [missed h=19.0] st2 life 4 i=1 Y0 in [T+1,T+1000] = 2 dist(T)=3548
+  [missed h=19.0] st2 life 4 i=3 Y0 in [T+1,T+1000] = 14 dist(T)=971
+  [formation] Y0 in [T+1,T+1000] over selected: [1, 1, 2, 2, 3, 4, 4, 4, 5, 5, 6, 7, 7, 8, 8, 8, 8, 9, 10, 10, 11, 11, 11, 12, 13, 14, 15, 19, 21, 22]
+S80-K1 (near-boundary share >= 2x base): miss
+S80-K2 (>= 75% of false fires above base Y0 median): holds
+S80-K3 (Z/W at h* > 0.10): holds

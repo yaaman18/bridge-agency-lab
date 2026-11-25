@@ -1,0 +1,255 @@
+gates: main P,Y == saved S72 r4 FGT (8 lives, bitwise); twin == L and u == 0 on [1, T_1], states equal at T_1 (8)
+selected: st1 life 1 [1, 3, 4]; st1 life 2 [1, 2, 3, 4]; st1 life 3 [1, 2, 3, 4]; st1 life 4 [1, 2, 3, 4]; st2 life 1 [1, 3, 4]; st2 life 2 [1, 2, 3, 4]; st2 life 3 [1, 2, 3, 4]; st2 life 4 [1, 2, 3, 4]
+  st1 life 1 u on formation windows (mean over [T+1,T+500]): 1:0.0144 2:-0.0003 3:0.0202 4:0.0088  routine mean u: 0.0000
+  st1 life 2 u on formation windows (mean over [T+1,T+500]): 1:0.0545 2:0.0347 3:0.0404 4:0.0137  routine mean u: 0.0000
+  st1 life 3 u on formation windows (mean over [T+1,T+500]): 1:0.0218 2:0.1110 3:0.0459 4:0.0619  routine mean u: 0.0000
+  st1 life 4 u on formation windows (mean over [T+1,T+500]): 1:0.0295 2:0.0645 3:0.0279 4:0.0308  routine mean u: 0.0001
+  st2 life 1 u on formation windows (mean over [T+1,T+500]): 1:0.0116 2:-0.0011 3:0.0574 4:0.0092  routine mean u: 0.0000
+  st2 life 2 u on formation windows (mean over [T+1,T+500]): 1:0.0524 2:0.0199 3:0.0473 4:-0.0004  routine mean u: 0.0001
+  st2 life 3 u on formation windows (mean over [T+1,T+500]): 1:-0.0003 2:0.0344 3:0.0219 4:0.0445  routine mean u: 0.0000
+  st2 life 4 u on formation windows (mean over [T+1,T+500]): 1:0.0092 2:0.0857 3:0.0167 4:0.0198  routine mean u: 0.0007
+== L=500
+  O-win: R_l 0.0000 0.0002 0.0002 0.0008 0.0000 0.0005 0.0002 0.0071 | F_l 0.0088 0.0137 0.0218 0.0279 0.0092 0.0001 0.0001 0.0099 | common theta (8 lives): false
+    per life separable alone: true true true true true false false true
+    stage 1 only: common theta: true [0.0008, 0.0088)
+    stage 2 only: common theta: false
+  REF-win: R_l 0.0034 0.0031 0.0032 0.0035 0.0067 0.0212 0.0152 0.0156 | F_l 0.0090 0.0131 0.0223 0.0317 0.0100 0.0031 0.0010 0.0107 | common theta (8 lives): false
+    per life separable alone: true true true true true false false false
+    stage 1 only: common theta: true [0.0035, 0.0090)
+    stage 2 only: common theta: false
+  O-cusum delta=0.0: best h=2.5 passes (st1, st2) = (4, 2); h with st1 4/4: 29, with st2 4/4: 0
+  O-cusum delta=0.005: best h=1.0 passes (st1, st2) = (4, 2); h with st1 4/4: 17, with st2 4/4: 0
+  O-cusum delta=0.01: best h=0.75 passes (st1, st2) = (4, 2); h with st1 4/4: 16, with st2 4/4: 0
+  O-cusum: (delta,h) passing all 8: none
+== L=1000
+  O-win: R_l 0.0001 0.0005 0.0006 0.0017 0.0000 0.0010 0.0004 0.0071 | F_l 0.0088 0.0245 0.0392 0.0305 0.0093 0.0196 0.0219 0.0099 | common theta (8 lives): true [0.0071, 0.0088)
+    per life separable alone: true true true true true true true true
+    stage 1 only: common theta: true [0.0017, 0.0088)
+    stage 2 only: common theta: true [0.0071, 0.0093)
+  REF-win: R_l 0.0034 0.0042 0.0061 0.0046 0.0087 0.0046 0.0152 0.0156 | F_l 0.0090 0.0233 0.0424 0.0317 0.0100 0.0208 0.0315 0.0107 | common theta (8 lives): false
+    per life separable alone: true true true true true true true false
+    stage 1 only: common theta: true [0.0061, 0.0090)
+    stage 2 only: common theta: false
+  O-cusum delta=0.0: best h=2.5 passes (st1, st2) = (4, 4); h with st1 4/4: 32, with st2 4/4: 10
+  O-cusum delta=0.005: best h=1.0 passes (st1, st2) = (4, 4); h with st1 4/4: 16, with st2 4/4: 15
+  O-cusum delta=0.01: best h=0.75 passes (st1, st2) = (4, 4); h with st1 4/4: 15, with st2 4/4: 15
+  O-cusum: (delta,h) passing all 8: (0.0, 2.5) (0.0, 2.75) (0.0, 3.0) (0.0, 3.25) (0.0, 3.5) (0.0, 3.75) (0.0, 4.0) (0.0, 4.25) (0.0, 4.5) (0.0, 4.75) ... (38)
+== L=1500
+  O-win: R_l 0.0001 0.0002 0.0006 0.0008 0.0000 0.0005 0.0003 0.0052 | F_l 0.0144 0.0245 0.0392 0.0305 0.0132 0.0200 0.0219 0.0167 | common theta (8 lives): true [0.0052, 0.0132)
+    per life separable alone: true true true true true true true true
+    stage 1 only: common theta: true [0.0008, 0.0144)
+    stage 2 only: common theta: true [0.0052, 0.0132)
+  REF-win: R_l 0.0035 0.0051 0.0061 0.0046 0.0087 0.0046 0.0095 0.0147 | F_l 0.0147 0.0233 0.0424 0.0317 0.0156 0.0210 0.0315 0.0194 | common theta (8 lives): false
+    per life separable alone: true true true true true true true true
+    stage 1 only: common theta: true [0.0061, 0.0147)
+    stage 2 only: common theta: true [0.0147, 0.0156)
+  O-cusum delta=0.0: best h=1.25 passes (st1, st2) = (4, 4); h with st1 4/4: 37, with st2 4/4: 40
+  O-cusum delta=0.005: best h=0.5 passes (st1, st2) = (4, 4); h with st1 4/4: 28, with st2 4/4: 23
+  O-cusum delta=0.01: best h=0.5 passes (st1, st2) = (4, 4); h with st1 4/4: 18, with st2 4/4: 19
+  O-cusum: (delta,h) passing all 8: (0.0, 1.25) (0.0, 2.5) (0.0, 2.75) (0.0, 3.0) (0.0, 3.25) (0.0, 3.5) (0.0, 3.75) (0.0, 4.0) (0.0, 4.25) (0.0, 4.5) ... (72)
+E1 (L=500: O-win no common theta over 8 lives, O-cusum none): holds  [O-win common: false, O-cusum all-8: false]
+E2 (F-R larger for O-win than REF-win in >= 6/8): holds (7/8)  O: 0.0088 0.0135 0.0216 0.0271 0.0092 -0.0004 -0.0001 0.0029 REF: 0.0056 0.0100 0.0192 0.0281 0.0033 -0.0181 -0.0141 -0.0049
+== E3 model (O-win, L=500): pooled d(theta) over selected switches of 8 lives, f(theta) over 120 routine windows
+  theta=0.0 d=1.0000 f=0.8000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0005 d=0.9333 f=0.0500 q4 st1=0.1678 st2=0.1678  observed lives passing st1 3/4 st2 1/4
+  theta=0.001 d=0.9333 f=0.0250 q4 st1=0.2859 st2=0.2859  observed lives passing st1 4/4 st2 1/4
+  theta=0.0015 d=0.9333 f=0.0250 q4 st1=0.2859 st2=0.2859  observed lives passing st1 4/4 st2 1/4
+  theta=0.002 d=0.9333 f=0.0250 q4 st1=0.2859 st2=0.2859  observed lives passing st1 4/4 st2 1/4
+  theta=0.0025 d=0.9333 f=0.0250 q4 st1=0.2859 st2=0.2859  observed lives passing st1 4/4 st2 1/4
+  theta=0.003 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.0035 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.004 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.0045 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.005 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.0055 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.006 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.0065 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.007 d=0.9333 f=0.0167 q4 st1=0.3207 st2=0.3207  observed lives passing st1 4/4 st2 1/4
+  theta=0.0075 d=0.9333 f=0.0000 q4 st1=0.3553 st2=0.3553  observed lives passing st1 4/4 st2 2/4
+  theta=0.008 d=0.9333 f=0.0000 q4 st1=0.3553 st2=0.3553  observed lives passing st1 4/4 st2 2/4
+  theta=0.0085 d=0.9333 f=0.0000 q4 st1=0.3553 st2=0.3553  observed lives passing st1 4/4 st2 2/4
+  theta=0.009 d=0.9000 f=0.0000 q4 st1=0.2059 st2=0.2059  observed lives passing st1 3/4 st2 2/4
+  theta=0.0095 d=0.8667 f=0.0000 q4 st1=0.1169 st2=0.1169  observed lives passing st1 3/4 st2 1/4
+  theta=0.01 d=0.8333 f=0.0000 q4 st1=0.0649 st2=0.0649  observed lives passing st1 3/4 st2 0/4
+  theta=0.0105 d=0.8333 f=0.0000 q4 st1=0.0649 st2=0.0649  observed lives passing st1 3/4 st2 0/4
+  theta=0.011 d=0.8333 f=0.0000 q4 st1=0.0649 st2=0.0649  observed lives passing st1 3/4 st2 0/4
+  theta=0.0115 d=0.8333 f=0.0000 q4 st1=0.0649 st2=0.0649  observed lives passing st1 3/4 st2 0/4
+  theta=0.012 d=0.8000 f=0.0000 q4 st1=0.0352 st2=0.0352  observed lives passing st1 3/4 st2 0/4
+  theta=0.0125 d=0.8000 f=0.0000 q4 st1=0.0352 st2=0.0352  observed lives passing st1 3/4 st2 0/4
+  theta=0.013 d=0.8000 f=0.0000 q4 st1=0.0352 st2=0.0352  observed lives passing st1 3/4 st2 0/4
+  theta=0.0135 d=0.8000 f=0.0000 q4 st1=0.0352 st2=0.0352  observed lives passing st1 3/4 st2 0/4
+  theta=0.014 d=0.7667 f=0.0000 q4 st1=0.0186 st2=0.0186  observed lives passing st1 2/4 st2 0/4
+  theta=0.0145 d=0.7333 f=0.0000 q4 st1=0.0095 st2=0.0095  observed lives passing st1 2/4 st2 0/4
+  theta=0.015 d=0.7333 f=0.0000 q4 st1=0.0095 st2=0.0095  observed lives passing st1 2/4 st2 0/4
+  theta=0.0155 d=0.7333 f=0.0000 q4 st1=0.0095 st2=0.0095  observed lives passing st1 2/4 st2 0/4
+  theta=0.016 d=0.7333 f=0.0000 q4 st1=0.0095 st2=0.0095  observed lives passing st1 2/4 st2 0/4
+  theta=0.0165 d=0.7333 f=0.0000 q4 st1=0.0095 st2=0.0095  observed lives passing st1 2/4 st2 0/4
+  theta=0.017 d=0.7000 f=0.0000 q4 st1=0.0047 st2=0.0047  observed lives passing st1 2/4 st2 0/4
+  theta=0.0175 d=0.7000 f=0.0000 q4 st1=0.0047 st2=0.0047  observed lives passing st1 2/4 st2 0/4
+  theta=0.018 d=0.7000 f=0.0000 q4 st1=0.0047 st2=0.0047  observed lives passing st1 2/4 st2 0/4
+  theta=0.0185 d=0.7000 f=0.0000 q4 st1=0.0047 st2=0.0047  observed lives passing st1 2/4 st2 0/4
+  theta=0.019 d=0.7000 f=0.0000 q4 st1=0.0047 st2=0.0047  observed lives passing st1 2/4 st2 0/4
+  theta=0.0195 d=0.7000 f=0.0000 q4 st1=0.0047 st2=0.0047  observed lives passing st1 2/4 st2 0/4
+  theta=0.02 d=0.6333 f=0.0000 q4 st1=0.0011 st2=0.0011  observed lives passing st1 2/4 st2 0/4
+  theta=0.0205 d=0.6000 f=0.0000 q4 st1=0.0005 st2=0.0005  observed lives passing st1 2/4 st2 0/4
+  theta=0.021 d=0.6000 f=0.0000 q4 st1=0.0005 st2=0.0005  observed lives passing st1 2/4 st2 0/4
+  theta=0.0215 d=0.6000 f=0.0000 q4 st1=0.0005 st2=0.0005  observed lives passing st1 2/4 st2 0/4
+  theta=0.022 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.0225 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.023 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.0235 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.024 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.0245 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.025 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.0255 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.026 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.0265 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.027 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.0275 d=0.5333 f=0.0000 q4 st1=0.0001 st2=0.0001  observed lives passing st1 1/4 st2 0/4
+  theta=0.028 d=0.5000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0285 d=0.5000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.029 d=0.5000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0295 d=0.5000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.03 d=0.5000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0305 d=0.4667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.031 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0315 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.032 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0325 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.033 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0335 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.034 d=0.4333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0345 d=0.4000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.035 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0355 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.036 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0365 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.037 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0375 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.038 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0385 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.039 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0395 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.04 d=0.3667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0405 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.041 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0415 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.042 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0425 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.043 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0435 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.044 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0445 d=0.3333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.045 d=0.3000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0455 d=0.3000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.046 d=0.2667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0465 d=0.2667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.047 d=0.2667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0475 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.048 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0485 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.049 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0495 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.05 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0505 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.051 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0515 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.052 d=0.2333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0525 d=0.2000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.053 d=0.2000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0535 d=0.2000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.054 d=0.2000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0545 d=0.2000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.055 d=0.1667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0555 d=0.1667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.056 d=0.1667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0565 d=0.1667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.057 d=0.1667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0575 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.058 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0585 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.059 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0595 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.06 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0605 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.061 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0615 d=0.1333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.062 d=0.1000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0625 d=0.1000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.063 d=0.1000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0635 d=0.1000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.064 d=0.1000 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0645 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.065 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0655 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.066 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0665 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.067 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0675 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.068 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0685 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.069 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0695 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.07 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0705 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.071 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0715 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.072 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0725 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.073 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0735 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.074 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0745 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.075 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0755 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.076 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0765 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.077 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0775 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.078 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0785 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.079 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0795 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.08 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0805 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.081 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0815 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.082 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0825 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.083 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0835 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.084 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0845 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.085 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0855 d=0.0667 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.086 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0865 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.087 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0875 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.088 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0885 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.089 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0895 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.09 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0905 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.091 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0915 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.092 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0925 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.093 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0935 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.094 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0945 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.095 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0955 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.096 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0965 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.097 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0975 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.098 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0985 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.099 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.0995 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  theta=0.1 d=0.0333 f=0.0000 q4 st1=0.0000 st2=0.0000  observed lives passing st1 0/4 st2 0/4
+  max q4: stage 1 0.3553 at theta=0.0075; stage 2 0.3553 at theta=0.0075  (model: independence and equal rates; theta chosen on the same sample)
+E3 (max model 4-life pass prob < 0.5 for both stages): holds

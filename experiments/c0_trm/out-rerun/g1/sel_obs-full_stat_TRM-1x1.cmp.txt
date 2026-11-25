@@ -1,0 +1,2 @@
+sel_obs-full_stat_TRM-1x1.jl.bin vs sel_obs-full_stat_TRM-1x1.rs.bin records 45 elements 144960 differing 0 max_abs 0.0 bytes_identical true PASS
+compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL

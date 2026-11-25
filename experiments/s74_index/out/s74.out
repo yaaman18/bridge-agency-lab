@@ -1,0 +1,42 @@
+== eta selection: splits/returns inside the 15 routine windows per life (main stream)
+  eta=0.005 routine events per life Any[1, 0, 0, 0]
+  eta=0.01 routine events per life Any[0, 0, 0, 0]
+  eta=0.02 routine events per life Any[0, 0, 0, 0]
+  eta=0.04 routine events per life Any[0, 0, 0, 0]
+Q1 (some eta has zero routine events in 4/4 lives): holds (eta=0.01)
+== life 1 (eta=0.01): tables made 1, events 0 []
+  switch i=1 first event in [T_i, next): none
+  switch i=2 first event in [T_i, next): none
+  switch i=3 first event in [T_i, next): none
+  switch i=4 first event in [T_i, next): none
+== life 2 (eta=0.01): tables made 4, events 3 [split@8160#2 split@20696#3 split@44656#4]
+  switch i=1 first event in [T_i, next): split after 160 examples
+  switch i=2 first event in [T_i, next): split after 696 examples
+  switch i=3 first event in [T_i, next): none
+  switch i=4 first event in [T_i, next): split after 656 examples
+== life 3 (eta=0.01): tables made 3, events 4 [split@20232#2 split@44096#3 ret@44600#1 ret@46200#3]
+  switch i=1 first event in [T_i, next): none
+  switch i=2 first event in [T_i, next): split after 232 examples
+  switch i=3 first event in [T_i, next): none
+  switch i=4 first event in [T_i, next): split after 96 examples
+== life 4 (eta=0.01): tables made 3, events 2 [split@20264#2 split@44552#3]
+  switch i=1 first event in [T_i, next): none
+  switch i=2 first event in [T_i, next): split after 264 examples
+  switch i=3 first event in [T_i, next): none
+  switch i=4 first event in [T_i, next): split after 552 examples
+  OPEN-1 life 1 ok=true viol=0  s=448,800,800,448 meas=true,true,true,true rec=true,true,true,true  [L-FGT s=1600,1248,1800,1296]
+  OPEN-2 life 1 dmap=0.44497,0.21827,0.37648,0.69296 ok(delta 0.1)=true
+  OPEN-1 life 2 ok=true viol=0  s=448,448,448,448 meas=true,true,true,true rec=true,true,true,true  [L-FGT s=448,448,448,448]
+  OPEN-2 life 2 dmap=0.13994,0.01216,0.67549,0.00000 ok(delta 0.1)=false
+  OPEN-1 life 3 ok=false viol=1  s=448,48,448,2000 meas=true,false,true,true rec=true,true,true,true  [L-FGT s=448,448,448,448]
+  OPEN-2 life 3 dmap=0.13486,0.77965,0.66138,0.26266 ok(delta 0.1)=true
+  OPEN-1 life 4 ok=true viol=0  s=448,448,448,448 meas=true,true,true,true rec=true,true,true,true  [L-FGT s=448,448,448,448]
+  OPEN-2 life 4 dmap=0.50034,0.60606,0.00330,0.52353 ok(delta 0.1)=false
+  S73-B life 1 D=0.02366 (dpost=0.02202 dpre=-0.00164)  H: table at T_2 #1, events in the return Tuple{Int64, Symbol, Int64}[], reused=false, tables 1  H': events [(44056, :ret, 2)], tables 2
+  S73-B life 2 D=-0.00231 (dpost=-0.00103 dpre=0.00128)  H: table at T_2 #2, events in the return [(44008, :split, 4), (44512, :ret, 2)], reused=true, tables 4  H': events [(44008, :ret, 3)], tables 3
+  S73-B life 3 D=-0.03757 (dpost=-0.03767 dpre=-0.00010)  H: table at T_2 #1, events in the return [(44088, :split, 3), (44592, :ret, 1)], reused=true, tables 3  H': events Tuple{Int64, Symbol, Int64}[], tables 4
+  S73-B life 4 D=0.00648 (dpost=0.00633 dpre=-0.00015)  H: table at T_2 #1, events in the return [(44008, :split, 3), (44512, :ret, 1)], reused=true, tables 3  H': events [(44008, :split, 3), (44552, :split, 4)], tables 4
+Q2 (OPEN-1 age branches 4/4): miss (3/4)
+Q3 (S73 B D > 0 in 4/4): miss (2/4)
+Q4 (Q2 and Q3 together at eta=0.01): miss
+gates: self-check 0, table difficulty control bit-identical across ages (IDX, all eps), mainrun == run_life4 main == paired H on [1, T_4]

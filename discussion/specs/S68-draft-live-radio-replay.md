@@ -70,7 +70,7 @@
     - **ケース A（`input(n)` 永続化後・`run` 更新前に断電）**: `run.step == n` かつ監査鎖末尾が `input(n)` → 新たな電波読取を行わず、**既に刻印済みの `input(n)` を使って歩 `n` を 1 回だけ完了**し、`run` 更新→`commit(n)` 追記へ進む（重複 0・欠番 0・位相ずれ 0）。
     - **ケース B（`run` atomic rename 後・`commit(n)` 追記前に断電）**: `run.step == n + 1` かつ監査鎖末尾が `input(n)` → `run` の確定状態ハッシュから `commit(n)` を 1 回だけ補完追記し、次歩 `n + 1` へ進む（S49d 整合）。
     - **ケース C（`commit(n)` 永続化直後に断電）**: `run.step == n + 1` かつ監査鎖末尾が `commit(n)` → そのまま次歩 `n + 1` から継続（連続位相 `n + 1`）。
-    - **ケース D（途中の不完全行・改行なし断片で断電）**: S49d と同一に不完全行を `break` 境界として記録・切り詰め（`commit` 未完の不完全 `input` 断片のみ破棄して `n` を再取得）。
+    - **ケース D（途中の不完全行・改行なし断片で断電）**: S49d と同一に、最後の LF より後の未終端バイト（生バイト数で数える）だけを `break` 境界として記録・切り詰め、**残った前置部（LF 終端）でケース A・B・C を判定し直す**（2026-11-24 改訂、claude-lab・codex-lab 合意。旧文言「`commit` 未完の不完全 `input` 断片のみ破棄して `n` を再取得」は、断片が `commit(n)` の途中で直前に完全な `input(n)` がある場合を定めておらず、再取得すると `input(n)` が二重になった）。前置部の末尾が `commit(n-1)` なら `n` を再取得（旧文言と同じ）、完全な `input(n)` なら刻印済みの入力でケース A（`run.step == n`）またはケース B（`run.step == n + 1`）。**LF で終わるのに header・input・commit として読めない行があれば、切り詰めずに停止して報告する**（壊れた完全行を断片として捨てない）。前置部と `run.step` が食い違えば停止。実装: `rust/onelife-trm/src/recovery.rs`（`TruncatePartialAndAcquire`・`TruncatePartialThen`）。
 
 ---
 

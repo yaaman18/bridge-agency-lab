@@ -2,8 +2,8 @@
 # Mac-side resilient SSH wrapper for Raspberry Pi 5 (`bridge-pi`).
 # Automatically falls back when mDNS (`bridge-pi.local`) fails:
 #   1) pi@bridge-pi.local (mDNS)
-#   2) cached IPv4 link-local (default 169.254.102.224)
-#   3) MAC-derived IPv6 link-local (fe80::da3a:ddff:fef4:474d%<active enX>)
+#   2) MAC-derived IPv6 link-local (fe80::da3a:ddff:fef4:474d%<active enX>)
+#   3) cached IPv4 link-local (default 169.254.102.224)
 #
 # Usage:
 #   sh experiments/pi5_ops/pi-connect.sh [--wait [max_sec]] [--probe-only] [-- <remote command...>]

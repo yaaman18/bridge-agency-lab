@@ -1,0 +1,13 @@
+inputs 400000; mismatches of jsmath.jl  exp 0 tanh 0 log 0 cos 0 hypot 0
+(Julia Base for comparison: exp 36746 tanh 48549 log 27768 cos 3969)
+== JavaScript copies against Julia
+all 42 identical
+== Rust (the app's engine) against Julia
+all 29 identical
+wasm scenario written; ui keys 28 texts; age 88893
+all 1 identical
+app/index.html embeds the WebAssembly module built from rust/ exactly
+results-body-org.json reproduced exactly (10 seeds x 4 conditions x 10000 steps; keys added since stage 42: blocked, kept, keptEnd, lost, meanLate, upkeep)
+== OneLife (S49): Rust (rust/being-core/src/onelife.rs) against Julia (core/one_life.jl), seed 627, L2 and L2+SF, D3, 3000 drives
+L2: the saves after n = 0..3000 drives identical; {"law":"L2","dead_at":2091,"death":2090,"errors":0}
+L2+SF: the saves after n = 0..3000 drives identical; {"law":"L2+SF","dead_at":2148,"death":2147,"errors":0}

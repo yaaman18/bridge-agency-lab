@@ -1,0 +1,102 @@
+== Clamp.lean
+'BridgeLab.Clamp.offer_zero' depends on axioms: [propext]
+== Environment.lean
+'BridgeLab.Environment.le1_lab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.Environment.le1_gated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.Environment.le2' depends on axioms: [propext, Classical.choice, Quot.sound]
+== History.lean
+'BridgeLab.History.observable_difference_needs_declared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.History.no_declared_no_difference' depends on axioms: [propext]
+'BridgeLab.History.difference_needs_declared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.History.difference_in_nursery' depends on axioms: [propext, Classical.choice, Quot.sound]
+== LabCircuit.lean
+/Users/yamaguchimitsuyuki/bridge-agency-lab/formal/LabCircuit.lean:761:21: warning: Variable name `hF` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/Users/yamaguchimitsuyuki/bridge-agency-lab/formal/LabCircuit.lean:952:0: warning: automatically included section variable(s) unused in theorem `BridgeLab.Activity.core_stays_on`:
+  [DecidableEq K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'BridgeLab.Window.elemDC_iff_fields' depends on axioms: [propext, Quot.sound]
+'BridgeLab.Window.dc_of_check' depends on axioms: [propext, Quot.sound]
+'BridgeLab.Window.check_of_fields' depends on axioms: [propext, Quot.sound]
+'BridgeLab.Window.no_dc_without_coupled_input' does not depend on any axioms
+'BridgeLab.Window.no_dc_when_gate_closed' depends on axioms: [propext]
+'BridgeLab.Window.no_dc_before_world_without_partner' depends on axioms: [propext]
+'BridgeLab.Window.gated_le_reach' depends on axioms: [propext]
+'BridgeLab.m4a_circuit' does not depend on any axioms
+'BridgeLab.reachability_terminal_of_absorbing' does not depend on any axioms
+'BridgeLab.m4b_of_check' depends on axioms: [propext]
+'BridgeLab.valueNeeded_iff_check' depends on axioms: [propext, Quot.sound]
+'BridgeLab.selfProducing_iff_check' depends on axioms: [propext, Quot.sound]
+'BridgeLab.selfRepairing_iff_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.agentOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.IdleFirst.pick_eq_pref' depends on axioms: [propext]
+'BridgeLab.IdleFirst.pick_idle' depends on axioms: [propext]
+'BridgeLab.IdleFirst.old_rule_locks' depends on axioms: [propext]
+'BridgeLab.IdleFirst.no_lockout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.CoreGate.gate_le' depends on axioms: [propext, Quot.sound]
+'BridgeLab.CoreGate.off_when_core_silenced' depends on axioms: [propext, Quot.sound]
+'BridgeLab.SeenBoth.new_le_old' depends on axioms: [propext]
+'BridgeLab.SeenBoth.agree_when_seen' depends on axioms: [propext]
+'BridgeLab.SeenBoth.always_on_never_passes' depends on axioms: [propext, Quot.sound]
+'BridgeLab.SedFade.clears' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.SedFade.fade_le' depends on axioms: [propext, Quot.sound]
+'BridgeLab.SedFade.driven_keeps' depends on axioms: [propext]
+'BridgeLab.SedFade.stepDrive_undriven' depends on axioms: [propext]
+'BridgeLab.SedFade.stepDrive_le' depends on axioms: [propext, Quot.sound]
+'BridgeLab.SedFade.clears_unused' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.GFP.X_card_eq_nu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.Window.nuFin_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.agentOfGfp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.ConMatter.step_source' depends on axioms: [propext]
+'BridgeLab.ConMatter.empty_absorbing' depends on axioms: [propext]
+'BridgeLab.Activity.core_stays_on' depends on axioms: [propext, Quot.sound]
+'BridgeLab.Activity.cand_of_S' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.Activity.unique_winner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.Activity.rank_injective' depends on axioms: [propext, Quot.sound]
+'BridgeLab.Activity.activity_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.Rest.admits_same' depends on axioms: [propext]
+'BridgeLab.Rest.admits_off' depends on axioms: [propext]
+'BridgeLab.Rest.rest_no_offer' depends on axioms: [propext]
+'BridgeLab.Rest.rest_edges_zero' depends on axioms: [propext]
+'BridgeLab.RestBody.innate_lost' depends on axioms: [propext, Quot.sound]
+'BridgeLab.RestBody.core_edge_idle' depends on axioms: [propext]
+'BridgeLab.RestBody.not_cand_without_core' depends on axioms: [propext, Quot.sound]
+'BridgeLab.RestAlpha.exempt_keeps' depends on axioms: [propext]
+'BridgeLab.RestAlpha.nonexempt_old' depends on axioms: [propext]
+'BridgeLab.RestAlpha.not_stale_of_q' depends on axioms: [propext, Quot.sound]
+'BridgeLab.Window.no_self_of_unreproduced' does not depend on any axioms
+== MemoryTransfer.lean
+'BridgeLab.MemoryTransfer.additive_not_four_sameX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.MemoryTransfer.additive_not_four_sameY' depends on axioms: [propext, Classical.choice, Quot.sound]
+== MemoryTransferC0.lean
+'BridgeLab.MemoryTransferC0.leak_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.MemoryTransferC0.lpScore_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+== NestingLineage.lean
+/Users/yamaguchimitsuyuki/bridge-agency-lab/formal/NestingLineage.lean:208:64: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/Users/yamaguchimitsuyuki/bridge-agency-lab/formal/NestingLineage.lean:219:70: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/Users/yamaguchimitsuyuki/bridge-agency-lab/formal/NestingLineage.lean:223:65: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'BridgeLab.NestingLineage.stage0_isomorphic' depends on axioms: [propext, Quot.sound]
+'BridgeLab.NestingLineage.stage1_separates_persist_and_replace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BridgeLab.NestingLineage.split_continuant_unique' depends on axioms: [propext, Quot.sound]
+'BridgeLab.NestingLineage.merge_fusion_no_continuant' depends on axioms: [propext, Quot.sound]
+'BridgeLab.NestingLineage.body_death_irreversible' depends on axioms: [propext]
+== OneLife.lean
+== SelfMaintenance.lean
+'BridgeLab.SelfMaintenance.lsH2' depends on axioms: [propext, Quot.sound]
+'BridgeLab.SelfMaintenance.lsH2k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BridgeLab.SelfMaintenance.exemptA_patch' depends on axioms: [propext, Quot.sound]
+exit 0

@@ -1,0 +1,171 @@
+w0 = 0.00810  eps=0.0025 delta=0.1 theta=0.04  gates passed (isolation, self-check, window table, table difficulty control)
+== stage 2 CUM life 1  rho*=[5, 6, 2, 3, 4, 1]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.19037 early=0.18911 b=0.00268 meas=true rec=true s=2400 s_prev=2344 s_ctl=2400
+    i=2 a=0.00004 d=0.22480 early=0.22326 b=0.01521 meas=true rec=false s=3400 s_prev=3344 s_ctl=2400
+    i=3 a=0.00014 d=0.30811 early=0.30822 b=0.01051 meas=true rec=false s=4144 s_prev=4096 s_ctl=2400
+    i=4 a=0.00065 d=0.21155 early=0.21203 b=0.02183 meas=true rec=false s=4296 s_prev=4248 s_ctl=2400
+    side(main stream, r3): s=1544,48,1096,1600 s_fresh=1544,1744,1048,1544 s_pad=1544,1744,1048,1544 d_main=0.03273,0.00260,0.30689,0.03113 log(s/s_fresh)=0.00000,-3.59274,0.04478,0.03563
+  OPEN-2 i=1 dmap=0.61166 dmap_pi/alt=0.49454/0.72877 ddata(report)=0.10273 dmap_preD=0.60164 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.40192 dmap_pi/alt=0.42512/0.37872 ddata(report)=0.10526 dmap_preD=0.42058 selfcheck=0.0
+  OPEN-2 i=3 dmap=1.19711 dmap_pi/alt=1.86925/0.52497 ddata(report)=0.15142 dmap_preD=1.19294 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.39055 dmap_pi/alt=0.17260/0.60849 ddata(report)=0.04484 dmap_preD=0.38727 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.00000 det_all=0.75000 det_sel=3/3 ok=true
+== stage 2 CUM life 2  rho*=[1, 5, 3, 4, 6, 2]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03328 early=0.03148 b=0.00033 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00289 d=0.34845 early=0.34990 b=0.00844 meas=true rec=false s=3800 s_prev=3744 s_ctl=448
+    i=3 a=0.01225 d=-0.00916 early=0.00132 b=0.00026 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.00866 d=0.29249 early=0.05085 b=0.00823 meas=true rec=true s=848 s_prev=800 s_ctl=448
+    side(main stream, r3): s=none,none,3344,4800 s_fresh=1648,944,496,1944 s_pad=1648,944,496,1944 d_main=0.28380,0.03246,0.02341,0.07820 log(s/s_fresh)=not computable,not computable,1.90835,0.90387
+  OPEN-2 i=1 dmap=0.33700 dmap_pi/alt=0.44875/0.22525 ddata(report)=0.11942 dmap_preD=0.31452 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.72121 dmap_pi/alt=0.43607/1.00635 ddata(report)=0.06376 dmap_preD=0.74254 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.59593 dmap_pi/alt=0.68030/0.51156 ddata(report)=0.03421 dmap_preD=0.59304 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.53776 dmap_pi/alt=0.52945/0.54606 ddata(report)=0.07526 dmap_preD=0.54606 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.60000 det_all=1.00000 det_sel=4/4 ok=false
+== stage 2 CUM life 3  rho*=[1, 5, 3, 4, 2, 6]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03302 early=0.03111 b=0.00038 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00006 d=0.01945 early=0.01779 b=0.00074 meas=true rec=true s=248 s_prev=200 s_ctl=448
+    i=3 a=0.00744 d=0.43060 early=0.43598 b=0.00860 meas=true rec=true s=3896 s_prev=3848 s_ctl=448
+    i=4 a=0.00094 d=0.21584 early=0.04260 b=0.01060 meas=true rec=false s=1800 s_prev=1744 s_ctl=448
+    side(main stream, r3): s=1248,3296,3344,4496 s_fresh=1248,1144,248,1048 s_pad=1248,1144,200,1048 d_main=0.03302,0.03525,0.08157,0.24884 log(s/s_fresh)=0.00000,1.05818,2.60149,1.45630
+  OPEN-2 i=1 dmap=0.40177 dmap_pi/alt=0.21864/0.58490 ddata(report)=0.15047 dmap_preD=0.40121 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.92668 dmap_pi/alt=1.46103/0.39232 ddata(report)=0.15989 dmap_preD=0.92446 selfcheck=0.0
+  OPEN-2 i=3 dmap=1.04212 dmap_pi/alt=0.22981/1.85443 ddata(report)=0.05489 dmap_preD=1.03626 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.39963 dmap_pi/alt=0.72237/0.07690 ddata(report)=0.10380 dmap_preD=0.40100 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.26667 det_all=0.75000 det_sel=3/4 ok=false
+== stage 2 CUM life 4  rho*=[2, 5, 3, 4, 6, 1]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03338 early=0.03137 b=0.00089 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00008 d=0.09388 early=0.09192 b=0.01383 meas=true rec=false s=2896 s_prev=2848 s_ctl=448
+    i=3 a=0.01230 d=-0.00922 early=0.00117 b=0.00082 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.02112 d=0.32982 early=0.34916 b=0.03263 meas=true rec=false s=4744 s_prev=4696 s_ctl=448
+    side(main stream, r3): s=1896,none,none,none s_fresh=1896,248,848,896 s_pad=1896,248,848,896 d_main=0.03338,0.36006,0.32557,0.24172 log(s/s_fresh)=0.00000,not computable,not computable,not computable
+  OPEN-2 i=1 dmap=0.50149 dmap_pi/alt=0.50149/0.50149 ddata(report)=0.07538 dmap_preD=0.46691 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.78757 dmap_pi/alt=0.97768/0.59745 ddata(report)=0.07994 dmap_preD=0.78591 selfcheck=0.0
+  OPEN-2 i=3 dmap=1.36695 dmap_pi/alt=1.72988/1.00402 ddata(report)=0.06702 dmap_preD=1.37187 selfcheck=0.0
+  OPEN-2 i=4 dmap=1.24587 dmap_pi/alt=1.95100/0.54074 ddata(report)=0.05936 dmap_preD=1.24311 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.46667 det_all=1.00000 det_sel=4/4 ok=false
+TRACE-1 summary CUM: det_all 0.75000 1.00000 0.75000 1.00000 det_sel 3/3 4/4 3/4 4/4 false 0.00000 0.60000 0.26667 0.46667
+OPEN-1 summary CUM: age branches 16 unmeasurable 2 measurable-not-recovered 7 not-reached 0 lives-with-violation 4/4
+VERDICT CUM: OPEN-1 false  OPEN-2 true  TRACE-1 false
+== stage 2 FGT life 1  rho*=[5, 6, 2, 3, 4, 1]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00103 d=0.12403 early=0.12250 b=0.00086 meas=true rec=true s=1296 s_prev=1248 s_ctl=1296
+    i=2 a=0.00072 d=0.13995 early=0.13717 b=0.00156 meas=true rec=true s=1600 s_prev=1544 s_ctl=1296
+    i=3 a=0.00102 d=0.13997 early=0.13824 b=0.00157 meas=true rec=true s=1600 s_prev=1544 s_ctl=1296
+    i=4 a=0.00180 d=0.11146 early=0.11093 b=0.00158 meas=true rec=true s=1248 s_prev=1200 s_ctl=1296
+    side(main stream, r3): s=1248,48,1000,1544 s_fresh=1248,1144,1000,1544 s_pad=1248,1144,1000,1544 d_main=0.03176,0.00376,0.03341,0.03188 log(s/s_fresh)=0.00000,-3.17109,0.00000,0.00000
+  OPEN-2 i=1 dmap=0.64239 dmap_pi/alt=0.59720/0.68757 ddata(report)=0.13265 dmap_preD=0.60844 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.36354 dmap_pi/alt=0.37488/0.35220 ddata(report)=0.16508 dmap_preD=0.61572 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.70563 dmap_pi/alt=0.70245/0.70880 ddata(report)=0.25195 dmap_preD=0.73845 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.47468 dmap_pi/alt=0.22001/0.72934 ddata(report)=0.07182 dmap_preD=0.49857 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.06667 det_all=0.75000 det_sel=3/3 ok=true
+== stage 2 FGT life 2  rho*=[1, 5, 3, 4, 6, 2]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00071 d=0.03309 early=0.03087 b=0.00104 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00175 d=0.03408 early=0.03507 b=0.00172 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00149 d=0.02850 early=0.02751 b=0.00175 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00151 d=0.03323 early=0.03130 b=0.00176 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=2544,none,496,2144 s_fresh=1496,696,496,944 s_pad=1496,696,496,944 d_main=0.20757,0.03346,0.03230,0.03385 log(s/s_fresh)=0.53094,not computable,0.00000,0.82030
+  OPEN-2 i=1 dmap=0.37606 dmap_pi/alt=0.50750/0.24462 ddata(report)=0.12981 dmap_preD=0.29300 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.58479 dmap_pi/alt=0.37632/0.79326 ddata(report)=0.12524 dmap_preD=0.70859 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.64852 dmap_pi/alt=0.64974/0.64729 ddata(report)=0.15864 dmap_preD=0.63857 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.65785 dmap_pi/alt=0.86538/0.45031 ddata(report)=0.11877 dmap_preD=0.55454 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.06667 det_all=0.75000 det_sel=3/4 ok=false
+== stage 2 FGT life 3  rho*=[1, 5, 3, 4, 2, 6]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00099 d=0.03209 early=0.03138 b=0.00108 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00095 d=0.02750 early=0.02606 b=0.00171 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00140 d=0.03248 early=0.03083 b=0.00174 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00216 d=0.03163 early=0.03328 b=0.00177 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=600,3848,200,2248 s_fresh=600,1144,200,1048 s_pad=600,1144,200,1048 d_main=0.03209,0.03568,0.03179,0.14149 log(s/s_fresh)=0.00000,1.21302,0.00000,0.76316
+  OPEN-2 i=1 dmap=0.42696 dmap_pi/alt=0.23417/0.61974 ddata(report)=0.13216 dmap_preD=0.43483 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.95589 dmap_pi/alt=1.40942/0.50235 ddata(report)=0.21791 dmap_preD=1.05744 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.40997 dmap_pi/alt=0.24099/0.57895 ddata(report)=0.14530 dmap_preD=0.44131 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.71915 dmap_pi/alt=0.56487/0.87344 ddata(report)=0.29569 dmap_preD=0.61399 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.06667 det_all=0.75000 det_sel=3/4 ok=false
+== stage 2 FGT life 4  rho*=[2, 5, 3, 4, 6, 1]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00124 d=0.03261 early=0.03180 b=0.00156 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00125 d=0.03382 early=0.03156 b=0.00169 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00217 d=0.03151 early=0.03257 b=0.00173 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00102 d=0.03345 early=0.03038 b=0.00171 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=1896,1296,848,6000 s_fresh=1896,248,848,800 s_pad=1896,248,848,800 d_main=0.03261,0.20115,0.03201,0.03716 log(s/s_fresh)=0.00000,1.65361,0.00000,2.01490
+  OPEN-2 i=1 dmap=0.49007 dmap_pi/alt=0.49007/0.49007 ddata(report)=0.12570 dmap_preD=0.26673 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.76342 dmap_pi/alt=0.82416/0.70269 ddata(report)=0.11661 dmap_preD=0.85218 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.66826 dmap_pi/alt=0.43121/0.90531 ddata(report)=0.21906 dmap_preD=0.73352 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.87909 dmap_pi/alt=0.94548/0.81270 ddata(report)=0.10055 dmap_preD=0.85161 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.20000 det_all=1.00000 det_sel=4/4 ok=false
+TRACE-1 summary FGT: det_all 0.75000 0.75000 0.75000 1.00000 det_sel 3/3 3/4 3/4 4/4 false 0.06667 0.06667 0.06667 0.20000
+OPEN-1 summary FGT: age branches 16 unmeasurable 0 measurable-not-recovered 0 not-reached 0 lives-with-violation 0/4
+VERDICT FGT: OPEN-1 true  OPEN-2 true  TRACE-1 false
+== stage 2 TRM life 1  rho*=[5, 6, 2, 3, 4, 1]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=0 difficulty-ctl-ok=false
+    i=1 a=0.01811 d=1.01467 early=0.62554 b=0.02512 meas=true rec=false s=3600 s_prev=3544 s_ctl=3600
+    i=2 a=0.03118 d=0.00000 early=0.03116 b=0.02812 meas=false rec=true s=344 s_prev=296 s_ctl=4800
+    i=3 a=0.02056 d=0.13107 early=0.09779 b=0.03999 meas=true rec=false s=96 s_prev=48 s_ctl=48
+    i=4 a=0.05015 d=0.24854 early=0.29373 b=0.02150 meas=true rec=true s=2144 s_prev=2096 s_ctl=96
+    side(main stream, r3): s=144,none,48,200 s_fresh=3600,2600,3744,2544 s_pad=2848,48,200,48 d_main=1.19211,0.00001,0.09537,0.19915 log(s/s_fresh)=-3.21888,not computable,-4.35671,-2.54318
+  OPEN-2 i=1 dmap=0.99646 dmap_pi/alt=1.05568/0.93723 ddata(report)=1.29318 dmap_preD=0.24170 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.00000 dmap_pi/alt=0.00000/0.00000 ddata(report)=0.00594 dmap_preD=0.00096 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.13591 dmap_pi/alt=0.12647/0.14534 ddata(report)=0.18123 dmap_preD=0.14083 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.71690 dmap_pi/alt=0.60347/0.83033 ddata(report)=1.24446 dmap_preD=0.41712 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.86667 det_all=1.00000 det_sel=3/3 ok=false
+== stage 2 TRM life 2  rho*=[1, 5, 3, 4, 6, 2]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=0 difficulty-ctl-ok=false
+    i=1 a=0.03873 d=3.48274 early=0.03906 b=0.03373 meas=true rec=true s=96 s_prev=48 s_ctl=96
+    i=2 a=0.03575 d=0.24468 early=0.04303 b=0.03675 meas=true rec=true s=344 s_prev=296 s_ctl=448
+    i=3 a=0.02862 d=0.09656 early=0.19186 b=0.02916 meas=true rec=true s=344 s_prev=296 s_ctl=48
+    i=4 a=0.00423 d=1.73146 early=0.52346 b=0.03617 meas=true rec=false s=248 s_prev=200 s_ctl=96
+    side(main stream, r3): s=696,896,448,200 s_fresh=1744,2144,4000,2648 s_pad=48,48,448,200 d_main=3.14705,0.01944,-0.01040,1.41321 log(s/s_fresh)=-0.91859,-0.87249,-2.18926,-2.58324
+  OPEN-2 i=1 dmap=0.33686 dmap_pi/alt=0.40673/0.26699 ddata(report)=0.33323 dmap_preD=0.00514 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.06494 dmap_pi/alt=0.05930/0.07058 ddata(report)=0.05598 dmap_preD=0.45808 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.52227 dmap_pi/alt=0.52715/0.51739 ddata(report)=0.55593 dmap_preD=0.01801 selfcheck=0.0
+  OPEN-2 i=4 dmap=2.01171 dmap_pi/alt=2.88468/1.13875 ddata(report)=0.38871 dmap_preD=0.05103 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.86667 det_all=1.00000 det_sel=3/3 ok=false
+== stage 2 TRM life 3  rho*=[1, 5, 3, 4, 2, 6]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.02066 d=0.00001 early=0.02138 b=0.03159 meas=false rec=false s=48 s_prev=none s_ctl=48
+    i=2 a=0.02633 d=0.02422 early=0.03135 b=0.02708 meas=true rec=true s=144 s_prev=96 s_ctl=48
+    i=3 a=0.00845 d=0.48292 early=0.14159 b=0.02296 meas=true rec=false s=200 s_prev=144 s_ctl=48
+    i=4 a=0.01209 d=0.87071 early=0.03810 b=0.02694 meas=true rec=false s=400 s_prev=344 s_ctl=48
+    side(main stream, r3): s=48,1000,200,5648 s_fresh=2744,3496,2496,3344 s_pad=48,1096,48,144 d_main=0.00001,0.02034,0.07118,0.43398 log(s/s_fresh)=-4.04597,-1.25162,-2.52413,0.52413
+  OPEN-2 i=1 dmap=0.00469 dmap_pi/alt=0.00473/0.00466 ddata(report)=0.03187 dmap_preD=0.00440 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.52627 dmap_pi/alt=0.53652/0.51602 ddata(report)=0.79066 dmap_preD=0.26706 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.12434 dmap_pi/alt=0.04044/0.20823 ddata(report)=2.29028 dmap_preD=0.02109 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.00852 dmap_pi/alt=0.00910/0.00793 ddata(report)=0.00524 dmap_preD=0.01923 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.60000 det_all=0.75000 det_sel=3/3 ok=false
+== stage 2 TRM life 4  rho*=[2, 5, 3, 4, 6, 1]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=0 difficulty-ctl-ok=false
+    i=1 a=0.03349 d=0.00000 early=0.03349 b=0.03189 meas=false rec=true s=48 s_prev=none s_ctl=48
+    i=2 a=0.02125 d=0.00003 early=0.02126 b=0.02659 meas=false rec=false s=48 s_prev=none s_ctl=400
+    i=3 a=0.02206 d=0.00001 early=0.02184 b=0.02755 meas=false rec=false s=48 s_prev=none s_ctl=48
+    i=4 a=0.03418 d=-0.00005 early=0.03477 b=0.03354 meas=false rec=true s=48 s_prev=none s_ctl=400
+    side(main stream, r3): s=2248,48,48,2400 s_fresh=2744,2696,2496,3600 s_pad=2096,48,448,144 d_main=0.00000,0.00003,0.00000,-0.00041 log(s/s_fresh)=-0.19938,-4.02832,-3.95124,-0.40547
+  OPEN-2 i=1 dmap=0.20081 dmap_pi/alt=0.20099/0.20062 ddata(report)=0.29284 dmap_preD=0.00147 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.13405 dmap_pi/alt=0.13495/0.13314 ddata(report)=0.21680 dmap_preD=0.00166 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.00012 dmap_pi/alt=0.00012/0.00012 ddata(report)=0.00050 dmap_preD=0.00092 selfcheck=0.0
+  OPEN-2 i=4 dmap=1.70575 dmap_pi/alt=1.41308/1.99843 ddata(report)=1.09387 dmap_preD=0.59555 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.86667 det_all=1.00000 det_sel=not computable (0 selected switches) ok=not computable
+TRM OPEN-1 per life: life 1: undecided (difficulty control failed); life 2: undecided (difficulty control failed); life 3: fail; life 4: undecided (difficulty control failed)  -> decided lives 1/4
+TRACE-1 summary TRM: det_all 1.00000 1.00000 0.75000 1.00000 det_sel 3/3 3/3 3/3 0/0 false 0.86667 0.86667 0.60000 0.86667
+OPEN-1 summary TRM: age branches 16 unmeasurable 6 measurable-not-recovered 5 not-reached 0 lives-with-violation 1/4
+VERDICT TRM: OPEN-1 false  OPEN-2 false  TRACE-1 not run / not computable
+Q2 (FGT passes all three): miss
+Q3 (CUM fails OPEN-1 via violation or measurable-not-recovered): holds
+Q4 (TRM passes OPEN-1): miss [scope: decided lives 1/4; holds only covers those lives]   exploratory: OPEN-2 miss  TRACE-1 undecidable
+Q5 (main stream: median s_main/s_pad in [0.7,1.3]): n=15 median=1.00000 not-both-reached 1 -> holds

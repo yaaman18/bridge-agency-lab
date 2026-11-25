@@ -1,0 +1,42 @@
+# S80 diagnostic predictions frozen before running (seen lives only, 2026-11-25T11:44:01Z); user 2026-11-25 「2をやって」
+a8d62fd99375363de975e310433316aa355e1c8abf1aff5d9cf61cffed8e667a  experiments/s80_diag/predictions.toml
+# S80 diagnostic code before codex I-R (2026-11-25T11:44:01Z)
+969b10317f9664cdfaed4de0f377eba340736e313904fadccefc70f3322f95cb  experiments/s80_diag/diag.jl
+# S80 diagnostic code after codex I-R 11:44Z P3 (gate Z, W) P4 (Y0 window includes t, stated before running) P6 (no h*, no false fires) (2026-11-25T11:44:55Z)
+07b6b3a2cb1998e9a1e16e6509a4da3e411c1a6088edcd1ded7c67202bcf4421  experiments/s80_diag/diag.jl
+# S80 diagnostic code: main guard as an if block (parse error; no logic change) (2026-11-25T11:45:17Z)
+a6714663962150600b598ba538669b8bdab52becdd8987b0725c28698fb6b9c5  experiments/s80_diag/diag.jl
+# S80 diagnostic output (2026-11-25T11:46:14Z): K1 miss (ratio 1.26), K2 holds (0.94), K3 holds (31/120); seen lives only, no new seeds
+d497100d7ac531872846efa4ee36d706dc912c41c3466dca7e7239336083c384  experiments/s80_diag/out/diag.out
+# S80 Y=0 clock comparison predictions frozen before running (seen lives only, 2026-11-25T11:51:04Z); user 2026-11-25 「Y = 0 の数だけの時計と比べるをやって」
+e3e284a00915505fa0b5980ee01d362dc36b84766589bc921fa7098322d9856f  experiments/s80_y0/predictions.toml
+# S80 Y=0 clock code before codex I-R (2026-11-25T11:51:41Z)
+168acf787edf4211b704fdeb481cfd714b069638c6c79f1e590f13bbe918c4f2  experiments/s80_y0/y0clock.jl
+# S80 Y=0 clock code after codex I-R 11:52Z P2 (negative control counts windows with a decision point >= w) P4 (keyed overlap gate) (2026-11-25T11:52:22Z)
+c3db7fcec93a06c39ac0ccb565d8321c6eb3e1c783b0e9594ca55132a7eb2f39  experiments/s80_y0/y0clock.jl
+# S80 Y=0 clock output (2026-11-25T11:52:54Z): Y1 holds (117/120), Y2 miss (Z=117), Y3 holds (overlap 31/31), Y4 holds (both fail); seen lives only
+e56478584b0643b6d9ae489fbcd4c08f3fe4d5f4f1156ba3f8ff1f682eb0ed0e  experiments/s80_y0/out/y0clock.out
+# S80 descriptive check predictions + decision rules frozen before running (2026-11-25T11:59:57Z); user 2026-11-25 「codex の案で進めて」; design codex S-R 11:59Z P1-P8
+29104a2e1cbb00f0dd3a9813524d8a8e41e3567692788f8da9fc95bf0d29eb63  experiments/s80_desc/predictions.toml
+# S80 descriptive code before codex I-R (2026-11-25T12:00:43Z)
+437a9d6da001339d9a0a56a02f42208d6066501dd485a55c20034d1728a7ce3b  experiments/s80_desc/desc.jl
+# S80 descriptive code after codex I-R 12:01Z P1 (exact-n0 sign per life) P5 (hold reasons) P7 (replay first-time gate, C window gate) (2026-11-25T12:01:34Z)
+7a81f5d07787f86edd0377d1be4826379a6c73b44ab3d91d79cb5507fdc4292c  experiments/s80_desc/desc.jl
+# S80 descriptive output (2026-11-25T12:02:21Z): E1 holds (25 valid, 8 lives), E2 holds (8/0/0, p=0.0039, median D 2.42), E3 holds (30/31), E4 miss (3/31); seen lives only
+412e70a8c01ceb0380207dfc2908f2997793ed5efd8c4935374d59a9da1449fd  experiments/s80_desc/out/desc.out
+# S80 main predictions frozen before opening seeds 2300-2779 (2026-11-25T12:06:27Z); user 2026-11-25 「S80 §9 の6点を承認、種子 2300〜2779 で進めて」; codex S-R 12:06Z P1-P8
+0110a570a925e8e770dfb49a2891a82e2402effecb3fd0478fc3cdd0e0b6847b  experiments/s80_main/predictions.toml
+# S80 main code before codex I-R (2026-11-25T12:08:07Z)
+60b06f33a909666d2a7ca743e95c25cea421305d1f40b87ed5d5d9832988a73c  experiments/s80_main/main.jl
+# S80 main code after codex I-R 12:08Z P1 (isnothing) P3 (make_life3 == make_life2 on ring order) P4-P5 (V5/V6 gates, 40 lives) P6 (whole-line B comparison) P7 (freeze line = sha + path) P8 (independent recount) (2026-11-25T12:09:15Z)
+0f4a62b4596522e448c99a0e7bd4e74433f1b46faf57264bc29f3bc4a02971d0  experiments/s80_main/main.jl
+# S80 thresholds from the 8 seen lives (crit2, ties earlier; written before opening 2300-2779) (2026-11-25T12:10:17Z)
+d10dc7d1e1d0ba127fefb6a5c165086cc94b391620e346b51e875edb07226913  experiments/s80_main/out/thresholds.toml
+758be7b5643bf22ce06c52535b43e50511d15a54c0a2bc5a32580d10761cedd8  experiments/s80_main/out/thresh.out  # thresh.out
+# S80 main run stopped at the §6 life-length gate (2026-11-25T12:15:45Z): 10 of 40 lives N < 50000 (j=1,9,14,15,17,20,25,26,30,37; min 41560). No clock quantity, verdict or V1-V6 computed (no run.out). Predictions and thresholds unchanged; their verdicts are not judged.
+# S80 revision 1 (spec §11.1) rule frozen before opening 2780-2899 (2026-11-25T12:21:34Z); user 2026-11-25 「とりあえずその案で進めてみて」; codex 12:15Z P4-P5. Post-N revision; predictions and thresholds carried over unchanged
+067cb61d3c5a03b237329fa9f691f087da36bb1b7228279b3495e7385b486995  experiments/s80_main/revision1.toml
+# S80 main code with revision 1 after codex I-R 12:21Z P1-P3 accept, P4 (all stream access through lf.ex -> lf.streams[si], no 12-stream assumption), P5 (count of preexisting rev1 life files) (2026-11-25T12:21:34Z)
+55994668b664f156ebd0eafadace086505980f998dcdb5fe3033eb3053045594  experiments/s80_main/main.jl
+# S80 main run output, revision 1 k=2 (seeds 2780-2859 added; 2860-2899 not opened) (2026-11-25T12:23:55Z): V1 hit (C4 fail, 104/153 19/600), V2 hit (O-win pass, 149/153 0/600), V3 hit (C0 fail), V4 hit (3.825), V5 hit, V6 hit (40/40 positive). Post-N revision (spec §11.1)
+a57279b0edc6f911d93c839e9c4e3cd0450e3f8f0f9feae08a78b9c118135d8f  experiments/s80_main/out/rev1/run.out

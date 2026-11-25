@@ -1,0 +1,95 @@
+gate: counts reproduce thresh.out (seen 8: C4 21/30 5/120, O-win 30/30 0/120) and rev1 run.out (40: C4 104/153 19/600, O-win 149/153 0/600)
+gate: PH path with valleys == firemask, O-win mask == mask80, decomposition carry + in-window == m - M at every used point, O window mean == score; 183 switches, 720 routine windows; pair marginals match
+== pairs (switches)
+  seen8: both 21, O only 9, C4 only 0, neither 0
+  s80: both 104, O only 45, C4 only 0, neither 4
+  all: both 125, O only 54, C4 only 0, neither 4
+== pairs (routine windows; alarm in window)
+  seen8: both 0, O only 0, C4 only 5, neither 115
+  s80: both 0, O only 0, C4 only 19, neither 581
+  all: both 0, O only 0, C4 only 24, neither 696
+== by group (switches, all 48 lives): frequency n0, size a_f (n0 > 0), C4 shortfall h - max(m-M), Σc(Y=0), Σc(Y≠0) over the window
+  [both] n0 median 9.0000 [q25 6.0000, q75 12.0000] n=125
+  [both] a_f median 3.3868 [q25 2.6325, q75 4.1051] n=125; a_f - base median 2.3242 [q25 1.6765, q75 2.8392] n=125
+  [both] shortfall median -4.4472 [q25 -7.1792, q75 -2.1335] n=125; Σc(Y=0) median 28.0234 [q25 22.2693, q75 35.2844] n=125; Σc(Y≠0) median -19.6166 [q25 -22.5177, q75 -10.6389] n=125
+  [O only] n0 median 5.0000 [q25 3.0000, q75 7.7500] n=54
+  [O only] a_f median 3.4963 [q25 2.7198, q75 4.5642] n=54; a_f - base median 2.4760 [q25 1.3923, q75 3.2641] n=54
+  [O only] shortfall median 4.2409 [q25 2.7188, q75 6.3746] n=54; Σc(Y=0) median 16.2993 [q25 12.7801, q75 19.4525] n=54; Σc(Y≠0) median -20.6799 [q25 -22.0005, q75 -19.2139] n=54
+  [neither] n0 median 0.5000 [q25 0.0000, q75 1.0000] n=4
+  [neither] a_f median 5.2740 [q25 5.2739, q75 5.2740] n=2; a_f - base median 4.1971 [q25 4.0386, q75 4.3555] n=2
+  [neither] shortfall median 11.5674 [q25 9.2171, q75 13.7500] n=4; Σc(Y=0) median 2.6369 [q25 0.0000, q75 5.2739] n=4; Σc(Y≠0) median -20.0873 [q25 -20.3114, q75 -19.3357] n=4
+== O-only switches (one line each)
+  seen8 st1 life 1 i=1: n0=4 a_f=3.7973 base=1.1520 shortfall=2.6851 Σc0=15.1893 Σc1=-19.2884 | O alarm @50 n0-to-O=2 Σu pre-T=0.0000 post Y=0 3.6799 post Y≠0 3.0553
+  seen8 st1 life 1 i=3: n0=10 a_f=2.2732 base=1.1520 shortfall=3.0951 Σc0=22.7325 Σc1=-21.6180 | O alarm @250 n0-to-O=3 Σu pre-T=0.0001 post Y=0 5.1935 post Y≠0 0.1542
+  seen8 st1 life 1 i=4: n0=1 a_f=4.4196 base=1.1520 shortfall=9.6135 Σc0=4.4196 Σc1=-19.1177 | O alarm @350 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.3376 post Y≠0 0.0448
+  seen8 st1 life 2 i=4: n0=6 a_f=4.0880 base=0.8343 shortfall=0.2485 Σc0=24.5280 Σc1=-21.1820 | O alarm @400 n0-to-O=2 Σu pre-T=0.0000 post Y=0 6.3855 post Y≠0 0.4586
+  seen8 st2 life 1 i=4: n0=1 a_f=4.7597 base=0.8880 shortfall=9.4800 Σc0=4.7597 Σc1=-17.2022 | O alarm @450 n0-to-O=1 Σu pre-T=0.0007 post Y=0 4.6380 post Y≠0 -0.0503
+  seen8 st2 life 2 i=4: n0=3 a_f=3.4893 base=0.8730 shortfall=6.1241 Σc0=10.4678 Σc1=-19.8374 | O alarm @850 n0-to-O=2 Σu pre-T=0.0000 post Y=0 5.0328 post Y≠0 -0.2652
+  seen8 st2 life 3 i=3: n0=9 a_f=1.8184 base=1.1491 shortfall=1.5092 Σc0=16.3660 Σc1=-19.4953 | O alarm @100 n0-to-O=4 Σu pre-T=0.1710 post Y=0 5.9302 post Y≠0 0.1201
+  seen8 st2 life 4 i=1: n0=2 a_f=5.1632 base=0.9789 shortfall=5.7665 Σc0=10.3263 Σc1=-18.8859 | O alarm @100 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.8911 post Y≠0 0.0669
+  seen8 st2 life 4 i=3: n0=14 a_f=1.7931 base=0.9789 shortfall=3.5875 Σc0=25.1036 Σc1=-19.4565 | O alarm @100 n0-to-O=6 Σu pre-T=0.0091 post Y=0 7.8537 post Y≠0 0.0313
+  s80 life 1 i=1: n0=4 a_f=2.9729 base=0.9900 shortfall=3.6323 Σc0=11.8915 Σc1=-18.1295 | O alarm @300 n0-to-O=2 Σu pre-T=0.0000 post Y=0 4.7802 post Y≠0 0.0418
+  s80 life 1 i=3: n0=3 a_f=4.7210 base=0.9900 shortfall=1.4010 Σc0=14.1630 Σc1=-21.6667 | O alarm @350 n0-to-O=2 Σu pre-T=0.0011 post Y=0 5.1563 post Y≠0 -0.0780
+  s80 life 1 i=4: n0=10 a_f=1.9323 base=0.9900 shortfall=1.2063 Σc0=19.3230 Σc1=-21.1441 | O alarm @200 n0-to-O=3 Σu pre-T=0.0006 post Y=0 5.9561 post Y≠0 0.0346
+  s80 life 3 i=2: n0=6 a_f=2.8486 base=0.7833 shortfall=3.2920 Σc0=17.0915 Σc1=-21.6926 | O alarm @50 n0-to-O=4 Σu pre-T=0.0006 post Y=0 10.3311 post Y≠0 0.0148
+  s80 life 3 i=4: n0=6 a_f=2.8485 base=0.7833 shortfall=6.3014 Σc0=17.0911 Σc1=-19.2832 | O alarm @200 n0-to-O=2 Σu pre-T=0.0102 post Y=0 5.4715 post Y≠0 0.0219
+  s80 life 4 i=2: n0=5 a_f=4.1382 base=1.1811 shortfall=4.4315 Σc0=20.6911 Σc1=-22.0126 | O alarm @50 n0-to-O=1 Σu pre-T=0.0041 post Y=0 4.8741 post Y≠0 0.0249
+  s80 life 5 i=3: n0=4 a_f=4.0979 base=1.3936 shortfall=3.1183 Σc0=16.3916 Σc1=-26.3083 | O alarm @700 n0-to-O=4 Σu pre-T=0.0000 post Y=0 10.5414 post Y≠0 0.2847
+  s80 life 6 i=2: n0=7 a_f=2.7851 base=1.2385 shortfall=4.3783 Σc0=19.4957 Σc1=-21.9641 | O alarm @300 n0-to-O=2 Σu pre-T=0.0001 post Y=0 7.8903 post Y≠0 -0.0570
+  s80 life 6 i=3: n0=10 a_f=1.7971 base=1.2385 shortfall=2.6152 Σc0=17.9712 Σc1=-24.3768 | O alarm @100 n0-to-O=1 Σu pre-T=-0.0007 post Y=0 4.5323 post Y≠0 0.0923
+  s80 life 7 i=1: n0=10 a_f=1.7773 base=1.0866 shortfall=4.8732 Σc0=17.7728 Σc1=-21.5523 | O alarm @250 n0-to-O=2 Σu pre-T=0.0000 post Y=0 5.4272 post Y≠0 -0.0219
+  s80 life 7 i=2: n0=4 a_f=4.0582 base=1.0866 shortfall=3.7262 Σc0=16.2327 Σc1=-20.0105 | O alarm @350 n0-to-O=2 Σu pre-T=0.0008 post Y=0 4.6908 post Y≠0 0.1274
+  s80 life 9 i=4: n0=4 a_f=3.7247 base=1.2936 shortfall=4.6781 Σc0=14.8989 Σc1=-24.7394 | O alarm @100 n0-to-O=1 Σu pre-T=0.0013 post Y=0 4.6123 post Y≠0 -0.5904
+  s80 life 11 i=3: n0=3 a_f=4.7767 base=0.7250 shortfall=2.8201 Σc0=14.3302 Σc1=-22.9644 | O alarm @800 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.7663 post Y≠0 -0.1276
+  s80 life 11 i=4: n0=3 a_f=4.7877 base=0.7250 shortfall=5.0825 Σc0=14.3630 Σc1=-15.4747 | O alarm @300 n0-to-O=1 Σu pre-T=0.0016 post Y=0 4.9633 post Y≠0 -0.0050
+  s80 life 13 i=1: n0=9 a_f=1.4644 base=1.1595 shortfall=6.3990 Σc0=13.1793 Σc1=-19.9160 | O alarm @50 n0-to-O=1 Σu pre-T=0.0000 post Y=0 5.1279 post Y≠0 -0.0383
+  s80 life 13 i=4: n0=6 a_f=4.1711 base=1.1595 shortfall=3.9419 Σc0=25.0264 Σc1=-24.7583 | O alarm @350 n0-to-O=2 Σu pre-T=0.0013 post Y=0 9.2199 post Y≠0 -0.3292
+  s80 life 14 i=2: n0=4 a_f=3.6516 base=0.4468 shortfall=5.5959 Σc0=14.6066 Σc1=-22.3185 | O alarm @50 n0-to-O=2 Σu pre-T=0.0011 post Y=0 5.3132 post Y≠0 0.0399
+  s80 life 14 i=3: n0=1 a_f=5.2767 base=0.4468 shortfall=9.0223 Σc0=5.2767 Σc1=-17.4179 | O alarm @550 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.9306 post Y≠0 -0.0049
+  s80 life 16 i=3: n0=6 a_f=2.8378 base=0.8806 shortfall=7.9098 Σc0=17.0268 Σc1=-19.3567 | O alarm @50 n0-to-O=1 Σu pre-T=0.0013 post Y=0 4.8190 post Y≠0 0.0169
+  s80 life 17 i=3: n0=1 a_f=5.2384 base=1.3151 shortfall=8.5643 Σc0=5.2384 Σc1=-16.6076 | O alarm @900 n0-to-O=1 Σu pre-T=0.0000 post Y=0 5.0522 post Y≠0 -0.0596
+  s80 life 18 i=2: n0=6 a_f=2.8216 base=1.4099 shortfall=8.7095 Σc0=16.9296 Σc1=-24.3103 | O alarm @550 n0-to-O=2 Σu pre-T=0.0000 post Y=0 9.3610 post Y≠0 -1.0750
+  s80 life 18 i=3: n0=3 a_f=4.6124 base=1.4099 shortfall=4.6167 Σc0=13.8373 Σc1=-20.7636 | O alarm @200 n0-to-O=1 Σu pre-T=0.0000 post Y=0 3.9950 post Y≠0 -0.0126
+  s80 life 19 i=4: n0=2 a_f=5.0256 base=1.4556 shortfall=4.1036 Σc0=10.0511 Σc1=-19.4274 | O alarm @700 n0-to-O=2 Σu pre-T=0.0000 post Y=0 4.6289 post Y≠0 -0.0160
+  s80 life 21 i=1: n0=2 a_f=2.7845 base=1.2260 shortfall=9.1189 Σc0=5.5689 Σc1=-16.9420 | O alarm @200 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.6531 post Y≠0 0.0639
+  s80 life 21 i=2: n0=1 a_f=5.2770 base=1.2260 shortfall=6.8135 Σc0=5.2770 Σc1=-11.3735 | O alarm @500 n0-to-O=1 Σu pre-T=0.0000 post Y=0 0.0000 post Y≠0 4.7872
+  s80 life 21 i=4: n0=4 a_f=4.6772 base=1.2260 shortfall=0.1997 Σc0=18.7088 Σc1=-23.2986 | O alarm @700 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.5488 post Y≠0 -0.4231
+  s80 life 24 i=2: n0=4 a_f=3.5034 base=0.9761 shortfall=4.6623 Σc0=14.0138 Σc1=-24.4587 | O alarm @600 n0-to-O=3 Σu pre-T=0.0000 post Y=0 7.7300 post Y≠0 -0.1885
+  s80 life 24 i=3: n0=8 a_f=2.6983 base=0.9761 shortfall=0.7391 Σc0=21.5861 Σc1=-19.1908 | O alarm @200 n0-to-O=3 Σu pre-T=0.0010 post Y=0 9.6475 post Y≠0 0.0248
+  s80 life 25 i=1: n0=5 a_f=1.3495 base=0.7796 shortfall=8.3016 Σc0=6.7474 Σc1=-16.3756 | O alarm @200 n0-to-O=3 Σu pre-T=0.0000 post Y=0 5.6530 post Y≠0 0.0171
+  s80 life 25 i=2: n0=4 a_f=4.8756 base=0.7796 shortfall=3.8382 Σc0=19.5024 Σc1=-19.6034 | O alarm @450 n0-to-O=2 Σu pre-T=0.0000 post Y=0 8.8411 post Y≠0 0.0088
+  s80 life 25 i=3: n0=10 a_f=1.2670 base=0.7796 shortfall=6.4847 Σc0=12.6700 Σc1=-24.0126 | O alarm @50 n0-to-O=3 Σu pre-T=0.0245 post Y=0 6.7465 post Y≠0 0.0802
+  s80 life 26 i=1: n0=7 a_f=3.1107 base=1.4200 shortfall=7.4341 Σc0=21.7749 Σc1=-19.7593 | O alarm @100 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.5811 post Y≠0 0.1025
+  s80 life 26 i=2: n0=2 a_f=5.1759 base=1.4200 shortfall=3.8324 Σc0=10.3518 Σc1=-18.8978 | O alarm @750 n0-to-O=2 Σu pre-T=0.0000 post Y=0 4.8630 post Y≠0 -0.0689
+  s80 life 26 i=3: n0=5 a_f=3.4102 base=1.4200 shortfall=2.4859 Σc0=17.0508 Σc1=-19.3235 | O alarm @150 n0-to-O=1 Σu pre-T=0.0045 post Y=0 4.5340 post Y≠0 -0.0881
+  s80 life 29 i=1: n0=6 a_f=2.8357 base=1.4498 shortfall=7.3268 Σc0=17.0139 Σc1=-21.7625 | O alarm @100 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.3530 post Y≠0 -0.0096
+  s80 life 30 i=3: n0=11 a_f=2.9055 base=1.0060 shortfall=0.1173 Σc0=31.9609 Σc1=-21.9186 | O alarm @100 n0-to-O=1 Σu pre-T=0.0009 post Y=0 4.5285 post Y≠0 -0.1106
+  s80 life 30 i=4: n0=8 a_f=2.1816 base=1.0060 shortfall=3.9493 Σc0=17.4528 Σc1=-22.7358 | O alarm @250 n0-to-O=1 Σu pre-T=0.0026 post Y=0 4.4862 post Y≠0 -0.1221
+  s80 life 35 i=1: n0=18 a_f=1.5711 base=1.3457 shortfall=0.3797 Σc0=28.2793 Σc1=-22.9006 | O alarm @200 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.5443 post Y≠0 0.0051
+  s80 life 36 i=3: n0=1 a_f=4.6455 base=0.7602 shortfall=6.0319 Σc0=4.6455 Σc1=-6.1285 | O alarm @100 n0-to-O=0 Σu pre-T=0.0958 post Y=0 0.0000 post Y≠0 6.5458
+  s80 life 36 i=4: n0=4 a_f=3.8650 base=0.7602 shortfall=4.9009 Σc0=15.4602 Σc1=-20.5962 | O alarm @100 n0-to-O=1 Σu pre-T=0.0014 post Y=0 4.6190 post Y≠0 -0.0027
+  s80 life 37 i=1: n0=11 a_f=2.0717 base=1.3081 shortfall=1.8663 Σc0=22.7890 Σc1=-23.3684 | O alarm @100 n0-to-O=1 Σu pre-T=0.0000 post Y=0 4.6378 post Y≠0 -0.6279
+  s80 life 38 i=4: n0=4 a_f=3.9730 base=0.9889 shortfall=2.6813 Σc0=15.8922 Σc1=-16.5221 | O alarm @650 n0-to-O=2 Σu pre-T=0.0000 post Y=0 5.6382 post Y≠0 -0.0751
+  s80 life 39 i=2: n0=7 a_f=3.5290 base=1.0082 shortfall=3.4800 Σc0=24.7031 Σc1=-21.3497 | O alarm @150 n0-to-O=2 Σu pre-T=0.0012 post Y=0 5.0373 post Y≠0 -0.0317
+  s80 life 40 i=1: n0=8 a_f=2.9224 base=1.2201 shortfall=1.7161 Σc0=23.3793 Σc1=-20.8648 | O alarm @250 n0-to-O=1 Σu pre-T=0.0000 post Y=0 5.0437 post Y≠0 -0.0865
+  s80 life 40 i=3: n0=6 a_f=2.1851 base=1.2201 shortfall=7.1970 Σc0=13.1103 Σc1=-21.4502 | O alarm @100 n0-to-O=1 Σu pre-T=0.0005 post Y=0 4.9526 post Y≠0 0.0497
+== O-win evidence at its first alarm (switches detected by O): Σu over the 500-window split at T and by Y
+  [both] elapsed median 150.0000 [q25 100.0000, q75 300.0000] n=125; n0 to O alarm median 2.0000 [q25 1.0000, q75 3.0000] n=125
+  [both] Σu pre-T median 0.0000 [q25 0.0000, q75 0.0015] n=125; post Y=0 median 5.1390 [q25 4.2480, q75 9.9428] n=125; post Y≠0 median 0.0755 [q25 -0.0090, q75 5.2667] n=125
+  [both] share of post Σu from Y≠0 (post0 + post1 > 0): median 0.0113 [q25 -0.0011, q75 0.6062] n=125
+  [O only] elapsed median 200.0000 [q25 100.0000, q75 437.5000] n=54; n0 to O alarm median 1.5000 [q25 1.0000, q75 2.0000] n=54
+  [O only] Σu pre-T median 0.0000 [q25 0.0000, q75 0.0012] n=54; post Y=0 median 4.9416 [q25 4.6140, q75 5.6493] n=54; post Y≠0 median 0.0012 [q25 -0.0735, q75 0.0485] n=54
+  [O only] share of post Σu from Y≠0 (post0 + post1 > 0): median 0.0002 [q25 -0.0141, q75 0.0101] n=54
+== reliance on large contributions (C4 at alarm, or at the first max decision point without alarm): S = m - M = carry + in-window; top1/top3 of in-window post-valley c
+  [formation C4-detected] n=125 S median 17.5642 [q25 15.4819, q75 20.3923] n=125; carry median 0.0000 [q25 0.0000, q75 1.3084] n=125; top1 median 5.2708 [q25 4.9323, q75 5.2751] n=125; top3 median 14.6790 [q25 12.3704, q75 15.4645] n=125
+  [formation C4-detected] top1/S median 0.2798 [q25 0.2356, q75 0.3305] n=125; top3/S median 0.7423 [q25 0.5810, q75 0.9189] n=125; in-window Y=0 median 17.3128 [q25 10.5440, q75 20.6196] n=125; Y≠0 median -0.8684 [q25 -3.8159, q75 6.0548] n=125
+  [formation C4-missed] n=58 S median 9.2259 [q25 6.6489, q75 10.8612] n=58; carry median 0.0000 [q25 0.0000, q75 0.0000] n=58; top1 median 5.2700 [q25 4.8355, q75 5.2739] n=58; top3 median 10.2872 [q25 6.9915, q75 14.1300] n=58
+  [formation C4-missed] top1/S median 0.5346 [q25 0.4516, q75 0.7283] n=56; top3/S median 1.1013 [q25 1.0328, q75 1.2927] n=56; in-window Y=0 median 10.2856 [q25 6.8961, q75 14.2884] n=58; Y≠0 median -0.9957 [q25 -3.8150, q75 -0.3080] n=58
+  [routine alarmed] n=24 S median 15.8392 [q25 15.1110, q75 18.0183] n=24; carry median 0.0000 [q25 0.0000, q75 3.8471] n=24; top1 median 5.2743 [q25 5.2731, q75 5.2759] n=24; top3 median 15.1831 [q25 13.9756, q75 15.6335] n=24
+  [routine alarmed] top1/S median 0.3292 [q25 0.2927, q75 0.3453] n=24; top3/S median 0.8900 [q25 0.7994, q75 0.9899] n=24; in-window Y=0 median 19.9895 [q25 15.9105, q75 21.1805] n=24; Y≠0 median -2.6091 [q25 -6.2969, q75 -1.7071] n=24
+  [routine not alarmed] n=696 S median 5.1826 [q25 4.2294, q75 7.1912] n=696; carry median 0.0000 [q25 0.0000, q75 0.0000] n=696; top1 median 5.2711 [q25 0.2593, q75 5.2750] n=696; top3 median 5.3969 [q25 0.5249, q75 9.6363] n=696
+  [routine not alarmed] top1/S median 0.8598 [q25 0.5256, q75 1.0313] n=656; top3/S median 1.0870 [q25 1.0000, q75 1.2204] n=656; in-window Y=0 median 5.4120 [q25 0.6151, q75 9.8521] n=696; Y≠0 median -0.6622 [q25 -1.8541, q75 -0.2067] n=696
+  [F1 by group] seen8: O only n=9 median n0 4.0000; both n=21 median n0 8.0000
+  [F1 by group] s80: O only n=45 median n0 5.0000; both n=104 median n0 9.0000
+S81-F1 (median n0 O only < both): hit  O only 5.0000, both 9.0000
+S81-F2 (2K > D): hit  K=54 D=54 (O only with n0 = 0: 0; undefined base 0)

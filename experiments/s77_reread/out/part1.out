@@ -1,0 +1,59 @@
+gate: judgeL(L=500) == S75 judgeclock (8 masks)
+== B1: C6 w=500 theta=0.02 (L=500), per selected switch
+  life 1 i=1 detected=true max(1-q)Δ1=0.0065 at t=T+500: Δ1=0.0066 1-q=0.9907 qΔ0=0.0309  e_i=0.0147 Y0=2
+  life 1 i=3 detected=true max(1-q)Δ1=0.0018 at t=T+500: Δ1=0.0018 1-q=0.9877 qΔ0=0.0351  e_i=0.0218 Y0=4
+  life 1 i=4 detected=true max(1-q)Δ1=-0.0006 at t=T+100: Δ1=-0.0006 1-q=0.9883 qΔ0=-0.0102  e_i=0.0090 Y0=1
+  life 2 i=1 detected=true max(1-q)Δ1=0.0360 at t=T+400: Δ1=0.0364 1-q=0.9907 qΔ0=0.0120  e_i=0.0550 Y0=2
+  life 2 i=2 detected=false max(1-q)Δ1=-0.0001 at t=T+500: Δ1=-0.0001 1-q=0.9927 qΔ0=0.0058  e_i=0.0368 Y0=8
+  life 2 i=3 detected=true max(1-q)Δ1=0.0002 at t=T+500: Δ1=0.0002 1-q=0.9943 qΔ0=0.0263  e_i=0.0498 Y0=6
+  life 2 i=4 detected=true max(1-q)Δ1=0.0018 at t=T+450: Δ1=0.0018 1-q=0.9920 qΔ0=0.0311  e_i=0.0131 Y0=2
+  life 3 i=1 detected=false max(1-q)Δ1=-0.0002 at t=T+450: Δ1=-0.0002 1-q=0.9967 qΔ0=0.0119  e_i=0.0223 Y0=3
+  life 3 i=2 detected=true max(1-q)Δ1=0.0007 at t=T+500: Δ1=0.0007 1-q=0.9890 qΔ0=0.0239  e_i=0.1141 Y0=18
+  life 3 i=3 detected=true max(1-q)Δ1=0.0117 at t=T+500: Δ1=0.0118 1-q=0.9907 qΔ0=0.0245  e_i=0.0483 Y0=8
+  life 3 i=4 detected=true max(1-q)Δ1=0.0473 at t=T+500: Δ1=0.0477 1-q=0.9917 qΔ0=0.0221  e_i=0.0625 Y0=4
+  life 4 i=1 detected=true max(1-q)Δ1=0.0044 at t=T+500: Δ1=0.0045 1-q=0.9900 qΔ0=0.0315  e_i=0.0307 Y0=8
+  life 4 i=2 detected=true max(1-q)Δ1=0.0378 at t=T+500: Δ1=0.0381 1-q=0.9913 qΔ0=0.0161  e_i=0.0656 Y0=5
+  life 4 i=3 detected=false max(1-q)Δ1=0.0001 at t=T+350: Δ1=0.0001 1-q=0.9973 qΔ0=0.0070  e_i=0.0330 Y0=6
+  life 4 i=4 detected=true max(1-q)Δ1=0.0010 at t=T+300: Δ1=0.0010 1-q=0.9897 qΔ0=0.0374  e_i=0.0322 Y0=4
+B1: missed n=3 values -0.0001, -0.0002, 0.0001; detected n=12 median 0.0031 -> holds
+== L=500 (routine windows per life 15)
+  C0 w=500: R_l (allowed-false+1 th routine max) 0.0137 0.0264 0.0137 0.0263 | F_l (min selected formation max) -0.0030 0.0151 0.0257 0.0265 | common theta exists: false
+    life 1 separable alone: false
+    life 2 separable alone: false
+    life 3 separable alone: true
+    life 4 separable alone: true
+  C6 w=500: R_l (allowed-false+1 th routine max) 0.0428 0.0143 0.0110 0.0113 | F_l (min selected formation max) 0.0369 0.0094 0.0148 0.0090 | common theta exists: false
+    life 1 separable alone: false
+    life 2 separable alone: false
+    life 3 separable alone: true
+    life 4 separable alone: false
+  C4 delta=0.005: h passing all 4 lives: none  | per-life count of passing h (of 237): 0 12 24 2
+  C4 delta=0.01: h passing all 4 lives: none  | per-life count of passing h (of 237): 0 2 19 5
+== L=1000 (routine windows per life 15)
+  C0 w=500: R_l (allowed-false+1 th routine max) 0.0156 0.0264 0.0252 0.0263 | F_l (min selected formation max) -0.0012 0.0310 0.0351 0.0377 | common theta exists: false
+    life 1 separable alone: false
+    life 2 separable alone: true
+    life 3 separable alone: true
+    life 4 separable alone: true
+  C6 w=500: R_l (allowed-false+1 th routine max) 0.0428 0.0143 0.0136 0.0257 | F_l (min selected formation max) 0.0414 0.0202 0.0148 0.0090 | common theta exists: false
+    life 1 separable alone: false
+    life 2 separable alone: true
+    life 3 separable alone: true
+    life 4 separable alone: false
+  C4 delta=0.005: h passing all 4 lives: none  | per-life count of passing h (of 237): 0 10 15 52
+  C4 delta=0.01: h passing all 4 lives: none  | per-life count of passing h (of 237): 0 10 5 39
+== L=1500 (routine windows per life 10)
+  C0 w=500: R_l (allowed-false+1 th routine max) 0.0156 0.0438 0.0252 0.0263 | F_l (min selected formation max) 0.0226 0.0310 0.0351 0.0377 | common theta exists: false
+    life 1 separable alone: true
+    life 2 separable alone: false
+    life 3 separable alone: true
+    life 4 separable alone: true
+  C6 w=500: R_l (allowed-false+1 th routine max) 0.0428 0.0143 0.0119 0.0257 | F_l (min selected formation max) 0.0428 0.0202 0.0148 0.0129 | common theta exists: false
+    life 1 separable alone: false
+    life 2 separable alone: true
+    life 3 separable alone: true
+    life 4 separable alone: false
+  C4 delta=0.005: h passing all 4 lives: none  | per-life count of passing h (of 237): 0 18 15 52
+  C4 delta=0.01: h passing all 4 lives: none  | per-life count of passing h (of 237): 0 10 5 39
+B2 (L=500: no candidate has a common value): holds
+B3 (L=1000 or 1500: some candidate has a common value): miss

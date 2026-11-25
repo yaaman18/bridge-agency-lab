@@ -1,0 +1,13 @@
+# S79 predictions (discussion/specs/S79-draft-trace1-rates.md §4), frozen before s79.jl is written. codex 10:53:26Z P1-P5.
+[checks]
+claim = "formula facts, verified in output: n=4 (K=14) contract r2 can never pass; independent model P_pass(B) <= 0.05 for all n"
+[F1]
+claim = "smallest n on {4,8,...,80} with P_pass(G=(0.97,0.03)) >= 0.8 under contract r2 is in [20, 40]"
+[F2]
+claim = "beta-binomial cluster model rho=0.3: P_pass(B=(0.90,0.10)) > 0.05 for some n on the grid"
+[F3]
+claim = "old contract 4-life pass probability for G is below 0.5 (hand-computable, weak)"
+[F4]
+claim = "stage-2 application: O-win at L=1000 with the stage-1 theta is 'undecided'"
+[F5]
+claim = "stage-2 application: at least one of C0 (w=500) and C4 (delta=0.01) at L=500 is 'fail'"

@@ -1,0 +1,246 @@
+w0 = 0.00810 (r3 stage 1)  gates: isolation (12 runs, CUM/FGT == r2 saved), self-check 0, window-table Δ_map == 0 bitwise (4 lives), difficulty control bit-identical across ages (tables, all eps)
+== stage 1 FGT life 1  rho*=[5, 6, 2, 3, 4, 1]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00104 d=0.13810 early=0.13614 b=0.00112 meas=true rec=true s=1600 s_prev=1544 s_ctl=1600
+    i=2 a=0.00225 d=0.10988 early=0.11081 b=0.00109 meas=true rec=true s=1248 s_prev=1200 s_ctl=1600
+    i=3 a=0.00162 d=0.15725 early=0.15471 b=0.00158 meas=true rec=true s=1800 s_prev=1744 s_ctl=1600
+    i=4 a=0.00124 d=0.11810 early=0.11615 b=0.00153 meas=true rec=true s=1296 s_prev=1248 s_ctl=1600
+    side(main stream, r3): s=1696,48,1048,1496 s_fresh=1696,696,496,1496 s_pad=1696,696,496,1496 d_main=0.03233,0.00034,0.03351,0.03240 log(s/s_fresh)=0.00000,-2.67415,0.74806,0.00000
+  OPEN-1(age branch) eps=0.005 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00104 d=0.13810 early=0.13614 b=0.00112 meas=true rec=true s=896 s_prev=848 s_ctl=896
+    i=2 a=0.00225 d=0.10988 early=0.11081 b=0.00109 meas=true rec=true s=744 s_prev=696 s_ctl=896
+    i=3 a=0.00162 d=0.15725 early=0.15471 b=0.00158 meas=true rec=true s=1200 s_prev=1144 s_ctl=896
+    i=4 a=0.00124 d=0.11810 early=0.11615 b=0.00153 meas=true rec=true s=800 s_prev=744 s_ctl=896
+    side(main stream, r3): s=1696,48,496,1400 s_fresh=1696,696,496,1400 s_pad=1696,696,496,1400 d_main=0.03233,0.00034,0.03351,0.03240 log(s/s_fresh)=0.00000,-2.67415,0.00000,0.00000
+  OPEN-1(age branch) eps=0.01 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00104 d=0.13810 early=0.13614 b=0.00112 meas=true rec=true s=744 s_prev=696 s_ctl=744
+    i=2 a=0.00225 d=0.10988 early=0.11081 b=0.00109 meas=true rec=true s=448 s_prev=400 s_ctl=744
+    i=3 a=0.00162 d=0.15725 early=0.15471 b=0.00158 meas=true rec=true s=800 s_prev=744 s_ctl=744
+    i=4 a=0.00124 d=0.11810 early=0.11615 b=0.00153 meas=true rec=true s=448 s_prev=400 s_ctl=744
+    side(main stream, r3): s=1696,48,496,1296 s_fresh=1696,696,496,1248 s_pad=1696,696,496,1248 d_main=0.03233,0.00034,0.03351,0.03240 log(s/s_fresh)=0.00000,-2.67415,0.00000,0.03774
+  OPEN-2 i=1 dmap=0.38944 dmap_pi/alt=0.44925/0.32962 ddata(report)=0.33648 dmap_preD=0.33191 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.40800 dmap_pi/alt=0.44067/0.37533 ddata(report)=0.17224 dmap_preD=0.67732 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.46848 dmap_pi/alt=0.46870/0.46826 ddata(report)=0.10961 dmap_preD=0.59621 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.25369 dmap_pi/alt=0.12758/0.37980 ddata(report)=0.20970 dmap_preD=0.50072 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.40000 det_all=0.75000 det_sel=3/3 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.13333 det_all=0.75000 det_sel=3/3 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.00000 det_all=0.75000 det_sel=3/3 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.00000 det_all=0.75000 det_sel=3/3 ok=true
+== stage 1 FGT life 2  rho*=[1, 5, 3, 4, 6, 2]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00072 d=0.03291 early=0.03121 b=0.00112 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00125 d=0.03511 early=0.03423 b=0.00164 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00189 d=0.02619 early=0.02680 b=0.00174 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00155 d=0.03257 early=0.03188 b=0.00174 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=3200,4000,496,1344 s_fresh=296,448,1000,1344 s_pad=296,448,1544,1344 d_main=0.19785,0.03434,0.03296,0.03322 log(s/s_fresh)=2.38055,2.18926,-0.70118,0.00000
+  OPEN-1(age branch) eps=0.005 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00072 d=0.03291 early=0.03121 b=0.00112 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00125 d=0.03511 early=0.03423 b=0.00164 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00189 d=0.02619 early=0.02680 b=0.00174 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00155 d=0.03257 early=0.03188 b=0.00174 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=2296,2400,496,544 s_fresh=296,448,496,544 s_pad=296,448,496,544 d_main=0.19785,0.03434,0.03296,0.03322 log(s/s_fresh)=2.04856,1.67843,0.00000,0.00000
+  OPEN-1(age branch) eps=0.01 ok=false viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00072 d=0.03291 early=0.03121 b=0.00112 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00125 d=0.03511 early=0.03423 b=0.00164 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00189 d=0.02619 early=0.02680 b=0.00174 meas=false rec=true s=344 s_prev=296 s_ctl=448
+    i=4 a=0.00155 d=0.03257 early=0.03188 b=0.00174 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=1344,1200,496,544 s_fresh=296,448,496,544 s_pad=296,448,496,544 d_main=0.19785,0.03434,0.03296,0.03322 log(s/s_fresh)=1.51305,0.98528,0.00000,0.00000
+  OPEN-2 i=1 dmap=0.12654 dmap_pi/alt=0.16240/0.09068 ddata(report)=0.40124 dmap_preD=0.15929 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.92872 dmap_pi/alt=0.71959/1.13785 ddata(report)=0.51864 dmap_preD=0.87888 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.57129 dmap_pi/alt=0.59599/0.54659 ddata(report)=0.07749 dmap_preD=0.59946 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.85005 dmap_pi/alt=0.97499/0.72512 ddata(report)=0.21090 dmap_preD=0.87185 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.66667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.20000 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.06667 det_all=1.00000 det_sel=4/4 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.00000 det_all=1.00000 det_sel=4/4 ok=true
+== stage 1 FGT life 3  rho*=[1, 5, 3, 4, 2, 6]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00184 d=0.03113 early=0.03274 b=0.00089 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00088 d=0.03005 early=0.02792 b=0.00167 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00110 d=0.03294 early=0.03149 b=0.00175 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00132 d=0.03300 early=0.03203 b=0.00178 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=696,3944,600,2248 s_fresh=696,248,544,2200 s_pad=696,248,544,2200 d_main=0.03113,0.03524,0.03251,0.19592 log(s/s_fresh)=0.00000,2.76652,0.09798,0.02158
+  OPEN-1(age branch) eps=0.005 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00184 d=0.03113 early=0.03274 b=0.00089 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00088 d=0.03005 early=0.02792 b=0.00167 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00110 d=0.03294 early=0.03149 b=0.00175 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00132 d=0.03300 early=0.03203 b=0.00178 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=696,1544,448,2096 s_fresh=696,248,448,496 s_pad=696,248,448,496 d_main=0.03113,0.03524,0.03251,0.19592 log(s/s_fresh)=0.00000,1.82870,0.00000,1.44121
+  OPEN-1(age branch) eps=0.01 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00184 d=0.03113 early=0.03274 b=0.00089 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00088 d=0.03005 early=0.02792 b=0.00167 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00110 d=0.03294 early=0.03149 b=0.00175 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00132 d=0.03300 early=0.03203 b=0.00178 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=696,248,400,944 s_fresh=696,248,400,496 s_pad=696,248,400,496 d_main=0.03113,0.03524,0.03251,0.19592 log(s/s_fresh)=0.00000,0.00000,0.00000,0.64355
+  OPEN-2 i=1 dmap=0.11184 dmap_pi/alt=0.09640/0.12728 ddata(report)=0.19511 dmap_preD=0.17560 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.85702 dmap_pi/alt=1.18171/0.53233 ddata(report)=0.06977 dmap_preD=0.98398 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.42269 dmap_pi/alt=0.27523/0.57014 ddata(report)=0.23021 dmap_preD=0.69734 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.75763 dmap_pi/alt=0.72255/0.79270 ddata(report)=0.29532 dmap_preD=0.57261 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.53333 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.26667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.13333 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.06667 det_all=1.00000 det_sel=4/4 ok=true
+== stage 1 FGT life 4  rho*=[2, 5, 3, 4, 6, 1]
+  OPEN-1(age branch) eps=0.0025 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00030 d=0.03210 early=0.03011 b=0.00072 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00127 d=0.03420 early=0.03232 b=0.00159 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00175 d=0.03175 early=0.03296 b=0.00164 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00177 d=0.03208 early=0.03201 b=0.00167 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=248,2344,600,5848 s_fresh=248,800,600,600 s_pad=248,800,600,600 d_main=0.03210,0.20777,0.03287,0.03305 log(s/s_fresh)=0.00000,1.07500,0.00000,2.27693
+  OPEN-1(age branch) eps=0.005 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00030 d=0.03210 early=0.03011 b=0.00072 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00127 d=0.03420 early=0.03232 b=0.00159 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00175 d=0.03175 early=0.03296 b=0.00164 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00177 d=0.03208 early=0.03201 b=0.00167 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=248,1800,600,4648 s_fresh=248,800,600,600 s_pad=248,800,600,600 d_main=0.03210,0.20777,0.03287,0.03305 log(s/s_fresh)=0.00000,0.81093,0.00000,2.04726
+  OPEN-1(age branch) eps=0.01 ok=true viol=0 difficulty-ctl-ok=true
+    i=1 a=0.00030 d=0.03210 early=0.03011 b=0.00072 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00127 d=0.03420 early=0.03232 b=0.00159 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.00175 d=0.03175 early=0.03296 b=0.00164 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=4 a=0.00177 d=0.03208 early=0.03201 b=0.00167 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    side(main stream, r3): s=248,944,600,2144 s_fresh=248,800,600,296 s_pad=248,800,600,296 d_main=0.03210,0.20777,0.03287,0.03305 log(s/s_fresh)=0.00000,0.16551,0.00000,1.98007
+  OPEN-2 i=1 dmap=0.72949 dmap_pi/alt=0.72948/0.72950 ddata(report)=0.21672 dmap_preD=0.54654 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.73358 dmap_pi/alt=0.84600/0.62116 ddata(report)=0.08389 dmap_preD=0.62092 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.78831 dmap_pi/alt=0.54999/1.02663 ddata(report)=0.16336 dmap_preD=0.76116 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.19714 dmap_pi/alt=0.18991/0.20438 ddata(report)=0.11512 dmap_preD=0.51309 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.53333 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.26667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.00000 det_all=1.00000 det_sel=4/4 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.00000 det_all=1.00000 det_sel=4/4 ok=true
+== stage 1 CUM life 1  rho*=[5, 6, 2, 3, 4, 1]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.19269 early=0.19123 b=0.00306 meas=true rec=true s=2448 s_prev=2400 s_ctl=2448
+    i=2 a=0.00048 d=0.19267 early=0.19241 b=0.01184 meas=true rec=false s=3096 s_prev=3048 s_ctl=2448
+    i=3 a=0.00005 d=0.25319 early=0.25310 b=0.00999 meas=true rec=false s=4096 s_prev=4048 s_ctl=2448
+    i=4 a=0.00068 d=0.24547 early=0.24602 b=0.02089 meas=true rec=false s=4248 s_prev=4200 s_ctl=2448
+    side(main stream, r3): s=1744,48,48,2144 s_fresh=1744,696,1000,2048 s_pad=1744,696,1000,2048 d_main=0.03301,0.00070,0.00305,0.03104 log(s/s_fresh)=0.00000,-2.67415,-3.03655,0.04581
+  OPEN-1(age branch) eps=0.005 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.19269 early=0.19123 b=0.00306 meas=true rec=true s=1848 s_prev=1800 s_ctl=1848
+    i=2 a=0.00048 d=0.19267 early=0.19241 b=0.01184 meas=true rec=false s=2248 s_prev=2200 s_ctl=1848
+    i=3 a=0.00005 d=0.25319 early=0.25310 b=0.00999 meas=true rec=true s=2896 s_prev=2848 s_ctl=1848
+    i=4 a=0.00068 d=0.24547 early=0.24602 b=0.02089 meas=true rec=false s=3344 s_prev=3296 s_ctl=1848
+    side(main stream, r3): s=1696,48,48,1496 s_fresh=1696,696,496,1400 s_pad=1696,696,496,1400 d_main=0.03301,0.00070,0.00305,0.03104 log(s/s_fresh)=0.00000,-2.67415,-2.33537,0.06632
+  OPEN-1(age branch) eps=0.01 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.19269 early=0.19123 b=0.00306 meas=true rec=true s=1200 s_prev=1144 s_ctl=1200
+    i=2 a=0.00048 d=0.19267 early=0.19241 b=0.01184 meas=true rec=true s=1400 s_prev=1344 s_ctl=1200
+    i=3 a=0.00005 d=0.25319 early=0.25310 b=0.00999 meas=true rec=true s=2248 s_prev=2200 s_ctl=1200
+    i=4 a=0.00068 d=0.24547 early=0.24602 b=0.02089 meas=true rec=false s=2248 s_prev=2200 s_ctl=1200
+    side(main stream, r3): s=1696,48,48,1296 s_fresh=1696,696,496,1248 s_pad=1696,696,496,1248 d_main=0.03301,0.00070,0.00305,0.03104 log(s/s_fresh)=0.00000,-2.67415,-2.33537,0.03774
+  OPEN-2 i=1 dmap=0.44497 dmap_pi/alt=0.51185/0.37810 ddata(report)=0.35272 dmap_preD=0.43820 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.25007 dmap_pi/alt=0.23986/0.26029 ddata(report)=0.07262 dmap_preD=0.26327 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.37648 dmap_pi/alt=0.36708/0.38587 ddata(report)=0.08502 dmap_preD=0.38271 selfcheck=0.0
+  OPEN-2 i=4 dmap=1.10348 dmap_pi/alt=0.19675/2.01020 ddata(report)=0.11397 dmap_preD=1.10615 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.00000 det_all=0.75000 det_sel=2/2 ok=true
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.00000 det_all=0.75000 det_sel=2/2 ok=true
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.00000 det_all=0.50000 det_sel=2/2 ok=true
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.00000 det_all=0.50000 det_sel=2/2 ok=true
+== stage 1 CUM life 2  rho*=[1, 5, 3, 4, 6, 2]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03346 early=0.03171 b=0.00041 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00272 d=0.32670 early=0.32836 b=0.00674 meas=true rec=true s=3200 s_prev=3144 s_ctl=448
+    i=3 a=0.01090 d=-0.00789 early=0.00140 b=0.00037 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.00766 d=0.20986 early=0.05590 b=0.00871 meas=true rec=true s=800 s_prev=744 s_ctl=448
+    side(main stream, r3): s=none,4000,2944,5048 s_fresh=1344,448,1544,1344 s_pad=1344,448,1544,1344 d_main=0.28649,0.03232,0.02475,0.06050 log(s/s_fresh)=not computable,2.18926,0.64539,1.32334
+  OPEN-1(age branch) eps=0.005 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03346 early=0.03171 b=0.00041 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00272 d=0.32670 early=0.32836 b=0.00674 meas=true rec=true s=2648 s_prev=2600 s_ctl=448
+    i=3 a=0.01090 d=-0.00789 early=0.00140 b=0.00037 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.00766 d=0.20986 early=0.05590 b=0.00871 meas=true rec=true s=296 s_prev=248 s_ctl=448
+    side(main stream, r3): s=5800,1848,2000,2944 s_fresh=296,448,496,544 s_pad=296,448,496,544 d_main=0.28649,0.03232,0.02475,0.06050 log(s/s_fresh)=2.97525,1.41707,1.39433,1.68858
+  OPEN-1(age branch) eps=0.01 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03346 early=0.03171 b=0.00041 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00272 d=0.32670 early=0.32836 b=0.00674 meas=true rec=true s=1696 s_prev=1648 s_ctl=448
+    i=3 a=0.01090 d=-0.00789 early=0.00140 b=0.00037 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.00766 d=0.20986 early=0.05590 b=0.00871 meas=true rec=true s=248 s_prev=200 s_ctl=448
+    side(main stream, r3): s=3000,448,448,1248 s_fresh=296,448,496,544 s_pad=296,448,496,544 d_main=0.28649,0.03232,0.02475,0.06050 log(s/s_fresh)=2.31601,0.00000,-0.10178,0.83035
+  OPEN-2 i=1 dmap=0.25176 dmap_pi/alt=0.33316/0.17036 ddata(report)=0.37785 dmap_preD=0.27071 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.70894 dmap_pi/alt=0.39573/1.02216 ddata(report)=0.64713 dmap_preD=0.68498 selfcheck=0.0
+  OPEN-2 i=3 dmap=0.56724 dmap_pi/alt=0.57764/0.55685 ddata(report)=0.02289 dmap_preD=0.56769 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.54048 dmap_pi/alt=0.54154/0.53942 ddata(report)=0.07710 dmap_preD=0.54713 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.66667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.60000 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.53333 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.53333 det_all=1.00000 det_sel=4/4 ok=false
+== stage 1 CUM life 3  rho*=[1, 5, 3, 4, 2, 6]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03286 early=0.03246 b=0.00023 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00009 d=0.00295 early=0.00155 b=0.00079 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=3 a=0.00716 d=0.37453 early=0.37990 b=0.00487 meas=true rec=true s=3296 s_prev=3248 s_ctl=448
+    i=4 a=0.00036 d=0.03432 early=0.03292 b=0.01008 meas=true rec=false s=1800 s_prev=1744 s_ctl=448
+    side(main stream, r3): s=1448,3944,696,4048 s_fresh=800,248,600,2096 s_pad=1400,248,600,2096 d_main=0.03286,0.03469,0.06417,0.26523 log(s/s_fresh)=0.59333,2.76652,0.14842,0.65819
+  OPEN-1(age branch) eps=0.005 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03286 early=0.03246 b=0.00023 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00009 d=0.00295 early=0.00155 b=0.00079 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=3 a=0.00716 d=0.37453 early=0.37990 b=0.00487 meas=true rec=true s=2344 s_prev=2296 s_ctl=448
+    i=4 a=0.00036 d=0.03432 early=0.03292 b=0.01008 meas=true rec=true s=344 s_prev=296 s_ctl=448
+    side(main stream, r3): s=696,1200,600,2896 s_fresh=696,248,496,496 s_pad=696,248,448,496 d_main=0.03286,0.03469,0.06417,0.26523 log(s/s_fresh)=0.00000,1.57665,0.19035,1.76451
+  OPEN-1(age branch) eps=0.01 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03286 early=0.03246 b=0.00023 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00009 d=0.00295 early=0.00155 b=0.00079 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=3 a=0.00716 d=0.37453 early=0.37990 b=0.00487 meas=true rec=true s=1400 s_prev=1344 s_ctl=448
+    i=4 a=0.00036 d=0.03432 early=0.03292 b=0.01008 meas=true rec=true s=344 s_prev=296 s_ctl=448
+    side(main stream, r3): s=696,48,400,2144 s_fresh=696,248,448,496 s_pad=696,248,448,496 d_main=0.03286,0.03469,0.06417,0.26523 log(s/s_fresh)=0.00000,-1.64223,-0.11333,1.46385
+  OPEN-2 i=1 dmap=0.12711 dmap_pi/alt=0.11433/0.13988 ddata(report)=0.16486 dmap_preD=0.14068 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.74816 dmap_pi/alt=1.14483/0.35148 ddata(report)=0.03224 dmap_preD=0.75075 selfcheck=0.0
+  OPEN-2 i=3 dmap=1.11414 dmap_pi/alt=0.33012/1.89817 ddata(report)=0.03893 dmap_preD=1.11699 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.39520 dmap_pi/alt=0.71644/0.07395 ddata(report)=0.07566 dmap_preD=0.39333 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.26667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.26667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.20000 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.20000 det_all=1.00000 det_sel=4/4 ok=false
+== stage 1 CUM life 4  rho*=[2, 5, 3, 4, 6, 1]
+  OPEN-1(age branch) eps=0.0025 ok=false viol=2 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03226 early=0.03148 b=0.00009 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00007 d=0.03479 early=0.03266 b=0.01320 meas=true rec=false s=1800 s_prev=1744 s_ctl=448
+    i=3 a=0.01291 d=-0.00970 early=0.00130 b=0.00085 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.02146 d=0.34728 early=0.36689 b=0.03377 meas=true rec=false s=4744 s_prev=4696 s_ctl=448
+    side(main stream, r3): s=1200,none,none,none s_fresh=296,1800,600,696 s_pad=848,1800,600,696 d_main=0.03226,0.32109,0.32715,0.03386 log(s/s_fresh)=1.39972,not computable,not computable,not computable
+  OPEN-1(age branch) eps=0.005 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03226 early=0.03148 b=0.00009 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00007 d=0.03479 early=0.03266 b=0.01320 meas=true rec=false s=448 s_prev=400 s_ctl=448
+    i=3 a=0.01291 d=-0.00970 early=0.00130 b=0.00085 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.02146 d=0.34728 early=0.36689 b=0.03377 meas=true rec=false s=4744 s_prev=4696 s_ctl=448
+    side(main stream, r3): s=248,none,5696,5248 s_fresh=248,800,600,600 s_pad=248,800,600,600 d_main=0.03226,0.32109,0.32715,0.03386 log(s/s_fresh)=0.00000,not computable,2.25059,2.16867
+  OPEN-1(age branch) eps=0.01 ok=false viol=1 difficulty-ctl-ok=true
+    i=1 a=0.00000 d=0.03226 early=0.03148 b=0.00009 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=2 a=0.00007 d=0.03479 early=0.03266 b=0.01320 meas=true rec=true s=448 s_prev=400 s_ctl=448
+    i=3 a=0.01291 d=-0.00970 early=0.00130 b=0.00085 meas=false rec=true s=48 s_prev=none s_ctl=448
+    i=4 a=0.02146 d=0.34728 early=0.36689 b=0.03377 meas=true rec=true s=3144 s_prev=3096 s_ctl=448
+    side(main stream, r3): s=248,5096,3248,3296 s_fresh=248,800,600,296 s_pad=248,800,600,296 d_main=0.03226,0.32109,0.32715,0.03386 log(s/s_fresh)=0.00000,1.85160,1.68887,2.41011
+  OPEN-2 i=1 dmap=0.50034 dmap_pi/alt=0.50033/0.50035 ddata(report)=0.15466 dmap_preD=0.42334 selfcheck=0.0
+  OPEN-2 i=2 dmap=0.76068 dmap_pi/alt=0.93057/0.59079 ddata(report)=0.03910 dmap_preD=0.67462 selfcheck=0.0
+  OPEN-2 i=3 dmap=1.52244 dmap_pi/alt=1.92745/1.11743 ddata(report)=0.12282 dmap_preD=1.52601 selfcheck=0.0
+  OPEN-2 i=4 dmap=0.46816 dmap_pi/alt=0.41460/0.52171 ddata(report)=0.06707 dmap_preD=0.48321 selfcheck=0.0
+  OPEN-2 delta=0.1 ok=true
+  TRACE-1 theta=0.005 (sets at eps=0.0025) false_rate=0.60000 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.01 (sets at eps=0.0025) false_rate=0.53333 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.02 (sets at eps=0.0025) false_rate=0.46667 det_all=1.00000 det_sel=4/4 ok=false
+  TRACE-1 theta=0.04 (sets at eps=0.0025) false_rate=0.40000 det_all=1.00000 det_sel=4/4 ok=false
+grid FGT eps=0.0025 life 1: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.0025 life 2: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.0025 life 3: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.0025 life 4: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 1: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 2: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 3: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 4: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 1: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 2: ok=false meas 3/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 3: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 4: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT delta=0.01: lives ok 4/4
+grid FGT delta=0.03: lives ok 4/4
+grid FGT delta=0.1: lives ok 4/4
+grid FGT theta=0.005 (sets at eps=0.0025): lives ok 0/4
+grid FGT theta=0.01 (sets at eps=0.0025): lives ok 0/4
+grid FGT theta=0.02 (sets at eps=0.0025): lives ok 3/4
+grid FGT theta=0.04 (sets at eps=0.0025): lives ok 4/4
+R4-Q1 (eps, delta, theta all selectable for L-FGT): holds
+SELECTED eps=0.0025 delta=0.1 theta=0.04

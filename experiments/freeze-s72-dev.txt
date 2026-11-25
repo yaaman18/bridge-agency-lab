@@ -1,0 +1,64 @@
+6906d2d5fd006c0b8d6fcf8e30630ab136063f06f6898e8b56b9ee94f59aaf6a  experiments/s72_open/predictions.toml
+001ad883bdad87932e3b205dcd10f91c2fa8db4dd0264192293f4b2284cc3f1d  experiments/s72_open/s72.jl
+ff41ffe7c3b771bc979d5438cac9c7227f1a8c124aefb5e2aa46f80ce68a8774  discussion/specs/S72-draft-open-trace-dev.md
+# r2 after codex I-R 07:19Z P1-P7 (before any life run)
+6f941af93e61bb212bd23529352f31b5031a486888dd6a39fd744a2315f41940  experiments/s72_open/s72.jl
+c1c1e475bd713547c1bef3a19d6ca5541acc95d56e69f5481f1d70b0b3f8c8cb  discussion/specs/S72-draft-open-trace-dev.md
+# r2 Q1 frozen before stage 1 (2026-11-24T10:29:07Z); spec at this point (§8 APPROVEd, codex 09:20Z)
+a3ae524c6fc848aa6315e469019573350be931acbddf42a01ee9718628dbaf2b  experiments/s72_open/predictions-r2-q1.toml
+b87dac76bd83e6a1c93d57beb0498bde7204f0a7dfa97cd753cf1da7422faa2e  discussion/specs/S72-draft-open-trace-dev.md
+# r2 code after codex I-R 10:33Z (P4 P5 fixed), before stage 1 (2026-11-24T10:33:40Z)
+133c9f0f269bf408e1d60c243bfacf61a116d8f01bd9795cce2e92c9b2762c77  experiments/s72_open/s72r2.jl
+2ba7b0bec5206aeca83b1b83a6fa59f034eec97029b4a5c0fde7a5b5ce038d83  discussion/specs/S72-draft-open-trace-dev.md
+# stage 1 outputs (2026-11-24T10:35:09Z): nothing separable -> stage 2 not run (§8.6)
+b542e1bc38914787fca91889b3a81c559d791795dfd096d03aa0561a7119815e  experiments/s72_open/out_r2/stage1.out
+961217c39f670bb3943db1ef36c0cdccc61f4f13aef11c7ee335f813afed85cf  experiments/s72_open/out_r2/stage1.toml
+# r3 R3-Q1 frozen before r3 implementation (2026-11-24T13:33:34Z); spec with §9 (codex P1-P8) and §9.5 (user-approved)
+fc03e078abdf2c9adbebf80fe9e7d5251d79590f7e8ab3c74730b09a6ef66851  experiments/s72_open/predictions-r3-q1.toml
+7c071c3b4563c7a66d8318760be31daabc8edf846aecf60ac57177e12677df22  discussion/specs/S72-draft-open-trace-dev.md
+# r3 code before codex I-R (2026-11-24T13:40:13Z)
+c1a06dbf31da1038f9e8188c2efb520d32328c847ba088bf33183ed3ba631f03  experiments/s72_open/s72r3.jl
+1c565a9797fc8a36d1341cf76cd985c524c71ed75229a234517c3020e9f80763  discussion/specs/S72-draft-open-trace-dev.md
+# r3 code after codex I-R 13:40Z P5-P7 fixed, APPROVE 13:41Z, before stage 1 (2026-11-24T13:41:49Z)
+f41458649477f21950c9c7fb68e98180fb977c4eb0b4048e7bce8e943bb1f6f2  experiments/s72_open/s72r3.jl
+# r3 stage 1 outputs (2026-11-24T13:44:14Z): eps/kappa not separable, theta held -> R3-Q1 miss, stage 2 not run (§8.6)
+e501651d5b0349b7317dc6957cb5223a4e2d5b319721403d599a74504641bdbb  experiments/s72_open/out_r3/stage1.out
+21cba156fd5fcc0dd9ef2b8036f9d3dc1682711c511854535ba12cf79d6cf9cd  experiments/s72_open/out_r3/stage1.toml
+767b7d4e1d0af961fbfebafd7e9be7b96b2f7e30a3074ea6f4173a2547c2153c  experiments/s72_open/out_r3/w0.toml
+99ec9c7a80bb4829396bc5793207ca9cf8afded955a99618031bdd50ce3feeb0  discussion/specs/S72-draft-open-trace-dev.md
+# r4 R4-Q1 frozen before r4 implementation (2026-11-24T13:58:37Z); spec with §10 (codex) and §10.6 (user-approved)
+8ab06d225d3edd46b8172f2b2496700555e0a415ea2020393059cc03934b56a1  experiments/s72_open/predictions-r4-q1.toml
+efcdfb9a4cb7b59b680d734cc4c1703bdb12f9038efb8bd13e1183c258bbfec2  discussion/specs/S72-draft-open-trace-dev.md
+# r4 code before codex I-R (2026-11-24T14:01:21Z)
+2ec55247ba3542f8043b3da90a39ffa425de2705dc87d3c94bfee0c7308a6d4c  experiments/s72_open/s72r4.jl
+771fa047979a3fca87dc68fd34302467c5cdeb4d9755ad9e4cf26ba64545d4a3  discussion/specs/S72-draft-open-trace-dev.md
+# r4 code after codex I-R 14:01Z P3 P6 P7 fixed, accepted 14:02Z, before stage 1 (2026-11-24T14:02:52Z)
+ffdfcfa90a839286bb7b49ed1d699d343daf2845d8c2d0f8cdf57d2dbd4f0000  experiments/s72_open/s72r4.jl
+# r4 stage 1 outputs and stage-2 predictions frozen before stage 2 (2026-11-24T14:04:25Z): R4-Q1 holds; eps 0.0025 delta 0.1 theta 0.04
+ee51dd303fc8c3594a3e7a05b69f193ae90e26d42735e631f6b2b518edcf112e  experiments/s72_open/out_r4/stage1.out
+feffd40cb359d9d2f8b2098e3b4cf01f9081f269bfae9fb255da5d74bb3a5044  experiments/s72_open/out_r4/stage1.toml
+cb564775d90678eecd343f3384b1e2d3b9825b1b81f3f35ec9d84359abd535b0  experiments/s72_open/predictions-r4-stage2.toml
+75fa664578ab1f77f901875aca205d4927f541ca4d2231cb75386ea911134037  discussion/specs/S72-draft-open-trace-dev.md
+ffdfcfa90a839286bb7b49ed1d699d343daf2845d8c2d0f8cdf57d2dbd4f0000  experiments/s72_open/s72r4.jl
+# r4 stage 2 outputs and judgment (2026-11-25T17:18:37Z): Q2 miss (FGT TRACE-1 1/4), Q3 holds, Q4 miss (decided 1/4), Q5 holds
+094fc6bd9c06372b35c80df7a6c0b36fe35f1f65adb442bd1d6487f022527533  experiments/s72_open/out_r4/judge4.out
+90000bb88b8ea229a7affee6ffef972bc13de029e005693780960af7a93dff6b  experiments/s72_open/out_r4/run2.log
+19fcccf0babcd3fe5992f51fbcc0a3243b840e6baf87eeab5f258c208374dffa  experiments/s72_open/out_r4/life2_CUM_1.jls
+d8747366833c136eb7aa07101f2c720d1d5ebf06279ca3fe07a20d1b68d5a7c1  experiments/s72_open/out_r4/life2_CUM_2.jls
+72cb5d125e849e12d3c60efe854489130d8c1dc12e7a91ebbd03c5518d0a7d24  experiments/s72_open/out_r4/life2_CUM_3.jls
+2945d700f6fc0df070da32bbbfe0e6481224877678f58f9474edf69b769a4b59  experiments/s72_open/out_r4/life2_CUM_4.jls
+114075c94322f6d251ae6d5796f7fcc6020cbbc5e9a82b2514782f3479a136b8  experiments/s72_open/out_r4/life2_FGT_1.jls
+74082d4d95daa0a70a6f2355fe0b8269fd47ecb4706a6fc8e1bbec407057116a  experiments/s72_open/out_r4/life2_FGT_2.jls
+6f1f7a1f90f9ce9fd95c2fdce4ead37532f42bb83afb51c66fa7b03366e2d248  experiments/s72_open/out_r4/life2_FGT_3.jls
+6cf709a10a864cc20247b74e20fe68c581da108bbbc4f3dc583b9709b88ff28a  experiments/s72_open/out_r4/life2_FGT_4.jls
+2b8ccec45261a0a5865dcdc4aa99462de50f5ad7b497084cf9d279bfa5156d0a  experiments/s72_open/out_r4/life2_TRM_1.jls
+11e6a846d0c289128e0459f4cc124cb25589113b68ecd38e601b81fc8bf22673  experiments/s72_open/out_r4/life2_TRM_2.jls
+efdd1ddc505a540c3f950877ee0b017d0eedfc2e62fbc31b7cfdb2955c56a193  experiments/s72_open/out_r4/life2_TRM_3.jls
+90d92aaf87ac7c51e517c71bd43b930a1838c19533a3c684b61c6d43abcee8fe  experiments/s72_open/out_r4/life2_TRM_4.jls
+0bf61dc562dae802699aba6242d45f176156555f546e79084381456c2bdede59  experiments/s72_open/out_r4/life2_WIN_1.jls
+9af9636bfd95fd923b8031ce7462fc76961dfa7a286fe0c01ec376972c1d269f  experiments/s72_open/out_r4/life2_WIN_2.jls
+badf0a3fc826ca97f290e6ca357636848312ece5461fcfe60a58a257530fcfff  experiments/s72_open/out_r4/life2_WIN_3.jls
+6068e86cc22b359b2174f871f12f4607a99ca8f26d6eca006dc3be86ef4598cd  experiments/s72_open/out_r4/life2_WIN_4.jls
+b0065c6c2ab30cf126c992f1fcf65bfc2666b07e7b5901623f3927fdcf99959d  discussion/specs/S72-draft-open-trace-dev.md
+# spec after codex read 17:19Z P1-P4 (inference wording narrowed; no number or verdict changed)
+9ce60830554ae0f3e58adaf0189d417693df00a040cd20665b51e8538ea5a44d  discussion/specs/S72-draft-open-trace-dev.md

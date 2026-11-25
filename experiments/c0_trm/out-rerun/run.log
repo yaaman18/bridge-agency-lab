@@ -1,0 +1,166 @@
+S64 C0 TRM open loop, out out-rerun, julia threads 8, BLAS threads 1, LBTConfig([LP64] libopenblasp-r0.3.30.dylib)
+G7 spec r3 and predictions.toml = freeze-c0-trm.txt: true
+G0 S57's 6 files = freeze-draw-conf-code.txt: true; TrmDet.jl, rust/trm-det/src/main.rs = freeze-trm-det-code.txt: true; the Mac binary rust/trm-det/target/release/trm-det = the freeze (used as it is, rust/ not built): true
+G5 dev/train/val/cal/eval/ood pairwise disjoint true, outside 1..1045 and 52xxx, next unused 1110 true
+streams: 116 body runs in 62 s
+G0 acts: 116 obs runs, update steps from T0 1045343, max acts per step 1, steps with more than one act or an act outside {1, 2}: 0; examples 517967, record mismatches with the drawer 0; units 1..8 are r1..r8 (8 receptors, no rb) true; deaths stat 3 rev 3 ood 0 -> true
+pool obs-full stat: 55893 examples (act 1 28025, act 2 27868), answered 55445, distinct inputs 13733
+pool obs-full rev: 56021 examples (act 1 28084, act 2 27937), answered 55570, distinct inputs 13606
+pool obs-ay stat: 55893 examples (act 1 28025, act 2 27868), answered 55445, distinct inputs 132
+pool obs-ay rev: 56021 examples (act 1 28084, act 2 27937), answered 55570, distinct inputs 133
+pool exo stat: 110400 examples (act 1 55139, act 2 55261), answered 90066, distinct inputs 134
+pool exo rev: 110400 examples (act 1 55139, act 2 55261), answered 89892, distinct inputs 134
+G5 s = 0: positions 1..44 all PAD, s = 1: positions 1..33 PAD and 34..44 = the record of s = 0, over 336 stream-tracks: true; receptor slots PAD in obs-ay and exo true; the rb slot PAD everywhere true
+G4 two-word stablemax on l in {-50,-1,0,1,50}^2: p in (0,1) true, max |p(a,b) + p(b,a) - 1| 1.1102230246251565e-16, monotone true, gradient vs central difference (eps 1e-6) max rel 4.40e-06   neg: s' without the square, max rel (must be > 1e-5) 5.00e+01 -> true
+G2(c) AdamATan2 5 steps vs the closed form: max |diff| Float64 1.69e-20, Float32 6.79e-08, untouched arrays stay 0 true   neg: no bias correction, max |diff| (must be > 1e-6) 3.64e-05 -> true
+G2(a) TRM: Float64 central difference (eps 1e-4, detach points / ê target / ê's z_H fixed) vs backward, max rel per group: embed_tokens 1.3e-08, L0.qkv_proj 8.4e-08, L0.o_proj 1.4e-09, L0.gate_up_proj 8.9e-09, L0.down_proj 3.2e-09, L1.qkv_proj 1.0e-08, L1.o_proj 7.1e-10, L1.gate_up_proj 2.5e-08, L1.down_proj 9.6e-10, lm_head 1.2e-08, e_head.weight 6.6e-09, e_head.bias 9.6e-10, H_init 0.0e+00, L_init 0.0e+00; worst 8.38e-08; groups with exactly zero gradient: H_init L_init   neg: sign flip in the RMS-norm backward, worst (must be > 1e-4) 1.00e+00 -> true
+G2(a) TRM-1x1: Float64 central difference (eps 1e-4, detach points / ê target / ê's z_H fixed) vs backward, max rel per group: embed_tokens 5.8e-07, L0.qkv_proj 3.4e-09, L0.o_proj 1.2e-09, L0.gate_up_proj 3.2e-07, L0.down_proj 8.3e-09, L1.qkv_proj 8.0e-09, L1.o_proj 1.1e-08, L1.gate_up_proj 8.5e-09, L1.down_proj 1.1e-08, lm_head 1.8e-08, e_head.weight 3.7e-09, e_head.bias 3.8e-10, H_init 1.0e-06, L_init 2.7e-08; worst 1.03e-06; groups with exactly zero gradient: none   neg: sign flip in the RMS-norm backward, worst (must be > 1e-4) 1.97e+00 -> true
+G2(b) TRM: 10 updates with ê's coefficient 0 and 10: body and lm_head bit-identical true, p_a on dev u1046 (2371 examples) bit-identical true   (e_head differs, and is 0 with coefficient 0: true) -> true
+G2(b) TRM-1x1: 10 updates with ê's coefficient 0 and 10: body and lm_head bit-identical true, p_a on dev u1046 (2371 examples) bit-identical true   (e_head differs, and is 0 with coefficient 0: true) -> true
+G2(d) TRM: 64 exo dev examples (19 distinct inputs) as distinct columns vs one column each (Float64): max rel diff of the gradient 2.1e-15 (<= 1e-9), of the losses 4.4e-16 -> true
+G2(d) TRM-1x1: 64 exo dev examples (19 distinct inputs) as distinct columns vs one column each (Float64): max rel diff of the gradient 4.2e-15 (<= 1e-9), of the losses 4.4e-16 -> true
+G-TIME obs-full TRM: 8 concurrent copies x 10 updates on dev (stat): s/update 4.052 4.068 4.117 4.127 4.139 4.143 4.156 4.185
+G-TIME obs-full TRM-1x1: 8 concurrent copies x 10 updates on dev (stat): s/update 0.310 0.317 0.323 0.333 0.333 0.334 0.334 0.334
+G-TIME obs-ay TRM: 8 concurrent copies x 10 updates on dev (stat): s/update 1.681 1.708 1.718 1.724 1.725 1.728 1.731 1.734
+G-TIME obs-ay TRM-1x1: 8 concurrent copies x 10 updates on dev (stat): s/update 0.198 0.203 0.207 0.209 0.211 0.216 0.219 0.219
+G-TIME exo TRM: 8 concurrent copies x 10 updates on dev (stat): s/update 2.820 2.836 2.838 2.858 2.874 2.877 2.877 2.877
+G-TIME exo TRM-1x1: 8 concurrent copies x 10 updates on dev (stat): s/update 0.259 0.264 0.283 0.286 0.291 0.299 0.299 0.300
+G-TIME estimate of the 48 trainings (800 updates each; per track and model from its dev s/update; LPT on 8 threads): 7629 s (limit 10800 s); serial sum 61034 s; the copies bit-identical true -> true
+G3 obs-full stat (dev 1046 1047 1048 1049, 100 examples): the step rerun from its state reproduces the record 100/100; y[t] changed -> the step's record changed 100/100 (act unchanged 100/100); input at t bit-identical 100/100, (p_t, ê_t) bit-identical 100/100, input at t+1 changed 100/100   neg: LEAK_R input changed 100/100, p_t changed 100/100; LEAK_Y input changed 100/100, p_t changed 100/100 (model: TRM after 11 updates on dev) -> true
+G3 obs-full rev (dev 1046 1047 1048 1049, 100 examples): the step rerun from its state reproduces the record 100/100; y[t] changed -> the step's record changed 100/100 (act unchanged 100/100); input at t bit-identical 100/100, (p_t, ê_t) bit-identical 100/100, input at t+1 changed 100/100   neg: LEAK_R input changed 100/100, p_t changed 100/100; LEAK_Y input changed 100/100, p_t changed 100/100 (model: TRM after 11 updates on dev) -> true
+G1 init_TRM (H 3 L 6, final ACT step 3, 8 inputs): TrmC0 vs TrmPort max |diff| (logits, z_H) 1.22e-06 (<= 1e-4); TrmC0 vs TrmDet 1.31e-06, TrmPort vs TrmDet 1.15e-06; TrmDet (run_det.jl) vs rust/trm-det bit-identical: true [compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL]   neg m4 (+1 ulp) caught: true -> true
+G1 init_TRM-1x1 (H 1 L 1, final ACT step 1, 8 inputs): TrmC0 vs TrmPort max |diff| (logits, z_H) 1.67e-06 (<= 1e-4); TrmC0 vs TrmDet 2.09e-06, TrmPort vs TrmDet 1.82e-06; TrmDet (run_det.jl) vs rust/trm-det bit-identical: true [compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL]   neg m4 (+1 ulp) caught: true -> true
+gates before the training passed (464 s)
+training: 48 jobs in 8195 s (TRM train/val s per job: 2181/32 2192/31 2177/31 2188/31 2189/31 2192/31 2180/32 2190/31 1407/19 1398/18 1385/17 1403/19 1393/19 1410/20 1410/20 1394/19 3231/713 3238/712 3241/711 3243/712 3235/710 3235/709 3237/707 3243/708)
+train exo rev TRM grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5904 0.4640 0.3568 0.3334 0.3224 0.2291 0.2166 0.2017; val mean 0.23872 over 6 seeds
+train exo rev TRM grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5962 0.4633 0.3652 0.3307 0.3317 0.3186 0.3080 0.3024; val mean 0.29399 over 6 seeds
+train exo rev TRM grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.5459 0.3803 0.3250 0.3066 0.2367 0.2211 0.1279 0.1156; val mean 0.15060 over 6 seeds
+train exo rev TRM grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.5453 0.4398 0.2575 0.1408 0.1213 0.0988 0.0852 0.0845; val mean 0.06542 over 6 seeds
+train exo stat TRM grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5925 0.4537 0.3540 0.3352 0.3225 0.3108 0.3094 0.2797; val mean 0.27249 over 6 seeds
+train exo stat TRM grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5910 0.4661 0.3644 0.3352 0.3316 0.3257 0.2981 0.2187; val mean 0.24652 over 6 seeds
+train exo stat TRM grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.5441 0.3960 0.3285 0.3218 0.2873 0.3666 0.3269 0.3088; val mean 0.47027 over 6 seeds
+train exo stat TRM grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.5424 0.4014 0.3268 0.2576 0.2919 0.1563 0.1845 0.0966; val mean 0.08355 over 6 seeds
+train obs-ay rev TRM grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5152 0.2272 0.1306 0.0895 0.0693 0.0604 0.0590 0.0570; val mean 0.04743 over 6 seeds
+train obs-ay rev TRM grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5160 0.2247 0.1260 0.0910 0.0679 0.0586 0.0472 0.0524; val mean 0.04716 over 6 seeds
+train obs-ay rev TRM grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3611 0.0895 0.0549 0.0484 0.0476 0.0414 0.0442 0.0526; val mean 0.04356 over 6 seeds
+train obs-ay rev TRM grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3565 0.0902 0.0551 0.0530 0.0302 0.0503 0.0495 0.0443; val mean 0.04351 over 6 seeds
+train obs-ay stat TRM grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5142 0.2254 0.1289 0.0918 0.0798 0.0556 0.0508 0.0494; val mean 0.04740 over 6 seeds
+train obs-ay stat TRM grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5139 0.2260 0.1284 0.0863 0.0727 0.0619 0.0520 0.0507; val mean 0.04750 over 6 seeds
+train obs-ay stat TRM grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3606 0.0922 0.0603 0.0554 0.0429 0.0568 0.0488 0.0405; val mean 0.04389 over 6 seeds
+train obs-ay stat TRM grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3605 0.0917 0.0467 0.0442 0.0518 0.0532 0.0474 0.0450; val mean 0.04393 over 6 seeds
+train obs-full rev TRM grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5145 0.2274 0.1307 0.0896 0.0693 0.0604 0.0590 0.0570; val mean 0.04743 over 6 seeds
+train obs-full rev TRM grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5153 0.2249 0.1260 0.0911 0.0679 0.0586 0.0472 0.0524; val mean 0.04716 over 6 seeds
+train obs-full rev TRM grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3609 0.0899 0.0549 0.0484 0.0476 0.0414 0.0442 0.0526; val mean 0.04356 over 6 seeds
+train obs-full rev TRM grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3567 0.0906 0.0552 0.0530 0.0302 0.0503 0.0495 0.0428; val mean 0.04314 over 6 seeds
+train obs-full stat TRM grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5136 0.2256 0.1289 0.0918 0.0798 0.0556 0.0509 0.0494; val mean 0.04740 over 6 seeds
+train obs-full stat TRM grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5132 0.2262 0.1285 0.0863 0.0727 0.0619 0.0520 0.0507; val mean 0.04750 over 6 seeds
+train obs-full stat TRM grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3602 0.0926 0.0604 0.0554 0.0429 0.0568 0.0488 0.0405; val mean 0.04389 over 6 seeds
+train obs-full stat TRM grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3603 0.0921 0.0468 0.0442 0.0518 0.0532 0.0474 0.0450; val mean 0.04393 over 6 seeds
+train exo rev TRM-1x1 grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5848 0.4071 0.3482 0.1607 0.1037 0.0874 0.0791 0.0742; val mean 0.07284 over 6 seeds
+train exo rev TRM-1x1 grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5886 0.4075 0.3583 0.3278 0.2677 0.1019 0.0907 0.0951; val mean 0.08542 over 6 seeds
+train exo rev TRM-1x1 grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.4913 0.2477 0.0908 0.0859 0.0857 0.0749 0.0837 0.0892; val mean 0.07924 over 6 seeds
+train exo rev TRM-1x1 grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.4942 0.3229 0.1708 0.0881 0.0878 0.0880 0.0847 0.0772; val mean 0.06318 over 6 seeds
+train exo stat TRM-1x1 grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5871 0.4047 0.3261 0.1236 0.0998 0.0882 0.0780 0.0766; val mean 0.07504 over 6 seeds
+train exo stat TRM-1x1 grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5869 0.4084 0.3547 0.1664 0.1039 0.0978 0.0837 0.0824; val mean 0.07533 over 6 seeds
+train exo stat TRM-1x1 grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.4943 0.1878 0.0909 0.0875 0.0870 0.0811 0.0817 0.0849; val mean 0.08227 over 6 seeds
+train exo stat TRM-1x1 grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.4961 0.2983 0.1063 0.0865 0.0888 0.0875 0.0770 0.0669; val mean 0.05978 over 6 seeds
+train obs-ay rev TRM-1x1 grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5126 0.2266 0.1304 0.0894 0.0669 0.0551 0.0519 0.0499; val mean 0.04328 over 6 seeds
+train obs-ay rev TRM-1x1 grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5135 0.2241 0.1257 0.0903 0.0636 0.0542 0.0443 0.0440; val mean 0.04198 over 6 seeds
+train obs-ay rev TRM-1x1 grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3591 0.0897 0.0548 0.0448 0.0420 0.0330 0.0389 0.0401; val mean 0.03623 over 6 seeds
+train obs-ay rev TRM-1x1 grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3545 0.0904 0.0551 0.0531 0.0302 0.0477 0.0451 0.0367; val mean 0.03810 over 6 seeds
+train obs-ay stat TRM-1x1 grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5117 0.2248 0.1286 0.0917 0.0746 0.0512 0.0449 0.0427; val mean 0.04212 over 6 seeds
+train obs-ay stat TRM-1x1 grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5113 0.2254 0.1282 0.0862 0.0712 0.0581 0.0499 0.0469; val mean 0.04263 over 6 seeds
+train obs-ay stat TRM-1x1 grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3585 0.0924 0.0602 0.0468 0.0359 0.0458 0.0406 0.0348; val mean 0.03588 over 6 seeds
+train obs-ay stat TRM-1x1 grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3584 0.0918 0.0455 0.0388 0.0447 0.0582 0.0398 0.0379; val mean 0.03578 over 6 seeds
+train obs-full rev TRM-1x1 grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5123 0.2262 0.1302 0.0893 0.0690 0.0551 0.0529 0.0498; val mean 0.04310 over 6 seeds
+train obs-full rev TRM-1x1 grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5136 0.2238 0.1256 0.0904 0.0643 0.0551 0.0446 0.0444; val mean 0.04197 over 6 seeds
+train obs-full rev TRM-1x1 grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3587 0.0895 0.0548 0.0479 0.0476 0.0414 0.0442 0.0517; val mean 0.03924 over 6 seeds
+train obs-full rev TRM-1x1 grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3541 0.0902 0.0550 0.0464 0.0274 0.0509 0.0410 0.0355; val mean 0.03816 over 6 seeds
+train obs-full stat TRM-1x1 grid 1 (lr 0.0003, wd 0.0): lm loss by 100 updates 0.5115 0.2245 0.1285 0.0916 0.0762 0.0536 0.0456 0.0429; val mean 0.04229 over 6 seeds
+train obs-full stat TRM-1x1 grid 2 (lr 0.0003, wd 0.01): lm loss by 100 updates 0.5112 0.2250 0.1280 0.0861 0.0725 0.0607 0.0504 0.0469; val mean 0.04227 over 6 seeds
+train obs-full stat TRM-1x1 grid 3 (lr 0.001, wd 0.0): lm loss by 100 updates 0.3582 0.0922 0.0602 0.0503 0.0357 0.0458 0.0405 0.0345; val mean 0.03592 over 6 seeds
+train obs-full stat TRM-1x1 grid 4 (lr 0.001, wd 0.01): lm loss by 100 updates 0.3579 0.0916 0.0467 0.0409 0.0447 0.0451 0.0401 0.0388; val mean 0.03565 over 6 seeds
+selected obs-full stat TRM: grid 3 (val 0.04740 0.04750 0.04389 0.04393)
+selected obs-full stat TRM-1x1: grid 4 (val 0.04229 0.04227 0.03592 0.03565)
+selected obs-full rev TRM: grid 4 (val 0.04743 0.04716 0.04356 0.04314)
+selected obs-full rev TRM-1x1: grid 4 (val 0.04310 0.04197 0.03924 0.03816)
+selected obs-ay stat TRM: grid 3 (val 0.04740 0.04750 0.04389 0.04393)
+selected obs-ay stat TRM-1x1: grid 4 (val 0.04212 0.04263 0.03588 0.03578)
+selected obs-ay rev TRM: grid 4 (val 0.04743 0.04716 0.04356 0.04351)
+selected obs-ay rev TRM-1x1: grid 3 (val 0.04328 0.04198 0.03623 0.03810)
+selected exo stat TRM: grid 4 (val 0.27249 0.24652 0.47027 0.08355)
+selected exo stat TRM-1x1: grid 4 (val 0.07504 0.07533 0.08227 0.05978)
+selected exo rev TRM: grid 4 (val 0.23872 0.29399 0.15060 0.06542)
+selected exo rev TRM-1x1: grid 4 (val 0.07284 0.08542 0.07924 0.06318)
+predictions: 516 units in 1158 s
+controls obs-full stat: RATE 0.992222 0.991676, TAB4 keys seen 212/1250, TAB_R1 keys seen 26/130
+obs-full stat TRM vs RATE       n 24  wins 12 losses 12 ties 0  p 1  mean +0.00001 [-0.00001, +0.00003]  median -0.00000  range [-0.00007, +0.00017]  not passed
+obs-full stat TRM vs B1         n 24  wins  4 losses 20 ties 0  p 0.00154  mean -0.00420 [-0.00564, -0.00269]  median -0.00437  range [-0.01064, +0.00298]  not passed
+obs-full stat TRM vs TAB4       n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.01285 [-0.01486, -0.01102]  median -0.01145  range [-0.02452, -0.00625]  not passed
+obs-full stat TRM vs TAB_R1     n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.03420 [-0.03793, -0.03088]  median -0.03378  range [-0.05684, -0.01931]  not passed
+obs-full stat TRM vs TRM-1x1    n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.00801 [-0.00928, -0.00683]  median -0.00727  range [-0.01470, -0.00228]  not passed
+obs-full stat TRM vs TRM-inf1x1 n 24  wins  4 losses 20 ties 0  p 0.00154  mean -0.00000 [-0.00000, -0.00000]  median -0.00000  range [-0.00000, +0.00000]  not passed
+   mean scores over 24 seeds (excluded none): RATE 0.04697, B1 0.04277, TAB4 0.03412, TAB_R1 0.01276, TRM 0.04696, TRM_raw 0.04696, TRM-1x1 0.03895, TRM-inf1x1 0.04696
+controls obs-full rev: RATE 0.992274 0.991553, TAB4 keys seen 216/1250, TAB_R1 keys seen 26/130
+obs-full rev  TRM vs RATE       n 24  wins 18 losses  6 ties 0  p 0.0227  mean +0.00042 [+0.00020, +0.00068]  median +0.00033  range [-0.00037, +0.00245]  PASS
+obs-full rev  TRM vs B1         n 24  wins  2 losses 22 ties 0  p 3.59e-05  mean -0.00389 [-0.00530, -0.00254]  median -0.00359  range [-0.01027, +0.00412]  not passed
+obs-full rev  TRM vs TAB4       n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.01313 [-0.01533, -0.01133]  median -0.01229  range [-0.03075, -0.00683]  not passed
+obs-full rev  TRM vs TAB_R1     n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.03430 [-0.03884, -0.03055]  median -0.03150  range [-0.07179, -0.02287]  not passed
+obs-full rev  TRM vs TRM-1x1    n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.00530 [-0.00600, -0.00468]  median -0.00498  range [-0.00975, -0.00260]  not passed
+obs-full rev  TRM vs TRM-inf1x1 n 24  wins 23 losses  1 ties 0  p 2.98e-06  mean +0.00348 [+0.00291, +0.00394]  median +0.00351  range [-0.00120, +0.00530]  PASS
+   mean scores over 24 seeds (excluded none): RATE 0.04814, B1 0.04383, TAB4 0.03459, TAB_R1 0.01342, TRM 0.04772, TRM_raw 0.04772, TRM-1x1 0.04242, TRM-inf1x1 0.05120
+controls obs-ay stat: RATE 0.992222 0.991676, TAB4 keys seen 212/1250, TAB_R1 keys seen 26/130
+obs-ay   stat TRM vs RATE       n 24  wins 12 losses 12 ties 0  p 1  mean +0.00001 [-0.00001, +0.00003]  median +0.00000  range [-0.00007, +0.00016]  not passed
+obs-ay   stat TRM vs B1         n 24  wins  4 losses 20 ties 0  p 0.00154  mean -0.00420 [-0.00564, -0.00269]  median -0.00437  range [-0.01064, +0.00298]  not passed
+obs-ay   stat TRM vs TAB4       n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.01285 [-0.01486, -0.01102]  median -0.01145  range [-0.02453, -0.00625]  not passed
+obs-ay   stat TRM vs TAB_R1     n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.03420 [-0.03793, -0.03088]  median -0.03378  range [-0.05684, -0.01930]  not passed
+obs-ay   stat TRM vs TRM-1x1    n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.00788 [-0.00915, -0.00670]  median -0.00715  range [-0.01460, -0.00208]  not passed
+obs-ay   stat TRM vs TRM-inf1x1 n 24  wins 18 losses  6 ties 0  p 0.0227  mean +0.00000 [-0.00000, +0.00000]  median +0.00000  range [-0.00000, +0.00000]  PASS
+   mean scores over 24 seeds (excluded none): RATE 0.04697, B1 0.04277, TAB4 0.03412, TAB_R1 0.01276, TRM 0.04696, TRM_raw 0.04696, TRM-1x1 0.03908, TRM-inf1x1 0.04696
+controls obs-ay rev: RATE 0.992274 0.991553, TAB4 keys seen 216/1250, TAB_R1 keys seen 26/130
+obs-ay   rev  TRM vs RATE       n 24  wins 14 losses 10 ties 0  p 0.541  mean -0.00001 [-0.00007, +0.00004]  median +0.00001  range [-0.00054, +0.00017]  not passed
+obs-ay   rev  TRM vs B1         n 24  wins  2 losses 22 ties 0  p 3.59e-05  mean -0.00432 [-0.00589, -0.00281]  median -0.00383  range [-0.01258, +0.00447]  not passed
+obs-ay   rev  TRM vs TAB4       n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.01356 [-0.01599, -0.01158]  median -0.01279  range [-0.03306, -0.00725]  not passed
+obs-ay   rev  TRM vs TAB_R1     n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.03473 [-0.03951, -0.03081]  median -0.03209  range [-0.07410, -0.02268]  not passed
+obs-ay   rev  TRM vs TRM-1x1    n 24  wins  1 losses 23 ties 0  p 2.98e-06  mean -0.00707 [-0.00834, -0.00586]  median -0.00694  range [-0.01689, +0.00014]  not passed
+obs-ay   rev  TRM vs TRM-inf1x1 n 24  wins 11 losses 13 ties 0  p 0.839  mean -0.00000 [-0.00000, +0.00000]  median -0.00000  range [-0.00000, +0.00000]  not passed
+   mean scores over 24 seeds (excluded none): RATE 0.04814, B1 0.04383, TAB4 0.03459, TAB_R1 0.01342, TRM 0.04815, TRM_raw 0.04815, TRM-1x1 0.04108, TRM-inf1x1 0.04815
+controls exo stat: RATE 0.815527 0.816079, TAB4 keys seen 252/1250
+exo      stat TRM vs RATE       n 24  wins 24 losses  0 ties 0  p 1.19e-07  mean +0.40434 [+0.39026, +0.41921]  median +0.40592  range [+0.34224, +0.50095]  PASS
+exo      stat TRM vs B1         n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.02231 [-0.02515, -0.01956]  median -0.02238  range [-0.03807, -0.01011]  not passed
+exo      stat TRM vs TAB4       n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.03583 [-0.03836, -0.03348]  median -0.03462  range [-0.04851, -0.02594]  not passed
+exo      stat TRM vs TRM-1x1    n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.02403 [-0.02670, -0.02153]  median -0.02269  range [-0.03801, -0.01538]  not passed
+exo      stat TRM vs TRM-inf1x1 n 24  wins 24 losses  0 ties 0  p 1.19e-07  mean +0.24613 [+0.23086, +0.26278]  median +0.24157  range [+0.18925, +0.35069]  PASS
+   mean scores over 24 seeds (excluded none): RATE 0.49117, B1 0.06452, TAB4 0.05100, TRM 0.08683, TRM_raw 0.08683, TRM-1x1 0.06280, TRM-inf1x1 0.33296
+controls exo rev: RATE 0.814766 0.813691, TAB4 keys seen 251/1250
+exo      rev  TRM vs RATE       n 24  wins 24 losses  0 ties 0  p 1.19e-07  mean +0.42468 [+0.40892, +0.44228]  median +0.41811  range [+0.36479, +0.53958]  PASS
+exo      rev  TRM vs B1         n 24  wins  6 losses 18 ties 0  p 0.0227  mean -0.00378 [-0.00571, -0.00193]  median -0.00335  range [-0.01490, +0.00318]  not passed
+exo      rev  TRM vs TAB4       n 24  wins  0 losses 24 ties 0  p 1.19e-07  mean -0.01825 [-0.01903, -0.01739]  median -0.01858  range [-0.02165, -0.01323]  not passed
+exo      rev  TRM vs TRM-1x1    n 24  wins  6 losses 18 ties 0  p 0.0227  mean -0.00226 [-0.00322, -0.00127]  median -0.00250  range [-0.00698, +0.00200]  not passed
+exo      rev  TRM vs TRM-inf1x1 n 24  wins 24 losses  0 ties 0  p 1.19e-07  mean +0.26080 [+0.24493, +0.27751]  median +0.25788  range [+0.19053, +0.37302]  PASS
+   mean scores over 24 seeds (excluded none): RATE 0.49357, B1 0.06512, TAB4 0.05065, TRM 0.06890, TRM_raw 0.06890, TRM-1x1 0.06664, TRM-inf1x1 0.32970
+C0 (obs-full, stat and rev, TRM over RATE, B1, TAB4, TAB_R1, TRM-1x1, all significant): NOT PASSED (C1 does not proceed)
+   obs-full stat: the advantage of the configuration (H/L recursion and multi-step ACT together) over TRM-1x1 not confirmed
+   obs-full stat: an advantage over the one-step receptor table TAB_R1 not confirmed
+   obs-full rev: the advantage of the configuration (H/L recursion and multi-step ACT together) over TRM-1x1 not confirmed
+   obs-full rev: an advantage over the one-step receptor table TAB_R1 not confirmed
+ê obs-full stat: detectable seeds 24 (undetectable none); PAV blocks 7; O1^cal mean -0.0049 [-0.0074, -0.0022] wins 4 losses 20 p 0.00154 (stable > 0: false); ê_cal O1^cal mean -0.0365; ê_cal - ê -0.0316 [-0.0482, -0.0152]; O1^min mean -0.0018
+ê obs-full rev : detectable seeds 24 (undetectable none); PAV blocks 15; O1^cal mean -0.0166 [-0.0219, -0.0113] wins 2 losses 22 p 3.59e-05 (stable > 0: false); ê_cal O1^cal mean -0.1076; ê_cal - ê -0.0910 [-0.1148, -0.0656]; O1^min mean +0.0019
+ê obs-ay   stat: detectable seeds 24 (undetectable none); PAV blocks 3; O1^cal mean -0.0004 [-0.0035, +0.0024] wins 13 losses 11 p 0.839 (stable > 0: false); ê_cal O1^cal mean -0.0319; ê_cal - ê -0.0314 [-0.0481, -0.0150]; O1^min mean -0.0018
+ê obs-ay   rev : detectable seeds 24 (undetectable none); PAV blocks 7; O1^cal mean -0.2190 [-0.2446, -0.1941] wins 0 losses 24 p 1.19e-07 (stable > 0: false); ê_cal O1^cal mean -0.2751; ê_cal - ê -0.0561 [-0.0739, -0.0363]; O1^min mean -0.0002
+ê exo      stat: detectable seeds 24 (undetectable none); PAV blocks 15; O1^cal mean -2.4711 [-2.5776, -2.3666] wins 0 losses 24 p 1.19e-07 (stable > 0: false); ê_cal O1^cal mean -3.2332; ê_cal - ê -0.7621 [-0.8135, -0.7108]; O1^min mean -1.9757
+ê exo      rev : detectable seeds 24 (undetectable none); PAV blocks 23; O1^cal mean -1.9442 [-2.0491, -1.8453] wins 0 losses 24 p 1.19e-07 (stable > 0: false); ê_cal O1^cal mean -3.3597; ê_cal - ê -1.4155 [-1.4627, -1.3707]; O1^min mean -1.4107
+OOD (P 700, L 250; 12 seeds, excluded none): rev-trained obs-full TRM vs B1 wins 2 losses 10 ties 0 p 0.0386 mean -0.00483 [-0.00744, -0.00243] -> wins <= losses: failure to generalize out of the training distribution
+G1 sel_obs-full_stat_TRM (H 3 L 6, final ACT step 3, 8 inputs): TrmC0 vs TrmPort max |diff| (logits, z_H) 2.86e-06 (<= 1e-4); TrmC0 vs TrmDet 2.86e-06, TrmPort vs TrmDet 3.81e-06; TrmDet (run_det.jl) vs rust/trm-det bit-identical: true [compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL]   neg m4 (+1 ulp) caught: true -> true
+G1 sel_obs-full_stat_TRM-1x1 (H 1 L 1, final ACT step 1, 8 inputs): TrmC0 vs TrmPort max |diff| (logits, z_H) 2.86e-06 (<= 1e-4); TrmC0 vs TrmDet 3.81e-06, TrmPort vs TrmDet 3.81e-06; TrmDet (run_det.jl) vs rust/trm-det bit-identical: true [compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL]   neg m4 (+1 ulp) caught: true -> true
+G1 sel_obs-full_rev_TRM (H 3 L 6, final ACT step 3, 8 inputs): TrmC0 vs TrmPort max |diff| (logits, z_H) 2.60e-01 (<= 1e-4); TrmC0 vs TrmDet 6.05e-02, TrmPort vs TrmDet 3.21e-01; TrmDet (run_det.jl) vs rust/trm-det bit-identical: true [compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL]   neg m4 (+1 ulp) caught: true -> false
+G1 sel_obs-full_rev_TRM-1x1 (H 1 L 1, final ACT step 1, 8 inputs): TrmC0 vs TrmPort max |diff| (logits, z_H) 3.81e-06 (<= 1e-4); TrmC0 vs TrmDet 5.72e-06, TrmPort vs TrmDet 4.77e-06; TrmDet (run_det.jl) vs rust/trm-det bit-identical: true [compared pairs 1 passed 1 elements 144960 differing 0 ALL IDENTICAL]   neg m4 (+1 ulp) caught: true -> true
+G1 (initial and trained weights): false
+P-S64-1: G0-G5, G7, G-TIME in this process: FAIL; G6, G8 by the mode g6
+P-S64-2: missed
+P-S64-3: missed
+P-S64-4: holds (ê does not stably exceed p_cal on obs-full)
+P-S64-5: holds (wins <= losses)
+total 9977 s
+┌ Warning: Assignment to `us` in soft scope is ambiguous because a global variable by the same name exists: `us` will be treated as a new local. Disambiguate by using `local us` to suppress this warning or `global us` to assign to the existing global variable.
+└ @ ~/bridge-agency-lab/experiments/check_draw.jl:211

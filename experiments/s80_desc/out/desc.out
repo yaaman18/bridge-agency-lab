@@ -1,0 +1,127 @@
+gate: PH path from c_t == firemask (h = 7.5, 19, 8 lives); h* counts 27/30, 31/120 reproduced
+== A: by n0 layer (width 3). per kind: windows / windows with >= 1 alarm / alarms
+  h = 7.5
+    n0 0-2: routine 12/0/0  formation 4/1/2
+    n0 3-5: routine 28/2/2  formation 6/6/10
+    n0 6-8: routine 26/2/2  formation 7/7/15
+    n0 9-11: routine 26/13/13  formation 6/6/11
+    n0 12-14: routine 17/9/10  formation 3/3/5
+    n0 15-17: routine 7/2/2  formation 1/1/2
+    n0 18-20: routine 4/3/3  formation 1/1/3
+    n0 21+: routine 0/0/0  formation 2/2/4
+  h = 19.0
+    n0 0-2: routine 12/0/0  formation 4/1/1
+    n0 3-5: routine 28/0/0  formation 6/2/2
+    n0 6-8: routine 26/0/0  formation 7/5/5
+    n0 9-11: routine 26/0/0  formation 6/3/3
+    n0 12-14: routine 17/0/0  formation 3/2/2
+    n0 15-17: routine 7/0/0  formation 1/1/1
+    n0 18-20: routine 4/0/0  formation 1/1/1
+    n0 21+: routine 0/0/0  formation 2/2/2
+== B: D = a_f - median(a_r) over same-life routine windows with |n0_r - n0_f| <= 1 and n0 > 0
+  st1 life 1 i=1 n0=4: a_f=3.7973 D=2.4199 Db=2.4204 candidates=5 exact-D=2.4199
+  st1 life 1 i=3 n0=10: a_f=2.2732 D=1.1936 Db=1.1946 candidates=1 exact-D=-
+  st1 life 1 i=4 n0=1: a_f=4.4196 D=1.7279 Db=1.7299 candidates=1 exact-D=-
+  st1 life 2 i=1 n0=2: a_f=4.6822 D=4.4612 Db=4.4701 candidates=3 exact-D=4.4984
+  st1 life 2 i=2 n0=10: a_f=2.5838 D=1.0612 Db=1.0624 candidates=3 exact-D=1.8830
+  st1 life 2 i=3 n0=7: a_f=4.3712 D=3.5687 Db=3.5676 candidates=6 exact-D=2.7477
+  st1 life 2 i=4 n0=6: a_f=4.0880 D=2.8591 Db=2.8611 candidates=4 exact-D=3.9707
+  st1 life 3 i=1 n0=5: a_f=5.2462 D=3.9448 Db=3.9465 candidates=2 exact-D=4.0904
+  st1 life 3 i=2 n0=19: held (no candidate)
+  st1 life 3 i=3 n0=21: held (no candidate)
+  st1 life 3 i=4 n0=4: a_f=3.1930 D=1.7459 Db=1.7521 candidates=3 exact-D=1.7459
+  st1 life 4 i=1 n0=11: a_f=3.6124 D=2.6249 Db=2.6311 candidates=2 exact-D=2.6249
+  st1 life 4 i=2 n0=8: held (no candidate)
+  st1 life 4 i=3 n0=13: a_f=2.9824 D=1.6794 Db=1.6821 candidates=4 exact-D=1.8332
+  st1 life 4 i=4 n0=11: a_f=3.4980 D=2.5105 Db=2.5170 candidates=2 exact-D=2.5105
+  st2 life 1 i=1 n0=4: a_f=5.0875 D=4.8081 Db=4.8108 candidates=5 exact-D=2.4636
+  st2 life 1 i=3 n0=22: held (no candidate)
+  st2 life 1 i=4 n0=1: held (no candidate)
+  st2 life 2 i=1 n0=7: a_f=1.0576 D=0.2606 Db=0.2615 candidates=3 exact-D=0.1846
+  st2 life 2 i=2 n0=11: a_f=4.1051 D=2.5085 Db=2.5136 candidates=3 exact-D=2.5085
+  st2 life 2 i=3 n0=15: a_f=2.0642 D=1.2435 Db=1.2496 candidates=4 exact-D=1.2952
+  st2 life 2 i=4 n0=3: a_f=3.4893 D=1.4975 Db=1.4978 candidates=4 exact-D=-
+  st2 life 3 i=1 n0=8: a_f=3.2982 D=2.5101 Db=2.5113 candidates=4 exact-D=2.5188
+  st2 life 3 i=2 n0=8: a_f=4.3736 D=3.5855 Db=3.5904 candidates=4 exact-D=3.5942
+  st2 life 3 i=3 n0=9: a_f=1.8184 D=1.1973 Db=1.1948 candidates=4 exact-D=1.6729
+  st2 life 3 i=4 n0=5: a_f=2.8009 D=1.6518 Db=1.6544 candidates=3 exact-D=1.6392
+  st2 life 4 i=1 n0=2: a_f=5.1632 D=5.0363 Db=5.0365 candidates=2 exact-D=-
+  st2 life 4 i=2 n0=12: a_f=1.8558 D=-0.2474 Db=-0.2356 candidates=1 exact-D=-
+  st2 life 4 i=3 n0=14: a_f=1.7931 D=1.0607 Db=1.0620 candidates=2 exact-D=1.1165
+  st2 life 4 i=4 n0=8: a_f=4.3750 D=3.3338 Db=3.3359 candidates=4 exact-D=3.3338
+  [life] st1 life 1: valid formation 3, routine windows used 7, median D 1.7279, exact-n0 sign +
+  [life] st1 life 2: valid formation 4, routine windows used 12, median D 3.2139, exact-n0 sign +
+  [life] st1 life 3: valid formation 2, routine windows used 3, median D 2.8454, exact-n0 sign +
+  [life] st1 life 4: valid formation 3, routine windows used 6, median D 2.5105, exact-n0 sign +
+  [life] st2 life 1: valid formation 1, routine windows used 5, median D 4.8081, exact-n0 sign +
+  [life] st2 life 2: valid formation 4, routine windows used 14, median D 1.3705, exact-n0 sign +
+  [life] st2 life 3: valid formation 4, routine windows used 8, median D 2.0810, exact-n0 sign +
+  [life] st2 life 4: valid formation 4, routine windows used 9, median D 2.1972, exact-n0 sign +
+  valid formation 25, lives 8; lives + / 0 / - = 8 / 0 / 0; sign test one-sided p = 0.0039; median D over all = 2.4199
+  rule: R2 does not apply; R1 holds -> freeze one prediction for unseen lives
+== C: first alarm in window at h* (routine: alarmed windows; formation: detected windows)
+  routine st1 life 1 5001:6000 alarm@350: S0=0.4861 Σc(Y=0)=11.3356 Σc(Y≠0)=-7.4436 ΔM=3.2736 max c=5.2718 m-M=7.6517 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 1 6001:7000 alarm@350: S0=0.1391 Σc(Y=0)=11.0789 Σc(Y≠0)=-7.1851 ΔM=5.1979 max c=5.2720 m-M=9.2307 n0-to-alarm=8 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 1 41001:42000 alarm@750: S0=0.0000 Σc(Y=0)=15.9387 Σc(Y≠0)=-13.7163 ΔM=7.1316 max c=5.2753 m-M=9.3539 n0-to-alarm=12 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 2 7001:8000 alarm@400: S0=0.0000 Σc(Y=0)=11.7611 Σc(Y≠0)=-7.6639 ΔM=4.8548 max c=5.2742 m-M=8.9520 n0-to-alarm=11 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 2 18001:19000 alarm@250: S0=0.0000 Σc(Y=0)=10.9979 Σc(Y≠0)=-4.7117 ΔM=1.5808 max c=5.2753 m-M=7.8670 n0-to-alarm=5 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 2 42001:43000 alarm@700: S0=0.0000 Σc(Y=0)=14.5279 Σc(Y≠0)=-10.6638 ΔM=6.4651 max c=5.2776 m-M=10.3292 n0-to-alarm=13 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 2 43001:44000 alarm@850: S0=0.0000 Σc(Y=0)=15.9333 Σc(Y≠0)=-15.0624 ΔM=9.4232 max c=5.2752 m-M=10.2941 n0-to-alarm=9 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 2 52841:53840 alarm@160: S0=3.2532 Σc(Y=0)=11.1189 Σc(Y≠0)=-3.2505 ΔM=0.0000 max c=5.2733 m-M=11.1215 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 3 17001:18000 alarm@1000: S0=0.0000 Σc(Y=0)=18.8769 Σc(Y≠0)=-17.7365 ΔM=6.6117 max c=5.2769 m-M=7.7521 n0-to-alarm=11 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 3 18001:19000 alarm@100: S0=0.0000 Σc(Y=0)=11.2752 Σc(Y≠0)=-1.7682 ΔM=0.0606 max c=5.2731 m-M=9.5676 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 3 53537:54536 alarm@764: S0=0.0000 Σc(Y=0)=15.8366 Σc(Y≠0)=-13.6925 ΔM=6.9571 max c=5.2760 m-M=9.1012 n0-to-alarm=6 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 4 6001:7000 alarm@650: S0=0.9002 Σc(Y=0)=17.1218 Σc(Y≠0)=-10.9552 ΔM=2.5336 max c=5.2775 m-M=9.6004 n0-to-alarm=11 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 4 41001:42000 alarm@150: S0=0.0000 Σc(Y=0)=11.4079 Σc(Y≠0)=-2.3815 ΔM=0.3275 max c=5.2784 m-M=9.3539 n0-to-alarm=6 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 4 42001:43000 alarm@900: S0=0.3356 Σc(Y=0)=22.4173 Σc(Y≠0)=-16.7825 ΔM=5.0059 max c=5.2754 m-M=10.9763 n0-to-alarm=14 | S0=0 still alarms: true | survives every single removal: false
+  routine st1 life 4 51161:52160 alarm@840: S0=0.0000 Σc(Y=0)=13.4153 Σc(Y≠0)=-17.6669 ΔM=13.9680 max c=5.2728 m-M=9.7163 n0-to-alarm=11 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 1 7001:8000 alarm@450: S0=0.0000 Σc(Y=0)=11.2260 Σc(Y≠0)=-7.2519 ΔM=3.9093 max c=5.2777 m-M=7.8834 n0-to-alarm=6 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 1 17001:18000 alarm@700: S0=3.9701 Σc(Y=0)=10.0531 Σc(Y≠0)=-12.2551 ΔM=7.4490 max c=5.2761 m-M=9.2171 n0-to-alarm=8 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 1 29001:30000 alarm@800: S0=0.0000 Σc(Y=0)=15.9456 Σc(Y≠0)=-16.0901 ΔM=8.6474 max c=5.2717 m-M=8.5030 n0-to-alarm=10 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 1 42001:43000 alarm@650: S0=0.0000 Σc(Y=0)=15.5283 Σc(Y≠0)=-10.8033 ΔM=3.7848 max c=5.2780 m-M=8.5098 n0-to-alarm=5 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 2 18001:19000 alarm@1000: S0=1.4672 Σc(Y=0)=17.5621 Σc(Y≠0)=-18.1934 ΔM=11.0407 max c=5.2758 m-M=11.8766 n0-to-alarm=11 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 2 43001:44000 alarm@650: S0=0.0000 Σc(Y=0)=16.3849 Σc(Y≠0)=-11.4073 ΔM=8.4011 max c=5.2729 m-M=13.3787 n0-to-alarm=12 | S0=0 still alarms: true | survives every single removal: true
+  routine st2 life 2 50089:51088 alarm@312: S0=0.0000 Σc(Y=0)=12.0773 Σc(Y≠0)=-5.0780 ΔM=3.7027 max c=5.2774 m-M=10.7020 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 2 52089:53088 alarm@312: S0=0.0000 Σc(Y=0)=15.9125 Σc(Y≠0)=-5.5326 ΔM=5.2800 max c=5.2756 m-M=15.6599 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: true
+  routine st2 life 3 18001:19000 alarm@700: S0=0.0000 Σc(Y=0)=19.4596 Σc(Y≠0)=-11.8647 ΔM=9.2994 max c=5.2765 m-M=16.8943 n0-to-alarm=13 | S0=0 still alarms: true | survives every single removal: true
+  routine st2 life 3 30001:31000 alarm@150: S0=4.8304 Σc(Y=0)=5.6495 Σc(Y≠0)=-2.8731 ΔM=0.0000 max c=5.2739 m-M=7.6068 n0-to-alarm=4 | S0=0 still alarms: false | survives every single removal: false
+  routine st2 life 4 7001:8000 alarm@800: S0=0.0000 Σc(Y=0)=9.7140 Σc(Y≠0)=-13.3469 ΔM=11.9556 max c=5.1387 m-M=8.3227 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 4 18001:19000 alarm@250: S0=0.0000 Σc(Y=0)=9.9492 Σc(Y≠0)=-4.8225 ΔM=4.0373 max c=5.2732 m-M=9.1640 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 4 19001:20000 alarm@450: S0=0.0000 Σc(Y=0)=8.6006 Σc(Y≠0)=-9.2018 ΔM=8.8884 max c=4.4399 m-M=8.2872 n0-to-alarm=6 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 4 31001:32000 alarm@500: S0=0.0000 Σc(Y=0)=11.8170 Σc(Y≠0)=-7.7468 ΔM=5.5591 max c=5.2779 m-M=9.6292 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 4 41001:42000 alarm@350: S0=0.0000 Σc(Y=0)=12.1698 Σc(Y≠0)=-5.5178 ΔM=4.1416 max c=5.2780 m-M=10.7936 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: false
+  routine st2 life 4 43001:44000 alarm@350: S0=0.0000 Σc(Y=0)=11.3302 Σc(Y≠0)=-6.1329 ΔM=5.8483 max c=5.2759 m-M=11.0456 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: false
+  formation i=1 st1 life 1 8001:9000 alarm@50: S0=0.0000 Σc(Y=0)=9.0491 Σc(Y≠0)=1.9294 ΔM=0.0865 max c=4.5724 m-M=11.0649 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  formation i=3 st1 life 1 32001:33000 alarm@250: S0=1.0560 Σc(Y=0)=10.7133 Σc(Y≠0)=-5.0277 ΔM=3.9134 max c=5.2724 m-M=10.6549 n0-to-alarm=3 | S0=0 still alarms: true | survives every single removal: false
+  formation i=1 st1 life 2 8001:9000 alarm@200: S0=0.0000 Σc(Y=0)=0.0000 Σc(Y≠0)=9.8002 ΔM=1.6426 max c=2.1666 m-M=11.4428 n0-to-alarm=0 | S0=0 still alarms: true | survives every single removal: true
+  formation i=2 st1 life 2 20001:21000 alarm@300: S0=0.0000 Σc(Y=0)=10.5452 Σc(Y≠0)=-6.0034 ΔM=5.8694 max c=5.2735 m-M=10.4112 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  formation i=3 st1 life 2 32001:33000 alarm@450: S0=0.0000 Σc(Y=0)=21.0992 Σc(Y≠0)=-7.3966 ΔM=4.2724 max c=5.2771 m-M=17.9750 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: true
+  formation i=4 st1 life 2 44001:45000 alarm@400: S0=0.0000 Σc(Y=0)=10.3439 Σc(Y≠0)=-7.1396 ΔM=7.6408 max c=5.2735 m-M=10.8451 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  formation i=1 st1 life 3 8001:9000 alarm@400: S0=0.0000 Σc(Y=0)=15.8254 Σc(Y≠0)=-7.0347 ΔM=1.6583 max c=5.2764 m-M=10.4490 n0-to-alarm=3 | S0=0 still alarms: true | survives every single removal: false
+  formation i=2 st1 life 3 20001:21000 alarm@50: S0=0.0000 Σc(Y=0)=9.4547 Σc(Y≠0)=-0.8552 ΔM=0.7803 max c=4.5423 m-M=9.3799 n0-to-alarm=3 | S0=0 still alarms: true | survives every single removal: false
+  formation i=3 st1 life 3 32001:33000 alarm@50: S0=0.0000 Σc(Y=0)=18.3842 Σc(Y≠0)=-0.8787 ΔM=0.6917 max c=4.6742 m-M=18.1972 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: true
+  formation i=4 st1 life 3 44001:45000 alarm@50: S0=0.1090 Σc(Y=0)=0.0000 Σc(Y≠0)=11.1529 ΔM=0.0000 max c=2.3056 m-M=11.2618 n0-to-alarm=0 | S0=0 still alarms: true | survives every single removal: true
+  formation i=1 st1 life 4 8001:9000 alarm@150: S0=5.2645 Σc(Y=0)=9.9934 Σc(Y≠0)=-2.3159 ΔM=0.0000 max c=5.2747 m-M=12.9421 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: true
+  formation i=2 st1 life 4 20001:21000 alarm@300: S0=0.0000 Σc(Y=0)=0.0000 Σc(Y≠0)=8.8837 ΔM=4.7974 max c=2.4094 m-M=13.6811 n0-to-alarm=0 | S0=0 still alarms: true | survives every single removal: true
+  formation i=3 st1 life 4 32001:33000 alarm@300: S0=0.0000 Σc(Y=0)=15.8288 Σc(Y≠0)=-5.0973 ΔM=0.2065 max c=5.2776 m-M=10.9380 n0-to-alarm=3 | S0=0 still alarms: true | survives every single removal: false
+  formation i=4 st1 life 4 44001:45000 alarm@100: S0=0.0000 Σc(Y=0)=9.8736 Σc(Y≠0)=-1.6599 ΔM=0.9780 max c=5.2727 m-M=9.1917 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  formation i=1 st2 life 1 8001:9000 alarm@50: S0=4.9853 Σc(Y=0)=5.2740 Σc(Y≠0)=-0.7473 ΔM=0.0000 max c=5.2740 m-M=9.5120 n0-to-alarm=1 | S0=0 still alarms: false | survives every single removal: false
+  formation i=3 st2 life 1 32001:33000 alarm@50: S0=0.0000 Σc(Y=0)=18.7675 Σc(Y≠0)=-1.0333 ΔM=0.2767 max c=4.6942 m-M=18.0109 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: true
+  formation i=1 st2 life 2 8001:9000 alarm@300: S0=1.1592 Σc(Y=0)=7.0461 Σc(Y≠0)=0.8381 ΔM=1.2911 max c=4.4253 m-M=10.3344 n0-to-alarm=5 | S0=0 still alarms: true | survives every single removal: false
+  formation i=2 st2 life 2 20001:21000 alarm@700: S0=0.0000 Σc(Y=0)=33.7452 Σc(Y≠0)=-14.8860 ΔM=4.7424 max c=5.2732 m-M=23.6017 n0-to-alarm=7 | S0=0 still alarms: true | survives every single removal: true
+  formation i=3 st2 life 2 32001:33000 alarm@300: S0=0.0000 Σc(Y=0)=9.5554 Σc(Y≠0)=-5.6426 ΔM=5.4741 max c=4.7785 m-M=9.3868 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  formation i=4 st2 life 2 44001:45000 alarm@950: S0=0.0000 Σc(Y=0)=10.4678 Σc(Y≠0)=-18.7618 ΔM=15.9199 max c=5.2555 m-M=7.6259 n0-to-alarm=3 | S0=0 still alarms: true | survives every single removal: false
+  formation i=1 st2 life 3 8001:9000 alarm@600: S0=2.1726 Σc(Y=0)=26.3855 Σc(Y≠0)=-10.3695 ΔM=7.2342 max c=5.2766 m-M=25.4228 n0-to-alarm=8 | S0=0 still alarms: true | survives every single removal: true
+  formation i=2 st2 life 3 20001:21000 alarm@150: S0=0.0000 Σc(Y=0)=9.7615 Σc(Y≠0)=-1.8439 ΔM=2.4578 max c=4.9462 m-M=10.3754 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  formation i=3 st2 life 3 32001:33000 alarm@100: S0=0.0000 Σc(Y=0)=9.9475 Σc(Y≠0)=-1.5638 ΔM=1.0463 max c=4.3208 m-M=9.4300 n0-to-alarm=4 | S0=0 still alarms: true | survives every single removal: false
+  formation i=4 st2 life 3 44001:45000 alarm@50: S0=4.6338 Σc(Y=0)=0.0000 Σc(Y≠0)=7.2798 ΔM=0.0000 max c=1.6263 m-M=11.9136 n0-to-alarm=0 | S0=0 still alarms: false | survives every single removal: true
+  formation i=2 st2 life 4 20001:21000 alarm@150: S0=0.0000 Σc(Y=0)=14.9845 Σc(Y≠0)=10.7318 ΔM=0.0757 max c=4.9965 m-M=25.7920 n0-to-alarm=3 | S0=0 still alarms: true | survives every single removal: true
+  formation i=3 st2 life 4 32001:33000 alarm@100: S0=0.0000 Σc(Y=0)=8.7813 Σc(Y≠0)=-1.6791 ΔM=1.3723 max c=5.2756 m-M=8.4745 n0-to-alarm=6 | S0=0 still alarms: true | survives every single removal: false
+  formation i=4 st2 life 4 44001:45000 alarm@350: S0=5.2364 Σc(Y=0)=10.1342 Σc(Y≠0)=-7.1894 ΔM=1.5490 max c=5.2729 m-M=9.7301 n0-to-alarm=2 | S0=0 still alarms: true | survives every single removal: false
+  [routine] windows 31, carry-over counterexamples 30, single-example counterexamples 3
+  [formation] windows 27, carry-over counterexamples 25, single-example counterexamples 11
+gate: identity, unmodified replay alarms first at the original time, C windows 31 routine / 27 formation
+S80-E1 (R2 does not apply): holds  valid 25, lives 8
+S80-E2 (R1 holds): holds
+S80-E3 (majority of alarmed routine windows still alarm from S0 = 0): holds  30/31
+S80-E4 (majority survive every single removal): miss  3/31

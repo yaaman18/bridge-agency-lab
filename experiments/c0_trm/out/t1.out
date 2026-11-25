@@ -1,0 +1,3 @@
+t1 obs-ay stat TRM grid 1: one-thread process (1031 s) weights 87fd02b0a4c2ed81b24c2c4ec7d507b9d8b24455dff147d5aa8dd46f2b5f3f87, out/ (8 threads) 87fd02b0a4c2ed81b24c2c4ec7d507b9d8b24455dff147d5aa8dd46f2b5f3f87: identical
+t1 obs-full stat TRM-1x1 grid 1: one-thread process (208 s) weights ef5bbb5ae9bc183214ad862d43867c915fbf52ed5a6ed8cb0b24f0113d99936e, out/ (8 threads) ef5bbb5ae9bc183214ad862d43867c915fbf52ed5a6ed8cb0b24f0113d99936e: identical
+t1 (one thread = eight threads for the trainings rerun): true

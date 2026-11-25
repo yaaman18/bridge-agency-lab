@@ -1,0 +1,31 @@
+┌ Warning: Assignment to `us` in soft scope is ambiguous because a global variable by the same name exists: `us` will be treated as a new local. Disambiguate by using `local us` to suppress this warning or `global us` to assign to the existing global variable.
+└ @ ~/bridge-agency-lab/experiments/check_draw.jl:211
+ERROR: LoadError: TaskFailedException
+
+    nested task error: life too short: life 29 N 45600
+    Stacktrace:
+     [1] mainrun80(life::Int64, lf::Life)
+       @ Main ~/bridge-agency-lab/experiments/s80_main/main.jl:32
+     [2] (::var"#1243#1257")(j::Int64)
+       @ Main ~/bridge-agency-lab/experiments/s80_main/main.jl:196
+     [3] macro expansion
+       @ ~/bridge-agency-lab/experiments/c0r_dev/lib.jl:48 [inlined]
+     [4] (::var"#602#threadsfor_fun#3"{var"#1243#1257", Vector{Int64}, Vector{Any}, Channel{Int64}})(tid::Int64)
+       @ Main ./threadingconstructs.jl:210
+     [5] (::Base.Threads.var"#1#2"{var"#602#threadsfor_fun#3"{var"#1243#1257", Vector{Int64}, Vector{Any}, Channel{Int64}}, Int64})()
+       @ Base.Threads ./threadingconstructs.jl:154
+
+...and 7 more exceptions.
+
+Stacktrace:
+ [1] threading_run(fun::var"#602#threadsfor_fun#3"{var"#1243#1257", Vector{Int64}, Vector{Any}, Channel{Int64}}, static::Bool)
+   @ Base.Threads ./threadingconstructs.jl:173
+ [2] macro expansion
+   @ ./threadingconstructs.jl:190 [inlined]
+ [3] tmapv
+   @ ~/bridge-agency-lab/experiments/c0r_dev/lib.jl:48 [inlined]
+ [4] run80m()
+   @ Main ~/bridge-agency-lab/experiments/s80_main/main.jl:196
+ [5] top-level scope
+   @ ~/bridge-agency-lab/experiments/s80_main/main.jl:240
+in expression starting at /Users/yamaguchimitsuyuki/bridge-agency-lab/experiments/s80_main/main.jl:239

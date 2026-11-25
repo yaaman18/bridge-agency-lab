@@ -1,0 +1,82 @@
+== A: self-baseline clock (window 500 vs own preceding 3000; selected switches = S72 r4 stage 1 at eps 0.0025)
+  FGT life 1 theta=0.005 false_rate=0.26667 det_all=0.50000 det_sel=0.66667 (n=3) ok=false
+  FGT life 1 theta=0.01 false_rate=0.20000 det_all=0.50000 det_sel=0.66667 (n=3) ok=false
+  FGT life 1 theta=0.02 false_rate=0.00000 det_all=0.25000 det_sel=0.33333 (n=3) ok=false
+  FGT life 1 theta=0.04 false_rate=0.00000 det_all=0.00000 det_sel=0.00000 (n=3) ok=false
+  FGT life 1 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.00000 det_all=0.75000 det_sel=3/3
+  FGT life 2 theta=0.005 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  FGT life 2 theta=0.01 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  FGT life 2 theta=0.02 false_rate=0.06667 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  FGT life 2 theta=0.04 false_rate=0.00000 det_all=0.50000 det_sel=0.50000 (n=4) ok=false
+  FGT life 2 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.00000 det_all=1.00000 det_sel=4/4
+  FGT life 3 theta=0.005 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  FGT life 3 theta=0.01 false_rate=0.06667 det_all=1.00000 det_sel=1.00000 (n=4) ok=true
+  FGT life 3 theta=0.02 false_rate=0.06667 det_all=1.00000 det_sel=1.00000 (n=4) ok=true
+  FGT life 3 theta=0.04 false_rate=0.00000 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  FGT life 3 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.06667 det_all=1.00000 det_sel=4/4
+  FGT life 4 theta=0.005 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  FGT life 4 theta=0.01 false_rate=0.13333 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  FGT life 4 theta=0.02 false_rate=0.06667 det_all=1.00000 det_sel=1.00000 (n=4) ok=true
+  FGT life 4 theta=0.04 false_rate=0.00000 det_all=0.50000 det_sel=0.50000 (n=4) ok=false
+  FGT life 4 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.00000 det_all=1.00000 det_sel=4/4
+  CUM life 1 theta=0.005 false_rate=0.26667 det_all=0.25000 det_sel=0.50000 (n=2) ok=false
+  CUM life 1 theta=0.01 false_rate=0.20000 det_all=0.25000 det_sel=0.50000 (n=2) ok=false
+  CUM life 1 theta=0.02 false_rate=0.00000 det_all=0.00000 det_sel=0.00000 (n=2) ok=false
+  CUM life 1 theta=0.04 false_rate=0.00000 det_all=0.00000 det_sel=0.00000 (n=2) ok=false
+  CUM life 1 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.00000 det_all=0.50000 det_sel=2/2
+  CUM life 2 theta=0.005 false_rate=0.26667 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  CUM life 2 theta=0.01 false_rate=0.26667 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  CUM life 2 theta=0.02 false_rate=0.06667 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  CUM life 2 theta=0.04 false_rate=0.00000 det_all=0.50000 det_sel=0.50000 (n=4) ok=false
+  CUM life 2 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.53333 det_all=1.00000 det_sel=4/4
+  CUM life 3 theta=0.005 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  CUM life 3 theta=0.01 false_rate=0.13333 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  CUM life 3 theta=0.02 false_rate=0.13333 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  CUM life 3 theta=0.04 false_rate=0.00000 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  CUM life 3 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.20000 det_all=1.00000 det_sel=4/4
+  CUM life 4 theta=0.005 false_rate=0.20000 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  CUM life 4 theta=0.01 false_rate=0.20000 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  CUM life 4 theta=0.02 false_rate=0.13333 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  CUM life 4 theta=0.04 false_rate=0.06667 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  CUM life 4 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.40000 det_all=1.00000 det_sel=4/4
+  WIN life 1 theta=0.005 false_rate=0.20000 det_all=0.50000 det_sel=0.66667 (n=3) ok=false
+  WIN life 1 theta=0.01 false_rate=0.13333 det_all=0.50000 det_sel=0.66667 (n=3) ok=false
+  WIN life 1 theta=0.02 false_rate=0.06667 det_all=0.25000 det_sel=0.33333 (n=3) ok=false
+  WIN life 1 theta=0.04 false_rate=0.00000 det_all=0.00000 det_sel=0.00000 (n=3) ok=false
+  WIN life 1 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.13333 det_all=0.75000 det_sel=3/3
+  WIN life 2 theta=0.005 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  WIN life 2 theta=0.01 false_rate=0.13333 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  WIN life 2 theta=0.02 false_rate=0.00000 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  WIN life 2 theta=0.04 false_rate=0.00000 det_all=0.25000 det_sel=0.25000 (n=4) ok=false
+  WIN life 2 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.20000 det_all=1.00000 det_sel=4/4
+  WIN life 3 theta=0.005 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  WIN life 3 theta=0.01 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  WIN life 3 theta=0.02 false_rate=0.13333 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  WIN life 3 theta=0.04 false_rate=0.00000 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  WIN life 3 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.33333 det_all=1.00000 det_sel=4/4
+  WIN life 4 theta=0.005 false_rate=0.40000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  WIN life 4 theta=0.01 false_rate=0.20000 det_all=1.00000 det_sel=1.00000 (n=4) ok=false
+  WIN life 4 theta=0.02 false_rate=0.06667 det_all=0.75000 det_sel=0.75000 (n=4) ok=false
+  WIN life 4 theta=0.04 false_rate=0.00000 det_all=0.25000 det_sel=0.25000 (n=4) ok=false
+  WIN life 4 [compare: S72 r4 L-REF clock theta=0.04] false_rate=0.40000 det_all=1.00000 det_sel=4/4
+grid A FGT theta=0.005: lives ok 0/4
+grid A FGT theta=0.01: lives ok 1/4
+grid A FGT theta=0.02: lives ok 2/4
+grid A FGT theta=0.04: lives ok 0/4
+Q1 (no theta separates for L-FGT): holds
+== B: paired histories, pi_1 returns at T_4 (first 500 examples vs own preceding 3000)
+  FGT life 1 S_H=0.00135 S_H'=0.00137 D=0.00002 (dpost=0.00002 dpre=-0.00000) pre H/H'=0.01702/0.01702 post H/H'=0.01837/0.01839 Y0 in event=1 same_state_T4=false
+  FGT life 2 S_H=0.01179 S_H'=0.01181 D=0.00001 (dpost=0.00001 dpre=0.00000) pre H/H'=0.01581/0.01581 post H/H'=0.02760/0.02761 Y0 in event=2 same_state_T4=false
+  FGT life 3 S_H=0.03499 S_H'=0.03502 D=0.00003 (dpost=0.00003 dpre=0.00000) pre H/H'=0.01003/0.01003 post H/H'=0.04502/0.04505 Y0 in event=4 same_state_T4=false
+  FGT life 4 S_H=0.05127 S_H'=0.05129 D=0.00002 (dpost=0.00002 dpre=-0.00000) pre H/H'=0.02080/0.02080 post H/H'=0.07207/0.07209 Y0 in event=4 same_state_T4=false
+  CUM life 1 S_H=-0.01214 S_H'=0.02809 D=0.04024 (dpost=0.03860 dpre=-0.00163) pre H/H'=0.01728/0.01565 post H/H'=0.00514/0.04374 Y0 in event=1 same_state_T4=false
+  CUM life 2 S_H=0.00184 S_H'=0.11176 D=0.10991 (dpost=0.10991 dpre=0.00000) pre H/H'=0.02116/0.02116 post H/H'=0.02300/0.13292 Y0 in event=2 same_state_T4=false
+  CUM life 3 S_H=0.01556 S_H'=0.03110 D=0.01554 (dpost=0.02962 dpre=0.01408) pre H/H'=0.00909/0.02317 post H/H'=0.02465/0.05427 Y0 in event=4 same_state_T4=false
+  CUM life 4 S_H=-0.02089 S_H'=0.11404 D=0.13494 (dpost=0.12843 dpre=-0.00650) pre H/H'=0.04548/0.03898 post H/H'=0.02459/0.15302 Y0 in event=4 same_state_T4=false
+  WIN life 1 S_H=-0.00893 S_H'=-0.00893 D=0.00000 (dpost=0.00000 dpre=0.00000) pre H/H'=0.02460/0.02460 post H/H'=0.01567/0.01567 Y0 in event=1 same_state_T4=true
+  WIN life 2 S_H=0.00752 S_H'=0.00752 D=0.00000 (dpost=0.00000 dpre=0.00000) pre H/H'=0.01918/0.01918 post H/H'=0.02670/0.02670 Y0 in event=2 same_state_T4=true
+  WIN life 3 S_H=0.02920 S_H'=0.02920 D=0.00000 (dpost=0.00000 dpre=0.00000) pre H/H'=0.01654/0.01654 post H/H'=0.04574/0.04574 Y0 in event=4 same_state_T4=true
+  WIN life 4 S_H=0.02899 S_H'=0.02899 D=0.00000 (dpost=0.00000 dpre=0.00000) pre H/H'=0.02656/0.02656 post H/H'=0.05555/0.05555 Y0 in event=4 same_state_T4=true
+gate: WIN D == 0, pre and post means bit-identical, states identical at T_4 (4 lives); H histories == S72 r4 saved main streams (12)
+Q2 (CUM D > 0 in 4/4): holds (4/4)
+Q3 (|D_FGT| < D_CUM in 4/4): holds (4/4)

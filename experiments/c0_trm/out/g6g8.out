@@ -1,0 +1,19 @@
+G6 results.tsv out fa1d04b33c97f0673a26034ecad76d64e6715468d529b698c9d631a8dade0552 out-rerun fa1d04b33c97f0673a26034ecad76d64e6715468d529b698c9d631a8dade0552 identical
+G6 summary.json out de72ce00649be1b800987990751de75a33f054c47f3026ee1af93ad911168dd3 out-rerun de72ce00649be1b800987990751de75a33f054c47f3026ee1af93ad911168dd3 identical
+G6 weights/exo_rev_TRM-1x1.bin bb04f6523f3ff14e0c50b8121f8f1040730248b9a309d8fd0aaa0904dcf26cb8 identical
+G6 weights/exo_rev_TRM.bin 979710a806f5c7d1125477717c8d2092ab281edab2c100ed28549501cd0c7f75 identical
+G6 weights/exo_stat_TRM-1x1.bin a1df9f79d270370d947389e45fb10e2dabc0d3f97ed773ddf692563ed284836d identical
+G6 weights/exo_stat_TRM.bin ab0f24f8766420755cd1a55601f49af3226c4290516d562b5ca11a8d2f9dee61 identical
+G6 weights/obs-ay_rev_TRM-1x1.bin 7188a2f80b347ab0c628abbd2c4548bc380bece06115d03de0ca642a0219c856 identical
+G6 weights/obs-ay_rev_TRM.bin 18f5ec813be26c06ae2d7d99b378c9ff86411205a91f293a76d275f4ae3d0a8b identical
+G6 weights/obs-ay_stat_TRM-1x1.bin feb46d8a8b187b86a774b6f434383630b8ee6f68f53f2c18c9b76fa7d39919a3 identical
+G6 weights/obs-ay_stat_TRM.bin 8c4bbd6eb98b0ccb0839cb052b804a22a21af3cb3b2523ecf2a998427c43c32e identical
+G6 weights/obs-full_rev_TRM-1x1.bin 09c459a2730bc4234dc0715a6d22d5627b1c9bc1d490c290b3a5c8dafc69ca48 identical
+G6 weights/obs-full_rev_TRM.bin 8cf99f9d020b8cebf62092a11893d86af6d7254bc4f5eefecae78446703c973b identical
+G6 weights/obs-full_stat_TRM-1x1.bin 1f6109d680b73a0da4deea4e614f22adb75a2a18d804daac7f27670abc3bc98a identical
+G6 weights/obs-full_stat_TRM.bin 2a0026ba3c2b775dd2106b590d65fa140df97d0cbaefd9206c44298c88c36577 identical
+G6 selected settings identical: true
+G6 (two processes: selected settings, trained weights, results.tsv, summary.json identical): true
+G8 sh core/check/run.sh exit 0: true
+G8 ~/bridge-protocol: HEAD 669107b0efadeca44e88d4c1466fecd6602148f7 (before the run 669107b0efadeca44e88d4c1466fecd6602148f7), git diff empty true, git diff --cached empty false; the first lines of git status --short as before the run (untracked files of other processes may change; not part of the criterion): false
+G8 (core/check exit 0 and bridge-protocol unchanged): false

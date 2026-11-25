@@ -1,0 +1,5 @@
+# S72 r3 prediction R3-Q1 (discussion/specs/S72-draft-open-trace-dev.md §9.5), frozen BEFORE r3 is implemented and before any probe value is computed.
+[R3Q1]
+claim = "In stage 1 (existing 4 lives, tables only), each of eps (OPEN-1 on probe excess loss), kappa (OPEN-2 on the two-map held-out probe) and theta (TRACE-1 on switches with d_i >= 3 eps) has at least one candidate that L-FGT satisfies in all 4 lives (§8.6 grids and rules)"
+scope = "stage 1, existing 4 lives, tables only"
+miss = "any of eps, kappa, theta is 'not separable in stage 1' (theta held because eps is unselected or a selected set is empty also counts as a miss)"

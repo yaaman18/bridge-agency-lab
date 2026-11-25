@@ -1,0 +1,14 @@
+# S78 predictions frozen before implementation (2026-11-25T10:33:22Z); codex 10:32:47Z
+cc549cc98301e93703939e14072053c7c610e2682dfff665357e68fa5c06e282  experiments/s78_observer/predictions.toml
+a8e19864dcd99f32bb7450f47c4358c828242acfed6c59a81375f198ff3c6bfe  discussion/specs/S78-draft-ideal-observer.md
+# S78 code before codex I-R (2026-11-25T10:34:17Z)
+1c7ba32a8f61a122a7f6e80bf43f39c466cfe87580263958d5d78b191e708c92  experiments/s78_observer/s78.jl
+# S78 code after codex I-R 10:34Z P1 (all 201 theta rows) P2 (max init) P3 (cusum per stage) (2026-11-25T10:35:06Z)
+774ce1caab2b7f8f6c753a06612fb9631e6d051b97e1ed590da415d411d328ac  experiments/s78_observer/s78.jl
+# S78 output (2026-11-25T10:36:14Z): E1 holds, E2 holds (7/8), E3 holds (max q4 0.355); 1600-1617 unopened
+fa8bfa130d7709575d03b6d3d81b1dda6dc521bf03ce0fd9d99dce610782c867  experiments/s78_observer/out/s78.out
+a1e2c2269e63344970713f63e29aa3e073cdab19af45511b0db77e91610fa674  experiments/s78_observer/out/cusum_L500.tsv
+e8b1c8c184075dd2bddfa7d148be2b9f05a363b17ede8d7da658a9a388e9ed54  experiments/s78_observer/out/cusum_L1000.tsv
+ab3045e136ca522791e7f91fe662252d9156102b9bdc8e48b4574e398d3ed431  experiments/s78_observer/out/cusum_L1500.tsv
+# S78 spec after results, codex read 10:36Z and the P2 post-hoc check (2026-11-25T10:40:27Z)
+0eea1e0a69e532763dedbab7389a9056ca88706a0585be361132c10bab40705a  discussion/specs/S78-draft-ideal-observer.md

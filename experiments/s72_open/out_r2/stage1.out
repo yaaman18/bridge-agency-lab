@@ -1,0 +1,104 @@
+== stage 1 FGT life 1: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.00000 ddata=0.00007 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=5/19 loss A/B/Bdd=0.02213/0.02213/0.02983
+  OPEN-2 i=2 dmap=0.04452 ddata=0.11055 ratio=0.40273 dmap_preD=0.23682 selfcheck=0.0 y0 A/Bdd=20/13 loss A/B/Bdd=0.01850/0.04336/0.02359
+  OPEN-2 i=3 dmap=0.13622 ddata=0.00879 ratio=15.50391 dmap_preD=0.39689 selfcheck=0.0 y0 A/Bdd=14/9 loss A/B/Bdd=0.02648/0.02648/0.02308
+  OPEN-2 i=4 dmap=0.01057 ddata=0.00421 ratio=2.51300 dmap_preD=0.18683 selfcheck=0.0 y0 A/Bdd=6/17 loss A/B/Bdd=0.01804/0.03771/0.02910
+  TRACE-1 theta=0.005 false_rate=0.40000 det_rate=0.75000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.13333 det_rate=0.75000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.00000 det_rate=0.75000 ok=false
+  TRACE-1 theta=0.04 false_rate=0.00000 det_rate=0.75000 ok=false
+  Q1 sd_raw=0.00308 sd_e=0.00054 smaller_e=true
+== stage 1 FGT life 2: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.00000 ddata=0.00000 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=3/6 loss A/B/Bdd=0.02761/0.02761/0.03275
+  OPEN-2 i=2 dmap=0.34988 ddata=0.00325 ratio=107.56096 dmap_preD=1.11639 selfcheck=0.0 y0 A/Bdd=14/23 loss A/B/Bdd=0.03042/0.01889/0.05095
+  OPEN-2 i=3 dmap=0.01333 ddata=0.01429 ratio=0.93244 dmap_preD=0.08365 selfcheck=0.0 y0 A/Bdd=12/11 loss A/B/Bdd=0.03320/0.03427/0.02104
+  OPEN-2 i=4 dmap=0.00876 ddata=0.00619 ratio=1.41601 dmap_preD=0.00119 selfcheck=0.0 y0 A/Bdd=14/10 loss A/B/Bdd=0.02906/0.02916/0.01701
+  TRACE-1 theta=0.005 false_rate=0.66667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.20000 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.06667 det_rate=1.00000 ok=true
+  TRACE-1 theta=0.04 false_rate=0.00000 det_rate=1.00000 ok=true
+  Q1 sd_raw=0.00386 sd_e=0.00041 smaller_e=true
+== stage 1 FGT life 3: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.04538 ddata=0.00084 ratio=53.85128 dmap_preD=0.05682 selfcheck=0.0 y0 A/Bdd=8/20 loss A/B/Bdd=0.02385/0.02785/0.03570
+  OPEN-2 i=2 dmap=0.13033 ddata=0.00775 ratio=16.81680 dmap_preD=0.33969 selfcheck=0.0 y0 A/Bdd=25/16 loss A/B/Bdd=0.06067/0.03943/0.04857
+  OPEN-2 i=3 dmap=0.00000 ddata=0.00168 ratio=0.00000 dmap_preD=0.21621 selfcheck=0.0 y0 A/Bdd=27/5 loss A/B/Bdd=0.04184/0.05060/0.02056
+  OPEN-2 i=4 dmap=0.04885 ddata=0.00301 ratio=16.23410 dmap_preD=0.06805 selfcheck=0.0 y0 A/Bdd=4/16 loss A/B/Bdd=0.03472/0.01879/0.05124
+  TRACE-1 theta=0.005 false_rate=0.53333 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.26667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.13333 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.04 false_rate=0.06667 det_rate=1.00000 ok=true
+  Q1 sd_raw=0.00390 sd_e=0.00151 smaller_e=true
+== stage 1 FGT life 4: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.00000 ddata=0.00006 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=11/16 loss A/B/Bdd=0.03409/0.03409/0.02186
+  OPEN-2 i=2 dmap=0.00485 ddata=0.01669 ratio=0.29067 dmap_preD=0.12646 selfcheck=0.0 y0 A/Bdd=9/14 loss A/B/Bdd=0.03783/0.01814/0.05630
+  OPEN-2 i=3 dmap=0.17841 ddata=0.02749 ratio=6.49002 dmap_preD=0.49155 selfcheck=0.0 y0 A/Bdd=18/12 loss A/B/Bdd=0.03456/0.04167/0.03148
+  OPEN-2 i=4 dmap=0.00000 ddata=0.00113 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=12/8 loss A/B/Bdd=0.03249/0.02565/0.03085
+  TRACE-1 theta=0.005 false_rate=0.53333 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.26667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.00000 det_rate=1.00000 ok=true
+  TRACE-1 theta=0.04 false_rate=0.00000 det_rate=1.00000 ok=true
+  Q1 sd_raw=0.00495 sd_e=0.00073 smaller_e=true
+== stage 1 CUM life 1: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.00000 ddata=0.00002 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=5/19 loss A/B/Bdd=0.02249/0.02249/0.02945
+  OPEN-2 i=2 dmap=0.00000 ddata=0.00608 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=20/13 loss A/B/Bdd=0.01613/0.04891/0.02036
+  OPEN-2 i=3 dmap=0.02511 ddata=0.00064 ratio=39.12155 dmap_preD=0.02511 selfcheck=0.0 y0 A/Bdd=14/9 loss A/B/Bdd=0.01740/0.03400/0.00525
+  OPEN-2 i=4 dmap=0.02166 ddata=0.00194 ratio=11.14243 dmap_preD=0.02245 selfcheck=0.0 y0 A/Bdd=6/17 loss A/B/Bdd=0.01769/0.11085/0.02928
+  TRACE-1 theta=0.005 false_rate=0.00000 det_rate=0.75000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.00000 det_rate=0.75000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.00000 det_rate=0.50000 ok=false
+  TRACE-1 theta=0.04 false_rate=0.00000 det_rate=0.50000 ok=false
+  Q1 sd_raw=0.00294 sd_e=0.00074 smaller_e=true
+== stage 1 CUM life 2: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.00000 ddata=0.00001 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=3/6 loss A/B/Bdd=0.05204/0.05204/0.05173
+  OPEN-2 i=2 dmap=0.19200 ddata=0.00057 ratio=336.22320 dmap_preD=0.22435 selfcheck=0.0 y0 A/Bdd=14/23 loss A/B/Bdd=0.03838/0.04031/0.05836
+  OPEN-2 i=3 dmap=0.00017 ddata=0.00281 ratio=0.06154 dmap_preD=0.00018 selfcheck=0.0 y0 A/Bdd=12/11 loss A/B/Bdd=0.03259/0.03339/0.02415
+  OPEN-2 i=4 dmap=0.00024 ddata=0.00015 ratio=1.63649 dmap_preD=0.00024 selfcheck=0.0 y0 A/Bdd=14/10 loss A/B/Bdd=0.03883/0.04684/0.03438
+  TRACE-1 theta=0.005 false_rate=0.66667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.60000 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.53333 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.04 false_rate=0.53333 det_rate=1.00000 ok=false
+  Q1 sd_raw=0.00739 sd_e=0.00553 smaller_e=true
+== stage 1 CUM life 3: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.04180 ddata=0.00042 ratio=99.09221 dmap_preD=0.04309 selfcheck=0.0 y0 A/Bdd=8/20 loss A/B/Bdd=0.02350/0.03696/0.03530
+  OPEN-2 i=2 dmap=0.01138 ddata=0.00253 ratio=4.50108 dmap_preD=0.01184 selfcheck=0.0 y0 A/Bdd=25/16 loss A/B/Bdd=0.07497/0.04032/0.05973
+  OPEN-2 i=3 dmap=0.00000 ddata=0.00001 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=27/5 loss A/B/Bdd=0.04664/0.12135/0.02535
+  OPEN-2 i=4 dmap=0.00000 ddata=0.00000 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=4/16 loss A/B/Bdd=0.05890/0.02467/0.08898
+  TRACE-1 theta=0.005 false_rate=0.26667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.26667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.20000 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.04 false_rate=0.20000 det_rate=1.00000 ok=false
+  Q1 sd_raw=0.00671 sd_e=0.00596 smaller_e=true
+== stage 1 CUM life 4: OPEN-1 not run (eps nothing)  OPEN-2 not run (kappa nothing)  TRACE-1 not run (theta nothing)
+  OPEN-2 i=1 dmap=0.00000 ddata=0.00002 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=11/16 loss A/B/Bdd=0.03507/0.03507/0.02177
+  OPEN-2 i=2 dmap=0.00000 ddata=0.00603 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=9/14 loss A/B/Bdd=0.08468/0.01816/0.10918
+  OPEN-2 i=3 dmap=0.06583 ddata=0.01116 ratio=5.89699 dmap_preD=0.07229 selfcheck=0.0 y0 A/Bdd=18/12 loss A/B/Bdd=0.07867/0.12385/0.05886
+  OPEN-2 i=4 dmap=0.00000 ddata=0.00000 ratio=0.00000 dmap_preD=0.00000 selfcheck=0.0 y0 A/Bdd=12/8 loss A/B/Bdd=0.05029/0.02529/0.03462
+  TRACE-1 theta=0.005 false_rate=0.60000 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.01 false_rate=0.53333 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.02 false_rate=0.46667 det_rate=1.00000 ok=false
+  TRACE-1 theta=0.04 false_rate=0.40000 det_rate=1.00000 ok=false
+  Q1 sd_raw=0.01426 sd_e=0.01189 smaller_e=true
+grid FGT eps=0.0025 life 1: ok=false meas 2/4 rec 4/4 reached 4/4 viol 1
+grid FGT eps=0.0025 life 2: ok=false meas 1/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.0025 life 3: ok=false meas 3/4 rec 4/4 reached 4/4 viol 1
+grid FGT eps=0.0025 life 4: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 1: ok=false meas 2/4 rec 4/4 reached 4/4 viol 1
+grid FGT eps=0.005 life 2: ok=false meas 1/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 3: ok=false meas 3/4 rec 4/4 reached 4/4 viol 1
+grid FGT eps=0.005 life 4: ok=false meas 3/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 1: ok=false meas 0/4 rec 4/4 reached 4/4 viol 1
+grid FGT eps=0.01 life 2: ok=false meas 1/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 3: ok=false meas 3/4 rec 4/4 reached 4/4 viol 1
+grid FGT eps=0.01 life 4: ok=false meas 1/4 rec 4/4 reached 4/4 viol 0
+grid FGT kappa=1.5: lives ok 0/4
+grid FGT kappa=2.0: lives ok 0/4
+grid FGT kappa=3.0: lives ok 0/4
+grid FGT theta=0.005: lives ok 0/4
+grid FGT theta=0.01: lives ok 0/4
+grid FGT theta=0.02: lives ok 2/4
+grid FGT theta=0.04: lives ok 3/4
+negative clocks: constant false_rate=1.0 ok=false; zero det_rate=0.0 ok=false
+Q1 FGT: lives with sd_e < sd_raw 4/4 -> holds
+Q1 CUM: lives with sd_e < sd_raw 4/4 -> holds
+Q1 VERDICT: holds
+SELECTED eps="not separable in stage 1" kappa="not separable in stage 1" theta="not separable in stage 1"

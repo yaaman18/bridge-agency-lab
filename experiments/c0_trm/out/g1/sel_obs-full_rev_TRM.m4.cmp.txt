@@ -1,0 +1,2 @@
+sel_obs-full_rev_TRM.jl.bin vs sel_obs-full_rev_TRM.m4.rs.bin records 45 elements 144960 differing 119176 max_abs 0.1898059844970703 bytes_identical false FAILED first step1.logits[7] -5.09023 vs -5.0902305
+compared pairs 1 passed 0 elements 144960 differing 119176 NOT IDENTICAL

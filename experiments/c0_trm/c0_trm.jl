@@ -829,10 +829,10 @@ function t1main()
     for l in eachline(joinpath(HERE, "out", "results.tsv"))
         x = split(l, "\t"); x[1] == "weights" && (ref[join(x[2:5], " ")] = x[6])
     end
-    for u in TRAIN; STREAMS[(:obs, "stat", u)] = obs_stream(u, "stat"); end
+    sts = Dict(u => obs_stream(u, "stat") for u in TRAIN)   # (STREAMS of the main part is defined below this mode)
     lines = String[]; ok = true
     for (track, f, m, gi) in picks
-        pool = catsets([exset(STREAMS[(:obs, f, u)], recept_of(track)) for u in TRAIN])
+        pool = catsets([exset(sts[u], recept_of(track)) for u in TRAIN])
         t = @elapsed p, _ = train_model(pool, m, gi)
         h = shab(TrmC0.param_bytes(p)); r = get(ref, "$track $f $m $gi", "")
         ok &= h == r

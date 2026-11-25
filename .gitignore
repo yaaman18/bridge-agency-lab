@@ -52,3 +52,6 @@ experiments/trial/watch_loop.log
 
 # S52 raw Pi copies (contain post-72h confirmation rows; kept unopened & untracked)
 experiments/ambient/copies/
+
+# experiment caches and per-life results (regenerable from the scripts; sha of verdict outputs in experiments/freeze-*.txt; S72-S81 ~610 MB)
+*.jls

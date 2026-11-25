@@ -1,0 +1,9 @@
+# S73 predictions (discussion/specs/S73-draft-self-clock-dev.md §C), frozen BEFORE s73.jl is written and before any self-clock or paired-history value is computed.
+# Data: S72 stage-1 lives (seeds 1050-1067), tables only. S72 stage-2 data is not touched.
+[Q1]
+claim = "Part A: no theta in {0.005, 0.01, 0.02, 0.04} lets the self-baseline clock (500-example window mean minus own preceding 3,000-example mean > theta) meet false-fire <= 0.10 and detection >= 0.90 (on the S72 r4 selected switches) in all 4 lives for L-FGT"
+miss = "some theta passes all 4 lives for L-FGT (then report that the self-baseline clock works on these 4 lives only)"
+[Q2]
+claim = "Part B: for L-CUM, D = S_H' - S_H > 0 in 4 of 4 lives (the individual whose history contains pi_1 shows the smaller loss increase over its own level when pi_1 returns)"
+[Q3]
+claim = "Part B: |D_FGT| < D_CUM in 4 of 4 lives (a forgetting individual shows almost no experience-made difference); a life with D_CUM <= 0 makes Q3 miss and is not read as FGT memory residue"

@@ -1,0 +1,17 @@
+rev TRM: max |z_H(Float32) - z_H(Float64)| after each H round: 5.3e-06 2.6e-05 7.4e-05 9.5e-04 6.9e-04 9.1e-04 4.8e-04 3.7e-03 5.6e-02
+   max |z_H| 2.66; logits Float32 vs Float64 max diff 1.20e-01; p at the question positions Float32 vs Float64 max diff 7.53e-06
+   p (Float64) at Q1, Q2 of the 8 inputs: 0.98930 0.99067 0.99222 0.99234 0.99244 0.99170 0.99166 0.99213 0.99190 0.99235 0.98900 0.98954 0.99231 0.99231 0.99180 0.99240
+   1-ulp change of embed_tokens[0, 0] (Float64 forward): max |Δz_H| per round 6.6e-08 1.1e-08 6.0e-08 5.7e-07 3.0e-07 3.7e-07 1.7e-07 2.8e-07 4.6e-06; max |Δp| 5.98e-10
+   final logits vs Float64: TrmC0-F32 1.20e-01, TrmDet 1.81e-01
+stat TRM: max |z_H(Float32) - z_H(Float64)| after each H round: 1.0e-06 1.0e-06 1.4e-06 1.3e-06 1.4e-06 1.4e-06 1.4e-06 1.3e-06 1.3e-06
+   max |z_H| 1.08; logits Float32 vs Float64 max diff 2.06e-06; p at the question positions Float32 vs Float64 max diff 1.42e-09
+   p (Float64) at Q1, Q2 of the 8 inputs: 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188 0.99188
+   1-ulp change of embed_tokens[0, 0] (Float64 forward): max |Δz_H| per round 3.1e-12 7.9e-13 7.7e-13 7.7e-13 7.7e-13 7.7e-13 7.7e-13 7.7e-13 7.7e-13; max |Δp| 2.22e-16
+   final logits vs Float64: TrmC0-F32 2.06e-06, TrmDet 3.56e-06
+---- the question positions only (tokens 7, 8 at positions 45, 46)
+obs-full_rev_TRM: logits at Q, tokens 7/8: TrmC0 vs TrmPort 1.09e-02, TrmC0 vs TrmDet 2.99e-03, vs Float64: TrmC0 5.18e-03 TrmPort 5.74e-03 TrmDet 8.17e-03
+   p at Q: TrmC0 vs TrmPort 1.59e-05, TrmC0 vs TrmDet 4.34e-06, TrmPort vs TrmDet 2.02e-05
+   largest TrmC0-TrmPort logit difference at (example, position 0-based, token) = (5, 30, 7): 0.260; max over positions 0..44 2.60e-01, over 45..46 1.09e-02
+obs-full_stat_TRM: logits at Q, tokens 7/8: TrmC0 vs TrmPort 2.44e-06, TrmC0 vs TrmDet 3.10e-06, vs Float64: TrmC0 9.71e-07 TrmPort 2.38e-06 TrmDet 2.79e-06
+   p at Q: TrmC0 vs TrmPort 3.56e-09, TrmC0 vs TrmDet 4.52e-09, TrmPort vs TrmDet 5.56e-09
+   largest TrmC0-TrmPort logit difference at (example, position 0-based, token) = (1, 41, 7): 0.000; max over positions 0..44 3.32e-06, over 45..46 2.44e-06

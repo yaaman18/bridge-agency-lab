@@ -1,0 +1,2 @@
+init_TRM-1x1.jl.bin vs init_TRM-1x1.m4.rs.bin records 45 elements 144960 differing 103299 max_abs 1.6093254089355469e-6 bytes_identical false FAILED first step1.z_H[0] -0.28211382 vs -0.2821137
+compared pairs 1 passed 0 elements 144960 differing 103299 NOT IDENTICAL

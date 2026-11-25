@@ -1,0 +1,11 @@
+# S73 predictions frozen before implementation (2026-11-24T14:30:06Z); codex S-R 14:29Z P1-P7
+6b1f9772d4acc9ddc1b59be2d35a105dee2df0f6bf95ce937cf6edd8c81f8215  experiments/s73_selfclock/predictions.toml
+e09a080487cdd502d69aba4a71ac273c9f295824aa8008253f63bcd4876f0381  discussion/specs/S73-draft-self-clock-dev.md
+# S73 code before codex I-R (2026-11-24T14:30:44Z)
+c290ef57c037a626bb3f54b7db79a3a4d48d8f7d8b66a9045dfd96354cd48e1a  experiments/s73_selfclock/s73.jl
+e09a080487cdd502d69aba4a71ac273c9f295824aa8008253f63bcd4876f0381  discussion/specs/S73-draft-self-clock-dev.md
+# S73 code after codex I-R 14:31Z P1 P2 fixed (2026-11-24T14:31:24Z)
+36005b4a88a52c1f6957be0270b06afcf0af7c933399ba345360b37fa3175425  experiments/s73_selfclock/s73.jl
+# S73 outputs (2026-11-24T14:32:37Z): Q1 holds, Q2 holds, Q3 holds
+a721d312b515ea27f5f4fb7cc321133800fc2c47671dc4262d688de722dc112f  experiments/s73_selfclock/out/s73.out
+d8933d2e4be5baa4e895273274cbbc6ada7c0ed3d72f11031a67191202e53ba6  discussion/specs/S73-draft-self-clock-dev.md

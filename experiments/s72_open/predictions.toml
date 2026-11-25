@@ -1,0 +1,19 @@
+# S72 dev predictions (discussion/specs/S72-draft-open-trace-dev.md §4). Written before any life was run.
+# Note: the calibrated-control gate (P8) was computed BEFORE this file was frozen (out/calib.out: 0.9909),
+# so P8 is recorded as a gate result, not as a prediction.
+[P1]
+claim = "L-CUM fails OPEN-1; later switches show not-recovered or not-reached (counted separately)"
+[P2]
+claim = "L-FGT passes OPEN-1"
+[P3]
+claim = "L-TRM passes OPEN-1 (confidence medium: plasticity may decay under continual learning, Dohare et al. 2024)"
+[P4]
+claim = "L-CUM delta_i is non-increasing in age (ties allowed) and delta_4 < delta_1 in every life"
+[P5]
+claim = "L-FGT and L-TRM pass OPEN-2 (delta_i > 0.01 in every life and age)"
+[P6]
+claim = "all three learners pass TRACE-1 (F >= 2.0 and R <= 1.0 for every life and i)"
+[P7]
+claim = "both negative-control clocks (constant, zero) fail TRACE-1"
+[P8]
+claim = "gate, not prediction: calibrated predictor R pass rate >= 0.95 (observed 0.9909 before freeze)"

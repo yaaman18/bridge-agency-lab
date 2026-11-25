@@ -1,0 +1,9 @@
+# S74 predictions (discussion/specs/S74-draft-context-index-dev.md §4-§5), frozen BEFORE s74.jl is written and before any L-IDX value is computed.
+[Q1]
+claim = "some eta in {0.005, 0.01, 0.02, 0.04} gives zero splits and zero returns inside the 15 routine windows of every one of the 4 lives (main stream)"
+[Q2]
+claim = "with the selected eta, L-IDX passes OPEN-1 on the S72 r4 age branches (eps 0.0025) in 4 of 4 lives"
+[Q3]
+claim = "with the selected eta, L-IDX has D = S_H' - S_H > 0 in 4 of 4 lives in the S73 B paired-history test"
+[Q4]
+claim = "Q2 and Q3 hold together at the same eta (openness and memory together, this field, tables only); if Q1 misses, Q2-Q4 are undecidable"

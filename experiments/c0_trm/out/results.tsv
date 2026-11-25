@@ -1,0 +1,1440 @@
+record_type	fields...
+g1	init_TRM	3	6	e0498e49e7cc0a55d1822d8e65c5a1467f36174d03039d4feb5111526a9b72c8	4f2604f7f6c892d07f8ccff3f44b19b8260ea02ccd21487fd39fab77db4fab12	4f2604f7f6c892d07f8ccff3f44b19b8260ea02ccd21487fd39fab77db4fab12	true	true	true
+g1	init_TRM-1x1	1	1	6bbce67dd65ed6418fdac05af662dfb040cfe5d5ddf7f70203c0db1016b81a5c	b627090fe06c1397ba449a4680f2f719a35f185a90425888eab41cfaa20eacf6	b627090fe06c1397ba449a4680f2f719a35f185a90425888eab41cfaa20eacf6	true	true	true
+val	exo	rev	TRM	1	0.0003	0	0.2387154113	6	0.2827853534;0.2474462439;0.2370353295;0.2279496535;0.2169497073;0.2201261803
+weights	exo	rev	TRM	1	891bd41b176901e3c3f138dc40fc57b9bf932c37af9d437d561037c0af9375a3
+val	exo	rev	TRM	2	0.0003	0.01	0.2939872378	6	0.3444612522;0.2828114273;0.287412773;0.3056871271;0.2654292593;0.2781215881
+weights	exo	rev	TRM	2	78fb107c19b39bf3e396315b87f4fdcaafde97a8db5a74b8afca3bfb4bdfd3b6
+val	exo	rev	TRM	3	0.001	0	0.1505983817	6	0.1692975985;0.1291163969;0.1353131915;0.1848785307;0.1426852379;0.1422993349
+weights	exo	rev	TRM	3	6d7f40c6525981ea5573b9994e92d5248942bd2e67f9460cb1013707581c1fcf
+val	exo	rev	TRM	4	0.001	0.01	0.06541761612	6	0.07024226272;0.06250647765;0.06691453373;0.0682018003;0.06603242311;0.05860819922
+weights	exo	rev	TRM	4	979710a806f5c7d1125477717c8d2092ab281edab2c100ed28549501cd0c7f75
+val	exo	stat	TRM	1	0.0003	0	0.27249083	6	0.3375675873;0.2498953407;0.2742628432;0.2795513213;0.2264807181;0.2671871694
+weights	exo	stat	TRM	1	ff6339728e58d6f76f63fdbea859e28e14f96c8f3625e8d0b491ae38a1f6f9fb
+val	exo	stat	TRM	2	0.0003	0.01	0.2465153096	6	0.2816973754;0.23795555;0.2455795345;0.2578906717;0.2222341949;0.2337345311
+weights	exo	stat	TRM	2	c7a79849758f0e00ec6fd4672d0d3890f782570538e3f72dfbabf2feb0183540
+val	exo	stat	TRM	3	0.001	0	0.4702744056	6	0.4990833509;0.4637076439;0.4633826851;0.4817565181;0.4527963698;0.4609198656
+weights	exo	stat	TRM	3	a5b433f9c044604334f67358527f2dff03b578fc63af7c883e4374452f0bc927
+val	exo	stat	TRM	4	0.001	0.01	0.08355048766	6	0.0906324556;0.07875478534;0.08492857886;0.08255780012;0.07943284711;0.0849964589
+weights	exo	stat	TRM	4	ab0f24f8766420755cd1a55601f49af3226c4290516d562b5ca11a8d2f9dee61
+val	obs-ay	rev	TRM	1	0.0003	0	0.04742694291	6	0.05656905534;0.03315491278;0.05577222072;0.04763532402;0.04746798042;0.04396216416
+weights	obs-ay	rev	TRM	1	598bcc4fff54b183d4fbfeb13903a762989e82fb050aee98736eb3cc10b3664b
+val	obs-ay	rev	TRM	2	0.0003	0.01	0.04715963319	6	0.05636194998;0.03279366988;0.05555976687;0.04736937724;0.0472009694;0.04367206579
+weights	obs-ay	rev	TRM	2	975d1bc6879d52a5393971b978a2ddfd7055195c23cb01ef750cf6604fe98b91
+val	obs-ay	rev	TRM	3	0.001	0	0.04355537765	6	0.05443491188;0.02657101557;0.0534866249;0.04380335119;0.04360421476;0.03943214762
+weights	obs-ay	rev	TRM	3	b81ad288ff967dcdcf30ea214f37c91db170a9503dddb6647776c64bd76ae9f0
+val	obs-ay	rev	TRM	4	0.001	0.01	0.0435086999	6	0.05454211973;0.02628410388;0.0535804098;0.04376018278;0.04355822996;0.03932715327
+weights	obs-ay	rev	TRM	4	18f5ec813be26c06ae2d7d99b378c9ff86411205a91f293a76d275f4ae3d0a8b
+val	obs-ay	stat	TRM	1	0.0003	0	0.04739552151	6	0.0543746189;0.03946454948;0.05357098745;0.04732224656;0.04213247028;0.04750825637
+weights	obs-ay	stat	TRM	1	87fd02b0a4c2ed81b24c2c4ec7d507b9d8b24455dff147d5aa8dd46f2b5f3f87
+val	obs-ay	stat	TRM	2	0.0003	0.01	0.04749819525	6	0.05445918978;0.0395877788;0.05365766413;0.04742510854;0.04224878888;0.04761064136
+weights	obs-ay	stat	TRM	2	ce483d7f6333874e5ea26234e60c1a4aaeba450d04e6f41896c129da2a8eea9c
+val	obs-ay	stat	TRM	3	0.001	0	0.04388853777	6	0.052171315;0.03447602057;0.05121763531;0.04380160979;0.03764230836;0.0440223376
+weights	obs-ay	stat	TRM	3	8c4bbd6eb98b0ccb0839cb052b804a22a21af3cb3b2523ecf2a998427c43c32e
+val	obs-ay	stat	TRM	4	0.001	0.01	0.04392533441	6	0.05213377064;0.03459729738;0.05118865093;0.04383918688;0.03773516737;0.04405793325
+weights	obs-ay	stat	TRM	4	32f634977af30974787d5e8f6a0403bcb1394bbfc6a481baf6cd224194cb599f
+val	obs-full	rev	TRM	1	0.0003	0	0.04742835509	6	0.05657016688;0.03315681307;0.05577331865;0.04763672602;0.04746939501;0.04396371091
+weights	obs-full	rev	TRM	1	5d106443761c1fd8b42900bb6c4a3f6659f1fd977e88f0a3ec5a340670f24859
+val	obs-full	rev	TRM	2	0.0003	0.01	0.04716118751	6	0.05636315232;0.03279573825;0.05556105804;0.0473709315;0.04720250427;0.04367374066
+weights	obs-full	rev	TRM	2	05d2c85bc35862a09e60276accbb362f55de50f9c332564603cfd7fbc9e387ba
+val	obs-full	rev	TRM	3	0.001	0	0.04355831423	6	0.05443100726;0.02658463274;0.05348330972;0.04380613422;0.0436071211;0.03943768037
+weights	obs-full	rev	TRM	3	c8a05a23565320c94e86eb24f01bfb4805afddbc8e3cd9dbce7cbd90ef72e511
+val	obs-full	rev	TRM	4	0.001	0.01	0.04314086737	6	0.05456854489;0.02642251862;0.05163561209;0.04362006425;0.04327092195;0.03932754243
+weights	obs-full	rev	TRM	4	8cf99f9d020b8cebf62092a11893d86af6d7254bc4f5eefecae78446703c973b
+val	obs-full	stat	TRM	1	0.0003	0	0.04739962825	6	0.05437797943;0.03946946093;0.05357449886;0.04732638121;0.04213709598;0.04751235308
+weights	obs-full	stat	TRM	1	6c09c87a150dd105f671a1c0c85c0f924e93830557e10f2a1b5965bbc4b9565c
+val	obs-full	stat	TRM	2	0.0003	0.01	0.04749973145	6	0.05446046079;0.03958958779;0.05365900059;0.04742666709;0.04225047548;0.04761219695
+weights	obs-full	stat	TRM	2	81a630fc05047ee095141b77adeb88c0cc2ea61eb5aa82dbb08838044f1c94ae
+val	obs-full	stat	TRM	3	0.001	0	0.04388908	6	0.05217048253;0.03447812415;0.05121696158;0.04380216698;0.03764388752;0.04402285727
+weights	obs-full	stat	TRM	3	2a0026ba3c2b775dd2106b590d65fa140df97d0cbaefd9206c44298c88c36577
+val	obs-full	stat	TRM	4	0.001	0.01	0.04392548031	6	0.05213367061;0.03459772407;0.05118857804;0.04383933525;0.03773549988;0.04405807401
+weights	obs-full	stat	TRM	4	66f1c45eef37c594746c5aea313044c543e96c29d086425be4c1dd29115198e5
+val	exo	rev	TRM-1x1	1	0.0003	0	0.07283555495	6	0.07863228643;0.06895331622;0.07447102588;0.0771471914;0.07266250616;0.06514700362
+weights	exo	rev	TRM-1x1	1	5fd7cf209915e077bd5318a0355c05e5ff162ace603ee5d0f41293ecb6fec8f2
+val	exo	rev	TRM-1x1	2	0.0003	0.01	0.08542007922	6	0.09109061748;0.08254004986;0.08578182652;0.09095188392;0.08423919718;0.07791690034
+weights	exo	rev	TRM-1x1	2	af75bf36b66e80d93a821bb62863c64e66a014196d4bda3803de7bfb453abffa
+val	exo	rev	TRM-1x1	3	0.001	0	0.0792401876	6	0.08667248305;0.07693159166;0.08271976029;0.079657023;0.0787570332;0.07070323439
+weights	exo	rev	TRM-1x1	3	86d477ed3bd6a15c4c5fcc0ea2d9b6eb14efd126a6f10aaa69e4a827ceeab037
+val	exo	rev	TRM-1x1	4	0.001	0.01	0.06317819523	6	0.06613287123;0.05857189126;0.06544478603;0.06590700723;0.06626657493;0.05674604068
+weights	exo	rev	TRM-1x1	4	bb04f6523f3ff14e0c50b8121f8f1040730248b9a309d8fd0aaa0904dcf26cb8
+val	exo	stat	TRM-1x1	1	0.0003	0	0.07504409075	6	0.08010565315;0.07004965987;0.07773934968;0.07347736469;0.07425712389;0.07463539325
+weights	exo	stat	TRM-1x1	1	866547e2528950379d1918a5198858c635aa459da90b419fd6a5f457f04d2ccb
+val	exo	stat	TRM-1x1	2	0.0003	0.01	0.07532500272	6	0.07929729001;0.07077160751;0.07781651926;0.0740185733;0.07534910153;0.0746969247
+weights	exo	stat	TRM-1x1	2	b9888194fb90ac7865ffd8437d327554470835383e6393c13c6602d774247f77
+val	exo	stat	TRM-1x1	3	0.001	0	0.08227057471	6	0.09160789001;0.07441535352;0.08620821883;0.07950351433;0.07874210214;0.08314636941
+weights	exo	stat	TRM-1x1	3	fb66e04aebf1bbe52c2ff3a61534b4d66bffcc8847fc22bc784775a38d4746b1
+val	exo	stat	TRM-1x1	4	0.001	0.01	0.05978066585	6	0.0633818671;0.05347506688;0.06095145894;0.05874828557;0.06412728668;0.05800002991
+weights	exo	stat	TRM-1x1	4	a1df9f79d270370d947389e45fb10e2dabc0d3f97ed773ddf692563ed284836d
+val	obs-ay	rev	TRM-1x1	1	0.0003	0	0.04328151353	6	0.0492666726;0.03395040745;0.04747721409;0.04285665847;0.04467633432;0.04146179425
+weights	obs-ay	rev	TRM-1x1	1	72bb0953120515941db2d6f70570f01fe1710ab6a07f367a320237e0cdaff024
+val	obs-ay	rev	TRM-1x1	2	0.0003	0.01	0.04197519734	6	0.04698004964;0.03419417948;0.04473417371;0.04163629455;0.04412813413;0.04017835252
+weights	obs-ay	rev	TRM-1x1	2	c61cc123df9526f78e4de31466d4d2c1e350c82cf066d956d094ad6e181d2c91
+val	obs-ay	rev	TRM-1x1	3	0.001	0	0.03623125249	6	0.0417429972;0.02760457888;0.03855999009;0.03633304886;0.03975543399;0.03339146591
+weights	obs-ay	rev	TRM-1x1	3	7188a2f80b347ab0c628abbd2c4548bc380bece06115d03de0ca642a0219c856
+val	obs-ay	rev	TRM-1x1	4	0.001	0.01	0.03810308829	6	0.04614855874;0.02560409939;0.04407450146;0.03757706622;0.03949574792;0.03571855602
+weights	obs-ay	rev	TRM-1x1	4	9069412ff8e32a5d3cba9f4f3f631b79236900e9b03ec87cea0d5c2f8033c9b7
+val	obs-ay	stat	TRM-1x1	1	0.0003	0	0.04212092044	6	0.04828585011;0.0368696984;0.04450449573;0.0410070842;0.03962763689;0.04243075733
+weights	obs-ay	stat	TRM-1x1	1	5e2231043f9adad9c43df1a3dfcde6efc06d5eb2cf42f4d3f92bd1e40ad4706d
+val	obs-ay	stat	TRM-1x1	2	0.0003	0.01	0.04262633833	6	0.04890486006;0.03708991815;0.04542455701;0.04151379677;0.03986443136;0.04296046664
+weights	obs-ay	stat	TRM-1x1	2	36659510d21d699abf86f85eda159b67db54b7c3e5f1606851e5ce91f7c722d0
+val	obs-ay	stat	TRM-1x1	3	0.001	0	0.03587942229	6	0.04336302242;0.02972648171;0.03844206864;0.03433090601;0.03311971064;0.03629434431
+weights	obs-ay	stat	TRM-1x1	3	900da6b71650d57801f2db1eec63dd3e126853a2f2ef0b49224df9920e19c417
+val	obs-ay	stat	TRM-1x1	4	0.001	0.01	0.03577739469	6	0.04268737045;0.03021797564;0.03758336616;0.03445134729;0.03344979102;0.0362745176
+weights	obs-ay	stat	TRM-1x1	4	feb46d8a8b187b86a774b6f434383630b8ee6f68f53f2c18c9b76fa7d39919a3
+val	obs-full	rev	TRM-1x1	1	0.0003	0	0.04309876717	6	0.04912437322;0.03369844299;0.0473729327;0.04265454834;0.04447618659;0.0412661192
+weights	obs-full	rev	TRM-1x1	1	d04e202a1b945837a8c06db9cf6b458471439f22f46e57fd571f95382fed148a
+val	obs-full	rev	TRM-1x1	2	0.0003	0.01	0.04197100578	6	0.04677320702;0.03424708522;0.04467552684;0.04172562688;0.04413006177;0.04027452692
+weights	obs-full	rev	TRM-1x1	2	0694397edf2f3806bd539738c874db92d264ffad94407ee5cd5a913889656cf1
+val	obs-full	rev	TRM-1x1	3	0.001	0	0.03924035802	6	0.04482547359;0.03057436475;0.04137184906;0.0405021503;0.04381622568;0.03435208475
+weights	obs-full	rev	TRM-1x1	3	76ef7e63d91fa2934ddb8c28b93af426b6bb8d20a350123614aba7bc47acd74e
+val	obs-full	rev	TRM-1x1	4	0.001	0.01	0.03815579354	6	0.04620703292;0.02565237129;0.04416163824;0.03762197012;0.03953681659;0.03575493206
+weights	obs-full	rev	TRM-1x1	4	09c459a2730bc4234dc0715a6d22d5627b1c9bc1d490c290b3a5c8dafc69ca48
+val	obs-full	stat	TRM-1x1	1	0.0003	0	0.04229194775	6	0.04848135582;0.03696511282;0.04481707142;0.04120452234;0.03970316902;0.04258045507
+weights	obs-full	stat	TRM-1x1	1	ef5bbb5ae9bc183214ad862d43867c915fbf52ed5a6ed8cb0b24f0113d99936e
+val	obs-full	stat	TRM-1x1	2	0.0003	0.01	0.04227052665	6	0.04850096441;0.03685426646;0.04461607947;0.0410750123;0.03977097361;0.04280586363
+weights	obs-full	stat	TRM-1x1	2	478ecf076dc616618c6f2e080c2f49e6529c318e78a463c1fd252ebcb7d8e03a
+val	obs-full	stat	TRM-1x1	3	0.001	0	0.03591665022	6	0.04347040042;0.02970575243;0.03852516755;0.0343910316;0.03311911118;0.03628843813
+weights	obs-full	stat	TRM-1x1	3	8b4eba1c764d18f5dbf697818d803a0ef1c59ec8b0645f9cc5dea0ffae772e02
+val	obs-full	stat	TRM-1x1	4	0.001	0.01	0.03564698213	6	0.04264496651;0.03003629349;0.03746230326;0.03430966816;0.03330817886;0.03612048249
+weights	obs-full	stat	TRM-1x1	4	1f6109d680b73a0da4deea4e614f22adb75a2a18d804daac7f27670abc3bc98a
+selected	obs-full	stat	TRM	3	0.001	0	0.04388908	2a0026ba3c2b775dd2106b590d65fa140df97d0cbaefd9206c44298c88c36577
+selected	obs-full	stat	TRM-1x1	4	0.001	0.01	0.03564698213	1f6109d680b73a0da4deea4e614f22adb75a2a18d804daac7f27670abc3bc98a
+selected	obs-full	rev	TRM	4	0.001	0.01	0.04314086737	8cf99f9d020b8cebf62092a11893d86af6d7254bc4f5eefecae78446703c973b
+selected	obs-full	rev	TRM-1x1	4	0.001	0.01	0.03815579354	09c459a2730bc4234dc0715a6d22d5627b1c9bc1d490c290b3a5c8dafc69ca48
+selected	obs-ay	stat	TRM	3	0.001	0	0.04388853777	8c4bbd6eb98b0ccb0839cb052b804a22a21af3cb3b2523ecf2a998427c43c32e
+selected	obs-ay	stat	TRM-1x1	4	0.001	0.01	0.03577739469	feb46d8a8b187b86a774b6f434383630b8ee6f68f53f2c18c9b76fa7d39919a3
+selected	obs-ay	rev	TRM	4	0.001	0.01	0.0435086999	18f5ec813be26c06ae2d7d99b378c9ff86411205a91f293a76d275f4ae3d0a8b
+selected	obs-ay	rev	TRM-1x1	3	0.001	0	0.03623125249	7188a2f80b347ab0c628abbd2c4548bc380bece06115d03de0ca642a0219c856
+selected	exo	stat	TRM	4	0.001	0.01	0.08355048766	ab0f24f8766420755cd1a55601f49af3226c4290516d562b5ca11a8d2f9dee61
+selected	exo	stat	TRM-1x1	4	0.001	0.01	0.05978066585	a1df9f79d270370d947389e45fb10e2dabc0d3f97ed773ddf692563ed284836d
+selected	exo	rev	TRM	4	0.001	0.01	0.06541761612	979710a806f5c7d1125477717c8d2092ab281edab2c100ed28549501cd0c7f75
+selected	exo	rev	TRM-1x1	4	0.001	0.01	0.06317819523	bb04f6523f3ff14e0c50b8121f8f1040730248b9a309d8fd0aaa0904dcf26cb8
+seed_score	obs-full	stat	1074	TAB_R1	0.0105774689	1925	1899	false
+seed_score	obs-full	stat	1074	B1	0.04628245908	1925	1899	false
+seed_score	obs-full	stat	1074	RATE	0.05341088492	1925	1899	false
+seed_score	obs-full	stat	1074	TAB4	0.03886157234	1925	1899	false
+seed_score	obs-full	stat	1074	TRM	0.05332476474	1925	1899	false
+seed_score	obs-full	stat	1074	TRM-inf1x1	0.05332462141	1925	1899	false
+seed_score	obs-full	stat	1074	TRM-1x1	0.04668995773	1925	1899	false
+seed_score	obs-full	stat	1074	TRM_raw	0.05332476474	1925	1899	false
+seed_score	obs-full	stat	1075	TAB_R1	0.01097173515	2670	2616	false
+seed_score	obs-full	stat	1075	B1	0.03323384175	2670	2616	false
+seed_score	obs-full	stat	1075	RATE	0.03543103054	2670	2616	false
+seed_score	obs-full	stat	1075	TAB4	0.02746002969	2670	2616	false
+seed_score	obs-full	stat	1075	TRM	0.03550205079	2670	2616	false
+seed_score	obs-full	stat	1075	TRM-inf1x1	0.03550198757	2670	2616	false
+seed_score	obs-full	stat	1075	TRM-1x1	0.02919508247	2670	2616	false
+seed_score	obs-full	stat	1075	TRM_raw	0.03550205079	2670	2616	false
+seed_score	obs-full	stat	1076	TAB_R1	0.01287337918	2370	2338	false
+seed_score	obs-full	stat	1076	B1	0.03992097863	2370	2338	false
+seed_score	obs-full	stat	1076	RATE	0.04387462697	2370	2338	false
+seed_score	obs-full	stat	1076	TAB4	0.03351159329	2370	2338	false
+seed_score	obs-full	stat	1076	TRM	0.04388488798	2370	2338	false
+seed_score	obs-full	stat	1076	TRM-inf1x1	0.04388478374	2370	2338	false
+seed_score	obs-full	stat	1076	TRM-1x1	0.03745437759	2370	2338	false
+seed_score	obs-full	stat	1076	TRM_raw	0.04388488798	2370	2338	false
+seed_score	obs-full	stat	1077	TAB_R1	0.01225109017	1816	1928	false
+seed_score	obs-full	stat	1077	B1	0.05778672895	1816	1928	false
+seed_score	obs-full	stat	1077	RATE	0.06787268926	1816	1928	false
+seed_score	obs-full	stat	1077	TAB4	0.04318284546	1816	1928	false
+seed_score	obs-full	stat	1077	TRM	0.06770618452	1816	1928	false
+seed_score	obs-full	stat	1077	TRM-inf1x1	0.06770599486	1816	1928	false
+seed_score	obs-full	stat	1077	TRM-1x1	0.05300535487	1816	1928	false
+seed_score	obs-full	stat	1077	TRM_raw	0.06770618452	1816	1928	false
+seed_score	obs-full	stat	1078	TAB_R1	0.01469336025	2197	2207	false
+seed_score	obs-full	stat	1078	B1	0.0431248375	2197	2207	false
+seed_score	obs-full	stat	1078	RATE	0.05062704106	2197	2207	false
+seed_score	obs-full	stat	1078	TAB4	0.0348623998	2197	2207	false
+seed_score	obs-full	stat	1078	TRM	0.05068454593	2197	2207	false
+seed_score	obs-full	stat	1078	TRM-inf1x1	0.05068415922	2197	2207	false
+seed_score	obs-full	stat	1078	TRM-1x1	0.03624506677	2197	2207	false
+seed_score	obs-full	stat	1078	TRM_raw	0.05068454593	2197	2207	false
+seed_score	obs-full	stat	1079	TAB_R1	0.0177657857	2190	2298	false
+seed_score	obs-full	stat	1079	B1	0.04713700183	2190	2298	false
+seed_score	obs-full	stat	1079	RATE	0.05629265063	2190	2298	false
+seed_score	obs-full	stat	1079	TAB4	0.03999789184	2190	2298	false
+seed_score	obs-full	stat	1079	TRM	0.05628487429	2190	2298	false
+seed_score	obs-full	stat	1079	TRM-inf1x1	0.05628435375	2190	2298	false
+seed_score	obs-full	stat	1079	TRM-1x1	0.04481241998	2190	2298	false
+seed_score	obs-full	stat	1079	TRM_raw	0.05628487429	2190	2298	false
+seed_score	obs-full	stat	1080	TAB_R1	0.01302417111	1994	1981	false
+seed_score	obs-full	stat	1080	B1	0.04411298473	1994	1981	false
+seed_score	obs-full	stat	1080	RATE	0.04688742018	1994	1981	false
+seed_score	obs-full	stat	1080	TAB4	0.03231058303	1994	1981	false
+seed_score	obs-full	stat	1080	TRM	0.04679797665	1994	1981	false
+seed_score	obs-full	stat	1080	TRM-inf1x1	0.04679794867	1994	1981	false
+seed_score	obs-full	stat	1080	TRM-1x1	0.03684042194	1994	1981	false
+seed_score	obs-full	stat	1080	TRM_raw	0.04679797665	1994	1981	false
+seed_score	obs-full	stat	1081	TAB_R1	0.0104620548	2437	2495	false
+seed_score	obs-full	stat	1081	B1	0.03896102727	2437	2495	false
+seed_score	obs-full	stat	1081	RATE	0.04426505131	2437	2495	false
+seed_score	obs-full	stat	1081	TAB4	0.03144520446	2437	2495	false
+seed_score	obs-full	stat	1081	TRM	0.04424181026	2437	2495	false
+seed_score	obs-full	stat	1081	TRM-inf1x1	0.04424173431	2437	2495	false
+seed_score	obs-full	stat	1081	TRM-1x1	0.03704554834	2437	2495	false
+seed_score	obs-full	stat	1081	TRM_raw	0.04424181026	2437	2495	false
+seed_score	obs-full	stat	1082	TAB_R1	0.01665991435	1838	1815	false
+seed_score	obs-full	stat	1082	B1	0.04796843312	1838	1815	false
+seed_score	obs-full	stat	1082	RATE	0.0476217468	1838	1815	false
+seed_score	obs-full	stat	1082	TAB4	0.03313868586	1838	1815	false
+seed_score	obs-full	stat	1082	TRM	0.04761765917	1838	1815	false
+seed_score	obs-full	stat	1082	TRM-inf1x1	0.04761733877	1838	1815	false
+seed_score	obs-full	stat	1082	TRM-1x1	0.03680050425	1838	1815	false
+seed_score	obs-full	stat	1082	TRM_raw	0.04761765917	1838	1815	false
+seed_score	obs-full	stat	1083	TAB_R1	0.0214608919	1530	1624	false
+seed_score	obs-full	stat	1083	B1	0.07285894269	1530	1624	false
+seed_score	obs-full	stat	1083	RATE	0.0783777943	1530	1624	false
+seed_score	obs-full	stat	1083	TAB4	0.05620633117	1530	1624	false
+seed_score	obs-full	stat	1083	TRM	0.07829850875	1530	1624	false
+seed_score	obs-full	stat	1083	TRM-inf1x1	0.07829801953	1530	1624	false
+seed_score	obs-full	stat	1083	TRM-1x1	0.07068987666	1530	1624	false
+seed_score	obs-full	stat	1083	TRM_raw	0.07829850875	1530	1624	false
+seed_score	obs-full	stat	1084	TAB_R1	0.009985010469	2186	2170	false
+seed_score	obs-full	stat	1084	B1	0.04483299133	2186	2170	false
+seed_score	obs-full	stat	1084	RATE	0.04454491368	2186	2170	false
+seed_score	obs-full	stat	1084	TAB4	0.03341582072	2186	2170	false
+seed_score	obs-full	stat	1084	TRM	0.04456938354	2186	2170	false
+seed_score	obs-full	stat	1084	TRM-inf1x1	0.04456919616	2186	2170	false
+seed_score	obs-full	stat	1084	TRM-1x1	0.03582478744	2186	2170	false
+seed_score	obs-full	stat	1084	TRM_raw	0.04456938354	2186	2170	false
+seed_score	obs-full	stat	1085	TAB_R1	0.01529651078	2275	2218	false
+seed_score	obs-full	stat	1085	B1	0.04166955504	2275	2218	false
+seed_score	obs-full	stat	1085	RATE	0.04341722142	2275	2218	false
+seed_score	obs-full	stat	1085	TAB4	0.03191792128	2275	2218	false
+seed_score	obs-full	stat	1085	TRM	0.04338456035	2275	2218	false
+seed_score	obs-full	stat	1085	TRM-inf1x1	0.04338453536	2275	2218	false
+seed_score	obs-full	stat	1085	TRM-1x1	0.03595908883	2275	2218	false
+seed_score	obs-full	stat	1085	TRM_raw	0.04338456035	2275	2218	false
+seed_score	obs-full	stat	1086	TAB_R1	0.01032337101	2532	2464	false
+seed_score	obs-full	stat	1086	B1	0.03301049202	2532	2464	false
+seed_score	obs-full	stat	1086	RATE	0.03988103652	2532	2464	false
+seed_score	obs-full	stat	1086	TAB4	0.02967496354	2532	2464	false
+seed_score	obs-full	stat	1086	TRM	0.03988616202	2532	2464	false
+seed_score	obs-full	stat	1086	TRM-inf1x1	0.03988605437	2532	2464	false
+seed_score	obs-full	stat	1086	TRM-1x1	0.03383066449	2532	2464	false
+seed_score	obs-full	stat	1086	TRM_raw	0.03988616202	2532	2464	false
+seed_score	obs-full	stat	1087	TAB_R1	0.008971541826	2596	2560	false
+seed_score	obs-full	stat	1087	B1	0.02937828251	2596	2560	false
+seed_score	obs-full	stat	1087	RATE	0.03236093303	2596	2560	false
+seed_score	obs-full	stat	1087	TAB4	0.02436943979	2596	2560	false
+seed_score	obs-full	stat	1087	TRM	0.0324118361	2596	2560	false
+seed_score	obs-full	stat	1087	TRM-inf1x1	0.03241184711	2596	2560	false
+seed_score	obs-full	stat	1087	TRM-1x1	0.03013578545	2596	2560	false
+seed_score	obs-full	stat	1087	TRM_raw	0.0324118361	2596	2560	false
+seed_score	obs-full	stat	1088	TAB_R1	0.01105976404	2094	2110	false
+seed_score	obs-full	stat	1088	B1	0.04278727569	2094	2110	false
+seed_score	obs-full	stat	1088	RATE	0.0458645397	2094	2110	false
+seed_score	obs-full	stat	1088	TAB4	0.03443144555	2094	2110	false
+seed_score	obs-full	stat	1088	TRM	0.04586913435	2094	2110	false
+seed_score	obs-full	stat	1088	TRM-inf1x1	0.04586901586	2094	2110	false
+seed_score	obs-full	stat	1088	TRM-1x1	0.03662441824	2094	2110	false
+seed_score	obs-full	stat	1088	TRM_raw	0.04586913435	2094	2110	false
+seed_score	obs-full	stat	1089	TAB_R1	0.01834214116	2177	2135	false
+seed_score	obs-full	stat	1089	B1	0.05324010662	2177	2135	false
+seed_score	obs-full	stat	1089	RATE	0.06391112008	2177	2135	false
+seed_score	obs-full	stat	1089	TAB4	0.04228237163	2177	2135	false
+seed_score	obs-full	stat	1089	TRM	0.06387809725	2177	2135	false
+seed_score	obs-full	stat	1089	TRM-inf1x1	0.06387767277	2177	2135	false
+seed_score	obs-full	stat	1089	TRM-1x1	0.05164274733	2177	2135	false
+seed_score	obs-full	stat	1089	TRM_raw	0.06387809725	2177	2135	false
+seed_score	obs-full	stat	1090	TAB_R1	0.009577944115	2356	2362	false
+seed_score	obs-full	stat	1090	B1	0.03303875457	2356	2362	false
+seed_score	obs-full	stat	1090	RATE	0.03976048912	2356	2362	false
+seed_score	obs-full	stat	1090	TAB4	0.02979217975	2356	2362	false
+seed_score	obs-full	stat	1090	TRM	0.03973314319	2356	2362	false
+seed_score	obs-full	stat	1090	TRM-inf1x1	0.03973314848	2356	2362	false
+seed_score	obs-full	stat	1090	TRM-1x1	0.03439843599	2356	2362	false
+seed_score	obs-full	stat	1090	TRM_raw	0.03973314319	2356	2362	false
+seed_score	obs-full	stat	1091	TAB_R1	0.01325856856	2150	2171	false
+seed_score	obs-full	stat	1091	B1	0.04501436252	2150	2171	false
+seed_score	obs-full	stat	1091	RATE	0.04827707114	2150	2171	false
+seed_score	obs-full	stat	1091	TAB4	0.03257086652	2150	2171	false
+seed_score	obs-full	stat	1091	TRM	0.04822118099	2150	2171	false
+seed_score	obs-full	stat	1091	TRM-inf1x1	0.04822101562	2150	2171	false
+seed_score	obs-full	stat	1091	TRM-1x1	0.03785824429	2150	2171	false
+seed_score	obs-full	stat	1091	TRM_raw	0.04822118099	2150	2171	false
+seed_score	obs-full	stat	1092	TAB_R1	0.01607988971	2320	2350	false
+seed_score	obs-full	stat	1092	B1	0.04555365135	2320	2350	false
+seed_score	obs-full	stat	1092	RATE	0.05031362459	2320	2350	false
+seed_score	obs-full	stat	1092	TAB4	0.04022238518	2320	2350	false
+seed_score	obs-full	stat	1092	TRM	0.05032265133	2320	2350	false
+seed_score	obs-full	stat	1092	TRM-inf1x1	0.05032232473	2320	2350	false
+seed_score	obs-full	stat	1092	TRM-1x1	0.04297046054	2320	2350	false
+seed_score	obs-full	stat	1092	TRM_raw	0.05032265133	2320	2350	false
+seed_score	obs-full	stat	1093	TAB_R1	0.009665446898	2319	2301	false
+seed_score	obs-full	stat	1093	B1	0.03194801554	2319	2301	false
+seed_score	obs-full	stat	1093	RATE	0.02891189985	2319	2301	false
+seed_score	obs-full	stat	1093	TAB4	0.02231255231	2319	2301	false
+seed_score	obs-full	stat	1093	TRM	0.02897181809	2319	2301	false
+seed_score	obs-full	stat	1093	TRM-inf1x1	0.0289718713	2319	2301	false
+seed_score	obs-full	stat	1093	TRM-1x1	0.02472598187	2319	2301	false
+seed_score	obs-full	stat	1093	TRM_raw	0.02897181809	2319	2301	false
+seed_score	obs-full	stat	1094	TAB_R1	0.01294612604	2312	2302	false
+seed_score	obs-full	stat	1094	B1	0.0459451497	2312	2302	false
+seed_score	obs-full	stat	1094	RATE	0.0529151271	2312	2302	false
+seed_score	obs-full	stat	1094	TAB4	0.03777630276	2312	2302	false
+seed_score	obs-full	stat	1094	TRM	0.05295167658	2312	2302	false
+seed_score	obs-full	stat	1094	TRM-inf1x1	0.05295135222	2312	2302	false
+seed_score	obs-full	stat	1094	TRM-1x1	0.0468297428	2312	2302	false
+seed_score	obs-full	stat	1094	TRM_raw	0.05295167658	2312	2302	false
+seed_score	obs-full	stat	1095	TAB_R1	0.01021661713	2478	2450	false
+seed_score	obs-full	stat	1095	B1	0.03453952642	2478	2450	false
+seed_score	obs-full	stat	1095	RATE	0.03934609362	2478	2450	false
+seed_score	obs-full	stat	1095	TAB4	0.02918642761	2478	2450	false
+seed_score	obs-full	stat	1095	TRM	0.03935726279	2478	2450	false
+seed_score	obs-full	stat	1095	TRM-inf1x1	0.03935716275	2478	2450	false
+seed_score	obs-full	stat	1095	TRM-1x1	0.03301549405	2478	2450	false
+seed_score	obs-full	stat	1095	TRM_raw	0.03935726279	2478	2450	false
+seed_score	obs-full	stat	1096	TAB_R1	0.009872192905	2223	2166	false
+seed_score	obs-full	stat	1096	B1	0.04079889562	2223	2166	false
+seed_score	obs-full	stat	1096	RATE	0.03774839264	2223	2166	false
+seed_score	obs-full	stat	1096	TAB4	0.03156443145	2223	2166	false
+seed_score	obs-full	stat	1096	TRM	0.03781853196	2223	2166	false
+seed_score	obs-full	stat	1096	TRM-inf1x1	0.03781844685	2223	2166	false
+seed_score	obs-full	stat	1096	TRM-1x1	0.03319326811	2223	2166	false
+seed_score	obs-full	stat	1096	TRM_raw	0.03781853196	2223	2166	false
+seed_score	obs-full	stat	1097	TAB_R1	0.009971020701	2772	2688	false
+seed_score	obs-full	stat	1097	B1	0.03323236691	2772	2688	false
+seed_score	obs-full	stat	1097	RATE	0.0353708668	2772	2688	false
+seed_score	obs-full	stat	1097	TAB4	0.02826886688	2772	2688	false
+seed_score	obs-full	stat	1097	TRM	0.03534755098	2772	2688	false
+seed_score	obs-full	stat	1097	TRM-inf1x1	0.03534762494	2772	2688	false
+seed_score	obs-full	stat	1097	TRM-1x1	0.02897922142	2772	2688	false
+seed_score	obs-full	stat	1097	TRM_raw	0.03534755098	2772	2688	false
+compare	obs-full	stat	TRM	RATE	24	12	12	0	1	9.0838602e-06	-2.535080208e-07	-1.249993317e-05	3.265781279e-05	-7.102024872e-05	0.0001665047382	true	false
+compare	obs-full	stat	TRM	B1	24	4	20	0	0.001543879509	-0.004195399633	-0.004366454663	-0.005638464103	-0.002694548402	-0.01063799063	0.002980363653	true	false
+compare	obs-full	stat	TRM	TAB4	24	0	24	0	1.192092896e-07	-0.01284596419	-0.01145216393	-0.01485934096	-0.01101981686	-0.02452333905	-0.006254100508	true	false
+compare	obs-full	stat	TRM	TAB_R1	24	0	24	0	1.192092896e-07	-0.03419834399	-0.0337767805	-0.03792909027	-0.03087739786	-0.05683761686	-0.01930637119	true	false
+compare	obs-full	stat	TRM	TRM-1x1	24	0	24	0	1.192092896e-07	-0.008012470881	-0.007274226356	-0.009278101911	-0.006834379246	-0.01470082965	-0.002276050655	true	false
+compare	obs-full	stat	TRM	TRM-inf1x1	24	4	20	0	0.001543879509	-1.684267192e-07	-1.130699826e-07	-2.378274963e-07	-1.03645807e-07	-5.205476941e-07	7.395404435e-08	true	false
+seed_score	obs-full	rev	1074	TAB_R1	0.01873190165	1924	1897	false
+seed_score	obs-full	rev	1074	B1	0.04953673782	1924	1897	false
+seed_score	obs-full	rev	1074	RATE	0.05594138304	1924	1897	false
+seed_score	obs-full	rev	1074	TAB4	0.04116321628	1924	1897	false
+seed_score	obs-full	rev	1074	TRM	0.055869058	1924	1897	false
+seed_score	obs-full	rev	1074	TRM-inf1x1	0.05824277713	1924	1897	false
+seed_score	obs-full	rev	1074	TRM-1x1	0.05165766448	1924	1897	false
+seed_score	obs-full	rev	1074	TRM_raw	0.055869058	1924	1897	false
+seed_score	obs-full	rev	1075	TAB_R1	0.01009009095	2646	2597	false
+seed_score	obs-full	rev	1075	B1	0.03084936015	2646	2597	false
+seed_score	obs-full	rev	1075	RATE	0.03289188629	2646	2597	false
+seed_score	obs-full	rev	1075	TAB4	0.02526434381	2646	2597	false
+seed_score	obs-full	rev	1075	TRM	0.03295574045	2646	2597	false
+seed_score	obs-full	rev	1075	TRM-inf1x1	0.03803970939	2646	2597	false
+seed_score	obs-full	rev	1075	TRM-1x1	0.03035803694	2646	2597	false
+seed_score	obs-full	rev	1075	TRM_raw	0.03295574045	2646	2597	false
+seed_score	obs-full	rev	1076	TAB_R1	0.01048718625	2434	2403	false
+seed_score	obs-full	rev	1076	B1	0.03696614542	2434	2403	false
+seed_score	obs-full	rev	1076	RATE	0.03793661524	2434	2403	false
+seed_score	obs-full	rev	1076	TAB4	0.02993423294	2434	2403	false
+seed_score	obs-full	rev	1076	TRM	0.03754526084	2434	2403	false
+seed_score	obs-full	rev	1076	TRM-inf1x1	0.04223430894	2434	2403	false
+seed_score	obs-full	rev	1076	TRM-1x1	0.03490314904	2434	2403	false
+seed_score	obs-full	rev	1076	TRM_raw	0.03754526084	2434	2403	false
+seed_score	obs-full	rev	1077	TAB_R1	0.01184322534	1851	1966	false
+seed_score	obs-full	rev	1077	B1	0.05912254883	1851	1966	false
+seed_score	obs-full	rev	1077	RATE	0.07160598751	1851	1966	false
+seed_score	obs-full	rev	1077	TAB4	0.04756587301	1851	1966	false
+seed_score	obs-full	rev	1077	TRM	0.06916075538	1851	1966	false
+seed_score	obs-full	rev	1077	TRM-inf1x1	0.07252910754	1851	1966	false
+seed_score	obs-full	rev	1077	TRM-1x1	0.06228791402	1851	1966	false
+seed_score	obs-full	rev	1077	TRM_raw	0.06916075538	1851	1966	false
+seed_score	obs-full	rev	1078	TAB_R1	0.01433973892	2264	2299	false
+seed_score	obs-full	rev	1078	B1	0.04163895184	2264	2299	false
+seed_score	obs-full	rev	1078	RATE	0.04725647063	2264	2299	false
+seed_score	obs-full	rev	1078	TAB4	0.03343328922	2264	2299	false
+seed_score	obs-full	rev	1078	TRM	0.04612706163	2264	2299	false
+seed_score	obs-full	rev	1078	TRM-inf1x1	0.05030276202	2264	2299	false
+seed_score	obs-full	rev	1078	TRM-1x1	0.0400388125	2264	2299	false
+seed_score	obs-full	rev	1078	TRM_raw	0.04612706163	2264	2299	false
+seed_score	obs-full	rev	1079	TAB_R1	0.0182826095	2183	2289	false
+seed_score	obs-full	rev	1079	B1	0.04509524397	2183	2289	false
+seed_score	obs-full	rev	1079	RATE	0.04888497212	2183	2289	false
+seed_score	obs-full	rev	1079	TAB4	0.03713741771	2183	2289	false
+seed_score	obs-full	rev	1079	TRM	0.04869108056	2183	2289	false
+seed_score	obs-full	rev	1079	TRM-inf1x1	0.05127477356	2183	2289	false
+seed_score	obs-full	rev	1079	TRM-1x1	0.04380681663	2183	2289	false
+seed_score	obs-full	rev	1079	TRM_raw	0.04869108056	2183	2289	false
+seed_score	obs-full	rev	1080	TAB_R1	0.01309035647	1965	1964	false
+seed_score	obs-full	rev	1080	B1	0.04743916427	1965	1964	false
+seed_score	obs-full	rev	1080	RATE	0.04725372217	1965	1964	false
+seed_score	obs-full	rev	1080	TAB4	0.03592010663	1965	1964	false
+seed_score	obs-full	rev	1080	TRM	0.0470929675	1965	1964	false
+seed_score	obs-full	rev	1080	TRM-inf1x1	0.05056409717	1965	1964	false
+seed_score	obs-full	rev	1080	TRM-1x1	0.04251475936	1965	1964	false
+seed_score	obs-full	rev	1080	TRM_raw	0.0470929675	1965	1964	false
+seed_score	obs-full	rev	1081	TAB_R1	0.009406908768	2424	2486	false
+seed_score	obs-full	rev	1081	B1	0.03807464357	2424	2486	false
+seed_score	obs-full	rev	1081	RATE	0.04239769922	2424	2486	false
+seed_score	obs-full	rev	1081	TAB4	0.03029938775	2424	2486	false
+seed_score	obs-full	rev	1081	TRM	0.04203000772	2424	2486	false
+seed_score	obs-full	rev	1081	TRM-inf1x1	0.04630668461	2424	2486	false
+seed_score	obs-full	rev	1081	TRM-1x1	0.03809955374	2424	2486	false
+seed_score	obs-full	rev	1081	TRM_raw	0.04203000772	2424	2486	false
+seed_score	obs-full	rev	1082	TAB_R1	0.01513129728	1832	1803	false
+seed_score	obs-full	rev	1082	B1	0.04559363572	1832	1803	false
+seed_score	obs-full	rev	1082	RATE	0.04120866295	1832	1803	false
+seed_score	obs-full	rev	1082	TAB4	0.03173598581	1832	1803	false
+seed_score	obs-full	rev	1082	TRM	0.0414769306	1832	1803	false
+seed_score	obs-full	rev	1082	TRM-inf1x1	0.0449088466	1832	1803	false
+seed_score	obs-full	rev	1082	TRM-1x1	0.0365416106	1832	1803	false
+seed_score	obs-full	rev	1082	TRM_raw	0.0414769306	1832	1803	false
+seed_score	obs-full	rev	1083	TAB_R1	0.02242491671	1507	1591	false
+seed_score	obs-full	rev	1083	B1	0.08394173274	1507	1591	false
+seed_score	obs-full	rev	1083	RATE	0.09597735036	1507	1591	false
+seed_score	obs-full	rev	1083	TAB4	0.06346266317	1507	1591	false
+seed_score	obs-full	rev	1083	TRM	0.09421071251	1507	1591	false
+seed_score	obs-full	rev	1083	TRM-inf1x1	0.09301325711	1507	1591	false
+seed_score	obs-full	rev	1083	TRM-1x1	0.08446297909	1507	1591	false
+seed_score	obs-full	rev	1083	TRM_raw	0.09421071251	1507	1591	false
+seed_score	obs-full	rev	1084	TAB_R1	0.01236306443	2173	2160	false
+seed_score	obs-full	rev	1084	B1	0.04744225803	2173	2160	false
+seed_score	obs-full	rev	1084	RATE	0.04805717562	2173	2160	false
+seed_score	obs-full	rev	1084	TAB4	0.03374464841	2173	2160	false
+seed_score	obs-full	rev	1084	TRM	0.0478157274	2173	2160	false
+seed_score	obs-full	rev	1084	TRM-inf1x1	0.05121163018	2173	2160	false
+seed_score	obs-full	rev	1084	TRM-1x1	0.04211386032	2173	2160	false
+seed_score	obs-full	rev	1084	TRM_raw	0.0478157274	2173	2160	false
+seed_score	obs-full	rev	1085	TAB_R1	0.01534077856	2317	2266	false
+seed_score	obs-full	rev	1085	B1	0.04099244701	2317	2266	false
+seed_score	obs-full	rev	1085	RATE	0.04378870868	2317	2266	false
+seed_score	obs-full	rev	1085	TAB4	0.0308515815	2317	2266	false
+seed_score	obs-full	rev	1085	TRM	0.04307362419	2317	2266	false
+seed_score	obs-full	rev	1085	TRM-inf1x1	0.04735909627	2317	2266	false
+seed_score	obs-full	rev	1085	TRM-1x1	0.03645063941	2317	2266	false
+seed_score	obs-full	rev	1085	TRM_raw	0.04307362419	2317	2266	false
+seed_score	obs-full	rev	1086	TAB_R1	0.01034382928	2519	2455	false
+seed_score	obs-full	rev	1086	B1	0.03332558488	2519	2455	false
+seed_score	obs-full	rev	1086	RATE	0.04101650919	2519	2455	false
+seed_score	obs-full	rev	1086	TAB4	0.02822606851	2519	2455	false
+seed_score	obs-full	rev	1086	TRM	0.04138731371	2519	2455	false
+seed_score	obs-full	rev	1086	TRM-inf1x1	0.04493412945	2519	2455	false
+seed_score	obs-full	rev	1086	TRM-1x1	0.03436258559	2519	2455	false
+seed_score	obs-full	rev	1086	TRM_raw	0.04138731371	2519	2455	false
+seed_score	obs-full	rev	1087	TAB_R1	0.009256698713	2549	2513	false
+seed_score	obs-full	rev	1087	B1	0.03244162126	2549	2513	false
+seed_score	obs-full	rev	1087	RATE	0.03569692598	2549	2513	false
+seed_score	obs-full	rev	1087	TAB4	0.02617292682	2549	2513	false
+seed_score	obs-full	rev	1087	TRM	0.03574119191	2549	2513	false
+seed_score	obs-full	rev	1087	TRM-inf1x1	0.04055091117	2549	2513	false
+seed_score	obs-full	rev	1087	TRM-1x1	0.03121550562	2549	2513	false
+seed_score	obs-full	rev	1087	TRM_raw	0.03574119191	2549	2513	false
+seed_score	obs-full	rev	1088	TAB_R1	0.01633770519	2100	2115	false
+seed_score	obs-full	rev	1088	B1	0.04377430474	2100	2115	false
+seed_score	obs-full	rev	1088	RATE	0.04926578131	2100	2115	false
+seed_score	obs-full	rev	1088	TAB4	0.03643113836	2100	2115	false
+seed_score	obs-full	rev	1088	TRM	0.04878996274	2100	2115	false
+seed_score	obs-full	rev	1088	TRM-inf1x1	0.05211009293	2100	2115	false
+seed_score	obs-full	rev	1088	TRM-1x1	0.04370549042	2100	2115	false
+seed_score	obs-full	rev	1088	TRM_raw	0.04878996274	2100	2115	false
+seed_score	obs-full	rev	1089	TAB_R1	0.01749534501	2113	2070	false
+seed_score	obs-full	rev	1089	B1	0.05492992171	2113	2070	false
+seed_score	obs-full	rev	1089	RATE	0.06561973792	2113	2070	false
+seed_score	obs-full	rev	1089	TAB4	0.04337792702	2113	2070	false
+seed_score	obs-full	rev	1089	TRM	0.06506225904	2113	2070	false
+seed_score	obs-full	rev	1089	TRM-inf1x1	0.06674437203	2113	2070	false
+seed_score	obs-full	rev	1089	TRM-1x1	0.05601616586	2113	2070	false
+seed_score	obs-full	rev	1089	TRM_raw	0.06506225904	2113	2070	false
+seed_score	obs-full	rev	1090	TAB_R1	0.01169856006	2325	2337	false
+seed_score	obs-full	rev	1090	B1	0.03442941221	2325	2337	false
+seed_score	obs-full	rev	1090	RATE	0.04218348668	2325	2337	false
+seed_score	obs-full	rev	1090	TAB4	0.02969806206	2325	2337	false
+seed_score	obs-full	rev	1090	TRM	0.04189960318	2325	2337	false
+seed_score	obs-full	rev	1090	TRM-inf1x1	0.04587188578	2325	2337	false
+seed_score	obs-full	rev	1090	TRM-1x1	0.03662008513	2325	2337	false
+seed_score	obs-full	rev	1090	TRM_raw	0.04189960318	2325	2337	false
+seed_score	obs-full	rev	1091	TAB_R1	0.01239371071	2124	2140	false
+seed_score	obs-full	rev	1091	B1	0.04430321124	2124	2140	false
+seed_score	obs-full	rev	1091	RATE	0.04653754724	2124	2140	false
+seed_score	obs-full	rev	1091	TAB4	0.03216639297	2124	2140	false
+seed_score	obs-full	rev	1091	TRM	0.04572958835	2124	2140	false
+seed_score	obs-full	rev	1091	TRM-inf1x1	0.04962755496	2124	2140	false
+seed_score	obs-full	rev	1091	TRM-1x1	0.04046180455	2124	2140	false
+seed_score	obs-full	rev	1091	TRM_raw	0.04572958835	2124	2140	false
+seed_score	obs-full	rev	1092	TAB_R1	0.01726149221	2300	2333	false
+seed_score	obs-full	rev	1092	B1	0.04488248592	2300	2333	false
+seed_score	obs-full	rev	1092	RATE	0.04853230054	2300	2333	false
+seed_score	obs-full	rev	1092	TAB4	0.0395519954	2300	2333	false
+seed_score	obs-full	rev	1092	TRM	0.04846991711	2300	2333	false
+seed_score	obs-full	rev	1092	TRM-inf1x1	0.05145295233	2300	2333	false
+seed_score	obs-full	rev	1092	TRM-1x1	0.04350324515	2300	2333	false
+seed_score	obs-full	rev	1092	TRM_raw	0.04846991711	2300	2333	false
+seed_score	obs-full	rev	1093	TAB_R1	0.01158075654	2373	2351	false
+seed_score	obs-full	rev	1093	B1	0.03787435547	2373	2351	false
+seed_score	obs-full	rev	1093	RATE	0.0417081917	2373	2351	false
+seed_score	obs-full	rev	1093	TAB4	0.02862049446	2373	2351	false
+seed_score	obs-full	rev	1093	TRM	0.04127540084	2373	2351	false
+seed_score	obs-full	rev	1093	TRM-inf1x1	0.0452249959	2373	2351	false
+seed_score	obs-full	rev	1093	TRM-1x1	0.03628848639	2373	2351	false
+seed_score	obs-full	rev	1093	TRM_raw	0.04127540084	2373	2351	false
+seed_score	obs-full	rev	1094	TAB_R1	0.01087254463	2263	2244	false
+seed_score	obs-full	rev	1094	B1	0.04648934868	2263	2244	false
+seed_score	obs-full	rev	1094	RATE	0.05081150312	2263	2244	false
+seed_score	obs-full	rev	1094	TAB4	0.03628322828	2263	2244	false
+seed_score	obs-full	rev	1094	TRM	0.05034673737	2263	2244	false
+seed_score	obs-full	rev	1094	TRM-inf1x1	0.05359050729	2263	2244	false
+seed_score	obs-full	rev	1094	TRM-1x1	0.04577924387	2263	2244	false
+seed_score	obs-full	rev	1094	TRM_raw	0.05034673737	2263	2244	false
+seed_score	obs-full	rev	1095	TAB_R1	0.01237388293	2460	2436	false
+seed_score	obs-full	rev	1095	B1	0.03696146105	2460	2436	false
+seed_score	obs-full	rev	1095	RATE	0.04150705553	2460	2436	false
+seed_score	obs-full	rev	1095	TAB4	0.03002580167	2460	2436	false
+seed_score	obs-full	rev	1095	TRM	0.04162824133	2460	2436	false
+seed_score	obs-full	rev	1095	TRM-inf1x1	0.04525926191	2460	2436	false
+seed_score	obs-full	rev	1095	TRM-1x1	0.0356270338	2460	2436	false
+seed_score	obs-full	rev	1095	TRM_raw	0.04162824133	2460	2436	false
+seed_score	obs-full	rev	1096	TAB_R1	0.01090794869	2245	2192	false
+seed_score	obs-full	rev	1096	B1	0.04409351057	2245	2192	false
+seed_score	obs-full	rev	1096	RATE	0.04501034124	2245	2192	false
+seed_score	obs-full	rev	1096	TAB4	0.0322170626	2245	2192	false
+seed_score	obs-full	rev	1096	TRM	0.04524968207	2245	2192	false
+seed_score	obs-full	rev	1096	TRM-inf1x1	0.04847206706	2245	2192	false
+seed_score	obs-full	rev	1096	TRM-1x1	0.04078445312	2245	2192	false
+seed_score	obs-full	rev	1096	TRM_raw	0.04524968207	2245	2192	false
+seed_score	obs-full	rev	1097	TAB_R1	0.01008956836	2707	2633	false
+seed_score	obs-full	rev	1097	B1	0.03175550801	2707	2633	false
+seed_score	obs-full	rev	1097	RATE	0.03421673112	2707	2633	false
+seed_score	obs-full	rev	1097	TAB4	0.02680756706	2707	2633	false
+seed_score	obs-full	rev	1097	TRM	0.03363680742	2707	2633	false
+seed_score	obs-full	rev	1097	TRM-inf1x1	0.0389410631	2707	2633	false
+seed_score	obs-full	rev	1097	TRM-1x1	0.03041185252	2707	2633	false
+seed_score	obs-full	rev	1097	TRM_raw	0.03363680742	2707	2633	false
+compare	obs-full	rev	TRM	RATE	24	18	6	0	0.02265584469	0.0004183797306	0.0003257875006	0.0002026355351	0.0006849937035	-0.0003708045232	0.002445232134	true	true
+compare	obs-full	rev	TRM	B1	24	2	22	0	3.588199615e-05	-0.003888001532	-0.003591633891	-0.005301095164	-0.002535024024	-0.01026897977	0.00411670512	true	false
+compare	obs-full	rev	TRM	TAB4	24	0	24	0	1.192092896e-07	-0.01313225918	-0.01229043353	-0.01533475596	-0.01133264594	-0.03074804934	-0.006829240353	true	false
+compare	obs-full	rev	TRM	TAB_R1	24	0	24	0	1.192092896e-07	-0.03429672978	-0.0314978738	-0.0388426298	-0.03055327111	-0.0717857958	-0.0228656495	true	false
+compare	obs-full	rev	TRM	TRM-1x1	24	0	24	0	1.192092896e-07	-0.005302245155	-0.004976793209	-0.006001261499	-0.004680994924	-0.009747733421	-0.002597703515	true	false
+compare	obs-full	rev	TRM	TRM-inf1x1	24	23	1	0	2.980232239e-06	0.003479217191	0.003508972705	0.002908447194	0.003938114794	-0.001197455402	0.005304255689	true	true
+seed_score	obs-ay	stat	1074	TAB_R1	0.0105774689	1925	1899	false
+seed_score	obs-ay	stat	1074	B1	0.04628245908	1925	1899	false
+seed_score	obs-ay	stat	1074	RATE	0.05341088492	1925	1899	false
+seed_score	obs-ay	stat	1074	TAB4	0.03886157234	1925	1899	false
+seed_score	obs-ay	stat	1074	TRM	0.05332578869	1925	1899	false
+seed_score	obs-ay	stat	1074	TRM-inf1x1	0.05332579836	1925	1899	false
+seed_score	obs-ay	stat	1074	TRM-1x1	0.0468362473	1925	1899	false
+seed_score	obs-ay	stat	1074	TRM_raw	0.05332578869	1925	1899	false
+seed_score	obs-ay	stat	1075	TAB_R1	0.01097173515	2670	2616	false
+seed_score	obs-ay	stat	1075	B1	0.03323384175	2670	2616	false
+seed_score	obs-ay	stat	1075	RATE	0.03543103054	2670	2616	false
+seed_score	obs-ay	stat	1075	TAB4	0.02746002969	2670	2616	false
+seed_score	obs-ay	stat	1075	TRM	0.03550011703	2670	2616	false
+seed_score	obs-ay	stat	1075	TRM-inf1x1	0.03550042976	2670	2616	false
+seed_score	obs-ay	stat	1075	TRM-1x1	0.02931834419	2670	2616	false
+seed_score	obs-ay	stat	1075	TRM_raw	0.03550011703	2670	2616	false
+seed_score	obs-ay	stat	1076	TAB_R1	0.01287337918	2370	2338	false
+seed_score	obs-ay	stat	1076	B1	0.03992097863	2370	2338	false
+seed_score	obs-ay	stat	1076	RATE	0.04387462697	2370	2338	false
+seed_score	obs-ay	stat	1076	TAB4	0.03351159329	2370	2338	false
+seed_score	obs-ay	stat	1076	TRM	0.04388434486	2370	2338	false
+seed_score	obs-ay	stat	1076	TRM-inf1x1	0.04388448754	2370	2338	false
+seed_score	obs-ay	stat	1076	TRM-1x1	0.03754494202	2370	2338	false
+seed_score	obs-ay	stat	1076	TRM_raw	0.04388434486	2370	2338	false
+seed_score	obs-ay	stat	1077	TAB_R1	0.01225109017	1816	1928	false
+seed_score	obs-ay	stat	1077	B1	0.05778672895	1816	1928	false
+seed_score	obs-ay	stat	1077	RATE	0.06787268926	1816	1928	false
+seed_score	obs-ay	stat	1077	TAB4	0.04318284546	1816	1928	false
+seed_score	obs-ay	stat	1077	TRM	0.06770959531	1816	1928	false
+seed_score	obs-ay	stat	1077	TRM-inf1x1	0.06770928956	1816	1928	false
+seed_score	obs-ay	stat	1077	TRM-1x1	0.05310545895	1816	1928	false
+seed_score	obs-ay	stat	1077	TRM_raw	0.06770959531	1816	1928	false
+seed_score	obs-ay	stat	1078	TAB_R1	0.01469336025	2197	2207	false
+seed_score	obs-ay	stat	1078	B1	0.0431248375	2197	2207	false
+seed_score	obs-ay	stat	1078	RATE	0.05062704106	2197	2207	false
+seed_score	obs-ay	stat	1078	TAB4	0.0348623998	2197	2207	false
+seed_score	obs-ay	stat	1078	TRM	0.05068513236	2197	2207	false
+seed_score	obs-ay	stat	1078	TRM-inf1x1	0.05068513918	2197	2207	false
+seed_score	obs-ay	stat	1078	TRM-1x1	0.0363834146	2197	2207	false
+seed_score	obs-ay	stat	1078	TRM_raw	0.05068513236	2197	2207	false
+seed_score	obs-ay	stat	1079	TAB_R1	0.0177657857	2190	2298	false
+seed_score	obs-ay	stat	1079	B1	0.04713700183	2190	2298	false
+seed_score	obs-ay	stat	1079	RATE	0.05629265063	2190	2298	false
+seed_score	obs-ay	stat	1079	TAB4	0.03999789184	2190	2298	false
+seed_score	obs-ay	stat	1079	TRM	0.05628638935	2190	2298	false
+seed_score	obs-ay	stat	1079	TRM-inf1x1	0.05628633979	2190	2298	false
+seed_score	obs-ay	stat	1079	TRM-1x1	0.04492027051	2190	2298	false
+seed_score	obs-ay	stat	1079	TRM_raw	0.05628638935	2190	2298	false
+seed_score	obs-ay	stat	1080	TAB_R1	0.01302417111	1994	1981	false
+seed_score	obs-ay	stat	1080	B1	0.04411298473	1994	1981	false
+seed_score	obs-ay	stat	1080	RATE	0.04688742018	1994	1981	false
+seed_score	obs-ay	stat	1080	TAB4	0.03231058303	1994	1981	false
+seed_score	obs-ay	stat	1080	TRM	0.04679791742	1994	1981	false
+seed_score	obs-ay	stat	1080	TRM-inf1x1	0.04679812094	1994	1981	false
+seed_score	obs-ay	stat	1080	TRM-1x1	0.03698538891	1994	1981	false
+seed_score	obs-ay	stat	1080	TRM_raw	0.04679791742	1994	1981	false
+seed_score	obs-ay	stat	1081	TAB_R1	0.0104620548	2437	2495	false
+seed_score	obs-ay	stat	1081	B1	0.03896102727	2437	2495	false
+seed_score	obs-ay	stat	1081	RATE	0.04426505131	2437	2495	false
+seed_score	obs-ay	stat	1081	TAB4	0.03144520446	2437	2495	false
+seed_score	obs-ay	stat	1081	TRM	0.04424132663	2437	2495	false
+seed_score	obs-ay	stat	1081	TRM-inf1x1	0.04424150829	2437	2495	false
+seed_score	obs-ay	stat	1081	TRM-1x1	0.03719259369	2437	2495	false
+seed_score	obs-ay	stat	1081	TRM_raw	0.04424132663	2437	2495	false
+seed_score	obs-ay	stat	1082	TAB_R1	0.01665991435	1838	1815	false
+seed_score	obs-ay	stat	1082	B1	0.04796843312	1838	1815	false
+seed_score	obs-ay	stat	1082	RATE	0.0476217468	1838	1815	false
+seed_score	obs-ay	stat	1082	TAB4	0.03313868586	1838	1815	false
+seed_score	obs-ay	stat	1082	TRM	0.04761773556	1838	1815	false
+seed_score	obs-ay	stat	1082	TRM-inf1x1	0.04761781444	1838	1815	false
+seed_score	obs-ay	stat	1082	TRM-1x1	0.03693830669	1838	1815	false
+seed_score	obs-ay	stat	1082	TRM_raw	0.04761773556	1838	1815	false
+seed_score	obs-ay	stat	1083	TAB_R1	0.0214608919	1530	1624	false
+seed_score	obs-ay	stat	1083	B1	0.07285894269	1530	1624	false
+seed_score	obs-ay	stat	1083	RATE	0.0783777943	1530	1624	false
+seed_score	obs-ay	stat	1083	TAB4	0.05620633117	1530	1624	false
+seed_score	obs-ay	stat	1083	TRM	0.07830367568	1530	1624	false
+seed_score	obs-ay	stat	1083	TRM-inf1x1	0.07830290566	1530	1624	false
+seed_score	obs-ay	stat	1083	TRM-1x1	0.07068702772	1530	1624	false
+seed_score	obs-ay	stat	1083	TRM_raw	0.07830367568	1530	1624	false
+seed_score	obs-ay	stat	1084	TAB_R1	0.009985010469	2186	2170	false
+seed_score	obs-ay	stat	1084	B1	0.04483299133	2186	2170	false
+seed_score	obs-ay	stat	1084	RATE	0.04454491368	2186	2170	false
+seed_score	obs-ay	stat	1084	TAB4	0.03341582072	2186	2170	false
+seed_score	obs-ay	stat	1084	TRM	0.04456895501	2186	2170	false
+seed_score	obs-ay	stat	1084	TRM-inf1x1	0.04456909612	2186	2170	false
+seed_score	obs-ay	stat	1084	TRM-1x1	0.03592129571	2186	2170	false
+seed_score	obs-ay	stat	1084	TRM_raw	0.04456895501	2186	2170	false
+seed_score	obs-ay	stat	1085	TAB_R1	0.01529651078	2275	2218	false
+seed_score	obs-ay	stat	1085	B1	0.04166955504	2275	2218	false
+seed_score	obs-ay	stat	1085	RATE	0.04341722142	2275	2218	false
+seed_score	obs-ay	stat	1085	TAB4	0.03191792128	2275	2218	false
+seed_score	obs-ay	stat	1085	TRM	0.04338393409	2275	2218	false
+seed_score	obs-ay	stat	1085	TRM-inf1x1	0.04338417865	2275	2218	false
+seed_score	obs-ay	stat	1085	TRM-1x1	0.03614100756	2275	2218	false
+seed_score	obs-ay	stat	1085	TRM_raw	0.04338393409	2275	2218	false
+seed_score	obs-ay	stat	1086	TAB_R1	0.01032337101	2532	2464	false
+seed_score	obs-ay	stat	1086	B1	0.03301049202	2532	2464	false
+seed_score	obs-ay	stat	1086	RATE	0.03988103652	2532	2464	false
+seed_score	obs-ay	stat	1086	TAB4	0.02967496354	2532	2464	false
+seed_score	obs-ay	stat	1086	TRM	0.03988495567	2532	2464	false
+seed_score	obs-ay	stat	1086	TRM-inf1x1	0.03988525136	2532	2464	false
+seed_score	obs-ay	stat	1086	TRM-1x1	0.03403309343	2532	2464	false
+seed_score	obs-ay	stat	1086	TRM_raw	0.03988495567	2532	2464	false
+seed_score	obs-ay	stat	1087	TAB_R1	0.008971541826	2596	2560	false
+seed_score	obs-ay	stat	1087	B1	0.02937828251	2596	2560	false
+seed_score	obs-ay	stat	1087	RATE	0.03236093303	2596	2560	false
+seed_score	obs-ay	stat	1087	TAB4	0.02436943979	2596	2560	false
+seed_score	obs-ay	stat	1087	TRM	0.03240938935	2596	2560	false
+seed_score	obs-ay	stat	1087	TRM-inf1x1	0.03240982083	2596	2560	false
+seed_score	obs-ay	stat	1087	TRM-1x1	0.03032970039	2596	2560	false
+seed_score	obs-ay	stat	1087	TRM_raw	0.03240938935	2596	2560	false
+seed_score	obs-ay	stat	1088	TAB_R1	0.01105976404	2094	2110	false
+seed_score	obs-ay	stat	1088	B1	0.04278727569	2094	2110	false
+seed_score	obs-ay	stat	1088	RATE	0.0458645397	2094	2110	false
+seed_score	obs-ay	stat	1088	TAB4	0.03443144555	2094	2110	false
+seed_score	obs-ay	stat	1088	TRM	0.045868921	2094	2110	false
+seed_score	obs-ay	stat	1088	TRM-inf1x1	0.04586901964	2094	2110	false
+seed_score	obs-ay	stat	1088	TRM-1x1	0.03672557823	2094	2110	false
+seed_score	obs-ay	stat	1088	TRM_raw	0.045868921	2094	2110	false
+seed_score	obs-ay	stat	1089	TAB_R1	0.01834214116	2177	2135	false
+seed_score	obs-ay	stat	1089	B1	0.05324010662	2177	2135	false
+seed_score	obs-ay	stat	1089	RATE	0.06391112008	2177	2135	false
+seed_score	obs-ay	stat	1089	TAB4	0.04228237163	2177	2135	false
+seed_score	obs-ay	stat	1089	TRM	0.06388087219	2177	2135	false
+seed_score	obs-ay	stat	1089	TRM-inf1x1	0.06388049966	2177	2135	false
+seed_score	obs-ay	stat	1089	TRM-1x1	0.05174373354	2177	2135	false
+seed_score	obs-ay	stat	1089	TRM_raw	0.06388087219	2177	2135	false
+seed_score	obs-ay	stat	1090	TAB_R1	0.009577944115	2356	2362	false
+seed_score	obs-ay	stat	1090	B1	0.03303875457	2356	2362	false
+seed_score	obs-ay	stat	1090	RATE	0.03976048912	2356	2362	false
+seed_score	obs-ay	stat	1090	TAB4	0.02979217975	2356	2362	false
+seed_score	obs-ay	stat	1090	TRM	0.03973191131	2356	2362	false
+seed_score	obs-ay	stat	1090	TRM-inf1x1	0.03973225743	2356	2362	false
+seed_score	obs-ay	stat	1090	TRM-1x1	0.03459580835	2356	2362	false
+seed_score	obs-ay	stat	1090	TRM_raw	0.03973191131	2356	2362	false
+seed_score	obs-ay	stat	1091	TAB_R1	0.01325856856	2150	2171	false
+seed_score	obs-ay	stat	1091	B1	0.04501436252	2150	2171	false
+seed_score	obs-ay	stat	1091	RATE	0.04827707114	2150	2171	false
+seed_score	obs-ay	stat	1091	TAB4	0.03257086652	2150	2171	false
+seed_score	obs-ay	stat	1091	TRM	0.04822135805	2150	2171	false
+seed_score	obs-ay	stat	1091	TRM-inf1x1	0.04822153884	2150	2171	false
+seed_score	obs-ay	stat	1091	TRM-1x1	0.03799297585	2150	2171	false
+seed_score	obs-ay	stat	1091	TRM_raw	0.04822135805	2150	2171	false
+seed_score	obs-ay	stat	1092	TAB_R1	0.01607988971	2320	2350	false
+seed_score	obs-ay	stat	1092	B1	0.04555365135	2320	2350	false
+seed_score	obs-ay	stat	1092	RATE	0.05031362459	2320	2350	false
+seed_score	obs-ay	stat	1092	TAB4	0.04022238518	2320	2350	false
+seed_score	obs-ay	stat	1092	TRM	0.0503231765	2320	2350	false
+seed_score	obs-ay	stat	1092	TRM-inf1x1	0.05032315405	2320	2350	false
+seed_score	obs-ay	stat	1092	TRM-1x1	0.04305274573	2320	2350	false
+seed_score	obs-ay	stat	1092	TRM_raw	0.0503231765	2320	2350	false
+seed_score	obs-ay	stat	1093	TAB_R1	0.009665446898	2319	2301	false
+seed_score	obs-ay	stat	1093	B1	0.03194801554	2319	2301	false
+seed_score	obs-ay	stat	1093	RATE	0.02891189985	2319	2301	false
+seed_score	obs-ay	stat	1093	TAB4	0.02231255231	2319	2301	false
+seed_score	obs-ay	stat	1093	TRM	0.02896880023	2319	2301	false
+seed_score	obs-ay	stat	1093	TRM-inf1x1	0.02896935638	2319	2301	false
+seed_score	obs-ay	stat	1093	TRM-1x1	0.02489751305	2319	2301	false
+seed_score	obs-ay	stat	1093	TRM_raw	0.02896880023	2319	2301	false
+seed_score	obs-ay	stat	1094	TAB_R1	0.01294612604	2312	2302	false
+seed_score	obs-ay	stat	1094	B1	0.0459451497	2312	2302	false
+seed_score	obs-ay	stat	1094	RATE	0.0529151271	2312	2302	false
+seed_score	obs-ay	stat	1094	TAB4	0.03777630276	2312	2302	false
+seed_score	obs-ay	stat	1094	TRM	0.05295263782	2312	2302	false
+seed_score	obs-ay	stat	1094	TRM-inf1x1	0.05295247451	2312	2302	false
+seed_score	obs-ay	stat	1094	TRM-1x1	0.04694660622	2312	2302	false
+seed_score	obs-ay	stat	1094	TRM_raw	0.05295263782	2312	2302	false
+seed_score	obs-ay	stat	1095	TAB_R1	0.01021661713	2478	2450	false
+seed_score	obs-ay	stat	1095	B1	0.03453952642	2478	2450	false
+seed_score	obs-ay	stat	1095	RATE	0.03934609362	2478	2450	false
+seed_score	obs-ay	stat	1095	TAB4	0.02918642761	2478	2450	false
+seed_score	obs-ay	stat	1095	TRM	0.03935596862	2478	2450	false
+seed_score	obs-ay	stat	1095	TRM-inf1x1	0.0393562746	2478	2450	false
+seed_score	obs-ay	stat	1095	TRM-1x1	0.03316083049	2478	2450	false
+seed_score	obs-ay	stat	1095	TRM_raw	0.03935596862	2478	2450	false
+seed_score	obs-ay	stat	1096	TAB_R1	0.009872192905	2223	2166	false
+seed_score	obs-ay	stat	1096	B1	0.04079889562	2223	2166	false
+seed_score	obs-ay	stat	1096	RATE	0.03774839264	2223	2166	false
+seed_score	obs-ay	stat	1096	TAB4	0.03156443145	2223	2166	false
+seed_score	obs-ay	stat	1096	TRM	0.03781698277	2223	2166	false
+seed_score	obs-ay	stat	1096	TRM-inf1x1	0.03781723196	2223	2166	false
+seed_score	obs-ay	stat	1096	TRM-1x1	0.03329358152	2223	2166	false
+seed_score	obs-ay	stat	1096	TRM_raw	0.03781698277	2223	2166	false
+seed_score	obs-ay	stat	1097	TAB_R1	0.009971020701	2772	2688	false
+seed_score	obs-ay	stat	1097	B1	0.03323236691	2772	2688	false
+seed_score	obs-ay	stat	1097	RATE	0.0353708668	2772	2688	false
+seed_score	obs-ay	stat	1097	TAB4	0.02826886688	2772	2688	false
+seed_score	obs-ay	stat	1097	TRM	0.03534559152	2772	2688	false
+seed_score	obs-ay	stat	1097	TRM-inf1x1	0.0353460594	2772	2688	false
+seed_score	obs-ay	stat	1097	TRM-1x1	0.02915963776	2772	2688	false
+seed_score	obs-ay	stat	1097	TRM_raw	0.03534559152	2772	2688	false
+compare	obs-ay	stat	TRM	RATE	24	12	12	0	1	9.116176081e-06	4.604447872e-08	-1.20686868e-05	3.210732398e-05	-6.908649265e-05	0.0001630939444	true	false
+compare	obs-ay	stat	TRM	B1	24	4	20	0	0.001543879509	-0.004195367317	-0.004366445686	-0.005639012944	-0.002693884643	-0.01064076557	0.002981912847	true	false
+compare	obs-ay	stat	TRM	TAB4	24	0	24	0	1.192092896e-07	-0.01284593188	-0.01145174413	-0.01485997953	-0.01101911846	-0.02452674985	-0.006252551314	true	false
+compare	obs-ay	stat	TRM	TAB_R1	24	0	24	0	1.192092896e-07	-0.03419831167	-0.03377650907	-0.03792990582	-0.03087672162	-0.05684278378	-0.01930335333	true	false
+compare	obs-ay	stat	TRM	TRM-1x1	24	0	24	0	1.192092896e-07	-0.007881640608	-0.007145829733	-0.009151620772	-0.006696927915	-0.01460413636	-0.002079688962	true	false
+compare	obs-ay	stat	TRM	TRM-inf1x1	24	18	6	0	0.02265584469	1.070805066e-07	1.617333688e-07	-1.581004807e-08	2.122462696e-07	-7.700147299e-07	5.56148923e-07	true	true
+seed_score	obs-ay	rev	1074	TAB_R1	0.01873190165	1924	1897	false
+seed_score	obs-ay	rev	1074	B1	0.04953673782	1924	1897	false
+seed_score	obs-ay	rev	1074	RATE	0.05594138304	1924	1897	false
+seed_score	obs-ay	rev	1074	TAB4	0.04116321628	1924	1897	false
+seed_score	obs-ay	rev	1074	TRM	0.05608232354	1924	1897	false
+seed_score	obs-ay	rev	1074	TRM-inf1x1	0.05608202725	1924	1897	false
+seed_score	obs-ay	rev	1074	TRM-1x1	0.05622084769	1924	1897	false
+seed_score	obs-ay	rev	1074	TRM_raw	0.05608232354	1924	1897	false
+seed_score	obs-ay	rev	1075	TAB_R1	0.01009009095	2646	2597	false
+seed_score	obs-ay	rev	1075	B1	0.03084936015	2646	2597	false
+seed_score	obs-ay	rev	1075	RATE	0.03289188629	2646	2597	false
+seed_score	obs-ay	rev	1075	TAB4	0.02526434381	2646	2597	false
+seed_score	obs-ay	rev	1075	TRM	0.03277390206	2646	2597	false
+seed_score	obs-ay	rev	1075	TRM-inf1x1	0.03277423001	2646	2597	false
+seed_score	obs-ay	rev	1075	TRM-1x1	0.02936853103	2646	2597	false
+seed_score	obs-ay	rev	1075	TRM_raw	0.03277390206	2646	2597	false
+seed_score	obs-ay	rev	1076	TAB_R1	0.01048718625	2434	2403	false
+seed_score	obs-ay	rev	1076	B1	0.03696614542	2434	2403	false
+seed_score	obs-ay	rev	1076	RATE	0.03793661524	2434	2403	false
+seed_score	obs-ay	rev	1076	TAB4	0.02993423294	2434	2403	false
+seed_score	obs-ay	rev	1076	TRM	0.03792207807	2434	2403	false
+seed_score	obs-ay	rev	1076	TRM-inf1x1	0.03792227345	2434	2403	false
+seed_score	obs-ay	rev	1076	TRM-1x1	0.03389440384	2434	2403	false
+seed_score	obs-ay	rev	1076	TRM_raw	0.03792207807	2434	2403	false
+seed_score	obs-ay	rev	1077	TAB_R1	0.01184322534	1851	1966	false
+seed_score	obs-ay	rev	1077	B1	0.05912254883	1851	1966	false
+seed_score	obs-ay	rev	1077	RATE	0.07160598751	1851	1966	false
+seed_score	obs-ay	rev	1077	TAB4	0.04756587301	1851	1966	false
+seed_score	obs-ay	rev	1077	TRM	0.07168073777	1851	1966	false
+seed_score	obs-ay	rev	1077	TRM-inf1x1	0.07167996407	1851	1966	false
+seed_score	obs-ay	rev	1077	TRM-1x1	0.06312777656	1851	1966	false
+seed_score	obs-ay	rev	1077	TRM_raw	0.07168073777	1851	1966	false
+seed_score	obs-ay	rev	1078	TAB_R1	0.01433973892	2264	2299	false
+seed_score	obs-ay	rev	1078	B1	0.04163895184	2264	2299	false
+seed_score	obs-ay	rev	1078	RATE	0.04725647063	2264	2299	false
+seed_score	obs-ay	rev	1078	TAB4	0.03343328922	2264	2299	false
+seed_score	obs-ay	rev	1078	TRM	0.04718364308	2264	2299	false
+seed_score	obs-ay	rev	1078	TRM-inf1x1	0.04718359505	2264	2299	false
+seed_score	obs-ay	rev	1078	TRM-1x1	0.03879441316	2264	2299	false
+seed_score	obs-ay	rev	1078	TRM_raw	0.04718364308	2264	2299	false
+seed_score	obs-ay	rev	1079	TAB_R1	0.0182826095	2183	2289	false
+seed_score	obs-ay	rev	1079	B1	0.04509524397	2183	2289	false
+seed_score	obs-ay	rev	1079	RATE	0.04888497212	2183	2289	false
+seed_score	obs-ay	rev	1079	TAB4	0.03713741771	2183	2289	false
+seed_score	obs-ay	rev	1079	TRM	0.04892846512	2183	2289	false
+seed_score	obs-ay	rev	1079	TRM-inf1x1	0.04892842464	2183	2289	false
+seed_score	obs-ay	rev	1079	TRM-1x1	0.04233848211	2183	2289	false
+seed_score	obs-ay	rev	1079	TRM_raw	0.04892846512	2183	2289	false
+seed_score	obs-ay	rev	1080	TAB_R1	0.01309035647	1965	1964	false
+seed_score	obs-ay	rev	1080	B1	0.04743916427	1965	1964	false
+seed_score	obs-ay	rev	1080	RATE	0.04725372217	1965	1964	false
+seed_score	obs-ay	rev	1080	TAB4	0.03592010663	1965	1964	false
+seed_score	obs-ay	rev	1080	TRM	0.04729940932	1965	1964	false
+seed_score	obs-ay	rev	1080	TRM-inf1x1	0.04729933398	1965	1964	false
+seed_score	obs-ay	rev	1080	TRM-1x1	0.04050369938	1965	1964	false
+seed_score	obs-ay	rev	1080	TRM_raw	0.04729940932	1965	1964	false
+seed_score	obs-ay	rev	1081	TAB_R1	0.009406908768	2424	2486	false
+seed_score	obs-ay	rev	1081	B1	0.03807464357	2424	2486	false
+seed_score	obs-ay	rev	1081	RATE	0.04239769922	2424	2486	false
+seed_score	obs-ay	rev	1081	TAB4	0.03029938775	2424	2486	false
+seed_score	obs-ay	rev	1081	TRM	0.04236479132	2424	2486	false
+seed_score	obs-ay	rev	1081	TRM-inf1x1	0.04236485377	2424	2486	false
+seed_score	obs-ay	rev	1081	TRM-1x1	0.03806752032	2424	2486	false
+seed_score	obs-ay	rev	1081	TRM_raw	0.04236479132	2424	2486	false
+seed_score	obs-ay	rev	1082	TAB_R1	0.01513129728	1832	1803	false
+seed_score	obs-ay	rev	1082	B1	0.04559363572	1832	1803	false
+seed_score	obs-ay	rev	1082	RATE	0.04120866295	1832	1803	false
+seed_score	obs-ay	rev	1082	TAB4	0.03173598581	1832	1803	false
+seed_score	obs-ay	rev	1082	TRM	0.04112651032	1832	1803	false
+seed_score	obs-ay	rev	1082	TRM-inf1x1	0.04112657441	1832	1803	false
+seed_score	obs-ay	rev	1082	TRM-1x1	0.03503925903	1832	1803	false
+seed_score	obs-ay	rev	1082	TRM_raw	0.04112651032	1832	1803	false
+seed_score	obs-ay	rev	1083	TAB_R1	0.02242491671	1507	1591	false
+seed_score	obs-ay	rev	1083	B1	0.08394173274	1507	1591	false
+seed_score	obs-ay	rev	1083	RATE	0.09597735036	1507	1591	false
+seed_score	obs-ay	rev	1083	TAB4	0.06346266317	1507	1591	false
+seed_score	obs-ay	rev	1083	TRM	0.09652100861	1507	1591	false
+seed_score	obs-ay	rev	1083	TRM-inf1x1	0.09651950275	1507	1591	false
+seed_score	obs-ay	rev	1083	TRM-1x1	0.07963090298	1507	1591	false
+seed_score	obs-ay	rev	1083	TRM_raw	0.09652100861	1507	1591	false
+seed_score	obs-ay	rev	1084	TAB_R1	0.01236306443	2173	2160	false
+seed_score	obs-ay	rev	1084	B1	0.04744225803	2173	2160	false
+seed_score	obs-ay	rev	1084	RATE	0.04805717562	2173	2160	false
+seed_score	obs-ay	rev	1084	TAB4	0.03374464841	2173	2160	false
+seed_score	obs-ay	rev	1084	TRM	0.04810580624	2173	2160	false
+seed_score	obs-ay	rev	1084	TRM-inf1x1	0.04810572357	2173	2160	false
+seed_score	obs-ay	rev	1084	TRM-1x1	0.03906834299	2173	2160	false
+seed_score	obs-ay	rev	1084	TRM_raw	0.04810580624	2173	2160	false
+seed_score	obs-ay	rev	1085	TAB_R1	0.01534077856	2317	2266	false
+seed_score	obs-ay	rev	1085	B1	0.04099244701	2317	2266	false
+seed_score	obs-ay	rev	1085	RATE	0.04378870868	2317	2266	false
+seed_score	obs-ay	rev	1085	TAB4	0.0308515815	2317	2266	false
+seed_score	obs-ay	rev	1085	TRM	0.04366627893	2317	2266	false
+seed_score	obs-ay	rev	1085	TRM-inf1x1	0.04366632548	2317	2266	false
+seed_score	obs-ay	rev	1085	TRM-1x1	0.03341642177	2317	2266	false
+seed_score	obs-ay	rev	1085	TRM_raw	0.04366627893	2317	2266	false
+seed_score	obs-ay	rev	1086	TAB_R1	0.01034382928	2519	2455	false
+seed_score	obs-ay	rev	1086	B1	0.03332558488	2519	2455	false
+seed_score	obs-ay	rev	1086	RATE	0.04101650919	2519	2455	false
+seed_score	obs-ay	rev	1086	TAB4	0.02822606851	2519	2455	false
+seed_score	obs-ay	rev	1086	TRM	0.04100819516	2519	2455	false
+seed_score	obs-ay	rev	1086	TRM-inf1x1	0.04100836511	2519	2455	false
+seed_score	obs-ay	rev	1086	TRM-1x1	0.03292990852	2519	2455	false
+seed_score	obs-ay	rev	1086	TRM_raw	0.04100819516	2519	2455	false
+seed_score	obs-ay	rev	1087	TAB_R1	0.009256698713	2549	2513	false
+seed_score	obs-ay	rev	1087	B1	0.03244162126	2549	2513	false
+seed_score	obs-ay	rev	1087	RATE	0.03569692598	2549	2513	false
+seed_score	obs-ay	rev	1087	TAB4	0.02617292682	2549	2513	false
+seed_score	obs-ay	rev	1087	TRM	0.03552837681	2549	2513	false
+seed_score	obs-ay	rev	1087	TRM-inf1x1	0.03552862777	2549	2513	false
+seed_score	obs-ay	rev	1087	TRM-1x1	0.02982826493	2549	2513	false
+seed_score	obs-ay	rev	1087	TRM_raw	0.03552837681	2549	2513	false
+seed_score	obs-ay	rev	1088	TAB_R1	0.01633770519	2100	2115	false
+seed_score	obs-ay	rev	1088	B1	0.04377430474	2100	2115	false
+seed_score	obs-ay	rev	1088	RATE	0.04926578131	2100	2115	false
+seed_score	obs-ay	rev	1088	TAB4	0.03643113836	2100	2115	false
+seed_score	obs-ay	rev	1088	TRM	0.04923643524	2100	2115	false
+seed_score	obs-ay	rev	1088	TRM-inf1x1	0.04923630103	2100	2115	false
+seed_score	obs-ay	rev	1088	TRM-1x1	0.0414279682	2100	2115	false
+seed_score	obs-ay	rev	1088	TRM_raw	0.04923643524	2100	2115	false
+seed_score	obs-ay	rev	1089	TAB_R1	0.01749534501	2113	2070	false
+seed_score	obs-ay	rev	1089	B1	0.05492992171	2113	2070	false
+seed_score	obs-ay	rev	1089	RATE	0.06561973792	2113	2070	false
+seed_score	obs-ay	rev	1089	TAB4	0.04337792702	2113	2070	false
+seed_score	obs-ay	rev	1089	TRM	0.06576671755	2113	2070	false
+seed_score	obs-ay	rev	1089	TRM-inf1x1	0.0657661239	2113	2070	false
+seed_score	obs-ay	rev	1089	TRM-1x1	0.05417730183	2113	2070	false
+seed_score	obs-ay	rev	1089	TRM_raw	0.06576671755	2113	2070	false
+seed_score	obs-ay	rev	1090	TAB_R1	0.01169856006	2325	2337	false
+seed_score	obs-ay	rev	1090	B1	0.03442941221	2325	2337	false
+seed_score	obs-ay	rev	1090	RATE	0.04218348668	2325	2337	false
+seed_score	obs-ay	rev	1090	TAB4	0.02969806206	2325	2337	false
+seed_score	obs-ay	rev	1090	TRM	0.04213322847	2325	2337	false
+seed_score	obs-ay	rev	1090	TRM-inf1x1	0.04213330152	2325	2337	false
+seed_score	obs-ay	rev	1090	TRM-1x1	0.03622618783	2325	2337	false
+seed_score	obs-ay	rev	1090	TRM_raw	0.04213322847	2325	2337	false
+seed_score	obs-ay	rev	1091	TAB_R1	0.01239371071	2124	2140	false
+seed_score	obs-ay	rev	1091	B1	0.04430321124	2124	2140	false
+seed_score	obs-ay	rev	1091	RATE	0.04653754724	2124	2140	false
+seed_score	obs-ay	rev	1091	TAB4	0.03216639297	2124	2140	false
+seed_score	obs-ay	rev	1091	TRM	0.04648762988	2124	2140	false
+seed_score	obs-ay	rev	1091	TRM-inf1x1	0.04648761027	2124	2140	false
+seed_score	obs-ay	rev	1091	TRM-1x1	0.03869606056	2124	2140	false
+seed_score	obs-ay	rev	1091	TRM_raw	0.04648762988	2124	2140	false
+seed_score	obs-ay	rev	1092	TAB_R1	0.01726149221	2300	2333	false
+seed_score	obs-ay	rev	1092	B1	0.04488248592	2300	2333	false
+seed_score	obs-ay	rev	1092	RATE	0.04853230054	2300	2333	false
+seed_score	obs-ay	rev	1092	TAB4	0.0395519954	2300	2333	false
+seed_score	obs-ay	rev	1092	TRM	0.04858783078	2300	2333	false
+seed_score	obs-ay	rev	1092	TRM-inf1x1	0.04858774035	2300	2333	false
+seed_score	obs-ay	rev	1092	TRM-1x1	0.0405242074	2300	2333	false
+seed_score	obs-ay	rev	1092	TRM_raw	0.04858783078	2300	2333	false
+seed_score	obs-ay	rev	1093	TAB_R1	0.01158075654	2373	2351	false
+seed_score	obs-ay	rev	1093	B1	0.03787435547	2373	2351	false
+seed_score	obs-ay	rev	1093	RATE	0.0417081917	2373	2351	false
+seed_score	obs-ay	rev	1093	TAB4	0.02862049446	2373	2351	false
+seed_score	obs-ay	rev	1093	TRM	0.04169504697	2373	2351	false
+seed_score	obs-ay	rev	1093	TRM-inf1x1	0.04169515147	2373	2351	false
+seed_score	obs-ay	rev	1093	TRM-1x1	0.03648761342	2373	2351	false
+seed_score	obs-ay	rev	1093	TRM_raw	0.04169504697	2373	2351	false
+seed_score	obs-ay	rev	1094	TAB_R1	0.01087254463	2263	2244	false
+seed_score	obs-ay	rev	1094	B1	0.04648934868	2263	2244	false
+seed_score	obs-ay	rev	1094	RATE	0.05081150312	2263	2244	false
+seed_score	obs-ay	rev	1094	TAB4	0.03628322828	2263	2244	false
+seed_score	obs-ay	rev	1094	TRM	0.05084016763	2263	2244	false
+seed_score	obs-ay	rev	1094	TRM-inf1x1	0.05084001455	2263	2244	false
+seed_score	obs-ay	rev	1094	TRM-1x1	0.04556176229	2263	2244	false
+seed_score	obs-ay	rev	1094	TRM_raw	0.05084016763	2263	2244	false
+seed_score	obs-ay	rev	1095	TAB_R1	0.01237388293	2460	2436	false
+seed_score	obs-ay	rev	1095	B1	0.03696146105	2460	2436	false
+seed_score	obs-ay	rev	1095	RATE	0.04150705553	2460	2436	false
+seed_score	obs-ay	rev	1095	TAB4	0.03002580167	2460	2436	false
+seed_score	obs-ay	rev	1095	TRM	0.0415006664	2460	2436	false
+seed_score	obs-ay	rev	1095	TRM-inf1x1	0.0415007917	2460	2436	false
+seed_score	obs-ay	rev	1095	TRM-1x1	0.03278098291	2460	2436	false
+seed_score	obs-ay	rev	1095	TRM_raw	0.0415006664	2460	2436	false
+seed_score	obs-ay	rev	1096	TAB_R1	0.01090794869	2245	2192	false
+seed_score	obs-ay	rev	1096	B1	0.04409351057	2245	2192	false
+seed_score	obs-ay	rev	1096	RATE	0.04501034124	2245	2192	false
+seed_score	obs-ay	rev	1096	TAB4	0.0322170626	2245	2192	false
+seed_score	obs-ay	rev	1096	TRM	0.04509873799	2245	2192	false
+seed_score	obs-ay	rev	1096	TRM-inf1x1	0.0450987269	2245	2192	false
+seed_score	obs-ay	rev	1096	TRM-1x1	0.03801991484	2245	2192	false
+seed_score	obs-ay	rev	1096	TRM_raw	0.04509873799	2245	2192	false
+seed_score	obs-ay	rev	1097	TAB_R1	0.01008956836	2707	2633	false
+seed_score	obs-ay	rev	1097	B1	0.03175550801	2707	2633	false
+seed_score	obs-ay	rev	1097	RATE	0.03421673112	2707	2633	false
+seed_score	obs-ay	rev	1097	TAB4	0.02680756706	2707	2633	false
+seed_score	obs-ay	rev	1097	TRM	0.03405945956	2707	2633	false
+seed_score	obs-ay	rev	1097	TRM-inf1x1	0.03405977752	2707	2633	false
+seed_score	obs-ay	rev	1097	TRM-1x1	0.02975151283	2707	2633	false
+seed_score	obs-ay	rev	1097	TRM_raw	0.03405945956	2707	2633	false
+compare	obs-ay	rev	TRM	RATE	24	14	10	0	0.5412561893	-1.211255868e-05	1.072937621e-05	-7.360711061e-05	3.654552983e-05	-0.0005436582445	0.0001685491692	true	false
+compare	obs-ay	rev	TRM	B1	24	2	22	0	3.588199615e-05	-0.004318493821	-0.003826956324	-0.005894223691	-0.002805215613	-0.01257927586	0.004467125403	true	false
+compare	obs-ay	rev	TRM	TAB4	24	0	24	0	1.192092896e-07	-0.01356275147	-0.01279371177	-0.01598587784	-0.01158400255	-0.03305834544	-0.007251892502	true	false
+compare	obs-ay	rev	TRM	TAB_R1	24	0	24	0	1.192092896e-07	-0.03472722207	-0.03208512136	-0.03951344909	-0.03081069593	-0.0740960919	-0.0226838111	true	false
+compare	obs-ay	rev	TRM	TRM-1x1	24	1	23	0	2.980232239e-06	-0.007071465015	-0.006937266542	-0.008344577165	-0.005855747527	-0.01689010562	0.0001385241495	true	false
+compare	obs-ay	rev	TRM	TRM-inf1x1	24	11	13	0	0.8388197422	-8.69276326e-08	-1.534858985e-08	-2.567601637e-07	4.557885795e-08	-1.505858733e-06	3.279560926e-07	true	false
+seed_score	exo	stat	1074	B1	0.06752562184	4627	4573	false
+seed_score	exo	stat	1074	RATE	0.55457173	4627	4573	false
+seed_score	exo	stat	1074	TAB4	0.05578112834	4627	4573	false
+seed_score	exo	stat	1074	TRM	0.09980534296	4627	4573	false
+seed_score	exo	stat	1074	TRM-inf1x1	0.4025105644	4627	4573	false
+seed_score	exo	stat	1074	TRM-1x1	0.06964248087	4627	4573	false
+seed_score	exo	stat	1074	TRM_raw	0.09980534296	4627	4573	false
+seed_score	exo	stat	1075	B1	0.05978095223	4620	4580	false
+seed_score	exo	stat	1075	RATE	0.4314381351	4620	4580	false
+seed_score	exo	stat	1075	TAB4	0.04504139834	4620	4580	false
+seed_score	exo	stat	1075	TRM	0.07098519863	4620	4580	false
+seed_score	exo	stat	1075	TRM-inf1x1	0.2675141641	4620	4580	false
+seed_score	exo	stat	1075	TRM-1x1	0.05560293867	4620	4580	false
+seed_score	exo	stat	1075	TRM_raw	0.07098519863	4620	4580	false
+seed_score	exo	stat	1076	B1	0.0623501938	4551	4649	false
+seed_score	exo	stat	1076	RATE	0.4577168548	4551	4649	false
+seed_score	exo	stat	1076	TAB4	0.04623378894	4551	4649	false
+seed_score	exo	stat	1076	TRM	0.07245608247	4551	4649	false
+seed_score	exo	stat	1076	TRM-inf1x1	0.2879488298	4551	4649	false
+seed_score	exo	stat	1076	TRM-1x1	0.05673730077	4551	4649	false
+seed_score	exo	stat	1076	TRM_raw	0.07245608247	4551	4649	false
+seed_score	exo	stat	1077	B1	0.06842291864	4591	4609	false
+seed_score	exo	stat	1077	RATE	0.5527837903	4591	4609	false
+seed_score	exo	stat	1077	TAB4	0.05454829076	4591	4609	false
+seed_score	exo	stat	1077	TRM	0.1030550165	4591	4609	false
+seed_score	exo	stat	1077	TRM-inf1x1	0.3984483991	4591	4609	false
+seed_score	exo	stat	1077	TRM-1x1	0.0650409922	4591	4609	false
+seed_score	exo	stat	1077	TRM_raw	0.1030550165	4591	4609	false
+seed_score	exo	stat	1078	B1	0.06889305823	4561	4639	false
+seed_score	exo	stat	1078	RATE	0.4617900783	4561	4639	false
+seed_score	exo	stat	1078	TAB4	0.05225932123	4561	4639	false
+seed_score	exo	stat	1078	TRM	0.09028140698	4561	4639	false
+seed_score	exo	stat	1078	TRM-inf1x1	0.3101739996	4561	4639	false
+seed_score	exo	stat	1078	TRM-1x1	0.06522199	4561	4639	false
+seed_score	exo	stat	1078	TRM_raw	0.09028140698	4561	4639	false
+seed_score	exo	stat	1079	B1	0.07076336791	4592	4608	false
+seed_score	exo	stat	1079	RATE	0.5004068448	4592	4608	false
+seed_score	exo	stat	1079	TAB4	0.05366703106	4592	4608	false
+seed_score	exo	stat	1079	TRM	0.0912661069	4592	4608	false
+seed_score	exo	stat	1079	TRM-inf1x1	0.3485125803	4592	4608	false
+seed_score	exo	stat	1079	TRM-1x1	0.06637171659	4592	4608	false
+seed_score	exo	stat	1079	TRM_raw	0.0912661069	4592	4608	false
+seed_score	exo	stat	1080	B1	0.07301952069	4620	4580	false
+seed_score	exo	stat	1080	RATE	0.5121456031	4620	4580	false
+seed_score	exo	stat	1080	TAB4	0.05756424906	4620	4580	false
+seed_score	exo	stat	1080	TRM	0.0997786053	4620	4580	false
+seed_score	exo	stat	1080	TRM-inf1x1	0.3908766504	4620	4580	false
+seed_score	exo	stat	1080	TRM-1x1	0.06924830999	4620	4580	false
+seed_score	exo	stat	1080	TRM_raw	0.0997786053	4620	4580	false
+seed_score	exo	stat	1081	B1	0.06085381183	4626	4574	false
+seed_score	exo	stat	1081	RATE	0.4474349028	4626	4574	false
+seed_score	exo	stat	1081	TAB4	0.04804468452	4626	4574	false
+seed_score	exo	stat	1081	TRM	0.07925823282	4626	4574	false
+seed_score	exo	stat	1081	TRM-inf1x1	0.2827497339	4626	4574	false
+seed_score	exo	stat	1081	TRM-1x1	0.06025851956	4626	4574	false
+seed_score	exo	stat	1081	TRM_raw	0.07925823282	4626	4574	false
+seed_score	exo	stat	1082	B1	0.06508414004	4690	4510	false
+seed_score	exo	stat	1082	RATE	0.5470663054	4690	4510	false
+seed_score	exo	stat	1082	TAB4	0.05641283634	4690	4510	false
+seed_score	exo	stat	1082	TRM	0.1031516222	4690	4510	false
+seed_score	exo	stat	1082	TRM-inf1x1	0.4037299766	4690	4510	false
+seed_score	exo	stat	1082	TRM-1x1	0.06631931661	4690	4510	false
+seed_score	exo	stat	1082	TRM_raw	0.1031516222	4690	4510	false
+seed_score	exo	stat	1083	B1	0.08253206793	4493	4707	false
+seed_score	exo	stat	1083	RATE	0.6103024102	4493	4707	false
+seed_score	exo	stat	1083	TAB4	0.06159469473	4493	4707	false
+seed_score	exo	stat	1083	TRM	0.1093548318	4493	4707	false
+seed_score	exo	stat	1083	TRM-inf1x1	0.4600449571	4493	4707	false
+seed_score	exo	stat	1083	TRM-1x1	0.07263811001	4493	4707	false
+seed_score	exo	stat	1083	TRM_raw	0.1093548318	4493	4707	false
+seed_score	exo	stat	1084	B1	0.07034982912	4622	4578	false
+seed_score	exo	stat	1084	RATE	0.5004207274	4622	4578	false
+seed_score	exo	stat	1084	TAB4	0.05400157337	4622	4578	false
+seed_score	exo	stat	1084	TRM	0.08996953817	4622	4578	false
+seed_score	exo	stat	1084	TRM-inf1x1	0.3455191786	4622	4578	false
+seed_score	exo	stat	1084	TRM-1x1	0.07136801367	4622	4578	false
+seed_score	exo	stat	1084	TRM_raw	0.08996953817	4622	4578	false
+seed_score	exo	stat	1085	B1	0.06979983648	4635	4565	false
+seed_score	exo	stat	1085	RATE	0.4781759305	4635	4565	false
+seed_score	exo	stat	1085	TAB4	0.05184570575	4635	4565	false
+seed_score	exo	stat	1085	TRM	0.08360736603	4635	4565	false
+seed_score	exo	stat	1085	TRM-inf1x1	0.2944293892	4635	4565	false
+seed_score	exo	stat	1085	TRM-1x1	0.06635834191	4635	4565	false
+seed_score	exo	stat	1085	TRM_raw	0.08360736603	4635	4565	false
+seed_score	exo	stat	1086	B1	0.04792827584	4605	4595	false
+seed_score	exo	stat	1086	RATE	0.4307834204	4605	4595	false
+seed_score	exo	stat	1086	TAB4	0.0465621474	4605	4595	false
+seed_score	exo	stat	1086	TRM	0.07903548676	4605	4595	false
+seed_score	exo	stat	1086	TRM-inf1x1	0.271292451	4605	4595	false
+seed_score	exo	stat	1086	TRM-1x1	0.05942234195	4605	4595	false
+seed_score	exo	stat	1086	TRM_raw	0.07903548676	4605	4595	false
+seed_score	exo	stat	1087	B1	0.06145476862	4641	4559	false
+seed_score	exo	stat	1087	RATE	0.462249896	4641	4559	false
+seed_score	exo	stat	1087	TAB4	0.04752875686	4641	4559	false
+seed_score	exo	stat	1087	TRM	0.07652290749	4641	4559	false
+seed_score	exo	stat	1087	TRM-inf1x1	0.265769107	4641	4559	false
+seed_score	exo	stat	1087	TRM-1x1	0.06114211138	4641	4559	false
+seed_score	exo	stat	1087	TRM_raw	0.07652290749	4641	4559	false
+seed_score	exo	stat	1088	B1	0.06443729938	4542	4658	false
+seed_score	exo	stat	1088	RATE	0.5113622006	4542	4658	false
+seed_score	exo	stat	1088	TAB4	0.05154943339	4542	4658	false
+seed_score	exo	stat	1088	TRM	0.08704466864	4542	4658	false
+seed_score	exo	stat	1088	TRM-inf1x1	0.3287205897	4542	4658	false
+seed_score	exo	stat	1088	TRM-1x1	0.0639842477	4542	4658	false
+seed_score	exo	stat	1088	TRM_raw	0.08704466864	4542	4658	false
+seed_score	exo	stat	1089	B1	0.06515030125	4637	4563	false
+seed_score	exo	stat	1089	RATE	0.5204562309	4637	4563	false
+seed_score	exo	stat	1089	TAB4	0.05121335917	4637	4563	false
+seed_score	exo	stat	1089	TRM	0.08784925119	4637	4563	false
+seed_score	exo	stat	1089	TRM-inf1x1	0.3536706838	4637	4563	false
+seed_score	exo	stat	1089	TRM-1x1	0.06157663255	4637	4563	false
+seed_score	exo	stat	1089	TRM_raw	0.08784925119	4637	4563	false
+seed_score	exo	stat	1090	B1	0.05483418735	4618	4582	false
+seed_score	exo	stat	1090	RATE	0.4496672014	4618	4582	false
+seed_score	exo	stat	1090	TAB4	0.04704416304	4618	4582	false
+seed_score	exo	stat	1090	TRM	0.07847906474	4618	4582	false
+seed_score	exo	stat	1090	TRM-inf1x1	0.299786242	4618	4582	false
+seed_score	exo	stat	1090	TRM-1x1	0.05801985896	4618	4582	false
+seed_score	exo	stat	1090	TRM_raw	0.07847906474	4618	4582	false
+seed_score	exo	stat	1091	B1	0.06466557189	4563	4637	false
+seed_score	exo	stat	1091	RATE	0.5194670314	4563	4637	false
+seed_score	exo	stat	1091	TAB4	0.04944500708	4563	4637	false
+seed_score	exo	stat	1091	TRM	0.08719184288	4563	4637	false
+seed_score	exo	stat	1091	TRM-inf1x1	0.3683142311	4563	4637	false
+seed_score	exo	stat	1091	TRM-1x1	0.05878583591	4563	4637	false
+seed_score	exo	stat	1091	TRM_raw	0.08719184288	4563	4637	false
+seed_score	exo	stat	1092	B1	0.06904794993	4507	4693	false
+seed_score	exo	stat	1092	RATE	0.4815023477	4507	4693	false
+seed_score	exo	stat	1092	TAB4	0.05461699217	4507	4693	false
+seed_score	exo	stat	1092	TRM	0.09302929266	4507	4693	false
+seed_score	exo	stat	1092	TRM-inf1x1	0.3304622891	4507	4693	false
+seed_score	exo	stat	1092	TRM-1x1	0.06465535668	4507	4693	false
+seed_score	exo	stat	1092	TRM_raw	0.09302929266	4507	4693	false
+seed_score	exo	stat	1093	B1	0.05434659513	4610	4590	false
+seed_score	exo	stat	1093	RATE	0.4792832762	4610	4590	false
+seed_score	exo	stat	1093	TAB4	0.04486535589	4610	4590	false
+seed_score	exo	stat	1093	TRM	0.07657813912	4610	4590	false
+seed_score	exo	stat	1093	TRM-inf1x1	0.3180432543	4610	4590	false
+seed_score	exo	stat	1093	TRM-1x1	0.0563438449	4610	4590	false
+seed_score	exo	stat	1093	TRM_raw	0.07657813912	4610	4590	false
+seed_score	exo	stat	1094	B1	0.06990685563	4634	4566	false
+seed_score	exo	stat	1094	RATE	0.4952398989	4634	4566	false
+seed_score	exo	stat	1094	TAB4	0.05133555142	4634	4566	false
+seed_score	exo	stat	1094	TRM	0.08443175394	4634	4566	false
+seed_score	exo	stat	1094	TRM-inf1x1	0.3388820229	4634	4566	false
+seed_score	exo	stat	1094	TRM-1x1	0.06338177311	4634	4566	false
+seed_score	exo	stat	1094	TRM_raw	0.08443175394	4634	4566	false
+seed_score	exo	stat	1095	B1	0.0547235483	4610	4590	false
+seed_score	exo	stat	1095	RATE	0.4646420476	4610	4590	false
+seed_score	exo	stat	1095	TAB4	0.04676841972	4610	4590	false
+seed_score	exo	stat	1095	TRM	0.08051198182	4610	4590	false
+seed_score	exo	stat	1095	TRM-inf1x1	0.3055385237	4610	4590	false
+seed_score	exo	stat	1095	TRM-1x1	0.05618760115	4610	4590	false
+seed_score	exo	stat	1095	TRM_raw	0.08051198182	4610	4590	false
+seed_score	exo	stat	1096	B1	0.06609942535	4628	4572	false
+seed_score	exo	stat	1096	RATE	0.4997580916	4628	4572	false
+seed_score	exo	stat	1096	TAB4	0.04979269318	4628	4572	false
+seed_score	exo	stat	1096	TRM	0.08298787222	4628	4572	false
+seed_score	exo	stat	1096	TRM-inf1x1	0.3310729442	4628	4572	false
+seed_score	exo	stat	1096	TRM-1x1	0.06066375169	4628	4572	false
+seed_score	exo	stat	1096	TRM_raw	0.08298787222	4628	4572	false
+seed_score	exo	stat	1097	B1	0.05646848533	4597	4603	false
+seed_score	exo	stat	1097	RATE	0.4194909859	4597	4603	false
+seed_score	exo	stat	1097	TAB4	0.0461895778	4597	4603	false
+seed_score	exo	stat	1097	TRM	0.0772538615	4597	4603	false
+seed_score	exo	stat	1097	TRM-inf1x1	0.2870023263	4597	4603	false
+seed_score	exo	stat	1097	TRM-1x1	0.05827799355	4597	4603	false
+seed_score	exo	stat	1097	TRM_raw	0.0772538615	4597	4603	false
+compare	exo	stat	TRM	RATE	24	24	0	0	1.192092896e-07	0.4043446028	0.4059229375	0.3902621777	0.4192083642	0.3422371244	0.5009475783	true	true
+compare	exo	stat	TRM	B1	24	0	24	0	1.192092896e-07	-0.02231028713	-0.02237890749	-0.02514539247	-0.01955671588	-0.0380674822	-0.01010588867	true	false
+compare	exo	stat	TRM	TAB4	24	0	24	0	1.192092896e-07	-0.03583247142	-0.03461939868	-0.03836460267	-0.03347571679	-0.04850672572	-0.02594380029	true	false
+compare	exo	stat	TRM	TRM-1x1	24	0	24	0	1.192092896e-07	-0.02402650389	-0.02269227074	-0.02670466321	-0.02152693013	-0.03801402428	-0.01538079612	true	false
+compare	exo	stat	TRM	TRM-inf1x1	24	24	0	0	1.192092896e-07	0.2461303173	0.2415705181	0.2308553348	0.2627816123	0.1892461995	0.3506901252	true	true
+seed_score	exo	rev	1074	B1	0.07015051189	4627	4573	false
+seed_score	exo	rev	1074	RATE	0.5523063605	4627	4573	false
+seed_score	exo	rev	1074	TAB4	0.05336678916	4627	4573	false
+seed_score	exo	rev	1074	TRM	0.07333693503	4627	4573	false
+seed_score	exo	rev	1074	TRM-inf1x1	0.3821874558	4627	4573	false
+seed_score	exo	rev	1074	TRM-1x1	0.06933410506	4627	4573	false
+seed_score	exo	rev	1074	TRM_raw	0.07333693503	4627	4573	false
+seed_score	exo	rev	1075	B1	0.06152129303	4620	4580	false
+seed_score	exo	rev	1075	RATE	0.4349564832	4620	4580	false
+seed_score	exo	rev	1075	TAB4	0.0454295233	4620	4580	false
+seed_score	exo	rev	1075	TRM	0.05866245443	4620	4580	false
+seed_score	exo	rev	1075	TRM-inf1x1	0.2686446032	4620	4580	false
+seed_score	exo	rev	1075	TRM-1x1	0.05852012806	4620	4580	false
+seed_score	exo	rev	1075	TRM_raw	0.05866245443	4620	4580	false
+seed_score	exo	rev	1076	B1	0.06217405263	4551	4649	false
+seed_score	exo	rev	1076	RATE	0.4666433814	4551	4649	false
+seed_score	exo	rev	1076	TAB4	0.04827677334	4551	4649	false
+seed_score	exo	rev	1076	TRM	0.0627026256	4551	4649	false
+seed_score	exo	rev	1076	TRM-inf1x1	0.2991635445	4551	4649	false
+seed_score	exo	rev	1076	TRM-1x1	0.06345623865	4551	4649	false
+seed_score	exo	rev	1076	TRM_raw	0.0627026256	4551	4649	false
+seed_score	exo	rev	1077	B1	0.06842463589	4591	4609	false
+seed_score	exo	rev	1077	RATE	0.5678287533	4591	4609	false
+seed_score	exo	rev	1077	TAB4	0.05126726296	4591	4609	false
+seed_score	exo	rev	1077	TRM	0.07194762091	4591	4609	false
+seed_score	exo	rev	1077	TRM-inf1x1	0.3978380869	4591	4609	false
+seed_score	exo	rev	1077	TRM-1x1	0.06721345435	4591	4609	false
+seed_score	exo	rev	1077	TRM_raw	0.07194762091	4591	4609	false
+seed_score	exo	rev	1078	B1	0.06933508101	4561	4639	false
+seed_score	exo	rev	1078	RATE	0.4748654686	4561	4639	false
+seed_score	exo	rev	1078	TAB4	0.05127325701	4561	4639	false
+seed_score	exo	rev	1078	TRM	0.06918794518	4561	4639	false
+seed_score	exo	rev	1078	TRM-inf1x1	0.3133846137	4561	4639	false
+seed_score	exo	rev	1078	TRM-1x1	0.06599986274	4561	4639	false
+seed_score	exo	rev	1078	TRM_raw	0.06918794518	4561	4639	false
+seed_score	exo	rev	1079	B1	0.07083293776	4592	4608	false
+seed_score	exo	rev	1079	RATE	0.4957182489	4592	4608	false
+seed_score	exo	rev	1079	TAB4	0.05405821396	4592	4608	false
+seed_score	exo	rev	1079	TRM	0.0757075017	4592	4608	false
+seed_score	exo	rev	1079	TRM-inf1x1	0.344254868	4592	4608	false
+seed_score	exo	rev	1079	TRM-1x1	0.07194194242	4592	4608	false
+seed_score	exo	rev	1079	TRM_raw	0.0757075017	4592	4608	false
+seed_score	exo	rev	1080	B1	0.07186724174	4620	4580	false
+seed_score	exo	rev	1080	RATE	0.5187023563	4620	4580	false
+seed_score	exo	rev	1080	TAB4	0.054099976	4620	4580	false
+seed_score	exo	rev	1080	TRM	0.07208814551	4620	4580	false
+seed_score	exo	rev	1080	TRM-inf1x1	0.3597111571	4620	4580	false
+seed_score	exo	rev	1080	TRM-1x1	0.06653061099	4620	4580	false
+seed_score	exo	rev	1080	TRM_raw	0.07208814551	4620	4580	false
+seed_score	exo	rev	1081	B1	0.06089859511	4626	4574	false
+seed_score	exo	rev	1081	RATE	0.4487448551	4626	4574	false
+seed_score	exo	rev	1081	TAB4	0.04747268563	4626	4574	false
+seed_score	exo	rev	1081	TRM	0.06674544089	4626	4574	false
+seed_score	exo	rev	1081	TRM-inf1x1	0.2792655064	4626	4574	false
+seed_score	exo	rev	1081	TRM-1x1	0.06514442458	4626	4574	false
+seed_score	exo	rev	1081	TRM_raw	0.06674544089	4626	4574	false
+seed_score	exo	rev	1082	B1	0.0665654664	4690	4510	false
+seed_score	exo	rev	1082	RATE	0.5606596559	4690	4510	false
+seed_score	exo	rev	1082	TAB4	0.05485943904	4690	4510	false
+seed_score	exo	rev	1082	TRM	0.07517961463	4690	4510	false
+seed_score	exo	rev	1082	TRM-inf1x1	0.378954802	4690	4510	false
+seed_score	exo	rev	1082	TRM-1x1	0.07169194268	4690	4510	false
+seed_score	exo	rev	1082	TRM_raw	0.07517961463	4690	4510	false
+seed_score	exo	rev	1083	B1	0.08337018644	4493	4707	false
+seed_score	exo	rev	1083	RATE	0.6214204238	4493	4707	false
+seed_score	exo	rev	1083	TAB4	0.06064625405	4493	4707	false
+seed_score	exo	rev	1083	TRM	0.08184473919	4493	4707	false
+seed_score	exo	rev	1083	TRM-inf1x1	0.4548665438	4493	4707	false
+seed_score	exo	rev	1083	TRM-1x1	0.07486949177	4493	4707	false
+seed_score	exo	rev	1083	TRM_raw	0.08184473919	4493	4707	false
+seed_score	exo	rev	1084	B1	0.07028690032	4622	4578	false
+seed_score	exo	rev	1084	RATE	0.4960629583	4622	4578	false
+seed_score	exo	rev	1084	TAB4	0.05180179588	4622	4578	false
+seed_score	exo	rev	1084	TRM	0.07084541073	4622	4578	false
+seed_score	exo	rev	1084	TRM-inf1x1	0.3427854139	4622	4578	false
+seed_score	exo	rev	1084	TRM-1x1	0.06738954591	4622	4578	false
+seed_score	exo	rev	1084	TRM_raw	0.07084541073	4622	4578	false
+seed_score	exo	rev	1085	B1	0.06979232024	4635	4565	false
+seed_score	exo	rev	1085	RATE	0.4859751853	4635	4565	false
+seed_score	exo	rev	1085	TAB4	0.05061326049	4635	4565	false
+seed_score	exo	rev	1085	TRM	0.06661057127	4635	4565	false
+seed_score	exo	rev	1085	TRM-inf1x1	0.3157190297	4635	4565	false
+seed_score	exo	rev	1085	TRM-1x1	0.06778348204	4635	4565	false
+seed_score	exo	rev	1085	TRM_raw	0.06661057127	4635	4565	false
+seed_score	exo	rev	1086	B1	0.04819492009	4605	4595	false
+seed_score	exo	rev	1086	RATE	0.4338318391	4605	4595	false
+seed_score	exo	rev	1086	TAB4	0.04603262533	4605	4595	false
+seed_score	exo	rev	1086	TRM	0.063093085	4605	4595	false
+seed_score	exo	rev	1086	TRM-inf1x1	0.2788288704	4605	4595	false
+seed_score	exo	rev	1086	TRM-1x1	0.06492878413	4605	4595	false
+seed_score	exo	rev	1086	TRM_raw	0.063093085	4605	4595	false
+seed_score	exo	rev	1087	B1	0.06104545122	4641	4559	false
+seed_score	exo	rev	1087	RATE	0.4518213248	4641	4559	false
+seed_score	exo	rev	1087	TAB4	0.04642544728	4641	4559	false
+seed_score	exo	rev	1087	TRM	0.06393881382	4641	4559	false
+seed_score	exo	rev	1087	TRM-inf1x1	0.297301038	4641	4559	false
+seed_score	exo	rev	1087	TRM-1x1	0.06094570766	4641	4559	false
+seed_score	exo	rev	1087	TRM_raw	0.06393881382	4641	4559	false
+seed_score	exo	rev	1088	B1	0.06385049832	4542	4658	false
+seed_score	exo	rev	1088	RATE	0.5079935723	4542	4658	false
+seed_score	exo	rev	1088	TAB4	0.05193688137	4542	4658	false
+seed_score	exo	rev	1088	TRM	0.07245110582	4542	4658	false
+seed_score	exo	rev	1088	TRM-inf1x1	0.3515384445	4542	4658	false
+seed_score	exo	rev	1088	TRM-1x1	0.06641382881	4542	4658	false
+seed_score	exo	rev	1088	TRM_raw	0.07245110582	4542	4658	false
+seed_score	exo	rev	1089	B1	0.06499377474	4637	4563	false
+seed_score	exo	rev	1089	RATE	0.5254072608	4637	4563	false
+seed_score	exo	rev	1089	TAB4	0.04907843045	4637	4563	false
+seed_score	exo	rev	1089	TRM	0.06467869473	4637	4563	false
+seed_score	exo	rev	1089	TRM-inf1x1	0.3481673598	4637	4563	false
+seed_score	exo	rev	1089	TRM-1x1	0.06237878133	4637	4563	false
+seed_score	exo	rev	1089	TRM_raw	0.06467869473	4637	4563	false
+seed_score	exo	rev	1090	B1	0.05484733057	4618	4582	false
+seed_score	exo	rev	1090	RATE	0.4521188202	4618	4582	false
+seed_score	exo	rev	1090	TAB4	0.04564703948	4618	4582	false
+seed_score	exo	rev	1090	TRM	0.06442313508	4618	4582	false
+seed_score	exo	rev	1090	TRM-inf1x1	0.2807044454	4618	4582	false
+seed_score	exo	rev	1090	TRM-1x1	0.06460565491	4618	4582	false
+seed_score	exo	rev	1090	TRM_raw	0.06442313508	4618	4582	false
+seed_score	exo	rev	1091	B1	0.06466335674	4563	4637	false
+seed_score	exo	rev	1091	RATE	0.5209509076	4563	4637	false
+seed_score	exo	rev	1091	TAB4	0.05074003181	4563	4637	false
+seed_score	exo	rev	1091	TRM	0.06897131261	4563	4637	false
+seed_score	exo	rev	1091	TRM-inf1x1	0.3659855819	4563	4637	false
+seed_score	exo	rev	1091	TRM-1x1	0.06433639778	4563	4637	false
+seed_score	exo	rev	1091	TRM_raw	0.06897131261	4563	4637	false
+seed_score	exo	rev	1092	B1	0.06805011667	4507	4693	false
+seed_score	exo	rev	1092	RATE	0.4798424368	4507	4693	false
+seed_score	exo	rev	1092	TAB4	0.05346155565	4507	4693	false
+seed_score	exo	rev	1092	TRM	0.07266016746	4507	4693	false
+seed_score	exo	rev	1092	TRM-inf1x1	0.3190318858	4507	4693	false
+seed_score	exo	rev	1092	TRM-1x1	0.07049375334	4507	4693	false
+seed_score	exo	rev	1092	TRM_raw	0.07266016746	4507	4693	false
+seed_score	exo	rev	1093	B1	0.05406970309	4610	4590	false
+seed_score	exo	rev	1093	RATE	0.4732604776	4610	4590	false
+seed_score	exo	rev	1093	TAB4	0.04764882905	4610	4590	false
+seed_score	exo	rev	1093	TRM	0.06619403922	4610	4590	false
+seed_score	exo	rev	1093	TRM-inf1x1	0.3067654662	4610	4590	false
+seed_score	exo	rev	1093	TRM-1x1	0.0666621635	4610	4590	false
+seed_score	exo	rev	1093	TRM_raw	0.06619403922	4610	4590	false
+seed_score	exo	rev	1094	B1	0.07316303035	4634	4566	false
+seed_score	exo	rev	1094	RATE	0.4878624789	4634	4566	false
+seed_score	exo	rev	1094	TAB4	0.05397143701	4634	4566	false
+seed_score	exo	rev	1094	TRM	0.07099853629	4634	4566	false
+seed_score	exo	rev	1094	TRM-inf1x1	0.3421513122	4634	4566	false
+seed_score	exo	rev	1094	TRM-1x1	0.06832913983	4634	4566	false
+seed_score	exo	rev	1094	TRM_raw	0.07099853629	4634	4566	false
+seed_score	exo	rev	1095	B1	0.05775707056	4610	4590	false
+seed_score	exo	rev	1095	RATE	0.4702082453	4610	4590	false
+seed_score	exo	rev	1095	TAB4	0.04918318312	4610	4590	false
+seed_score	exo	rev	1095	TRM	0.0678001145	4610	4590	false
+seed_score	exo	rev	1095	TRM-inf1x1	0.2948342044	4610	4590	false
+seed_score	exo	rev	1095	TRM-1x1	0.067277796	4610	4590	false
+seed_score	exo	rev	1095	TRM_raw	0.0678001145	4610	4590	false
+seed_score	exo	rev	1096	B1	0.07050719204	4628	4572	false
+seed_score	exo	rev	1096	RATE	0.4920395834	4628	4572	false
+seed_score	exo	rev	1096	TAB4	0.0530313445	4628	4572	false
+seed_score	exo	rev	1096	TRM	0.07164714097	4628	4572	false
+seed_score	exo	rev	1096	TRM-inf1x1	0.3382944622	4628	4572	false
+seed_score	exo	rev	1096	TRM-1x1	0.06932068703	4628	4572	false
+seed_score	exo	rev	1096	TRM_raw	0.07164714097	4628	4572	false
+seed_score	exo	rev	1097	B1	0.05647645005	4597	4603	false
+seed_score	exo	rev	1097	RATE	0.4265670116	4597	4603	false
+seed_score	exo	rev	1097	TAB4	0.04524356981	4597	4603	false
+seed_score	exo	rev	1097	TRM	0.06177365706	4597	4603	false
+seed_score	exo	rev	1097	TRM-inf1x1	0.252303407	4597	4603	false
+seed_score	exo	rev	1097	TRM-1x1	0.06377756866	4597	4603	false
+seed_score	exo	rev	1097	TRM_raw	0.06177365706	4597	4603	false
+compare	exo	rev	TRM	RATE	24	24	0	0	1.192092896e-07	0.4246791367	0.4181142783	0.4089202222	0.4422770699	0.3647933545	0.5395756846	true	true
+compare	exo	rev	TRM	B1	24	6	18	0	0.02265584469	-0.003777112114	-0.003354704083	-0.005711238402	-0.001928352246	-0.01489816492	0.003181748971	true	false
+compare	exo	rev	TRM	TAB4	24	0	24	0	1.192092896e-07	-0.01824680008	-0.01858050332	-0.01902946546	-0.01739290203	-0.02164928774	-0.01323293113	true	false
+compare	exo	rev	TRM	TRM-1x1	24	6	18	0	0.02265584469	-0.002255971475	-0.002497925204	-0.003221468672	-0.001272395505	-0.006975247413	0.00200391161	true	false
+compare	exo	rev	TRM	TRM-inf1x1	24	24	0	0	1.192092896e-07	0.2607997206	0.2578778898	0.2449317505	0.2775143064	0.1905297499	0.3730218046	true	true
+c0	obs-full	false
+ehat_seed	obs-full	stat	1074	3824	36	22	14	0.0539005732	0.05343964914	0.05394564809	0.05339102725	-0.008625132608	-0.009468605385	-0.009543662639	5.046450069	0.006452901118	4.950177483	0.006902541952	detectable
+ehat_seed	obs-full	stat	1075	5286	30	11	19	0.03505674451	0.03519990637	0.03785639704	0.03542490419	0.004067109132	-0.07546868567	0.01039267957	5.046450114	0.00645290108	4.998315019	0.006871623764	detectable
+ehat_seed	obs-full	stat	1076	4708	35	17	18	0.04392102018	0.04367797968	0.04542489925	0.04387629991	-0.005564371476	-0.03999542979	-0.001019235403	5.046450166	0.006452901184	4.953237386	0.006906188705	detectable
+ehat_seed	obs-full	stat	1077	3744	46	29	17	0.06837594338	0.06774603905	0.06630501884	0.06719216553	-0.009298024416	0.02127091458	-0.01761779573	5.046450075	0.006452901175	4.959910316	0.006891642964	detectable
+ehat_seed	obs-full	stat	1078	4404	39	15	24	0.05108502881	0.05029807219	0.05154167492	0.05070662451	-0.01564586061	-0.02472466003	-0.007462620607	5.046450076	0.006452901242	4.898415488	0.00698155919	detectable
+ehat_seed	obs-full	stat	1079	4488	45	21	24	0.05698763297	0.05665525931	0.05658144038	0.05633429771	-0.00586659856	0.001302949215	-0.01159746882	5.04645014	0.006452901301	4.970787941	0.006883490078	detectable
+ehat_seed	obs-full	stat	1080	3975	32	21	11	0.04702646374	0.04671709152	0.04807639327	0.04683709857	-0.006622249085	-0.02909645502	-0.004043059314	5.046450122	0.00645290121	4.951258633	0.006913558847	detectable
+ehat_seed	obs-full	stat	1081	4932	37	20	17	0.04426310032	0.04425930007	0.04571697391	0.04420244628	-8.586317321e-05	-0.03293485971	-0.001372187458	5.046450246	0.006452901256	4.989779533	0.006877431103	detectable
+ehat_seed	obs-full	stat	1082	3653	30	15	15	0.04784351572	0.04765451862	0.04877400738	0.04761609472	-0.003965984855	-0.02349176525	-0.004776137144	5.04645005	0.006452901296	4.963227585	0.006951457064	detectable
+ehat_seed	obs-full	stat	1083	3154	46	23	23	0.07995951836	0.07981023972	0.07619531198	0.07823620275	-0.00187041969	0.04529403436	-0.02202708658	5.046450085	0.006452901216	5.00310348	0.006942965247	detectable
+ehat_seed	obs-full	stat	1084	4356	33	15	18	0.04463469749	0.04403137556	0.04603425132	0.0445567365	-0.01370209128	-0.04548746738	-0.001749701512	5.046450032	0.006452901045	4.915290976	0.006846187771	detectable
+ehat_seed	obs-full	stat	1085	4493	33	19	14	0.04347046426	0.04392449474	0.04504020645	0.04344673034	0.01033661239	-0.0254006727	-0.000546276309	5.04645019	0.006452901267	5.046451722	0.006910279828	detectable
+ehat_seed	obs-full	stat	1086	4996	33	17	16	0.03974351525	0.03939262152	0.04185805975	0.03989337452	-0.008907600414	-0.06258629508	0.00375649526	5.046450104	0.006452901221	4.926620674	0.00689644466	detectable
+ehat_seed	obs-full	stat	1087	5156	26	11	15	0.03186793697	0.031904955	0.0351337279	0.03238462481	0.001160259537	-0.1011997319	0.0159547266	5.046450003	0.006452901162	4.96718864	0.006891821315	detectable
+ehat_seed	obs-full	stat	1088	4204	33	16	17	0.04601520068	0.04536493381	0.04721295247	0.04587293825	-0.01433413013	-0.04073672112	-0.00310122772	5.046450089	0.006452901152	4.902099251	0.006939560407	detectable
+ehat_seed	obs-full	stat	1089	4312	50	25	25	0.06489442884	0.064168967	0.06333242784	0.0638728105	-0.01130549343	0.01303650667	-0.01599457316	5.046450249	0.006452901143	4.944769792	0.006911801063	detectable
+ehat_seed	obs-full	stat	1090	4718	31	18	13	0.03956860987	0.03933280442	0.04170872245	0.03972661591	-0.00599513445	-0.06040550796	0.003977334341	5.04645011	0.00645290121	4.934616578	0.006955207458	detectable
+ehat_seed	obs-full	stat	1091	4321	36	21	15	0.04844315853	0.0482903334	0.04928599479	0.0481878068	-0.003164714788	-0.02061823402	-0.005299094122	5.046450174	0.006452901221	4.971932075	0.006924848518	detectable
+ehat_seed	obs-full	stat	1092	4670	41	19	22	0.05070127154	0.0503945513	0.05121401628	0.05034074118	-0.006086377022	-0.01626098374	-0.007161800863	5.046450211	0.006452901157	4.956894874	0.006936674176	detectable
+ehat_seed	obs-full	stat	1093	4620	20	8	12	0.02827107031	0.02850131965	0.03206264956	0.02895529278	0.008078550075	-0.1249531584	0.02363030734	5.046449979	0.006452901143	4.997999282	0.006894806769	detectable
+ehat_seed	obs-full	stat	1094	4614	43	18	25	0.05342296578	0.05334020584	0.05353785617	0.05293566611	-0.001551549006	-0.003705466217	-0.009205507558	5.04645008	0.006452901041	4.993576	0.006866756014	detectable
+ehat_seed	obs-full	stat	1095	4928	32	16	16	0.03918015535	0.03911152713	0.04137705165	0.03935625543	-0.001754680219	-0.05792472674	0.004474513025	5.046450048	0.006452901154	4.966114789	0.006908891427	detectable
+ehat_seed	obs-full	stat	1096	4389	27	10	17	0.03745766866	0.03698733059	0.03990635546	0.03771399782	-0.01271619395	-0.07891958742	0.006796658235	5.046450091	0.006452901263	4.89130371	0.006939980239	detectable
+ehat_seed	obs-full	stat	1097	5460	31	19	12	0.03506827001	0.03494233902	0.03786623935	0.0354358925	-0.003603965602	-0.08367786501	0.01037429747	5.046450125	0.00645290115	4.947228658	0.006892813157	detectable
+ehat_summary	obs-full	stat	O1_cal(ehat)	24	4	20	0.001543879509	-0.004875995984	-0.005715485018	-0.007376715019	-0.002195447057
+ehat_summary	obs-full	stat	O1_cal(ehat_cal)	24	4	20	0.001543879509	-0.03650635307	-0.03101565737	-0.0520639407	-0.02091930253
+ehat_summary	obs-full	stat	O1_cal(ehat_cal)-O1_cal(ehat)	24	4	20	0.001543879509	-0.03163035709	-0.02909398355	-0.04823486471	-0.01522789434
+ehat_summary	obs-full	stat	O1_min(ehat)	24	8	16	0.151589632	-0.001798350962	-0.002425464616	-0.005957649018	0.00240595889
+ehat_seed	obs-full	rev	1074	3821	38	16	22	0.05669267543	0.05637759513	0.05839991601	0.05580835861	-0.005588750359	-0.03587100284	-0.01584559813	5.030638606	0.006729697541	5.001635575	0.006702785918	detectable
+ehat_seed	obs-full	rev	1075	5243	27	14	13	0.0322935152	0.03131653092	0.03885696352	0.03295586292	-0.03119707892	-0.2407812228	0.02009802389	4.995291758	0.00660314853	4.822888998	0.006513529267	detectable
+ehat_seed	obs-full	rev	1076	4837	30	12	18	0.0366886701	0.03620034429	0.04237207391	0.03749931025	-0.01348953478	-0.170488147	0.02161746852	4.863209957	0.006566839721	4.795703862	0.006496765025	detectable
+ehat_seed	obs-full	rev	1077	3817	50	29	21	0.06850803141	0.0679038706	0.06825148042	0.06887382397	-0.008897295692	-0.005119146009	0.005311053418	4.715699263	0.006825110893	4.641178914	0.007202051595	detectable
+ehat_seed	obs-full	rev	1078	4563	37	22	15	0.04534037654	0.04380533341	0.04945271094	0.04607995081	-0.03504237981	-0.1289198617	0.01604980592	4.767357168	0.006737941437	4.54812319	0.006982584692	detectable
+ehat_seed	obs-full	rev	1079	4472	38	17	21	0.04915491187	0.04879977369	0.05229388262	0.04878781973	-0.007277455394	-0.07160092479	-0.007524257981	4.998341187	0.006739693454	4.921794694	0.007037525841	detectable
+ehat_seed	obs-full	rev	1080	3929	32	14	18	0.04722147006	0.04623890198	0.0506378544	0.04709156743	-0.02124981428	-0.09513531308	-0.002758511474	5.004461313	0.006515369221	4.882846032	0.00652336999	detectable
+ehat_seed	obs-full	rev	1081	4910	35	17	18	0.04171455915	0.04088764507	0.04644787256	0.04205173065	-0.0202240573	-0.1359879611	0.008018017287	4.904891206	0.006799444762	4.762730101	0.006987237699	detectable
+ehat_seed	obs-full	rev	1082	3635	25	14	11	0.04183176111	0.0417308233	0.04665895561	0.04150298086	-0.002418782996	-0.1180933402	-0.00792184649	5.081611413	0.006930239969	4.998578945	0.007403620239	detectable
+ehat_seed	obs-full	rev	1083	3098	57	22	35	0.09682166799	0.09368638557	0.09058350256	0.09475935329	-0.03346572069	0.03311989244	-0.02176370595	4.904403869	0.006709143995	4.721778191	0.006938199815	detectable
+ehat_seed	obs-full	rev	1084	4333	36	16	20	0.04803809059	0.04684975383	0.05134282601	0.04779873616	-0.02536484548	-0.09590385903	-0.005007547233	4.986944876	0.006660235279	4.829175458	0.006783725118	detectable
+ehat_seed	obs-full	rev	1085	4583	34	22	12	0.04260877831	0.04231715567	0.04711165352	0.04317128688	-0.006891357394	-0.1132991521	0.01302969186	4.858094189	0.006617021013	4.844848693	0.006422217817	detectable
+ehat_seed	obs-full	rev	1086	4974	34	15	19	0.04166951115	0.04184285426	0.04645908301	0.04132572265	0.004142717063	-0.110322989	-0.008318995488	5.091495313	0.006913625064	5.105722131	0.006990243846	detectable
+ehat_seed	obs-full	rev	1087	5062	29	19	10	0.03549301505	0.03484318159	0.04141121081	0.03579669951	-0.01865023312	-0.1885025685	0.008483588403	5.017529492	0.006786665387	4.902304293	0.006797011859	detectable
+ehat_seed	obs-full	rev	1088	4215	36	20	16	0.04890286594	0.04846818594	0.05224952876	0.04877664777	-0.008968357203	-0.07801700741	-0.002587676183	4.941588327	0.006754821764	4.863753809	0.006986902746	detectable
+ehat_seed	obs-full	rev	1089	4183	50	25	25	0.06626879685	0.06691567597	0.06591955582	0.06504296418	0.009667078819	0.01488620017	-0.01884650683	4.991921084	0.006679487794	5.0121577	0.007089375168	detectable
+ehat_seed	obs-full	rev	1090	4662	33	17	16	0.04160571789	0.04098946772	0.04636168867	0.04189941623	-0.01503435409	-0.1310634475	0.007009604663	4.931755325	0.006743990291	4.834536812	0.006816414712	detectable
+ehat_seed	obs-full	rev	1091	4264	34	19	15	0.04510160672	0.04482909721	0.04922340554	0.04571692273	-0.006078853324	-0.09802357394	0.01345926125	4.820046816	0.006721432458	4.778110502	0.006783809329	detectable
+ehat_seed	obs-full	rev	1092	4633	39	17	22	0.04892496709	0.04843470515	0.05215111709	0.04851022486	-0.01012212077	-0.0767303513	-0.008549583686	5.01527203	0.006763988534	4.934351085	0.006956529524	detectable
+ehat_seed	obs-full	rev	1093	4724	33	15	18	0.04076390034	0.03915056984	0.04581522145	0.0412543045	-0.04120835285	-0.1702312798	0.01188734531	4.862717881	0.006842672164	4.60573662	0.007025790553	detectable
+ehat_seed	obs-full	rev	1094	4507	40	20	20	0.05055868674	0.04867610808	0.05343488022	0.05034007472	-0.03867562014	-0.0977640229	-0.004342703475	4.950559899	0.006681353297	4.724391975	0.006807150236	detectable
+ehat_seed	obs-full	rev	1095	4896	34	15	19	0.04166246565	0.04041703879	0.04639475414	0.04160420753	-0.03081440153	-0.1479008739	-0.001400293833	5.026960428	0.006800242133	4.900628077	0.006429549012	detectable
+ehat_seed	obs-full	rev	1096	4437	34	12	22	0.0455636314	0.04466897593	0.04916506579	0.04510740671	-0.02002856446	-0.1006535243	-0.01011418562	5.09198164	0.006595152565	4.983204556	0.006533566047	detectable
+ehat_seed	obs-full	rev	1097	5340	29	18	11	0.03252801345	0.03217220969	0.03923244013	0.03370342677	-0.01105935101	-0.2194512128	0.03487518703	4.735306151	0.006849126992	4.651528406	0.006948837507	detectable
+ehat_summary	obs-full	rev	O1_cal(ehat)	24	2	22	3.588199615e-05	-0.01658072857	-0.01426194444	-0.02193194196	-0.01132633882
+ehat_summary	obs-full	rev	O1_cal(ehat_cal)	24	2	22	3.588199615e-05	-0.1075772787	-0.1054882566	-0.1326301628	-0.08103155977
+ehat_summary	obs-full	rev	O1_cal(ehat_cal)-O1_cal(ehat)	24	3	21	0.0002771615982	-0.09099655015	-0.09291110128	-0.1148115774	-0.06558901981
+ehat_summary	obs-full	rev	O1_min(ehat)	24	11	13	0.8388197422	0.001869068133	-0.001993985008	-0.003597745943	0.00739339829
+ehat_seed	obs-ay	stat	1074	3824	36	22	14	0.05390402311	0.05402617749	0.05394576971	0.05339206219	0.002261022154	0.001488311534	-0.009588708431	5.047597873	0.00644547543	5.067914177	0.006375710763	detectable
+ehat_seed	obs-ay	stat	1075	5286	30	11	19	0.03505587696	0.03541030477	0.03785664431	0.03542295763	0.01000917148	-0.06908552611	0.01036278982	5.047598094	0.006445476177	5.057640715	0.006744606085	detectable
+ehat_seed	obs-ay	stat	1076	4708	35	17	18	0.0439221812	0.04350499555	0.04542508695	0.04387575536	-0.009589373441	-0.04413496379	-0.001058120639	5.047597763	0.006445475582	4.982476549	0.006512912443	detectable
+ehat_seed	obs-ay	stat	1077	3744	46	29	17	0.06838271062	0.06819361241	0.06630504644	0.06719549104	-0.002772960659	0.02769417699	-0.01766814355	5.047597757	0.006445476407	5.008441809	0.006741092931	detectable
+ehat_seed	obs-ay	stat	1078	4404	39	15	24	0.05108783489	0.0513883868	0.0515418204	0.05070721461	0.005848634765	-0.002985764192	-0.007506235277	5.047598013	0.00644547591	5.042399134	0.006795163627	detectable
+ehat_seed	obs-ay	stat	1079	4488	45	21	24	0.05699178982	0.05683444583	0.05658154471	0.05633582097	-0.002768461708	0.004449786045	-0.01164390328	5.047597826	0.006445476154	5.020893076	0.006557012043	detectable
+ehat_seed	obs-ay	stat	1080	3975	32	21	11	0.04702833655	0.04680774844	0.04807655832	0.04683704584	-0.004712640945	-0.02710683425	-0.004084175433	5.047597627	0.006445476477	4.984351036	0.006736385218	detectable
+ehat_seed	obs-ay	stat	1081	4932	37	20	17	0.04426433852	0.04473011692	0.04571715853	0.04420195611	0.01041308251	-0.02206660021	-0.001411304375	5.047597645	0.00644547594	5.072498313	0.006726557526	detectable
+ehat_seed	obs-ay	stat	1082	3653	30	15	15	0.0478455771	0.04768167758	0.0487741688	0.04761617085	-0.003437368895	-0.02291218094	-0.004817822109	5.047597794	0.006445475931	5.01380432	0.006560043775	detectable
+ehat_seed	obs-ay	stat	1083	3154	46	23	23	0.07996893953	0.07914138847	0.07619526969	0.07824135936	-0.01045661543	0.03722601838	-0.02208014007	5.047597726	0.006445476161	4.967610922	0.006789522793	detectable
+ehat_seed	obs-ay	stat	1084	4356	33	15	18	0.04463602352	0.04486032	0.04603443479	0.04455630587	0.004999885842	-0.02617267977	-0.001789144018	5.047597794	0.006445475649	5.014809794	0.006921774391	detectable
+ehat_seed	obs-ay	stat	1085	4493	33	19	14	0.04347152114	0.04356745037	0.04504039328	0.0434461144	0.002201855355	-0.03380833394	-0.0005847874556	5.047597665	0.006445475682	5.048989925	0.006531813222	detectable
+ehat_seed	obs-ay	stat	1086	4996	33	17	16	0.03974372015	0.03992522337	0.04185827419	0.03989216937	0.004546079145	-0.04841678141	0.003721262184	5.047597981	0.006445475011	5.055846392	0.006573339722	detectable
+ehat_seed	obs-ay	stat	1087	5156	26	11	15	0.0318663379	0.03197713689	0.03513399509	0.03238217354	0.003464944011	-0.09872235332	0.01592961766	5.047598007	0.006445475638	5.000979362	0.006793110015	detectable
+ehat_seed	obs-ay	stat	1088	4204	33	16	17	0.0460168432	0.04588236512	0.04721313005	0.04587272553	-0.002930931763	-0.02900384331	-0.003141685477	5.047597852	0.006445475839	4.974958526	0.006884639563	detectable
+ehat_seed	obs-ay	stat	1089	4312	50	25	25	0.06490039514	0.06403143937	0.06333248073	0.06387558456	-0.01357076739	0.0109158664	-0.0160438545	5.047597696	0.006445476073	4.941874408	0.006806627442	detectable
+ehat_seed	obs-ay	stat	1090	4718	31	18	13	0.03956877368	0.03941285049	0.04170893594	0.03972538295	-0.003956151011	-0.05825727941	0.003942297236	5.047597784	0.00644547534	4.977391466	0.006752868184	detectable
+ehat_seed	obs-ay	stat	1091	4321	36	21	15	0.04844535625	0.04891846212	0.0492861521	0.04818797833	0.009671315264	-0.007516384657	-0.00534112304	5.047597834	0.006445475457	5.074152428	0.006699460304	detectable
+ehat_seed	obs-ay	stat	1092	4670	41	19	22	0.05070398592	0.04983327142	0.05121416344	0.05034126935	-0.01747255364	-0.02771024228	-0.007205153609	5.04759771	0.006445475951	4.89884384	0.006884592802	detectable
+ehat_seed	obs-ay	stat	1093	4620	20	8	12	0.02826864676	0.02837447573	0.03206293846	0.02895227218	0.003729724305	-0.1299922776	0.02361215078	5.047597858	0.006445476279	5.031327636	0.006622505472	detectable
+ehat_seed	obs-ay	stat	1094	4614	43	18	25	0.0534263054	0.05292960394	0.0535379846	0.05293662469	-0.009384189975	-0.01149414717	-0.009250319755	5.047597677	0.006445476481	4.938216456	0.006973066057	detectable
+ehat_seed	obs-ay	stat	1095	4928	32	16	16	0.03918023177	0.0392766466	0.04137727027	0.03935496109	0.002454762319	-0.05348276528	0.004439829673	5.047597923	0.006445475619	5.047776824	0.006541351326	detectable
+ehat_seed	obs-ay	stat	1096	4389	27	10	17	0.0374573497	0.03770094814	0.03990658709	0.03771243127	0.006461334568	-0.05850354081	0.006763859245	5.047597759	0.006445476461	5.047357274	0.00669207129	detectable
+ehat_seed	obs-ay	stat	1097	5460	31	19	12	0.03506740232	0.03522779608	0.03786648292	0.03543394769	0.00455304543	-0.07490354602	0.01034446872	5.047597616	0.006445476256	5.042863247	0.006633819476	detectable
+ehat_summary	obs-ay	stat	O1_cal(ehat)	24	13	11	0.8388197422	-0.0004348815709	0.002231438755	-0.003535051834	0.002443822497
+ehat_summary	obs-ay	stat	O1_cal(ehat_cal)	24	5	19	0.006610751152	-0.03185424522	-0.02740853826	-0.04740743776	-0.0170647264
+ehat_summary	obs-ay	stat	O1_cal(ehat_cal)-O1_cal(ehat)	24	4	20	0.001543879509	-0.03141936364	-0.02862273858	-0.04807898478	-0.0150117457
+ehat_summary	obs-ay	stat	O1_min(ehat)	24	8	16	0.151589632	-0.001837431071	-0.002465414748	-0.005999674168	0.002370160875
+ehat_seed	obs-ay	rev	1074	3821	38	16	22	0.05613692886	0.05213775707	0.0567041898	0.05602612532	-0.07670394761	-0.08758398861	-0.001977712019	4.9024246	0.007456270251	4.332376076	0.009143029046	detectable
+ehat_seed	obs-ay	rev	1075	5243	27	14	13	0.03266400259	0.02842593838	0.03661352197	0.03278036313	-0.1490914443	-0.2880321303	0.003549702666	4.902424594	0.007456269467	4.443258169	0.005573087496	detectable
+ehat_seed	obs-ay	rev	1076	4837	30	12	18	0.03781580198	0.03304810553	0.041022987	0.03788230368	-0.1442653482	-0.2413113051	0.001755481767	4.902424961	0.007456269058	4.380986028	0.005913065445	detectable
+ehat_seed	obs-ay	rev	1077	3817	50	29	21	0.07157687895	0.05988913428	0.06991937394	0.07131666246	-0.1951563471	-0.1674801245	-0.003648747438	4.902423595	0.007456269508	3.841479123	0.009695478991	detectable
+ehat_seed	obs-ay	rev	1078	4563	37	22	15	0.04714809091	0.03648485049	0.0490105719	0.04712428534	-0.292264879	-0.3433129433	-0.000505165661	4.902423316	0.00745626958	3.569590781	0.007601748545	detectable
+ehat_seed	obs-ay	rev	1079	4472	38	17	21	0.04905036093	0.04140001447	0.05063873957	0.04900814231	-0.1847909126	-0.2231575331	-0.0008614614352	4.90242409	0.007456269433	4.092125836	0.006684727774	detectable
+ehat_seed	obs-ay	rev	1080	3929	32	14	18	0.04732366082	0.04023033536	0.04916083988	0.04729815067	-0.1763178308	-0.2219843421	-0.0005393477316	4.902424506	0.007456268708	4.181984074	0.006220553567	detectable
+ehat_seed	obs-ay	rev	1081	4910	35	17	18	0.04234911707	0.03619502113	0.04490308956	0.04237174946	-0.1700260352	-0.2405874665	0.0005341387434	4.902424287	0.007456269694	4.123542412	0.006849962936	detectable
+ehat_seed	obs-ay	rev	1082	3635	25	14	11	0.04112179661	0.0339369084	0.04385261674	0.04115630825	-0.2117131035	-0.2921806613	0.0008385505733	4.902424106	0.007456268149	4.016431438	0.006357306397	detectable
+ehat_seed	obs-ay	rev	1083	3098	57	22	35	0.09751861884	0.08060085447	0.09212311186	0.09700734625	-0.2098955958	-0.1429545315	-0.005270452302	4.902423932	0.007456269988	3.934593851	0.008362248474	detectable
+ehat_seed	obs-ay	rev	1084	4333	36	16	20	0.04812528344	0.03860714363	0.04984695459	0.0480920174	-0.2465383062	-0.2911329329	-0.0006917163539	4.90242392	0.00745626996	3.899359416	0.006262000093	detectable
+ehat_seed	obs-ay	rev	1085	4583	34	22	12	0.04377066449	0.03206631178	0.04611980536	0.04377954501	-0.3650046439	-0.4382634859	0.0002028462358	4.902423131	0.00745626927	3.417608237	0.006762195392	detectable
+ehat_seed	obs-ay	rev	1086	4974	34	15	19	0.04091603621	0.0306115512	0.043676497	0.04095254036	-0.3366208052	-0.426797901	0.0008913770264	4.902423326	0.007456269441	3.417056082	0.007304038231	detectable
+ehat_seed	obs-ay	rev	1087	5062	29	19	10	0.03549934705	0.02841216337	0.03904031874	0.03558827049	-0.2494418883	-0.3740706133	0.002498672882	4.902423971	0.007456268544	3.87454851	0.006250837308	detectable
+ehat_seed	obs-ay	rev	1088	4215	36	20	16	0.04926382227	0.04068897952	0.05082144567	0.04921953939	-0.2107411603	-0.2490223711	-0.0008997012229	4.902423946	0.007456269161	4.028854833	0.006332920477	detectable
+ehat_seed	obs-ay	rev	1089	4183	50	25	25	0.0659665176	0.05209792017	0.0651174119	0.06576059382	-0.2662025159	-0.2499042511	-0.003131416077	4.902423661	0.007456269072	3.650500143	0.008565350338	detectable
+ehat_seed	obs-ay	rev	1090	4662	33	17	16	0.04210532991	0.03393492527	0.04469443214	0.04213032463	-0.2407668375	-0.3170629309	0.0005932714241	4.902423482	0.007456269851	3.779674343	0.007231663059	detectable
+ehat_seed	obs-ay	rev	1091	4264	34	19	15	0.04648743518	0.03732357023	0.04844511179	0.04647002173	-0.245524876	-0.2979763591	-0.0003747244167	4.90242366	0.007456269307	3.824340314	0.006884192142	detectable
+ehat_seed	obs-ay	rev	1092	4633	39	17	22	0.04866148123	0.04051868294	0.05030589234	0.04862302595	-0.2009640417	-0.2415480634	-0.0007908862674	4.902424132	0.00745626935	4.121128362	0.005877024804	detectable
+ehat_seed	obs-ay	rev	1093	4724	33	15	18	0.04165058152	0.0339110659	0.04430520623	0.04167997546	-0.2282297952	-0.3065117552	0.0007052291746	4.902423712	0.007456270439	3.785460607	0.007519862563	detectable
+ehat_seed	obs-ay	rev	1094	4507	40	20	20	0.05089951884	0.04407124111	0.05222144811	0.05083940301	-0.1549372689	-0.1849325501	-0.001182465203	4.902424397	0.007456269428	4.160105422	0.007213984053	detectable
+ehat_seed	obs-ay	rev	1095	4896	34	15	19	0.04144909834	0.0316878689	0.04413275273	0.041480443	-0.3080431019	-0.3927333788	0.0007556492948	4.902423688	0.007456269041	3.664143108	0.006286084017	detectable
+ehat_seed	obs-ay	rev	1096	4437	34	12	22	0.04496560391	0.03798347628	0.04714255851	0.04496291454	-0.1838201322	-0.2411333329	-5.981289578e-05	4.902424453	0.007456269163	4.21818377	0.005703937329	detectable
+ehat_seed	obs-ay	rev	1097	5340	29	18	11	0.03403942762	0.02814956402	0.03779076142	0.03414247901	-0.2092346296	-0.3424989957	0.003018274895	4.902424053	0.007456269243	4.033248547	0.006280260592	detectable
+ehat_summary	obs-ay	rev	O1_cal(ehat)	24	0	24	1.192092896e-07	-0.2190123103	-0.2103183781	-0.2446079214	-0.1941314904
+ehat_summary	obs-ay	rev	O1_cal(ehat_cal)	24	0	24	1.192092896e-07	-0.2750905812	-0.2689681907	-0.3089262591	-0.2405311981
+ehat_summary	obs-ay	rev	O1_cal(ehat_cal)-O1_cal(ehat)	24	3	21	0.0002771615982	-0.05607827086	-0.05488234197	-0.07388373028	-0.03632312923
+ehat_summary	obs-ay	rev	O1_min(ehat)	24	11	13	0.8388197422	-0.0001912672642	-0.0002172686563	-0.001003962539	0.0005501771652
+ehat_seed	exo	stat	1074	9200	193	98	95	0.2718859852	0.08313896972	0.351443128	0.09980707141	-2.270259255	-3.227176848	-1.724115449	1.553176583	0.2444307742	3.286858751	0.01449037221	detectable
+ehat_seed	exo	stat	1075	9200	118	53	65	0.2389980449	0.06136312825	0.2777871019	0.0709613914	-2.894815204	-3.526938405	-2.368001108	1.531740382	0.222201789	3.467245632	0.01711140666	detectable
+ehat_seed	exo	stat	1076	9200	122	68	54	0.2457438924	0.06241277922	0.2907367932	0.07239916811	-2.937397044	-3.658289486	-2.394291659	1.517031204	0.2286589561	3.444134105	0.01696554396	detectable
+ehat_seed	exo	stat	1077	9200	201	98	103	0.2731489175	0.08586775687	0.3518078756	0.1030599967	-2.181041726	-3.09708939	-1.650387409	1.548919335	0.2446535454	3.282386273	0.01447091036	detectable
+ehat_seed	exo	stat	1078	9200	167	75	92	0.2516197006	0.07998037604	0.2989521049	0.09033986689	-2.146017973	-2.737818197	-1.78525649	1.505358348	0.2284408725	3.506969159	0.01662300566	detectable
+ehat_seed	exo	stat	1079	9200	170	84	86	0.2594150564	0.07928300389	0.3201757665	0.09126841413	-2.272013466	-3.038390963	-1.842331149	1.541055053	0.2352867287	3.453146706	0.01576619001	detectable
+ehat_seed	exo	stat	1080	9200	192	106	86	0.26232917	0.08628176943	0.328514898	0.09980922529	-2.040377727	-2.807465936	-1.628305843	1.511072829	0.2357129641	3.414698033	0.01533861639	detectable
+ehat_seed	exo	stat	1081	9200	139	66	73	0.2450565329	0.06995888611	0.287267728	0.07923757993	-2.50286499	-3.106236447	-2.092680684	1.492779164	0.2259158812	3.530748177	0.01686875131	detectable
+ehat_seed	exo	stat	1082	9200	201	100	101	0.2705385087	0.08787134117	0.348227088	0.1031023438	-2.078802544	-2.962919917	-1.623980199	1.538625675	0.2422147482	3.376314049	0.01442129292	detectable
+ehat_seed	exo	stat	1083	9200	217	110	107	0.2889552737	0.09271460037	0.3831912239	0.1092962837	-2.116610249	-3.133019205	-1.643779496	1.578037929	0.2578152385	3.348789681	0.01405843957	detectable
+ehat_seed	exo	stat	1084	9200	167	81	86	0.2579138096	0.07693911902	0.3198446294	0.0899560594	-2.352180437	-3.157113228	-1.867108801	1.549961249	0.2340267375	3.400402306	0.01549570573	detectable
+ehat_seed	exo	stat	1085	9200	150	56	94	0.2530783989	0.07259500355	0.3049574917	0.08348549534	-2.486168284	-3.200805521	-2.03140561	1.55471271	0.2315043495	3.479473049	0.01612741163	detectable
+ehat_seed	exo	stat	1086	9200	139	68	71	0.240878567	0.06631490911	0.2804747188	0.07903356635	-2.632344072	-3.229436828	-2.047800803	1.541349065	0.2209287382	3.292427651	0.01682482291	detectable
+ehat_seed	exo	stat	1087	9200	132	57	75	0.2483617133	0.06695210889	0.2935739136	0.07645142078	-2.709542797	-3.384834451	-2.248621291	1.536589343	0.2296093923	3.536742626	0.01644346881	detectable
+ehat_seed	exo	stat	1088	9200	160	70	90	0.2614888021	0.07415335794	0.3248719102	0.08714274225	-2.52632449	-3.381081576	-2.000695128	1.546114839	0.2387520581	3.380767856	0.01562920754	detectable
+ehat_seed	exo	stat	1089	9200	162	83	79	0.2633263391	0.07424036935	0.3289782989	0.08785369048	-2.546942741	-3.43125892	-1.997328145	1.563097029	0.240028834	3.358760279	0.01536758496	detectable
+ehat_seed	exo	stat	1090	9200	137	65	72	0.2450253267	0.06846582177	0.2893834033	0.0784651879	-2.578797718	-3.226684144	-2.122726565	1.537874386	0.2254820937	3.488958962	0.01676025406	detectable
+ehat_seed	exo	stat	1091	9200	160	85	75	0.2623410562	0.07426123686	0.3279345894	0.08716072376	-2.532678248	-3.415959163	-2.009854036	1.534593259	0.2398233181	3.384227748	0.0156777588	detectable
+ehat_seed	exo	stat	1092	9200	174	86	88	0.2567567061	0.08291121165	0.3091565067	0.09303063628	-2.096767023	-2.728765995	-1.759915619	1.487626851	0.2330284316	3.525368994	0.01654874166	detectable
+ehat_seed	exo	stat	1093	9200	133	65	68	0.2503598522	0.06358324918	0.3045195331	0.07657436447	-2.937512716	-3.789304369	-2.269499577	1.560421181	0.2311431149	3.282368536	0.01636824497	detectable
+ehat_seed	exo	stat	1094	9200	153	81	72	0.2550034326	0.07235060664	0.314506504	0.08445026506	-2.52455141	-3.346978119	-2.019569358	1.535362813	0.2333504001	3.425636745	0.01564089301	detectable
+ehat_seed	exo	stat	1095	9200	143	74	69	0.2496953739	0.0663149776	0.297979934	0.08051444565	-2.765293798	-3.493403222	-2.10124937	1.579278027	0.2287027362	3.21634184	0.01657954188	detectable
+ehat_seed	exo	stat	1096	9200	149	79	70	0.2574023399	0.07219686387	0.3162078494	0.08300375936	-2.565284226	-3.379800346	-2.101092552	1.560658262	0.2359477899	3.49851946	0.01579181837	detectable
+ehat_seed	exo	stat	1097	9200	134	72	62	0.2385353213	0.06603259493	0.2730784103	0.07725168363	-2.612387512	-3.135509298	-2.087768578	1.514374367	0.2196777842	3.338179997	0.01766862495	detectable
+ehat_summary	exo	stat	O1_cal(ehat)	24	0	24	1.192092896e-07	-2.471123985	-2.52543795	-2.577552568	-2.366555808
+ehat_summary	exo	stat	O1_cal(ehat_cal)	24	0	24	1.192092896e-07	-3.233178332	-3.226930496	-3.338561796	-3.130419843
+ehat_summary	exo	stat	O1_cal(ehat_cal)-O1_cal(ehat)	24	0	24	1.192092896e-07	-0.7620543468	-0.7667328532	-0.8134646555	-0.710801708
+ehat_summary	exo	stat	O1_min(ehat)	24	0	24	1.192092896e-07	-1.975740205	-2.014711697	-2.064289899	-1.886884227
+ehat_seed	exo	rev	1074	9200	180	85	95	0.1959034916	0.05763059305	0.2803030541	0.07328320759	-2.399296819	-3.863789167	-1.673238496	4.478482243	0.1104418314	2.173021099	0.01541659183	detectable
+ehat_seed	exo	rev	1075	9200	117	61	56	0.1321932662	0.05047986443	0.2087828629	0.05865436902	-1.618732592	-3.135963224	-1.253766743	4.166389449	0.08022795155	2.578715755	0.01791313547	detectable
+ehat_seed	exo	rev	1076	9200	130	66	64	0.1473874675	0.05426897764	0.2291668248	0.06272520745	-1.715869616	-3.222796058	-1.349732643	4.159540077	0.08988142125	2.569414066	0.01821948905	detectable
+ehat_seed	exo	rev	1077	9200	179	86	93	0.1969958894	0.05562230377	0.2825954215	0.07196298821	-2.541670805	-4.080613393	-1.737461218	4.465725878	0.1122932325	2.07685455	0.01551582201	detectable
+ehat_seed	exo	rev	1078	9200	157	87	70	0.1583239542	0.05904575455	0.233502554	0.06919108454	-1.68137744	-2.954603608	-1.288213217	4.092832583	0.09001500197	2.477263935	0.01706187152	detectable
+ehat_seed	exo	rev	1079	9200	184	87	97	0.180051842	0.06065678126	0.2523200799	0.07572220535	-1.96837119	-3.15980002	-1.377794481	4.344659326	0.09505985251	2.196066905	0.01707698282	detectable
+ehat_seed	exo	rev	1080	9200	171	88	83	0.1779254272	0.06027569519	0.2571751068	0.07206835772	-1.951860225	-3.26664688	-1.468842538	4.300808735	0.09984224572	2.328879251	0.01731067049	detectable
+ehat_seed	exo	rev	1081	9200	138	46	92	0.1475040089	0.05498969906	0.2266033775	0.06664822784	-1.682393455	-3.1208332	-1.213172257	4.160977082	0.08638512957	2.500404126	0.01774988545	detectable
+ehat_seed	exo	rev	1082	9200	175	72	103	0.1898890282	0.06056025875	0.2793830002	0.07488073279	-2.135538587	-3.61330592	-1.53588635	4.262246937	0.1109236393	2.365902987	0.01585832218	detectable
+ehat_seed	exo	rev	1083	9200	211	104	107	0.2230516657	0.06617327432	0.3132651265	0.08199737742	-2.370721307	-3.734012783	-1.720229265	4.446641894	0.123910767	2.249642084	0.01492041874	detectable
+ehat_seed	exo	rev	1084	9200	168	77	91	0.170262255	0.05723607973	0.2460606323	0.07079258717	-1.974736491	-3.299047619	-1.405085925	4.312130082	0.09322131226	2.271390167	0.01605163701	detectable
+ehat_seed	exo	rev	1085	9200	141	69	72	0.1551967005	0.05747304451	0.2373816307	0.06657970541	-1.700338948	-3.130312441	-1.330991097	4.120738386	0.09347450408	2.609447747	0.01775249775	detectable
+ehat_seed	exo	rev	1086	9200	134	52	82	0.1450587499	0.04967792617	0.2203742368	0.06308093348	-1.919984006	-3.436059509	-1.299565683	4.400222866	0.08216530275	2.176246071	0.01824618875	detectable
+ehat_seed	exo	rev	1087	9200	138	70	68	0.14737752	0.05321473677	0.222233203	0.06392186863	-1.769486967	-3.17615902	-1.305588418	4.279020141	0.0844591044	2.36583746	0.01799713186	detectable
+ehat_seed	exo	rev	1088	9200	174	90	84	0.1752647161	0.05960809416	0.2523269366	0.07250095274	-1.940283842	-3.233098544	-1.417412592	4.276391324	0.09620466405	2.287073455	0.01666781355	detectable
+ehat_seed	exo	rev	1089	9200	146	71	75	0.1701937884	0.05232115148	0.2572745537	0.06462795322	-2.25286779	-3.917218875	-1.633439246	4.393010825	0.1020988815	2.225093848	0.01728417184	detectable
+ehat_seed	exo	rev	1090	9200	133	49	84	0.1470634181	0.05257083705	0.2261451427	0.0643747568	-1.797433451	-3.301722313	-1.284488912	4.247970911	0.08690893519	2.407790884	0.01802310723	detectable
+ehat_seed	exo	rev	1091	9200	166	86	80	0.1777591543	0.05452970922	0.256804459	0.06900262716	-2.259858835	-3.709441195	-1.576121543	4.454116401	0.0991809716	2.103220322	0.01688496252	detectable
+ehat_seed	exo	rev	1092	9200	164	68	96	0.1667212885	0.06126074681	0.2451316784	0.07289487938	-1.721502711	-3.001447765	-1.287146778	4.204730061	0.09343294869	2.470187557	0.01753963161	detectable
+ehat_seed	exo	rev	1093	9200	146	57	89	0.1600005785	0.05166364013	0.2393455925	0.06616774857	-2.096966805	-3.632766719	-1.418105224	4.443882996	0.09092096363	2.152825312	0.01778142187	detectable
+ehat_seed	exo	rev	1094	9200	166	85	81	0.16729585	0.05933367461	0.2416744718	0.07096416998	-1.81957676	-3.073141827	-1.35746927	4.328754133	0.09082893891	2.328202464	0.01764314782	detectable
+ehat_seed	exo	rev	1095	9200	148	55	93	0.1601252663	0.05521983442	0.2399707838	0.06776496791	-1.899778096	-3.345735303	-1.362950522	4.270522788	0.09292035761	2.323289127	0.0181369516	detectable
+ehat_seed	exo	rev	1096	9200	163	76	87	0.1637724282	0.06119109183	0.242641534	0.07158873982	-1.676409642	-2.965308131	-1.287684188	4.148669408	0.09189700404	2.492634707	0.01733524262	detectable
+ehat_seed	exo	rev	1097	9200	125	48	77	0.1404275932	0.05076799501	0.2162684248	0.06178064531	-1.766065375	-3.2599363	-1.273003017	4.328804615	0.08273644962	2.349567271	0.01910409314	detectable
+ehat_summary	exo	rev	O1_cal(ehat)	24	0	24	1.192092896e-07	-1.944213406	-1.909881051	-2.04914824	-1.845320406
+ehat_summary	exo	rev	O1_cal(ehat_cal)	24	0	24	1.192092896e-07	-3.359739992	-3.26329159	-3.493993766	-3.242028584
+ehat_summary	exo	rev	O1_cal(ehat_cal)-O1_cal(ehat)	24	0	24	1.192092896e-07	-1.415526586	-1.442198476	-1.462651853	-1.370746554
+ehat_summary	exo	rev	O1_min(ehat)	24	0	24	1.192092896e-07	-1.410724568	-1.360209896	-1.4733837	-1.353122309
+ood_seed	1098	23	0.04256348245	0.04275662436	2609	2543	false
+ood_seed	1099	19	0.04028397023	0.03682172236	2318	2280	false
+ood_seed	1100	23	0.03771367667	0.03862320857	2385	2352	false
+ood_seed	1101	13	0.09300789112	0.07871088748	1772	1700	false
+ood_seed	1102	18	0.06956626646	0.05934961595	2356	2255	false
+ood_seed	1103	28	0.04246403456	0.0409311722	2538	2612	false
+ood_seed	1104	27	0.04293839919	0.04093067974	2266	2302	false
+ood_seed	1105	14	0.04465692874	0.04290549439	2232	2142	false
+ood_seed	1106	11	0.06858969882	0.05976577926	2317	2242	false
+ood_seed	1107	24	0.05250905164	0.04799447298	2468	2573	false
+ood_seed	1108	11	0.04792010014	0.04079108379	2427	2450	false
+ood_seed	1109	20	0.06687087193	0.06153931299	1864	1903	false
+ood_compare	obs-full	rev-trained TRM	B1	12	2	10	0	0.03857421875	-0.004830359824	-0.00744079024	-0.002431690351	generalization_failure
+g1	sel_obs-full_stat_TRM	3	6	2f0e40ea07a4010466da0767098ce7c870adba3171a480c49082442bd09febb6	6299cec183b90c0657c917567047d064f64f3e6528f0efbdc88ac1cf01c1294a	6299cec183b90c0657c917567047d064f64f3e6528f0efbdc88ac1cf01c1294a	true	true	true
+g1	sel_obs-full_stat_TRM-1x1	1	1	c3de33cad7e6e52859a2fdadf9163beccd5bebf9c06efb2d9d354a82fe4b5df9	dbbc9bac5cf55361e9cb3de289d3f4141a59973665f70a1f697a79f4a80ab7f4	dbbc9bac5cf55361e9cb3de289d3f4141a59973665f70a1f697a79f4a80ab7f4	true	true	true
+g1	sel_obs-full_rev_TRM	3	6	aef353f7e96cbd7a5dbd2cc1b9a4dd437a06de70b1b73b4cf795611c4ffadd7b	7fc881e29a5e773e8bf5c528e98c3247ceee839a9f13fd62d4832dd329c669bc	7fc881e29a5e773e8bf5c528e98c3247ceee839a9f13fd62d4832dd329c669bc	true	true	false
+g1	sel_obs-full_rev_TRM-1x1	1	1	b985c018fb9dae5be4c2686ae6f22860c29f17c1d4c46217fcbc560ab3177fd8	11c61eb7754c2642ca9690dc118d8af175c41888e48b1452f405eb6e55e67fea	11c61eb7754c2642ca9690dc118d8af175c41888e48b1452f405eb6e55e67fea	true	true	true
+prediction	P-S64-1	G0-G5, G7, G-TIME in this process: FAIL; G6, G8 by the mode g6
+prediction	P-S64-2	missed
+prediction	P-S64-3	missed
+prediction	P-S64-4	holds (ê does not stably exceed p_cal on obs-full)
+prediction	P-S64-5	holds (wins <= losses)

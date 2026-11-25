@@ -275,8 +275,8 @@ impl TrmModel {
             zh = nh;
             zl = nl;
         }
-        // Query positions 45 and 46 (0-based indices 44 and 45? In S64 1-based pos 45/46 => 0-based 44/45 or 45/46:
-        // S64 seq_len=47: 0-based indices 0..43 = 44 history tokens, 44 = SEP/PAD, 45 = query a1, 46 = query a2)
+        // S64 §1.2 layout (seq_len = 47, 0-based): 0 = BOS, 1..=44 = 4 frames x 11 tokens (index 44 is the last
+        // frame's Y token), 45 = question Q1 (action 1), 46 = question Q2 (action 2).
         h45.copy_from_slice(&zh[45 * HIDDEN..46 * HIDDEN]);
         h46.copy_from_slice(&zh[46 * HIDDEN..47 * HIDDEN]);
         Ok(TrmStepOutput {

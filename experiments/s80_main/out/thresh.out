@@ -1,0 +1,10 @@
+gate: seeds 2300-2779 in order, 12 per life, disjoint from 1050-1067, 1300-1317, 1600-1617; life numbers 5-44
+gate: mainrun80 on stage-1 lives 1-4 == saved FGT P, Y, lref (bitwise), Pc == mainrun78, selset == saved; twin gates pass
+gate: B rule reproduces every s80_desc B row and per-life line (8 lives, 25 valid); V6 boundary cases (negative + empty -> miss, one zero -> miss, empty -> held)
+  threshold C4 delta=0.01 L=1000: 13.75  (seen 8: 21/30 5/120 -> fail)
+  threshold C0 w=500 L=1000: 0.03  (seen 8: 21/30 5/120 -> fail)
+  threshold O-win L=1000: 0.0075  (seen 8: 30/30 0/120 -> undecided)
+  threshold C4 delta=0.01 L=500: 13.75  (seen 8: 16/30 3/120 -> fail)
+  threshold C0 w=500 L=500: 0.03  (seen 8: 14/30 4/120 -> fail)
+  threshold O-win L=500: 0.0075  (seen 8: 28/30 0/120 -> undecided)
+thresholds written: /Users/yamaguchimitsuyuki/bridge-agency-lab/experiments/s80_main/out/thresholds.toml (sha256 d10dc7d1e1d0ba127fefb6a5c165086cc94b391620e346b51e875edb07226913)

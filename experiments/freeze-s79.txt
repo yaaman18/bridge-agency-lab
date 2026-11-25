@@ -1,0 +1,27 @@
+# S79 predictions frozen before implementation (2026-11-25T10:54:29Z); codex 10:53:26Z
+7e89c161d90fd2b245c72bb70fcfc1c4fe77e7fe33b8635bd3686472563e9120  experiments/s79_rates/predictions.toml
+42a7eff4498cbadf8e484dd668c53ea4ce7f2b9982e767d48a838e8e6189cc7d  discussion/specs/S79-draft-trace1-rates.md
+# S79 code before codex I-R (2026-11-25T10:55:41Z)
+1e9563e9ebfff13bc9384c0231f11e58cede916e5723ec52b248f9a4436e0959  experiments/s79_rates/s79.jl
+# S79 code after codex I-R 10:56Z P1 (tail masks + gate) P2 (three-valued rho rows) P3 (n=4 check expects undecided) (2026-11-25T10:56:34Z)
+ee84ab190b4af48cec2a991532dbf64cade7e2f97d2d83554b543880140436e6  experiments/s79_rates/s79.jl
+# S79 output (2026-11-25T11:17:51Z): F1 holds (n=28), F2 miss (max 0.0275), F3 holds (0.4821), F4 holds, F5 holds; checks ok; 1600-1617 unopened
+4713aa4cbe952ed1b08ee55c650f368219d9cb39c27bdc2d5a55253c15536d1d  experiments/s79_rates/out/s79.out
+# S79 spec after results and codex read 11:18Z (2026-11-25T11:18:56Z)
+bc4fb84804540093cccf72ab42bd41ef9d2a8673edd0776a19156af7fc8f0249  discussion/specs/S79-draft-trace1-rates.md
+# S79 §8 predictions frozen before s79b.jl (2026-11-25T11:25:31Z); codex 11:24:55Z; user decision 2026-11-25
+eefdb2b25801a61e43c17675d409c7238232a1c794fd5eef21b83d8638018d8a  experiments/s79_rates/predictions-b.toml
+091921bdec74164f1647d43581c54bfc93e75c549d1dbcf0e7cd80014e9c07f8  discussion/specs/S79-draft-trace1-rates.md
+# S79b code before codex I-R (2026-11-25T11:26:16Z)
+2dc08b12c57141fca2fef6d81cd16f7be80e6ab15e733fe908bac9174b77ef78  experiments/s79_rates/s79b.jl
+# S79b code after codex I-R 11:26Z P3 (probs2 point-mass gate) P5 (strict > for ties) (2026-11-25T11:27:11Z)
+c633985b17b7ff6e5c18adf34384b5f2de1a9cbd18af2066fef0f052155b90ab  experiments/s79_rates/s79b.jl
+# S79b code: renamed LF -> LOGF79 (name clash with an included constant; no logic change) (2026-11-25T11:27:35Z)
+c633985b17b7ff6e5c18adf34384b5f2de1a9cbd18af2066fef0f052155b90ab  experiments/s79_rates/s79b.jl
+# S79b code: LF -> LOGF79 applied with perl (previous line's hash was unchanged file) (2026-11-25T11:27:42Z)
+083e02860f6503ad7f0464a23fe2ef3bf5306a7783712cf7e2f7a4686aa9c376  experiments/s79_rates/s79b.jl
+# S79b output (2026-11-25T11:29:23Z): H1 holds (n=36), H2 holds (max 0.0006), H3 holds; formula check 'd=f pass prob 0' false (miss, codex P4); 1600-1617 unopened
+a4e701c96db10b0fbb71751f4c193f1855ca06af9ce1dfbcbefa33f9d1d19f19  experiments/s79_rates/out/s79b.out
+e0544b07d72b7e21d55dae79c09270c0a3b34f1423c3a927814be27ec7d4bd10  discussion/requirements.md
+# S79 spec §8.4 results, README 197, decisions-log #86 (2026-11-25T11:30:12Z)
+d92883af75cc73c9672910b8a01169683a0b70e20e5d29227405fc80d1ead60d  discussion/specs/S79-draft-trace1-rates.md

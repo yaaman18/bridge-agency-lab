@@ -1,0 +1,11 @@
+# S76 predictions (discussion/specs/S76-draft-stratified-selfclock-dev.md §4), frozen BEFORE s76.jl is written and before any C6 value is computed.
+# claude-lab + codex-lab agreement (codex 2026-11-25T10:04:56Z P1-P5) under the delegation; user "読みを承認する。(a) をcodexと相談して進めて".
+[A1]
+claim = "life 1, i = 4, t = T_4 + 500, w = 500 (S72 stage-1, L-FGT): C0 <= 0 < C6 (equalizing the Y=0 frequency to the base reveals the loss rise that the frequency change hid)"
+miss = "C6 <= 0: the sign prediction of H-S75a for this switch fails. If imputation occurs in that window, report the sign but suspend the reading"
+[A2]
+claim = "part 2: some configuration (w in {500, 1000}) passes TRACE-1 in all 4 dev lives at some theta in {0.005, 0.01, 0.02, 0.04}"
+miss = "no configuration passes: A2 miss, A3 not evaluated"
+[A3]
+claim = "the winner passes all 4 confirmation lives (seeds 1600-1617)"
+scoring = "a life with 0 selected switches is not computable: A3 undecided if no other life fails, miss if another life fails"

@@ -1,0 +1,12 @@
+# S75 predictions frozen before implementation (2026-11-25T09:58:08Z); user approval 2026-11-25, codex 09:49Z/09:51Z
+dea7b19512c23aea161a1cf4214fece7d7ec74bde39e7ec3f124ee3fd32f2cc6  experiments/s75_clock/predictions.toml
+386068c2ad4a233a4d59d3c22ce7e48f7f2cf14fae55f1ad29a2b2abea33052a  discussion/specs/S75-draft-clock-candidates-dev.md
+# S75 code before codex I-R (2026-11-25T10:00:00Z)
+ff9bd06a8fbda2ecf00ee2f0cb3042cc6f0ef535212df03f722ae013cd4f5b29  experiments/s75_clock/s75.jl
+# S75 code after codex I-R 10:00Z P3 (bitwise probe gate) P4 (rank key 3 = candidate number, 4 = grid position config-outer) (2026-11-25T10:00:51Z)
+b71a28df763ca76241dc8a1820610dfcf5eba0caa8b4a9cde91de68836c765bb  experiments/s75_clock/s75.jl
+# S75 dev output (2026-11-25T10:02:27Z): no winner; Q1 miss, Q2 miss, Q3 undecided (confirmation not run). Post-hoc per-switch description: scratchpad s75_post.jl (not a judgment)
+2c4ff5613b08d51c7dc0f879875c1b160ae4b79e8d5137a1652a0f5b5e7df58f  experiments/s75_clock/out/dev.out
+dd0cd6dd18742544a9976217e43c8d48be4074eeaa8c2148806ea4d803f054ba  experiments/s75_clock/out/dev_winner.toml
+# S75 spec after results and codex read 10:02Z P3 P4 (2026-11-25T10:03:01Z)
+1fe19174cdcd363ae75d652e03c2f4b180e968d98134695ca50908afb882baf3  discussion/specs/S75-draft-clock-candidates-dev.md

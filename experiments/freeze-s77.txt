@@ -1,0 +1,21 @@
+# S77 part 1 predictions frozen before implementation (2026-11-25T10:15:42Z); codex 10:14:58Z
+3186e818b61cffedaae1681411dba11caeb199b548ac3ec32c33ab4f618688f5  experiments/s77_reread/predictions-part1.toml
+8b6a64c90daff7a7ee6bac4d8ebe9a97a4e0e01e244dec2d9b0a81b76a2116ec  discussion/specs/S77-draft-trace1-reread.md
+# S77 part-1 code before codex I-R (2026-11-25T10:16:34Z)
+afe6393de5dfae9107d9ec159dcf3d537f02fddd91567d97bbce4ea4b37dfa84  experiments/s77_reread/s77.jl
+# S77 part-1 code after codex I-R 10:17Z P2 P3 (2026-11-25T10:17:17Z)
+6e8b1c2ec04a2033539ce7860b6f4e58eff9e496282041bb5eb9bb0eda389cb1  experiments/s77_reread/s77.jl
+# S77 part-1 code: fixed the destructuring of the I-R P3 edit (mk was not bound; the gate branch never ran since no common theta) (2026-11-25T10:18:18Z); output identical
+48d193db4d851bf8c71e7a850f8342e9e393bc06c97c8757ecd5db060f999473  experiments/s77_reread/s77.jl
+7fe9adf71a95a6c4aa90b6c0ffb78c046bae04bbccbf8a5daa2906352c43592e  experiments/s77_reread/out/part1.out
+# S77 part 1: B1 holds, B2 holds, B3 miss
+# S77 part 3 predictions frozen before implementation (2026-11-25T10:20:51Z); codex 10:19Z, 10:20Z
+48f1988d5e1d5dd7c7e23ce35c82bca1afe653d68a842ac82f2f49282e584c4e  experiments/s77_reread/predictions-part3.toml
+a090e40c7368c711987058375d32a8be95baf9db76f0279497a57d48099d9cda  discussion/specs/S77-draft-trace1-reread.md
+# S77 part-3 code before codex I-R (2026-11-25T10:21:35Z)
+6540caaca10252ad6c2ef09adcb2b598f0a28ac64f11ec26b8c3fb7d2b1e3178  experiments/s77_reread/s77.jl
+# S77 part 3 output (2026-11-25T10:23:21Z): e* = 0.020108200087214975; D1 miss, D2 and D3 not evaluated; seeds 1600-1617 still not computed. Post-hoc routine-window description: scratchpad s77_post.jl (not a judgment)
+6540caaca10252ad6c2ef09adcb2b598f0a28ac64f11ec26b8c3fb7d2b1e3178  experiments/s77_reread/s77.jl
+c4fe4ea40fa62fe3850b4efbf1416e34759e591f905aeb9b71f5eaeefee7c421  experiments/s77_reread/out/part3.out
+# S77 spec after part-3 results and codex read 10:23Z (2026-11-25T10:24:04Z)
+4ecfe4d7637fd2a8aff8d3f7816d2c6617d6fe86548991d23fcb625aef45b0c0  discussion/specs/S77-draft-trace1-reread.md

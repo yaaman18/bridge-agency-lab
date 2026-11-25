@@ -1,0 +1,12 @@
+# S72 r4 stage-2 predictions (spec §8.5 Q2-Q5 adapted to r4 §10), frozen AFTER stage 1 (thresholds registered: eps 0.0025, delta 0.1, theta 0.04)
+# and BEFORE any stage-2 life (seeds 1300-1317) is run. L-TRM has never been run under r2/r3/r4.
+[Q2]
+claim = "L-FGT passes OPEN-1 (age branches), OPEN-2 (Delta_map > 0.1) and TRACE-1 (theta 0.04 on switches with d_i >= 3 eps) in all 4 lives"
+miss = "any of the three fails; a not-run or not-computable requirement makes Q2 undecidable"
+[Q3]
+claim = "L-CUM fails OPEN-1 (age branches) with at least one non-inferiority violation or one measurable-but-not-recovered branch; failing only by unmeasurable branches is a miss"
+[Q4]
+claim = "L-TRM passes OPEN-1 (age branches) in every life decided by the difficulty control (main prediction); exploratory records: OPEN-2 passes, TRACE-1 passes"
+scope = "report: n of 4 lives decided, k of n pass; n = 0 -> undecidable"
+[Q5]
+claim = "L-TRM, main stream (r3 metric at eps 0.0025): median of s_main / s_pad over switches where both reached lies in [0.7, 1.3]; 0 such switches -> undecidable"

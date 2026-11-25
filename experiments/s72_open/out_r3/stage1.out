@@ -1,0 +1,218 @@
+w0 = 0.00810  isolation: probed main == probe-free twin == r2 saved run (all 8)
+== stage 1 FGT life 1
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.21943/0.00522 L_new=4.74990/0.00899 REF=1.08879/0.00524  early: L=3.33178/0.01333 REF=1.08767/0.00524
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.32573/0.00556 L_new=1.33314/0.00584 REF=1.08175/0.00528  early: L=1.34300/0.00534 REF=1.08178/0.00528
+  PROBE i=3 strata Y0/Y1 at T: L_old=1.06036/0.00662 L_new=4.48320/0.01246 REF=1.02886/0.00524  early: L=4.52407/0.00832 REF=1.02886/0.00524
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.13967/0.00555 L_new=4.63023/0.00972 REF=1.02075/0.00528  early: L=4.69610/0.00593 REF=1.02077/0.00528
+  OPEN-2 i=1 dmap=0.38944 ddata=0.33648 dmap_pi/alt=0.44925/0.32962 ddata_pi/alt=0.20018/0.47277 strata Y0/Y1 dmap_pi=1.83620/0.43793 dmap_alt=1.71212/0.31833 ddata_pi=3.44328/0.17370 ddata_alt=0.33023/0.47393 dmap_preD=0.33191 selfcheck=0.0 y0 A/Bdd=5/19 loss A/B/Bdd=0.02213/0.02213/0.02983
+  OPEN-2 i=2 dmap=0.40800 ddata=0.17224 dmap_pi/alt=0.44067/0.37533 ddata_pi/alt=0.21073/0.13374 strata Y0/Y1 dmap_pi=1.25724/0.43400 dmap_alt=3.44836/0.35024 ddata_pi=0.64553/0.20718 ddata_alt=0.07800/0.13419 dmap_preD=0.67732 selfcheck=0.0 y0 A/Bdd=20/13 loss A/B/Bdd=0.01850/0.04336/0.02359
+  OPEN-2 i=3 dmap=0.46848 ddata=0.10961 dmap_pi/alt=0.46870/0.46826 ddata_pi/alt=0.15562/0.06360 strata Y0/Y1 dmap_pi=2.83960/0.44934 dmap_alt=2.78491/0.44934 ddata_pi=0.80098/0.15035 ddata_alt=0.04029/0.06379 dmap_preD=0.59621 selfcheck=0.0 y0 A/Bdd=14/9 loss A/B/Bdd=0.02648/0.02648/0.02308
+  OPEN-2 i=4 dmap=0.25369 ddata=0.20970 dmap_pi/alt=0.12758/0.37980 ddata_pi/alt=0.20810/0.21129 strata Y0/Y1 dmap_pi=4.31414/0.09340 dmap_alt=4.44150/0.34664 ddata_pi=0.70142/0.20407 ddata_alt=0.23251/0.21112 dmap_preD=0.50072 selfcheck=0.0 y0 A/Bdd=6/17 loss A/B/Bdd=0.01804/0.03771/0.02910
+  OPEN-1 eps=0.0025 ok=false viol=0
+    i=1 a=0.00104 d=0.03233 early=0.02620 b=0.00232 meas=true rec=true s=1696 s_prev=1648 s_fresh=1696 s_pad=1696 keych=1.00000
+    i=2 a=0.00225 d=0.00034 early=0.00218 b=0.00104 meas=false rec=true s=48 s_prev=none s_fresh=696 s_pad=696 keych=0.85100
+    i=3 a=0.00162 d=0.03351 early=0.03137 b=0.00097 meas=true rec=true s=1048 s_prev=1000 s_fresh=496 s_pad=496 keych=1.00000
+    i=4 a=0.00124 d=0.03240 early=0.03042 b=0.00174 meas=true rec=true s=1496 s_prev=1448 s_fresh=1496 s_pad=1496 keych=0.99967
+  OPEN-1 eps=0.005 ok=false viol=0
+    i=1 a=0.00104 d=0.03233 early=0.02620 b=0.00232 meas=true rec=true s=1696 s_prev=1648 s_fresh=1696 s_pad=1696 keych=1.00000
+    i=2 a=0.00225 d=0.00034 early=0.00218 b=0.00104 meas=false rec=true s=48 s_prev=none s_fresh=696 s_pad=696 keych=0.85100
+    i=3 a=0.00162 d=0.03351 early=0.03137 b=0.00097 meas=true rec=true s=496 s_prev=448 s_fresh=496 s_pad=496 keych=1.00000
+    i=4 a=0.00124 d=0.03240 early=0.03042 b=0.00174 meas=true rec=true s=1400 s_prev=1344 s_fresh=1400 s_pad=1400 keych=0.99967
+  OPEN-1 eps=0.01 ok=false viol=0
+    i=1 a=0.00104 d=0.03233 early=0.02620 b=0.00232 meas=true rec=true s=1696 s_prev=1648 s_fresh=1696 s_pad=1696 keych=1.00000
+    i=2 a=0.00225 d=0.00034 early=0.00218 b=0.00104 meas=false rec=true s=48 s_prev=none s_fresh=696 s_pad=696 keych=0.85100
+    i=3 a=0.00162 d=0.03351 early=0.03137 b=0.00097 meas=true rec=true s=496 s_prev=448 s_fresh=496 s_pad=496 keych=1.00000
+    i=4 a=0.00124 d=0.03240 early=0.03042 b=0.00174 meas=true rec=true s=1296 s_prev=1248 s_fresh=1248 s_pad=1248 keych=0.99967
+  TRACE-1 not run (eps not selected)
+== stage 1 FGT life 2
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.12469/0.00537 L_new=4.62771/0.17624 REF=1.06173/0.00516  early: L=4.66171/0.17191 REF=1.06184/0.00516
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.13392/0.00529 L_new=4.86932/0.00942 REF=0.98986/0.00521  early: L=4.88808/0.00697 REF=0.98986/0.00521
+  PROBE i=3 strata Y0/Y1 at T: L_old=1.21548/0.00513 L_new=5.00730/0.00739 REF=0.97618/0.00517  early: L=5.01933/0.00551 REF=0.97622/0.00517
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.07160/0.00596 L_new=4.72399/0.00964 REF=0.96248/0.00529  early: L=4.81618/0.00556 REF=0.96248/0.00529
+  OPEN-2 i=1 dmap=0.12654 ddata=0.40124 dmap_pi/alt=0.16240/0.09068 ddata_pi/alt=0.12050/0.68199 strata Y0/Y1 dmap_pi=3.68535/0.13363 dmap_alt=3.68599/0.06132 ddata_pi=0.50491/0.11736 ddata_alt=0.13059/0.68649 dmap_preD=0.15929 selfcheck=0.0 y0 A/Bdd=3/6 loss A/B/Bdd=0.02761/0.02761/0.03275
+  OPEN-2 i=2 dmap=0.92872 ddata=0.51864 dmap_pi/alt=0.71959/1.13785 ddata_pi/alt=0.09230/0.94498 strata Y0/Y1 dmap_pi=3.62004/0.69591 dmap_alt=2.92221/1.12328 ddata_pi=0.22787/0.09119 ddata_alt=0.10030/0.95188 dmap_preD=0.87888 selfcheck=0.0 y0 A/Bdd=14/23 loss A/B/Bdd=0.03042/0.01889/0.05095
+  OPEN-2 i=3 dmap=0.57129 ddata=0.07749 dmap_pi/alt=0.59599/0.54659 ddata_pi/alt=0.09318/0.06180 strata Y0/Y1 dmap_pi=3.34024/0.57358 dmap_alt=4.49540/0.51435 ddata_pi=0.35270/0.09106 ddata_alt=0.05803/0.06183 dmap_preD=0.59946 selfcheck=0.0 y0 A/Bdd=12/11 loss A/B/Bdd=0.03320/0.03427/0.02104
+  OPEN-2 i=4 dmap=0.85005 ddata=0.21090 dmap_pi/alt=0.97499/0.72512 ddata_pi/alt=0.14799/0.27381 strata Y0/Y1 dmap_pi=5.16002/0.94082 dmap_alt=4.97119/0.69045 ddata_pi=0.56754/0.14457 ddata_alt=0.02557/0.27583 dmap_preD=0.87185 selfcheck=0.0 y0 A/Bdd=14/10 loss A/B/Bdd=0.02906/0.02916/0.01701
+  OPEN-1 eps=0.0025 ok=true viol=0
+    i=1 a=0.00072 d=0.19785 early=0.19455 b=0.00110 meas=true rec=true s=3200 s_prev=3144 s_fresh=296 s_pad=296 keych=1.00000
+    i=2 a=0.00125 d=0.03434 early=0.03332 b=0.00188 meas=true rec=true s=4000 s_prev=3944 s_fresh=448 s_pad=448 keych=0.99967
+    i=3 a=0.00189 d=0.03296 early=0.03308 b=0.00134 meas=true rec=true s=496 s_prev=448 s_fresh=1000 s_pad=1544 keych=0.89833
+    i=4 a=0.00155 d=0.03322 early=0.03148 b=0.00170 meas=true rec=true s=1344 s_prev=1296 s_fresh=1344 s_pad=1344 keych=1.00000
+  OPEN-1 eps=0.005 ok=true viol=0
+    i=1 a=0.00072 d=0.19785 early=0.19455 b=0.00110 meas=true rec=true s=2296 s_prev=2248 s_fresh=296 s_pad=296 keych=1.00000
+    i=2 a=0.00125 d=0.03434 early=0.03332 b=0.00188 meas=true rec=true s=2400 s_prev=2344 s_fresh=448 s_pad=448 keych=0.99967
+    i=3 a=0.00189 d=0.03296 early=0.03308 b=0.00134 meas=true rec=true s=496 s_prev=448 s_fresh=496 s_pad=496 keych=0.89833
+    i=4 a=0.00155 d=0.03322 early=0.03148 b=0.00170 meas=true rec=true s=544 s_prev=496 s_fresh=544 s_pad=544 keych=1.00000
+  OPEN-1 eps=0.01 ok=true viol=0
+    i=1 a=0.00072 d=0.19785 early=0.19455 b=0.00110 meas=true rec=true s=1344 s_prev=1296 s_fresh=296 s_pad=296 keych=1.00000
+    i=2 a=0.00125 d=0.03434 early=0.03332 b=0.00188 meas=true rec=true s=1200 s_prev=1144 s_fresh=448 s_pad=448 keych=0.99967
+    i=3 a=0.00189 d=0.03296 early=0.03308 b=0.00134 meas=true rec=true s=496 s_prev=448 s_fresh=496 s_pad=496 keych=0.89833
+    i=4 a=0.00155 d=0.03322 early=0.03148 b=0.00170 meas=true rec=true s=544 s_prev=496 s_fresh=544 s_pad=544 keych=1.00000
+  TRACE-1 not run (eps not selected)
+== stage 1 FGT life 3
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.31177/0.00573 L_new=5.17316/0.00559 REF=1.14740/0.00521  early: L=5.20245/0.00502 REF=1.14796/0.00521
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.12727/0.00531 L_new=4.77968/0.01102 REF=1.03789/0.00516  early: L=2.94730/0.00565 REF=1.03769/0.00516
+  PROBE i=3 strata Y0/Y1 at T: L_old=1.14476/0.00529 L_new=4.66212/0.00934 REF=1.02061/0.00520  early: L=2.40384/0.05863 REF=1.01694/0.00522
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.19880/0.00505 L_new=3.58769/0.18306 REF=1.01584/0.00521  early: L=3.69574/0.05719 REF=1.01593/0.00521
+  OPEN-2 i=1 dmap=0.11184 ddata=0.19511 dmap_pi/alt=0.09640/0.12728 ddata_pi/alt=0.16003/0.23020 strata Y0/Y1 dmap_pi=4.49654/0.06048 dmap_alt=3.74805/0.09771 ddata_pi=0.67595/0.15581 ddata_alt=0.02148/0.23190 dmap_preD=0.17560 selfcheck=0.0 y0 A/Bdd=8/20 loss A/B/Bdd=0.02385/0.02785/0.03570
+  OPEN-2 i=2 dmap=0.85702 ddata=0.06977 dmap_pi/alt=1.18171/0.53233 ddata_pi/alt=0.03290/0.10664 strata Y0/Y1 dmap_pi=3.73411/1.16087 dmap_alt=4.88959/0.49676 ddata_pi=0.50319/0.02906 ddata_alt=0.12497/0.10649 dmap_preD=0.98398 selfcheck=0.0 y0 A/Bdd=25/16 loss A/B/Bdd=0.06067/0.03943/0.04857
+  OPEN-2 i=3 dmap=0.42269 ddata=0.23021 dmap_pi/alt=0.27523/0.57014 ddata_pi/alt=0.01964/0.44078 strata Y0/Y1 dmap_pi=4.96688/0.23693 dmap_alt=3.84283/0.54342 ddata_pi=1.30647/0.00914 ddata_alt=0.48718/0.44040 dmap_preD=0.69734 selfcheck=0.0 y0 A/Bdd=27/5 loss A/B/Bdd=0.04184/0.05060/0.02056
+  OPEN-2 i=4 dmap=0.75763 ddata=0.29532 dmap_pi/alt=0.72255/0.79270 ddata_pi/alt=0.11912/0.47152 strata Y0/Y1 dmap_pi=3.50806/0.69981 dmap_alt=2.23938/0.78089 ddata_pi=1.25129/0.10987 ddata_alt=0.16622/0.47401 dmap_preD=0.57261 selfcheck=0.0 y0 A/Bdd=4/16 loss A/B/Bdd=0.03472/0.01879/0.05124
+  OPEN-1 eps=0.0025 ok=false viol=2
+    i=1 a=0.00184 d=0.03113 early=0.03264 b=0.00093 meas=true rec=true s=696 s_prev=648 s_fresh=696 s_pad=696 keych=0.99967
+    i=2 a=0.00088 d=0.03524 early=0.01595 b=0.00122 meas=true rec=true s=3944 s_prev=3896 s_fresh=248 s_pad=248 keych=0.99967
+    i=3 a=0.00110 d=0.03251 early=0.06421 b=0.00140 meas=true rec=true s=600 s_prev=544 s_fresh=544 s_pad=544 keych=0.87333
+    i=4 a=0.00132 d=0.19592 early=0.07327 b=0.00207 meas=true rec=true s=2248 s_prev=2200 s_fresh=2200 s_pad=2200 keych=1.00000
+  OPEN-1 eps=0.005 ok=false viol=2
+    i=1 a=0.00184 d=0.03113 early=0.03264 b=0.00093 meas=true rec=true s=696 s_prev=648 s_fresh=696 s_pad=696 keych=0.99967
+    i=2 a=0.00088 d=0.03524 early=0.01595 b=0.00122 meas=true rec=true s=1544 s_prev=1496 s_fresh=248 s_pad=248 keych=0.99967
+    i=3 a=0.00110 d=0.03251 early=0.06421 b=0.00140 meas=true rec=true s=448 s_prev=400 s_fresh=448 s_pad=448 keych=0.87333
+    i=4 a=0.00132 d=0.19592 early=0.07327 b=0.00207 meas=true rec=true s=2096 s_prev=2048 s_fresh=496 s_pad=496 keych=1.00000
+  OPEN-1 eps=0.01 ok=true viol=0
+    i=1 a=0.00184 d=0.03113 early=0.03264 b=0.00093 meas=true rec=true s=696 s_prev=648 s_fresh=696 s_pad=696 keych=0.99967
+    i=2 a=0.00088 d=0.03524 early=0.01595 b=0.00122 meas=true rec=true s=248 s_prev=200 s_fresh=248 s_pad=248 keych=0.99967
+    i=3 a=0.00110 d=0.03251 early=0.06421 b=0.00140 meas=true rec=true s=400 s_prev=344 s_fresh=400 s_pad=400 keych=0.87333
+    i=4 a=0.00132 d=0.19592 early=0.07327 b=0.00207 meas=true rec=true s=944 s_prev=896 s_fresh=496 s_pad=496 keych=1.00000
+  TRACE-1 not run (eps not selected)
+== stage 1 FGT life 4
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.27252/0.00502 L_new=4.69604/0.00943 REF=1.19215/0.00537  early: L=4.83271/0.00508 REF=1.19310/0.00535
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.18397/0.00560 L_new=4.52206/0.18781 REF=1.05660/0.00537  early: L=4.55871/0.18194 REF=1.05660/0.00537
+  PROBE i=3 strata Y0/Y1 at T: L_old=1.27388/0.00528 L_new=5.25008/0.00596 REF=1.04814/0.00536  early: L=5.19690/0.00505 REF=1.04791/0.00535
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.26493/0.00532 L_new=4.94692/0.00858 REF=1.04499/0.00533  early: L=5.03356/0.00566 REF=1.04505/0.00533
+  OPEN-2 i=1 dmap=0.72949 ddata=0.21672 dmap_pi/alt=0.72948/0.72950 ddata_pi/alt=0.22497/0.20847 strata Y0/Y1 dmap_pi=3.86142/0.70391 dmap_alt=3.86412/0.70391 ddata_pi=0.93582/0.21917 ddata_alt=0.23638/0.20824 dmap_preD=0.54654 selfcheck=0.0 y0 A/Bdd=11/16 loss A/B/Bdd=0.03409/0.03409/0.02186
+  OPEN-2 i=2 dmap=0.73358 ddata=0.08389 dmap_pi/alt=0.84600/0.62116 ddata_pi/alt=0.05259/0.11519 strata Y0/Y1 dmap_pi=2.30923/0.83405 dmap_alt=3.80157/0.59519 ddata_pi=0.50735/0.04888 ddata_alt=0.11427/0.11520 dmap_preD=0.62092 selfcheck=0.0 y0 A/Bdd=9/14 loss A/B/Bdd=0.03783/0.01814/0.05630
+  OPEN-2 i=3 dmap=0.78831 ddata=0.16336 dmap_pi/alt=0.54999/1.02663 ddata_pi/alt=0.20349/0.12322 strata Y0/Y1 dmap_pi=3.63205/0.52483 dmap_alt=4.95922/0.99452 ddata_pi=0.55394/0.20063 ddata_alt=0.16051/0.12291 dmap_preD=0.76116 selfcheck=0.0 y0 A/Bdd=18/12 loss A/B/Bdd=0.03456/0.04167/0.03148
+  OPEN-2 i=4 dmap=0.19714 ddata=0.11512 dmap_pi/alt=0.18991/0.20438 ddata_pi/alt=0.12290/0.10735 strata Y0/Y1 dmap_pi=2.96739/0.16723 dmap_alt=4.56161/0.16880 ddata_pi=0.68515/0.11831 ddata_alt=0.10084/0.10741 dmap_preD=0.51309 selfcheck=0.0 y0 A/Bdd=12/8 loss A/B/Bdd=0.03249/0.02565/0.03085
+  OPEN-1 eps=0.0025 ok=false viol=2
+    i=1 a=0.00030 d=0.03210 early=0.02920 b=0.00123 meas=true rec=true s=248 s_prev=200 s_fresh=248 s_pad=248 keych=0.99967
+    i=2 a=0.00127 d=0.20777 early=0.20351 b=0.00187 meas=true rec=true s=2344 s_prev=2296 s_fresh=800 s_pad=800 keych=0.99967
+    i=3 a=0.00175 d=0.03287 early=0.03329 b=0.00168 meas=true rec=true s=600 s_prev=544 s_fresh=600 s_pad=600 keych=1.00000
+    i=4 a=0.00177 d=0.03305 early=0.03263 b=0.00182 meas=true rec=true s=5848 s_prev=5800 s_fresh=600 s_pad=600 keych=1.00000
+  OPEN-1 eps=0.005 ok=false viol=2
+    i=1 a=0.00030 d=0.03210 early=0.02920 b=0.00123 meas=true rec=true s=248 s_prev=200 s_fresh=248 s_pad=248 keych=0.99967
+    i=2 a=0.00127 d=0.20777 early=0.20351 b=0.00187 meas=true rec=true s=1800 s_prev=1744 s_fresh=800 s_pad=800 keych=0.99967
+    i=3 a=0.00175 d=0.03287 early=0.03329 b=0.00168 meas=true rec=true s=600 s_prev=544 s_fresh=600 s_pad=600 keych=1.00000
+    i=4 a=0.00177 d=0.03305 early=0.03263 b=0.00182 meas=true rec=true s=4648 s_prev=4600 s_fresh=600 s_pad=600 keych=1.00000
+  OPEN-1 eps=0.01 ok=false viol=2
+    i=1 a=0.00030 d=0.03210 early=0.02920 b=0.00123 meas=true rec=true s=248 s_prev=200 s_fresh=248 s_pad=248 keych=0.99967
+    i=2 a=0.00127 d=0.20777 early=0.20351 b=0.00187 meas=true rec=true s=944 s_prev=896 s_fresh=800 s_pad=800 keych=0.99967
+    i=3 a=0.00175 d=0.03287 early=0.03329 b=0.00168 meas=true rec=true s=600 s_prev=544 s_fresh=600 s_pad=600 keych=1.00000
+    i=4 a=0.00177 d=0.03305 early=0.03263 b=0.00182 meas=true rec=true s=2144 s_prev=2096 s_fresh=296 s_pad=296 keych=1.00000
+  TRACE-1 not run (eps not selected)
+== stage 1 CUM life 1
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.08879/0.00524 L_new=4.84194/0.00788 REF=1.08879/0.00524  early: L=3.30347/0.01288 REF=1.08767/0.00524
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.11892/0.00546 L_new=1.12580/0.00611 REF=1.08175/0.00528  early: L=1.13262/0.00530 REF=1.08178/0.00528
+  PROBE i=3 strata Y0/Y1 at T: L_old=1.03588/0.00523 L_new=1.05027/0.00818 REF=1.02886/0.00524  early: L=1.06243/0.00644 REF=1.02886/0.00524
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.09926/0.00532 L_new=4.86063/0.00591 REF=1.02075/0.00528  early: L=4.87553/0.00573 REF=1.02077/0.00528
+  OPEN-2 i=1 dmap=0.44497 ddata=0.35272 dmap_pi/alt=0.51185/0.37810 ddata_pi/alt=0.22901/0.47643 strata Y0/Y1 dmap_pi=2.23314/0.49779 dmap_alt=2.07871/0.36421 ddata_pi=3.78733/0.19996 ddata_alt=0.16411/0.47898 dmap_preD=0.43820 selfcheck=0.0 y0 A/Bdd=5/19 loss A/B/Bdd=0.02249/0.02249/0.02945
+  OPEN-2 i=2 dmap=0.25007 ddata=0.07262 dmap_pi/alt=0.23986/0.26029 ddata_pi/alt=0.10990/0.03533 strata Y0/Y1 dmap_pi=0.27375/0.23958 dmap_alt=3.01221/0.23782 ddata_pi=0.22794/0.10894 ddata_alt=0.06102/0.03512 dmap_preD=0.26327 selfcheck=0.0 y0 A/Bdd=20/13 loss A/B/Bdd=0.01613/0.04891/0.02036
+  OPEN-2 i=3 dmap=0.37648 ddata=0.08502 dmap_pi/alt=0.36708/0.38587 ddata_pi/alt=0.14493/0.02511 strata Y0/Y1 dmap_pi=0.18536/0.36857 dmap_alt=2.50498/0.36857 ddata_pi=0.15789/0.14482 ddata_alt=0.01485/0.02519 dmap_preD=0.38271 selfcheck=0.0 y0 A/Bdd=14/9 loss A/B/Bdd=0.01740/0.03400/0.00525
+  OPEN-2 i=4 dmap=1.10348 ddata=0.11397 dmap_pi/alt=0.19675/2.01020 ddata_pi/alt=0.21784/0.01011 strata Y0/Y1 dmap_pi=4.60559/0.16076 dmap_alt=3.14398/2.00094 ddata_pi=0.92545/0.21206 ddata_alt=0.01711/0.01005 dmap_preD=1.10615 selfcheck=0.0 y0 A/Bdd=6/17 loss A/B/Bdd=0.01769/0.11085/0.02928
+  OPEN-1 eps=0.0025 ok=false viol=0
+    i=1 a=0.00000 d=0.03301 early=0.02552 b=0.00047 meas=true rec=true s=1744 s_prev=1696 s_fresh=1744 s_pad=1744 keych=1.00000
+    i=2 a=0.00048 d=0.00070 early=0.00044 b=0.00006 meas=false rec=true s=48 s_prev=none s_fresh=696 s_pad=696 keych=0.85100
+    i=3 a=0.00005 d=0.00305 early=0.00147 b=0.00068 meas=false rec=true s=48 s_prev=none s_fresh=1000 s_pad=1000 keych=1.00000
+    i=4 a=0.00068 d=0.03104 early=0.03167 b=0.00065 meas=true rec=true s=2144 s_prev=2096 s_fresh=2048 s_pad=2048 keych=0.99967
+  OPEN-1 eps=0.005 ok=false viol=0
+    i=1 a=0.00000 d=0.03301 early=0.02552 b=0.00047 meas=true rec=true s=1696 s_prev=1648 s_fresh=1696 s_pad=1696 keych=1.00000
+    i=2 a=0.00048 d=0.00070 early=0.00044 b=0.00006 meas=false rec=true s=48 s_prev=none s_fresh=696 s_pad=696 keych=0.85100
+    i=3 a=0.00005 d=0.00305 early=0.00147 b=0.00068 meas=false rec=true s=48 s_prev=none s_fresh=496 s_pad=496 keych=1.00000
+    i=4 a=0.00068 d=0.03104 early=0.03167 b=0.00065 meas=true rec=true s=1496 s_prev=1448 s_fresh=1400 s_pad=1400 keych=0.99967
+  OPEN-1 eps=0.01 ok=false viol=0
+    i=1 a=0.00000 d=0.03301 early=0.02552 b=0.00047 meas=true rec=true s=1696 s_prev=1648 s_fresh=1696 s_pad=1696 keych=1.00000
+    i=2 a=0.00048 d=0.00070 early=0.00044 b=0.00006 meas=false rec=true s=48 s_prev=none s_fresh=696 s_pad=696 keych=0.85100
+    i=3 a=0.00005 d=0.00305 early=0.00147 b=0.00068 meas=false rec=true s=48 s_prev=none s_fresh=496 s_pad=496 keych=1.00000
+    i=4 a=0.00068 d=0.03104 early=0.03167 b=0.00065 meas=true rec=true s=1296 s_prev=1248 s_fresh=1248 s_pad=1248 keych=0.99967
+  TRACE-1 not run (eps not selected)
+== stage 1 CUM life 2
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.06173/0.00516 L_new=4.78072/0.26363 REF=1.06173/0.00516  early: L=4.79651/0.26175 REF=1.06184/0.00516
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.03222/0.00760 L_new=5.09175/0.00704 REF=0.98986/0.00521  early: L=5.09941/0.00575 REF=0.98986/0.00521
+  PROBE i=3 strata Y0/Y1 at T: L_old=2.33126/0.00510 L_new=5.06523/0.00773 REF=0.97618/0.00517  early: L=5.09804/0.00553 REF=0.97622/0.00517
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.89930/0.00536 L_new=4.90253/0.04183 REF=0.96248/0.00529  early: L=4.92928/0.02652 REF=0.96248/0.00529
+  OPEN-2 i=1 dmap=0.25176 ddata=0.37785 dmap_pi/alt=0.33316/0.17036 ddata_pi/alt=0.11581/0.63989 strata Y0/Y1 dmap_pi=4.28736/0.30088 dmap_alt=4.28992/0.13672 ddata_pi=0.43404/0.11322 ddata_alt=0.06849/0.64456 dmap_preD=0.27071 selfcheck=0.0 y0 A/Bdd=3/6 loss A/B/Bdd=0.05204/0.05204/0.05173
+  OPEN-2 i=2 dmap=0.70894 ddata=0.64713 dmap_pi/alt=0.39573/1.02216 ddata_pi/alt=0.07059/1.22367 strata Y0/Y1 dmap_pi=2.81671/0.37596 dmap_alt=2.84517/1.00728 ddata_pi=0.16557/0.06981 ddata_alt=0.04975/1.23325 dmap_preD=0.68498 selfcheck=0.0 y0 A/Bdd=14/23 loss A/B/Bdd=0.03838/0.04031/0.05836
+  OPEN-2 i=3 dmap=0.56724 ddata=0.02289 dmap_pi/alt=0.57764/0.55685 ddata_pi/alt=0.04286/0.00292 strata Y0/Y1 dmap_pi=3.32732/0.55519 dmap_alt=5.13505/0.51947 ddata_pi=0.15571/0.04193 ddata_alt=0.00276/0.00292 dmap_preD=0.56769 selfcheck=0.0 y0 A/Bdd=12/11 loss A/B/Bdd=0.03259/0.03339/0.02415
+  OPEN-2 i=4 dmap=0.54048 ddata=0.07710 dmap_pi/alt=0.54154/0.53942 ddata_pi/alt=0.09082/0.06337 strata Y0/Y1 dmap_pi=3.37497/0.51841 dmap_alt=2.63383/0.52232 ddata_pi=0.29698/0.08914 ddata_alt=0.02271/0.06371 dmap_preD=0.54713 selfcheck=0.0 y0 A/Bdd=14/10 loss A/B/Bdd=0.03883/0.04684/0.03438
+  OPEN-1 eps=0.0025 ok=false viol=0
+    i=1 a=0.00000 d=0.28649 early=0.28475 b=0.00293 meas=true rec=true s=none s_prev=6000 s_fresh=1344 s_pad=1344 keych=1.00000
+    i=2 a=0.00272 d=0.03232 early=0.03382 b=0.01101 meas=true rec=false s=4000 s_prev=3944 s_fresh=448 s_pad=448 keych=0.99967
+    i=3 a=0.01090 d=0.02475 early=0.03374 b=0.00792 meas=true rec=true s=2944 s_prev=2896 s_fresh=1544 s_pad=1544 keych=0.89833
+    i=4 a=0.00766 d=0.06050 early=0.05319 b=0.01005 meas=true rec=true s=5048 s_prev=5000 s_fresh=1344 s_pad=1344 keych=1.00000
+  OPEN-1 eps=0.005 ok=true viol=0
+    i=1 a=0.00000 d=0.28649 early=0.28475 b=0.00293 meas=true rec=true s=5800 s_prev=5744 s_fresh=296 s_pad=296 keych=1.00000
+    i=2 a=0.00272 d=0.03232 early=0.03382 b=0.01101 meas=true rec=true s=1848 s_prev=1800 s_fresh=448 s_pad=448 keych=0.99967
+    i=3 a=0.01090 d=0.02475 early=0.03374 b=0.00792 meas=true rec=true s=2000 s_prev=1944 s_fresh=496 s_pad=496 keych=0.89833
+    i=4 a=0.00766 d=0.06050 early=0.05319 b=0.01005 meas=true rec=true s=2944 s_prev=2896 s_fresh=544 s_pad=544 keych=1.00000
+  OPEN-1 eps=0.01 ok=false viol=0
+    i=1 a=0.00000 d=0.28649 early=0.28475 b=0.00293 meas=true rec=true s=3000 s_prev=2944 s_fresh=296 s_pad=296 keych=1.00000
+    i=2 a=0.00272 d=0.03232 early=0.03382 b=0.01101 meas=true rec=true s=448 s_prev=400 s_fresh=448 s_pad=448 keych=0.99967
+    i=3 a=0.01090 d=0.02475 early=0.03374 b=0.00792 meas=false rec=true s=448 s_prev=400 s_fresh=496 s_pad=496 keych=0.89833
+    i=4 a=0.00766 d=0.06050 early=0.05319 b=0.01005 meas=true rec=true s=1248 s_prev=1200 s_fresh=544 s_pad=544 keych=1.00000
+  TRACE-1 not run (eps not selected)
+== stage 1 CUM life 3
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.14740/0.00521 L_new=5.12607/0.00585 REF=1.14740/0.00521  early: L=5.15903/0.00503 REF=1.14796/0.00521
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.05206/0.00513 L_new=4.99625/0.00790 REF=1.03789/0.00516  early: L=2.97950/0.00519 REF=1.03769/0.00516
+  PROBE i=3 strata Y0/Y1 at T: L_old=1.89252/0.00530 L_new=4.83197/0.04600 REF=1.02061/0.00520  early: L=2.62140/0.06128 REF=1.01694/0.00522
+  PROBE i=4 strata Y0/Y1 at T: L_old=1.04222/0.00536 L_new=1.62365/0.26801 REF=1.01584/0.00521  early: L=1.68533/0.11670 REF=1.01593/0.00521
+  OPEN-2 i=1 dmap=0.12711 ddata=0.16486 dmap_pi/alt=0.11433/0.13988 ddata_pi/alt=0.17915/0.15057 strata Y0/Y1 dmap_pi=5.09940/0.07363 dmap_alt=2.72142/0.11881 ddata_pi=0.85199/0.17366 ddata_alt=0.01857/0.15165 dmap_preD=0.14068 selfcheck=0.0 y0 A/Bdd=8/20 loss A/B/Bdd=0.02350/0.03696/0.03530
+  OPEN-2 i=2 dmap=0.74816 ddata=0.03224 dmap_pi/alt=1.14483/0.35148 ddata_pi/alt=0.02260/0.04188 strata Y0/Y1 dmap_pi=3.55172/1.12518 dmap_alt=5.69318/0.30787 ddata_pi=0.61965/0.01772 ddata_alt=0.04147/0.04189 dmap_preD=0.75075 selfcheck=0.0 y0 A/Bdd=25/16 loss A/B/Bdd=0.07497/0.04032/0.05973
+  OPEN-2 i=3 dmap=1.11414 ddata=0.03893 dmap_pi/alt=0.33012/1.89817 ddata_pi/alt=0.05791/0.01995 strata Y0/Y1 dmap_pi=5.70922/0.28620 dmap_alt=4.17843/1.87956 ddata_pi=1.34198/0.04742 ddata_alt=0.08103/0.01945 dmap_preD=1.11699 selfcheck=0.0 y0 A/Bdd=27/5 loss A/B/Bdd=0.04664/0.12135/0.02535
+  OPEN-2 i=4 dmap=0.39520 ddata=0.07566 dmap_pi/alt=0.71644/0.07395 ddata_pi/alt=0.08785/0.06346 strata Y0/Y1 dmap_pi=0.40622/0.71897 dmap_alt=2.61903/0.05317 ddata_pi=0.12393/0.08756 ddata_alt=0.01409/0.06386 dmap_preD=0.39333 selfcheck=0.0 y0 A/Bdd=4/16 loss A/B/Bdd=0.05890/0.02467/0.08898
+  OPEN-1 eps=0.0025 ok=false viol=2
+    i=1 a=0.00000 d=0.03286 early=0.03230 b=0.00010 meas=true rec=true s=1448 s_prev=1400 s_fresh=800 s_pad=1400 keych=0.99967
+    i=2 a=0.00009 d=0.03469 early=0.01576 b=0.00736 meas=true rec=false s=3944 s_prev=3896 s_fresh=248 s_pad=248 keych=0.99967
+    i=3 a=0.00716 d=0.06417 early=0.06860 b=0.00040 meas=true rec=true s=696 s_prev=648 s_fresh=600 s_pad=600 keych=0.87333
+    i=4 a=0.00036 d=0.26523 early=0.11601 b=0.00869 meas=true rec=false s=4048 s_prev=4000 s_fresh=2096 s_pad=2096 keych=1.00000
+  OPEN-1 eps=0.005 ok=false viol=1
+    i=1 a=0.00000 d=0.03286 early=0.03230 b=0.00010 meas=true rec=true s=696 s_prev=648 s_fresh=696 s_pad=696 keych=0.99967
+    i=2 a=0.00009 d=0.03469 early=0.01576 b=0.00736 meas=true rec=true s=1200 s_prev=1144 s_fresh=248 s_pad=248 keych=0.99967
+    i=3 a=0.00716 d=0.06417 early=0.06860 b=0.00040 meas=true rec=true s=600 s_prev=544 s_fresh=496 s_pad=448 keych=0.87333
+    i=4 a=0.00036 d=0.26523 early=0.11601 b=0.00869 meas=true rec=true s=2896 s_prev=2848 s_fresh=496 s_pad=496 keych=1.00000
+  OPEN-1 eps=0.01 ok=false viol=1
+    i=1 a=0.00000 d=0.03286 early=0.03230 b=0.00010 meas=true rec=true s=696 s_prev=648 s_fresh=696 s_pad=696 keych=0.99967
+    i=2 a=0.00009 d=0.03469 early=0.01576 b=0.00736 meas=true rec=true s=48 s_prev=none s_fresh=248 s_pad=248 keych=0.99967
+    i=3 a=0.00716 d=0.06417 early=0.06860 b=0.00040 meas=true rec=true s=400 s_prev=344 s_fresh=448 s_pad=448 keych=0.87333
+    i=4 a=0.00036 d=0.26523 early=0.11601 b=0.00869 meas=true rec=true s=2144 s_prev=2096 s_fresh=496 s_pad=496 keych=1.00000
+  TRACE-1 not run (eps not selected)
+== stage 1 CUM life 4
+  PROBE i=1 strata Y0/Y1 at T: L_old=1.19215/0.00537 L_new=5.03530/0.00652 REF=1.19215/0.00537  early: L=5.08986/0.00503 REF=1.19310/0.00535
+  PROBE i=2 strata Y0/Y1 at T: L_old=1.04593/0.00552 L_new=4.62502/0.30001 REF=1.05660/0.00537  early: L=4.65745/0.29722 REF=1.05660/0.00537
+  PROBE i=3 strata Y0/Y1 at T: L_old=2.07113/0.01002 L_new=5.18232/0.31444 REF=1.04814/0.00536  early: L=5.20058/0.07763 REF=1.04791/0.00535
+  PROBE i=4 strata Y0/Y1 at T: L_old=3.45804/0.00727 L_new=5.23657/0.02688 REF=1.04499/0.00533  early: L=5.26597/0.02464 REF=1.04505/0.00533
+  OPEN-2 i=1 dmap=0.50034 ddata=0.15466 dmap_pi/alt=0.50033/0.50035 ddata_pi/alt=0.20990/0.09942 strata Y0/Y1 dmap_pi=4.90798/0.46434 dmap_alt=4.91055/0.46434 ddata_pi=0.79190/0.20515 ddata_alt=0.11100/0.09933 dmap_preD=0.42334 selfcheck=0.0 y0 A/Bdd=11/16 loss A/B/Bdd=0.03507/0.03507/0.02177
+  OPEN-2 i=2 dmap=0.76068 ddata=0.03910 dmap_pi/alt=0.93057/0.59079 ddata_pi/alt=0.05182/0.02639 strata Y0/Y1 dmap_pi=2.59644/0.91697 dmap_alt=4.51065/0.55878 ddata_pi=0.21205/0.05052 ddata_alt=0.02735/0.02638 dmap_preD=0.67462 selfcheck=0.0 y0 A/Bdd=9/14 loss A/B/Bdd=0.08468/0.01816/0.10918
+  OPEN-2 i=3 dmap=1.52244 ddata=0.12282 dmap_pi/alt=1.92745/1.11743 ddata_pi/alt=0.22938/0.01625 strata Y0/Y1 dmap_pi=0.75542/1.93702 dmap_alt=5.70940/1.07994 ddata_pi=0.40268/0.22797 ddata_alt=0.01780/0.01623 dmap_preD=1.52601 selfcheck=0.0 y0 A/Bdd=18/12 loss A/B/Bdd=0.07867/0.12385/0.05886
+  OPEN-2 i=4 dmap=0.46816 ddata=0.06707 dmap_pi/alt=0.41460/0.52171 ddata_pi/alt=0.12393/0.01021 strata Y0/Y1 dmap_pi=1.10797/0.40894 dmap_alt=5.09775/0.48435 ddata_pi=0.58543/0.12016 ddata_alt=0.00907/0.01022 dmap_preD=0.48321 selfcheck=0.0 y0 A/Bdd=12/8 loss A/B/Bdd=0.05029/0.02529/0.03462
+  OPEN-1 eps=0.0025 ok=false viol=0
+    i=1 a=0.00000 d=0.03226 early=0.03124 b=0.00007 meas=true rec=true s=1200 s_prev=1144 s_fresh=296 s_pad=848 keych=0.99967
+    i=2 a=0.00007 d=0.32109 early=0.31865 b=0.01347 meas=true rec=false s=none s_prev=6000 s_fresh=1800 s_pad=1800 keych=0.99967
+    i=3 a=0.01291 d=0.32715 early=0.10532 b=0.02179 meas=true rec=false s=none s_prev=6000 s_fresh=600 s_pad=600 keych=1.00000
+    i=4 a=0.02146 d=0.03386 early=0.05334 b=0.02444 meas=true rec=true s=none s_prev=6000 s_fresh=696 s_pad=696 keych=1.00000
+  OPEN-1 eps=0.005 ok=false viol=2
+    i=1 a=0.00000 d=0.03226 early=0.03124 b=0.00007 meas=true rec=true s=248 s_prev=200 s_fresh=248 s_pad=248 keych=0.99967
+    i=2 a=0.00007 d=0.32109 early=0.31865 b=0.01347 meas=true rec=false s=none s_prev=6000 s_fresh=800 s_pad=800 keych=0.99967
+    i=3 a=0.01291 d=0.32715 early=0.10532 b=0.02179 meas=true rec=true s=5696 s_prev=5648 s_fresh=600 s_pad=600 keych=1.00000
+    i=4 a=0.02146 d=0.03386 early=0.05334 b=0.02444 meas=true rec=true s=5248 s_prev=5200 s_fresh=600 s_pad=600 keych=1.00000
+  OPEN-1 eps=0.01 ok=false viol=3
+    i=1 a=0.00000 d=0.03226 early=0.03124 b=0.00007 meas=true rec=true s=248 s_prev=200 s_fresh=248 s_pad=248 keych=0.99967
+    i=2 a=0.00007 d=0.32109 early=0.31865 b=0.01347 meas=true rec=true s=5096 s_prev=5048 s_fresh=800 s_pad=800 keych=0.99967
+    i=3 a=0.01291 d=0.32715 early=0.10532 b=0.02179 meas=true rec=true s=3248 s_prev=3200 s_fresh=600 s_pad=600 keych=1.00000
+    i=4 a=0.02146 d=0.03386 early=0.05334 b=0.02444 meas=true rec=true s=3296 s_prev=3248 s_fresh=296 s_pad=296 keych=1.00000
+  TRACE-1 not run (eps not selected)
+grid FGT eps=0.0025 life 1: ok=false meas 3/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.0025 life 2: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.0025 life 3: ok=false meas 4/4 rec 4/4 reached 4/4 viol 2
+grid FGT eps=0.0025 life 4: ok=false meas 4/4 rec 4/4 reached 4/4 viol 2
+grid FGT eps=0.005 life 1: ok=false meas 3/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 2: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.005 life 3: ok=false meas 4/4 rec 4/4 reached 4/4 viol 2
+grid FGT eps=0.005 life 4: ok=false meas 4/4 rec 4/4 reached 4/4 viol 2
+grid FGT eps=0.01 life 1: ok=false meas 3/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 2: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 3: ok=true meas 4/4 rec 4/4 reached 4/4 viol 0
+grid FGT eps=0.01 life 4: ok=false meas 4/4 rec 4/4 reached 4/4 viol 2
+grid FGT kappa=1.5: lives ok 1/4
+grid FGT kappa=2.0: lives ok 0/4
+grid FGT kappa=3.0: lives ok 0/4
+R3-Q1 (eps, kappa, theta all selectable for L-FGT): miss
+SELECTED eps="not separable in stage 1" kappa="not separable in stage 1" theta="held: eps not selected"

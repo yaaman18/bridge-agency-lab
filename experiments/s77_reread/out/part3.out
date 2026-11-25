@@ -1,0 +1,93 @@
+e* (max over 4 dev lives x 15 routine windows of the mean L-REF excess) = 0.020108200087214975
+  dev life 1 selected=[1, 3, 4] targets=[3]  e_i=1:0.0147 2:0.0002 3:0.0218 4:0.0090
+  dev life 2 selected=[1, 2, 3, 4] targets=[1, 2, 3]  e_i=1:0.0550 2:0.0368 3:0.0498 4:0.0131
+  dev life 3 selected=[1, 2, 3, 4] targets=[1, 2, 3, 4]  e_i=1:0.0223 2:0.1141 3:0.0483 4:0.0625
+  dev life 4 selected=[1, 2, 3, 4] targets=[1, 2, 3, 4]  e_i=1:0.0307 2:0.0656 3:0.0330 4:0.0322
+  C0 w=500 th=0.005 life 1 SUB false=0.5333 det_all=0.7500 det_sel=1/1 delay=250.0000 undet=0 ok=false  | MAIN det_sel=2/3 ok=false
+  C0 w=500 th=0.005 life 2 SUB false=0.4667 det_all=1.0000 det_sel=3/3 delay=250.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C0 w=500 th=0.005 life 3 SUB false=0.4000 det_all=1.0000 det_sel=4/4 delay=137.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C0 w=500 th=0.005 life 4 SUB false=0.4667 det_all=1.0000 det_sel=4/4 delay=150.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C0 w=500 th=0.005: sub lives ok 0/4, main lives ok 0/4
+  C0 w=500 th=0.01 life 1 SUB false=0.2000 det_all=0.7500 det_sel=1/1 delay=250.0000 undet=0 ok=false  | MAIN det_sel=2/3 ok=false
+  C0 w=500 th=0.01 life 2 SUB false=0.4667 det_all=1.0000 det_sel=3/3 delay=316.6667 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C0 w=500 th=0.01 life 3 SUB false=0.2000 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C0 w=500 th=0.01 life 4 SUB false=0.4000 det_all=1.0000 det_sel=4/4 delay=200.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C0 w=500 th=0.01: sub lives ok 0/4, main lives ok 0/4
+  C0 w=500 th=0.02 life 1 SUB false=0.0667 det_all=0.5000 det_sel=1/1 delay=500.0000 undet=0 ok=true  | MAIN det_sel=2/3 ok=false
+  C0 w=500 th=0.02 life 2 SUB false=0.2667 det_all=0.7500 det_sel=3/3 delay=383.3333 undet=0 ok=false  | MAIN det_sel=3/4 ok=false
+  C0 w=500 th=0.02 life 3 SUB false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true  | MAIN det_sel=4/4 ok=true
+  C0 w=500 th=0.02 life 4 SUB false=0.2000 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C0 w=500 th=0.02: sub lives ok 2/4, main lives ok 1/4
+  C0 w=500 th=0.04 life 1 SUB false=0.0000 det_all=0.0000 det_sel=0/1 delay=500.0000 undet=1 ok=false  | MAIN det_sel=0/3 ok=false
+  C0 w=500 th=0.04 life 2 SUB false=0.0667 det_all=0.5000 det_sel=2/3 delay=433.3333 undet=1 ok=false  | MAIN det_sel=2/4 ok=false
+  C0 w=500 th=0.04 life 3 SUB false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  C0 w=500 th=0.04 life 4 SUB false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false  | MAIN det_sel=2/4 ok=false
+  grid C0 w=500 th=0.04: sub lives ok 0/4, main lives ok 0/4
+  SELECTED C0 w=500: none
+  C4 delta=0.005 th=5.0 life 1 SUB false=0.3333 det_all=0.5000 det_sel=1/1 delay=250.0000 undet=0 ok=false  | MAIN det_sel=2/3 ok=false
+  C4 delta=0.005 th=5.0 life 2 SUB false=0.2000 det_all=1.0000 det_sel=3/3 delay=300.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C4 delta=0.005 th=5.0 life 3 SUB false=0.2667 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C4 delta=0.005 th=5.0 life 4 SUB false=0.3333 det_all=1.0000 det_sel=4/4 delay=212.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C4 delta=0.005 th=5.0: sub lives ok 0/4, main lives ok 0/4
+  C4 delta=0.005 th=10.0 life 1 SUB false=0.0667 det_all=0.5000 det_sel=1/1 delay=250.0000 undet=0 ok=true  | MAIN det_sel=2/3 ok=false
+  C4 delta=0.005 th=10.0 life 2 SUB false=0.1333 det_all=1.0000 det_sel=3/3 delay=316.6667 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C4 delta=0.005 th=10.0 life 3 SUB false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true  | MAIN det_sel=4/4 ok=true
+  C4 delta=0.005 th=10.0 life 4 SUB false=0.1333 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C4 delta=0.005 th=10.0: sub lives ok 2/4, main lives ok 1/4
+  C4 delta=0.005 th=20.0 life 1 SUB false=0.0000 det_all=0.0000 det_sel=0/1 delay=500.0000 undet=1 ok=false  | MAIN det_sel=0/3 ok=false
+  C4 delta=0.005 th=20.0 life 2 SUB false=0.0000 det_all=0.5000 det_sel=2/3 delay=433.3333 undet=1 ok=false  | MAIN det_sel=2/4 ok=false
+  C4 delta=0.005 th=20.0 life 3 SUB false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  C4 delta=0.005 th=20.0 life 4 SUB false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false  | MAIN det_sel=2/4 ok=false
+  grid C4 delta=0.005 th=20.0: sub lives ok 0/4, main lives ok 0/4
+  C4 delta=0.005 th=40.0 life 1 SUB false=0.0000 det_all=0.0000 det_sel=0/1 delay=500.0000 undet=1 ok=false  | MAIN det_sel=0/3 ok=false
+  C4 delta=0.005 th=40.0 life 2 SUB false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false  | MAIN det_sel=0/4 ok=false
+  C4 delta=0.005 th=40.0 life 3 SUB false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false  | MAIN det_sel=1/4 ok=false
+  C4 delta=0.005 th=40.0 life 4 SUB false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false  | MAIN det_sel=0/4 ok=false
+  grid C4 delta=0.005 th=40.0: sub lives ok 0/4, main lives ok 0/4
+  SELECTED C4 delta=0.005: none
+  C4 delta=0.01 th=5.0 life 1 SUB false=0.2667 det_all=0.5000 det_sel=1/1 delay=250.0000 undet=0 ok=false  | MAIN det_sel=2/3 ok=false
+  C4 delta=0.01 th=5.0 life 2 SUB false=0.2000 det_all=1.0000 det_sel=3/3 delay=300.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C4 delta=0.01 th=5.0 life 3 SUB false=0.2667 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C4 delta=0.01 th=5.0 life 4 SUB false=0.3333 det_all=1.0000 det_sel=4/4 delay=212.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C4 delta=0.01 th=5.0: sub lives ok 0/4, main lives ok 0/4
+  C4 delta=0.01 th=10.0 life 1 SUB false=0.0000 det_all=0.5000 det_sel=1/1 delay=250.0000 undet=0 ok=true  | MAIN det_sel=2/3 ok=false
+  C4 delta=0.01 th=10.0 life 2 SUB false=0.1333 det_all=1.0000 det_sel=3/3 delay=316.6667 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C4 delta=0.01 th=10.0 life 3 SUB false=0.0667 det_all=1.0000 det_sel=4/4 delay=187.5000 undet=0 ok=true  | MAIN det_sel=4/4 ok=true
+  C4 delta=0.01 th=10.0 life 4 SUB false=0.0667 det_all=1.0000 det_sel=4/4 delay=262.5000 undet=0 ok=true  | MAIN det_sel=4/4 ok=true
+  grid C4 delta=0.01 th=10.0: sub lives ok 3/4, main lives ok 2/4
+  C4 delta=0.01 th=20.0 life 1 SUB false=0.0000 det_all=0.0000 det_sel=0/1 delay=500.0000 undet=1 ok=false  | MAIN det_sel=0/3 ok=false
+  C4 delta=0.01 th=20.0 life 2 SUB false=0.0000 det_all=0.5000 det_sel=2/3 delay=433.3333 undet=1 ok=false  | MAIN det_sel=2/4 ok=false
+  C4 delta=0.01 th=20.0 life 3 SUB false=0.0000 det_all=0.7500 det_sel=3/4 delay=250.0000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  C4 delta=0.01 th=20.0 life 4 SUB false=0.0000 det_all=0.5000 det_sel=2/4 delay=400.0000 undet=2 ok=false  | MAIN det_sel=2/4 ok=false
+  grid C4 delta=0.01 th=20.0: sub lives ok 0/4, main lives ok 0/4
+  C4 delta=0.01 th=40.0 life 1 SUB false=0.0000 det_all=0.0000 det_sel=0/1 delay=500.0000 undet=1 ok=false  | MAIN det_sel=0/3 ok=false
+  C4 delta=0.01 th=40.0 life 2 SUB false=0.0000 det_all=0.0000 det_sel=0/3 delay=500.0000 undet=3 ok=false  | MAIN det_sel=0/4 ok=false
+  C4 delta=0.01 th=40.0 life 3 SUB false=0.0000 det_all=0.2500 det_sel=1/4 delay=475.0000 undet=3 ok=false  | MAIN det_sel=1/4 ok=false
+  C4 delta=0.01 th=40.0 life 4 SUB false=0.0000 det_all=0.0000 det_sel=0/4 delay=500.0000 undet=4 ok=false  | MAIN det_sel=0/4 ok=false
+  grid C4 delta=0.01 th=40.0: sub lives ok 0/4, main lives ok 0/4
+  SELECTED C4 delta=0.01: none
+  C6 w=500 th=0.005 life 1 SUB false=0.5333 det_all=1.0000 det_sel=1/1 delay=50.0000 undet=0 ok=false  | MAIN det_sel=3/3 ok=false
+  C6 w=500 th=0.005 life 2 SUB false=0.4667 det_all=1.0000 det_sel=3/3 delay=250.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C6 w=500 th=0.005 life 3 SUB false=0.4000 det_all=1.0000 det_sel=4/4 delay=62.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C6 w=500 th=0.005 life 4 SUB false=0.4667 det_all=1.0000 det_sel=4/4 delay=162.5000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  grid C6 w=500 th=0.005: sub lives ok 0/4, main lives ok 0/4
+  C6 w=500 th=0.01 life 1 SUB false=0.4667 det_all=1.0000 det_sel=1/1 delay=50.0000 undet=0 ok=false  | MAIN det_sel=3/3 ok=false
+  C6 w=500 th=0.01 life 2 SUB false=0.4000 det_all=0.7500 det_sel=2/3 delay=333.3333 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  C6 w=500 th=0.01 life 3 SUB false=0.1333 det_all=1.0000 det_sel=4/4 delay=75.0000 undet=0 ok=false  | MAIN det_sel=4/4 ok=false
+  C6 w=500 th=0.01 life 4 SUB false=0.2000 det_all=0.7500 det_sel=3/4 delay=262.5000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  grid C6 w=500 th=0.01: sub lives ok 0/4, main lives ok 0/4
+  C6 w=500 th=0.02 life 1 SUB false=0.1333 det_all=0.7500 det_sel=1/1 delay=50.0000 undet=0 ok=false  | MAIN det_sel=3/3 ok=false
+  C6 w=500 th=0.02 life 2 SUB false=0.0667 det_all=0.7500 det_sel=2/3 delay=400.0000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  C6 w=500 th=0.02 life 3 SUB false=0.0000 det_all=0.7500 det_sel=3/4 delay=300.0000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  C6 w=500 th=0.02 life 4 SUB false=0.0000 det_all=0.7500 det_sel=3/4 delay=287.5000 undet=1 ok=false  | MAIN det_sel=3/4 ok=false
+  grid C6 w=500 th=0.02: sub lives ok 0/4, main lives ok 0/4
+  C6 w=500 th=0.04 life 1 SUB false=0.1333 det_all=0.5000 det_sel=0/1 delay=500.0000 undet=1 ok=false  | MAIN det_sel=2/3 ok=false
+  C6 w=500 th=0.04 life 2 SUB false=0.0000 det_all=0.2500 det_sel=1/3 delay=416.6667 undet=2 ok=false  | MAIN det_sel=1/4 ok=false
+  C6 w=500 th=0.04 life 3 SUB false=0.0000 det_all=0.2500 det_sel=1/4 delay=412.5000 undet=3 ok=false  | MAIN det_sel=1/4 ok=false
+  C6 w=500 th=0.04 life 4 SUB false=0.0000 det_all=0.2500 det_sel=1/4 delay=462.5000 undet=3 ok=false  | MAIN det_sel=1/4 ok=false
+  grid C6 w=500 th=0.04: sub lives ok 0/4, main lives ok 0/4
+  SELECTED C6 w=500: none
+WINNER: none
+S77-D1: miss
+S77-D2: not evaluated
+S77-D3: not evaluated

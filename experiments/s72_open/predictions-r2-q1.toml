@@ -1,0 +1,6 @@
+# S72 r2 prediction Q1 (discussion/specs/S72-draft-open-trace-dev.md §8.5), frozen BEFORE stage 1 and before any L-REF / excess-loss value was computed.
+# The existing life_*.jls (seeds 1050-1067) have been seen as raw loss only (§7); e = l - l_REF has never been computed.
+[Q1]
+claim = "For L-FGT and for L-CUM separately: in at least 3 of 4 lives, the SD of the 5 R-interval means (R_0..R_4, full 3,000-example intervals) is smaller for e = l - l_REF than for raw l"
+scope = "stage 1, existing 4 lives, tables only"
+miss = "either learner has 2 or more lives where SD(e) >= SD(l)"
