@@ -1,0 +1,9 @@
+FGT st2 life 1: gates ok, G1 ok(12000), rows 3
+FGT s80 life 40: gates ok, G1 ok(12000), rows 3
+CUM st2 life 1: gates ok, G1 ok(12000), rows 3
+CUM s80 life 40: gates ok, G1 none, rows 3
+WIN st2 life 1: gates ok, G1 ok(12000), rows 3
+WIN s80 life 40: gates ok, G1 none, rows 3
+F0 st2 life 1: gates ok, G1 none, rows 3
+F0 s80 life 40: gates ok, G1 none, rows 3
+TRM st2 life 1: gates ok, G1 ok(9104), rows 3

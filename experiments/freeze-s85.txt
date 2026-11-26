@@ -1,0 +1,6 @@
+1543f8052ef57d084229362e35f30e76a6021d021545fb65ad89898c59f3fa5c  experiments/s85_tick/predictions.toml
+9e1aab3ea032a1feb1ae6541736a8e660cf50d090c6812bb764871b95d95dc32  experiments/s85_tick/tick.jl  (code before I-R)
+7dc8dc48e95786694037c0c505a245150d382752dcf78f2c6a070ceebfc7250a  experiments/s85_tick/tick.jl  (code sent to I-R)
+1be121f6d966e507b57aedaeff7994a69a6ad93fb26ae0b36531c6f0024b9677  experiments/s85_tick/tick.jl  (code after I-R P1-P6)
+9a4ea4b7bd068c7100023c0c81f8fdb2ddc6569ebc8fcec94ac0f8a91cddab8b  experiments/s85_tick/out/tick.out
+e0041e4c26e10a334876c94104920595c8ecfe30e6278728e9d76abcacf1d9c6  experiments/s85_tick/out/gtraj.csv

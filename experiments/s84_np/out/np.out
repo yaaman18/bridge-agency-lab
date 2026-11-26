@@ -1,0 +1,26 @@
+gate: 48 lives; per-example update2! = per-block update2! counters bitwise; block-head table and predict2 = saved P bitwise; independent table rebuild bitwise at every step; P resum; 0<=N<=P; decay twin = origin*lam^h bitwise; K = 183
+== groups (pooled over origins; rho = N/P; dec = decay-only twin, control value, not a share)
+  F h=50: n 183 (P=0: 0)  rho q1/med/q3 0.9376 / 0.9504 / 0.9617  N 0.0399 / 0.0566 / 0.1089  P 0.0425 / 0.0597 / 0.1141  P/h med 0.0012  Ndec/N 0.1174 / 0.2243 / 0.3379  Pdec/P 0.1120 / 0.2141 / 0.3186
+  F h=200: n 183 (P=0: 0)  rho q1/med/q3 0.8423 / 0.9108 / 0.9361  N 0.1680 / 0.6091 / 0.9080  P 0.1802 / 0.7317 / 1.0594  P/h med 0.0037  Ndec/N 0.0540 / 0.0894 / 0.3192  Pdec/P 0.0449 / 0.0784 / 0.2889
+  F h=1000: n 183 (P=0: 0)  rho q1/med/q3 0.5904 / 0.6578 / 0.7079  N 1.4386 / 1.7755 / 2.2084  P 2.2917 / 2.8533 / 3.3973  P/h med 0.0029  Ndec/N 0.1208 / 0.1630 / 0.2105  Pdec/P 0.0791 / 0.1002 / 0.1338
+  R h=50: n 684 (P=0: 0)  rho q1/med/q3 0.9038 / 0.9173 / 0.9274  N 0.0287 / 0.0343 / 0.0426  P 0.0315 / 0.0372 / 0.0456  P/h med 0.0007  Ndec/N 0.2794 / 0.3914 / 0.4837  Pdec/P 0.2527 / 0.3585 / 0.4459
+  R h=200: n 662 (P=0: 0)  rho q1/med/q3 0.5421 / 0.7427 / 0.9186  N 0.1100 / 0.1368 / 0.1792  P 0.1420 / 0.2063 / 0.3120  P/h med 0.0010  Ndec/N 0.2780 / 0.3970 / 0.5047  Pdec/P 0.1656 / 0.2591 / 0.3885
+  R h=1000: n 570 (P=0: 0)  rho q1/med/q3 0.2243 / 0.3056 / 0.4148  N 0.2666 / 0.3856 / 0.5181  P 0.9639 / 1.2345 / 1.5694  P/h med 0.0012  Ndec/N 0.5701 / 0.7734 / 1.0784  Pdec/P 0.1819 / 0.2384 / 0.3079
+  C h=50: n 565 (P=0: 0)  rho q1/med/q3 0.8279 / 0.9174 / 0.9376  N 0.0391 / 0.0590 / 0.1448  P 0.0420 / 0.0616 / 0.1802  P/h med 0.0012  Ndec/N 0.1138 / 0.2843 / 0.4613  Pdec/P 0.0907 / 0.2369 / 0.4328
+  C h=200: n 560 (P=0: 0)  rho q1/med/q3 0.5312 / 0.6606 / 0.9178  N 0.1352 / 0.1765 / 0.2514  P 0.1859 / 0.2995 / 0.4492  P/h med 0.0015  Ndec/N 0.2569 / 0.4034 / 0.5317  Pdec/P 0.1487 / 0.2378 / 0.3658
+  C h=1000: n 524 (P=0: 0)  rho q1/med/q3 0.2585 / 0.3425 / 0.4399  N 0.3414 / 0.4977 / 0.6984  P 1.2150 / 1.4782 / 1.8281  P/h med 0.0015  Ndec/N 0.5730 / 0.7930 / 1.0157  Pdec/P 0.1937 / 0.2537 / 0.3205
+  Fp h=50: n 9 (P=0: 0)  rho q1/med/q3 0.9368 / 0.9458 / 0.9546  N 0.0415 / 0.0487 / 0.0615  P 0.0443 / 0.0514 / 0.0642  P/h med 0.0010  Ndec/N 0.2205 / 0.3072 / 0.3939  Pdec/P 0.2105 / 0.2878 / 0.3726
+  Fp h=200: n 9 (P=0: 0)  rho q1/med/q3 0.5939 / 0.6504 / 0.8619  N 0.1618 / 0.1878 / 0.2652  P 0.2809 / 0.3141 / 0.4216  P/h med 0.0016  Ndec/N 0.1409 / 0.2971 / 0.5076  Pdec/P 0.0905 / 0.1842 / 0.2793
+  Fp h=1000: n 9 (P=0: 0)  rho q1/med/q3 0.1967 / 0.2283 / 0.2411  N 0.3062 / 0.3270 / 0.5161  P 1.1921 / 1.3659 / 1.5364  P/h med 0.0014  Ndec/N 0.6792 / 0.9081 / 0.9946  Pdec/P 0.1550 / 0.1786 / 0.2548
+  per-life medians F h=200: lives 48 q1/med/q3 0.8674 / 0.9012 / 0.9263
+  per-life medians R h=1000: lives 48 q1/med/q3 0.2756 / 0.3091 / 0.3455
+E1: median rho(F, 200) = 0.9108 (>= 0.5) -> hit
+E2: median rho(R, 1000) = 0.3056 (in [0.0105, 0.0949]) -> miss
+E3: median rho(., 200): R 0.7427  C 0.6606  F 0.9108 (R < C < F) -> miss
+E4: whole-table bit-identical law steps 1498 / 2861512 checked steps (all updates incl. first) -> miss
+  visited key's p bit-identical across its own update: 2583087 / 2861512
+S84-E1: hit
+S84-E2: miss
+S84-E3: miss
+S84-E4: miss
+note: seen lives only; descriptive. No clock or threshold is chosen here.

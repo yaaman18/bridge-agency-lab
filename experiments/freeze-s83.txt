@@ -1,0 +1,8 @@
+# S83 key rn predictions frozen before running (seen 48 lives only, 2026-11-25T21:13:29Z); user 2026-11-26 「Fable の一手（rn の 4 群の記述、codex の条件つき）をやってみて」; codex S-R P1-P6
+cacbee21b50536f9bcd2d8570d721c3dbe19fd180e1b2250ddb85c6e456767c1  experiments/s83_key/predictions.toml
+# S83 key code before codex I-R (2026-11-25T21:14:31Z)
+b8fa803c42084945fdf753d3409e0b02a2dc002fd012ef6fc1712797607c7fc5  experiments/s83_key/key.jl
+# S83 key code after codex I-R P1-P3, P6 (2026-11-25T21:15:15Z)
+ab4735377cc60264fb293ff141d115d0e3d66e84623aa3b7bb0e697fe3d13299  experiments/s83_key/key.jl
+# S83 key output (2026-11-25T21:16:26Z): K1 hit (r_a median 0.0325, 48/48 <= 0.1), K2 miss (r_c median 0.362, 16/48 in [0.5,2], 32 below 0.5, 0 above 2); seen 48 lives only
+0ff5b40cc1ab48229f0e824ca75fdfe087961d4f2e4be58a8e9a46ea124dad31  experiments/s83_key/out/key.out

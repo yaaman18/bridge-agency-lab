@@ -1,0 +1,15 @@
+# S85 predictions (discussion/specs/S85-draft-tick-and-individuality.md §4). Frozen before running; written after seeing S84,
+# so they are weak predictions. Seen 48 lives only. Tick = endpoint L1 distance to the expected-input twin (Theta);
+# individuality distance G = L1 distance of the table from the birth table (all 1/2). codex S-R 2026-11-26 P1-P7.
+[E1]
+label = "median Theta(., 200): R < C < F (record R<F and C position separately)"
+[E2]
+label = "every life with both F and R origins: median Theta(F,200) > median Theta(R,200); lives lacking a group excluded and counted; none -> undecidable"
+[E3]
+label = "R, h=1000: median Theta < median N_dec (decay-only twin endpoint change)"
+[E4]
+label = "whole-table Delta G_dec > 0 in at least one step over the 48 lives"
+[E5]
+label = "F: median of G(T_i+200) - G(T_i) < 0"
+[E6]
+label = "synthetic period-4 (1,1,1,0) one key, t0=10000: Theta(h=10000) < N_dec(h=10000) and Theta(10000) <= 2*Theta(1000) (2 is a stated guide, not derived)"

@@ -1,0 +1,8 @@
+# S84 endpoint/path predictions frozen before running (seen 48 lives only, 2026-11-26T11:43:17Z); user 2026-11-26 「Fable のおすすめをやってくれ」; codex S-R P1-P7
+054b97f5d680527c66d998da6cfedce8a719dbfc87ca7c478be4d0033183c9e0  experiments/s84_np/predictions.toml
+# S84 np code before codex I-R (2026-11-26T11:44:26Z)
+9fd942f0199e24330512da2e4994298b28c18844c7e6e073c64f00b5d531e40c  experiments/s84_np/np.jl
+# S84 np code after codex I-R P4 (2026-11-26T11:45:05Z)
+0727641ee25ec65632b3bf95959deae2386cd25f41af5df87fa6e267a53092be  experiments/s84_np/np.jl
+# S84 np output (2026-11-26T11:47:19Z): E1 hit (rho F200 med 0.911), E2 miss (rho R1000 med 0.306, above [0.0105,0.0949]), E3 miss (R200 0.743 > C200 0.661; F200 0.911), E4 miss (1498/2861512 whole-table identical steps); seen 48 lives only
+baf00fdf2e0943b5dd18ea4c017ff66e60b59cf1524442c7276ca56c10aec4b7  experiments/s84_np/out/np.out

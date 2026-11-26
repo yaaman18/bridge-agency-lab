@@ -1,0 +1,6 @@
+# S86 predictions (discussion/specs/S86-draft-bisim-invariance.md §3). Frozen before running. Seen 48 lives only.
+# G1-G3 are construction-determined gates (failure = implementation error), not predictions. codex S-R 2026-11-26 P1-P6.
+[E1]
+label = "S85 Theta: pooled median per group/h differs between B (y^2) and A for at least one of F/R/C at h=200; same for D (4x with 4y^2); C (4x) equals A bitwise at every origin"
+[E2]
+label = "at least one default origin s (groups F/R/C, h=1000) with D_s(s+1000) > 0; targets present and all zero -> miss; no targets -> undecidable"

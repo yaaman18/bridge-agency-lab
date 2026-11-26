@@ -1,0 +1,65 @@
+gate: 48 lives; replayed P bit-identical to saved P; recorded rn/rn1/rate rebuild P bit-identically at every example; Y-flip replay gives identical rn and keys; K = 183, W = 720
+== per life (rn at prediction time; medians)
+  st1 life 1: med a 30.3881 (n 600)  b 480.4100 (n 14800)  c 379.3133 (n 2000, seam windows 10/11)  r_a 0.0633  r_c 0.7896
+  st1 life 2: med a 32.5005 (n 800)  b 492.5279 (n 14400)  c 332.8269 (n 2200, seam windows 11/11)  r_a 0.0660  r_c 0.6758
+  st1 life 3: med a 10.7879 (n 800)  b 528.5181 (n 14414)  c 415.1740 (n 2000, seam windows 10/11)  r_a 0.0204  r_c 0.7855
+  st1 life 4: med a 13.8028 (n 800)  b 494.4905 (n 14400)  c 349.4125 (n 1800, seam windows 9/11)  r_a 0.0279  r_c 0.7066
+  st2 life 1: med a 13.8812 (n 600)  b 534.3196 (n 14555)  c 313.1357 (n 2000, seam windows 10/11)  r_a 0.0260  r_c 0.5860
+  st2 life 2: med a 15.6734 (n 800)  b 479.6265 (n 14400)  c 180.0449 (n 2200, seam windows 11/11)  r_a 0.0327  r_c 0.3754
+  st2 life 3: med a 14.7049 (n 800)  b 510.8405 (n 14447)  c 424.6725 (n 2000, seam windows 10/11)  r_a 0.0288  r_c 0.8313
+  st2 life 4: med a 16.7039 (n 800)  b 499.9784 (n 14600)  c 182.7047 (n 2000, seam windows 10/11)  r_a 0.0334  r_c 0.3654
+  s80 life 1: med a 32.3316 (n 800)  b 496.5038 (n 14528)  c 163.1739 (n 2400, seam windows 12/13)  r_a 0.0651  r_c 0.3286
+  s80 life 2: med a 11.7355 (n 800)  b 484.1674 (n 14457)  c 238.0402 (n 2600, seam windows 13/13)  r_a 0.0242  r_c 0.4916
+  s80 life 3: med a 17.7188 (n 800)  b 533.6035 (n 14600)  c 118.0433 (n 2400, seam windows 12/13)  r_a 0.0332  r_c 0.2212
+  s80 life 4: med a 13.4280 (n 800)  b 477.9759 (n 14400)  c 167.1199 (n 2600, seam windows 13/13)  r_a 0.0281  r_c 0.3496
+  s80 life 5: med a 14.7903 (n 800)  b 500.7942 (n 14400)  c 147.2762 (n 2400, seam windows 12/13)  r_a 0.0295  r_c 0.2941
+  s80 life 6: med a 12.5486 (n 800)  b 472.8022 (n 14600)  c 116.2559 (n 2200, seam windows 11/13)  r_a 0.0265  r_c 0.2459
+  s80 life 7: med a 17.3694 (n 800)  b 483.0826 (n 14400)  c 135.3854 (n 2400, seam windows 12/13)  r_a 0.0360  r_c 0.2803
+  s80 life 8: med a 19.8582 (n 800)  b 504.6256 (n 14392)  c 153.7140 (n 2400, seam windows 12/13)  r_a 0.0394  r_c 0.3046
+  s80 life 9: med a 15.5734 (n 800)  b 534.4186 (n 14200)  c 153.4505 (n 2400, seam windows 12/13)  r_a 0.0291  r_c 0.2871
+  s80 life 10: med a 22.9289 (n 800)  b 505.9371 (n 14600)  c 266.1023 (n 2200, seam windows 11/13)  r_a 0.0453  r_c 0.5260
+  s80 life 11: med a 15.2481 (n 800)  b 523.5923 (n 14600)  c 269.6088 (n 2400, seam windows 12/13)  r_a 0.0291  r_c 0.5149
+  s80 life 12: med a 14.4281 (n 600)  b 456.9267 (n 14618)  c 408.1333 (n 2000, seam windows 10/13)  r_a 0.0316  r_c 0.8932
+  s80 life 13: med a 13.9042 (n 800)  b 521.6864 (n 14200)  c 134.2119 (n 2600, seam windows 13/13)  r_a 0.0267  r_c 0.2573
+  s80 life 14: med a 18.8423 (n 800)  b 485.7869 (n 14600)  c 313.7128 (n 2600, seam windows 13/13)  r_a 0.0388  r_c 0.6458
+  s80 life 15: med a 25.0175 (n 800)  b 447.3596 (n 14400)  c 438.3071 (n 2200, seam windows 11/13)  r_a 0.0559  r_c 0.9798
+  s80 life 16: med a 28.5141 (n 800)  b 462.3932 (n 14600)  c 155.8631 (n 2000, seam windows 10/13)  r_a 0.0617  r_c 0.3371
+  s80 life 17: med a 12.8125 (n 800)  b 492.0277 (n 14400)  c 176.8718 (n 2200, seam windows 11/13)  r_a 0.0260  r_c 0.3595
+  s80 life 18: med a 30.5488 (n 800)  b 499.0874 (n 14309)  c 288.5047 (n 2600, seam windows 13/13)  r_a 0.0612  r_c 0.5781
+  s80 life 19: med a 16.4139 (n 800)  b 520.6083 (n 14400)  c 143.1145 (n 2400, seam windows 12/13)  r_a 0.0315  r_c 0.2749
+  s80 life 20: med a 22.1379 (n 800)  b 417.8611 (n 14021)  c 172.2936 (n 2600, seam windows 13/13)  r_a 0.0530  r_c 0.4123
+  s80 life 21: med a 15.8028 (n 800)  b 488.3745 (n 14200)  c 146.6605 (n 2600, seam windows 13/13)  r_a 0.0324  r_c 0.3003
+  s80 life 22: med a 16.6049 (n 800)  b 397.6342 (n 14600)  c 287.1460 (n 2600, seam windows 13/13)  r_a 0.0418  r_c 0.7221
+  s80 life 23: med a 18.4771 (n 800)  b 466.8748 (n 14459)  c 153.5925 (n 2400, seam windows 12/13)  r_a 0.0396  r_c 0.3290
+  s80 life 24: med a 15.0355 (n 800)  b 507.4398 (n 14572)  c 168.7863 (n 2400, seam windows 12/13)  r_a 0.0296  r_c 0.3326
+  s80 life 25: med a 12.9342 (n 800)  b 475.4307 (n 14600)  c 173.5007 (n 2600, seam windows 13/13)  r_a 0.0272  r_c 0.3649
+  s80 life 26: med a 20.7231 (n 800)  b 492.6005 (n 14200)  c 147.1165 (n 2600, seam windows 13/13)  r_a 0.0421  r_c 0.2987
+  s80 life 27: med a 13.8469 (n 800)  b 502.0490 (n 14293)  c 371.8150 (n 2400, seam windows 12/13)  r_a 0.0276  r_c 0.7406
+  s80 life 28: med a 15.6992 (n 800)  b 540.3504 (n 14400)  c 334.6060 (n 2400, seam windows 12/13)  r_a 0.0291  r_c 0.6192
+  s80 life 29: med a 18.0837 (n 800)  b 549.4985 (n 14600)  c 150.8652 (n 2400, seam windows 12/13)  r_a 0.0329  r_c 0.2746
+  s80 life 30: med a 22.0693 (n 600)  b 507.0607 (n 14600)  c 177.6746 (n 2200, seam windows 11/13)  r_a 0.0435  r_c 0.3504
+  s80 life 31: med a 20.6926 (n 600)  b 450.9286 (n 14600)  c 204.4570 (n 2400, seam windows 12/13)  r_a 0.0459  r_c 0.4534
+  s80 life 32: med a 19.1059 (n 800)  b 521.9228 (n 14655)  c 291.5885 (n 2600, seam windows 13/13)  r_a 0.0366  r_c 0.5587
+  s80 life 33: med a 15.5801 (n 600)  b 448.2485 (n 14400)  c 191.9097 (n 2400, seam windows 12/13)  r_a 0.0348  r_c 0.4281
+  s80 life 34: med a 17.3431 (n 800)  b 485.3103 (n 14600)  c 163.9260 (n 2200, seam windows 11/13)  r_a 0.0357  r_c 0.3378
+  s80 life 35: med a 12.9238 (n 800)  b 476.1171 (n 14400)  c 137.7426 (n 2000, seam windows 10/13)  r_a 0.0271  r_c 0.2893
+  s80 life 36: med a 16.7398 (n 800)  b 521.6844 (n 14400)  c 184.5814 (n 2600, seam windows 13/13)  r_a 0.0321  r_c 0.3538
+  s80 life 37: med a 12.7919 (n 600)  b 487.2441 (n 14184)  c 183.2789 (n 2200, seam windows 11/13)  r_a 0.0263  r_c 0.3762
+  s80 life 38: med a 19.7861 (n 600)  b 456.1078 (n 14357)  c 157.6585 (n 2400, seam windows 12/13)  r_a 0.0434  r_c 0.3457
+  s80 life 39: med a 11.7368 (n 800)  b 488.0909 (n 14600)  c 172.1917 (n 2400, seam windows 12/13)  r_a 0.0240  r_c 0.3528
+  s80 life 40: med a 11.8538 (n 600)  b 536.1765 (n 14200)  c 145.5173 (n 2400, seam windows 12/13)  r_a 0.0221  r_c 0.2714
+undefined: r_a 0 (b: 0, a empty: 0)  r_c 0 (b: 0, c empty: 0)
+K1: r_a median 0.0325, r_a <= 0.1 in 48/48 lives, quartiles 0.0278 / 0.0325 / 0.0418, min 0.0204 max 0.0660 -> hit
+K2: r_c median 0.3622, 0.5 <= r_c <= 2 in 16/48 lives (below 0.5: 32, above 2: 0), quartiles 0.3035 / 0.3622 / 0.5801 -> miss
+S83-K1: hit
+S83-K2: miss
+== descriptive (no prediction)
+  window mean w over 200 examples: formation heads (selected, n 183) q1/med/q3 0.1314 / 0.1523 / 0.1868 min 0.0668;  routine chunks without seam heads (n 3341) 0.0042 / 0.0061 / 0.0091 max 0.0967;  AUC 1.0000
+  formation heads with w <= routine max: 9/183
+  (d) Y=0 in formation windows, pair group C4/O: n 1188 rn q1/med/q3 0.0000 / 1.8141 / 8.6017
+  (d) Y=0 in formation windows, pair group -/O: n 303 rn q1/med/q3 0.0041 / 0.9700 / 3.4060
+  (d) Y=0 in formation windows, pair group C4/-: n 0 rn q1/med/q3 -
+  (d) Y=0 in formation windows, pair group -/-: n 2 rn q1/med/q3 43.5441 / 72.7493 / 101.9546
+  (d) Y=0 in routine windows: n 5728 rn q1/med/q3 4.6211 / 6.5050 / 9.7056
+  (a') unselected switches: n 9 r_a q1/med/q3 0.0253 / 0.0346 / 0.0371 max 0.0838
+note: seen lives only; descriptive. No clock or threshold is chosen here.

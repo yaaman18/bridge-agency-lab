@@ -1,0 +1,16 @@
+gate: S84 gates on the official law; G1 tables of A,B,C,D bitwise equal on every step of every life and on every flip twin; normal range of nonzero counts (min 1.9373032338197037e-14); flip effect = 1-2y at (a,k) only; unflipped twin = A; G2 D_s, N, G, sum d bitwise equal across A,B,C,D; G3 fixed program all zero; Theta_A = S85 twin bitwise; K = 183
+== groups (pooled; D = flip trace D_s(s+h) of the outcome at s = t0+1, read at example s+h; Theta_X = S85 Theta under implementation X)
+  F h=50: n 183  D 0.0911 / 0.1186 / 0.1688  D=0: 0  Theta A 0.0313 / 0.0474 / 0.1010  B 0.3567 / 0.4745 / 0.6084  C 0.0313 / 0.0474 / 0.1010  D 0.3567 / 0.4745 / 0.6084  B/A 5.4065 / 8.6660 / 12.9305  D/A 5.4065 / 8.6660 / 12.9305  B!=A bitwise 183
+  F h=200: n 183  D 0.0569 / 0.0675 / 0.0928  D=0: 0  Theta A 0.1323 / 0.5753 / 1.0361  B 2.4371 / 3.0549 / 3.9013  C 0.1323 / 0.5753 / 1.0361  D 2.4371 / 3.0549 / 3.9013  B/A 2.9172 / 5.0165 / 23.8297  D/A 2.9172 / 5.0165 / 23.8297  B!=A bitwise 183
+  F h=1000: n 183  D 0.0302 / 0.0319 / 0.0388  D=0: 0  Theta A 1.2700 / 1.5659 / 2.5563  B 22.7385 / 25.4301 / 28.5724  C 1.2700 / 1.5659 / 2.5563  D 22.7385 / 25.4301 / 28.5724  B/A 8.2991 / 15.2814 / 20.7230  D/A 8.2991 / 15.2814 / 20.7230  B!=A bitwise 183
+  R h=50: n 684  D 0.0524 / 0.0548 / 0.0587  D=0: 0  Theta A 0.0013 / 0.0035 / 0.0099  B 0.0027 / 0.0069 / 0.0162  C 0.0013 / 0.0035 / 0.0099  D 0.0027 / 0.0069 / 0.0162  B/A 2.0133 / 2.0344 / 2.0507  D/A 2.0133 / 2.0344 / 2.0507  B!=A bitwise 684
+  R h=200: n 662  D 0.0485 / 0.0507 / 0.0543  D=0: 0  Theta A 0.0118 / 0.0332 / 0.0817  B 0.0193 / 0.0359 / 0.0603  C 0.0118 / 0.0332 / 0.0817  D 0.0193 / 0.0359 / 0.0603  B/A 0.5851 / 1.5307 / 2.1354  D/A 0.5851 / 1.5307 / 2.1354  B!=A bitwise 662
+  R h=1000: n 522  D 0.0326 / 0.0338 / 0.0361  D=0: 0  Theta A 0.1323 / 0.1948 / 0.3177  B 0.1148 / 0.1681 / 0.2771  C 0.1323 / 0.1948 / 0.3177  D 0.1148 / 0.1681 / 0.2771  B/A 0.5848 / 0.9092 / 1.3953  D/A 0.5848 / 0.9092 / 1.3953  B!=A bitwise 522
+  C h=50: n 565  D 0.5081 / 0.5301 / 0.5427  D=0: 0  Theta A 0.0067 / 0.0226 / 0.0829  B 0.0129 / 0.0243 / 0.0618  C 0.0067 / 0.0226 / 0.0829  D 0.0129 / 0.0243 / 0.0618  B/A 0.6705 / 1.9906 / 2.1308  D/A 0.6705 / 1.9906 / 2.1308  B!=A bitwise 565
+  C h=200: n 560  D 0.4883 / 0.5098 / 0.5208  D=0: 0  Theta A 0.0321 / 0.0752 / 0.1413  B 0.0397 / 0.0686 / 0.1156  C 0.0321 / 0.0752 / 0.1413  D 0.0397 / 0.0686 / 0.1156  B/A 0.5971 / 0.9967 / 2.1752  D/A 0.5971 / 0.9967 / 2.1752  B!=A bitwise 560
+  C h=1000: n 524  D 0.3874 / 0.4004 / 0.4083  D=0: 0  Theta A 0.1805 / 0.2791 / 0.4756  B 0.1716 / 0.2599 / 0.5064  C 0.1805 / 0.2791 / 0.4756  D 0.1716 / 0.2599 / 0.5064  B/A 0.6513 / 0.9596 / 1.5807  D/A 0.6513 / 0.9596 / 1.5807  B!=A bitwise 524
+E1: h=200 groups with median Theta_B != Theta_A: ["F", "R", "C"]; Theta_D != Theta_A: ["F", "R", "C"]; Theta_C = Theta_A bitwise at all 4114 origins: true -> hit
+E2: origins with D_s(s+1000) > 0: 1229 / 1229 (origins without s+1000 in the life, excluded: 48) -> hit
+S86-E1: hit
+S86-E2: hit
+note: seen lives only. Interface-only definitions are invariant by construction (gates G1-G3); E1 tests that S85 Theta is not.

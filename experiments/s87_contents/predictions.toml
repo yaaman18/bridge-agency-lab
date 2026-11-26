@@ -1,0 +1,13 @@
+# S87 predictions (discussion/specs/S87-draft-trace-across-contents.md §3). Frozen before running. Seen lives only, no new seeds.
+# G1-G8 are construction-determined gates (failure = implementation error), not predictions. codex S-R 2026-11-26 P1-P8, neon N1-N10.
+# D_s(t) = mean |O_Q(x_t) - O_Q(x_t^{not s})| over the field probe Q (400 held-out probes x 5 maps of the life), s = t0 + 1, read at s + h.
+[E1]
+label = "CUM: D_s(s+h) > 0 at every default origin (groups F/R/C) and every h in {50,200,1000}; any zero -> miss"
+[E2]
+label = "TRM: at least one origin with D_s(s+50) = 0 and D_s(s+1000) > 0 (both read at the same origin); no TRM origin readable to s+1000 -> undecidable"
+[E3]
+label = "TRM: at least one origin with D_s(s+1000) > 0; targets present and all zero -> miss; no targets -> undecidable"
+[E4]
+label = "pairs (life, s) counted once; denominator = pairs readable at both h with D_s(s+50) > 0 for both FGT and CUM; more than half have D(1000)/D(50) of FGT < CUM; empty -> undecidable"
+[E5]
+label = "h=200: median D_s of group C > median of group R, for CUM (48 lives) and for TRM (4 lives) each; FGT is a restatement of S86, not a prediction"

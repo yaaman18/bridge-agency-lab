@@ -1,0 +1,19 @@
+gate: L=1000 reproduces 125/183 and 24/720 (48 lives); routine windows per life 15, 10, 5, 5; every life covers T_4 + 3000
+== seen 48 lives, C4 h=13.75, official firemask (carry-in included)
+  L=1000: X/K=125/183 d=0.6831 [0.6103, 0.7497]  Z/W=24/720 f=0.0333 [0.0215, 0.0492] -> fail (48 seen lives; descriptive)
+     needed for pass at this K, W: d_LB >= max(10 f_UB, 1 - 0.1(1 - f_UB)) = 0.9049
+  L=1500: X/K=132/183 d=0.7213 [0.6504, 0.7849]  Z/W=24/480 f=0.0500 [0.0323, 0.0735] -> fail (48 seen lives; descriptive)
+     needed for pass at this K, W: d_LB >= max(10 f_UB, 1 - 0.1(1 - f_UB)) = 0.9073
+  L=2000: X/K=135/183 d=0.7377 [0.6677, 0.7998]  Z/W=17/240 f=0.0708 [0.0418, 0.1110] -> fail (48 seen lives; descriptive)
+     needed for pass at this K, W: d_LB >= max(10 f_UB, 1 - 0.1(1 - f_UB)) = 1.1099
+  L=3000: X/K=140/183 d=0.7650 [0.6968, 0.8244]  Z/W=24/240 f=0.1000 [0.0651, 0.1451] -> fail (48 seen lives; descriptive)
+     needed for pass at this K, W: d_LB >= max(10 f_UB, 1 - 0.1(1 - f_UB)) = 1.4513
+  unseen 40 lives, L=1000: life bootstrap pass 0.0000 fail 1.0000 undecided 0.0000 | binomial (K=153, W=600) pass 0.0000 fail 1.0000 undecided 0.0000
+  unseen 40 lives, L=1500: life bootstrap pass 0.0000 fail 0.9999 undecided 0.0001 | binomial (K=153, W=400) pass 0.0000 fail 0.9999 undecided 0.0001
+  unseen 40 lives, L=2000: life bootstrap pass 0.0000 fail 0.9989 undecided 0.0011 | binomial (K=153, W=200) pass 0.0000 fail 0.9998 undecided 0.0002
+  unseen 40 lives, L=3000: life bootstrap pass 0.0000 fail 0.9923 undecided 0.0077 | binomial (K=153, W=200) pass 0.0000 fail 0.9961 undecided 0.0039
+  order by bootstrap pass: [1000, 1500, 2000, 3000]; by binomial pass: [1000, 1500, 2000, 3000]
+selection: no L reaches bootstrap pass 0.5 -> plan A does not go to step 2; back to the user
+S82-E1 (no L reaches bootstrap pass 0.5): hit
+S82-E2 (d and f both increase with L): hit  d 0.6831 0.7213 0.7377 0.7650 f 0.0333 0.0500 0.0708 0.1000
+note: seen lives only (development estimate). The chosen L must be judged on unseen lives; thresholds h = 13.75 were chosen at L = 1000.

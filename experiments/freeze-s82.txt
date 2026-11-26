@@ -1,0 +1,8 @@
+# S82 L estimate predictions and selection rule frozen before running (seen 48 lives only, 2026-11-25T14:03:57Z); user 2026-11-25 「案Aで手順1の見積もりに進めて」; codex S-R 13:03Z P1-P6
+2c3cdf02f438e78b63f541a18acbc99ace88ba0f2a39c18b64c66550ef72c95e  experiments/s82_L/predictions.toml
+# S82 est code before codex I-R (2026-11-25T14:04:32Z)
+61b1c4b9939005c53abb9a082a5968c4021b803b0d973358cf2963e2c0c202a2  experiments/s82_L/est.jl
+# S82 est code after codex I-R 13:04Z P4 (per-life window and k gates for every L, per sums == totals) (2026-11-25T14:05:12Z)
+aa57f3cbeb95143fe2c2ac8794fe8678f2999fb9ba1d97b6519eb8e5d7c4de3a  experiments/s82_L/est.jl
+# S82 est output (2026-11-25T14:07:53Z): E1 hit (no L reaches pass; bootstrap pass 0 at every L), E2 hit (d 0.683 0.721 0.738 0.765, f 0.033 0.050 0.071 0.100); seen 48 lives only
+ea1a9550800294c5f3fd9c5afd292c86788386f038df330cb2db795b949e4c9f  experiments/s82_L/out/est.out
