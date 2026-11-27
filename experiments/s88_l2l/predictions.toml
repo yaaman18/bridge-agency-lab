@@ -1,0 +1,11 @@
+# S88 predictions (discussion/specs/S88-draft-two-layer-trace.md §3). Frozen before running. Seen 48 lives only, no new seeds, law numbers unchanged.
+# Learner L2L-T = K (L-FGT counters, same update) + M (examples kept by R1, never decayed; capacity C = infinity). Output O1 adds M's counts with weight 1.
+# R1: keep example t iff (y=1 and p<1/2) or (y=0 and p>1/2), p = L2L-T's own O1 prediction for k_t before the update.
+# G1-G7 are construction-determined gates (failure = implementation error), not predictions. codex S-R 2026-11-27 P1-P8.
+# D_s(s+h) on table T = L1 sum over 130 keys (S86 rule); s = t0 + 1; origins84 groups F/R/C. E1-E3 judged only at C = infinity.
+[E1]
+label = "h=1000, table T: targets = (life, s) once, p_s != 1/2 by L2L-T main O1 just before the flip, s+1000 readable; mean of paired difference D_L2L - D_FGT > 0 -> hit; <= 0 -> miss; empty -> undecidable"
+[E2]
+label = "same targets as E1: L2L-T D_s(s+1000) > 0 on table T for every target; any zero -> miss; empty -> undecidable"
+[E3]
+label = "main run: fraction of examples kept by R1 in formation windows (formwin, S83) > in routine windows (routinewins, S83), pooled over 48 lives, unit (life,t) once per window kind; <= -> miss; empty denominator -> undecidable"

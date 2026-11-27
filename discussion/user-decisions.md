@@ -274,3 +274,7 @@
 - TRACE-1 r6 文案を `notes/trace1-r6-draft.md` に起こした（claude-lab 起草、codex-lab P1〜P8・neon-lab N1〜N10 の注記を取り込み）。requirements.md の正本はまだ差し替えない（差し替えはユーザーの承認の後）。
 - 3 者の保守案: 要件は恒等式 I1〜I5 と記憶の性質 S1 の骨格だけ。向きつきの区間差 S2 は尺度（BP14 (b)）の後、二層 S3 は学習器の内部の仕様へ。
 - S87（FGT・CUM・WIN・TRM・固定のプログラムに同じ定義）: 仕様 `specs/S87-draft-trace-across-contents.md`、予測 E1〜E5 を凍結（freeze-s87）。I-R を本走りの前に閉じた。
+
+## 2026-11-27「r6に差し替えて、S88も組んで」
+- **決定**: R-AUE-TRACE-1 を r6（痕跡の前順序、I1〜I5＋S1、S2・S3 は保留）に差し替える。requirements.md に反映（decisions-log #88、r5 までの文は記録として残す）。
+- **決定**: S88（二層の学習器 L2L-T と L-FGT の比較）を組む。容量 C は未決のまま、本走りは C = ∞（捨てない）で行う（codex S-R P1）。

@@ -1,0 +1,4 @@
+64f0633fb53cb72daf114cb450f47e18bb8e87af71fe188aefcf78ccc4b1cbfd  experiments/s88_l2l/predictions.toml
+91015de67178f9776d13b92f71d079bd1f9ca3f9f82f26c59e56202cd1a0c420  experiments/s88_l2l/l2l.jl  (code sent to I-R; smoke = gates only on prefixes, out/smoke.out; neg control neg-r1.jl: reversed R1 fails G5)
+5be901659727edcf6460e7347e4b8baa977c10f2933e5e37a207aa65b8948940  experiments/s88_l2l/l2l.jl  (code after I-R P2, P4; I-R closed 2026-11-27)
+51c26d8ab357c6a0a46ff495c36c5c664b2ae54fb9f9d4a60be4dd26dedab75c  experiments/s88_l2l/out/l2l.out  (full run output)
