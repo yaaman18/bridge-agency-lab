@@ -1,0 +1,16 @@
+# S89 predictions (discussion/specs/S89-draft-l2l-finite-c-and-n3.md r2 §5). Frozen before implementation and running.
+# Seen 48 lives only; no new seeds (1600-1617, 2860-2899 untouched); law numbers (lambda=1-1/2000, ALPHA_R1, LO/HI clip) unchanged.
+# Capacity set (Plan D1, user-approved decisions-log #89): C in {0, 1, 2, infinity}.
+# Post-hoc disclosure: S88 (C=infinity) fragment count distribution (Q1=110.0 / median=119.5 / Q3=133.5), group/h G_T quartiles (FGT ~63 vs L2L ~55), and main/twin keep split (24 vs 1205) are known prior to S89.
+# Selecting a "best C" from D1 eviction rate, N3 sign, or D_s magnitude is forbidden; all 4 capacities are reported in full.
+# Gates G1-G9 and negative controls NC1-NC3 are construction-determined checks (failure = implementation error), not predictions.
+# Common verdict rule (codex S-R P7, claude S-R #9): equality (= 0 or equal means) is a miss; across multiple capacities, miss takes precedence over undecidable (any miss -> miss; no miss and any empty -> undecidable; all non-empty and all hold -> hit).
+
+[E1]
+label = "N3 same-K G_T drop: over unique (life, t) in U (each weight 1; origins84 F/R/C, h in {50,200,1000}, t=s+h<=N), mean DeltaG_O1 = mean(G_T(T_{K+M}) - G_T(T_K)) < 0 for all three C in {1, 2, infinity}; >= 0 at any C -> miss; empty U -> undecidable"
+
+[E2]
+label = "N3 reverse-bias direction on reference-side interior keys: over K^+_in(C) = {(life, t, k) | (life, t) in U, m_t^(C)[k] > 0, p_{K,k}(t) != 1/2, LO < p^raw_{K,k}(t) < HI} (each (life, t, k) weight 1), mean delta_out = mean(sign(p_K - 1/2) * (p_{K+M} - p_K)) < 0 for all three C in {1, 2, infinity}; >= 0 at any C -> miss (precedes empty); no miss and any empty -> undecidable"
+
+[E3]
+label = "D1 finite-C eviction reduces h=1000 trace lift: over common eligible origins S_common = {(life, s) once from origins84 F/R/C h=1000 | s+1000 <= N and pre-update p_s^(C) != 1/2 for all C in {1, 2, infinity}} (each (life, s) weight 1), mean paired difference on table T satisfies mean(D_s^{L2L(C)} - D_s^{FGT}) < mean(D_s^{L2L(inf)} - D_s^{FGT}) for both C=1 and C=2; >= at either C -> miss; empty S_common -> undecidable"

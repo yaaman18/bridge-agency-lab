@@ -1,0 +1,6 @@
+2490d609289647aee56d71d63c9ced21e3a69079e76a9b54c808d15b74403659  experiments/s89_l2l_d1/predictions.toml
+8c67d408e9032db83ffc15e935a942c33ce28eff098773b928598c3be7346389  discussion/specs/S89-draft-l2l-finite-c-and-n3.md
+79fdcf63792764d334ff5d4cfc445f86ecf3425e136e4c25f6aaf2809d9e486c  experiments/s89_l2l_d1/l2l_d1.jl  (code sent to I-R; smoke = gates only on prefixes, out/smoke.out)
+50b9cc4ff6acc04ecb4dc9a2ee71825d581141a66e22b7aba102e517ac9ad01b  experiments/s89_l2l_d1/neg_controls.jl  (NC1-NC3 sent to I-R, out/neg_controls.out)
+c277908b9d452d6c75cc17954d5c4f49ae13b659c356980577a34b8da4398328  experiments/s89_l2l_d1/l2l_d1.jl  (code after I-R r1 P1/P2/P6 & r2 P2; I-R closed 2026-11-27)
+e44f3466e8489b7d4b56c86c383b620d23b9a6f1a07119f9ec2225d2dd3811a0  experiments/s89_l2l_d1/out/l2l_d1.out  (full run output)

@@ -1,0 +1,4 @@
+NC1 (C=2 LIFO): failed with "G6(c) full: not head-out / order / tail C=2 t=1620" -> ok (expected G6)
+NC2 (C=1 evict without keep): failed with "G6(b) list changed on a step R1 did not keep C=1 t=698" -> ok (expected G6(b))
+NC3 (C=0 one fragment injected): failed with "G2 C=0 table = replay84 t=1" -> ok (expected G2 or G9)
+negative controls: all 3 failed at their intended gates
