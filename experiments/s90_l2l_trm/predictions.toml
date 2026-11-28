@@ -1,0 +1,17 @@
+# S90 predictions (discussion/specs/S90-draft-l2l-trm-memory-type.md r2 §5; L2L-TRM-draft-memory-type.md r7). Frozen before implementation and running.
+# Seen 4 TRM lives only (st2 life 1..4, identical to S87 TRMV); no new seeds (1600-1617, 2860-2899 untouched); TrmL & S87 frozen assets unchanged.
+# Capacity set (Plan D1 fixed-byte analog, user-approved decisions-log #89/#90): C0_B8 (B=8, C=0), C0_B9 (B=9, C=0), C1 (B=24, C=1), C2 (B=40, C=2), C130 (B=2088, C=130).
+# Precision rule: Layer 1-3 and E1-E3 run on unified Float32 p_a^TRM across all capacities; Float64 path is strictly reserved for G8 (S87 regression).
+# Post-hoc disclosure: S87 TRM 9-group D/N/G quartiles on st2 life 1..4 and S89 table L2L-T reverse-bias findings are known prior to S90.
+# Selecting a "best C" from S90 outputs is forbidden; all 4 capacities (C0_B8, C1, C2, C130) + C0_B9 verification are reported in full.
+# Gate-priority rule: GM1-GM5, G6-G8, and negative controls NC1-NC7 are construction-determined checks; if any gate or negative control fails, S90-E1 = miss, S90-E2 = undecidable, S90-E3 = undecidable.
+# Descriptive splits (separate from E1-E3 verdicts): init (1<=t<=1500), switch (t in Union_{i=1..4} (TS[i], TS[i]+1500], TS=[8000,20000,32000,44000], FLEN=1500), steady (all other t).
+
+[E1]
+label = "Layer 1 wiring check only (not efficacy proof): after all gates GM1-GM5/G6-G8 and NC1-NC7 pass, for all three finite capacities C in {1, 2, 130}, |R_hit(C)| >= 1 and mean(Delta_pi(C)) > 0 on pooled 4-life main-trajectory hit steps R_hit(C); all three hold -> hit; any |R_hit(C)| == 0 -> E1 miss (with that C's wiring effect recorded separately as undecidable); any |R_hit(C)| >= 1 with mean(Delta_pi(C)) <= 0 -> miss"
+
+[E2]
+label = "Layer 3 in-type twin trace lift at h=1000 (unified Float32 across all capacities): over S_common(1000) (deduplicated (life, t0) from origins87 F/R/C, each weight 1, t0+1+1000 <= N, finite D_s^p and D_s^pi for all 4 capacities, no filtering by retention/hit), mean(D_s^pi(C130) - D_s^pi(C0_B8)) > 0 AND mean(D_s^p(C130) - D_s^p(C0_B8)) > 0; empty S_common(1000) -> undecidable; both > 0 -> hit; otherwise -> miss (C=1,2 reported descriptively)"
+
+[E3]
+label = "Layer 2 predictive fit on C130 pooled hit steps R_hit(130): mean(DeltaBrier(130)) = mean((p_ON - Y)^2 - (p_OFF - Y)^2) > 0 (predicting net degradation because zero-threshold R1 also records accidental misses in steady segments; <= 0 reported honestly as miss / improvement or non-degradation); empty R_hit(130) -> undecidable; > 0 -> hit; <= 0 -> miss"

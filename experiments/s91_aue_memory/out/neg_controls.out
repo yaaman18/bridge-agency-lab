@@ -1,0 +1,21 @@
+frozen91a: OK (experiments/freeze-s91a.txt, mem_core.jl)
+sha256 bed_mem.jl ea1655664630d955f1616055d4eadb7ee8b0c4e552722832008986606c32451a
+sha256 adapter_aue_a_mem.jl 2af949668bc7522d9264b580635130fb76fd19581cce2c1e5fa868e9b18f7a1b
+sha256 s91a_run.jl adb9b90220db5537db349ad7c4cabf029b5751cf255f05da00c8110aa4f30646
+sha256 neg_controls.jl e21106e7cb372058c1f1f03944c62c76c466ce09f9604d51bdf1baecb0c1e874
+sha256 mem_core.jl e09341e7dfd0e8c93d935c754f169b061c5a592ecf9886b9000a8d75f4d07a08
+NC-M1a gate=GB-M1 expected=MemoryAccountingViolation containing "memory surplus bytes not zero" got: MemoryAccountingViolation: memory surplus bytes not zero => ok
+NC-M1b gate=GB-M1 expected=ErrorException containing "memory read on C_spec = 0" got: GB-M1 C0_B8: memory read on C_spec = 0 at step 0 (ops 16) => ok
+NC-M1c gate=4-seam expected=ErrorException containing "AUE-B per-step digests differ from direct NestingCPCC" got: 4-seam: AUE-B per-step digests differ from direct NestingCPCC => ok
+NC-M2a gate=bed_mem (GB-M5 run) expected=MemoryAccountingViolation containing "(fictitious payment)" got: MemoryAccountingViolation: paid 0.0040000000000000036 > body decrease 0.0 (fictitious payment) => ok
+NC-M2b gate=bed_mem (GB-M5 run) expected=MemoryAccountingViolation containing "reported port delta" got: MemoryAccountingViolation: reported port delta 0.0039999999999054126 != measured 0.0 => ok
+NC-M2c gate=bed_mem (P2Only, kept 0) expected=MemoryAccountingViolation containing "memory_upkeep_paid 1.0 !== verified 0.0" got: MemoryAccountingViolation: memory_upkeep_paid 1.0 !== verified 0.0 => ok
+NC-M3 gate=GB-M4 expected=ErrorException containing "!= S90 definition" got: GB-M4 perm: ctx_key 19 != S90 definition 17 at step 5 => ok
+NC-M4 gate=bed_mem (GB-M5) expected=MemoryAccountingViolation containing "(unpaid holding)" got: MemoryAccountingViolation: slot_paid_lo length 0 != kept 2 (unpaid holding) => ok
+NC-M5 gate=GB-M6 expected=ErrorException containing "GB-M6: executed patch" got: GB-M6: executed patch C130 2 (acts [2]), C0_B8 2 (acts [2]); expected 2 / 1 => ok
+NC-M6 gate=bed_mem is_alive (GB-M5 run) expected=MemoryAccountingViolation containing "alive judgement false disagrees with body cells" got: MemoryAccountingViolation: alive judgement false disagrees with body cells (11) at step 0 => ok
+NC-M7a gate=bed_mem digest_excl_settle (GB-M5 run) expected=MemoryAccountingViolation containing "Phase 2 wrote outside {body balances, port, memory}" got: MemoryAccountingViolation: Phase 2 wrote outside {body balances, port, memory} at step 0 => ok
+NC-M7b gate=bed_mem digest_excl_settle (GB-M5 run) expected=MemoryAccountingViolation containing "Phase 2 wrote outside {body balances, port, memory}" got: MemoryAccountingViolation: Phase 2 wrote outside {body balances, port, memory} at step 0 => ok
+NC-M8 gate=bed_mem mem_pre == mem_init (GB-M6 run) expected=MemoryAccountingViolation containing "Phase 1 wrote the memory bytes (early write)" got: MemoryAccountingViolation: Phase 1 wrote the memory bytes (early write) at step 0 => ok
+time: 72 s, threads 8
+negative controls: all 13 failed at their intended gates

@@ -1,0 +1,32 @@
+# S91a species spec (discussion/specs/S91a-draft-aue-memory.md r3 §2, L5B-2): OneLife L2 + TracePred + [memory].
+# Default capacity C2 (reserved_bytes = 40). The five capacities C0_B8 / C0_B9 / C1 / C2 / C130 are generated from this
+# text by adapter_aue_a_mem.jl (capacity_spec_text: only reserved_bytes and max_read_ops_per_step lines are rewritten).
+# mapping_spec_hash = SHA-256 of AdapterAUEAMem.MAPPING_SPEC (the canonical ctx_key / draw / Y_t definition string).
+species_id = "AUE-A-OneLife-L2-mem"
+spec_version = "0.1.0"
+substrate = "torus_lenia_matter_24x24"
+individual_boundary = "b_shell_radius6_plus_port"
+allowed_organ_types = ["L2_circuit_bin3_tracepred_mem"]
+mapping_spec_hash = "2df8e3b3d1d36e33d2d717483a167c1a96fae758f66cc021931634a45430ba91"
+phenomenal_claim = "not_certified"
+
+[ports]
+inputs = ["g1", "g2", "rand_u64"]
+outputs = ["act_patch_1", "act_patch_2", "alive", "constituents"]
+
+[budget]
+step_granularity_sec = 10.0
+ops_per_step = 6000000
+ops_per_hour = 2160000000
+
+[dormancy]
+upkeep_rate_per_slot = 0.001
+max_slots = 4
+
+[memory]
+reserved_bytes = 40
+header_bytes = 8
+slot_bytes = 16
+upkeep_rate_per_slot = 0.002
+max_body_cells = 576
+max_read_ops_per_step = 24

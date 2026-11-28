@@ -1,0 +1,214 @@
+PASS NC-M1..NC-M8: 13 negative controls failed at their intended gates (out/neg_controls.out; SHA-256 of bed_mem.jl / adapter_aue_a_mem.jl / s91a_run.jl / neg_controls.jl / mem_core.jl = files on disk)
+PASS 4-seam static: bed_mem.jl contains 0 of the 14 species tokens
+PASS 4-seam regression: unchanged adapter_aue_b.jl 120 steps = direct NestingCPCC at every step (full theta), deterministic, replay_from_audit equal, 1-character tamper rejected
+PASS 4-seam ports / species boundary: undeclared input (both paths) / output ports and disallowed organs (both paths) rejected; allowed variant passes
+PASS 4-seam budget / dormancy: per-step, instantaneous-rate and rolling-3600 s-window (low-window spec: 3 steps pass, step 4 rejected) overruns rejected; free dormancy rejected (run and load); paid dormancy passes
+PASS 4-seam absorbing death: Runaway (seed 919001) dies at step 13, 0 commits after death, replay equal; post-death and death-step spores rejected; pre-death spore -> lineage child
+PASS 4-seam shared medium: valid split passes, double spend (3 + 3 > 5) rejected, stripped event_ref breaks the chain
+PASS 4-seam [memory] schema: 8 invalid tables rejected at load, the 5 capacity texts parse (B, C_spec), [memory] on a single-phase adapter rejected
+  (4-seam 26 s)
+PASS GB-M0 frozen91a: freeze-s91a.txt = exactly the 2 entries (predictions.toml, S91a-draft-aue-memory.md), SHA-256 match; mem_core.jl unchanged (e09341e7dfd0)
+PASS GB-M0 seeds: 910101..910136 (36 = 3 x 12) disjoint from 1600:1617, 2860:2899 and the test block 919001..919099
+PASS GB-M0 BO_CUR: all 36 seeds alive after the 800 BO_CUR steps (t = 800); no other quantity of these seeds is computed in smoke
+PASS GB-M0 rand_u64: (910101, s=0) = 0x5b64d322fa5eabfb = independent mulberry32 (all 4000 steps equal); u lag-1 acf1 = 0.00825081 (|acf1| < 0.1)
+  (GB-M0 3 s)
+PASS GB-M1 C0_B8 / C0_B9 = memoryless reference (onestep.jl _live_aue + TracePred + U4) at every step of 1000 (seed 919001 env_stat): life + predictor bytes (rng state, balances, pools), 343 draws and patches, death step nothing; memory bytes 8 / 9 x 0x00, memory ops 0
+PASS GB-M1 death on a drawn step (seed 919001, body B = 0.21, A = 0): death at step 1 (drawn), life + predictor (pred digest) bytes = reference at every step, C0_B8 = C0_B9
+PASS GB-M1 boundary at 5 drawn steps (pi1 in 0.468675..0.5): u == Float64(pi1) -> patch 2, u = Float64(pi1) - 2^-53 -> 1 (rand_u64 through Phase 1), hook u = prevfloat -> 1 / nextfloat -> 2; pi_u4(0, 0) = (0.5, 0.5)
+PASS GB-M1 ops_pred counted as executed (P5): pi_u4_c zero 2 / normal 8, predict_c reset 3 / normal 1, update_c 7 (all 4 branches), values bit-identical to pi_u4 / predict / update; hook (without update) normal 16, reset 18, p1 + p2 == 0 10; whole drawn steps = the reference's branch count on every drawn step of both runs (0 reset steps), all <= OPS_PRED_WORST = 64
+  (GB-M1 22 s)
+PASS GB-M2 BigFloat precision (P1): Julia 1.11.6: the do-block precision setter is process-global (another task sees 64); precision setter calls: bed_mem.jl 1 (load-time global 2400), adapter 0; guard rejects a lowered default (256: "precision downgraded"); 512 concurrent verify_memory_settlement + total_matter calls on 8 threads (8 used; N = 576, kept = 130) equal the single-threaded result bit for bit, every bound / loss at precision 2400, default unchanged
+PASS GB-M2 depletion (seed 919002, C130 x 130 slots, one body cell B = 1.0): upkeep_evicted = 12 over 6 alive steps (death at 6); every step passed the bed's two-phase checks (min bound - loss = 1.127e-12)
+PASS GB-M2 positive control (N = 576, B_i in [10, 100], kept = 130, port 300.0): passes verify_memory_settlement; bound 7.585e-12, loss 4.619e-13 (cell side exact_E - paid 0.000e+00, port side paid - port_delta 4.619e-13), bound - loss 7.123e-12; every cell's decrement B_pre - B_post exact in Float64 (Sterbenz) 576 / 576
+PASS GB-M2 leak rejected: kept = 1, port_pre = 1099511627775.998, port_post = 1099511627776, leak = 0.001: bound 2.441e-04, clean loss 4.688e-05, margin = leak - bound = 7.559e-04
+PASS GB-M2 leak rejected: kept = 130, port_pre = 1099511627775.7461, port_post = 1099511627776, leak = 0.05: bound 3.174e-02, clean loss 6.094e-03, margin = leak - bound = 1.826e-02
+PASS GB-M2 leak rejected: kept = 130, port_pre = 300, port_post = 300.25999999999385, leak = 1.0e-10: bound 7.394e-12, clean loss 6.148e-12, margin = leak - bound = 9.261e-11
+PASS GB-M2 port 2^40: (a) ends at prevfloat(2^40) and (b) ends at 2^40 pass; (c) nextfloat(2^40) and (d) prevfloat(2^40) + paid -> InvalidResourceError -> RunInvalidError (run invalid), pre-Phase-2 state bit-identical (mid_intact), input state unchanged
+  (GB-M2 6 s)
+PASS GB-M3 famine death (seed 919003, C2, 2 slots, B = 0.22, A = 0, drive (0, 0)): death at step 45 with kept = 2; paid === 0.0, port_delta === 0.0, settle / write ops 0, B_post == B_pre, port_post === port_pre, outflow_post === outflow_pre, mem_post == mem_pre (independent Phase 1 snapshot, full state digest equal); 0 steps and 0 commits after death
+PASS GB-M3 port outflow (P2): 45 settling steps outflow_post === outflow_pre + memory_port_delta; outflow + 1.0 on the death step rejected ("MemoryAccountingViolation: dead step: port outflow changed (94.7890786..."); outflow + 2^-20 on a settling step rejected at step 0
+  (GB-M3 2 s)
+PASS GB-M4 ctx_key = S90 definition (old = receptors after step s-1, R1IDX (1,2,3,4,7,8), s = 0 -> 64) on every drawn step: b.perm 22 steps (16 with old != nw on the packed bits), cross!(b.perm) 22 steps (18)
+PASS GB-M4 no future leak: 36 drawn Phase 1 variants with rewritten pools (36 with another current y) at 6 hit steps and 4 current-y vectors on the hook: ctx_key, p_pre, p_base, pi, drawn patch bit-identical
+PASS GB-M4 Y_t boundary: natural y[a_t] > 0 & take == 0 steps: 0 (unreachable with executed = drawn); fixture step 4 (pools: DET patch 2 y = 0, drawn patch 1 y = 5; executed = DET): Y_t == true and take == 0.0 recorded separately; production adapter on the same state: executed = drawn, take 0.1 > 0; Y_t == (y[a_t] > 0) on every drawn step
+PASS GB-M4 harvest on every alive step (P4): 112 non-drawn steps with take > 0; 8 of them rerun with drive (0, 0): pool_post === pool_pre - take per patch (life's own pools); take_all = take1 + take2 on every step; total take 24.9 over all steps vs 15.48 over drawn steps only
+  (GB-M4 7 s)
+PASS GB-M5 (seed 919001, C2, 2 kept slots never read): one prepaid settlement per step on all 450 steps; 125 non-drawn and 325 drawn alive steps with kept >= 1 each paid >= kept * K_mem and moved the port outflow by exactly the port delta (commit rows with mem_paid > 0: 450); replay_from_audit equal (state, cumulative memory upkeep 1.8, ops); 1-character input / commit tampers rejected
+  (GB-M5 8 s)
+PASS GB-M6 (seed 919004, C130 from empty memory): R1 write at step 369 (key 38, patch 1, Y_t false, p_pre 0.995 strictly wrong), R-MID hit at step 372 (same key and patch); u = 0.353261 in [min, max) of pi_ON 0.353261 / pi_OFF 0.475: executed patch C130 2, C0_B8 1 (same prefix state), both acted on the body; first-divergence cause R-MID (a_ON != a_OFF on the C run's own pi_OFF); cause units: (pi_ON 0.625, pi_OFF 0.5, pi_C0 0.75, u 0.6875) -> economic, u 0.5625 -> R-MID, no hit -> economic
+  (GB-M6 6 s)
+
+runs: 180 (3 environments x 12 seeds x 5 capacities, 4000 steps each), 1702 s, threads 8
+== all 15 cells (descriptive; no capacity is selected, #89). Pairs are (C, C0_B8) on the same seed, both valid.
+env_stat C0_B8: valid 12 / invalid 0 (invalid steps )
+    drawn 14077  non-drawn alive 33923  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4638.5
+    surv mean 4000  completion 1  final_B mean 7.6681  replay match 1
+env_stat C0_B9: valid 12 / invalid 0 (invalid steps )
+    drawn 14077  non-drawn alive 33923  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4638.5
+    surv mean 4000  completion 1  final_B mean 7.6681  replay match 1
+env_stat C1: valid 12 / invalid 0 (invalid steps )
+    drawn 14143  non-drawn alive 33857  |R_hit| 364  R1 writes 137  K-UNIQ-CLEAR 6  D1 119  upkeep_evicted 0  paid 84.49
+    vs C0_B8: seeds with a_exec divergence 9 / 12  first cause R-MID 9 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0861442  seed-equal -0.249456  acc_ON - acc_OFF 0.181319  take 4639.46
+    surv mean 4000  completion 1  final_B mean 7.33259  replay match 1
+env_stat C2: valid 12 / invalid 0 (invalid steps )
+    drawn 14149  non-drawn alive 33851  |R_hit| 557  R1 writes 118  K-UNIQ-CLEAR 28  D1 66  upkeep_evicted 0  paid 154.714
+    vs C0_B8: seeds with a_exec divergence 10 / 12  first cause R-MID 10 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0615189  seed-equal -0.142652  acc_ON - acc_OFF 0.100539  take 4640.36
+    surv mean 4000  completion 1  final_B mean 7.23733  replay match 1
+env_stat C130: valid 12 / invalid 0 (invalid steps )
+    drawn 14155  non-drawn alive 33845  |R_hit| 1074  R1 writes 79  K-UNIQ-CLEAR 28  D1 0  upkeep_evicted 0  paid 262.84
+    vs C0_B8: seeds with a_exec divergence 12 / 12  first cause R-MID 12 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0522042  seed-equal -0.217786  acc_ON - acc_OFF 0.0819367  take 4641.04
+    surv mean 4000  completion 1  final_B mean 7.02575  replay match 1
+env_rev C0_B8: valid 12 / invalid 0 (invalid steps )
+    drawn 14289  non-drawn alive 33711  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4660.1
+    surv mean 4000  completion 1  final_B mean 7.81074  replay match 1
+env_rev C0_B9: valid 12 / invalid 0 (invalid steps )
+    drawn 14289  non-drawn alive 33711  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4660.1
+    surv mean 4000  completion 1  final_B mean 7.81074  replay match 1
+env_rev C1: valid 12 / invalid 0 (invalid steps )
+    drawn 14309  non-drawn alive 33691  |R_hit| 275  R1 writes 111  K-UNIQ-CLEAR 11  D1 88  upkeep_evicted 0  paid 81.904
+    vs C0_B8: seeds with a_exec divergence 10 / 12  first cause R-MID 10 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.09559  seed-equal -0.282182  acc_ON - acc_OFF 0.185455  take 4661.5
+    surv mean 4000  completion 1  final_B mean 7.43463  replay match 1
+env_rev C2: valid 12 / invalid 0 (invalid steps )
+    drawn 14317  non-drawn alive 33683  |R_hit| 314  R1 writes 100  K-UNIQ-CLEAR 28  D1 47  upkeep_evicted 0  paid 149.376
+    vs C0_B8: seeds with a_exec divergence 12 / 12  first cause R-MID 12 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0827216  seed-equal -0.19507  acc_ON - acc_OFF 0.133758  take 4662
+    surv mean 4000  completion 1  final_B mean 7.15446  replay match 1
+env_rev C130: valid 12 / invalid 0 (invalid steps )
+    drawn 14176  non-drawn alive 33824  |R_hit| 492  R1 writes 71  K-UNIQ-CLEAR 33  D1 0  upkeep_evicted 0  paid 215.178
+    vs C0_B8: seeds with a_exec divergence 12 / 12  first cause R-MID 12 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0855147  seed-equal -0.24469  acc_ON - acc_OFF 0.128049  take 4661.16
+    surv mean 4000  completion 1  final_B mean 7.03476  replay match 1
+env_depl C0_B8: valid 12 / invalid 0 (invalid steps )
+    drawn 2414  non-drawn alive 2235  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 183.82
+    surv mean 386.417  completion 0  final_B mean 0  famine-entry sum B mean 5.27257  first famine passed 1  replay match 1
+env_depl C0_B9: valid 12 / invalid 0 (invalid steps )
+    drawn 2414  non-drawn alive 2235  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 183.82
+    surv mean 386.417  completion 0  final_B mean 0  famine-entry sum B mean 5.27257  first famine passed 1  replay match 1
+env_depl C1: valid 12 / invalid 0 (invalid steps )
+    drawn 2409  non-drawn alive 2115  |R_hit| 10  R1 writes 54  K-UNIQ-CLEAR 0  D1 42  upkeep_evicted 0  paid 6.042
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 11
+    hit dBrier pooled -0.545922  seed-equal -0.53773  acc_ON - acc_OFF 1  take 183.68
+    surv mean 376  completion 0  final_B mean 0  famine-entry sum B mean 5.27257  first famine passed 1  replay match 1
+env_depl C2: valid 12 / invalid 0 (invalid steps )
+    drawn 2309  non-drawn alive 1965  |R_hit| 17  R1 writes 47  K-UNIQ-CLEAR 1  D1 22  upkeep_evicted 0  paid 10.422
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 12
+    hit dBrier pooled -0.535535  seed-equal -0.508737  acc_ON - acc_OFF 0.882353  take 176.56
+    surv mean 355.167  completion 0  final_B mean 0  famine-entry sum B mean 5.27257  first famine passed 1  replay match 1
+env_depl C130: valid 12 / invalid 0 (invalid steps )
+    drawn 2186  non-drawn alive 1887  |R_hit| 19  R1 writes 43  K-UNIQ-CLEAR 2  D1 0  upkeep_evicted 0  paid 12.092
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 12
+    hit dBrier pooled -0.472146  seed-equal -0.460225  acc_ON - acc_OFF 0.789474  take 169.36
+    surv mean 338.417  completion 0  final_B mean 0  famine-entry sum B mean 5.27257  first famine passed 1  replay match 1
+E1 env_stat: (a) R1 writes >= 1 and paid > 0 on all of C1 / C2 / C130: true  (b) a_exec divergence on >= 1 valid seed: true
+E1 env_rev: (a) R1 writes >= 1 and paid > 0 on all of C1 / C2 / C130: true  (b) a_exec divergence on >= 1 valid seed: true
+E1 env_depl: (a) R1 writes >= 1 and paid > 0 on all of C1 / C2 / C130: true  (b) a_exec divergence on >= 1 valid seed: false
+E2 env_depl (C130, C0_B8): valid pairs 12  mean surv diff -48
+E3 env_stat + env_rev C130: |R_hit(130)| 1566  mean dBrier -0.0626696  seed-equal mean dBrier -0.231238  eligible_seeds 24
+S91a-E1: hit
+S91a-E2: hit
+S91a-E3: hit
+note: capacities are all reported, none is adopted (#89). E1 is a wiring check, not efficacy. phenomenal_claim = :not_certified.
+disclosure: Part 1 self-checks touched production seeds 910101 and 910125 prior to Part 2 (no C0_B8 run on 910125, zero parameter/spec/code tuning). Primary verdicts above use all 36 frozen seeds.
+== [SENSITIVITY 34-SEED (excl. 910101, 910125); descriptive sensitivity only, not primary verdicts]
+== all 15 cells (descriptive; no capacity is selected, #89). Pairs are (C, C0_B8) on the same seed, both valid.
+env_stat C0_B8: valid 11 / invalid 0 (invalid steps )
+    drawn 12821  non-drawn alive 31179  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4248.16
+    surv mean 4000  completion 1  final_B mean 7.65531  replay match 1
+env_stat C0_B9: valid 11 / invalid 0 (invalid steps )
+    drawn 12821  non-drawn alive 31179  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4248.16
+    surv mean 4000  completion 1  final_B mean 7.65531  replay match 1
+env_stat C1: valid 11 / invalid 0 (invalid steps )
+    drawn 12887  non-drawn alive 31113  |R_hit| 363  R1 writes 127  K-UNIQ-CLEAR 6  D1 110  upkeep_evicted 0  paid 77.132
+    vs C0_B8: seeds with a_exec divergence 9 / 11  first cause R-MID 9 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0851825  seed-equal -0.232566  acc_ON - acc_OFF 0.179063  take 4249.12
+    surv mean 4000  completion 1  final_B mean 7.32077  replay match 1
+env_stat C2: valid 11 / invalid 0 (invalid steps )
+    drawn 12893  non-drawn alive 31107  |R_hit| 553  R1 writes 109  K-UNIQ-CLEAR 26  D1 61  upkeep_evicted 0  paid 140.632
+    vs C0_B8: seeds with a_exec divergence 10 / 11  first cause R-MID 10 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0608625  seed-equal -0.141779  acc_ON - acc_OFF 0.101266  take 4250.02
+    surv mean 4000  completion 1  final_B mean 7.24177  replay match 1
+env_stat C130: valid 11 / invalid 0 (invalid steps )
+    drawn 12893  non-drawn alive 31107  |R_hit| 1064  R1 writes 72  K-UNIQ-CLEAR 25  D1 0  upkeep_evicted 0  paid 239.83
+    vs C0_B8: seeds with a_exec divergence 11 / 11  first cause R-MID 11 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0494863  seed-equal -0.20655  acc_ON - acc_OFF 0.0789474  take 4251
+    surv mean 4000  completion 1  final_B mean 7.03507  replay match 1
+env_rev C0_B8: valid 12 / invalid 0 (invalid steps )
+    drawn 14289  non-drawn alive 33711  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4660.1
+    surv mean 4000  completion 1  final_B mean 7.81074  replay match 1
+env_rev C0_B9: valid 12 / invalid 0 (invalid steps )
+    drawn 14289  non-drawn alive 33711  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 12  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 4660.1
+    surv mean 4000  completion 1  final_B mean 7.81074  replay match 1
+env_rev C1: valid 12 / invalid 0 (invalid steps )
+    drawn 14309  non-drawn alive 33691  |R_hit| 275  R1 writes 111  K-UNIQ-CLEAR 11  D1 88  upkeep_evicted 0  paid 81.904
+    vs C0_B8: seeds with a_exec divergence 10 / 12  first cause R-MID 10 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.09559  seed-equal -0.282182  acc_ON - acc_OFF 0.185455  take 4661.5
+    surv mean 4000  completion 1  final_B mean 7.43463  replay match 1
+env_rev C2: valid 12 / invalid 0 (invalid steps )
+    drawn 14317  non-drawn alive 33683  |R_hit| 314  R1 writes 100  K-UNIQ-CLEAR 28  D1 47  upkeep_evicted 0  paid 149.376
+    vs C0_B8: seeds with a_exec divergence 12 / 12  first cause R-MID 12 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0827216  seed-equal -0.19507  acc_ON - acc_OFF 0.133758  take 4662
+    surv mean 4000  completion 1  final_B mean 7.15446  replay match 1
+env_rev C130: valid 12 / invalid 0 (invalid steps )
+    drawn 14176  non-drawn alive 33824  |R_hit| 492  R1 writes 71  K-UNIQ-CLEAR 33  D1 0  upkeep_evicted 0  paid 215.178
+    vs C0_B8: seeds with a_exec divergence 12 / 12  first cause R-MID 12 economic 0  unequal survival without divergence 0
+    hit dBrier pooled -0.0855147  seed-equal -0.24469  acc_ON - acc_OFF 0.128049  take 4661.16
+    surv mean 4000  completion 1  final_B mean 7.03476  replay match 1
+env_depl C0_B8: valid 11 / invalid 0 (invalid steps )
+    drawn 2305  non-drawn alive 1942  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 168.9
+    surv mean 385.091  completion 0  final_B mean 0  famine-entry sum B mean 5.21094  first famine passed 1  replay match 1
+env_depl C0_B9: valid 11 / invalid 0 (invalid steps )
+    drawn 2305  non-drawn alive 1942  |R_hit| 0  R1 writes 0  K-UNIQ-CLEAR 0  D1 0  upkeep_evicted 0  paid 0
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 0
+    hit dBrier pooled NaN  seed-equal NaN  acc_ON - acc_OFF NaN  take 168.9
+    surv mean 385.091  completion 0  final_B mean 0  famine-entry sum B mean 5.21094  first famine passed 1  replay match 1
+env_depl C1: valid 11 / invalid 0 (invalid steps )
+    drawn 2301  non-drawn alive 1834  |R_hit| 10  R1 writes 50  K-UNIQ-CLEAR 0  D1 39  upkeep_evicted 0  paid 5.512
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 10
+    hit dBrier pooled -0.545922  seed-equal -0.53773  acc_ON - acc_OFF 1  take 168.8
+    surv mean 374.909  completion 0  final_B mean 0  famine-entry sum B mean 5.21094  first famine passed 1  replay match 1
+env_depl C2: valid 11 / invalid 0 (invalid steps )
+    drawn 2201  non-drawn alive 1678  |R_hit| 16  R1 writes 44  K-UNIQ-CLEAR 1  D1 21  upkeep_evicted 0  paid 9.34
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 11
+    hit dBrier pooled -0.522953  seed-equal -0.487999  acc_ON - acc_OFF 0.875  take 161.68
+    surv mean 351.636  completion 0  final_B mean 0  famine-entry sum B mean 5.21094  first famine passed 1  replay match 1
+env_depl C130: valid 11 / invalid 0 (invalid steps )
+    drawn 2078  non-drawn alive 1604  |R_hit| 18  R1 writes 40  K-UNIQ-CLEAR 2  D1 0  upkeep_evicted 0  paid 10.89
+    vs C0_B8: seeds with a_exec divergence 0 / 11  first cause R-MID 0 economic 0  unequal survival without divergence 11
+    hit dBrier pooled -0.457439  seed-equal -0.435077  acc_ON - acc_OFF 0.777778  take 154.48
+    surv mean 333.727  completion 0  final_B mean 0  famine-entry sum B mean 5.21094  first famine passed 1  replay match 1
+[SENSITIVITY-34] E1 env_stat: (a) R1 writes >= 1 and paid > 0 on all of C1 / C2 / C130: true  (b) a_exec divergence on >= 1 valid seed: true
+[SENSITIVITY-34] E1 env_rev: (a) R1 writes >= 1 and paid > 0 on all of C1 / C2 / C130: true  (b) a_exec divergence on >= 1 valid seed: true
+[SENSITIVITY-34] E1 env_depl: (a) R1 writes >= 1 and paid > 0 on all of C1 / C2 / C130: true  (b) a_exec divergence on >= 1 valid seed: false
+[SENSITIVITY-34] E2 env_depl (C130, C0_B8): valid pairs 11  mean surv diff -51.3636
+[SENSITIVITY-34] E3 env_stat + env_rev C130: |R_hit(130)| 1556  mean dBrier -0.0608783  seed-equal mean dBrier -0.226449  eligible_seeds 23
+[SENSITIVITY-34] S91a-E1: hit
+[SENSITIVITY-34] S91a-E2: hit
+[SENSITIVITY-34] S91a-E3: hit
+note: capacities are all reported, none is adopted (#89). E1 is a wiring check, not efficacy. phenomenal_claim = :not_certified.
+time: 1707 s, threads 8

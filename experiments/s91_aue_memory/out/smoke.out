@@ -1,0 +1,40 @@
+PASS 4-seam static: bed_mem.jl contains 0 of the 14 species tokens
+PASS 4-seam regression: unchanged adapter_aue_b.jl 120 steps = direct NestingCPCC at every step (full theta), deterministic, replay_from_audit equal, 1-character tamper rejected
+PASS 4-seam ports / species boundary: undeclared input (both paths) / output ports and disallowed organs (both paths) rejected; allowed variant passes
+PASS 4-seam budget / dormancy: per-step, instantaneous-rate and rolling-3600 s-window (low-window spec: 3 steps pass, step 4 rejected) overruns rejected; free dormancy rejected (run and load); paid dormancy passes
+PASS 4-seam absorbing death: Runaway (seed 919001) dies at step 13, 0 commits after death, replay equal; post-death and death-step spores rejected; pre-death spore -> lineage child
+PASS 4-seam shared medium: valid split passes, double spend (3 + 3 > 5) rejected, stripped event_ref breaks the chain
+PASS 4-seam [memory] schema: 8 invalid tables rejected at load, the 5 capacity texts parse (B, C_spec), [memory] on a single-phase adapter rejected
+  (4-seam 25 s)
+PASS GB-M0 frozen91a: freeze-s91a.txt = exactly the 2 entries (predictions.toml, S91a-draft-aue-memory.md), SHA-256 match; mem_core.jl unchanged (e09341e7dfd0)
+PASS GB-M0 seeds: 910101..910136 (36 = 3 x 12) disjoint from 1600:1617, 2860:2899 and the test block 919001..919099
+PASS GB-M0 BO_CUR: all 36 seeds alive after the 800 BO_CUR steps (t = 800); no other quantity of these seeds is computed in smoke
+PASS GB-M0 rand_u64: (910101, s=0) = 0x5b64d322fa5eabfb = independent mulberry32 (all 4000 steps equal); u lag-1 acf1 = 0.00825081 (|acf1| < 0.1)
+  (GB-M0 3 s)
+PASS GB-M1 C0_B8 / C0_B9 = memoryless reference (onestep.jl _live_aue + TracePred + U4) at every step of 1000 (seed 919001 env_stat): life + predictor bytes (rng state, balances, pools), 343 draws and patches, death step nothing; memory bytes 8 / 9 x 0x00, memory ops 0
+PASS GB-M1 death on a drawn step (seed 919001, body B = 0.21, A = 0): death at step 1 (drawn), life + predictor (pred digest) bytes = reference at every step, C0_B8 = C0_B9
+PASS GB-M1 boundary at 5 drawn steps (pi1 in 0.468675..0.5): u == Float64(pi1) -> patch 2, u = Float64(pi1) - 2^-53 -> 1 (rand_u64 through Phase 1), hook u = prevfloat -> 1 / nextfloat -> 2; pi_u4(0, 0) = (0.5, 0.5)
+PASS GB-M1 ops_pred counted as executed (P5): pi_u4_c zero 2 / normal 8, predict_c reset 3 / normal 1, update_c 7 (all 4 branches), values bit-identical to pi_u4 / predict / update; hook (without update) normal 16, reset 18, p1 + p2 == 0 10; whole drawn steps = the reference's branch count on every drawn step of both runs (0 reset steps), all <= OPS_PRED_WORST = 64
+  (GB-M1 22 s)
+PASS GB-M2 BigFloat precision (P1): Julia 1.11.6: the do-block precision setter is process-global (another task sees 64); precision setter calls: bed_mem.jl 1 (load-time global 2400), adapter 0; guard rejects a lowered default (256: "precision downgraded"); 512 concurrent verify_memory_settlement + total_matter calls on 8 threads (8 used; N = 576, kept = 130) equal the single-threaded result bit for bit, every bound / loss at precision 2400, default unchanged
+PASS GB-M2 depletion (seed 919002, C130 x 130 slots, one body cell B = 1.0): upkeep_evicted = 12 over 6 alive steps (death at 6); every step passed the bed's two-phase checks (min bound - loss = 1.127e-12)
+PASS GB-M2 positive control (N = 576, B_i in [10, 100], kept = 130, port 300.0): passes verify_memory_settlement; bound 7.585e-12, loss 4.619e-13 (cell side exact_E - paid 0.000e+00, port side paid - port_delta 4.619e-13), bound - loss 7.123e-12; every cell's decrement B_pre - B_post exact in Float64 (Sterbenz) 576 / 576
+PASS GB-M2 leak rejected: kept = 1, port_pre = 1099511627775.998, port_post = 1099511627776, leak = 0.001: bound 2.441e-04, clean loss 4.688e-05, margin = leak - bound = 7.559e-04
+PASS GB-M2 leak rejected: kept = 130, port_pre = 1099511627775.7461, port_post = 1099511627776, leak = 0.05: bound 3.174e-02, clean loss 6.094e-03, margin = leak - bound = 1.826e-02
+PASS GB-M2 leak rejected: kept = 130, port_pre = 300, port_post = 300.25999999999385, leak = 1.0e-10: bound 7.394e-12, clean loss 6.148e-12, margin = leak - bound = 9.261e-11
+PASS GB-M2 port 2^40: (a) ends at prevfloat(2^40) and (b) ends at 2^40 pass; (c) nextfloat(2^40) and (d) prevfloat(2^40) + paid -> InvalidResourceError -> RunInvalidError (run invalid), pre-Phase-2 state bit-identical (mid_intact), input state unchanged
+  (GB-M2 7 s)
+PASS GB-M3 famine death (seed 919003, C2, 2 slots, B = 0.22, A = 0, drive (0, 0)): death at step 45 with kept = 2; paid === 0.0, port_delta === 0.0, settle / write ops 0, B_post == B_pre, port_post === port_pre, outflow_post === outflow_pre, mem_post == mem_pre (independent Phase 1 snapshot, full state digest equal); 0 steps and 0 commits after death
+PASS GB-M3 port outflow (P2): 45 settling steps outflow_post === outflow_pre + memory_port_delta; outflow + 1.0 on the death step rejected ("MemoryAccountingViolation: dead step: port outflow changed (94.7890786..."); outflow + 2^-20 on a settling step rejected at step 0
+  (GB-M3 2 s)
+PASS GB-M4 ctx_key = S90 definition (old = receptors after step s-1, R1IDX (1,2,3,4,7,8), s = 0 -> 64) on every drawn step: b.perm 22 steps (16 with old != nw on the packed bits), cross!(b.perm) 22 steps (18)
+PASS GB-M4 no future leak: 36 drawn Phase 1 variants with rewritten pools (36 with another current y) at 6 hit steps and 4 current-y vectors on the hook: ctx_key, p_pre, p_base, pi, drawn patch bit-identical
+PASS GB-M4 Y_t boundary: natural y[a_t] > 0 & take == 0 steps: 0 (unreachable with executed = drawn); fixture step 4 (pools: DET patch 2 y = 0, drawn patch 1 y = 5; executed = DET): Y_t == true and take == 0.0 recorded separately; production adapter on the same state: executed = drawn, take 0.1 > 0; Y_t == (y[a_t] > 0) on every drawn step
+PASS GB-M4 harvest on every alive step (P4): 112 non-drawn steps with take > 0; 8 of them rerun with drive (0, 0): pool_post === pool_pre - take per patch (life's own pools); take_all = take1 + take2 on every step; total take 24.9 over all steps vs 15.48 over drawn steps only
+  (GB-M4 7 s)
+PASS GB-M5 (seed 919001, C2, 2 kept slots never read): one prepaid settlement per step on all 450 steps; 125 non-drawn and 325 drawn alive steps with kept >= 1 each paid >= kept * K_mem and moved the port outflow by exactly the port delta (commit rows with mem_paid > 0: 450); replay_from_audit equal (state, cumulative memory upkeep 1.8, ops); 1-character input / commit tampers rejected
+  (GB-M5 8 s)
+PASS GB-M6 (seed 919004, C130 from empty memory): R1 write at step 369 (key 38, patch 1, Y_t false, p_pre 0.995 strictly wrong), R-MID hit at step 372 (same key and patch); u = 0.353261 in [min, max) of pi_ON 0.353261 / pi_OFF 0.475: executed patch C130 2, C0_B8 1 (same prefix state), both acted on the body; first-divergence cause R-MID (a_ON != a_OFF on the C run's own pi_OFF); cause units: (pi_ON 0.625, pi_OFF 0.5, pi_C0 0.75, u 0.6875) -> economic, u 0.5625 -> R-MID, no hit -> economic
+  (GB-M6 5 s)
+ALL GATES PASS (4-seam regression, GB-M0..GB-M6). No run metrics and no E1-E3 computed in smoke.
+time: 79 s, threads 8

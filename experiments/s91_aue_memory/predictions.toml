@@ -1,0 +1,21 @@
+# S91a predictions (discussion/specs/S91a-draft-aue-memory.md r2; L5B-1..5 user-approved 2026-11-28, decisions-log #91).
+# Frozen before implementation and running (experiments/freeze-s91a.txt, exact 2-entry check).
+# Isolated directory experiments/s91_aue_memory/ only; core/, rust/, formal/, experiments/aue_seam/, experiments/onestep/,
+# experiments/s90_l2l_trm/mem_core.jl, S64-S69 frozen assets, and ~/bridge-protocol remain strictly unmodified.
+# Independent seed block 910101..910136 (env_stat: 910101..910112, env_rev: 910113..910124, env_depl: 910125..910136),
+# strictly disjoint from unused main-sequence seeds 1600-1617 and 2860-2899; zero pre-run peeking or tuning on outcome seeds.
+# Capacity set (S90-identical Plan D1 fixed-byte set, #89/#91): C0_B8 (B=8, C=0), C0_B9 (B=9, C=0), C1 (B=24, C=1), C2 (B=40, C=2), C130 (B=2088, C=130).
+# Selecting a "best C" from S91a outputs is forbidden; all 5 capacities across all 3 environments are reported in full.
+# Gate-priority rule: if any existing 4-seam regression gate, GB-M0..GB-M6, or negative control NC-M1..NC-M8 (11 cases + 5-file SHA check) fails,
+# S91a-E1 = miss, S91a-E2 = undecidable, S91a-E3 = undecidable.
+# Port overflow (> 2^40) aborts with InvalidResourceError and is classified as "run invalid" (excluded from paired/pooled metrics including all prefixes, count reported for all 5 capacities; not organism death).
+# phenomenal_claim = :not_certified (fixed).
+
+[E1]
+label = "Closed-loop wiring, real upkeep debit, and executed-action divergence within the same environment (not efficacy proof): after all gates and NC-M1..NC-M8 pass, using valid paired (C, C0_B8) runs, if zero eligible valid pairs exist across all environments and finite capacities -> undecidable; otherwise if there exists a single environment e in {env_stat, env_rev, env_depl} where (a) all three finite capacities C in {1, 2, 130} record total valid-run R1 writes >= 1 and total real upkeep paid > 0.0, AND (b) at least one finite capacity diverges from paired C0_B8 in executed patch a_exec on >= 1 jointly alive, jointly drawn step on >= 1 valid seed -> hit; otherwise -> miss (first-divergence cause R-MID hit vs economic body_R/K_win and unequal-survival counts reported descriptively)"
+
+[E2]
+label = "Closed-loop survival load under depletion stress (env_depl, seeds 910125..910136, valid paired (C130, C0_B8) seeds): mean(surv_steps(C130) - surv_steps(C0_B8)) < 0, where surv_steps = death_step on metabolic death and 4000 (right-censored) on full survival; 0 valid pairs -> undecidable; < 0 -> hit; >= 0 -> miss (final_B = post-step-4000 sum(w.B[body_post]) on survival or 0.0 on death, right-censored counts, famine-entry reserves, first-famine survival, and upkeep evictions reported descriptively alongside)"
+
+[E3]
+label = "Closed-loop predictive fit on pooled valid-run C130 hit steps R_hit(130) across env_stat + env_rev (invalid runs excluded completely including prefixes; hit defined on the executed patch a_t; pre-draw Float32 p_ON = p_pre[a_t] vs base TracePred p_OFF = p_base[a_t] against the same Y_t = (y[a_t] > 0)): step-pooled mean(DeltaBrier(130)) = mean((Float64(p_ON) - Float64(Y_t))^2 - (Float64(p_OFF) - Float64(Y_t))^2) < 0 (predicting net Brier improvement following S90-E3); |R_hit(130)| == 0 -> undecidable; < 0 -> hit; >= 0 -> miss (seed-equal mean reported descriptively)"

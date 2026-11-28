@@ -841,3 +841,15 @@ bridge-protocol の理論そのものに触れるものはここではなく `bp
   - **段階分離**: M2（退屈・保護・分離の 3 自動調整）と驚き順競合上書きは本仕様に含めない。
 - 元に戻す方法: `specs/L2L-TRM-draft-memory-type.md` および本項を削り、L2L §6 を未設計へ戻す（既存コード・結果に影響なし）。
 - ユーザー: 推奨案 A・r2 以降進行承認済み（2026-11-27）。L1〜L5 の細部選択は事後承認待ち。commit はしていない。
+
+## #91 L5 `(β)` 実身体閉ループ統合（S91a / `D-L5-BETA-AUE-SEAM.md` r2、承認票 L5B-1〜L5B-5）（2026-11-28、ユーザー「承認するよー」）
+- 種別: 新規隔離実験系（`experiments/s91_aue_memory/`）の仕様設計・資源予算・独立種子区画の承認（既存 `~/bridge-protocol`・`core/`・`rust/`・`experiments/aue_seam/`・`experiments/onestep/`・`experiments/s90_l2l_trm/mem_core.jl`・S64〜S69 凍結資産は一切非変更）。
+- 経緯: S90 完了（`notes/S90-results.md`、全関門＋NC1–NC7 PASS、E1 hit / E2 miss / E3 miss［全容量 Brier 改善］）後、ユーザー「案Aをやって」で `D-L5-BETA-AUE-SEAM.md` の 3 者並列 D-round 2 往復（`.claude-turns/20261128-142552-medium.json`・`.codex-turns/20261128-142551-medium.jsonl` → `143332`・`143331`）を実施し r2 確定 → ユーザー承認票 L5B-1〜L5B-5 全承認。
+- 決めたこと:
+  - **L5B-1**: `bed_mem.jl`（隔離版）は種固有ロジックゼロを保ち、`C_spec > 0` 種へ独立 2 相スナップショット（決済前後 `B`, `port`, `mem_bytes` 直接取得）＋非創造保存則＋許容誤差ゼロ `paid_lo >= kept * K_mem`＋死亡歩完全凍結を課す。`adapter_aue_b.jl`（`[memory]` 未指定）は無変更回帰通過。
+  - **L5B-2**: 検査容量集合は S90 同一 `{C0_B8, C0_B9, C1, C2, C130}`（`C16` 不採用・#89）、`N_max = 576`、`OPS_PRED_WORST = 64`、全容量共通 `ops_per_step = 6_000_000`・`ops_per_hour = 2_160_000_000`、`K_mem = 0.002`（既存値維持）。
+  - **L5B-3**: `ctx_key` は前歩 `old`（`b.perm` 適用済み body-frame）6 受容器（初回 `64`）、`Y_t = (y[a_t] > 0)`、S91 単独の 53-bit 厳密 `<` 抽選（S69 r3 非逆流）、`port > 2^40` はクランプ禁止で `run invalid`（除外＋全容量件数報告）。
+  - **L5B-4**: 二段分割（S91a = 既存 `TracePred`［`P_DECAY = 8`, `K_win = 0.002` 維持］＋`[memory]`、S91b = オンライン学習器、J3 維持）。`GB-M6`（到達可能 R1 発火＋行動分岐）必須化。
+  - **L5B-5**: 独立種子区画 `910101..`（未使用主列 `1600–1617`, `2860–2899` 非接触）、3 環境（定常・季節反転・枯渇ストレス、全 5 容量同一種子ペア比較）。
+- 元に戻す方法: `experiments/s91_aue_memory/`・`specs/S91a-draft-aue-memory.md`・`freeze-s91a.txt`・本項を削る（既存コード・凍結資産へ影響なし）。
+- ユーザー: 承認済み（2026-11-28）。commit はしていない。

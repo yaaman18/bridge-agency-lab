@@ -1,0 +1,13 @@
+sha256 mem_core.jl e09341e7dfd0e8c93d935c754f169b061c5a592ecf9886b9000a8d75f4d07a08
+sha256 l2l_trm.jl 37f1de62a8fc5c6b5dc83f5cbce7e3bad03f31e9b8a6813b7b9ced03cdbe107e
+sha256 neg_controls.jl df870cf44cac23fba52d4e72a3d86a27d828a857ed6b1e830195d80cb0b92fd7
+setup (lives, smoke prefix, main 5 capacities x 9104 steps): 282 s, threads 8
+NC1 (postpaid free read: candidate committed without the prepaid settlement): GM4 passes unmutated; mutated failed with "FAIL: (a) miss written to candidate but purchase fails"; restored passes: true -> ok (expected "(a)") [4 s]
+NC2 (plain Float64 sum instead of add_down in the settlement): GM4 passes unmutated; mutated failed with "FAIL: (b) P1 boundary: purchase fails, no change"; restored passes: true -> ok (expected "(b) P1 boundary") [3 s]
+NC3 (non-local R-MID: other contexts mixed in): GM5 passes unmutated; mutated failed with "FAIL: GM5 other context k' != k: (p1, p2) and (pi1, pi2) bit-identical"; restored passes: true -> ok (expected "GM5") [0 s]
+NC4 (future leak: Y_t written before the read): GM3 passes unmutated; mutated failed with "GM3(a) step-t output depends on Y_t C1 t=111"; restored passes: true -> ok (expected "GM3(a) step-t output depends on Y_t") [215 s]
+NC5 (twin reads the main trajectory's cached TRM predictions): G6(d) passes unmutated; mutated failed with "G6(d) C1 twin t0=8000 step t=8073 differs from the uncached independent run"; restored passes: true -> ok (expected "G6(d)") [732 s]
+NC6 (C0 computes ctx_key and books OPS_CTX_KEY): GM2 passes unmutated; mutated failed with "GM2 C0_B8 differs from the reference at t=1 (p/pi/draw/rng/ops/ctx_key/zero bytes)"; restored passes: true -> ok (expected "GM2") [129 s]
+NC7 (ctx_key bit position shifted by one: bit i mod 6): G6(a) passes unmutated; mutated failed with "G6(a) ctx_key audit t=2 a=1"; restored passes: true -> ok (expected "G6(a)") [58 s]
+time: 1425 s
+negative controls: all 7 failed at their intended gates

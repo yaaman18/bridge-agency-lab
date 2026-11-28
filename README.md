@@ -8,6 +8,14 @@ Bridge Protocol（`~/bridge-protocol`）の AGENCY-001 試作基体（`tools/Age
   「試算版」として別ファイルに書き、上書きで読み込んで比べる。
 - 設計した回路は、判定を走らせる前に予測ラベルを書き、SHA-256 を `freeze-*.txt` に記録する。
 
+## 開発の総合マニフェスト（目指す方向、2026-11-28 ユーザー指示）
+
+- 新たな表現が生まれるたびに、それまで到達不可能だった問いが記述可能になる。
+- 新たな道具が生まれるたびに、それまで不可視だった現象が観測可能になる。
+- 新たな推論形態が生まれるたびに、それ以前の言語では構想することすらできなかった関係性が開かれる。
+
+これらを目指す（指向の宣言であり、現行系の達成認定や `phenomenal_claim` の主張ではない。正本指針は `discussion/dev-guidelines.md` §2）。
+
 ## 実行
 
 ```bash
@@ -2309,6 +2317,24 @@ include("../core/LabCore.jl"); using .LabCore
    - 主な発見（記述）: S88 の $G_T$ 低下は切り詰め緩和単独ではなく、Q1+R1+O1 の逆バイアス（$C=\infty$ で $p_K>1/2$ 内点鍵の 75.8% が $1/2$ 横断反転、`direct` 69.0%）と行為別 `rate(a)` への無減衰断片混入（`rate-only` 31.0%、$C=1, 2$ では総低下のほぼ 100%）が原因。また `main keep` 原点数は $C=0, 1, 2$ で各 4 件に対し $C=\infty$ のみ 24 件。規約どおり結果からの容量採択および R1/O1 無断変更は行わない。
    - 本走りの前に I-R を閉じた（P2・P4 直し）。
 
+211. S90 L2L-TRM 最小記憶型（固定バイト `[memory]`・R-MID・K-UNIQ-CLEAR・D1）の既見 4 TRM 生検証（2026-11-28、ユーザー決定 #89/#90・L2L-TRM 仕様 `discussion/specs/L2L-TRM-draft-memory-type.md` r7・S90 仕様 `discussion/specs/S90-draft-l2l-trm-memory-type.md` r2・予測 `experiments/s90_l2l_trm/predictions.toml`〈3 件凍結 `experiments/freeze-s90.txt`〉、結果 `discussion/notes/S90-results.md`、`experiments/s90_l2l_trm/`。既見 `st2 life 1..4` のみ、未使用種子非開封、`Float32` 統一・`Float64` は G8 限定）
+   - 3 者独立手順（凍結 → `claude-lab` I 段実装 `mem_core.jl` 224 単体検査・`l2l_trm.jl`・`neg_controls.jl`・`smoke`・NC1–NC7 → `codex-lab` 独立 I-R r1 `REVISE` P1–P4 → 修正再検証 → I-R r2 `ACCEPT` → 本走り 5,701 秒、`-t 8`、`out/l2l_trm.out` sha `483c29a4...`）。
+   - **全関門・負の対照 PASS**: GM1–GM5（`C0_B9 == C0_B8` 全歩ビット一致・4 lives 短距離 `1..9104` 基準一致、GM3 第 2 窓 `111..160` 含む 11,140 検査）・G6(a)-(d)（4 lives 鍵監査 1,298,320 件、main＋全 112 双子参照一致、`C130` D1 退去 `0`、独立実行一致）・G7・G8（`contents.out` TRM 9 行完全一致 9/9）・NC1–NC7 全想定失敗（3 実装ファイル SHA-256 照合済み）。
+   - **凍結予測（1 hit / 2 miss）**:
+     - **S90-E1 `hit`**（Layer 1 配線確認のみ、優劣の証拠ではない）: 3 有限容量すべてで `|R_hit| >= 1` かつ `mean Δπ > 0`（`C1` 2,244 歩 / `0.04578`, `C2` 4,655 歩 / `0.03859`, `C130` 41,109 歩 / `0.00965`）。
+     - **S90-E2 `miss`**（Layer 3 型内双子 `h=1000`, `|S_common|=96`）: `C130` で `mean ΔD^p = -0.0150004`, `mean ΔD^π = -0.005386` と予測と逆の強い負値（4 lives・F/R/C 全群で負）。`h=50` は全容量正（`C1 +0.0107 > C2 +0.0090 > C130 +0.00019`）、`h=200` で `C130` が負に反転（`-0.00570 / -0.00165`）。推論: `C130` に残留する 10〜22 個の main/twin 共有スロットが R-MID `0.5*(p^TRM + y)` により TRM のカオス的双子差を 1/2 に縮小（アンカリング遮蔽）するため。
+     - **S90-E3 `miss`（改善方向への外れ）**（Layer 2 `R_hit` 上 `mean ΔBrier`）: `C130` 純悪化の予測に反し、全容量・全区間（`init`/`switch`/`steady`）・全歩のすべてで Brier 改善・正答率上昇（`R_hit`: `C1 -0.18837` / `acc +25.8%`, `C2 -0.12582` / `+15.7%`, `C130 -0.02155` / `+2.7%`；全歩平均: `C1 -0.00198`, `C2 -0.00274`, `C130 -0.00414`、`K-UNIQ-CLEAR` 272 回により `C130` の `|M|` 中央値は 16 に抑制）。
+   - 規約どおり最良容量 $C$ の採択および R1/R-MID 規則の無断変更は行わない。`phenomenal_claim = :not_certified` 固定。
+
+212. S91a L5 `(β)` 実身体 `OneLife` 閉ループ最小記憶統合（`bed_mem.jl` 独立 2 相スナップショット監査＋`TracePred`＋固定バイト `[memory]`）（2026-11-28、ユーザー承認 #91 L5B-1〜L5B-5。仕様 `discussion/specs/S91a-draft-aue-memory.md`・予測 `experiments/s91_aue_memory/predictions.toml`〈2 件厳密凍結 `experiments/freeze-s91a.txt`〉、結果 `discussion/notes/S91a-results.md`、`experiments/s91_aue_memory/`。独立種子区画 `910101..910136`＝3 環境×12 種子×5 容量 `{C0_B8, C0_B9, C1, C2, C130}`×4,000 歩、未使用主列種子 `1600–1617`/`2860–2899` 非開封、`core/`・`experiments/aue_seam/`・`mem_core.jl`・`~/bridge-protocol` 無変更）
+   - 3 者独立手順（3 者並列 S-R 3 往復両者 `ACCEPT` → 凍結 → `claude-lab` I 段実装・`smoke`・負対照 13 件 → `codex-lab` 独立 I-R `high` r1 `REVISE` P1–P7 → r2b `REVISE` P5 2 行修正 → r3 `ACCEPT` → 本走り 1,707 秒、`-t 8`、`out/s91a.out` sha `dab9883a...`）。
+   - **全関門・負対照 PASS**: 負対照 13 件（`NC-M1..NC-M8`、5 実装ファイル SHA 一致）、4-seam 回帰（種語彙 0/14、無変更 `adapter_aue_b.jl` 120 歩完全一致）、`GB-M0`〜`GB-M6`（Julia 1.11.6 ロード時グローバル `BigFloat` 2400・8 スレッド並列 512 回ビット一致・セル側 Sterbenz 576/576・リーク注入 3 例拒絶・`port>2^40` 除外・死亡歩完全凍結・全生存歩 `take_all`・`replay_from_audit` 一致）全通過。本走り 180/180 ラン `valid`（`invalid = 0`）・`replay match = 1.0`・`C0_B9 == C0_B8`。
+   - **凍結予測 3/3 全的中（主判定 36 種子／`[SENSITIVITY-34]` 34 種子とも全 `hit`）**:
+     - **S91a-E1 `hit`**（配線確認のみ、優劣の主張なし）: 全 3 環境の `C1/C2/C130` で `R1 writes >= 1` かつ `paid > 0`、`env_stat`（C1 9/12, C2 10/12, C130 12/12）・`env_rev`（10/12, 12/12, 12/12）で `a_exec` 分岐（初回原因は全件 `R-MID`、`economic = 0`）。`env_depl` では `a_exec` 分岐 0/12 のまま無分岐生存差が 11–12/12 で発生（維持費支出が直接寿命を短縮）。
+     - **S91a-E2 `hit`**: `env_depl (C130 - C0_B8)` 12 対で平均生存差 **`-48.0` 歩**（`C0_B8 386.42 → C1 376.00 → C2 355.17 → C130 338.42`、34 種子感度 `-51.36` 歩）。
+     - **S91a-E3 `hit`**: `env_stat + env_rev` の `C130`（`|R_hit|=1566`, 24/24 種子適格）で **`pooled ΔBrier = -0.06267`**, **`seed-equal ΔBrier = -0.23124`**（34 種子感度 `-0.06088 / -0.22645`）。全環境・全有限容量で `R_hit` 上の Brier 改善・正答率上昇（`+8.2%`〜`+100%`）。
+   - **開示**: Part 1 自己検証時に本番種子 2 件（`910101`, `910125`、`C0_B8` 未実行・調整なし）を誤実行したため、主判定（36 種子）と除外感度分析（`[SENSITIVITY-34]`）を併記開示。規約どおり最良 $C$ は採択しない（#89）。`phenomenal_claim = :not_certified` 固定。
+
 ## 用語と状態の場（2026-10-31 起草。軸と測り方は案、ユーザー判断待ち）
 
 ### 統合度 Φ（定義のみ。計算しない：ユーザー決定 2026-10-31）
@@ -2330,6 +2356,15 @@ include("../core/LabCore.jl"); using .LabCore
 - 場: 各位置で、実際の世界のもとでの平均の移動（軌跡から経験的に求める）。存続の境界（F=0）へ向かう流れの強さが不安定さ（L3）の読み。
 
 ## 決定ログ
+- 2026-11-28 ユーザー指示（`discussion/notes/D-BRANCH-STRATEGY.md`）: `main` ブランチを「純粋進化・物理選別ライン（器のみ設計）」として残し、ユーザー設計・現実メディア接続バージョンをフォークさせる 2 ブランチ方針を記録。フォーク前に抽象 3 ポート規格（随伴入力の口・行為/表出の口・時間粒度と文脈の口）を `main` へ仕込み、地点 1（S91a/S91b 完了）および推奨分岐点・地点 2（軸 1 内受容＋軸 2 死前胞子シーム＋3 ポート規格完了）で必ず通知する。
+- 2026-11-28 ユーザー承認（`decisions-log.md` #91、`discussion/notes/D-L5-BETA-AUE-SEAM.md` r2）: L5 `(β)` 実身体閉ループ統合（S91a）の承認票 **L5B-1〜L5B-5** を全承認（独立 2 相スナップショット・非創造保存則・`adapter_aue_b` 無変更回帰／容量集合 `{C0_B8, C0_B9, C1, C2, C130}`・`ops_per_step = 6_000_000`・`K_mem = 0.002`／`old` 6 受容器 `ctx_key`・`Y_t=(y[a_t]>0)`・S91 単独 53-bit 厳密 `<` 抽選・`port>2^40` は `run invalid`／二段分割 S91a=`TracePred`＋S91b=オンライン学習器／独立種子区画 `910101..`・3 環境）。
+- 2026-11-28 ユーザー指示: 開発の総合マニフェスト（新たな表現・新たな道具・新たな推論形態を目指す。現行系の達成認定や `phenomenal_claim` とは厳密分離）を本 README 冒頭および `discussion/dev-guidelines.md` §2 へ追記。あわせて指数的立ち上がり設計メモ（`discussion/notes/D-EXPONENTIAL-BOOTSTRAP-HINTS.md`）を作成。
+- 2026-11-27 ユーザー決定（`decisions-log.md` #89・#90、J1〜J4）:
+  - **J1（#89）**: 容量 $C$ の二層分離（種仕様算式 $C_{\text{spec}}=\lfloor(B-H)/s\rfloor$ とオフライン検査集合の分離、結果からの最良 $C$ 採択禁止）および検査集合案 D1 を確定。
+  - **J2**: BP14 (b) 併記案（全鍵 T と探り Q の併記、S2 は事前凍結条件付き）をラボ規約に採択。
+  - **J3**: 記憶・L2L ライン先行（案 A）、体の線（S64 C0・S66〜S68・S69 r3）は凍結維持。
+  - **J4**: `decisions-log.md` #73〜#88 の全 16 件を一括事後承認。
+  - **#90**: L2L-TRM 最小記憶型仕様 r7（L1〜L5：6-bit `ctx_key`・R-MID・`K-UNIQ-CLEAR`・前払い逐次決済・S90 先行）を 3 者合意・進行承認。
 - 2026-11-10 ユーザー決定（判断票 J1）: J1-10 批判者はユーザー自身が読む／J1-8 の 7 件（decisions-log #1 #2 #3 #4 #8 #9 #31）を承認／J1-11 (b) が成り立たないとき・(c) の上積みが示されないときも切り出す／J1-4 宿主は常時動く小型の計算機／BP5 は (c)（仮定 H3）。
 - 2026-11-10 ユーザー決定（「r3でやって」）: 開発指針 r3（`discussion/dev-guidelines.md`）と作業手順 r3（`discussion/procedure-cutout.md`）を採用。CLAUDE.md の「進め方」に差分 2 行（新しい Lean は臨界経路に限る、項番は段の区切りで）を入れた。§0 の仮置き U1〜U6 は仮置きのまま（確定はユーザー）。P0 に着手: 判断票 J1（`discussion/user-decisions.md` 末尾）、対応表（`discussion/notes/P0-correspondence.md`）、臨界経路の外の未承認 31 件に「作業仮説」と書き足した。
 - 2026-11-10 ユーザー決定: 啓示 1 を採用（証拠は記録を写しに流して系統の側で取り、切り出す個体は自分の感覚で生きる）。「記録は最初は適当に合成したデータで実験。ある程度方向性が定まったら現実の音響や記号や光景を感覚器官から取り入れる」。→ 作業手順 r3（`discussion/procedure-cutout.md`）。あわせて「外から取る」は、ラボの作業の決まり（エージェントは外部に出ない）と存在の取り入れ（存在自身が取る／作者が選ぶ）とを書き分ける。
@@ -2450,7 +2485,14 @@ include("../core/LabCore.jl"); using .LabCore
 
 ## 未決（ユーザー判断）
 
-- **2026-11-22 時点の返事待ち**（新しいものから）: #63（S61、項番176）・#64（S61b、項番177）・#65（S62、項番178）・#66（S61c、項番179、G0〜G5 全 PASS）・#67（S62b、項番180、GB1〜GB5 全 PASS）の事後承認と次手（BP9 の別セッション実行 / S54 Pi 再接続後の `experiments/trial/eof_check_pi.sh` 実行［11-23 20:40 ごろ入力終了前、14:13 時点 `unreachable`］ / 2026 年末メディアアート制作）。BP 正本側ラインへの引き継ぎ一括（`discussion/bp-proposals.md` BP7〜BP9：G1-A `RedundantRecovery`・G2-A `criteria.jl`・BP7/BP8・U-NC1(c)/Stage 1 $L_t$）。D-BORE（退屈）§4 の B1〜B3（`discussion/notes/D-BORE.md`、判断点 O1〜O11）。A-2 を H3 にするか H1 にするか。D-PRED の U1〜U5。#61 の中身の事後承認。記憶の移しの予備実験（項番173・174）の次の段に進むか。S54 garden のパネルの感想。
+- **2026-11-28 時点の現況・判断待ち**:
+  - **完了（項番 212）**: S91a（L5 `(β)` 実身体 `OneLife`＋`bed_mem` 2 相監査＋`TracePred`＋`[memory]`、180/180 ラン `valid`・`replay match 1.0`・全関門/NC 13 件 PASS・凍結予測 E1–E3 全 3 件 `hit`、34 種子感度でも全 3 件 `hit`、`discussion/notes/S91a-results.md`）。
+  - **S91a 完了後の次手**: (1) **S91b**（オンライン学習器閉ループ統合、完了時点で `D-BRANCH-STRATEGY.md` 地点 1 通知）へ進むか、(2) **軸 1（内受容）＋軸 2（死前胞子）＋抽象 3 ポート規格**（推奨分岐点・地点 2）の設計へ進むか、(3) S90-E2 負値の共有スロット分解診断を挟むか、(4) Lab 側の成果一式（S90・S91a・各種設計メモ）を `git commit` / `git push` するか。
+  - **BP 正本ライン同期監査（`discussion/notes/BP-SYNC-AUDIT-2026-11-28.md`）**: 従来の BP9 未反映 4 件（G1-A・G2-A・BP7/BP8・U-NC1(c)/Stage 1 $L_t$）は **`~/bridge-protocol` 側で既に反映・push 済み**（`HEAD=669107b`, `pending_A=0`）を確認。残る BP 正本側タスクは **(a) BP11（`U-SP1b`・承認済み未反映）の反映** と **(b) BP10・BP12〜BP14 の BP 側 D-round / Type-C 判断**、および BP 側既存ステージ済み 5 ファイルの整理。
+  - **凍結維持（J3）**: 体の線（S64 C0・S66〜S68・S69 r3）は引き続き凍結維持。未使用主列種子 `1600–1617`, `2860–2899` は非開封。
+  - **#90 事後承認待ち**: L2L-TRM r7 の細部選択（L1〜L5）。
+
+- **2026-11-22 時点の返事待ち（履歴・一部解消済み）**: #63（S61、項番176）・#64（S61b、項番177）・#65（S62、項番178）・#66（S61c、項番179、G0〜G5 全 PASS）・#67（S62b、項番180、GB1〜GB5 全 PASS）の事後承認と次手（S54 Pi 運用・2026 年末メディアアート制作）。D-BORE（退屈）§4 の B1〜B3（`discussion/notes/D-BORE.md`、判断点 O1〜O11）。A-2 を H3 にするか H1 にするか。D-PRED の U1〜U5。#61 の中身の事後承認。記憶の移しの予備実験（項番173・174）の次の段に進むか。S54 garden のパネルの感想。（※BP7〜BP9 の反映は 2026-11-28 監査で完了確認済み。）
   - **2026-11-20〜22 に解決・決定済み**: Neon オーケストレーター体制（§1.4）＋D 段完全並列 `[FMT:SYM]`（§4.2）、運用ライン切り分け（§1.5：`bridge-protocol` 正本ライン vs `bridge-agency-lab` 実験ライン）、U-BL1 確認待ち A 5 件＋`10-09-4`（暫定名「構造的主体性」）＋`10-24-5`（案 G1-A）＋`10-09-6` Julia/Lean 非比較性（案 G2-A）の BP 台帳反映と `pending_A = 0` 解消確認、合法 OA 論文 11 本（P155〜P168）取得と一次照合（`notes/D-BOUNDARY-OA-SYNTHESIS.md`）、案 A（Fable 必須関門解除・3 系統合意正本化）、U-NC1〜U-NC3（身体＝不可逆性と共通維持費の器、回転独占仲介棄却、L3 Stage 1 先行）。
 
 - 項番81（自己維持の段階1）を受けて: 身体で育てると価値で分かれない（推論1）、乏しい世界で回路の維持費が身体を殺す（推論2）、容量は下り坂を作る（推論3）。
